@@ -24,6 +24,13 @@ tags:
 - [[Lection 1 Introduction to applied mathematics]]
 - [[Lection 2 continuation of proofs]]
 
+## Proofs (Brander) study notes
+
+- [[Proofs Part I]]
+- [[Proofs Part II]]
+- [[Problem Set 1]]
+- [[Problem Set 2]]
+
 ## Key concepts
 
 -
