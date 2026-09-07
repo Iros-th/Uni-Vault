@@ -8,15 +8,15 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "UniVault",
-    pageTitleSuffix: " — study notes",
+    pageTitle: "Iros's Note Vault",
+    pageTitleSuffix: " · study notes",
     enableSPA: true,
     enablePopovers: true,
     analytics: null,
     locale: "en-US",
-    // IMPORTANT: replace with your GitHub Pages URL, e.g. "USERNAME.github.io/REPO"
+    // GitHub Pages URL for the Iros-th/Uni-Vault project site
     // (no https://, no trailing slash). See DEPLOY_HOWTO.md.
-    baseUrl: "PUT-YOUR-USERNAME.github.io/univault-site",
+    baseUrl: "iros-th.github.io/Uni-Vault",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
@@ -29,25 +29,25 @@ const config: QuartzConfig = {
       },
       colors: {
         lightMode: {
-          light: "#faf8f8",
-          lightgray: "#e5e5e5",
-          gray: "#b8b8b8",
-          darkgray: "#4e4e4e",
-          dark: "#2b2b2b",
-          secondary: "#284b63",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
+          light: "#fbfbfd",
+          lightgray: "#e6e8eb",
+          gray: "#a3adba",
+          darkgray: "#47515c",
+          dark: "#1f2933",
+          secondary: "#3a6ea5",
+          tertiary: "#5b8a72",
+          highlight: "rgba(58, 110, 165, 0.10)",
           textHighlight: "#fff23688",
         },
         darkMode: {
-          light: "#161618",
-          lightgray: "#393639",
-          gray: "#646464",
-          darkgray: "#d4d4d4",
-          dark: "#ebebec",
-          secondary: "#7b97aa",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
+          light: "#17181c",
+          lightgray: "#2c2f36",
+          gray: "#6b7280",
+          darkgray: "#cbd2d9",
+          dark: "#f0f2f5",
+          secondary: "#7aa5d2",
+          tertiary: "#8fb9a3",
+          highlight: "rgba(122, 165, 210, 0.12)",
           textHighlight: "#b3aa0288",
         },
       },
