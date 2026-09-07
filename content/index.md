@@ -9,6 +9,8 @@ I write everything in Obsidian and publish it with Quartz. Only the notes I mark
 
 Best way to look around: use the **search** box, poke at the **graph view** to see how notes connect, or just open a course below. Every note has its **backlinks** at the bottom so you can follow the trail.
 
+New here? Start with the [[how-to-use-this-vault|How to use this vault]] guide.
+
 ## Courses
 
 - [[Courses/Programming/Programming|Programming]]
