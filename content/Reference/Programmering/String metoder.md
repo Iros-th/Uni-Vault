@@ -1,5 +1,5 @@
 ---
-title: String Metoder i Python — Komplet Opslag
+title: String Metoder i Python - Komplet Opslag
 publish: true
 type: reference
 tags:

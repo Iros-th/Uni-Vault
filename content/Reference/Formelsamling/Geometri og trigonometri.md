@@ -1,5 +1,5 @@
 ---
-title: Geometri og trigonometri — Formelsamling
+title: Geometri og trigonometri - Formelsamling
 publish: true
 type: reference
 tags:

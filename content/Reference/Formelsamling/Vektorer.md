@@ -1,5 +1,5 @@
 ---
-title: Vektorer i 2D og 3D — Formelsamling
+title: Vektorer i 2D og 3D - Formelsamling
 publish: true
 type: reference
 tags:

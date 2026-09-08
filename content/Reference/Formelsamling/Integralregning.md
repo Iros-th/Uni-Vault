@@ -1,5 +1,5 @@
 ---
-title: Integralregning — Formelsamling
+title: Integralregning - Formelsamling
 publish: true
 type: reference
 tags:

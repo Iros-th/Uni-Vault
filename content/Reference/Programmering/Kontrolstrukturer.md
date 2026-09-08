@@ -1,5 +1,5 @@
 ---
-title: Kontrolstrukturer i Python — Betingelser og Løkker
+title: Kontrolstrukturer i Python - Betingelser og Løkker
 publish: true
 type: reference
 tags:
@@ -78,7 +78,7 @@ while tæller < 3:
           print(f"{n} er et primtal!")
   ```
 
-## 4. Strukturel Pattern Matching (`match` / `case`) — Python 3.10+
+## 4. Strukturel Pattern Matching (`match` / `case`) - Python 3.10+
 
 ```python
 status_kode = 404

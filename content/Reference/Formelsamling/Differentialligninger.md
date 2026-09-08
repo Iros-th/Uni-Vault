@@ -1,5 +1,5 @@
 ---
-title: Differentialligninger — Formelsamling
+title: Differentialligninger - Formelsamling
 publish: true
 type: reference
 tags:

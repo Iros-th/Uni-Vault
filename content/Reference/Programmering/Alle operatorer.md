@@ -1,5 +1,5 @@
 ---
-title: Alle Operatorer i Python — Komplet Opslag
+title: Alle Operatorer i Python - Komplet Opslag
 publish: true
 type: reference
 tags:

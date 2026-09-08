@@ -1,5 +1,5 @@
 ---
-title: Funktioner og modeller — Formelsamling
+title: Funktioner og modeller - Formelsamling
 publish: true
 type: reference
 tags:

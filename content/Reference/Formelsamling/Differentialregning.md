@@ -1,5 +1,5 @@
 ---
-title: Differentialregning — Formelsamling
+title: Differentialregning - Formelsamling
 publish: true
 type: reference
 tags:

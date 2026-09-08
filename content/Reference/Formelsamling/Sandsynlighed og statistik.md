@@ -1,5 +1,5 @@
 ---
-title: Sandsynlighedsregning og statistik — Formelsamling
+title: Sandsynlighedsregning og statistik - Formelsamling
 publish: true
 type: reference
 tags:

@@ -1,5 +1,5 @@
 ---
-title: Organisk Kemi — Funktionelle Grupper
+title: Organisk Kemi - Funktionelle Grupper
 publish: true
 type: reference
 tags:

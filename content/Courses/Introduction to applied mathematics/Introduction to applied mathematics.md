@@ -31,6 +31,21 @@ Landing page for this course. Everything I've got so far, lectures, proof notes 
 - [[Problem Set 1]]
 - [[Problem Set 2]]
 
+## Lectures (templates)
+
+Numbered templates, ready to fill in after each lecture.
+
+- [[Courses/Introduction to applied mathematics/Lektioner/index|All lectures (1 to 13)]]
+
+## Course structure
+
+- [[Courses/Introduction to applied mathematics/Pensum|Syllabus]]: reading plan and exam format
+- [[Courses/Introduction to applied mathematics/Begreber|Terms]]: key terms for the course
+- [[Reference/Matematik/Matematiske begreber|Maths terms]]
+- [[Reference/Matematik/Talmaengder|Number sets]]
+- [[Reference/Matematik/Matematiske symboler|Maths symbols]]
+- [[Reference/Matematik/Logiske symboler|Logic symbols]]
+
 ## Study tools
 
 Everything for this course in one place.

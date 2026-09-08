@@ -1,5 +1,5 @@
 ---
-title: Talmængder (Number Sets) — Formelle Definitioner
+title: Talmængder (Number Sets) - Formelle Definitioner
 publish: true
 type: reference
 tags:
@@ -61,7 +61,7 @@ $$\mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R} \subset \m
   - Algebraiske irrationelle tal: Rødder i polynomier med heltalstalfaktorer (fx $\sqrt{2}, \sqrt[3]{5}$).
   - Transcendente tal: Kan ikke være rod i noget polynomium med rationelle koefficienter (fx $\pi = 3.14159\dots$, $e = 2.71828\dots$).
 - **Egenskaber**:
-  - Kontinuert og fuldstændigt (indeholder ingen "huller" — Dedekind-snit).
+  - Kontinuert og fuldstændigt (indeholder ingen "huller" - Dedekind-snit).
   - **Ikke-tællelig uendelig**: $|\mathbb{R}| = 2^{\aleph_0} = \mathfrak{c}$ (kontinuum-kardinalitet, strengt større end $|\mathbb{N}|$).
 
 ---

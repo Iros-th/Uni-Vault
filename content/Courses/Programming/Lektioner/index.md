@@ -1,0 +1,35 @@
+---
+publish: true
+title: Lektioner
+course: Programming
+type: index
+tags:
+  - programming
+  - lektioner
+---
+
+# Lektioner: Programming
+
+En note per lektion, nummereret 1 til 13. De er tomme skabeloner lige nu: hver har en overskrift til emnet (staar som "udfyldes") plus faste afsnit til Begreber, Noter og Opgaver. Fyld dem ud efter hver forelaesning, saa bygger grafen og soegningen sig selv op via overskrifterne.
+
+## Alle lektioner
+
+- [[Courses/Programming/Lektioner/Lektion 1|Lektion 1]]
+- [[Courses/Programming/Lektioner/Lektion 2|Lektion 2]]
+- [[Courses/Programming/Lektioner/Lektion 3|Lektion 3]]
+- [[Courses/Programming/Lektioner/Lektion 4|Lektion 4]]
+- [[Courses/Programming/Lektioner/Lektion 5|Lektion 5]]
+- [[Courses/Programming/Lektioner/Lektion 6|Lektion 6]]
+- [[Courses/Programming/Lektioner/Lektion 7|Lektion 7]]
+- [[Courses/Programming/Lektioner/Lektion 8|Lektion 8]]
+- [[Courses/Programming/Lektioner/Lektion 9|Lektion 9]]
+- [[Courses/Programming/Lektioner/Lektion 10|Lektion 10]]
+- [[Courses/Programming/Lektioner/Lektion 11|Lektion 11]]
+- [[Courses/Programming/Lektioner/Lektion 12|Lektion 12]]
+- [[Courses/Programming/Lektioner/Lektion 13|Lektion 13]]
+
+## Links
+
+- [[Programming]]
+- [[Courses/Programming/Pensum|Pensum]]
+- [[Courses/Programming/Begreber|Begreber]]

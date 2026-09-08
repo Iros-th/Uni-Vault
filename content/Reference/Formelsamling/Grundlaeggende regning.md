@@ -1,5 +1,5 @@
 ---
-title: Grundlæggende regning — Formelsamling
+title: Grundlæggende regning - Formelsamling
 publish: true
 type: reference
 tags:

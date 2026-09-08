@@ -29,9 +29,22 @@ These follow the standard intro Python curriculum (the general beginner progress
 - [[11 Klasser og OOP|Klasser og OOP]]
 - [[12 Fejlhåndtering|Fejlhåndtering]]
 
-## Lectures
+## Lektioner
 
-(will link lecture notes here as I write them)
+Nummererede skabeloner, klar til at fylde ud efter hver forelaesning.
+
+- [[Courses/Programming/Lektioner/index|Alle lektioner (1 til 13)]]
+
+## Fagets struktur
+
+- [[Courses/Programming/Pensum|Pensum]]: syllabus og laeseplan
+- [[Courses/Programming/Begreber|Begreber]]: fagets noegleord samlet
+- [[Reference/Programmering/Programmerings begreber|Programmerings begreber]]: referenceforklaringer
+- [[Reference/Programmering/Alle datatyper|Alle datatyper]]
+- [[Reference/Programmering/Alle operatorer|Alle operatorer]]
+- [[Reference/Programmering/Kontrolstrukturer|Kontrolstrukturer]]
+- [[Reference/Programmering/String metoder|String metoder]]
+- [[Reference/Programmering/Fejltyper|Fejltyper]]
 
 ## Study tools
 

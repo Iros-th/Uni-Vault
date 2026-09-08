@@ -1,5 +1,5 @@
 ---
-title: Fejltyper & Exceptions i Python — Håndtering og Fejlfinding
+title: Fejltyper & Exceptions i Python - Håndtering og Fejlfinding
 publish: true
 type: reference
 tags:
@@ -45,7 +45,7 @@ except FileNotFoundError:
 except ValueError:
     print("Fejl: Første linje i filen var ikke et gyldigt heltal.")
 except ZeroDivisionError:
-    print("Fejl: Tallet i filen var 0 — kan ikke dividere med nul.")
+    print("Fejl: Tallet i filen var 0 - kan ikke dividere med nul.")
 else:
     # Kører KUN hvis ingen exceptions opstod i try-blokken
     print(f"Beregning lykkedes: {resultat}")

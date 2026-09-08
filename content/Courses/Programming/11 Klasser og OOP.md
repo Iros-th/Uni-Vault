@@ -12,9 +12,9 @@ tags:
 
 # Klasser og OOP
 
-- Klasse
-	- Sammensat
-	- En klasse er en skabelon for et objekt. Tænk på den som en tegning, og objekterne er de faktiske ting du bygger ud fra tegningen. OOP står for objektorienteret programmering.
+### Klasse
+- Sammensat
+- En klasse er en skabelon for et objekt. Tænk på den som en tegning, og objekterne er de faktiske ting du bygger ud fra tegningen. OOP står for objektorienteret programmering.
 
 ```python
 class Hund:
@@ -24,12 +24,12 @@ min_hund = Hund()
 print(min_hund)
 ```
 
-	- Kilde: https://docs.python.org/3/tutorial/classes.html
+- Kilde: https://docs.python.org/3/tutorial/classes.html
 
 
-- __init__ og attributter
-	- __init__ er en speciel metode der kører automatisk når du laver et nyt objekt. Her sætter du objektets attributter (dets data).
-	- VIGTIGT: self henviser til objektet selv og skal altid være første parameter i metoderne. Du skriver det ikke med når du kalder, Python gør det selv.
+### __init__ og attributter
+- __init__ er en speciel metode der kører automatisk når du laver et nyt objekt. Her sætter du objektets attributter (dets data).
+- VIGTIGT: self henviser til objektet selv og skal altid være første parameter i metoderne. Du skriver det ikke med når du kalder, Python gør det selv.
 
 ```python
 class Hund:
@@ -41,11 +41,11 @@ fido = Hund("Fido", 3)
 print(fido.navn, fido.alder)
 ```
 
-	- Kilde: https://docs.python.org/3/tutorial/classes.html#class-objects
+- Kilde: https://docs.python.org/3/tutorial/classes.html#class-objects
 
 
-- Metoder
-	- Metoder er funktioner der hører til en klasse. De kan bruge objektets egne attributter via self.
+### Metoder
+- Metoder er funktioner der hører til en klasse. De kan bruge objektets egne attributter via self.
 
 ```python
 class Hund:
@@ -59,11 +59,11 @@ fido = Hund("Fido")
 fido.goe()
 ```
 
-	- Kilde: https://docs.python.org/3/tutorial/classes.html#method-objects
+- Kilde: https://docs.python.org/3/tutorial/classes.html#method-objects
 
 
-- Objekter (instanser)
-	- Et objekt er en konkret udgave lavet ud fra klassen. Du kan lave lige så mange du vil, og de har hver deres egne data.
+### Objekter (instanser)
+- Et objekt er en konkret udgave lavet ud fra klassen. Du kan lave lige så mange du vil, og de har hver deres egne data.
 
 ```python
 class Hund:
@@ -75,11 +75,11 @@ rex = Hund("Rex")
 print(fido.navn, rex.navn)
 ```
 
-	- Kilde: https://docs.python.org/3/tutorial/classes.html#instance-objects
+- Kilde: https://docs.python.org/3/tutorial/classes.html#instance-objects
 
 
-- Arv
-	- En klasse kan arve fra en anden. Den får så alle metoder og attributter fra forældreklassen, og du kan tilføje eller ændre efter behov. Det sparer en masse gentagelse.
+### Arv
+- En klasse kan arve fra en anden. Den får så alle metoder og attributter fra forældreklassen, og du kan tilføje eller ændre efter behov. Det sparer en masse gentagelse.
 
 ```python
 class Dyr:
@@ -98,11 +98,11 @@ fido.spis()
 fido.goe()
 ```
 
-	- Kilde: https://docs.python.org/3/tutorial/classes.html#inheritance
+- Kilde: https://docs.python.org/3/tutorial/classes.html#inheritance
 
 
-- __str__ til pæn udskrift
-	- Uden __str__ ser et objekt kryptisk ud når du printer det. Med __str__ bestemmer du selv hvordan det skal vises.
+### __str__ til pæn udskrift
+- Uden __str__ ser et objekt kryptisk ud når du printer det. Med __str__ bestemmer du selv hvordan det skal vises.
 
 ```python
 class Hund:
@@ -115,7 +115,7 @@ class Hund:
 print(Hund("Fido"))
 ```
 
-	- Kilde: https://docs.python.org/3/reference/datamodel.html#object.__str__
+- Kilde: https://docs.python.org/3/reference/datamodel.html#object.__str__
 
 
 ## Links

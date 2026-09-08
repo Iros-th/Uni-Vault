@@ -1,5 +1,5 @@
 ---
-title: Alle Datatyper i Python & C++ — Komplet Reference
+title: Alle Datatyper i Python & C++ - Komplet Reference
 publish: true
 type: reference
 tags:

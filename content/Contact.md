@@ -6,7 +6,7 @@ publish: true
 Have a question, spotted an error in a proof, or want to get in touch? Use the form below.
 
 > [!note] Before this form works
-> This is a static site, so the form is handled by a free third-party service called **Formspree**. Replace `PUT-YOUR-FORMSPREE-ID` below with your own Formspree form ID (see `DEPLOY_HOWTO.md`). Until then, the form will not submit — use the email link underneath as a fallback.
+> This is a static site, so the form is handled by a free third-party service called **Formspree**. Replace `PUT-YOUR-FORMSPREE-ID` below with your own Formspree form ID (see `DEPLOY_HOWTO.md`). Until then, the form will not submit - use the email link underneath as a fallback.
 
 <form
   action="https://formspree.io/f/PUT-YOUR-FORMSPREE-ID"

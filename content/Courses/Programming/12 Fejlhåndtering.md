@@ -12,8 +12,8 @@ tags:
 
 # Fejlhåndtering
 
-- [[Glossary#try-and-except|try og except]]
-	- Koden i try bliver forsøgt. Går noget galt, hopper Python ned i except i stedet for at crashe hele programmet. Super til ting der kan gå galt, fx input fra en bruger.
+### [[Glossary#try-and-except|try og except]]
+- Koden i try bliver forsøgt. Går noget galt, hopper Python ned i except i stedet for at crashe hele programmet. Super til ting der kan gå galt, fx input fra en bruger.
 
 ```python
 try:
@@ -23,12 +23,12 @@ except:
     print("Det var ikke et tal")
 ```
 
-	- Kilde: https://docs.python.org/3/tutorial/errors.html#handling-exceptions
+- Kilde: https://docs.python.org/3/tutorial/errors.html#handling-exceptions
 
 
-- Fange bestemte fejl
-	- Det er bedre at fange en bestemt type fejl end at fange alt. Så kommer du ikke til at skjule fejl du faktisk gerne ville vide om.
-	- VIGTIGT: undgå en helt bar except uden type. Den fanger ALT, også tastefejl i din egen kode, og så bliver det svært at finde ud af hvad der gik galt.
+### Fange bestemte fejl
+- Det er bedre at fange en bestemt type fejl end at fange alt. Så kommer du ikke til at skjule fejl du faktisk gerne ville vide om.
+- VIGTIGT: undgå en helt bar except uden type. Den fanger ALT, også tastefejl i din egen kode, og så bliver det svært at finde ud af hvad der gik galt.
 
 ```python
 try:
@@ -37,11 +37,11 @@ except ValueError:
     print("Kunne ikke lave om til tal")
 ```
 
-	- Kilde: https://docs.python.org/3/tutorial/errors.html#handling-exceptions
+- Kilde: https://docs.python.org/3/tutorial/errors.html#handling-exceptions
 
 
-- Flere except-blokke
-	- Du kan have flere except efter hinanden til at håndtere forskellige fejl på hver sin måde.
+### Flere except-blokke
+- Du kan have flere except efter hinanden til at håndtere forskellige fejl på hver sin måde.
 
 ```python
 try:
@@ -53,11 +53,11 @@ except ZeroDivisionError:
     print("Kan ikke dividere med nul")
 ```
 
-	- Kilde: https://docs.python.org/3/tutorial/errors.html#handling-exceptions
+- Kilde: https://docs.python.org/3/tutorial/errors.html#handling-exceptions
 
 
-- else og finally
-	- else kører hvis der IKKE skete en fejl. finally kører altid, uanset hvad, og er god til oprydning som at lukke en fil.
+### else og finally
+- else kører hvis der IKKE skete en fejl. finally kører altid, uanset hvad, og er god til oprydning som at lukke en fil.
 
 ```python
 try:
@@ -70,11 +70,11 @@ finally:
     print("Faerdig")
 ```
 
-	- Kilde: https://docs.python.org/3/tutorial/errors.html#defining-clean-up-actions
+- Kilde: https://docs.python.org/3/tutorial/errors.html#defining-clean-up-actions
 
 
-- raise (kast selv en fejl)
-	- Nogle gange vil du selv skabe en fejl, fx hvis input ikke giver mening. Det gør du med raise.
+### raise (kast selv en fejl)
+- Nogle gange vil du selv skabe en fejl, fx hvis input ikke giver mening. Det gør du med raise.
 
 ```python
 def saet_alder(alder):
@@ -85,7 +85,7 @@ def saet_alder(alder):
 print(saet_alder(21))
 ```
 
-	- Kilde: https://docs.python.org/3/tutorial/errors.html#raising-exceptions
+- Kilde: https://docs.python.org/3/tutorial/errors.html#raising-exceptions
 
 
 ## Links
