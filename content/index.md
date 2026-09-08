@@ -42,6 +42,7 @@ Noterne skrives i Obsidian og udgives via Quartz. Kun noter med `publish: true` 
 
 ## Opslagsværk & Formelsamling
 
+- [[Reference/index|Hele opslagsværket]]: Samlet indgang til alle symboler, konstanter, formler og begreber.
 - [[Formelsamling/Formelsamling|Formelsamlingen]]: Samlet indgang til alle formler, opdelt efter fag (matematik, statistik, diskret, fysik, kemi, programmering).
 - [[Reference/Matematik/Matematiske symboler|Matematiske Symboler]]: Komplet opslag over mængdelære, logik, kalkulus, algebra, græske bogstaver og relationer.
 - [[Reference/Matematik/Matematiske konstanter|Matematiske Konstanter]]: $\pi$, $e$, det gyldne snit og flere med værdi og betydning.
@@ -61,12 +62,16 @@ Noterne skrives i Obsidian og udgives via Quartz. Kun noter med `publish: true` 
 
 ## Studie- & Træningsværktøjer
 
+- [[Exam-Prep|Eksamensforberedelse]]: Samlet startside med selv-tests, flashcards, cheat sheets og gamle eksamener per fag.
+- [[Study-Roadmap|Studieoversigt]]: Rækkefølge og sammenhæng mellem fagene, hvis du starter forfra.
 - [[Flashcards/Flashcards|Flashcards]]: Hurtige repetitionskort opdelt efter emne (afslør svar ved klik).
 - [[Self-Tests/Self-Tests|Selv-Tests]]: Korte opgavesæt per fag til eksamenstræning.
 - [[Formelsamling/Formelsamling|Formelsamling]]: Alle formler samlet, klar til print.
 - [[Courses/Programming/Cheat Sheet|Programming cheat sheet]]: Vigtigste Python-syntaks på én side.
 - [[Courses/Introduction to applied mathematics/Cheat Sheet|Applied math cheat sheet]]: Bevismetoder og nøglefakta samlet.
 - [[how-to-use-this-vault|Vejledning til arkivet]]: Sådan navigerer du i noterne og udnytter krydshenvisninger.
+- [[Changelog|Hvad er nyt]]: Kort log over større ændringer i arkivet.
+- [Alle tags](tags/): Bladr i alle emne-tags på tværs af fagene.
 
 ---
 

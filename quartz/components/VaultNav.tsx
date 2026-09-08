@@ -24,6 +24,7 @@ const VaultNav: QuartzComponent = ({ fileData, cfg, displayClass }: QuartzCompon
     { label: "Formelsamling", path: "Formelsamling/Formelsamling.md" },
     { label: "Flashcards", path: "Flashcards/Flashcards.md" },
     { label: "Self-Tests", path: "Self-Tests/Self-Tests.md" },
+    { label: "Exam prep", path: "Exam-Prep.md" },
     { label: "Symbols", path: "Reference/Matematik/Matematiske symboler.md" },
     { label: "Periodic table", path: "Reference/Kemi/Periodisk system.md" },
     { label: "Glossary", path: "Glossary.md" },

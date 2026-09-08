@@ -88,6 +88,14 @@ export const defaultContentPageLayout: PageLayout = {
     }),
     Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
+    // "Recently updated" list. Core Quartz component; every link is built with
+    // resolveRelative internally, so it follows the same safe path rule as the
+    // rest of the site and resolves from deep pages too.
+    Component.RecentNotes({
+      title: "Senest opdateret",
+      limit: 5,
+      showTags: false,
+    }),
   ],
 }
 
