@@ -10,21 +10,21 @@ tags:
 
 # Programmerings begreber
 
-Korte forklaringer paa de grundbegreber der gaar igen i programmering. Hold musen over et linket begreb i noterne for at faa definitionen som popover.
+Korte forklaringer på de grundbegreber der går igen i programmering. Hold musen over et linket begreb i noterne for at få definitionen som popover.
 
-## 1. Data og vaerdier
+## 1. Data og værdier
 
 ### Variabel
-Et navn du saetter paa en vaerdi, saa du kan bruge den igen senere. I Python behoever du ikke sige hvilken type det er, det regner Python selv ud. Se [[01 Variabler og datatyper|noten]].
+Et navn du sætter på en værdi, så du kan bruge den igen senere. I Python behøver du ikke sige hvilken type det er, det regner Python selv ud. Se [[01 Variabler og datatyper|noten]].
 
 ### Datatype
-Hvilken slags vaerdi noget er: heltal, kommatal, tekst, sandt/falsk osv. Fuld liste i [[Reference/Programmering/Alle datatyper|Alle datatyper]].
+Hvilken slags værdi noget er: heltal, kommatal, tekst, sandt/falsk osv. Fuld liste i [[Reference/Programmering/Alle datatyper|Alle datatyper]].
 
 ### Casting (typekonvertering)
-At lave en type om til en anden med fx `int()`, `float()` eller `str()`. Nyttigt naar input kommer ind som tekst men skal regnes med.
+At lave en type om til en anden med fx `int()`, `float()` eller `str()`. Nyttigt når input kommer ind som tekst men skal regnes med.
 
 ### Immutable og mutable
-Immutable betyder at vaerdien ikke kan aendres paa plads (fx `int`, `str`, `tuple`). Mutable betyder at den kan (fx `list`, `dict`, `set`).
+Immutable betyder at værdien ikke kan ændres på plads (fx `int`, `str`, `tuple`). Mutable betyder at den kan (fx `list`, `dict`, `set`).
 
 ## 2. Operatorer og udtryk
 
@@ -32,28 +32,28 @@ Immutable betyder at vaerdien ikke kan aendres paa plads (fx `int`, `str`, `tupl
 Tegn der regner eller sammenligner, fx `+`, `-`, `*`, `==`, `and`. Se [[Reference/Programmering/Alle operatorer|Alle operatorer]].
 
 ### Udtryk
-En bid kode der udregner en vaerdi, fx `3 + 4 * x`.
+En bid kode der udregner en værdi, fx `3 + 4 * x`.
 
-## 3. Kontrol af programforloeb
+## 3. Kontrol af programforløb
 
 ### Betingelse
-`if`, `elif` og `else` styrer hvilken kode der koeres afhaengigt af om noget er sandt. Se [[Reference/Programmering/Kontrolstrukturer|Kontrolstrukturer]].
+`if`, `elif` og `else` styrer hvilken kode der køres afhængigt af om noget er sandt. Se [[Reference/Programmering/Kontrolstrukturer|Kontrolstrukturer]].
 
-### Loekke (loop)
-Gentager kode. `for` loeber over en samling, `while` koerer saa laenge en betingelse er sand. Se [[05 Løkker|noten]].
+### Løkke (loop)
+Gentager kode. `for` løber over en samling, `while` kører så længe en betingelse er sand. Se [[05 Løkker|noten]].
 
 ### Break og continue
-`break` stopper loekken helt, `continue` springer til naeste gennemloeb.
+`break` stopper løkken helt, `continue` springer til næste gennemløb.
 
 ## 4. Funktioner
 
 ### Funktion
-En genbrugelig bid kode du definerer med `def` og kalder naar du har brug for den. Se [[06 Funktioner|noten]].
+En genbrugelig bid kode du definerer med `def` og kalder når du har brug for den. Se [[06 Funktioner|noten]].
 
 ### Parameter og argument
-Parametre er de navne funktionen tager ind. Argumenter er de faktiske vaerdier du sender med naar du kalder den.
+Parametre er de navne funktionen tager ind. Argumenter er de faktiske værdier du sender med når du kalder den.
 
-### Returvaerdi
+### Returværdi
 Det en funktion sender tilbage med `return`.
 
 ### Scope
@@ -62,16 +62,16 @@ Hvor en variabel er synlig. Variabler lavet inde i en funktion er lokale og kan 
 ## 5. Datastrukturer
 
 ### Liste
-En ordnet, aendrbar samling af vaerdier. Se [[07 Lister|noten]].
+En ordnet, ændrbar samling af værdier. Se [[07 Lister|noten]].
 
 ### Dictionary
-Par af noegle og vaerdi. Se [[08 Dictionaries tuples og sets|noten]].
+Par af nøgle og værdi. Se [[08 Dictionaries tuples og sets|noten]].
 
 ### Tuple
-Som en liste, men kan ikke aendres.
+Som en liste, men kan ikke ændres.
 
 ### Set
-En samling uden dubletter og uden fast raekkefoelge.
+En samling uden dubletter og uden fast rækkefølge.
 
 ## 6. Objektorientering
 
@@ -82,18 +82,18 @@ En skabelon for din egen datatype med data og metoder. Se [[11 Klasser og OOP|no
 En konkret ting lavet ud fra en klasse.
 
 ### Metode
-En funktion der hoerer til en klasse.
+En funktion der hører til en klasse.
 
 ### Attribut
-En variabel der hoerer til et objekt.
+En variabel der hører til et objekt.
 
 ## 7. Fejl
 
 ### Exception (undtagelse)
-En fejl der opstaar under koersel og stopper programmet hvis den ikke haandteres. Se [[Reference/Programmering/Fejltyper|Fejltyper]].
+En fejl der opstår under kørsel og stopper programmet hvis den ikke håndteres. Se [[Reference/Programmering/Fejltyper|Fejltyper]].
 
 ### Try og except
-Blokken der fanger og haandterer fejl, saa programmet kan fortsaette.
+Blokken der fanger og håndterer fejl, så programmet kan fortsætte.
 
 ## Links
 

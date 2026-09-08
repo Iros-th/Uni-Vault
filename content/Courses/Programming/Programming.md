@@ -31,14 +31,14 @@ These follow the standard intro Python curriculum (the general beginner progress
 
 ## Lektioner
 
-Nummererede skabeloner, klar til at fylde ud efter hver forelaesning.
+Nummererede skabeloner, klar til at fylde ud efter hver forelæsning.
 
 - [[Courses/Programming/Lektioner/index|Alle lektioner (1 til 13)]]
 
 ## Fagets struktur
 
-- [[Courses/Programming/Pensum|Pensum]]: syllabus og laeseplan
-- [[Courses/Programming/Begreber|Begreber]]: fagets noegleord samlet
+- [[Courses/Programming/Pensum|Pensum]]: syllabus og læseplan
+- [[Courses/Programming/Begreber|Begreber]]: fagets nøgleord samlet
 - [[Reference/Programmering/Programmerings begreber|Programmerings begreber]]: referenceforklaringer
 - [[Reference/Programmering/Alle datatyper|Alle datatyper]]
 - [[Reference/Programmering/Alle operatorer|Alle operatorer]]

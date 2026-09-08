@@ -10,20 +10,20 @@ tags:
 
 # Begreber: Statistics
 
-De begreber der gaar igen i faget. Kort her, uddyb i lektionsnoterne.
+De begreber der går igen i faget. Kort her, uddyb i lektionsnoterne.
 
 ## Beskrivende statistik
 
-### Middelvaerdi, median og typetal
-Tre maal for hvor midten af data ligger.
+### Middelværdi, median og typetal
+Tre mål for hvor midten af data ligger.
 
 ### Varians og spredning
-Hvor spredt data er omkring middelvaerdien.
+Hvor spredt data er omkring middelværdien.
 
 ## Sandsynlighed
 
 ### Stokastisk variabel
-En variabel hvis vaerdi afhaenger af tilfaeldighed.
+En variabel hvis værdi afhænger af tilfældighed.
 
 ### Fordeling
 Hvordan sandsynlighed er fordelt (fx normalfordeling, binomial). Se [[Reference/Formelsamling/Sandsynlighed og statistik|Sandsynlighed og statistik]].
@@ -31,13 +31,13 @@ Hvordan sandsynlighed er fordelt (fx normalfordeling, binomial). Se [[Reference/
 ## Inferens
 
 ### Hypotesetest
-Metode til at teste en paastand mod data.
+Metode til at teste en påstand mod data.
 
-### p-vaerdi og signifikansniveau
-Maal for hvor overraskende data er under nulhypotesen.
+### p-værdi og signifikansniveau
+Mål for hvor overraskende data er under nulhypotesen.
 
 ### Konfidensinterval
-Interval der med en vis sikkerhed indeholder den sande vaerdi.
+Interval der med en vis sikkerhed indeholder den sande værdi.
 
 ## Links
 

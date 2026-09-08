@@ -10,7 +10,7 @@ tags:
 
 # Diskret matematik flashcards
 
-Klik et kort for at vende det og se svaret. Proev at svare foer du kigger.
+Klik et kort for at vende det og se svaret. Prøv at svare før du kigger.
 
 ## Logik
 
@@ -20,15 +20,15 @@ Klik et kort for at vende det og se svaret. Proev at svare foer du kigger.
 > [!question]- Hvad er det kontraponerede af $P \implies Q$?
 > $\neg Q \implies \neg P$. Det er logisk ensgyldigt med det oprindelige udsagn.
 
-> [!question]- Hvornaar er $P \implies Q$ falsk?
-> Kun naar $P$ er sand og $Q$ er falsk.
+> [!question]- Hvornår er $P \implies Q$ falsk?
+> Kun når $P$ er sand og $Q$ er falsk.
 
-## Maengder
+## Mængder
 
-> [!question]- Hvor mange delmaengder har en maengde med $n$ elementer?
+> [!question]- Hvor mange delmængder har en mængde med $n$ elementer?
 > $2^n$.
 
-> [!question]- Hvad er inklusion-eksklusion for to maengder?
+> [!question]- Hvad er inklusion-eksklusion for to mængder?
 > $|A \cup B| = |A| + |B| - |A \cap B|$.
 
 ## Kombinatorik
@@ -36,8 +36,8 @@ Klik et kort for at vende det og se svaret. Proev at svare foer du kigger.
 > [!question]- Hvad er formlen for en kombination $\binom{n}{k}$?
 > $\binom{n}{k} = \frac{n!}{k!(n-k)!}$, antal uordnede udvalg af $k$ ud af $n$.
 
-> [!question]- Hvad er forskellen paa permutation og kombination?
-> Permutation taeller raekkefoelgen med, kombination goer ikke.
+> [!question]- Hvad er forskellen på permutation og kombination?
+> Permutation tæller rækkefølgen med, kombination gør ikke.
 
 ## Summer
 

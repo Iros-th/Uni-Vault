@@ -16,11 +16,11 @@ Kerneformler fra klassisk mekanik, energi, termodynamik og elektricitet.
 
 $$v = \frac{\Delta s}{\Delta t}, \qquad a = \frac{\Delta v}{\Delta t}$$
 
-Jaevnt accelereret bevaegelse:
+Jævnt accelereret bevægelse:
 
 $$v = v_0 + a t, \qquad s = v_0 t + \tfrac{1}{2} a t^2, \qquad v^2 = v_0^2 + 2 a s$$
 
-## Kraft og bevaegelse (Newton)
+## Kraft og bevægelse (Newton)
 
 $$F = m a, \qquad F_t = -k x \ (\text{fjeder}), \qquad F_g = m g$$
 
@@ -28,7 +28,7 @@ Impuls: $p = m v$, og $F = \dfrac{\Delta p}{\Delta t}$.
 
 ## Arbejde og energi
 
-| Stoerrelse | Formel |
+| Størrelse | Formel |
 |---|---|
 | Arbejde | $W = F s \cos\theta$ |
 | Kinetisk energi | $E_k = \tfrac{1}{2} m v^2$ |
@@ -49,7 +49,7 @@ $$U = R I, \qquad P = U I = R I^2$$
 
 Serie: $R = R_1 + R_2 + \cdots$. Parallel: $\dfrac{1}{R} = \dfrac{1}{R_1} + \dfrac{1}{R_2} + \cdots$.
 
-## Boelger
+## Bølger
 
 $$v = f \lambda, \qquad T = \frac{1}{f}$$
 

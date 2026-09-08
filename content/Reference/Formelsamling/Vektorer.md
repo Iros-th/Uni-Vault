@@ -5,7 +5,7 @@ type: reference
 tags:
   - formelsamling
   - vektorer
-  - lineaer-algebra
+  - lineær-algebra
 ---
 
 # Vektorer i 2D og 3D

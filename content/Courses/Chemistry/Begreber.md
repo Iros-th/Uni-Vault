@@ -12,16 +12,16 @@ tags:
 
 Fagets kernebegreber. De fulde forklaringer og formler ligger i referencesiderne.
 
-## Stofmaengde og beregning
+## Stofmængde og beregning
 
-### Stofmaengde (mol)
-Maalet for antal partikler. Se [[Reference/Kemi/Grundlaeggende begreber|Grundlaeggende kemibegreber]].
+### Stofmængde (mol)
+Målet for antal partikler. Se [[Reference/Kemi/Grundlaeggende begreber|Grundlæggende kemibegreber]].
 
 ### Molar masse
 Massen af ét mol af et stof.
 
 ### Koncentration
-Stofmaengde per volumen.
+Stofmængde per volumen.
 
 ## Bindinger og struktur
 

@@ -95,29 +95,29 @@ Komplet oversigt over standardsymboler anvendt i diskret matematik, analyse, lin
 | $\sqrt{\;}$ | Kvadratrod | $\sqrt{9} = 3$ |
 | $\sqrt[n]{\;}$ | $n$-te rod | $\sqrt[3]{27} = 3$ |
 | $x^n$ | Potens | $2^3 = 8$ |
-| $\lvert x \rvert$ | Numerisk vaerdi | $\lvert -4 \rvert = 4$ |
+| $\lvert x \rvert$ | Numerisk værdi | $\lvert -4 \rvert = 4$ |
 | $\lfloor x \rfloor$ | Nedrunding (floor) | $\lfloor 2.7 \rfloor = 2$ |
 | $\lceil x \rceil$ | Oprunding (ceil) | $\lceil 2.1 \rceil = 3$ |
 | $n!$ | Fakultet | $4! = 24$ |
 | $\binom{n}{k}$ | Binomialkoefficient | $\binom{4}{2} = 6$ |
 | $\circ$ | Sammensat funktion | $(f \circ g)(x) = f(g(x))$ |
 | $\mapsto$ | Afbilder til | $x \mapsto x^2$ |
-| $\to$ | Fra domaene til codomaene | $f: \mathbb{R} \to \mathbb{R}$ |
+| $\to$ | Fra domæne til codomæne | $f: \mathbb{R} \to \mathbb{R}$ |
 
 ---
 
-## 6. Graeske bogstaver i matematik
+## 6. Græske bogstaver i matematik
 
 | Bogstav | Navn | Typisk brug |
 |:---:|---|---|
 | $\alpha, \beta, \gamma$ | alfa, beta, gamma | vinkler og parametre |
-| $\delta, \Delta$ | delta | lille aendring; $\Delta$ for differens |
-| $\varepsilon$ | epsilon | vilkaarligt lille tal i graenser |
+| $\delta, \Delta$ | delta | lille ændring; $\Delta$ for differens |
+| $\varepsilon$ | epsilon | vilkårligt lille tal i grænser |
 | $\theta, \varphi$ | theta, phi | vinkler |
-| $\lambda$ | lambda | egenvaerdi, parameter |
-| $\mu$ | my | middelvaerdi |
+| $\lambda$ | lambda | egenværdi, parameter |
+| $\mu$ | my | middelværdi |
 | $\pi$ | pi | forholdet $\approx 3{,}14159$; se [[Matematiske konstanter]] |
-| $\rho$ | rho | taethed, korrelation |
+| $\rho$ | rho | tæthed, korrelation |
 | $\sigma, \Sigma$ | sigma | spredning; $\Sigma$ for sum |
 | $\tau$ | tau | $2\pi$, tidskonstant |
 | $\phi, \Phi$ | phi | det gyldne snit, fordelingsfunktion |
@@ -126,9 +126,9 @@ Komplet oversigt over standardsymboler anvendt i diskret matematik, analyse, lin
 
 ---
 
-## 7. Talmaengder som symbol
+## 7. Talmængder som symbol
 
-| Symbol | Maengde |
+| Symbol | Mængde |
 |:---:|---|
 | $\mathbb{N}$ | de naturlige tal |
 | $\mathbb{Z}$ | de hele tal |
@@ -136,7 +136,7 @@ Komplet oversigt over standardsymboler anvendt i diskret matematik, analyse, lin
 | $\mathbb{R}$ | de reelle tal |
 | $\mathbb{C}$ | de komplekse tal |
 
-Fuld gennemgang med egenskaber staar i [[Reference/Matematik/Talmaengder|Talmaengder]].
+Fuld gennemgang med egenskaber står i [[Reference/Matematik/Talmaengder|Talmængder]].
 
 ## Links
 

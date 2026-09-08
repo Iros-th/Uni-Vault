@@ -10,27 +10,27 @@ tags:
 
 # Selv-test: Diskret matematik
 
-Svar selv foerst, klik saa "Vis svar" for at tjekke. Der holdes ingen score, det er kun til dig.
+Svar selv først, klik så "Vis svar" for at tjekke. Der holdes ingen score, det er kun til dig.
 
 **1.** Hvad siger De Morgans love for udsagn?
 
 > [!success]- Vis svar
 > $\neg(P \land Q) \iff \neg P \lor \neg Q$ og $\neg(P \lor Q) \iff \neg P \land \neg Q$. Negationen vender OG til ELLER og omvendt.
 
-**2.** Hvornaar er implikationen $P \implies Q$ falsk?
+**2.** Hvornår er implikationen $P \implies Q$ falsk?
 
 > [!success]- Vis svar
-> Kun naar $P$ er sand og $Q$ er falsk. I alle andre tilfaelde er den sand.
+> Kun når $P$ er sand og $Q$ er falsk. I alle andre tilfælde er den sand.
 
-**3.** Hvor mange delmaengder har en maengde med $n$ elementer?
-
-> [!success]- Vis svar
-> $2^n$. Hvert element er enten med eller ikke med, saa der er to valg per element.
-
-**4.** Hvad er forskellen paa en permutation og en kombination?
+**3.** Hvor mange delmængder har en mængde med $n$ elementer?
 
 > [!success]- Vis svar
-> En permutation taeller ordnede udvalg ($P(n,k) = \frac{n!}{(n-k)!}$). En kombination taeller uordnede udvalg ($\binom{n}{k} = \frac{n!}{k!(n-k)!}$). Raekkefoelgen betyder noget i permutationen, ikke i kombinationen.
+> $2^n$. Hvert element er enten med eller ikke med, så der er to valg per element.
+
+**4.** Hvad er forskellen på en permutation og en kombination?
+
+> [!success]- Vis svar
+> En permutation tæller ordnede udvalg ($P(n,k) = \frac{n!}{(n-k)!}$). En kombination tæller uordnede udvalg ($\binom{n}{k} = \frac{n!}{k!(n-k)!}$). Rækkefølgen betyder noget i permutationen, ikke i kombinationen.
 
 **5.** Udregn $\sum_{i=1}^{100} i$.
 
@@ -40,7 +40,7 @@ Svar selv foerst, klik saa "Vis svar" for at tjekke. Der holdes ingen score, det
 **6.** Hvad betyder $a \equiv b \pmod{m}$?
 
 > [!success]- Vis svar
-> At $m$ gaar op i $(a-b)$, altsaa $a$ og $b$ har samme rest ved division med $m$. For eksempel $17 \equiv 5 \pmod{6}$.
+> At $m$ går op i $(a-b)$, altså $a$ og $b$ har samme rest ved division med $m$. For eksempel $17 \equiv 5 \pmod{6}$.
 
 ## Links
 

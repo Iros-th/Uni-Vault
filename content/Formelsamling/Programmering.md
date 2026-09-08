@@ -17,10 +17,10 @@ Nyttige tal- og kompleksitetsformler til programmering. Selve syntaksen ligger i
 | Notation | Navn | Eksempel |
 |---|---|---|
 | $O(1)$ | konstant | opslag i dictionary |
-| $O(\log n)$ | logaritmisk | binaer soegning |
-| $O(n)$ | lineaer | gennemloeb af en liste |
+| $O(\log n)$ | logaritmisk | binær søgning |
+| $O(n)$ | lineær | gennemløb af en liste |
 | $O(n \log n)$ | linearitmisk | effektiv sortering |
-| $O(n^2)$ | kvadratisk | to indlejrede loekker |
+| $O(n^2)$ | kvadratisk | to indlejrede løkker |
 | $O(2^n)$ | eksponentiel | naiv rekursion |
 
 ## Logaritmer og potenser
@@ -31,17 +31,17 @@ $$\log_b x = \frac{\log x}{\log b}, \qquad 2^{10} = 1024 \approx 10^3$$
 
 ## Nyttige summer
 
-Antal skridt i en fuld dobbeltloekke:
+Antal skridt i en fuld dobbeltløkke:
 
 $$\sum_{i=1}^{n} i = \frac{n(n+1)}{2} = O(n^2)$$
 
-En balanceret binaer traestruktur med $n$ knuder har hoejde cirka $\log_2 n$.
+En balanceret binær træstruktur med $n$ knuder har højde cirka $\log_2 n$.
 
-## Tal og repraesentation
+## Tal og repræsentation
 
-Et heltal med $b$ bit kan repraesentere $2^b$ forskellige vaerdier. Fx $2^{8} = 256$ og $2^{32} = 4\,294\,967\,296$.
+Et heltal med $b$ bit kan repræsentere $2^b$ forskellige værdier. Fx $2^{8} = 256$ og $2^{32} = 4\,294\,967\,296$.
 
-Flydende tal foelger IEEE 754, derfor er $0{,}1 + 0{,}2 \neq 0{,}3$ praecist.
+Flydende tal følger IEEE 754, derfor er $0{,}1 + 0{,}2 \neq 0{,}3$ præcist.
 
 ## Links
 

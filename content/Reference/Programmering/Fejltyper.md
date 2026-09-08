@@ -4,7 +4,7 @@ publish: true
 type: reference
 tags:
   - programmering
-  - fejlhaandtering
+  - fejlhåndtering
   - python
 ---
 

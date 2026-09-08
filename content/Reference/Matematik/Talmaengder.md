@@ -4,8 +4,8 @@ publish: true
 type: reference
 tags:
   - matematik
-  - talmaengder
-  - maengdelaere
+  - talmængder
+  - mængdelære
 ---
 
 # Talmængder (Number Sets)

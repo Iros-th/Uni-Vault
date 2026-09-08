@@ -7,7 +7,7 @@ tags:
   - programming
   - python
   - fejl
-  - fejlhaandtering
+  - fejlhåndtering
 ---
 
 # Fejlhåndtering

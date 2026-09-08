@@ -10,11 +10,11 @@ tags:
 
 # Kemiske konstanter
 
-Fysiske og kemiske konstanter med symbol, vaerdi og enhed. De rent matematiske konstanter ligger paa [[Reference/Matematik/Matematiske konstanter|Matematiske konstanter]].
+Fysiske og kemiske konstanter med symbol, værdi og enhed. De rent matematiske konstanter ligger på [[Reference/Matematik/Matematiske konstanter|Matematiske konstanter]].
 
 ## Fundamentale konstanter
 
-| Symbol | Navn | Vaerdi | Enhed |
+| Symbol | Navn | Værdi | Enhed |
 |:---:|---|---|---|
 | $N_A$ | Avogadros tal | $6{,}022 \times 10^{23}$ | $\text{mol}^{-1}$ |
 | $R$ | Gaskonstanten | $8{,}314$ | $\text{J/(mol}\cdot\text{K)}$ |
@@ -27,9 +27,9 @@ Fysiske og kemiske konstanter med symbol, vaerdi og enhed. De rent matematiske k
 | $m_p$ | Protonmasse | $1{,}673 \times 10^{-27}$ | $\text{kg}$ |
 | $u$ | Atommasseenhed | $1{,}661 \times 10^{-27}$ | $\text{kg}$ |
 
-## Nyttige stoerrelser
+## Nyttige størrelser
 
-| Symbol | Navn | Vaerdi | Enhed |
+| Symbol | Navn | Værdi | Enhed |
 |:---:|---|---|---|
 | $V_m$ | Molvolumen (STP, $0\,^\circ\text{C}$, $1$ atm) | $22{,}414$ | $\text{L/mol}$ |
 | $V_m$ | Molvolumen ($25\,^\circ\text{C}$, $1$ bar) | $24{,}79$ | $\text{L/mol}$ |
@@ -37,9 +37,9 @@ Fysiske og kemiske konstanter med symbol, vaerdi og enhed. De rent matematiske k
 | $p_0$ | Standardtryk | $1{,}013 \times 10^{5}$ | $\text{Pa}$ |
 | $K_w$ | Vands ionprodukt ($25\,^\circ\text{C}$) | $1{,}0 \times 10^{-14}$ | $\text{mol}^2/\text{L}^2$ |
 
-## Sammenhaenge
+## Sammenhænge
 
-Gaskonstanten og Boltzmanns konstant haenger sammen via Avogadros tal:
+Gaskonstanten og Boltzmanns konstant hænger sammen via Avogadros tal:
 
 $$R = k_B \cdot N_A$$
 
@@ -50,6 +50,6 @@ $$F = e \cdot N_A$$
 ## Links
 
 - [[Formelsamling/Kemi|Formelsamling: Kemi]]
-- [[Reference/Kemi/Grundlaeggende begreber|Grundlaeggende kemibegreber]]
+- [[Reference/Kemi/Grundlaeggende begreber|Grundlæggende kemibegreber]]
 - [[Reference/Kemi/Periodisk system|Periodisk system]]
 - [[Glossary]]

@@ -27,7 +27,7 @@ Der er en lille **knap til at skifte mellem lys og mørk** (dark mode). Sidder d
 
 ## Bladr via mapper og tags
 
-I **sidebjælken** kan du folde mapperne ud og gå ind i et fag ad gangen, fx Programming eller Statistics. Hver note har også **tags** (fx python eller loekker), og du kan klikke på et tag for at se alle noter med samme emne samlet.
+I **sidebjælken** kan du folde mapperne ud og gå ind i et fag ad gangen, fx Programming eller Statistics. Hver note har også **tags** (fx python eller løkker), og du kan klikke på et tag for at se alle noter med samme emne samlet.
 
 ## Værktøjer til eksamen
 

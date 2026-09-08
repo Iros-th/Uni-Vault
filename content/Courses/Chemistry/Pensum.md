@@ -10,21 +10,21 @@ tags:
 
 # Pensum: Chemistry
 
-Her samler jeg fagets pensum og laeseplan. Lige nu er siden tom og klar til at fylde ud.
+Her samler jeg fagets pensum og læseplan. Lige nu er siden tom og klar til at fylde ud.
 
 ## Emneoversigt
 
-Skriv de officielle emner eller uger her naar du har dem (fx fra kursusbasen eller undervisningsplanen).
+Skriv de officielle emner eller uger her når du har dem (fx fra kursusbasen eller undervisningsplanen).
 
 - (emne udfyldes)
 
-## Laesning
+## Læsning
 
-- (kapitler, boeger og noter udfyldes)
+- (kapitler, bøger og noter udfyldes)
 
 ## Eksamensform
 
-- (form, hjaelpemidler og dato udfyldes)
+- (form, hjælpemidler og dato udfyldes)
 
 ## Links
 

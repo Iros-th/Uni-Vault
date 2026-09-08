@@ -11,7 +11,7 @@ tags:
 
 # Det Periodiske System
 
-Et interaktivt opslagsvaerk over alle 118 grundstoffer. Klik paa et grundstof for at se detaljerede kemiske egenskaber: atommasse, elektronkonfiguration, Pauling-elektronegativitet, oxidationstrin og smelte/kogepunkter. Tabellen koerer helt lokalt i din browser, uden internetopkald, saa den virker ogsaa offline.
+Et interaktivt opslagsværk over alle 118 grundstoffer. Før musen hen over et grundstof for at se dets data med det samme, og klik (eller tryk Enter) for at fastholde det. Hold musen over et grundstof eller en farve i signaturforklaringen for at fremhæve hele kategorien. Hvert grundstof viser atommasse, elektronkonfiguration, Pauling-elektronegativitet, oxidationstrin og smelte/kogepunkter. Tabellen kører helt lokalt i din browser, uden internetopkald, så den virker også offline.
 
 <div class="ptable-legend" id="ptable-legend"></div>
 
@@ -22,8 +22,8 @@ Et interaktivt opslagsvaerk over alle 118 grundstoffer. Klik paa et grundstof fo
 </div>
 
 <div id="ptable-details" class="ptable-preview">
-  <h3>Vaelg et grundstof</h3>
-  <p>Klik paa et vilkaarligt grundstof i tabellen ovenfor for at inspicere atomnummer, atommasse, elektronegativitet og tilstandsformer.</p>
+  <h3>Vælg et grundstof</h3>
+  <p>Før musen hen over (eller klik på) et vilkårligt grundstof i tabellen ovenfor for at inspicere atomnummer, atommasse, elektronegativitet, elektronkonfiguration og tilstandsformer.</p>
 </div>
 
 Se ogsaa: [[Reference/Kemi/Kemiske konstanter|Kemiske konstanter]], [[Reference/Kemi/Kemiske symboler og notation|Kemiske symboler]], [[Reference/Kemi/Grundlaeggende begreber|Grundlaeggende kemibegreber]] og kurset [[Courses/Chemistry/Chemistry|Kemi]].
@@ -153,15 +153,46 @@ const elements = [
 const catLegend = [
   ["cat-alkali","Alkalimetal"],["cat-alkaline","Jordalkalimetal"],["cat-transition","Overgangsmetal"],
   ["cat-post-transition","Post-overgangsmetal"],["cat-metalloid","Halvmetal"],["cat-nonmetal","Ikke-metal"],
-  ["cat-halogen","Halogen"],["cat-noble","Aedelgas"],["cat-lanthanide","Lanthanid"],["cat-actinide","Actinid"],
+  ["cat-halogen","Halogen"],["cat-noble","Ædelgas"],["cat-lanthanide","Lanthanid"],["cat-actinide","Actinid"],
 ];
+
+// The element that is "pinned" by a click, so it stays shown after the mouse
+// leaves the grid. Hovering always previews live on top of this.
+let pinnedEl = null;
+
+function highlightCategory(cat) {
+  const grid = document.getElementById("ptable-grid");
+  if (!grid) return;
+  grid.classList.add("dim-others");
+  for (const cell of grid.querySelectorAll(".ptable-cell")) {
+    const match = cell.getAttribute("data-cat") === cat && !cell.classList.contains("ptable-marker");
+    cell.classList.toggle("hl", match);
+  }
+}
+
+function clearHighlight() {
+  const grid = document.getElementById("ptable-grid");
+  if (!grid) return;
+  grid.classList.remove("dim-others");
+  for (const cell of grid.querySelectorAll(".ptable-cell.hl")) {
+    cell.classList.remove("hl");
+  }
+}
 
 function renderLegend() {
   const box = document.getElementById("ptable-legend");
   if (!box) return;
   box.innerHTML = catLegend.map(([c,label]) =>
-    `<span class="ptable-legend-item"><span class="ptable-legend-swatch ${c}"></span>${label}</span>`
+    `<button type="button" class="ptable-legend-item" data-cat="${c}"><span class="ptable-legend-swatch ${c}"></span>${label}</button>`
   ).join("");
+  // Hovering or focusing a legend entry lights up that whole category.
+  for (const item of box.querySelectorAll(".ptable-legend-item")) {
+    const cat = item.getAttribute("data-cat");
+    item.addEventListener("mouseenter", () => highlightCategory(cat));
+    item.addEventListener("focus", () => highlightCategory(cat));
+    item.addEventListener("mouseleave", clearHighlight);
+    item.addEventListener("blur", clearHighlight);
+  }
 }
 
 function renderTable() {
@@ -192,6 +223,7 @@ function renderTable() {
     card.className = "ptable-cell " + el.cat;
     card.style.gridColumn = el.group;
     card.style.gridRow = el.period;
+    card.setAttribute("data-cat", el.cat);
     card.setAttribute("role", "button");
     card.setAttribute("tabindex", "0");
     card.setAttribute("aria-label", el.name + " (" + el.s + "), atomnummer " + el.n);
@@ -200,40 +232,78 @@ function renderTable() {
       <div class="ptable-sym">${el.s}</div>
       <div class="ptable-name">${el.name}</div>
     `;
-    card.onclick = () => showElementDetails(el);
-    card.onkeydown = (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); showElementDetails(el); } };
+
+    // Live preview on hover and keyboard focus (this is what makes it feel like
+    // ptable.com): the detail panel updates immediately and the element's whole
+    // category is highlighted.
+    const preview = () => {
+      showElementDetails(el, false);
+      highlightCategory(el.cat);
+    };
+    const unpreview = () => {
+      clearHighlight();
+      if (pinnedEl) showElementDetails(pinnedEl, true);
+    };
+    card.addEventListener("mouseenter", preview);
+    card.addEventListener("mouseleave", unpreview);
+    card.addEventListener("focus", preview);
+    card.addEventListener("blur", unpreview);
+
+    // Click / Enter / Space pins the element so it stays after the mouse leaves.
+    const pin = () => {
+      pinnedEl = el;
+      showElementDetails(el, true);
+      for (const c of container.querySelectorAll(".ptable-cell.selected")) {
+        c.classList.remove("selected");
+      }
+      card.classList.add("selected");
+    };
+    card.addEventListener("click", pin);
+    card.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); pin(); }
+    });
+
     container.appendChild(card);
   });
+
+  // Re-show whatever was pinned before an SPA re-render, if it is still valid.
+  if (pinnedEl) showElementDetails(pinnedEl, true);
 }
 
-function showElementDetails(el) {
+function showElementDetails(el, pinned) {
   const details = document.getElementById("ptable-details");
   if (!details) return;
 
-  details.innerHTML = `
-    <div style="display: flex; justify-content: space-between; align-items: baseline; border-bottom: 2px solid var(--secondary); padding-bottom: 0.5rem; margin-bottom: 0.8rem; flex-wrap: wrap; gap: 0.5rem;">
-      <h2 style="margin: 0; font-size: 1.6rem;">${el.name} (${el.s}) <span style="font-size: 1rem; color: var(--gray);">Atomnummer: ${el.n}</span></h2>
-      <span class="status-badge complete">${el.cName}</span>
-    </div>
+  const periodGroup = el.period > 8
+    ? (el.cat === "cat-lanthanide" ? "6 (f-blok, lanthanider)" : "7 (f-blok, actinider)")
+    : el.period + " / " + el.group;
 
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; font-size: 0.95rem;">
-      <div>
-        <strong>Atommasse:</strong> ${el.mass} u<br>
-        <strong>Elektronkonfiguration:</strong> <code>${el.eConf}</code><br>
-        <strong>Oxidationstrin:</strong> ${el.ox}<br>
-        <strong>Periode / gruppe:</strong> ${el.period > 8 ? (el.cat === "cat-lanthanide" ? "6 (f-blok)" : "7 (f-blok)") : el.period + " / " + el.group}
+  details.innerHTML = `
+    <div class="ptable-detail-head">
+      <span class="ptable-detail-badge ${el.cat}">${el.n}</span>
+      <div class="ptable-detail-title">
+        <h3>${el.s} <span class="ptable-detail-name">${el.name}</span></h3>
+        <span class="status-badge complete">${el.cName}</span>
+        ${pinned ? '<span class="ptable-pin-note">fastholdt (klik et andet grundstof)</span>' : ''}
       </div>
-      <div>
-        <strong>Elektronegativitet (Pauling):</strong> ${el.en}<br>
-        <strong>Fysisk tilstand (25 grader C):</strong> ${el.state}<br>
-        <strong>Smeltepunkt:</strong> ${el.melt} grader C<br>
-        <strong>Kogepunkt:</strong> ${el.boil} grader C
-      </div>
+    </div>
+    <div class="ptable-detail-grid">
+      <div><span>Atomnummer</span><strong>${el.n}</strong></div>
+      <div><span>Symbol</span><strong>${el.s}</strong></div>
+      <div><span>Atommasse</span><strong>${el.mass} u</strong></div>
+      <div><span>Kategori</span><strong>${el.cName}</strong></div>
+      <div><span>Periode / gruppe</span><strong>${periodGroup}</strong></div>
+      <div><span>Elektronkonfiguration</span><strong><code>${el.eConf}</code></strong></div>
+      <div><span>Elektronegativitet (Pauling)</span><strong>${el.en}</strong></div>
+      <div><span>Oxidationstrin</span><strong>${el.ox}</strong></div>
+      <div><span>Tilstand (25 grader C)</span><strong>${el.state}</strong></div>
+      <div><span>Smeltepunkt</span><strong>${el.melt} grader C</strong></div>
+      <div><span>Kogepunkt</span><strong>${el.boil} grader C</strong></div>
     </div>
   `;
 }
 
-// Initialiser naar DOM er klar, og igen ved SPA-navigation i Quartz.
+// Initialiser når DOM er klar, og igen ved SPA-navigation i Quartz.
 if (document.readyState === "loading") {
   document.addEventListener("DOMContentLoaded", renderTable);
 } else {

@@ -14,13 +14,13 @@ Hurtig oversigt over de vigtigste formler i deskriptiv statistik og sandsynlighe
 
 ## Deskriptiv statistik
 
-| Stoerrelse | Formel | Betydning |
+| Størrelse | Formel | Betydning |
 |---|---|---|
-| Middelvaerdi | $\bar{x} = \dfrac{1}{n}\sum_{i=1}^{n} x_i$ | Gennemsnittet af observationerne |
-| Varians (stikproeve) | $s^2 = \dfrac{1}{n-1}\sum_{i=1}^{n}(x_i - \bar{x})^2$ | Middel af kvadrerede afvigelser |
+| Middelværdi | $\bar{x} = \dfrac{1}{n}\sum_{i=1}^{n} x_i$ | Gennemsnittet af observationerne |
+| Varians (stikprøve) | $s^2 = \dfrac{1}{n-1}\sum_{i=1}^{n}(x_i - \bar{x})^2$ | Middel af kvadrerede afvigelser |
 | Spredning | $s = \sqrt{s^2}$ | Kvadratroden af variansen |
-| Median | midterste vaerdi | Robust over for outliers |
-| Variationsbredde | $\max - \min$ | Spredning fra mindste til stoerste |
+| Median | midterste værdi | Robust over for outliers |
+| Variationsbredde | $\max - \min$ | Spredning fra mindste til største |
 
 ## Sandsynlighed
 
@@ -30,7 +30,7 @@ $$P(A \cup B) = P(A) + P(B) - P(A \cap B)$$
 
 $$P(A \mid B) = \frac{P(A \cap B)}{P(B)}, \qquad P(B) \neq 0$$
 
-Uafhaengige haendelser: $P(A \cap B) = P(A)\,P(B)$.
+Uafhængige hændelser: $P(A \cap B) = P(A)\,P(B)$.
 
 ## Standardisering og normalfordeling
 
@@ -38,7 +38,7 @@ $$z = \frac{x - \mu}{\sigma}$$
 
 For $X \sim N(\mu, \sigma^2)$ ligger cirka $68\%$ inden for $\mu \pm \sigma$, $95\%$ inden for $\mu \pm 2\sigma$ og $99{,}7\%$ inden for $\mu \pm 3\sigma$.
 
-## Konfidensinterval for middelvaerdi
+## Konfidensinterval for middelværdi
 
 $$\bar{x} \pm z_{1-\alpha/2}\,\frac{\sigma}{\sqrt{n}}$$
 

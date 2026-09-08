@@ -14,22 +14,22 @@ Kernebegreberne i faget. De fulde definitioner ligger i [[Glossary]] og matemati
 
 ## Logik
 
-### Udsagn og sandhedsvaerdi
-En paastand der er enten sand eller falsk.
+### Udsagn og sandhedsværdi
+En påstand der er enten sand eller falsk.
 
 ### Kvantorer
 "For alle" ($\forall$) og "der findes" ($\exists$). Se [[Reference/Matematik/Logiske symboler|Logiske symboler]].
 
-### Implikation og aekvivalens
+### Implikation og ækvivalens
 $\Rightarrow$ og $\Leftrightarrow$. Se [[Reference/Matematik/Matematiske begreber|Matematiske begreber]].
 
-## Maengder og tal
+## Mængder og tal
 
-### Maengde og delmaengde
+### Mængde og delmængde
 Samlinger af elementer. Se [[Reference/Matematik/Matematiske symboler|Matematiske symboler]].
 
-### Talmaengder
-$\mathbb{N}, \mathbb{Z}, \mathbb{Q}, \mathbb{R}, \mathbb{C}$. Se [[Reference/Matematik/Talmaengder|Talmaengder]].
+### Talmængder
+$\mathbb{N}, \mathbb{Z}, \mathbb{Q}, \mathbb{R}, \mathbb{C}$. Se [[Reference/Matematik/Talmaengder|Talmængder]].
 
 ## Bevis
 

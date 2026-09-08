@@ -89,10 +89,10 @@ En proces, hvor et atom, ion eller molekyle afgiver elektroner. Oxidationstrinne
 ## Reduktion
 En proces, hvor et atom, ion eller molekyle optager elektroner. Oxidationstrinnet falder.
 
-## Syre (Broensted)
+## Syre (Brønsted)
 En kemisk partikel (molekyle eller ion), der kan afgive en proton ($\text{H}^+$).
 
-## Base (Broensted)
+## Base (Brønsted)
 En kemisk partikel, der kan optage en proton ($\text{H}^+$).
 
 ## pH

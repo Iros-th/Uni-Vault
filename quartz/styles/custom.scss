@@ -300,6 +300,115 @@ th {
   z-index: 11;
 }
 
+/* Category highlight: when hovering an element or a legend entry, the rest of
+   the table dims so the whole category stands out (ptable-style). */
+.ptable-grid.dim-others .ptable-cell:not(.hl):not(.ptable-marker) {
+  opacity: 0.28;
+  filter: saturate(0.4);
+}
+
+.ptable-cell.hl {
+  outline: 2px solid var(--dark);
+  outline-offset: 1px;
+  z-index: 6;
+}
+
+/* The element pinned by a click */
+.ptable-cell.selected {
+  outline: 3px solid var(--secondary);
+  outline-offset: 1px;
+  z-index: 12;
+}
+
+/* Legend entries are buttons so they can be hovered and focused */
+.ptable-legend-item {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+.ptable-legend-item:hover,
+.ptable-legend-item:focus-visible {
+  color: var(--secondary);
+  outline: none;
+}
+
+/* Rich detail panel */
+.ptable-detail-head {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  margin-bottom: 0.9rem;
+  border-bottom: 2px solid var(--secondary);
+  padding-bottom: 0.6rem;
+}
+
+.ptable-detail-badge {
+  flex: 0 0 auto;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--codeFont);
+  font-weight: 700;
+  font-size: 1.1rem;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.ptable-detail-title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.ptable-detail-title h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.ptable-detail-name {
+  color: var(--gray);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.ptable-pin-note {
+  font-size: 0.7rem;
+  color: var(--gray);
+  font-family: var(--codeFont);
+}
+
+.ptable-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.6rem 1.2rem;
+  font-family: var(--bodyFont);
+}
+
+.ptable-detail-grid > div {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid var(--lightgray);
+  padding-bottom: 0.3rem;
+}
+
+.ptable-detail-grid span {
+  font-size: 0.7rem;
+  color: var(--gray);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.ptable-detail-grid strong {
+  font-size: 0.95rem;
+  color: var(--dark);
+}
+
 /* Homepage contact call-to-action button */
 .home-contact-cta {
   display: inline-block;

@@ -6,7 +6,7 @@ type: note
 tags:
   - programming
   - python
-  - loekker
+  - løkker
   - for
   - while
 ---
@@ -82,7 +82,7 @@ for i in range(10):
 
 
 ### [[Glossary#enumerate|enumerate()]]
-- Hvis du både vil have elementet og dets plads (index) i en løkke, så er enumerate smart. Så slipper du for at holde styr på en taeller selv.
+- Hvis du både vil have elementet og dets plads (index) i en løkke, så er enumerate smart. Så slipper du for at holde styr på en tæller selv.
 
 ```python
 frugter = ["aeble", "banan", "paere"]

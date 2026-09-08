@@ -88,10 +88,10 @@ A process where an atom, ion or molecule gives away electrons. The oxidation sta
 ## Reduction
 A process where an atom, ion or molecule takes up electrons. The oxidation state falls.
 
-## Acid (Broensted)
+## Acid (Brønsted)
 A chemical particle (molecule or ion) that can donate a proton ($\text{H}^+$).
 
-## Base (Broensted)
+## Base (Brønsted)
 A chemical particle that can accept a proton ($\text{H}^+$).
 
 ## pH

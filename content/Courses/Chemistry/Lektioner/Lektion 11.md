@@ -14,7 +14,7 @@ tags:
 
 ## Begreber
 
-Nye begreber fra lektionen. Link dem til [[Courses/Chemistry/Begreber|Begreber]] og [[Glossary]] efterhaanden som de dukker op.
+Nye begreber fra lektionen. Link dem til [[Courses/Chemistry/Begreber|Begreber]] og [[Glossary]] efterhånden som de dukker op.
 
 ### (begreb udfyldes)
 
@@ -24,7 +24,7 @@ Nye begreber fra lektionen. Link dem til [[Courses/Chemistry/Begreber|Begreber]]
 
 ## Opgaver
 
-- (opgave eller oevelse udfyldes)
+- (opgave eller øvelse udfyldes)
 
 ## Links
 

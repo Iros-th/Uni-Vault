@@ -10,11 +10,11 @@ tags:
 
 # Lektion 10: (emne udfyldes)
 
-> Tom skabelon, klar til at fylde ud. Skriv lektionens emne i overskriften ovenfor naar du ved hvad den handlede om.
+> Tom skabelon, klar til at fylde ud. Skriv lektionens emne i overskriften ovenfor når du ved hvad den handlede om.
 
 ## Begreber
 
-Nye begreber fra lektionen. Link dem til [[Courses/Matematik 1A/Begreber|Begreber]] og [[Glossary]] efterhaanden som de dukker op.
+Nye begreber fra lektionen. Link dem til [[Courses/Matematik 1A/Begreber|Begreber]] og [[Glossary]] efterhånden som de dukker op.
 
 ### (begreb udfyldes)
 
@@ -24,7 +24,7 @@ Nye begreber fra lektionen. Link dem til [[Courses/Matematik 1A/Begreber|Begrebe
 
 ## Opgaver
 
-- (opgave eller oevelse udfyldes)
+- (opgave eller øvelse udfyldes)
 
 ## Links
 

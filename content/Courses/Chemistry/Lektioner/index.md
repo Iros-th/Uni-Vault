@@ -10,7 +10,7 @@ tags:
 
 # Lektioner: Chemistry
 
-En note per lektion, nummereret 1 til 13. De er tomme skabeloner lige nu: hver har en overskrift til emnet (staar som "udfyldes") plus faste afsnit til Begreber, Noter og Opgaver. Fyld dem ud efter hver forelaesning, saa bygger grafen og soegningen sig selv op via overskrifterne.
+En note per lektion, nummereret 1 til 13. De er tomme skabeloner lige nu: hver har en overskrift til emnet (står som "udfyldes") plus faste afsnit til Begreber, Noter og Opgaver. Fyld dem ud efter hver forelæsning, så bygger grafen og søgningen sig selv op via overskrifterne.
 
 ## Alle lektioner
 

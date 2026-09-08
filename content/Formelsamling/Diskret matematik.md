@@ -10,7 +10,7 @@ tags:
 
 # Formelsamling: Diskret matematik
 
-Logik, maengder, kombinatorik og summer samlet paa én side. Symbolerne er forklaret i [[Reference/Matematik/Logiske symboler|Logiske symboler]] og [[Reference/Matematik/Matematiske symboler|Matematiske symboler]].
+Logik, mængder, kombinatorik og summer samlet på én side. Symbolerne er forklaret i [[Reference/Matematik/Logiske symboler|Logiske symboler]] og [[Reference/Matematik/Matematiske symboler|Matematiske symboler]].
 
 ## Logiske ligheder
 
@@ -22,13 +22,13 @@ Logik, maengder, kombinatorik og summer samlet paa én side. Symbolerne er forkl
 | Implikation | $(P \implies Q) \iff (\neg P \lor Q)$ |
 | Distributiv | $P \land (Q \lor R) \iff (P \land Q) \lor (P \land R)$ |
 
-## Maengdelaere
+## Mængdelære
 
 $$|A \cup B| = |A| + |B| - |A \cap B|$$
 
 $$|\mathcal{P}(A)| = 2^{|A|}, \qquad |A \times B| = |A|\cdot|B|$$
 
-De Morgan for maengder: $\overline{A \cup B} = \overline{A} \cap \overline{B}$ og $\overline{A \cap B} = \overline{A} \cup \overline{B}$.
+De Morgan for mængder: $\overline{A \cup B} = \overline{A} \cap \overline{B}$ og $\overline{A \cap B} = \overline{A} \cup \overline{B}$.
 
 ## Kombinatorik
 
