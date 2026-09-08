@@ -26,7 +26,7 @@ Et interaktivt opslagsværk over alle 118 grundstoffer. Før musen hen over et g
   <p>Før musen hen over (eller klik på) et vilkårligt grundstof i tabellen ovenfor for at inspicere atomnummer, atommasse, elektronegativitet, elektronkonfiguration og tilstandsformer.</p>
 </div>
 
-Se ogsaa: [[Reference/Kemi/Kemiske konstanter|Kemiske konstanter]], [[Reference/Kemi/Kemiske symboler og notation|Kemiske symboler]], [[Reference/Kemi/Grundlaeggende begreber|Grundlaeggende kemibegreber]] og kurset [[Courses/Chemistry/Chemistry|Kemi]].
+Se også: [[Reference/Kemi/Kemiske konstanter|Kemiske konstanter]], [[Reference/Kemi/Kemiske symboler og notation|Kemiske symboler]], [[Reference/Kemi/Grundlaeggende begreber|Grundlæggende kemibegreber]] og kurset [[Courses/Chemistry/Chemistry|Kemi]].
 
 <script>
 const elements = [

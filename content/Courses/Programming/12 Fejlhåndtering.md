@@ -67,7 +67,7 @@ except ValueError:
 else:
     print("Gik godt, tallet er", tal)
 finally:
-    print("Faerdig")
+    print("Færdig")
 ```
 
 - Kilde: https://docs.python.org/3/tutorial/errors.html#defining-clean-up-actions
@@ -79,7 +79,7 @@ finally:
 ```python
 def saet_alder(alder):
     if alder < 0:
-        raise ValueError("Alder kan ikke vaere negativ")
+        raise ValueError("Alder kan ikke være negativ")
     return alder
 
 print(saet_alder(21))

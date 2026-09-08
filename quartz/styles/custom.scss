@@ -614,6 +614,9 @@ html {
     max-width: 100% !important;
     margin: 0 !important;
     padding: 0 !important;
+    background: white !important;
+    border: none !important;
+    box-shadow: none !important;
   }
 
   .course-grid, .ptable-wrapper {
@@ -622,5 +625,269 @@ html {
 
   table {
     font-size: 8.5pt;
+  }
+}
+
+/* ==========================================================================
+   2026 REFRESH - Obsidian-style app chrome + Google-Docs reading surface.
+
+   Everything below is layered on top of the existing tokens as CSS custom
+   properties, so light and dark both stay cohesive. Deliberate, restrained
+   choices: ONE accent (var(--secondary)), ONE radius scale, ONE spacing/shadow
+   scale. It does not touch the graph canvas internals, KaTeX, the periodic
+   table grid, or the contact modal logic - it only gives their frames a
+   consistent, calmer look.
+   ========================================================================== */
+
+:root {
+  /* radius + document metrics */
+  --ds-radius-sm: 6px;
+  --ds-radius: 10px;
+  --ds-radius-lg: 14px;
+  --ds-doc-width: 52rem;
+  --ds-doc-pad: clamp(1.4rem, 3.5vw, 3.1rem);
+  --ds-gap: 1rem;
+
+  /* Light surfaces (also the fallback before saved-theme is set). The page is a
+     muted warm grey; the document and panels lift off it. */
+  --ds-page-bg: #ece7df;
+  --ds-surface: #fffdf9;
+  --ds-panel: #f5f1ea;
+  --ds-panel-hover: #efe9e0;
+  --ds-border: var(--lightgray);
+  --ds-accent-soft: rgba(92, 122, 84, 0.12);
+  --ds-shadow: 0 1px 2px rgba(30, 25, 18, 0.05), 0 14px 34px rgba(30, 25, 18, 0.07);
+  --ds-shadow-panel: 0 1px 2px rgba(30, 25, 18, 0.05);
+}
+
+:root[saved-theme="dark"] {
+  --ds-page-bg: #141311;
+  --ds-surface: #201e1b;
+  --ds-panel: #1b1a17;
+  --ds-panel-hover: #24221e;
+  --ds-border: #2e2c28;
+  --ds-accent-soft: rgba(138, 171, 127, 0.16);
+  --ds-shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 16px 36px rgba(0, 0, 0, 0.5);
+  --ds-shadow-panel: 0 1px 2px rgba(0, 0, 0, 0.35);
+}
+
+/* App background: muted, so the document card reads as a distinct surface. */
+body {
+  background-color: var(--ds-page-bg);
+}
+
+/* --------------------------------------------------------------------------
+   GOOGLE-DOCS READING SURFACE
+   The article body becomes a clean "page": comfortable measure, generous
+   padding, a soft border and shadow. The page header (breadcrumbs / title /
+   meta / tags) is centred to the same width and padded to the same left edge,
+   so the title sits neatly above the page like a document toolbar.
+   -------------------------------------------------------------------------- */
+.center > article {
+  box-sizing: border-box;
+  max-width: var(--ds-doc-width);
+  margin: 0 auto 1.5rem auto;
+  padding: var(--ds-doc-pad);
+  background: var(--ds-surface);
+  border: 1px solid var(--ds-border);
+  border-radius: var(--ds-radius-lg);
+  box-shadow: var(--ds-shadow);
+  font-size: 1.03rem;
+  line-height: 1.75;
+}
+
+.page-header {
+  box-sizing: border-box;
+  max-width: var(--ds-doc-width);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--ds-doc-pad);
+  padding-right: var(--ds-doc-pad);
+}
+
+/* First and last block inside the page shouldn't add stray outer margin. */
+.center > article > :first-child {
+  margin-top: 0;
+}
+.center > article > :last-child {
+  margin-bottom: 0;
+}
+
+/* Calmer, stronger typographic hierarchy inside the document. */
+.center > article {
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--dark);
+    scroll-margin-top: 5rem;
+  }
+  h1 { font-size: 2.05rem; margin-top: 2rem; }
+  h2 { font-size: 1.5rem; margin-top: 2.1rem; padding-bottom: 0.2rem; border-bottom: 1px solid var(--ds-border); }
+  h3 { font-size: 1.2rem; margin-top: 1.6rem; }
+  h4 { font-size: 1.02rem; margin-top: 1.3rem; font-weight: 600; color: var(--darkgray); }
+  p { margin: 0.9rem 0; }
+  ul, ol { margin: 0.9rem 0; padding-left: 1.4rem; }
+  li { margin: 0.3rem 0; }
+  li > ul, li > ol { margin: 0.3rem 0; }
+}
+
+/* First heading of a page: no top border line (it already has the card edge). */
+.center > article > h1:first-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+/* --------------------------------------------------------------------------
+   OBSIDIAN-STYLE CHROME - top bar, left explorer, right panels.
+   Muted panels, subtle 1px borders, one accent, gentle hover states.
+   -------------------------------------------------------------------------- */
+
+/* Top navigation reads like an app title bar sitting on the page background. */
+.vault-nav {
+  background: color-mix(in srgb, var(--ds-page-bg) 82%, transparent);
+  border-bottom: 1px solid var(--ds-border);
+  padding: 0.55rem 0.2rem;
+  -webkit-backdrop-filter: saturate(180%) blur(8px);
+  backdrop-filter: saturate(180%) blur(8px);
+}
+
+/* Site title (left sidebar) */
+.page-title,
+a.page-title {
+  font-family: var(--headerFont);
+}
+
+/* Left sidebar file explorer - Obsidian file-tree feel. */
+.explorer-content {
+  padding: 0.35rem 0.35rem 0.6rem;
+  border: 1px solid var(--ds-border);
+  border-radius: var(--ds-radius);
+  background: var(--ds-panel);
+  box-shadow: var(--ds-shadow-panel);
+}
+
+.explorer-content li > a,
+.folder-container div > a {
+  border-radius: var(--ds-radius-sm);
+  padding: 0.18rem 0.45rem;
+  transition: background 0.12s ease, color 0.12s ease;
+}
+
+.explorer-content li > a:hover,
+.folder-container div > a:hover {
+  background: var(--ds-panel-hover);
+  color: var(--secondary);
+}
+
+/* Active note in the explorer: accent tint + accent left rule. */
+.explorer-content li > a.active {
+  background: var(--ds-accent-soft);
+  color: var(--secondary);
+  font-weight: 600;
+  box-shadow: inset 2px 0 0 var(--secondary);
+}
+
+button.explorer-toggle,
+button.desktop-explorer,
+button.mobile-explorer {
+  color: var(--dark);
+}
+
+/* Right sidebar panels - graph, TOC, backlinks, recent notes - share one look. */
+.graph > .graph-outer,
+.toc,
+.backlinks,
+.recent-notes {
+  background: var(--ds-panel);
+  border: 1px solid var(--ds-border);
+  border-radius: var(--ds-radius);
+  box-shadow: var(--ds-shadow-panel);
+  box-sizing: border-box;
+}
+
+.graph > .graph-outer {
+  padding: 0.55rem;
+}
+
+.toc,
+.backlinks,
+.recent-notes {
+  padding: 0.75rem 0.9rem;
+}
+
+/* Panel headings: quiet, uppercase, code-font labels (Obsidian side-panel feel). */
+.toc > h3,
+.toc-header > h3,
+.backlinks > h3,
+.recent-notes > h3,
+.graph > h3 {
+  font-family: var(--codeFont);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--gray);
+  margin: 0 0 0.5rem 0;
+}
+
+/* Backlink / recent list rows get a gentle hover. */
+.backlinks .backlink,
+.recent-notes .recent-ul > li {
+  border-radius: var(--ds-radius-sm);
+  transition: background 0.12s ease;
+}
+.backlinks .backlink:hover,
+.recent-notes .recent-ul > li:hover {
+  background: var(--ds-panel-hover);
+}
+
+/* Search modal + button pick up the same rounded, bordered surface. */
+.search > .search-button {
+  border: 1px solid var(--ds-border);
+  border-radius: var(--ds-radius);
+  background: var(--ds-panel);
+}
+.search > .search-button:hover {
+  background: var(--ds-panel-hover);
+  border-color: var(--secondary);
+}
+.search .search-container {
+  border-radius: var(--ds-radius-lg);
+}
+
+/* Callouts: refresh to the shared radius + surface (keeps the accent bar). */
+.callout {
+  border-radius: var(--ds-radius);
+  background: var(--ds-panel);
+  border: 1px solid var(--ds-border);
+  border-left: 3px solid var(--secondary);
+  box-shadow: var(--ds-shadow-panel);
+}
+
+/* Tables + code blocks + inputs align to the same radius scale. */
+th, td { border-color: var(--ds-border); }
+th { background: var(--ds-panel); }
+pre { border-radius: var(--ds-radius); border-color: var(--ds-border); }
+
+/* Footer sits on the muted page background, centred to the document width. */
+.page-footer,
+footer {
+  max-width: var(--ds-doc-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Mobile: relax the document margins so the card doesn't crowd the edges. */
+@media all and (max-width: 800px) {
+  .center > article {
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+    box-shadow: none;
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+  }
+  .page-header {
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
   }
 }
