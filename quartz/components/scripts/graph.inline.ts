@@ -550,14 +550,49 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
   }
 
   requestAnimationFrame(animate)
-  return () => {
-    stopAnimation = true
-    app.destroy()
+
+  // Recolour the already-rendered graph in place to match the current theme.
+  // This recomputes the CSS-variable colours and repaints the existing pixi
+  // nodes, labels and links WITHOUT destroying the app or restarting the
+  // simulation, so a dark/light toggle never tears the graph down and rebuilds
+  // it. getComputedStyle here reads the new theme because darkmode.inline.ts
+  // sets the `saved-theme` attribute before it dispatches "themechange".
+  function recolour() {
+    for (const key of cssVars) {
+      computedStyleMap[key] = getComputedStyle(document.documentElement).getPropertyValue(key)
+    }
+    for (const n of nodeRenderData) {
+      const nodeId = n.simulationData.id
+      const isTagNode = nodeId.startsWith("tags/")
+      const fill = isTagNode ? computedStyleMap["--light"] : color(n.simulationData)
+      n.color = fill
+      n.gfx.clear().circle(0, 0, nodeRadius(n.simulationData)).fill({ color: fill })
+      if (isTagNode) {
+        n.gfx.stroke({ width: 2, color: computedStyleMap["--tertiary"] })
+      }
+      n.label.style.fill = computedStyleMap["--dark"]
+    }
+    // Links are redrawn from l.color on every animation frame; refresh those.
+    renderLinks()
+  }
+
+  return {
+    cleanup: () => {
+      stopAnimation = true
+      app.destroy()
+    },
+    recolour,
   }
 }
 
 let localGraphCleanups: (() => void)[] = []
 let globalGraphCleanups: (() => void)[] = []
+// Recolour callbacks for the currently mounted local graphs, so a theme toggle
+// can repaint them in place instead of rebuilding them.
+let localGraphRecolours: (() => void)[] = []
+// The slug whose local graph is currently mounted, used to skip a needless
+// teardown/rebuild when the SPA re-fires nav for the same page.
+let lastLocalGraphSlug: FullSlug | null = null
 
 function cleanupLocalGraphs() {
   for (const cleanup of localGraphCleanups) {
@@ -578,16 +613,37 @@ document.addEventListener("nav", async (e: CustomEventMap["nav"]) => {
   addToVisited(simplifySlug(slug))
 
   async function renderLocalGraph() {
-    cleanupLocalGraphs()
     const localGraphContainers = document.getElementsByClassName("graph-container")
+    // The SPA router sometimes fires "nav" for the page we are already on
+    // (hash links, same-slug navigations). In that case the focal node and its
+    // neighbourhood are unchanged, so skip the teardown/rebuild (and its reinit
+    // flash) as long as the canvas is still mounted. If the container was
+    // swapped out by the router the canvas is gone, so we fall through and
+    // rebuild exactly as before.
+    const alreadyRendered =
+      lastLocalGraphSlug === slug &&
+      localGraphCleanups.length > 0 &&
+      Array.from(localGraphContainers).every((c) => c.querySelector("canvas") !== null)
+    if (alreadyRendered) return
+
+    lastLocalGraphSlug = slug
+    cleanupLocalGraphs()
+    localGraphRecolours = []
     for (const container of localGraphContainers) {
-      localGraphCleanups.push(await renderGraph(container as HTMLElement, slug))
+      const { cleanup, recolour } = await renderGraph(container as HTMLElement, slug)
+      localGraphCleanups.push(cleanup)
+      localGraphRecolours.push(recolour)
     }
   }
 
   await renderLocalGraph()
+
+  // A dark/light toggle should only recolour the graph, never rebuild it.
+  // Repaint the existing pixi objects in place instead of re-running renderGraph.
   const handleThemeChange = () => {
-    void renderLocalGraph()
+    for (const recolour of localGraphRecolours) {
+      recolour()
+    }
   }
 
   document.addEventListener("themechange", handleThemeChange)
@@ -608,7 +664,8 @@ document.addEventListener("nav", async (e: CustomEventMap["nav"]) => {
       const graphContainer = container.querySelector(".global-graph-container") as HTMLElement
       registerEscapeHandler(container, hideGlobalGraph)
       if (graphContainer) {
-        globalGraphCleanups.push(await renderGraph(graphContainer, slug))
+        const { cleanup } = await renderGraph(graphContainer, slug)
+        globalGraphCleanups.push(cleanup)
       }
     }
   }
