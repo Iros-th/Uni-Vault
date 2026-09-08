@@ -13,7 +13,7 @@ tags:
 
 # Løkker
 
-- for-løkke
+- [[Glossary#for-loop|for-løkke]]
 	- Gentager noget for hvert element i en sekvens, fx en liste eller en streng. Rigtig god når du ved hvor mange gange du skal køre, eller når du vil igennem alle elementer.
 
 ```python
@@ -25,7 +25,7 @@ for frugt in frugter:
 	- Kilde: https://docs.python.org/3/tutorial/controlflow.html#for-statements
 
 
-- range()
+- [[Glossary#range|range()]]
 	- Sammensat (range laver en sekvens af tal)
 	- Bruges sammen med for når du bare vil tælle. range(5) giver 0, 1, 2, 3, 4.
 	- VIGTIGT: range tæller fra 0 og stopper LIGE FØR det sidste tal. range(1, 5) giver 1, 2, 3, 4 og ikke 5.
@@ -52,7 +52,7 @@ for i in range(0, 10, 2):
 	- Kilde: https://docs.python.org/3/library/functions.html#func-range
 
 
-- while-løkke
+- [[Glossary#while-loop|while-løkke]]
 	- Kører så længe betingelsen er sand. God når du ikke ved på forhånd hvor mange gange det skal køre.
 	- VIGTIGT: husk at ændre på noget inde i løkken så betingelsen på et tidspunkt bliver falsk. Ellers kører den i evig løkke og programmet fryser.
 
@@ -81,7 +81,7 @@ for i in range(10):
 	- Kilde: https://docs.python.org/3/tutorial/controlflow.html#break-and-continue-statements
 
 
-- enumerate()
+- [[Glossary#enumerate|enumerate()]]
 	- Hvis du både vil have elementet og dets plads (index) i en løkke, så er enumerate smart. Så slipper du for at holde styr på en taeller selv.
 
 ```python

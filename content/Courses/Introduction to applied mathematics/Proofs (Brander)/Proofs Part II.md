@@ -35,11 +35,11 @@ Counting arguments and mathematical induction. Two of the most reused tools in t
 		- Same set, counted so the pairing is obvious, and the formula falls out.
 
 
-- **Bijections (one-to-one correspondence)**
+- **[[Glossary#bijection|Bijections]] (one-to-one correspondence)**
 
 	- Idea: two sets have the same size exactly when you can pair their elements up perfectly, no leftovers on either side.
 
-	- A bijection is a map $f$ that is both injective (no two inputs share an output) and surjective (every output is hit). If one exists, $|A| = |B|$.
+	- A bijection is a map $f$ that is both [[Glossary#injective|injective]] (no two inputs share an output) and [[Glossary#surjective|surjective]] (every output is hit). If one exists, $|A| = |B|$.
 
 	- This is how we compare infinite sets too, where "just count them" is not available.
 
@@ -54,15 +54,15 @@ Counting arguments and mathematical induction. Two of the most reused tools in t
 		- A bijection exists, so $|\mathbb{Z}| = |2\mathbb{Z}|$, even though one set sits inside the other.
 
 
-- **Mathematical induction**
+- **Mathematical [[Glossary#induction|induction]]**
 
 	- Idea: to prove a statement $P(n)$ for all $n$ from some starting point, knock over the first domino and show each domino knocks over the next one.
 
 	- Two ingredients:
 
-		- **Base case**: check $P$ holds at the starting value (often $n = 1$).
+		- **[[Glossary#base-case|Base case]]**: check $P$ holds at the starting value (often $n = 1$).
 
-		- **Inductive step**: assume $P(k)$ (the induction hypothesis), then prove $P(k+1)$.
+		- **[[Glossary#inductive-step|Inductive step]]**: assume $P(k)$ (the induction hypothesis), then prove $P(k+1)$.
 
 	- If both hold, $P(n)$ is true for every $n$ at or above the base.
 
@@ -77,7 +77,7 @@ Counting arguments and mathematical induction. Two of the most reused tools in t
 		- That is exactly the formula with $k+1$ plugged in, so $P(k+1)$ holds. Done.
 
 
-- **Strong induction**
+- **[[Glossary#strong-induction|Strong induction]]**
 
 	- Idea: same as ordinary induction, but in the step you get to assume $P$ holds for all values up to $k$, not just the single previous one.
 

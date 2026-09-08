@@ -12,7 +12,7 @@ tags:
 
 # Funktioner
 
-- def (definer en funktion)
+- [[Glossary#def|def]] (definer en funktion)
 	- En funktion er en bid kode du kan genbruge. Du definerer den en gang og kalder den så mange gange du vil. Husk kolon og indrykning.
 
 ```python
@@ -40,7 +40,7 @@ sig_hej("Anna")
 	- Kilde: https://docs.python.org/3/tutorial/controlflow.html#defining-functions
 
 
-- return
+- [[Glossary#return|return]]
 	- return sender en værdi tilbage ud af funktionen så du kan bruge den videre. Det er forskellen på at printe noget og at faktisk give et resultat tilbage.
 	- VIGTIGT: så snart return køres, stopper funktionen. Kode efter return i samme blok bliver aldrig kørt.
 
@@ -69,7 +69,7 @@ sig_hej("Iros")
 	- Kilde: https://docs.python.org/3/tutorial/controlflow.html#default-argument-values
 
 
-- Scope (rækkevidde af variabler)
+- [[Glossary#scope|Scope]] (rækkevidde af variabler)
 	- Variabler du laver inde i en funktion findes kun inde i funktionen. Udenfor kender Python dem ikke. Det kaldes lokalt scope.
 	- VIGTIGT: prøver du at bruge en lokal variabel udenfor funktionen får du en NameError. Vil du have værdien ud, så brug return.
 

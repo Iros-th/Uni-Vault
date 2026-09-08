@@ -22,12 +22,12 @@ Core proof methods from Brander Part I. The point is not memorising tricks, it i
 
 	- Every step has to be forced. If a reader can say "why does that follow", the step is not done yet.
 
-	- Axioms are the foundation. An axiom is a statement we accept as true without proving it, for example addition of real numbers is commutative, $a + b = b + a$.
+	- Axioms are the foundation. An [[Glossary#axiom|axiom]] is a statement we accept as true without proving it, for example addition of real numbers is commutative, $a + b = b + a$.
 
 	- So the skeleton is always: assume the hypothesis, apply valid rules, arrive at the conclusion.
 
 
-- **Direct proof**
+- **[[Glossary#direct-proof|Direct proof]]**
 
 	- Idea: assume the hypothesis $P$ is true, then walk straight to the conclusion $Q$ using definitions and known facts.
 
@@ -42,13 +42,13 @@ Core proof methods from Brander Part I. The point is not memorising tricks, it i
 		- $m + n$ is an integer, so $a + b$ is $2 \times (\text{integer})$, which is even. Done.
 
 
-- **Proof by contradiction (indirect)**
+- **[[Glossary#proof-by-contradiction|Proof by contradiction]] (indirect)**
 
 	- Idea: assume the claim is false, then show that assumption forces something impossible. Since it cannot be false, it is true.
 
 	- Key move: you get a free extra assumption (the negation), and you hunt for the clash.
 
-	- Worked example: $\sqrt{2}$ is irrational.
+	- Worked example: $\sqrt{2}$ is [[Glossary#irrational|irrational]].
 
 		- Suppose instead $\sqrt{2} = \frac{p}{q}$ with $p, q$ integers sharing no common factor (fraction in lowest terms).
 
@@ -59,7 +59,7 @@ Core proof methods from Brander Part I. The point is not memorising tricks, it i
 		- But now $p$ and $q$ are both even, which contradicts "no common factor". Impossible, so $\sqrt{2}$ is irrational.
 
 
-- **Proof by contrapositive**
+- **[[Glossary#contrapositive|Proof by contrapositive]]**
 
 	- Idea: "if $P$ then $Q$" is logically the same statement as "if not $Q$ then not $P$". Prove the second one instead.
 
@@ -76,7 +76,7 @@ Core proof methods from Brander Part I. The point is not memorising tricks, it i
 		- The contrapositive holds, so the original does too.
 
 
-- **Disproof by counterexample**
+- **Disproof by [[Glossary#counterexample|counterexample]]**
 
 	- Idea: a claim that says "for all" is killed by a single example where it fails. You do not prove anything positive, you just break the universal.
 

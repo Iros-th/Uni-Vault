@@ -9,7 +9,7 @@ I write everything in Obsidian and publish it with Quartz. Only the notes I mark
 
 Best way to look around: use the **search** box, poke at the **graph view** to see how notes connect, or just open a course below. Every note has its **backlinks** at the bottom so you can follow the trail.
 
-New here? Start with the [[how-to-use-this-vault|How to use this vault]] guide.
+New here? Start with the [[how-to-use-this-vault|How to use this vault]] guide. There is also a [[Glossary]] of the key terms and functions, and hovering any linked term shows its definition in a little popup.
 
 ## Courses
 
@@ -25,6 +25,12 @@ New here? Start with the [[how-to-use-this-vault|How to use this vault]] guide.
 - [[Courses/Matematik 1A/Matematik 1A|Matematik 1A]]
 
 A lot of these are still pretty empty. I am filling them in as I go through the term.
+
+## Study tools
+
+- [[Glossary]], plain-language definitions of the key terms and functions.
+- [[Flashcards]], quick reveal-on-click revision cards from the notes.
+- [[Self-Tests]], short quizzes per subject with hidden answers.
 
 ## Contact
 

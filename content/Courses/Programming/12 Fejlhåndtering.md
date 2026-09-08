@@ -12,7 +12,7 @@ tags:
 
 # Fejlhåndtering
 
-- try og except
+- [[Glossary#try-and-except|try og except]]
 	- Koden i try bliver forsøgt. Går noget galt, hopper Python ned i except i stedet for at crashe hele programmet. Super til ting der kan gå galt, fx input fra en bruger.
 
 ```python

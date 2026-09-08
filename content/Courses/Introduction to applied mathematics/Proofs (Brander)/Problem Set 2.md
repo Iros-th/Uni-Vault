@@ -84,12 +84,12 @@ Worked solutions in bullet style. P5 is where my handwritten assignment answers 
 
 - **P5: Fibonacci growth**
 
-	- Setup: Fibonacci numbers $F(1) = 1$, $F(2) = 1$, and $F(n) = F(n-1) + F(n-2)$ for $n \ge 3$.
+	- Setup: [[Glossary#fibonacci|Fibonacci]] numbers $F(1) = 1$, $F(2) = 1$, and the [[Glossary#recurrence|recurrence]] $F(n) = F(n-1) + F(n-2)$ for $n \ge 3$.
 
 	- Handy values for later: $F(14) = 377$, $F(15) = 610$.
 
 
-	- **P5b: prove $F(n) > n^2$ for all $n \ge 14$ (strong induction)**
+	- **P5b: prove $F(n) > n^2$ for all $n \ge 14$ ([[Glossary#strong-induction|strong induction]])**
 
 		- Because the recurrence uses the two previous terms $F(k)$ and $F(k-1)$, the step reaches back two steps. So the proof needs TWO base cases, $F(14)$ and $F(15)$, not one. With a single base case the very first step would reach below where anything is checked.
 

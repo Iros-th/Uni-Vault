@@ -41,13 +41,13 @@ Worked solutions in bullet style. Where the exact wording of a problem was not f
 
 - **Problem 2: reciprocal of a rational or irrational (true or false)**
 
-	- Statement, part a: if $x$ is a nonzero rational, then $\frac{1}{x}$ is rational. TRUE.
+	- Statement, part a: if $x$ is a nonzero [[Glossary#rational|rational]], then $\frac{1}{x}$ is rational. TRUE.
 
 		- Let $x = \frac{p}{q}$ with $p, q$ nonzero integers.
 
 		- Then $\frac{1}{x} = \frac{q}{p}$, which is again a ratio of integers with nonzero bottom, so it is rational. Done.
 
-	- Statement, part b: if $x$ is irrational, then $\frac{1}{x}$ is irrational. TRUE.
+	- Statement, part b: if $x$ is [[Glossary#irrational|irrational]], then $\frac{1}{x}$ is irrational. TRUE.
 
 		- Prove by contradiction. Suppose $x$ is irrational but $\frac{1}{x}$ is rational.
 

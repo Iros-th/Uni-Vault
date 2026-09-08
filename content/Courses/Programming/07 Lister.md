@@ -12,7 +12,7 @@ tags:
 
 # Lister
 
-- Liste
+- [[Glossary#list|Liste]]
 	- Sammensat
 	- En liste er en samling af værdier i en bestemt rækkefølge. Du laver den med kantede parenteser og komma imellem. Den kan indeholde blandede typer.
 
@@ -25,7 +25,7 @@ print(tal)
 	- Kilde: https://docs.python.org/3/tutorial/introduction.html#lists
 
 
-- Adgang med index
+- Adgang med [[Glossary#index|index]]
 	- Du henter et element ud med dets plads i firkantede parenteser.
 	- VIGTIGT: index starter ved 0, ikke 1. Første element er liste[0]. Negativt index tæller bagfra, så liste[-1] er det sidste.
 
@@ -64,7 +64,7 @@ print(frugter, sidste)
 	- Kilde: https://docs.python.org/3/tutorial/datastructures.html#more-on-lists
 
 
-- Slicing (udsnit)
+- [[Glossary#slicing|Slicing]] (udsnit)
 	- Du kan hente en del af en liste med kolon. liste[start:slut] tager fra start og op til (men ikke med) slut.
 
 ```python

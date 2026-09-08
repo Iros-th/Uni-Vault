@@ -13,7 +13,7 @@ tags:
 
 # Dictionaries, tuples og sets
 
-- Dictionary
+- [[Glossary#dict|Dictionary]]
 	- Sammensat
 	- En dictionary gemmer par af nøgle og værdi. I stedet for at hente med et tal-index henter du med nøglen. God når data hører sammen, fx navn og alder.
 
@@ -63,7 +63,7 @@ print(person.get("alder", "ukendt"))
 	- Kilde: https://docs.python.org/3/library/stdtypes.html#dict.get
 
 
-- Tuple
+- [[Glossary#tuple|Tuple]]
 	- Sammensat
 	- En tuple er ligesom en liste, men den kan ikke ændres efter den er lavet (immutable). Bruges til data der hører fast sammen, fx koordinater.
 	- VIGTIGT: du laver den med almindelige parenteser. Prøver du at ændre et element får du en fejl, det er hele pointen med en tuple.
@@ -76,7 +76,7 @@ print(punkt[0])
 	- Kilde: https://docs.python.org/3/tutorial/datastructures.html#tuples-and-sequences
 
 
-- Set (mængde)
+- [[Glossary#set|Set]] (mængde)
 	- Sammensat
 	- Et set er en samling uden dubletter og uden fast rækkefølge. Super til at fjerne gengangere eller tjekke om noget findes hurtigt.
 

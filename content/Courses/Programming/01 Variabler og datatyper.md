@@ -27,7 +27,7 @@ print(navn)
 	- Kilde: https://docs.python.org/3/tutorial/introduction.html
 
 
-- int (heltal)
+- [[Glossary#int|int]] (heltal)
 	- Primitiv
 	- Hele tal uden decimaler, både positive og negative. Python har ingen øvre grænse, så du kan regne med kæmpestore tal uden at det bryder sammen.
 
@@ -40,7 +40,7 @@ print(alder + temperatur)
 	- Kilde: https://docs.python.org/3/library/functions.html#int
 
 
-- float (kommatal)
+- [[Glossary#float|float]] (kommatal)
 	- Primitiv
 	- Tal med decimaler. Bemærk at Python bruger punktum og ikke komma.
 	- VIGTIGT: floats er ikke helt præcise. 0.1 + 0.2 giver 0.30000000000000004 og ikke 0.3. Det er ikke en fejl i din kode, det er bare sådan computere gemmer kommatal.
@@ -53,7 +53,7 @@ print(0.1 + 0.2)
 	- Kilde: https://docs.python.org/3/tutorial/floatingpoint.html
 
 
-- str (tekst / streng)
+- [[Glossary#str|str]] (tekst / streng)
 	- Sammensat (en streng er egentlig en sekvens af tegn)
 	- Tekst skrevet i anførselstegn. Du kan bruge enkelte eller dobbelte, bare vær konsekvent.
 	- VIGTIGT: "5" er ikke det samme som 5. Det ene er tekst, det andet er et tal. Du kan ikke lægge dem sammen uden at konvertere først.
@@ -68,7 +68,7 @@ print(int(tal_som_tekst) + 3)
 	- Kilde: https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str
 
 
-- bool (sandt eller falsk)
+- [[Glossary#bool|bool]] (sandt eller falsk)
 	- Primitiv
 	- Kan kun være True eller False. Bruges hele tiden når du skal tjekke betingelser.
 	- VIGTIGT: skal skrives med stort begyndelsesbogstav, altså True og False, ikke true og false.
@@ -82,7 +82,7 @@ print(er_voksen and har_koerekort)
 	- Kilde: https://docs.python.org/3/library/stdtypes.html#boolean-values
 
 
-- Konvertering mellem typer (casting)
+- Konvertering mellem typer ([[Glossary#casting|casting]])
 	- Du kan lave en type om til en anden med int(), float(), str() og bool(). Det er super nyttigt når du fx får input ind som tekst men skal regne med det.
 
 ```python

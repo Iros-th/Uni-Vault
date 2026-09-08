@@ -12,7 +12,7 @@ tags:
 
 # Input og output
 
-- print()
+- [[Glossary#print|print()]]
 	- Skriver noget ud i konsollen. Det er det første du bruger til at se om din kode overhovedet gør noget.
 	- Du kan skrive flere ting i samme print ved at sætte komma imellem, så laver Python selv et mellemrum.
 
@@ -24,7 +24,7 @@ print("summen er", 2 + 3)
 	- Kilde: https://docs.python.org/3/library/functions.html#print
 
 
-- input()
+- [[Glossary#input|input()]]
 	- Sammensat (det du får tilbage er altid en streng)
 	- Beder brugeren om at skrive noget. Teksten du giver med er det spørgsmål der vises.
 	- VIGTIGT: input() giver ALTID tekst tilbage, også selvom brugeren skriver et tal. Vil du regne med det skal du pakke det ind i int() eller float() først.
