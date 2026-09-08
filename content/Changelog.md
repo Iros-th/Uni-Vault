@@ -1,6 +1,7 @@
 ---
 title: Hvad er nyt
 publish: true
+description: Kort log over større ændringer i note-arkivet, nyeste øverst.
 tags:
   - meta
 ---
@@ -15,6 +16,7 @@ En kort log over større ændringer i arkivet, nyeste øverst. Små rettelser i 
 - Ny [[Study-Roadmap|studieoversigt]] der viser hvordan fagene bygger ovenpå hinanden.
 - Nyt [[Reference/index|opslagsværk]] som forside for hele reference-sektionen.
 - Tilføjet en "Senest opdateret" liste i sidebjælken, så det er nemt at se de noter der lige er rettet.
+- Slået per-side sociale delebilleder til, så et link til en note viser dens titel og beskrivelse.
 
 ## Tidligere
 

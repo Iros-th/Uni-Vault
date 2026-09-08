@@ -1,6 +1,7 @@
 ---
 title: Studieoversigt
 publish: true
+description: Hvordan fagene i arkivet hænger sammen og i hvilken rækkefølge de bygger ovenpå hinanden, fra fundament til videregående.
 tags:
   - guide
   - roadmap

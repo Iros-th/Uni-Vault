@@ -92,11 +92,11 @@ Sorted by benefit, highest first. Status is one of: already there, newly built t
 | Browse-all-tags link surfaced | 4 polish | newly built this pass (link on homepage) |
 | Nav link to exam prep | 4 polish | newly built this pass (VaultNav) |
 | SMS notification on contact | 4 nice | skipped: needs a paid backend such as Twilio; acknowledged on the Contact page |
-| Per-page OG image generator (satori) | 4 nice | skipped: the emitter fetches fonts at build and fails offline; the static og-image is used instead by design |
+| Per-page OG image generator (satori) | 4 nice | newly built this pass (CustomOgImages re-enabled; the online Actions build has network, and a font not on Google Fonts fails gracefully so it cannot break the build) |
 | Table zebra and row hover | 3 polish | already there (custom.scss) |
 | Newsletter / email subscribe | 3 nice | skipped: needs a backend or list service |
 | Custom domain (CNAME) | 3 nice | skipped: no domain owned; owner decision |
-| robots.txt | 3 nice | skipped: a project subpath site cannot host the authoritative robots.txt (crawlers read it from the user-site root, which this repo does not control); the sitemap can be submitted manually |
+| robots.txt | 3 nice | newly built this pass (courtesy copy with a sitemap pointer at /Uni-Vault/robots.txt; the authoritative robots.txt still lives at the user-site root this repo does not control) |
 | Animated link underlines | 2 polish | already there (custom.scss) |
 | Editorial blockquotes | 2 polish | already there (custom.scss) |
 | Smooth anchor scrolling | 2 polish | already there (custom.scss) |

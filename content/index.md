@@ -71,7 +71,7 @@ Noterne skrives i Obsidian og udgives via Quartz. Kun noter med `publish: true` 
 - [[Courses/Introduction to applied mathematics/Cheat Sheet|Applied math cheat sheet]]: Bevismetoder og nøglefakta samlet.
 - [[how-to-use-this-vault|Vejledning til arkivet]]: Sådan navigerer du i noterne og udnytter krydshenvisninger.
 - [[Changelog|Hvad er nyt]]: Kort log over større ændringer i arkivet.
-- [Alle tags](tags/): Bladr i alle emne-tags på tværs af fagene.
+- [Alle tags](https://iros-th.github.io/Uni-Vault/tags/): Bladr i alle emne-tags på tværs af fagene.
 
 ---
 

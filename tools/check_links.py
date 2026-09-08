@@ -21,6 +21,18 @@ CONTENT = Path("content")
 WIKILINK_RE = re.compile(r"\[\[([^\]]+)\]\]")
 MDLINK_RE = re.compile(r"(?<!\!)\[[^\]]*\]\(([^)]+)\)")
 
+# Code spans and fenced code blocks hold syntax examples, not real links.
+# Strip them before scanning so an illustrative `[[example]]` in a how-to note
+# is not counted as a broken link.
+FENCED_CODE_RE = re.compile(r"```.*?```", re.S)
+INLINE_CODE_RE = re.compile(r"`[^`]*`")
+
+
+def strip_code(text):
+    text = FENCED_CODE_RE.sub("", text)
+    text = INLINE_CODE_RE.sub("", text)
+    return text
+
 
 def norm(name):
     """Normalise a note name for loose matching."""
@@ -67,7 +79,7 @@ def main():
 
     broken = []
     for path in files:
-        text = path.read_text(encoding="utf-8")
+        text = strip_code(path.read_text(encoding="utf-8"))
         targets = []
         for m in WIKILINK_RE.finditer(text):
             targets.append(m.group(1))

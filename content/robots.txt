@@ -1,0 +1,8 @@
+# Uni-Vault (Quartz). Served at the /Uni-Vault/ subpath on GitHub Pages.
+# Heads up: search crawlers read the authoritative robots.txt from the domain
+# root (iros-th.github.io/robots.txt), which this project does not control. This
+# file only appears at /Uni-Vault/robots.txt, so treat it as a courtesy copy plus
+# a sitemap pointer, not as site-wide crawl policy.
+User-agent: *
+Allow: /
+Sitemap: https://iros-th.github.io/Uni-Vault/sitemap.xml

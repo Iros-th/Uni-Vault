@@ -29,6 +29,10 @@ Der er en lille **knap til at skifte mellem lys og mørk** (dark mode). Sidder d
 
 I **sidebjælken** kan du folde mapperne ud og gå ind i et fag ad gangen, fx Programming eller Statistics. Hver note har også **tags** (fx python eller loekker), og du kan klikke på et tag for at se alle noter med samme emne samlet.
 
+## Værktøjer til eksamen
+
+Skal du læse op, så start på [[Exam-Prep|eksamensforberedelsen]], der samler selv-tests, flashcards og cheat sheets per fag. Er du i tvivl om rækkefølgen på fagene, giver [[Study-Roadmap|studieoversigten]] et overblik. Og alt du bare skal slå op ligger i [[Reference/index|opslagsværket]].
+
 ## Kom i kontakt
 
 Har du fundet en fejl eller vil du bare sige hej, så kig forbi [[Contact|kontaktsiden]]. Der er både en formular og en mail du kan skrive til.

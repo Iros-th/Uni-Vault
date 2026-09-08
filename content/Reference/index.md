@@ -1,6 +1,7 @@
 ---
 title: Opslagsværk
 publish: true
+description: Samlet indgang til alle opslag i arkivet. Matematiske og kemiske symboler, konstanter, formler og korte begrebsforklaringer.
 tags:
   - reference
 ---

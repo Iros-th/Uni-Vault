@@ -1,6 +1,7 @@
 ---
 title: Eksamensforberedelse
 publish: true
+description: Samlet startside til eksamenslæsning. Selv-tests, flashcards, cheat sheets, formelsamling og gamle eksamener per fag, ét sted.
 tags:
   - guide
   - eksamen

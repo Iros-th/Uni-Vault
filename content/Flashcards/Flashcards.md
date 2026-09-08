@@ -27,6 +27,7 @@ How to use them: read the question, actually try to answer it in your head first
 ## Links
 
 - [[index|Home]]
+- [[Exam-Prep|Exam prep]]
 - [[Self-Tests/Self-Tests|Self-tests]]
 - [[Formelsamling/Formelsamling|Formelsamling]]
 - [[Glossary]]

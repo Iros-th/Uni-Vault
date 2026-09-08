@@ -113,9 +113,14 @@ const config: QuartzConfig = {
       Plugin.Static(),
       Plugin.Favicon(),
       Plugin.NotFoundPage(),
-      // CustomOgImages disabled: it fetches fonts over the network at build time,
-      // which fails offline. Social-preview thumbnails are optional. Re-enable if wanted.
-      // Plugin.CustomOgImages(),
+      // Per-page social preview cards (title + description rendered as an image).
+      // This fetches fonts from Google Fonts at build time, so it needs network.
+      // The GitHub Actions deploy has network, so it works there. A font that is
+      // not on Google Fonts (like the Charter body font) just fails gracefully and
+      // is skipped, so the header font carries the card. If you ever build fully
+      // offline, comment this back out (the static /static/og-image.png is the
+      // fallback the Head uses whenever this emitter is off).
+      Plugin.CustomOgImages(),
     ],
   },
 }

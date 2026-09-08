@@ -29,6 +29,7 @@ These are for checking whether something actually stuck, not for cramming. Write
 ## Links
 
 - [[index|Home]]
+- [[Exam-Prep|Exam prep]]
 - [[Flashcards/Flashcards|Flashcards]]
 - [[Formelsamling/Formelsamling|Formelsamling]]
 - [[Glossary]]
