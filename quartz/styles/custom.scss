@@ -1,7 +1,7 @@
 @use "./base.scss";
 
 /* ==========================================================================
-   UniVault — Academic Non-AI Design System
+   UniVault: Academic Non-AI Design System
    Warm paper palette, editorial typography, tactile feel
    ========================================================================== */
 
@@ -248,6 +248,244 @@ th {
   border: 1px solid var(--lightgray);
   background: var(--light);
   font-family: var(--bodyFont);
+}
+
+/* Category legend above the table */
+.ptable-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  margin: 1.25rem 0 0.5rem 0;
+  font-family: var(--codeFont);
+  font-size: 0.75rem;
+  color: var(--darkgray);
+}
+
+.ptable-legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.ptable-legend-swatch {
+  display: inline-block;
+  width: 0.85rem;
+  height: 0.85rem;
+  border-radius: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+/* Gap between the main table and the lanthanide/actinide strip */
+.ptable-spacer {
+  height: 0.7rem;
+}
+
+/* Non-clickable "57-71 / 89-103" markers where the f-block is pulled out */
+.ptable-marker {
+  background: var(--lightgray);
+  color: var(--darkgray);
+  cursor: default;
+  align-items: center;
+  justify-content: center;
+}
+
+.ptable-marker:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.ptable-cell:focus-visible {
+  outline: 2px solid var(--dark);
+  outline-offset: 1px;
+  z-index: 11;
+}
+
+/* Homepage contact call-to-action button */
+.home-contact-cta {
+  display: inline-block;
+  margin: 0.4rem 0 0.6rem 0;
+  padding: 0.6rem 1.3rem;
+  border-radius: 999px;
+  background: var(--secondary);
+  color: var(--light) !important;
+  font-family: var(--codeFont);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: background 0.15s ease, transform 0.15s ease;
+}
+
+.home-contact-cta:hover {
+  background: var(--tertiary);
+  transform: translateY(-1px);
+}
+
+/* Contact Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  max-width: 34rem;
+  margin: 1.75rem 0;
+  padding: 1.4rem;
+  border: 1px solid var(--lightgray);
+  border-radius: 8px;
+  background: var(--light);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.contact-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.contact-field > span {
+  font-family: var(--codeFont);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--darkgray);
+}
+
+.contact-field input,
+.contact-field textarea {
+  padding: 0.55rem 0.7rem;
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  background: var(--light);
+  color: var(--dark);
+  font-family: var(--bodyFont);
+  font-size: 0.95rem;
+}
+
+.contact-field input:focus,
+.contact-field textarea:focus {
+  outline: none;
+  border-color: var(--secondary);
+  box-shadow: 0 0 0 2px var(--highlight);
+}
+
+.contact-field textarea {
+  resize: vertical;
+  min-height: 6rem;
+}
+
+.contact-hint {
+  margin: 0;
+  font-size: 0.82rem;
+  color: var(--gray);
+}
+
+.contact-submit {
+  align-self: flex-start;
+  padding: 0.6rem 1.4rem;
+  border: none;
+  border-radius: 999px;
+  background: var(--secondary);
+  color: var(--light);
+  font-family: var(--codeFont);
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.15s ease;
+}
+
+.contact-submit:hover {
+  background: var(--tertiary);
+  transform: translateY(-1px);
+}
+
+/* ==========================================================================
+   UI polish (2026): small touches on top of Quartz v4 built-ins.
+   The heavy features (graph, backlinks, search, popovers, dark/light toggle,
+   reading time, code-copy buttons, TOC, tags) are Quartz core and already on
+   in quartz.layout.ts / quartz.config.ts. This block only refines the look.
+   ========================================================================== */
+
+/* Text selection matches the theme */
+::selection {
+  background: var(--textHighlight);
+}
+
+/* Inline code: subtle chip so it reads as code without shouting */
+p code, li code, td code {
+  background: var(--highlight);
+  padding: 0.1rem 0.35rem;
+  border-radius: 4px;
+  font-size: 0.88em;
+}
+
+/* Code blocks: rounded, framed, comfortable */
+pre {
+  border: 1px solid var(--lightgray);
+  border-radius: 8px;
+  padding: 0.9rem 1rem !important;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.03);
+}
+
+/* Copy-to-clipboard button (Quartz injects .clipboard-button) */
+.clipboard-button {
+  border-radius: 6px !important;
+  border: 1px solid var(--lightgray) !important;
+  background: var(--light) !important;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.clipboard-button:hover {
+  background: var(--highlight) !important;
+  border-color: var(--secondary) !important;
+}
+
+/* Tables: gentle zebra + row hover for long reference tables */
+tbody tr:nth-child(even) {
+  background: var(--highlight);
+}
+
+tbody tr:hover {
+  background: color-mix(in srgb, var(--secondary) 10%, transparent);
+}
+
+/* Links: animated underline instead of the default flat one */
+article a.internal,
+article p a,
+article li a {
+  text-decoration: none;
+  background-image: linear-gradient(var(--secondary), var(--secondary));
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 1.5px;
+  transition: background-size 0.2s ease;
+}
+
+article a.internal:hover,
+article p a:hover,
+article li a:hover {
+  background-size: 100% 1.5px;
+}
+
+/* Blockquotes that are not callouts get an editorial look */
+blockquote:not(.callout) {
+  border-left: 3px solid var(--tertiary);
+  padding-left: 1rem;
+  color: var(--darkgray);
+  font-style: italic;
+}
+
+/* Smooth in-page anchor scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Reading-time / metadata row a touch lighter */
+.content-meta {
+  color: var(--gray);
+  font-family: var(--codeFont);
+  font-size: 0.82rem;
+}
+
+/* Give the main column a little more breathing room on wide screens */
+.center {
+  scroll-margin-top: 4rem;
 }
 
 /* Print Stylesheet for Cheat-Sheets */

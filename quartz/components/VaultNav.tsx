@@ -16,7 +16,9 @@ const VaultNav: QuartzComponent = ({ fileData, cfg, displayClass }: QuartzCompon
     { label: "Flashcards", slug: "Flashcards/Flashcards" },
     { label: "Self-Tests", slug: "Self-Tests/Self-Tests" },
     { label: "Symbols", slug: "Reference/Matematik/Matematiske symboler" },
+    { label: "Periodic table", slug: "Reference/Kemi/Periodisk system" },
     { label: "Glossary", slug: "Glossary" },
+    { label: "Contact", slug: "Contact" },
   ]
 
   return (
@@ -26,7 +28,10 @@ const VaultNav: QuartzComponent = ({ fileData, cfg, displayClass }: QuartzCompon
       </a>
       <span class="vault-nav-links">
         {links.map((l) => (
-          <a href={rel(l.slug)} class="vault-nav-link">
+          <a
+            href={rel(l.slug)}
+            class={l.label === "Contact" ? "vault-nav-link vault-nav-contact" : "vault-nav-link"}
+          >
             {l.label}
           </a>
         ))}
@@ -91,6 +96,20 @@ VaultNav.css = `
 
 .vault-nav-link:hover {
   text-decoration: underline;
+}
+
+.vault-nav-contact {
+  border: 1px solid var(--secondary);
+  border-radius: 999px;
+  padding: 0.15rem 0.7rem;
+  font-weight: 600;
+  color: var(--secondary);
+}
+
+.vault-nav-contact:hover {
+  background: var(--secondary);
+  color: var(--light);
+  text-decoration: none;
 }
 
 @media print {

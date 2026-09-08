@@ -72,4 +72,8 @@ Noterne skrives i Obsidian og udgives via Quartz. Kun noter med `publish: true` 
 
 ## Kontakt & Bidrag
 
-Har du fundet en fejl i en formel eller et bevis? Se [[Contact|kontaktsiden]].
+Har du fundet en fejl i en formel eller et bevis, eller vil du bare skrive? Der er en **[[Contact|kontaktside med en besked-formular]]** hvor du kan lægge navn, mail eller telefon og dit spørgsmål. Beskeden lander direkte i min indbakke.
+
+<a class="home-contact-cta" href="Contact">Skriv en besked til mig</a>
+
+Der er også en lille rund **kontakt-knap nederst i højre hjørne på alle sider**, hvis du vil skrive undervejs.
