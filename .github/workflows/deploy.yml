@@ -16,6 +16,18 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  # Lightweight internal-link check. Runs on its own so a broken link shows up
+  # as a red check without blocking the build/deploy below.
+  link-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check internal links
+        run: python tools/check_links.py
+
   build:
     runs-on: ubuntu-latest
     steps:

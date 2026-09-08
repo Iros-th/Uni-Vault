@@ -1,3 +1,263 @@
 @use "./base.scss";
 
-// put your custom CSS here!
+/* ==========================================================================
+   UniVault — Academic Non-AI Design System
+   Warm paper palette, editorial typography, tactile feel
+   ========================================================================== */
+
+/* Editorial Header & Body Typography */
+article {
+  font-feature-settings: "kern", "liga", "clig", "calt";
+  line-height: 1.75;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--headerFont);
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  color: var(--dark);
+}
+
+h1 {
+  font-size: 2.15rem;
+  border-bottom: 1px solid var(--lightgray);
+  padding-bottom: 0.35rem;
+  margin-top: 1.8rem;
+}
+
+h2 {
+  font-size: 1.55rem;
+  margin-top: 2rem;
+  margin-bottom: 0.6rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+/* Subtle editorial dividers */
+hr {
+  border: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--gray), transparent);
+  margin: 2.5rem 0;
+  opacity: 0.45;
+}
+
+/* Tactile / Craft Callouts */
+.callout {
+  border-radius: 4px;
+  border-left: 3px solid var(--secondary);
+  background: var(--highlight);
+  padding: 0.9rem 1.1rem;
+  margin: 1.25rem 0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+}
+
+/* Math blocks overflow protection */
+.katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.5rem 0;
+  scrollbar-width: thin;
+}
+
+/* Course Dashboard Grid */
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.25rem;
+  margin: 1.75rem 0;
+}
+
+.course-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.2rem 1.3rem;
+  border-radius: 6px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  text-decoration: none;
+  color: var(--dark);
+  transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+  position: relative;
+}
+
+.course-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--secondary);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.course-card h3 {
+  margin: 0 0 0.4rem 0;
+  font-size: 1.2rem;
+  color: var(--secondary);
+}
+
+.course-card p {
+  margin: 0;
+  font-size: 0.92rem;
+  color: var(--darkgray);
+  line-height: 1.5;
+}
+
+.course-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.8rem;
+  font-size: 0.8rem;
+  color: var(--gray);
+  font-family: var(--codeFont);
+}
+
+/* Note Status Badges */
+.status-badge {
+  display: inline-block;
+  padding: 0.18rem 0.55rem;
+  border-radius: 3px;
+  font-size: 0.75rem;
+  font-family: var(--codeFont);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.status-badge.complete {
+  background: rgba(92, 122, 84, 0.15);
+  color: var(--secondary);
+}
+
+.status-badge.in-progress {
+  background: rgba(139, 109, 74, 0.15);
+  color: var(--tertiary);
+}
+
+.status-badge.stub {
+  background: rgba(122, 114, 104, 0.15);
+  color: var(--gray);
+}
+
+/* Reference Tables */
+table {
+  width: 100%;
+  margin: 1.5rem 0;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+th, td {
+  padding: 0.65rem 0.9rem;
+  border: 1px solid var(--lightgray);
+  text-align: left;
+}
+
+th {
+  background: var(--highlight);
+  font-family: var(--headerFont);
+  font-weight: 600;
+}
+
+/* Periodic Table Web Component Styling */
+.ptable-wrapper {
+  margin: 2rem 0;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+}
+
+.ptable-grid {
+  display: grid;
+  grid-template-columns: repeat(18, minmax(42px, 1fr));
+  gap: 3px;
+  min-width: 820px;
+}
+
+.ptable-cell {
+  aspect-ratio: 1;
+  border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 2px 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.1s ease, filter 0.1s ease;
+  font-family: var(--codeFont);
+}
+
+.ptable-cell:hover {
+  transform: scale(1.18);
+  z-index: 10;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.ptable-num {
+  font-size: 0.6rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.ptable-sym {
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.ptable-name {
+  font-size: 0.55rem;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Element categories */
+.cat-nonmetal { background: #d4e6c3; color: #223e12; }
+.cat-noble { background: #e8d0e8; color: #431945; }
+.cat-alkali { background: #ffd6cc; color: #5a190b; }
+.cat-alkaline { background: #ffe6cc; color: #5c3008; }
+.cat-metalloid { background: #d0e8e6; color: #16403d; }
+.cat-halogen { background: #ffffcc; color: #4d4d00; }
+.cat-transition { background: #e0d8f0; color: #2f1d4f; }
+.cat-post-transition { background: #d5e0eb; color: #1a324b; }
+.cat-lanthanide { background: #fbe0ea; color: #52182c; }
+.cat-actinide { background: #fce8d5; color: #552808; }
+
+.ptable-preview {
+  margin-top: 1.25rem;
+  padding: 1.2rem;
+  border-radius: 6px;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  font-family: var(--bodyFont);
+}
+
+/* Print Stylesheet for Cheat-Sheets */
+@media print {
+  body {
+    font-size: 10pt;
+    background: white !important;
+    color: black !important;
+  }
+
+  .sidebar, .toc, .graph, nav, header, footer {
+    display: none !important;
+  }
+
+  article {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .course-grid, .ptable-wrapper {
+    page-break-inside: avoid;
+  }
+
+  table {
+    font-size: 8.5pt;
+  }
+}

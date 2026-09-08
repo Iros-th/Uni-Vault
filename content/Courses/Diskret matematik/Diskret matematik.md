@@ -10,7 +10,7 @@ tags:
 
 # Diskret matematik
 
-> Course index (map of content). Links point to the imported lecture notes below.
+Landing page for the course. Lectures and notes are linked below, more added as I go.
 
 ## Overview
 

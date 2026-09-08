@@ -3,35 +3,116 @@ title: Iros's Note Vault
 publish: true
 ---
 
-Hey, welcome to my note vault. This is where I keep my university study notes, mostly applied math stuff, and put the ones I have cleaned up online.
+Velkommen til mit note-arkiv. Her samler jeg mine universitetsnoter fra DTU, mest anvendt matematik, programmering og naturvidenskab.
 
-I write everything in Obsidian and publish it with Quartz. Only the notes I mark as public show up here, so the rough drafts and personal scribbles stay hidden.
+Noterne skrives i Obsidian og udgives via Quartz. Kun noter med `publish: true` er synlige her.
 
-Best way to look around: use the **search** box, poke at the **graph view** to see how notes connect, or just open a course below. Every note has its **backlinks** at the bottom so you can follow the trail.
+> [!tip] Ny her? Start med [[how-to-use-this-vault|vejledningen til arkivet]]
+> Tager under et minut at læse og viser dig søgning, graf og backlinks. Ellers brug **søgefeltet** (`Ctrl+K`) eller spring direkte til et fag nedenfor.
 
-New here? Start with the [[how-to-use-this-vault|How to use this vault]] guide. There is also a [[Glossary]] of the key terms and functions, and hovering any linked term shows its definition in a little popup.
+---
 
-## Courses
+## Kurser
 
-- [[Courses/Programming/Programming|Programming]]
-- [[Courses/Chemistry/Chemistry|Chemistry]]
-- [[Courses/Physics/Physics|Physics]]
-- [[Courses/Statistics/Statistics|Statistics]]
-- [[Courses/Diskret matematik/Diskret matematik|Discrete Mathematics]]
-- [[Courses/Differential Equations and Infinite Series/Differential Equations and Infinite Series|Differential Equations and Infinite Series]]
-- [[Courses/Introduction to Numerical Algorithms/Introduction to Numerical Algorithms|Introduction to Numerical Algorithms]]
-- [[Courses/Mathematical Modelling/Mathematical Modelling|Mathematical Modelling]]
-- [[Courses/Introduction to applied mathematics/Introduction to applied mathematics|Introduction to Applied Mathematics]]
-- [[Courses/Matematik 1A/Matematik 1A|Matematik 1A]]
+<div class="course-grid">
 
-A lot of these are still pretty empty. I am filling them in as I go through the term.
+  <a class="course-card" href="Courses/Introduction-to-applied-mathematics/Introduction-to-applied-mathematics">
+    <h3>Introduction to Applied Mathematics</h3>
+    <p>Matematisk bevisførelse, logik, induktion, mængdelære og grundlæggende analyse.</p>
+    <div class="course-meta">
+      <span>DTU Kursus</span>
+      <span class="status-badge complete">Aktiv</span>
+    </div>
+  </a>
 
-## Study tools
+  <a class="course-card" href="Courses/Programming/Programming">
+    <h3>Programmering (Python)</h3>
+    <p>Variabler, datatyper, kontrolstrukturer, funktioner, OOP, algoritmer og fejlhåndtering.</p>
+    <div class="course-meta">
+      <span>Dansk</span>
+      <span class="status-badge complete">12 Noter</span>
+    </div>
+  </a>
 
-- [[Glossary]], plain-language definitions of the key terms and functions.
-- [[Flashcards]], quick reveal-on-click revision cards from the notes.
-- [[Self-Tests]], short quizzes per subject with hidden answers.
+  <a class="course-card" href="Courses/Diskret-matematik/Diskret-matematik">
+    <h3>Diskret Matematik</h3>
+    <p>Udsagnslogik, sandhedstabeller, logiske gates, mængder, relationer og kombinatorik.</p>
+    <div class="course-meta">
+      <span>Matematik</span>
+      <span class="status-badge in-progress">I gang</span>
+    </div>
+  </a>
 
-## Contact
+  <a class="course-card" href="Courses/Matematik-1A/Matematik-1A">
+    <h3>Matematik 1A</h3>
+    <p>Lineær algebra, vektorer, matricer, differential- og integralregning for ingeniører.</p>
+    <div class="course-meta">
+      <span>Analyse & Algebra</span>
+      <span class="status-badge in-progress">I gang</span>
+    </div>
+  </a>
 
-Found a mistake or want to say hi? See the [[Contact]] page.
+  <a class="course-card" href="Courses/Chemistry/Chemistry">
+    <h3>Kemi</h3>
+    <p>Almen kemi, støkiometri, funktionelle grupper, det periodiske system og reaktionskinetik.</p>
+    <div class="course-meta">
+      <span>Kemi</span>
+      <span class="status-badge in-progress">Opdateres</span>
+    </div>
+  </a>
+
+  <a class="course-card" href="Courses/Physics/Physics">
+    <h3>Fysik</h3>
+    <p>Klassisk mekanik, termodynamik, elektromagnetisme og bølgefysik.</p>
+    <div class="course-meta">
+      <span>Fysik</span>
+      <span class="status-badge stub">Skitse</span>
+    </div>
+  </a>
+
+  <a class="course-card" href="Courses/Statistics/Statistics">
+    <h3>Statistik & Sandsynlighed</h3>
+    <p>Deskriptiv statistik, sandsynlighedsfordelinger, hypotesetest og konfidensintervaller.</p>
+    <div class="course-meta">
+      <span>Statistik</span>
+      <span class="status-badge stub">Skitse</span>
+    </div>
+  </a>
+
+  <a class="course-card" href="Courses/Differential-Equations-and-Infinite-Series/Differential-Equations-and-Infinite-Series">
+    <h3>Differentialligninger & Uendelige Rækker</h3>
+    <p>Første- og andenordens differentialligninger, Taylor-rækker, potensrækker og konvergens.</p>
+    <div class="course-meta">
+      <span>Videregående</span>
+      <span class="status-badge stub">Skitse</span>
+    </div>
+  </a>
+
+</div>
+
+---
+
+## Opslagsværk & Formelsamling
+
+- [[Reference/Formelsamling/Oversigt|Formelsamlingen]]: Den samlede matematiske formelsamling (regneregler, trigonometri, differential- og integralregning, vektorer, statistik).
+- [[Reference/Matematik/Matematiske symboler|Matematiske Symboler]]: Komplet opslag over mængdelære, logik, kalkulus og algebraiske tegn.
+- [[Reference/Matematik/Talmaengder|Talmængder]]: Formel definition af $\mathbb{N}, \mathbb{Z}, \mathbb{Q}, \mathbb{R}, \mathbb{C}$ med egenskaber og indeslutninger.
+- [[Reference/Kemi/Periodisk system|Interaktivt Periodisk System]]: Periodisk system med elektronkonfigurationer, atommasser og egenskaber.
+- [[Reference/Programmering/Alle datatyper|Programmering: Alle Datatyper]]: Gennemgang af alle primitive og sammensatte datatyper i Python/C++.
+- [[Glossary|Ordforklaring & Begreber (Glossary)]]: Tosproget opslagsværk med definitioner af centrale matematiske og tekniske termer.
+
+---
+
+## Studie- & Træningsværktøjer
+
+- [[Flashcards/Flashcards|Flashcards]]: Hurtige repetitionskort opdelt efter emne (afslør svar ved klik).
+- [[Self-Tests/Self-Tests|Selv-Tests]]: Multiple-choice og opgavesæt til eksamenstræning.
+- [[Courses/Programming/Cheat Sheet|Programming cheat sheet]]: Vigtigste Python-syntaks på én side.
+- [[Courses/Introduction to applied mathematics/Cheat Sheet|Applied math cheat sheet]]: Bevismetoder og nøglefakta samlet.
+- [[how-to-use-this-vault|Vejledning til arkivet]]: Sådan navigerer du i noterne og udnytter krydshenvisninger.
+
+---
+
+## Kontakt & Bidrag
+
+Har du fundet en fejl i en formel eller et bevis? Se [[Contact|kontaktsiden]].

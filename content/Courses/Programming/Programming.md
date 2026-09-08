@@ -33,6 +33,15 @@ These follow the standard intro Python curriculum (the general beginner progress
 
 (will link lecture notes here as I write them)
 
+## Study tools
+
+Alt til dette fag samlet ét sted.
+
+- [[Courses/Programming/Cheat Sheet|Cheat sheet]]: det vigtigste syntaks på én side
+- [[Flashcards/Programming Flashcards|Flashcards]]: hurtig selvtest, klik for at vende kortet
+- [[Self-Tests/Programming Test|Self-test]]: små prøver med skjulte svar
+- [[Courses/Programming/Past Exams|Past exams]]: gamle sæt, fyldes på løbende
+
 ## Key concepts
 
 ## Questions

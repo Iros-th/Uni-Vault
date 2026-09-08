@@ -39,6 +39,7 @@ function toggleExplorer(this: HTMLElement) {
 
 function toggleFolder(evt: MouseEvent) {
   evt.stopPropagation()
+  evt.preventDefault()
   const target = evt.target as MaybeHTMLElement
   if (!target) return
 

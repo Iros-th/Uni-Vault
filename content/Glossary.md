@@ -1,200 +1,133 @@
 ---
 publish: true
-title: Glossary
+title: Glossary / Begrebsordbog
 type: reference
 tags:
   - glossary
+  - begreber
   - reference
 ---
 
-# Glossary
+# Glossary / Begrebsordbog
 
-Short, plain-language definitions of the terms and functions that show up across these notes. Hover a linked term anywhere in the vault to see its entry pop up, or just skim the list here.
+Korte, præcise definitioner af matematiske, kemiske og datalogiske begreber. Hold musen over et linket begreb hvor som helst i noterne for at få vist definitionen som popover.
 
-Two groups: proof and math words first, then the Python bits.
+---
 
-## Proofs and mathematics
+## 1. Beviser & Matematik (Proofs & Mathematics)
 
-## Proof
+## Proof / Bevis
+A chain of logically valid steps that starts from things we already accept (axioms and proven theorems) and ends at the claim. En logisk gyldig deduktionskæde fra aksiomer til konklusion.
 
-A chain of logically valid steps that starts from things we already accept (axioms and proven theorems) and ends at the claim. Every step has to be forced, so a reader can never ask "why does that follow".
+## Axiom / Aksiom
+A statement we accept as true without proving it. Det fundamentale udgangspunkt, som accepteres uden bevis (f.eks. den kommutative lov $a + b = b + a$).
 
-## Axiom
+## Theorem / Sætning (Teorem)
+A mathematical statement that has been formally proven true from axioms and earlier results. Kan genbruges som byggesten i senere beviser.
 
-A statement we accept as true without proving it. It is the foundation everything else is built on, for example that addition of real numbers is commutative, $a + b = b + a$.
+## Direct proof / Direkte bevis
+Assume the hypothesis $P$ is true, then walk straight to the conclusion $Q$ using definitions and known algebra. Antag $P$, udled $Q$.
 
-## Theorem
+## Proof by contradiction / Modstridsbevis
+Assume the claim is false ($
+eg P$), then show this assumption logically forces an impossibility ($0=1$ or $x \neq x$). Ergo må $P$ være sand. (Klassisk eksempel: bevis for at $\sqrt{2}$ er irrationel).
 
-A statement that has been proven true from axioms and earlier results. Once proven, you are allowed to reuse it in later proofs.
+## Contrapositive / Kontraposition
+The statement "if $P$ then $Q$" ($P \implies Q$) is logically equivalent to "if not $Q$ then not $P$" ($
+eg Q \implies 
+eg P$). Bevis for det kontraponerede udsagn er ækvivalent med det oprindelige.
 
-## Direct proof
+## Counterexample / Modeksempel
+A single case that disproves a universal "for all" claim ($orall x \, P(x)$). Ét modeksempel er nok til at modbevise en påstand (f.eks. modbeviser $x=0$ påstanden om at alle tal har en multiplikativ invers).
 
-Assume the hypothesis $P$ is true, then walk straight to the conclusion $Q$ using definitions and known facts. The default when "if $P$ then $Q$" gives you something concrete to unpack.
+## Induction / Matematisk induktion
+A proof method for statements indexed by integers $n \ge 1$. Vis basistilfældet $P(1)$ (den første domino), og vis derefter det induktive trin: at hvis $P(k)$ gælder, medfører det $P(k+1)$.
 
-## Proof by contradiction
+## Strong induction / Stærk induktion
+Same principle as induction, but the induction hypothesis assumes the claim holds for **all** values $1, 2, \dots, k$, and uses this to prove $P(k+1)$. Uundværlig ved rekursive følger som Fibonacci.
 
-Assume the claim is false, then show that assumption forces something impossible. Since it cannot be false, it must be true. This is how you show $\sqrt{2}$ is irrational.
+## Bijection / Bijektion
+A function between two sets that is both **injective** (one-to-one, ingen kollisioner) and **surjective** (onto, rammer hele værdimængden). Etablerer en perfekt 1-til-1 parring, så $|A| = |B|$.
 
-## Contrapositive
+## Injective / Injektiv
+A map where distinct inputs map to distinct outputs: $f(a) = f(b) \implies a = b$.
 
-The statement "if $P$ then $Q$" is logically the same as "if not $Q$ then not $P$". Proving the second version counts as proving the first, and sometimes the negations are easier to work with.
+## Surjective / Surjektiv
+A map where every element in the codomain is hit by at least one input element: $\forall y \in Y, \exists x \in X: f(x) = y$.
 
-## Counterexample
+## Rational / Rationelt tal
+A number expressible as a ratio of two integers $\frac{p}{q}$ with $q \neq 0$ ($x \in \mathbb{Q}$). Har endelig eller periodisk decimaludvikling.
 
-A single example that breaks a "for all" claim. One case where the statement fails is enough to disprove it, for example $x^2 + 1 = 0$ shows not every degree 2 polynomial has a real root.
+## Irrational / Irrationelt tal
+A real number that cannot be written as a fraction of integers ($x \in \mathbb{R} \setminus \mathbb{Q}$), such as $\sqrt{2}, e, \pi$. Uendelig, ikke-periodisk decimaludvikling.
 
-## Induction
+## Limit / Grænseværdi
+Værdien en funktion eller talfølge nærmer sig, når variablen går mod et bestemt punkt: $\lim_{x \to x_0} f(x) = L$.
 
-A way to prove a statement $P(n)$ holds for every $n$ from some starting point. Knock over the first domino (the base case), then show each domino knocks over the next one (the inductive step).
+## Continuity / Kontinuitet
+En funktion er kontinuert i $x_0$, hvis $\lim_{x \to x_0} f(x) = f(x_0)$. Grafen kan tegnes uden at løfte blyanten.
 
-## Strong induction
+---
 
-Same idea as induction, but in the step you get to assume $P$ holds for all values up to $k$, not just the one before. Use it when the argument reaches back more than one step, like a recurrence that uses $P(k)$ and $P(k-1)$.
+## 2. Kemi (Chemistry)
 
-## Base case
+## Stofmængde (Mole)
+Måles i enheden mol. Ét mol svarer til præcis Avogadros tal ($6.022 \times 10^{23}$) formelenheder eller partikler. Formel: $n = \frac{m}{M}$.
 
-The starting value you check by hand, often $n = 1$. If the inductive step reaches back two terms, you need two base cases, otherwise the first step reaches below anything you have checked.
+## Molarmasse (Molar Mass)
+Massen af ét mol af et givet grundstof eller kemisk forbindelse, målt i gram pr. mol (g/mol). Aflæses i det periodiske system.
 
-## Inductive step
+## Stofmængdekoncentration (Molaritet)
+Antal mol opløst stof pr. liter opløsning ($c = \frac{n}{V}$). Angives i M eller mol/L.
 
-The part where you assume $P(k)$ (the induction hypothesis) and prove $P(k+1)$ from it. Base case plus step together cover every value.
+## Elektronegativitet
+Et atoms evne til at tiltrække elektroner i en kovalent binding (Pauling-skalaen). Fluor er det mest elektronegative grundstof ($3.98$).
 
-## Bijection
+## Oxidation
+En kemisk proces, hvor et atom, ion eller molekyle **afgiver** elektroner. Oxidationstrinnet stiger.
 
-A pairing between two sets where every element matches exactly one on the other side, no leftovers either way. It is both injective and surjective, and if one exists the two sets have the same size, written $|A| = |B|$.
+## Reduktion
+En kemisk proces, hvor et atom, ion eller molekyle **optager** elektroner. Oxidationstrinnet falder.
 
-## Injective
+## Syre (Brønsted)
+En kemisk partikel (molekyle eller ion), der kan **afgive** en hydron (proton, $\text{H}^+$).
 
-A map where different inputs always give different outputs. No two inputs collide onto the same value, so if $f(a) = f(b)$ then $a = b$.
+## Base (Brønsted)
+En kemisk partikel, der kan **optage** en hydron (proton, $\text{H}^+$).
 
-## Surjective
+## pH
+Det negative logaritmiske mål for hydroniumion-koncentrationen i en vandig opløsning: $\text{pH} = -\log[\text{H}_3\text{O}^+]$.
 
-A map where every possible output actually gets hit by some input. Nothing in the target set is left out.
+---
 
-## Rational
+## 3. Programmering (Programming)
 
-A number you can write as a fraction $\frac{p}{q}$ of two integers with $q \ne 0$. The reciprocal and product of rationals stay rational.
+## int (Heltal)
+Et heltal uden decimaler (`42`, `-7`). I Python med ubegrænset præcision.
 
-## Irrational
+## float (Decimaltal)
+Et tal med decimaler (`3.14`). Følger IEEE 754 dobbelt præcision. Husk at `0.1 + 0.2 != 0.3` på grund af binær afrunding.
 
-A number that cannot be written as a fraction of two integers, like $\sqrt{2}$. Its decimal expansion never settles into a repeating pattern.
+## str (Streng)
+Tekst i Python. Immutable sekvens af tegn.
 
-## Recurrence
+## bool (Boolske værdier)
+Sandhedsværdi: `True` eller `False`.
 
-A rule that defines each term using earlier terms. The Fibonacci numbers are the classic case: $F(n) = F(n-1) + F(n-2)$.
+## list (Liste)
+En ordnet, foranderlig (mutable) sekvens af elementer: `[1, 2, 3]`.
 
-## Fibonacci
+## tuple (Tupel)
+En ordnet, uforanderlig (immutable) sekvens af elementer: `(x, y)`.
 
-The sequence starting $F(1) = 1$, $F(2) = 1$, where each later term is the sum of the two before it. It grows fast, quickly overtaking things like $n^2$.
+## dict (Dictionary)
+En samling af nøgle-værdi par (`{"a": 1}`). Hurtigt $O(1)$ opslag via hash-tabel.
 
-## Python
+## set (Mængde)
+En uordnet samling af unikke værdier (`{1, 2, 3}`). Fjerner automatisk dubletter.
 
-## print
+## Scope (Virkefelt)
+Området i koden hvor en variabel er synlig og gyldig (lokalt i en funktion vs. globalt i modulet).
 
-Writes something to the console. It is the first tool you reach for to check whether your code is doing anything at all. Separate several values with commas and Python puts spaces between them.
-
-## input
-
-Asks the user to type something and hands it back. Important: it always returns text, even when the user types a number, so wrap it in `int()` or `float()` first if you want to do maths.
-
-## int
-
-A whole number with no decimals, positive or negative. Also the function `int()` that converts text or a float into a whole number.
-
-## float
-
-A number with decimals, written with a dot not a comma. Floats are not perfectly precise, so `0.1 + 0.2` gives `0.30000000000000004`, which is normal, not a bug.
-
-## str
-
-Text, written inside quotes. Note that `"5"` is not the same as `5`: one is text, the other a number, and you cannot add them together without converting first.
-
-## bool
-
-A value that is only ever `True` or `False`, written with a capital letter. Used constantly whenever you check a condition.
-
-## casting
-
-Converting one type into another with `int()`, `float()`, `str()` or `bool()`. Handy when input arrives as text but you need to calculate with it.
-
-## range
-
-Makes a sequence of numbers to count through, usually paired with a for loop. It starts at 0 and stops just before the last number, so `range(1, 5)` gives 1, 2, 3, 4 and not 5.
-
-## def
-
-The keyword that defines a function, a reusable chunk of code you name once and call as often as you like. Remember the colon and the indentation underneath.
-
-## return
-
-Sends a value back out of a function so you can use it later. It also stops the function immediately, so any code after it in the same block never runs.
-
-## for loop
-
-Repeats a block once for each element in a sequence, like a list or a string. Good when you know how many times to run, or want to touch every element.
-
-## while loop
-
-Repeats a block as long as a condition stays true. Good when you do not know in advance how many rounds you need. Remember to change something inside, or it loops forever.
-
-## if, elif, else
-
-Branching. `if` runs a block only when its condition is true, `elif` adds more options checked top to bottom, and `else` catches everything left over. Only one branch runs.
-
-## list
-
-An ordered, changeable collection written with square brackets. Index starts at 0, so the first item is `liste[0]` and `liste[-1]` is the last. Add with `append()`, take a slice with a colon.
-
-## dict
-
-A dictionary stores key and value pairs. Instead of fetching by a number index you fetch by the key, which is ideal when data belongs together, like a name and an age. Use `.get()` to avoid a KeyError.
-
-## tuple
-
-Like a list but immutable, so it cannot be changed once made. Written with ordinary parentheses, used for data that stays fixed together, such as coordinates.
-
-## set
-
-A collection with no duplicates and no fixed order. Great for stripping repeated values out of a list or checking membership quickly.
-
-## index
-
-The position of an element in a sequence, counted from 0. Fetch an element with square brackets, and use a negative index to count from the end.
-
-## slicing
-
-Taking a chunk of a sequence with a colon, like `liste[start:slut]`, which runs from start up to but not including the end position.
-
-## f-string
-
-A string with an `f` in front of the opening quote, letting you drop variables straight into the text inside curly braces. The tidiest way to mix text and values.
-
-## enumerate
-
-Wraps a loop so you get both the index and the element each round, instead of tracking a counter yourself.
-
-## append
-
-A list method that adds one item to the end. Its cousin `insert()` drops an item at a chosen position.
-
-## try and except
-
-Error handling. Code in `try` is attempted, and if something goes wrong Python jumps into `except` instead of crashing the whole program. Best to catch a specific error type rather than a bare `except`.
-
-## mutable
-
-Able to be changed after it is created. Lists and dictionaries are mutable.
-
-## immutable
-
-Fixed once created, cannot be changed. Tuples and strings are immutable.
-
-## scope
-
-Where a variable is visible. A variable made inside a function only exists inside it (local scope), so to use its value outside you have to `return` it.
-
-## Links
-
-- [[index|Home]]
-- [[Courses/Programming/Programming|Programming]]
-- [[Courses/Introduction to applied mathematics/Introduction to applied mathematics|Introduction to Applied Mathematics]]
+## Exception (Undtagelse / Fejl)
+En fejl der opstår under programmets kørsel (fx `ZeroDivisionError`, `IndexError`), som kan fanges og håndteres sikkert med `try...except`.
