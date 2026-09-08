@@ -1,4 +1,4 @@
-import { resolveRelative, FullSlug } from "../util/path"
+import { resolveRelative, slugifyFilePath, FilePath } from "../util/path"
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import { classNames } from "../util/lang"
 
@@ -6,8 +6,13 @@ import { classNames } from "../util/lang"
 // every page. It links straight to the Contact page. Rendered server-side in
 // afterBody so it reappears on every SPA navigation with no extra JavaScript and
 // no localStorage. Styled with theme variables so it works in dark and light mode.
+//
+// The href is built the same way as VaultNav: slugifyFilePath normalises the
+// Contact file path to its real slug, then resolveRelative walks up to the site
+// root from the CURRENT page and back down, so the button lands on the Contact
+// page from the root, from one-level pages, and from deep Reference pages alike.
 const ContactButton: QuartzComponent = ({ fileData, displayClass }: QuartzComponentProps) => {
-  const href = resolveRelative(fileData.slug!, "Contact" as FullSlug)
+  const href = resolveRelative(fileData.slug!, slugifyFilePath("Contact.md" as FilePath))
   return (
     <a
       href={href}

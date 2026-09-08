@@ -1,24 +1,33 @@
-import { pathToRoot, resolveRelative } from "../util/path"
-import { FullSlug } from "../util/path"
+import { pathToRoot, resolveRelative, slugifyFilePath } from "../util/path"
+import { FilePath } from "../util/path"
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import { classNames } from "../util/lang"
 
 // A slim, always-visible top bar: the site title (links home), quick links to
 // the main study features, and a prominent "How to use this vault" link.
 // Made sticky in the CSS below.
+//
+// Every target is written as its content file path and run through Quartz's own
+// slugifyFilePath (spaces to dashes, same rule the build uses for page slugs),
+// then resolveRelative computes a path from the CURRENT page up to the site root
+// and back down to the target. This is the exact pattern the built-in Explorer
+// and PageTitle use, so links resolve correctly on the root page, on one-level
+// pages, and on deeply nested Reference pages, and they survive both SPA
+// navigation and a hard refresh on any deep page.
 const VaultNav: QuartzComponent = ({ fileData, cfg, displayClass }: QuartzComponentProps) => {
   const title = cfg?.pageTitle ?? "Note Vault"
   const home = pathToRoot(fileData.slug!)
-  const rel = (slug: string) => resolveRelative(fileData.slug!, slug as FullSlug)
+  const rel = (path: string) =>
+    resolveRelative(fileData.slug!, slugifyFilePath(path as FilePath))
 
-  const links: { label: string; slug: string }[] = [
-    { label: "Formelsamling", slug: "Formelsamling/Formelsamling" },
-    { label: "Flashcards", slug: "Flashcards/Flashcards" },
-    { label: "Self-Tests", slug: "Self-Tests/Self-Tests" },
-    { label: "Symbols", slug: "Reference/Matematik/Matematiske symboler" },
-    { label: "Periodic table", slug: "Reference/Kemi/Periodisk system" },
-    { label: "Glossary", slug: "Glossary" },
-    { label: "Contact", slug: "Contact" },
+  const links: { label: string; path: string }[] = [
+    { label: "Formelsamling", path: "Formelsamling/Formelsamling.md" },
+    { label: "Flashcards", path: "Flashcards/Flashcards.md" },
+    { label: "Self-Tests", path: "Self-Tests/Self-Tests.md" },
+    { label: "Symbols", path: "Reference/Matematik/Matematiske symboler.md" },
+    { label: "Periodic table", path: "Reference/Kemi/Periodisk system.md" },
+    { label: "Glossary", path: "Glossary.md" },
+    { label: "Contact", path: "Contact.md" },
   ]
 
   return (
@@ -29,13 +38,13 @@ const VaultNav: QuartzComponent = ({ fileData, cfg, displayClass }: QuartzCompon
       <span class="vault-nav-links">
         {links.map((l) => (
           <a
-            href={rel(l.slug)}
+            href={rel(l.path)}
             class={l.label === "Contact" ? "vault-nav-link vault-nav-contact" : "vault-nav-link"}
           >
             {l.label}
           </a>
         ))}
-        <a href={rel("how-to-use-this-vault")} class="vault-nav-link vault-nav-howto">
+        <a href={rel("how-to-use-this-vault.md")} class="vault-nav-link vault-nav-howto">
           How to use this vault
         </a>
       </span>
