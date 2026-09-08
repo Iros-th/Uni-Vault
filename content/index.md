@@ -16,77 +16,25 @@ Noterne skrives i Obsidian og udgives via Quartz. Kun noter med `publish: true` 
 
 <div class="course-grid">
 
-  <a class="course-card" href="Courses/Introduction-to-applied-mathematics/Introduction-to-applied-mathematics">
-    <h3>Introduction to Applied Mathematics</h3>
-    <p>Matematisk bevisførelse, logik, induktion, mængdelære og grundlæggende analyse.</p>
-    <div class="course-meta">
-      <span>DTU Kursus</span>
-      <span class="status-badge complete">Aktiv</span>
-    </div>
-  </a>
+  <a class="course-card" href="Courses/Introduction-to-applied-mathematics/Introduction-to-applied-mathematics"><span class="course-card-title">Introduction to Applied Mathematics</span><span class="course-card-desc">Matematisk bevisførelse, logik, induktion, mængdelære og grundlæggende analyse.</span><span class="course-meta"><span>DTU Kursus</span><span class="status-badge complete">Aktiv</span></span></a>
 
-  <a class="course-card" href="Courses/Programming/Programming">
-    <h3>Programmering (Python)</h3>
-    <p>Variabler, datatyper, kontrolstrukturer, funktioner, OOP, algoritmer og fejlhåndtering.</p>
-    <div class="course-meta">
-      <span>Dansk</span>
-      <span class="status-badge complete">12 Noter</span>
-    </div>
-  </a>
+  <a class="course-card" href="Courses/Programming/Programming"><span class="course-card-title">Programmering (Python)</span><span class="course-card-desc">Variabler, datatyper, kontrolstrukturer, funktioner, OOP, algoritmer og fejlhåndtering.</span><span class="course-meta"><span>Dansk</span><span class="status-badge complete">12 Noter</span></span></a>
 
-  <a class="course-card" href="Courses/Diskret-matematik/Diskret-matematik">
-    <h3>Diskret Matematik</h3>
-    <p>Udsagnslogik, sandhedstabeller, logiske gates, mængder, relationer og kombinatorik.</p>
-    <div class="course-meta">
-      <span>Matematik</span>
-      <span class="status-badge in-progress">I gang</span>
-    </div>
-  </a>
+  <a class="course-card" href="Courses/Diskret-matematik/Diskret-matematik"><span class="course-card-title">Diskret Matematik</span><span class="course-card-desc">Udsagnslogik, sandhedstabeller, logiske gates, mængder, relationer og kombinatorik.</span><span class="course-meta"><span>Matematik</span><span class="status-badge in-progress">I gang</span></span></a>
 
-  <a class="course-card" href="Courses/Matematik-1A/Matematik-1A">
-    <h3>Matematik 1A</h3>
-    <p>Lineær algebra, vektorer, matricer, differential- og integralregning for ingeniører.</p>
-    <div class="course-meta">
-      <span>Analyse & Algebra</span>
-      <span class="status-badge in-progress">I gang</span>
-    </div>
-  </a>
+  <a class="course-card" href="Courses/Matematik-1A/Matematik-1A"><span class="course-card-title">Matematik 1A</span><span class="course-card-desc">Lineær algebra, vektorer, matricer, differential- og integralregning for ingeniører.</span><span class="course-meta"><span>Analyse & Algebra</span><span class="status-badge in-progress">13 lektioner</span></span></a>
 
-  <a class="course-card" href="Courses/Chemistry/Chemistry">
-    <h3>Kemi</h3>
-    <p>Almen kemi, støkiometri, funktionelle grupper, det periodiske system og reaktionskinetik.</p>
-    <div class="course-meta">
-      <span>Kemi</span>
-      <span class="status-badge in-progress">Opdateres</span>
-    </div>
-  </a>
+  <a class="course-card" href="Courses/Chemistry/Chemistry"><span class="course-card-title">Kemi</span><span class="course-card-desc">Almen kemi, støkiometri, funktionelle grupper, det periodiske system og reaktionskinetik.</span><span class="course-meta"><span>Kemi</span><span class="status-badge in-progress">Opdateres</span></span></a>
 
-  <a class="course-card" href="Courses/Physics/Physics">
-    <h3>Fysik</h3>
-    <p>Klassisk mekanik, termodynamik, elektromagnetisme og bølgefysik.</p>
-    <div class="course-meta">
-      <span>Fysik</span>
-      <span class="status-badge stub">Skitse</span>
-    </div>
-  </a>
+  <a class="course-card" href="Courses/Physics/Physics"><span class="course-card-title">Fysik</span><span class="course-card-desc">Klassisk mekanik, termodynamik, elektromagnetisme og bølgefysik.</span><span class="course-meta"><span>Fysik</span><span class="status-badge in-progress">13 lektioner</span></span></a>
 
-  <a class="course-card" href="Courses/Statistics/Statistics">
-    <h3>Statistik & Sandsynlighed</h3>
-    <p>Deskriptiv statistik, sandsynlighedsfordelinger, hypotesetest og konfidensintervaller.</p>
-    <div class="course-meta">
-      <span>Statistik</span>
-      <span class="status-badge stub">Skitse</span>
-    </div>
-  </a>
+  <a class="course-card" href="Courses/Statistics/Statistics"><span class="course-card-title">Statistik & Sandsynlighed</span><span class="course-card-desc">Deskriptiv statistik, sandsynlighedsfordelinger, hypotesetest og konfidensintervaller.</span><span class="course-meta"><span>Statistik</span><span class="status-badge in-progress">13 lektioner</span></span></a>
 
-  <a class="course-card" href="Courses/Differential-Equations-and-Infinite-Series/Differential-Equations-and-Infinite-Series">
-    <h3>Differentialligninger & Uendelige Rækker</h3>
-    <p>Første- og andenordens differentialligninger, Taylor-rækker, potensrækker og konvergens.</p>
-    <div class="course-meta">
-      <span>Videregående</span>
-      <span class="status-badge stub">Skitse</span>
-    </div>
-  </a>
+  <a class="course-card" href="Courses/Differential-Equations-and-Infinite-Series/Differential-Equations-and-Infinite-Series"><span class="course-card-title">Differentialligninger & Uendelige Rækker</span><span class="course-card-desc">Første- og andenordens differentialligninger, Taylor-rækker, potensrækker og konvergens.</span><span class="course-meta"><span>Videregående</span><span class="status-badge in-progress">13 lektioner</span></span></a>
+
+  <a class="course-card" href="Courses/Introduction-to-Numerical-Algorithms/Introduction-to-Numerical-Algorithms"><span class="course-card-title">Numeriske Algoritmer</span><span class="course-card-desc">Numeriske metoder, afrundingsfejl, iteration, Newtons metode, interpolation og stabilitet.</span><span class="course-meta"><span>Videregående</span><span class="status-badge in-progress">13 lektioner</span></span></a>
+
+  <a class="course-card" href="Courses/Mathematical-Modelling/Mathematical-Modelling"><span class="course-card-title">Matematisk Modellering</span><span class="course-card-desc">Modelopbygning, antagelser, dimensionsanalyse, differentialligningsmodeller og validering.</span><span class="course-meta"><span>Videregående</span><span class="status-badge in-progress">13 lektioner</span></span></a>
 
 </div>
 
@@ -94,19 +42,28 @@ Noterne skrives i Obsidian og udgives via Quartz. Kun noter med `publish: true` 
 
 ## Opslagsværk & Formelsamling
 
-- [[Reference/Formelsamling/Oversigt|Formelsamlingen]]: Den samlede matematiske formelsamling (regneregler, trigonometri, differential- og integralregning, vektorer, statistik).
-- [[Reference/Matematik/Matematiske symboler|Matematiske Symboler]]: Komplet opslag over mængdelære, logik, kalkulus og algebraiske tegn.
+- [[Formelsamling/Formelsamling|Formelsamlingen]]: Samlet indgang til alle formler, opdelt efter fag (matematik, statistik, diskret, fysik, kemi, programmering).
+- [[Reference/Matematik/Matematiske symboler|Matematiske Symboler]]: Komplet opslag over mængdelære, logik, kalkulus, algebra, græske bogstaver og relationer.
+- [[Reference/Matematik/Matematiske konstanter|Matematiske Konstanter]]: $\pi$, $e$, det gyldne snit og flere med værdi og betydning.
+- [[Reference/Kemi/Kemiske konstanter|Kemiske Konstanter]]: Avogadro, gaskonstanten, Faraday, Planck og flere med symbol, værdi og enhed.
 - [[Reference/Matematik/Talmaengder|Talmængder]]: Formel definition af $\mathbb{N}, \mathbb{Z}, \mathbb{Q}, \mathbb{R}, \mathbb{C}$ med egenskaber og indeslutninger.
 - [[Reference/Kemi/Periodisk system|Interaktivt Periodisk System]]: Periodisk system med elektronkonfigurationer, atommasser og egenskaber.
 - [[Reference/Programmering/Alle datatyper|Programmering: Alle Datatyper]]: Gennemgang af alle primitive og sammensatte datatyper i Python/C++.
-- [[Glossary|Ordforklaring & Begreber (Glossary)]]: Tosproget opslagsværk med definitioner af centrale matematiske og tekniske termer.
+
+---
+
+## Ordbog & Begreber
+
+- [[Glossary|Glossary (EN)]]: English glossary of the core mathematical, chemical and computing terms.
+- [[Ordbog|Ordbog (DA)]]: Dansk udgave af ordbogen med de samme begreber oversat.
 
 ---
 
 ## Studie- & Træningsværktøjer
 
 - [[Flashcards/Flashcards|Flashcards]]: Hurtige repetitionskort opdelt efter emne (afslør svar ved klik).
-- [[Self-Tests/Self-Tests|Selv-Tests]]: Multiple-choice og opgavesæt til eksamenstræning.
+- [[Self-Tests/Self-Tests|Selv-Tests]]: Korte opgavesæt per fag til eksamenstræning.
+- [[Formelsamling/Formelsamling|Formelsamling]]: Alle formler samlet, klar til print.
 - [[Courses/Programming/Cheat Sheet|Programming cheat sheet]]: Vigtigste Python-syntaks på én side.
 - [[Courses/Introduction to applied mathematics/Cheat Sheet|Applied math cheat sheet]]: Bevismetoder og nøglefakta samlet.
 - [[how-to-use-this-vault|Vejledning til arkivet]]: Sådan navigerer du i noterne og udnytter krydshenvisninger.

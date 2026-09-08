@@ -81,3 +81,66 @@ Komplet oversigt over standardsymboler anvendt i diskret matematik, analyse, lin
 | $\propto$ | Proportional med | $F \propto a$ |
 | $\le, \ge$ | Mindre end eller lig / Større end eller lig | $x \le 5$ |
 | $\ll, \gg$ | Meget mindre end / Meget større end | $m \ll M$ |
+
+---
+
+## 5. Algebra og operatorer
+
+| Symbol | Navn / Betydning | Eksempel |
+|:---:|---|---|
+| $+\;-$ | Addition og subtraktion | $a + b - c$ |
+| $\cdot$ eller $\times$ | Multiplikation | $a \cdot b$ |
+| $\div$ eller $/$ | Division | $a / b$ |
+| $\pm$ | Plus/minus | $x = \pm 3$ |
+| $\sqrt{\;}$ | Kvadratrod | $\sqrt{9} = 3$ |
+| $\sqrt[n]{\;}$ | $n$-te rod | $\sqrt[3]{27} = 3$ |
+| $x^n$ | Potens | $2^3 = 8$ |
+| $\lvert x \rvert$ | Numerisk vaerdi | $\lvert -4 \rvert = 4$ |
+| $\lfloor x \rfloor$ | Nedrunding (floor) | $\lfloor 2.7 \rfloor = 2$ |
+| $\lceil x \rceil$ | Oprunding (ceil) | $\lceil 2.1 \rceil = 3$ |
+| $n!$ | Fakultet | $4! = 24$ |
+| $\binom{n}{k}$ | Binomialkoefficient | $\binom{4}{2} = 6$ |
+| $\circ$ | Sammensat funktion | $(f \circ g)(x) = f(g(x))$ |
+| $\mapsto$ | Afbilder til | $x \mapsto x^2$ |
+| $\to$ | Fra domaene til codomaene | $f: \mathbb{R} \to \mathbb{R}$ |
+
+---
+
+## 6. Graeske bogstaver i matematik
+
+| Bogstav | Navn | Typisk brug |
+|:---:|---|---|
+| $\alpha, \beta, \gamma$ | alfa, beta, gamma | vinkler og parametre |
+| $\delta, \Delta$ | delta | lille aendring; $\Delta$ for differens |
+| $\varepsilon$ | epsilon | vilkaarligt lille tal i graenser |
+| $\theta, \varphi$ | theta, phi | vinkler |
+| $\lambda$ | lambda | egenvaerdi, parameter |
+| $\mu$ | my | middelvaerdi |
+| $\pi$ | pi | forholdet $\approx 3{,}14159$; se [[Matematiske konstanter]] |
+| $\rho$ | rho | taethed, korrelation |
+| $\sigma, \Sigma$ | sigma | spredning; $\Sigma$ for sum |
+| $\tau$ | tau | $2\pi$, tidskonstant |
+| $\phi, \Phi$ | phi | det gyldne snit, fordelingsfunktion |
+| $\omega, \Omega$ | omega | vinkelfrekvens, udfaldsrum |
+| $\Pi$ | stort pi | produkttegn |
+
+---
+
+## 7. Talmaengder som symbol
+
+| Symbol | Maengde |
+|:---:|---|
+| $\mathbb{N}$ | de naturlige tal |
+| $\mathbb{Z}$ | de hele tal |
+| $\mathbb{Q}$ | de rationale tal |
+| $\mathbb{R}$ | de reelle tal |
+| $\mathbb{C}$ | de komplekse tal |
+
+Fuld gennemgang med egenskaber staar i [[Reference/Matematik/Talmaengder|Talmaengder]].
+
+## Links
+
+- [[Reference/Matematik/Logiske symboler|Logiske symboler]]
+- [[Reference/Matematik/Matematiske konstanter|Matematiske konstanter]]
+- [[Formelsamling/Formelsamling|Formelsamling]]
+- [[Glossary]]

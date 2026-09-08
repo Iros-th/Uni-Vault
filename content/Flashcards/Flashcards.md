@@ -19,8 +19,14 @@ How to use them: read the question, actually try to answer it in your head first
 
 - [[Programming Flashcards|Programming flashcards]]
 - [[Proofs Flashcards|Proofs and induction flashcards]]
+- [[Discrete Math Flashcards|Diskret matematik flashcards]]
+- [[Chemistry Flashcards|Kemi flashcards]]
+- [[Physics Flashcards|Fysik flashcards]]
+- [[Statistics Flashcards|Statistik flashcards]]
 
 ## Links
 
 - [[index|Home]]
+- [[Self-Tests/Self-Tests|Self-tests]]
+- [[Formelsamling/Formelsamling|Formelsamling]]
 - [[Glossary]]
