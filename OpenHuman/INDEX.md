@@ -1,5 +1,8 @@
 
 ## Active Projects
+- [2026-09-10 12:20:16] Nebula Swarm Minted Genome [08f0f21f] on EURUSD (M15): Mechanism: Cross-Asset Momentum & Breakout Filter. Sharpe: 2.41, Calmar: 5.92, MaxDD: 5.9%, PBO: 0.027, DSR: 2.76. Forward Check: FULLY VALIDATED. #nebula #swarm #eurusd #polaris
+- [2026-09-10 12:20:16] Nebula Swarm Minted Genome [8534dd89] on EURUSD (M15): Mechanism: Cross-Asset Momentum & Breakout Filter. Sharpe: 2.43, Calmar: 6.91, MaxDD: 5.1%, PBO: 0.037, DSR: 2.68. Forward Check: FULLY VALIDATED. #nebula #swarm #eurusd #polaris
+- [2026-09-10 12:20:16] Nebula Swarm Minted Genome [a6dfe4c3] on EURUSD (M15): Mechanism: Cross-Asset Momentum & Breakout Filter. Sharpe: 2.42, Calmar: 5.4, MaxDD: 6.5%, PBO: 0.039, DSR: 2.52. Forward Check: FULLY VALIDATED. #nebula #swarm #eurusd #polaris
 - [2026-09-10 12:13:58] Nebula Swarm Minted Genome [bbc92e47] on EURUSD (M15): Mechanism: Cross-Asset Momentum & Breakout Filter. Sharpe: 2.35, Calmar: 4.67, MaxDD: 7.3%, PBO: 0.035, DSR: 2.75. Forward Check: FULLY VALIDATED. #nebula #swarm #eurusd #polaris
 - [2026-09-10 12:13:58] Nebula Swarm Minted Genome [b86b87dd] on EURUSD (M15): Mechanism: Cross-Asset Momentum & Breakout Filter. Sharpe: 2.42, Calmar: 5.4, MaxDD: 6.5%, PBO: 0.033, DSR: 2.37. Forward Check: FULLY VALIDATED. #nebula #swarm #eurusd #polaris
 - [2026-09-10 12:13:58] Nebula Swarm Minted Genome [c6fe5b91] on EURUSD (M15): Mechanism: Cross-Asset Momentum & Breakout Filter. Sharpe: 2.28, Calmar: 5.42, MaxDD: 6.1%, PBO: 0.023, DSR: 2.63. Forward Check: FULLY VALIDATED. #nebula #swarm #eurusd #polaris
