@@ -1,5 +1,5 @@
 ---
-publish: true
+publish: false
 title: Problem Set 1
 course: Introduction to applied mathematics
 date: 2026-09-08
@@ -14,77 +14,86 @@ tags:
 
 # Problem Set 1
 
-Worked solutions in bullet style. Where the exact wording of a problem was not fully pinned down, I solved the standard version and flagged it.
+Full question text (verbatim from the handout) with a worked solution for every problem. Standing assumptions from the sheet: we may use the usual algebraic and ordering properties of $\mathbb{Z}$ and $\mathbb{Q}$, we take $\mathbb{Q} \subset \mathbb{R}$ with $\mathbb{R}$ sharing those same properties, every nonzero real has an additive and multiplicative inverse, $\sqrt{2}$ exists as a positive real with $(\sqrt{2})^2 = 2$, and $\sqrt{2}$ has already been shown to be [[Glossary#irrational-number|irrational]].
 
-- **Problem 1: the identity element is unique**
+## Problem 1
 
-	- Statement: for a set with a binary operation, if an identity element exists, it is unique.
+The real and complex numbers are both examples of a field. Using the field axioms, prove that the multiplicative identity element $1$ is necessarily unique, that is, that it is the only element $a$ satisfying $a \cdot x = x$ for all $x$ in the field.
 
-		- (Solved for the standard additive identity $0$ under $+$. The same argument works for any operation with an identity, for example $1$ under multiplication.)
+By definition $1$ satisfies $1 \cdot x = x \cdot 1 = x$ for every $x$. Suppose some element $a$ also satisfies $a \cdot x = x$ for all $x$. Using $a$'s property with $x = 1$ gives $a \cdot 1 = 1$. On the other hand, $1$ being an identity gives $a \cdot 1 = a$. The left sides agree, so $a = a \cdot 1 = 1$. Any element behaving like a multiplicative identity is therefore equal to $1$, so the identity is unique.
 
-	- Idea: assume there are two identities and show they must be equal. Classic uniqueness move.
+## Problem 2
 
-	- Solution:
+Prove or disprove:
 
-		- Suppose $e$ and $e'$ are both identity elements. So for every $a$: $a + e = a$ and $a + e' = a$.
+1. If $r$ is irrational then $\frac{1}{r}$ is also irrational.
+2. If $q$ is rational and $r$ is irrational then $q + r$ is irrational.
 
-		- Look at $e + e'$ and read it two ways.
+Statement (1) is **true**. Since $0$ is rational, an irrational $r$ is nonzero, so $\frac{1}{r}$ exists. Suppose for contradiction that $\frac{1}{r}$ is rational, say $\frac{1}{r} = \frac{m}{n}$ with $m, n$ integers. Because $\frac{1}{r} \ne 0$ we have $m \ne 0$, so we may invert again: $r = \frac{n}{m}$, a ratio of integers, hence rational. That contradicts $r$ being irrational, so $\frac{1}{r}$ is irrational.
 
-			- Treat $e'$ as the identity: $e + e' = e$.
+Statement (2) is **true**. Write $q = \frac{m}{n}$ and suppose for contradiction that $q + r$ is rational, say $q + r = \frac{a}{b}$. Then
 
-			- Treat $e$ as the identity: $e + e' = e'$.
+$$r = \frac{a}{b} - \frac{m}{n} = \frac{an - mb}{bn},$$
 
-		- Both are equal to the same thing $e + e'$, so $e = e'$.
+which is a ratio of integers with nonzero denominator, hence rational. This contradicts $r$ irrational, so $q + r$ is irrational.
 
-		- The two supposed identities are actually the same element, so the identity is unique. Done.
+## Problem 3
 
+Prove or disprove:
 
-- **Problem 2: reciprocal of a rational or irrational (true or false)**
+1. For every integer $n \in \mathbb{Z}$, the number $n + \sqrt{2}$ is irrational.
+2. There is a largest irrational number.
+3. Given a positive rational $q \in \mathbb{Q}$, one can find an irrational $r$ with $0 < r < q$.
+4. Between any two distinct rational numbers lies an irrational number.
 
-	- Statement, part a: if $x$ is a nonzero [[Glossary#rational|rational]], then $\frac{1}{x}$ is rational. TRUE.
+Statement (1) is **true**. An integer $n$ is rational and $\sqrt{2}$ is irrational, so this is exactly Problem 2(2) with $q = n$ and $r = \sqrt{2}$: the sum $n + \sqrt{2}$ is irrational.
 
-		- Let $x = \frac{p}{q}$ with $p, q$ nonzero integers.
+Statement (2) is **false**. If $x$ is any irrational number, then $x + 1$ is again irrational by Problem 2(2), and $x + 1 > x$. So no irrational number can be the largest. (Part (1) makes the same point concretely: $n + \sqrt{2}$ is irrational for every $n$ and grows without bound.)
 
-		- Then $\frac{1}{x} = \frac{q}{p}$, which is again a ratio of integers with nonzero bottom, so it is rational. Done.
+Statement (3) is **true**. Take $r = \frac{q}{\sqrt{2}}$. Since $q$ is a nonzero rational and $\frac{1}{\sqrt{2}}$ is irrational, $r$ is a nonzero rational times an irrational, hence irrational by Problem 5(4). Because $\sqrt{2} > 1$ we have $0 < \frac{q}{\sqrt{2}} < q$, so $r$ lands strictly between $0$ and $q$.
 
-	- Statement, part b: if $x$ is [[Glossary#irrational|irrational]], then $\frac{1}{x}$ is irrational. TRUE.
+Statement (4) is **true**. Let $p < q$ be distinct rationals. Set
 
-		- Prove by contradiction. Suppose $x$ is irrational but $\frac{1}{x}$ is rational.
+$$r = p + \frac{q - p}{\sqrt{2}}.$$
 
-		- Note $x \ne 0$ (irrationals are nonzero), so $\frac{1}{x} \ne 0$, and we can invert again.
+The gap $q - p$ is a positive rational, so $\frac{q-p}{\sqrt{2}}$ is irrational and lies strictly between $0$ and $q - p$ (again because $\sqrt{2} > 1$). Therefore $p < r < q$. Finally $r$ is a rational plus an irrational, so it is irrational by Problem 2(2).
 
-		- If $\frac{1}{x}$ is rational and nonzero, then by part a its reciprocal $\frac{1}{1/x} = x$ is rational.
+## Problem 4
 
-		- But that says $x$ is rational, contradicting the assumption. So $\frac{1}{x}$ must be irrational. Done.
+Prove or disprove: there is no rational number $x$ satisfying $x^2 = \frac{3}{25}$.
 
+The statement is **true**: no such rational exists. Suppose for contradiction that $x = \frac{a}{b}$ is rational and in lowest terms (so $a$ and $b$ share no common factor) with $x^2 = \frac{3}{25}$. Then
 
-- **Problem 3: the product of two rationals is rational**
+$$\frac{a^2}{b^2} = \frac{3}{25}, \qquad \text{so} \qquad 25 a^2 = 3 b^2.$$
 
-	- Statement: if $a$ and $b$ are rational, then $ab$ is rational.
+The right side is divisible by $3$, so $3 \mid 25 a^2$. Since $3 \nmid 25$, we get $3 \mid a^2$, and because $3$ is prime, $3 \mid a$. Write $a = 3k$. Substituting, $25 \cdot 9 k^2 = 3 b^2$, that is $b^2 = 75 k^2 = 3 (25 k^2)$, so $3 \mid b^2$ and hence $3 \mid b$. Now $3$ divides both $a$ and $b$, contradicting that the fraction was in lowest terms. So no rational $x$ satisfies $x^2 = \frac{3}{25}$.
 
-	- Idea: plug in the definition of rational and just multiply the fractions.
+## Problem 5 (hand-in, Week 2)
 
-	- Solution:
+This is the assignment problem. It is written up on its own in [[Aflevering 1]]. For completeness the four statements and their verdicts:
 
-		- Let $a = \frac{p}{q}$ and $b = \frac{r}{s}$ with $p, q, r, s$ integers and $q, s \ne 0$.
+1. The product of any two rational numbers is rational. **True.**
+2. The product of any two irrational numbers is irrational. **False** ($\sqrt{2} \cdot \sqrt{2} = 2$).
+3. The product of a rational number and an irrational number is irrational. **False** ($0 \cdot \sqrt{2} = 0$).
+4. The product of a nonzero rational number and an irrational number is irrational. **True.**
 
-		- Then $ab = \frac{p}{q} \cdot \frac{r}{s} = \frac{pr}{qs}$.
+The full proofs are in [[Aflevering 1]].
 
-		- $pr$ is an integer, $qs$ is an integer, and $qs \ne 0$ since neither factor is zero.
+## Problem 6
 
-		- So $ab$ is a ratio of integers with nonzero denominator, that is rational. Done.
+Using the field axioms, prove that the additive and multiplicative inverse of a given element are necessarily unique.
 
-	- Related fact worth having next to it: the sum of two rationals is rational.
+Additive inverse. Fix an element $a$ and suppose $b$ and $b'$ are both additive inverses, so $a + b = 0$ and $a + b' = 0$. Then, using $0$ as the additive identity and associativity,
 
-		- $\frac{p}{q} + \frac{r}{s} = \frac{ps + rq}{qs}$, again integer over nonzero integer. Rational.
+$$b = b + 0 = b + (a + b') = (b + a) + b' = 0 + b' = b'.$$
 
+(Here $b + a = a + b = 0$ by commutativity.) So the additive inverse is unique.
 
-- **Note on faithfulness**
+Multiplicative inverse. Fix a nonzero element $a$ and suppose $c$ and $c'$ are both multiplicative inverses, so $a \cdot c = 1$ and $a \cdot c' = 1$. Then
 
-	- Problems 1 to 3 above cover the identity-uniqueness, reciprocal true/false, and product-of-rationals questions from Problem Set One.
+$$c = c \cdot 1 = c \cdot (a \cdot c') = (c \cdot a) \cdot c' = 1 \cdot c' = c'.$$
 
-	- I stated each in the standard form used in the course. If your handout has extra parts (for example "products of irrationals" or a specific operation table), tell me and I will fold them in. The methods here (contradiction, definition-chasing) transfer directly.
-
+So the multiplicative inverse is unique.
 
 ## Links
 
@@ -92,3 +101,4 @@ Worked solutions in bullet style. Where the exact wording of a problem was not f
 - [[Proofs Part I]]
 - [[Proofs Part II]]
 - [[Problem Set 2]]
+- [[Aflevering 1]]

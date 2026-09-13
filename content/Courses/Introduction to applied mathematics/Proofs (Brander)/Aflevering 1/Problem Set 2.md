@@ -1,5 +1,5 @@
 ---
-publish: true
+publish: false
 title: Problem Set 2
 course: Introduction to applied mathematics
 date: 2026-09-08
@@ -16,128 +16,80 @@ tags:
 
 # Problem Set 2
 
-Worked solutions in bullet style. P5 is where my handwritten assignment answers go, cleaned up into proper proofs.
+Full question text (verbatim from the handout) with a worked solution for every problem.
 
-- **P1: $|\mathbb{Z}| = |2\mathbb{Z}|$ via the bijection $n \mapsto 2n$**
+## Problem 1
 
-	- Statement: the integers and the even integers have the same size.
+Let $\mathbb{Z}$ denote the integers and $2\mathbb{Z}$ the even integers. Prove that the cardinality of $\mathbb{Z}$ and $2\mathbb{Z}$ is the same: $|\mathbb{Z}| = |2\mathbb{Z}|$.
 
-	- Idea: build an explicit bijection, then check both directions.
+Two sets have the same cardinality when there is a [[Glossary#bijection|bijection]] between them, so we build one. Define $f : \mathbb{Z} \to 2\mathbb{Z}$ by $f(n) = 2n$. It is [[Glossary#injective|injective]]: if $2n = 2m$ then $n = m$. It is [[Glossary#surjective|surjective]]: any even integer has the form $2k$ for some integer $k$, and $f(k) = 2k$ hits it. So $f$ is a bijection and $|\mathbb{Z}| = |2\mathbb{Z}|$, even though the evens are a proper subset of the integers.
 
-	- Solution:
+## Problem 2
 
-		- Define $f : \mathbb{Z} \to 2\mathbb{Z}$ by $f(n) = 2n$.
+Let $S_k = \{1, 2, \dots, k\}$. How many subsets does $S_k$ have? Prove your result by induction.
 
-		- Injective: if $2n = 2m$ then $n = m$, so different inputs give different outputs.
+The answer is $2^k$. We argue by [[Glossary#induction|induction]] on $k$.
 
-		- Surjective: any even number is $2k$ for some integer $k$, and $f(k) = 2k$, so every even number is hit.
+Base case $k = 1$: $S_1 = \{1\}$ has exactly the two subsets $\varnothing$ and $\{1\}$, and $2^1 = 2$. (If one prefers to start at $k = 0$, the empty set $S_0 = \varnothing$ has the single subset $\varnothing$, and $2^0 = 1$.)
 
-		- $f$ is a bijection, so $|\mathbb{Z}| = |2\mathbb{Z}|$, even though the evens are a strict subset. That is life with infinite sets.
+Inductive step: assume $S_k$ has $2^k$ subsets and look at $S_{k+1} = S_k \cup \{k+1\}$. Every subset of $S_{k+1}$ either omits $k+1$ or contains it. The subsets omitting $k+1$ are exactly the subsets of $S_k$, so there are $2^k$ of them. The subsets containing $k+1$ are exactly the subsets of $S_k$ with $k+1$ adjoined, so there are again $2^k$ of them. In total
 
+$$2^k + 2^k = 2^{k+1},$$
 
-- **P2: $S_k = \{1, \dots, k\}$ has $2^k$ subsets (induction)**
+which is the claim for $k+1$. By induction $S_k$ has $2^k$ subsets for all $k$.
 
-	- Idea: adding one new element doubles the number of subsets, because each old subset either grabs the new element or does not.
+## Problem 3
 
-	- Solution:
+Prove the identity
 
-		- Base $k = 0$: $S_0$ is the empty set, whose only subset is itself, so $1 = 2^0$. Holds.
+$$\frac{1}{1 \cdot 2} + \frac{1}{2 \cdot 3} + \cdots + \frac{1}{n(n+1)} = \frac{n}{n+1} \qquad \text{for all } n \ge 1.$$
 
-		- Step: assume $S_k$ has $2^k$ subsets. Look at $S_{k+1} = S_k \cup \{k+1\}$.
+By induction on $n$. Base case $n = 1$: the left side is $\frac{1}{1 \cdot 2} = \frac{1}{2}$ and the right side is $\frac{1}{2}$, so it holds.
 
-			- Subsets that do not contain $k+1$: these are exactly the subsets of $S_k$, so $2^k$ of them.
+Inductive step: assume $\sum_{i=1}^{k} \frac{1}{i(i+1)} = \frac{k}{k+1}$. Adding the next term,
 
-			- Subsets that do contain $k+1$: each is a subset of $S_k$ with $k+1$ thrown in, again $2^k$ of them.
+$$\frac{k}{k+1} + \frac{1}{(k+1)(k+2)} = \frac{k(k+2) + 1}{(k+1)(k+2)} = \frac{k^2 + 2k + 1}{(k+1)(k+2)} = \frac{(k+1)^2}{(k+1)(k+2)} = \frac{k+1}{k+2}.$$
 
-		- Total: $2^k + 2^k = 2^{k+1}$, which is the formula for $k+1$. Done.
+That is the identity with $n = k+1$, so by induction it holds for all $n \ge 1$.
 
+## Problem 4
 
-- **P3: $\dfrac{1}{1 \cdot 2} + \dfrac{1}{2 \cdot 3} + \dots + \dfrac{1}{n(n+1)} = \dfrac{n}{n+1}$ for $n \ge 1$ (induction)**
+Find a bijection between the open interval $\left(-\frac{\pi}{2}, \frac{\pi}{2}\right)$ and the set $\mathbb{R}$ of all real numbers.
 
-	- Idea: standard induction, the algebra collapses nicely when you put the new term over a common denominator.
+Take $f(x) = \tan(x)$ on $\left(-\frac{\pi}{2}, \frac{\pi}{2}\right)$. It is injective because $\tan$ is strictly increasing there, so distinct inputs give distinct outputs. It is surjective because $\tan(x) \to -\infty$ as $x \to -\frac{\pi}{2}^{+}$ and $\tan(x) \to +\infty$ as $x \to \frac{\pi}{2}^{-}$, and being continuous it takes every value in between (intermediate value theorem). So $\tan$ is a bijection from the interval onto $\mathbb{R}$, with inverse $\arctan$.
 
-	- Solution:
+## Problem 5 (hand-in, Week 2)
 
-		- Base $n = 1$: left side is $\frac{1}{1 \cdot 2} = \frac{1}{2}$, right side is $\frac{1}{2}$. Holds.
+This is the assignment problem. It is written up on its own in [[Aflevering 1]]. The setup and verdicts:
 
-		- Step: assume $\sum_{i=1}^{k} \frac{1}{i(i+1)} = \frac{k}{k+1}$. Add the next term $\frac{1}{(k+1)(k+2)}$:
+The [[Glossary#fibonacci|Fibonacci]] sequence is $F(0) = 0$, $F(1) = 1$, $F(n) = F(n-1) + F(n-2)$ for $n \ge 2$. Statement A claims there is an $n_0$ with $F(n) < n^2$ for all $n \ge n_0$; statement B claims there is an $n_0$ with $F(n) > n^2$ for all $n \ge n_0$. **A is false and B is true.** The full [[Glossary#strong-induction|strong induction]] proof of B and the disproof of A are in [[Aflevering 1]].
 
-			$$\frac{k}{k+1} + \frac{1}{(k+1)(k+2)} = \frac{k(k+2) + 1}{(k+1)(k+2)} = \frac{k^2 + 2k + 1}{(k+1)(k+2)} = \frac{(k+1)^2}{(k+1)(k+2)} = \frac{k+1}{k+2}$$
+## Problem 6
 
-		- That is exactly $\frac{n}{n+1}$ with $n = k+1$. Done.
+Prove part (2) of Theorem 3.5: every complex number $z \ne 0$ has a unique multiplicative inverse, that is, a number $z^{-1}$ satisfying $z \cdot z^{-1} = z^{-1} \cdot z = 1$.
 
+Existence. Write $z = a + bi$ with $a, b$ real and not both zero, so $a^2 + b^2 > 0$. Then
 
-- **P4: a bijection between $\left(-\frac{\pi}{2}, \frac{\pi}{2}\right)$ and $\mathbb{R}$**
+$$z^{-1} = \frac{a - bi}{a^2 + b^2}$$
 
-	- Idea: use $\tan$, it stretches that open interval across the whole real line.
+satisfies $z \cdot z^{-1} = \frac{(a+bi)(a-bi)}{a^2+b^2} = \frac{a^2 + b^2}{a^2 + b^2} = 1$, and likewise $z^{-1} \cdot z = 1$ by commutativity.
 
-	- Solution:
+Uniqueness. Suppose $w$ and $w'$ both satisfy $z \cdot w = 1$ and $z \cdot w' = 1$. Then, using associativity,
 
-		- Define $f : \left(-\frac{\pi}{2}, \frac{\pi}{2}\right) \to \mathbb{R}$ by $f(x) = \tan(x)$.
+$$w = w \cdot 1 = w \cdot (z \cdot w') = (w \cdot z) \cdot w' = 1 \cdot w' = w'.$$
 
-		- Injective: $\tan$ is strictly increasing on this interval, so $x_1 \ne x_2$ gives $\tan(x_1) \ne \tan(x_2)$.
+So the multiplicative inverse is unique.
 
-		- Surjective: as $x \to -\frac{\pi}{2}^+$, $\tan(x) \to -\infty$, and as $x \to \frac{\pi}{2}^-$, $\tan(x) \to +\infty$. Being continuous, it takes every value in between, so every real is hit.
+## Problem 7
 
-		- $f$ is a bijection with inverse $\arctan$, so the interval and $\mathbb{R}$ have the same size. Done.
+The nonzero complex numbers $\mathbb{C} \setminus \{0\}$ with multiplication form a group. Recall a group is a set $G$ with a binary operation $* : G \times G \to G$ that is associative, has an identity $e$ with $e * x = x * e = x$, and gives every $x$ an inverse $x^{-1}$ with $x * x^{-1} = x^{-1} * x = e$. For each of the following, determine with proof whether it is a group under composition:
 
+- the set of bijective maps $f : \mathbb{R} \to \mathbb{R}$;
+- the set of injective maps $f : \mathbb{R} \to \mathbb{R}$.
 
-- **P5: Fibonacci growth**
+The bijective maps **form a group**. Composition of two bijections is again a bijection, so the operation stays inside the set (closure). Composition of functions is always associative, $(f \circ g) \circ h = f \circ (g \circ h)$. The identity map $\mathrm{id}(x) = x$ is a bijection and satisfies $f \circ \mathrm{id} = \mathrm{id} \circ f = f$. Finally every bijection $f$ has a two-sided inverse $f^{-1}$, which is itself a bijection, with $f \circ f^{-1} = f^{-1} \circ f = \mathrm{id}$. All axioms hold.
 
-	- Setup: [[Glossary#fibonacci|Fibonacci]] numbers $F(1) = 1$, $F(2) = 1$, and the [[Glossary#recurrence|recurrence]] $F(n) = F(n-1) + F(n-2)$ for $n \ge 3$.
-
-	- Handy values for later: $F(14) = 377$, $F(15) = 610$.
-
-
-	- **P5b: prove $F(n) > n^2$ for all $n \ge 14$ ([[Glossary#strong-induction|strong induction]])**
-
-		- Because the recurrence uses the two previous terms $F(k)$ and $F(k-1)$, the step reaches back two steps. So the proof needs TWO base cases, $F(14)$ and $F(15)$, not one. With a single base case the very first step would reach below where anything is checked.
-
-		- **Base cases:**
-
-			- $F(14) = 377 > 196 = 14^2$. Holds.
-
-			- $F(15) = 610 > 225 = 15^2$. Holds.
-
-		- **Strong induction hypothesis:** fix some $k \ge 15$ and assume $F(m) > m^2$ for every $m$ with $14 \le m \le k$.
-
-		- **Inductive step:** show $F(k+1) > (k+1)^2$.
-
-			- Since $k \ge 15$, both $k$ and $k-1$ sit in the range $[14, k]$, so the hypothesis gives $F(k) > k^2$ and $F(k-1) > (k-1)^2$.
-
-			- Then
-
-				$$F(k+1) = F(k) + F(k-1) > k^2 + (k-1)^2$$
-
-			- Now compare $k^2 + (k-1)^2$ with $(k+1)^2$:
-
-				$$k^2 + (k-1)^2 - (k+1)^2 = (2k^2 - 2k + 1) - (k^2 + 2k + 1) = k^2 - 4k = k(k-4)$$
-
-			- For $k \ge 14$ this is clearly positive (it reduces to $k^2 - 4k > 0$, true whenever $k > 4$). So $k^2 + (k-1)^2 > (k+1)^2$.
-
-			- Chaining: $F(k+1) > k^2 + (k-1)^2 > (k+1)^2$.
-
-		- Base cases plus the step cover all $n \ge 14$, so $F(n) > n^2$ for every $n \ge 14$. Done.
-
-		- (Note to self: the only fix from my handwritten version was the second base case $F(15)$. The rest of the reasoning, the $F(k) + F(k-1) > k^2 + (k-1)^2$ move and the $k^2 - 4k > 0$ reduction, was already right.)
-
-
-	- **P5a: disprove that there is an $F$ with $F(n) < n^2$ for all $n$ beyond some threshold $n_0$**
-
-		- Claim to disprove: there exists $n_0$ such that $F(n) < n^2$ for all $n \ge n_0$.
-
-		- From P5b we know $F(n) > n^2$ for all $n \ge 14$. That directly kills any such threshold.
-
-		- Explicit argument: take any proposed $n_0$. Pick $n = \max(n_0, 14)$.
-
-			- Since $n \ge 14$, P5b gives $F(n) > n^2$.
-
-			- Since $n \ge n_0$, the claim would demand $F(n) < n^2$.
-
-			- These cannot both hold, contradiction.
-
-		- No $n_0$ survives, so no such threshold exists. Done.
-
+The injective maps **do not form a group**. Closure, associativity and the identity are fine (the identity is injective, and a composition of injective maps is injective). The inverse axiom fails: an injective map need not be surjective, and without surjectivity there is no map $g$ with $f \circ g = \mathrm{id}$, since $f \circ g = \mathrm{id}$ would force $f$ to hit every real. Concretely $f(x) = e^{x}$ is injective from $\mathbb{R}$ to $\mathbb{R}$, but its image is only $(0, \infty)$, so no map $g : \mathbb{R} \to \mathbb{R}$ can satisfy $f \circ g = \mathrm{id}_{\mathbb{R}}$. With no inverse for $e^x$ inside the set, the group axioms fail.
 
 ## Links
 
@@ -145,3 +97,4 @@ Worked solutions in bullet style. P5 is where my handwritten assignment answers 
 - [[Proofs Part I]]
 - [[Proofs Part II]]
 - [[Problem Set 1]]
+- [[Aflevering 1]]

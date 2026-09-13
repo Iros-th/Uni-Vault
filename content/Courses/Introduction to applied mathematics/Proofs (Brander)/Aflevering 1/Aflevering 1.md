@@ -1,95 +1,89 @@
----
-publish: false
-title: Aflevering 1
-course: Introduction to applied mathematics
-date: 2026-09-13
-type: aflevering
-source: Beviser (Brander) - Aflevering 1
-tags:
-  - applied-math
-  - proofs
-  - "02525"
-  - aflevering
----
-
 # Aflevering 1
 
-Verified final solutions to the graded hand-in. Problems 1 to 4 are about products of [[Glossary#rational-number|rational]] and [[Glossary#irrational-number|irrational]] numbers; problem 5 is a [[Glossary#strong-induction|strong induction]] on the Fibonacci numbers. This note is kept private (`publish: false`) because it is the assignment answer sheet.
+Draft merging full answers to Problem Set 1 and Problem Set 2.
 
-## Problem 1: the product of two rational numbers is rational (true)
+## Problem Set 1
 
-Let $x$ and $y$ be rational. By definition we can write $x = \frac{a}{b}$ and $y = \frac{c}{d}$ with $a, b, c, d$ integers and $b, d \ne 0$. Then
+### Problem 1
+The multiplicative identity 1 is unique.
+Suppose an element a satisfies a * x = x for all x in the field.
+Setting x = 1 gives a * 1 = 1.
+On the other hand 1 being the identity gives a * 1 = a.
+The left sides agree so a = a * 1 = 1.
+Any element acting as multiplicative identity is equal to 1, so the identity is unique.
 
-$$x y = \frac{a}{b} \cdot \frac{c}{d} = \frac{ac}{bd}.$$
+### Problem 2
+1. If r is irrational then 1/r is irrational. Statement is **true**.
+Since 0 is rational, an irrational r is nonzero, so 1/r exists. If 1/r is rational, say 1/r = m/n with integers m, n, then r = n/m would be rational, contradiction.
+2. If q is rational and r is irrational then q + r is irrational. Statement is **true**.
+Suppose for contradiction that q + r = a/b is rational. Then r = a/b - q, which is a difference of rationals, hence rational. Contradiction.
 
-Here $ac$ and $bd$ are integers, and $bd \ne 0$ since neither $b$ nor $d$ is zero. So $xy$ is a ratio of two integers with nonzero denominator, which is exactly what it means to be rational. The claim is true.
+### Problem 3
+Is the product of a rational and an irrational number always irrational?
+Wait, this is **false**! Look at the notes from the sheet: if the rational number is 0, then 0 * r = 0, which is rational.
+My earlier scribble assumed r = a/b with a != 0 so I could divide by a, but when r = 0 that division is undefined.
 
-## Problem 2: the product of two irrational numbers is irrational (false)
+### Problem 4
+If the rational factor is nonzero, then the product of a nonzero rational and an irrational is irrational. Statement is **true**.
+Let p != 0 be rational and r irrational. Write p = m/n with m, n != 0. If p * r = a/b is rational, then r = m/(np) is rational. Det vil sige at for at p*r skal være rationelt, så skal r være i Q, hvilket vi ved det ikke gør. Contradiction.
 
-This is false, and a single counterexample settles it. The number $\sqrt{2}$ is irrational, yet
-
-$$\sqrt{2} \cdot \sqrt{2} = 2,$$
-
-which is rational. So two irrational numbers can have a rational product, and the claim fails.
-
-## Problem 3: the product of a rational and an irrational number is irrational (false)
-
-As stated the claim is false, because it allows the rational factor to be $0$. Take the rational number $0$ and any irrational $i$. Then
-
-$$0 \cdot i = 0,$$
-
-which is rational, not irrational. So the property does not hold for every rational number, and the claim is false.
-
-It is worth seeing exactly where a naive proof breaks down. Suppose we tried to argue by contradiction: write the rational factor as $r = \frac{a}{b}$ and assume the product $r i = \frac{c}{d}$ is rational. Solving for $i$ gives
-
-$$i = \frac{c b}{d a},$$
-
-a ratio of integers, which would contradict $i$ being irrational. But dividing by $a$ is only valid when $a \ne 0$, that is when $r \ne 0$. The argument says nothing about $r = 0$, and $r = 0$ is precisely the case that makes the claim false. Adding the assumption that the rational factor is nonzero repairs the statement, which is problem 4.
-
-## Problem 4: the product of a nonzero rational and an irrational number is irrational (true)
-
-Let $r$ be a nonzero rational and $i$ irrational. Write $r = \frac{a}{b}$ with $a, b$ integers; since $r \ne 0$ we have $a \ne 0$, and $b \ne 0$ as always. Suppose for contradiction that the product is rational, say
-
-$$r i = \frac{c}{d}, \qquad c, d \text{ integers}, \ d \ne 0.$$
-
-Solving for $i$,
-
-$$i = \frac{c}{d r} = \frac{c b}{d a}.$$
-
-Because $a \ne 0$ and $d \ne 0$, the numerator $cb$ and denominator $da$ are integers with $da \ne 0$, so $i$ is rational. This contradicts $i$ being irrational. Hence $r i$ cannot be rational, so it is irrational. The claim is true.
-
-The assumption $a \ne 0$ is used in an essential way when dividing by $a$; that is the exact assumption missing in problem 3.
-
-## Problem 5: there is an $n_0$ with $F(n) > n^2$ for all $n > n_0$ (true)
-
-The Fibonacci numbers are $F(0) = 0$, $F(1) = 1$, and $F(n) = F(n-1) + F(n-2)$ for $n > 1$. We prove the statement by strong induction with $n_0 = 12$; that is, $F(n) > n^2$ for all $n \ge 13$.
-
-Two base cases are needed, because the step for $F(k+1)$ uses both $F(k)$ and $F(k-1)$:
-
-$$F(13) = 233 > 169 = 13^2, \qquad F(14) = 377 > 196 = 14^2.$$
-
+### Problem 5 (Hand-in)
+The Fibonacci sequence F(0) = 0, F(1) = 1, F(n) = F(n-1) + F(n-2).
+In 5b, prove F(n) > n^2 for all n >= 13 by strong induction.
+Base cases:
+F(13) = 233 > 169 = 13^2
+F(14) = 377 > 196 = 14^2
 Both hold.
+Induction hypothesis: assume F(m) > m^2 for all 13 <= m <= k (with k >= 14).
+Inductive step:
+F(k+1) = F(k) + F(k-1) > k^2 + (k-1)^2 = 2k^2 - 2k + 1.
+Math fact 1: compare with (k+1)^2 = k^2 + 2k + 1:
+(2k^2 - 2k + 1) - (k^2 + 2k + 1) = k^2 - 4k = k(k-4) > 0 (da k >= 14 må dette være sandt).
+Therefore F(k+1) > (k+1)^2, completing the induction.
 
-Induction hypothesis: fix $k \ge 14$ and assume $F(m) > m^2$ for every integer $m$ with $13 \le m \le k$.
+In 5a: Disprove existence of n_0 such that F(n) < n^2 for all n >= n_0.
+Since in 5b we proved that for any n >= 14, F(n) > n^2, and there isn't a way for the sequence to skip this step n >= 14, there will always be an n where F(n) > n^2. So 5a is false.
 
-Inductive step: we show $F(k+1) > (k+1)^2$. Since $k \ge 14$, both $k$ and $k-1$ lie in the range $[13, k]$, so the hypothesis gives $F(k) > k^2$ and $F(k-1) > (k-1)^2$. Adding these,
+## Problem Set 2
 
-$$F(k+1) = F(k) + F(k-1) > k^2 + (k-1)^2 = 2k^2 - 2k + 1.$$
+### Problem 1
+Show |Z| = |2Z|.
+Define f : Z -> 2Z by f(n) = 2n.
+It is injective: if 2n = 2m then n = m.
+It is surjective: any even integer has the form 2k, and f(k) = 2k.
+So f is a bijection and |Z| = |2Z|.
 
-It remains to check that $2k^2 - 2k + 1 \ge (k+1)^2$. Their difference is
+### Problem 2
+Number of subsets of S_k = {1, 2, ..., k} is 2^k.
+Proof by induction on k:
+Base case k = 1: S_1 = {1} has empty set and {1}, so 2 subsets, and 2^1 = 2.
+Inductive step: S_{k+1} = S_k U {k+1}.
+Subsets omitting k+1 are subsets of S_k (2^k).
+Subsets containing k+1 are subsets of S_k with k+1 added (2^k).
+Total = 2^k + 2^k = 2^{k+1}.
 
-$$\left(2k^2 - 2k + 1\right) - \left(k^2 + 2k + 1\right) = k^2 - 4k = k(k-4),$$
+### Problem 3
+Prove 1/(1*2) + 1/(2*3) + ... + 1/(n(n+1)) = n/(n+1).
+Base case n = 1: 1/(1*2) = 1/2 and 1/(1+1) = 1/2.
+Inductive step: assume formula holds for k.
+Adding 1/((k+1)(k+2)):
+k/(k+1) + 1/((k+1)(k+2)) = (k(k+2)+1)/((k+1)(k+2)) = (k+1)^2/((k+1)(k+2)) = (k+1)/(k+2).
+Done by induction.
 
-which is positive for $k \ge 14$. Therefore
+### Problem 4
+Find a bijection between (-pi/2, pi/2) and R.
+Take f(x) = tan(x) on (-pi/2, pi/2).
+It is injective because tan is strictly increasing on this interval.
+It is surjective: tan(x) -> -inf as x -> -pi/2+ and tan(x) -> +inf as x -> pi/2-.
+Because tan is continuous, by the intermediate value theorem (that curvy graph of tan that spans all of R), it hits every real value.
+So tan is a bijection, and its inverse is arctan.
 
-$$F(k+1) > k^2 + (k-1)^2 > (k+1)^2.$$
+### Problem 6
+Multiplicative inverse in C:
+Write z = a + bi != 0.
+Then z^-1 = (a - bi)/(a^2 + b^2) satisfies z * z^-1 = 1.
+Uniqueness follows from associativity: w = w * 1 = w * (z * w') = (w * z) * w' = 1 * w' = w'.
 
-The two base cases together with the step cover every $n \ge 13$, so $F(n) > n^2$ for all $n > 12$. The claim is true.
-
-## Links
-
-- [[Introduction to applied mathematics]]
-- [[Proofs Part I]]
-- [[Proofs Part II]]
-- [[Problem Set 1]]
-- [[Problem Set 2]]
+### Problem 7
+- Bijective maps R -> R form a group under composition.
+- Injective maps R -> R do not form a group.
