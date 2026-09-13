@@ -21,6 +21,7 @@ const VaultNav: QuartzComponent = ({ fileData, cfg, displayClass }: QuartzCompon
     resolveRelative(fileData.slug!, slugifyFilePath(path as FilePath))
 
   const links: { label: string; path: string }[] = [
+    { label: "Studie", path: "Studie.md" },
     { label: "Formelsamling", path: "Formelsamling/Formelsamling.md" },
     { label: "Flashcards", path: "Flashcards/Flashcards.md" },
     { label: "Self-Tests", path: "Self-Tests/Self-Tests.md" },
@@ -40,7 +41,13 @@ const VaultNav: QuartzComponent = ({ fileData, cfg, displayClass }: QuartzCompon
         {links.map((l) => (
           <a
             href={rel(l.path)}
-            class={l.label === "Contact" ? "vault-nav-link vault-nav-contact" : "vault-nav-link"}
+            class={
+              l.label === "Contact"
+                ? "vault-nav-link vault-nav-contact"
+                : l.label === "Studie"
+                  ? "vault-nav-link vault-nav-studie"
+                  : "vault-nav-link"
+            }
           >
             {l.label}
           </a>
@@ -120,6 +127,15 @@ VaultNav.css = `
   background: var(--secondary);
   color: var(--light);
   text-decoration: none;
+}
+
+.vault-nav-studie {
+  font-weight: 700;
+  color: var(--tertiary);
+}
+
+.vault-nav-studie:hover {
+  color: var(--secondary);
 }
 
 @media print {

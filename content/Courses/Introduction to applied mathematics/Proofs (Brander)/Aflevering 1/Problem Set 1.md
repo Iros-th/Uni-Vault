@@ -1,5 +1,5 @@
 ---
-publish: true
+publish: false
 title: Problem Set 1
 course: Introduction to applied mathematics
 date: 2026-09-08

@@ -62,6 +62,7 @@ Noterne skrives i Obsidian og udgives via Quartz. Kun noter med `publish: true` 
 
 ## Studie- & Træningsværktøjer
 
+- [[Studie|Studie (træningsrum)]]: Interaktiv træning med Lær, Test og spaced-repetition Genlær. Henter kortene direkte fra dine flashcards og selv-tests.
 - [[Exam-Prep|Eksamensforberedelse]]: Samlet startside med selv-tests, flashcards, cheat sheets og gamle eksamener per fag.
 - [[Study-Roadmap|Studieoversigt]]: Rækkefølge og sammenhæng mellem fagene, hvis du starter forfra.
 - [[Flashcards/Flashcards|Flashcards]]: Hurtige repetitionskort opdelt efter emne (afslør svar ved klik).
