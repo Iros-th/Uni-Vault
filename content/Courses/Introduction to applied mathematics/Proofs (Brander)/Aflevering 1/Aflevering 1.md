@@ -1,62 +1,28 @@
-# Aflevering 1 - scribbles & sheets transcribed
+# Aflevering 1 - Pre-submission Draft
 
-![[ghb.jpg]]
-![[asj.jpg]]
-![[p.jpg]]
-
-Problem Set 1 worked answers:
+Working draft for Aflevering 1 hand-in problems:
 
 ## Problem 1
-mult identity 1 is unique in any field.
-proof: assume a * x = x for all x.
-take x = 1 => a * 1 = 1.
-also 1 * x = x, so 1 * a = a => a * 1 = a by commutativity.
-left sides match => a = 1. so identity is unique.
+The product of two rational numbers is rational.
+Let x, y in Q, x = a/b, y = c/d with a,b,c,d in Z and b,d != 0.
+xy = (ac)/(bd). Since ac, bd are integers and bd != 0, xy in Q. Claim is true.
 
 ## Problem 2
-1. r irrational => 1/r irrational. TRUE.
-if 1/r = m/n with m,n in Z, m != 0, then r = n/m in Q, contradiction.
-2. q rational, r irrational => q + r irrational. TRUE.
-if q + r = a/b in Q, then r = a/b - q in Q, contradiction.
+The product of two irrational numbers is irrational.
+Counterexample: sqrt(2) is irrational, but sqrt(2) * sqrt(2) = 2 is rational. Claim is false.
 
 ## Problem 3
-is product of a rational and an irrational always irrational?
-CLAIM: TRUE! (wait need to check what sheet 1 says about 0 * r = 0!)
-proof by contradiction: let r = a/b and i be irrational.
-suppose r * i = c/d in Q.
-then i = (c * b) / (d * a).
-since cb and da are integers and da != 0, i must be rational!
-this contradicts that i is irrational.
-so r * i is always irrational. ez.
+The product of a rational and an irrational number is irrational.
+Counterexample: 0 is rational, but 0 * r = 0 is rational for any irrational r. Claim is false.
 
 ## Problem 4
-product of two irrationals is irrational? FALSE.
-sqrt(2) * sqrt(2) = 2 in Q.
+The product of a nonzero rational and an irrational is irrational.
+Let r != 0 in Q, i in R \ Q. r = a/b with a != 0.
+If ri = c/d, then i = (cb)/(da) in Q, contradiction. Claim is true.
 
 ## Problem 5 (Hand-in)
-fibonacci sequence F(n) > n^2 for n >= 13.
-two base cases:
-F(13) = 233 > 169
-F(14) = 377 > 196
-both hold.
-inductive step:
-F(k+1) = F(k) + F(k-1) > k^2 + (k-1)^2 = 2k^2 - 2k + 1.
-compare to (k+1)^2:
-(2k^2 - 2k + 1) - (k^2 + 2k + 1) = k^2 - 4k = k(k-4) > 0 for k >= 14.
-so F(k+1) > (k+1)^2. claim is true.
-
----
-
-### From sheet 2 & 3:
-Problem 4:
-f(x) = tan(x) on (-pi/2, pi/2).
-take tan(x). its a bijection!
-strictly increasing so injective, and it hits everything coz that curvy thing of when tan looks like that curvy thing stretching from -inf to +inf ykwis so surjective. inverse is arctan.
-
-Problem 5b:
-k >= 14
-F(14) = 377      F(14) > 14^2
-14^2 = 196
-asumptions: F(k+1) = F(k) + F(k-1)
-F(k) > k^2 ^ F(k-1) > (k-1)^2
-Math fact 1: k^2 + (k-1)^2 > (k+1)^2 <=> k^2 - 4k > 0 (da k >= 14 må dette være sandt)
+Fibonacci F(n) > n^2 for all n >= 13.
+Base cases: F(13) = 233 > 169, F(14) = 377 > 196.
+Induction step: F(k+1) = F(k) + F(k-1) > k^2 + (k-1)^2 = 2k^2 - 2k + 1.
+Difference (2k^2 - 2k + 1) - (k^2 + 2k + 1) = k^2 - 4k = k(k-4) > 0 for k >= 14.
+So F(k+1) > (k+1)^2. Proven by strong induction.
