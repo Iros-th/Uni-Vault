@@ -1,5 +1,5 @@
 ---
-publish: false
+publish: true
 title: Aflevering 1
 course: Introduction to applied mathematics
 date: 2026-09-13
@@ -206,7 +206,7 @@ Prove part (2) of Theorem 3.5: every complex number $z \ne 0$ has a unique multi
 
 Existence. Write $z = a + bi$ with $a, b$ real and not both zero, so $a^2 + b^2 > 0$. Then
 
-$$z^{-1} = \frac{a - bi}{a^2 + b^2}$$
+$$z^{-1} = frac{a - bi}{a^2 + b^2}$$
 
 satisfies $z \cdot z^{-1} = \frac{(a+bi)(a-bi)}{a^2+b^2} = \frac{a^2 + b^2}{a^2 + b^2} = 1$, and likewise $z^{-1} \cdot z = 1$ by commutativity.
 
