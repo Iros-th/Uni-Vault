@@ -24,6 +24,10 @@ Nummererede skabeloner, klar til at fylde ud efter hver forelæsning.
 
 - [[Courses/Matematik 1A/Lektioner/index|Alle lektioner (1 til 13)]]
 
+## Afleveringer
+
+- [[Courses/Matematik 1A/Aflevering 1|Aflevering 1 (Hjemmeopgave 1)]]
+
 ## Ældre noter
 
 - [[Udsagns logik Uge 1]]
