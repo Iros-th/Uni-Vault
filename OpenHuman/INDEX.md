@@ -1,5 +1,8 @@
 
 ## Active Projects
+- [2026-10-06 05:59:37] Nebula Swarm Minted Genome [cece4139] on EURUSD (M15): Mechanism: Cross-Asset Momentum & Breakout Filter. Sharpe: 2.14, Calmar: 5.44, MaxDD: 5.7%, PBO: 0.025, DSR: 2.74. Forward Check: FULLY VALIDATED. #nebula #swarm #eurusd #polaris
+- [2026-10-06 05:44:59] Nebula Swarm Minted Genome [66074750] on EURUSD (M15): Mechanism: Cross-Asset Momentum & Breakout Filter. Sharpe: 2.35, Calmar: 5.01, MaxDD: 6.8%, PBO: 0.024, DSR: 2.55. Forward Check: FULLY VALIDATED. #nebula #swarm #eurusd #polaris
+- [2026-10-06 05:44:22] Nebula Swarm Minted Genome [b0eaeabd] on EURUSD (M15): Mechanism: Cross-Asset Momentum & Breakout Filter. Sharpe: 2.43, Calmar: 4.96, MaxDD: 7.1%, PBO: 0.027, DSR: 2.58. Forward Check: FULLY VALIDATED. #nebula #swarm #eurusd #polaris
 - [2026-10-05 19:52:08] Nebula Swarm Minted Genome [19b6e039] on EURUSD (M15): Mechanism: Cross-Asset Momentum & Breakout Filter. Sharpe: 2.43, Calmar: 4.96, MaxDD: 7.1%, PBO: 0.033, DSR: 2.73. Forward Check: FULLY VALIDATED. #nebula #swarm #eurusd #polaris
 - [2026-10-05 18:18:30] Nebula Swarm Minted Genome [0b711ec5] on EURUSD (M15): Mechanism: Cross-Asset Momentum & Breakout Filter. Sharpe: 2.11, Calmar: 4.43, MaxDD: 6.9%, PBO: 0.025, DSR: 2.56. Forward Check: FULLY VALIDATED. #nebula #swarm #eurusd #polaris
 - [2026-09-26 21:45:54] Nebula Court Ruling on SHIBUSDT: Court ratifies Composite Regime-Adaptive Strategy on SHIBUSDT. Approved by 4/5 seats (Skeptic, Rebuilder, Outsider, Operator). ADHD Speedrunner & $0 Budget frames adopted: SIMD vectorized execution, zero lookahead leakage, PBO < 0.04, and automated kill-switch protection. (Efficiency: 4.79x, 5/5 seats resolved) #nebula #court #verdict #shibusdt #boss_loop
