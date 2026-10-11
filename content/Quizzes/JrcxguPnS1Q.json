@@ -1,0 +1,689 @@
+{
+ "schema": 1,
+ "videoId": "JrcxguPnS1Q",
+ "title": "Exact Differential Equations: How to Find the Potential Function?",
+ "map_title": "Exact DEs",
+ "channel": "Computer Engineering Jitty",
+ "course": "Differential Equations and Infinite Series",
+ "source_map": "Courses/Differential Equations and Infinite Series/Speedrun Map.md",
+ "map_line": 100,
+ "captions": {
+  "lang": "en",
+  "auto": true,
+  "cache": "tools/videoquiz/.cache/transcripts/JrcxguPnS1Q.json"
+ },
+ "generated_at": "2026-10-07T19:50:51",
+ "models": [
+  "gpt-oss:120b-cloud"
+ ],
+ "window_seconds": 120.0,
+ "deck_slug": "Quizzes/Kort/JrcxguPnS1Q",
+ "rejected_by_validator": 10,
+ "windows": [
+  {
+   "i": 0,
+   "start": 0.0,
+   "end": 121.76,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "I videoens notation, hvad repræsenterer funktionen m?",
+     "options": [
+      "koefficienten foran dx",
+      "koefficienten foran dy",
+      "den partielle afledte af n",
+      "potentialfunktionen"
+     ],
+     "answer_index": 0,
+     "explanation": "m er den funktion, der står foran differentialet dx. (0:42)",
+     "evidence": "the function m is the what's going to be in front of dx.",
+     "t": 41.7,
+     "cite": "0:42",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 0
+    },
+    {
+     "type": "mc",
+     "question": "Hvilken betingelse skal opfyldes for at kunne anvende metoden for eksakte differentialligninger?",
+     "options": [
+      "m = n",
+      "∂m/∂x = ∂n/∂y",
+      "∂m/∂y = ∂n/∂x",
+      "∂²m/∂x∂y = 0"
+     ],
+     "answer_index": 2,
+     "explanation": "Den eneste betingelse er, at den partielle afledte af m med hensyn til y er lig den partielle afledte af n med hensyn til x. (1:01)",
+     "evidence": "take the y partial of m and make sure it's equal to the x partial of n.",
+     "t": 60.6,
+     "cite": "1:01",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 1
+    },
+    {
+     "type": "short",
+     "question": "Hvad kaldes den funktion, der findes, når betingelsen for eksakte differentialligninger er opfyldt?",
+     "answer": "potential function",
+     "explanation": "Når betingelsen er opfyldt, eksisterer en såkaldt potentialfunktion. (1:32)",
+     "evidence": "there's something called the potential function.",
+     "t": 91.9,
+     "cite": "1:32",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 2
+    }
+   ],
+   "transcript_from": "0:00",
+   "transcript_to": "2:02"
+  },
+  {
+   "i": 1,
+   "start": 121.76,
+   "end": 242.16,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad fortæller den såkaldte \"exact condition\" os ifølge videoen?",
+     "options": [
+      "Hvilken orden differentialligningen har",
+      "Hvad potentialfunktionens værdi er",
+      "Hvordan man løser enhver differentialligning",
+      "Om der findes en potentialfunktion"
+     ],
+     "answer_index": 3,
+     "explanation": "Den eksakte betingelse afgør, om en potentialfunktion kan findes. (2:27)",
+     "evidence": "This exact condition tells us if there's a potential function.",
+     "t": 147.3,
+     "cite": "2:27",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 3
+    },
+    {
+     "type": "mc",
+     "question": "Ifølge videoen er den x‑partielle af potentialfunktionen lig med:",
+     "options": [
+      "m",
+      "den y‑partielle af m",
+      "n",
+      "0"
+     ],
+     "answer_index": 0,
+     "explanation": "Den x‑partielle af potentialfunktionen er netop funktionen m. (3:46)",
+     "evidence": "the x partial of our potential function is m.",
+     "t": 226.5,
+     "cite": "3:46",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 4
+    },
+    {
+     "type": "short",
+     "question": "Hvilken lighed mellem blandede partielle af en funktion nævnes i videoen?",
+     "answer": "$\\frac{\\partial^2 f}{\\partial y\\partial x}=\\frac{\\partial^2 f}{\\partial x\\partial y}$",
+     "explanation": "Blandede partielle af en funktion er symmetriske. (3:23)",
+     "evidence": "If you take the y partial and then the x partial of the same function, they're equal to each other.",
+     "t": 202.9,
+     "cite": "3:23",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 5
+    }
+   ],
+   "transcript_from": "2:02",
+   "transcript_to": "4:02"
+  },
+  {
+   "i": 2,
+   "start": 242.16,
+   "end": 362.96,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "If du tager den y‑partielle af m, hvad svarer det til i forhold til potentialfunktionen?",
+     "options": [
+      "Den anden afledte kun med hensyn til y",
+      "Den y‑partielle af potentialfunktionen selv",
+      "Den y‑partielle af den x‑partielle af potentialfunktionen",
+      "Den x‑partielle af potentialfunktionen"
+     ],
+     "answer_index": 2,
+     "explanation": "Den y‑partielle af m er den y‑partielle af den x‑partielle af potentialfunktionen. (4:28)",
+     "evidence": "if you take the y partial of m, you're taking the y partial of the x partial of the potential function",
+     "t": 268.0,
+     "cite": "4:28",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 6
+    },
+    {
+     "type": "mc",
+     "question": "Hvilken betingelse skal opfyldes for at en differentialligning er eksakt (dvs. de blandede partielle afledte er lige)?",
+     "options": [
+      "M = N",
+      "∂M/∂x = ∂N/∂y",
+      "∂M/∂y = ∂N/∂x",
+      "Potentialfunktionen er lineær"
+     ],
+     "answer_index": 2,
+     "explanation": "Eksaktheden kræver, at de to blandede partielle afledte er identiske. (4:48)",
+     "evidence": "we get that this and this are the same, right? Because of this condition here",
+     "t": 287.6,
+     "cite": "4:48",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 7
+    },
+    {
+     "type": "short",
+     "question": "Skriv den matematiske betingelse for eksaktheden af en differentialligning med funktionerne M(x,y) og N(x,y).",
+     "answer": "$\\frac{\\partial M}{\\partial y} = \\frac{\\partial N}{\\partial x}$",
+     "explanation": "Eksakte ligninger kræver, at de blandede partielle afledte er lige. (4:48)",
+     "evidence": "we get that this and this are the same, right? Because of this condition here",
+     "t": 287.6,
+     "cite": "4:48",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 8
+    }
+   ],
+   "transcript_from": "4:02",
+   "transcript_to": "6:03"
+  },
+  {
+   "i": 3,
+   "start": 362.96,
+   "end": 484.24,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad er den eksakte betingelse for et differentialligningssystem i form af partielle afledte?",
+     "options": [
+      "$M=N$",
+      "$\\frac{\\partial M}{\\partial x}=\\frac{\\partial N}{\\partial y}$",
+      "$\\frac{\\partial M}{\\partial y}=\\frac{\\partial N}{\\partial x}$",
+      "$M+N=0$"
+     ],
+     "answer_index": 2,
+     "explanation": "Den eksakte betingelse er, at de to partielle afledte er lige. (6:06)",
+     "evidence": "M of Y and N of X must be equal to each other because that's the exact same thing as saying that the X partial then the Y partial of our potential function is equal to the Y partial then the X partial of our potential function.",
+     "t": 366.4,
+     "cite": "6:06",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 9
+    },
+    {
+     "type": "mc",
+     "question": "Ifølge videoen repræsenterer funktionen m hvad i forhold til potentialfunktionen?",
+     "options": [
+      "Den y‑partielle afledte af potentialfunktionen",
+      "Den x‑partielle afledte af potentialfunktionen",
+      "Den anden afledte af potentialfunktionen",
+      "Selve potentialfunktionen"
+     ],
+     "answer_index": 1,
+     "explanation": "m er netop den x‑partielle afledte af potentialfunktionen. (6:45)",
+     "evidence": "And also that m is the x partial of our potential function and n is the y partial of our potential function.",
+     "t": 405.4,
+     "cite": "6:45",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 10
+    },
+    {
+     "type": "short",
+     "question": "Hvilken integration skal du udføre først for at finde potentialfunktionen, når du kender m?",
+     "answer": "Integrer m med hensyn til x (og tilføj en funktion af y).",
+     "explanation": "Da m er den x‑partielle afledte, får man potentialfunktionen ved at integrere m i x‑retningen. (7:56)",
+     "evidence": "How do we find the potential function? Well, if m's the x partial, well, how do we reverse a",
+     "t": 475.5,
+     "cite": "7:56",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 11
+    }
+   ],
+   "transcript_from": "6:03",
+   "transcript_to": "8:04"
+  },
+  {
+   "i": 4,
+   "start": 484.24,
+   "end": 607.04,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad får man, når man integrerer $m$ med hensyn til $x$?",
+     "options": [
+      "$x^2 + y^2$",
+      "$x^2 + f(y) + x y^3$",
+      "$2x + C$",
+      "$x^2 + y + x y^3$"
+     ],
+     "answer_index": 1,
+     "explanation": "Integrationen giver $x^2$ plus et led, der afhænger af $y$, samt $x y^3$. (8:56)",
+     "evidence": "x^2 + * y plus x y cubed.",
+     "t": 535.7,
+     "cite": "8:56",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 12
+    },
+    {
+     "type": "mc",
+     "question": "Hvorfor er den arbitrære konstant efter integration med hensyn til $x$ en funktion af $y$?",
+     "options": [
+      "Fordi de øvrige variable behandles som konstanter, så konstanten kan afhænge af dem.",
+      "Fordi vi senere differentierer med hensyn til $y$.",
+      "Fordi $x$ er elimineret fra udtrykket.",
+      "Fordi $m$ afhænger af $y$."
+     ],
+     "answer_index": 0,
+     "explanation": "Når man integrerer i én variabel, kan den integrationskonstant afhænge af de andre variable, som holdes konstante. (9:41)",
+     "evidence": "our arbitrary constant is actually just a function of Y, not a function of X, only a function of Y.",
+     "t": 581.2,
+     "cite": "9:41",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 13
+    },
+    {
+     "type": "short",
+     "question": "Hvad repræsenterer $m$ i forhold til potentialfunktionen?",
+     "answer": "$m = \\frac{\\partial \\phi}{\\partial x}$",
+     "explanation": "$m$ er den partielle afledte af potentialfunktionen med hensyn til $x$. (8:19)",
+     "evidence": "m is equal to the x partial of our potential function.",
+     "t": 498.9,
+     "cite": "8:19",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 14
+    }
+   ],
+   "transcript_from": "8:04",
+   "transcript_to": "10:07"
+  },
+  {
+   "i": 5,
+   "start": 607.04,
+   "end": 727.68,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad er den x‑partielle af potentialfunktionen $f(x,y)=x^2+y^2$?",
+     "options": [
+      "$0$",
+      "$2y$",
+      "$2x+2y$",
+      "$2x$"
+     ],
+     "answer_index": 3,
+     "explanation": "Den x‑partielle af $x^2$ er $2x$, mens $y^2$ betragtes som konstant og giver $0$. (10:30)",
+     "evidence": "if our potential function was x^2 + y^2 and we were to take the x partial of this, right? This would be 2x plus 0, right?",
+     "t": 630.5,
+     "cite": "10:30",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 15
+    },
+    {
+     "type": "mc",
+     "question": "Hvorfor skal der tilføjes en funktion $g(y)$, når man integrerer $m$, den x‑partielle af potentialfunktionen?",
+     "options": [
+      "Fordi $g(y)$ gør integralet nul.",
+      "Fordi $g(y)$ er den oprindelige funktion.",
+      "Fordi integrationskonstanten kan afhænge af $y$.",
+      "Fordi $m$ indeholder kun $y$‑termer."
+     ],
+     "answer_index": 2,
+     "explanation": "Når man integrerer den x‑partielle, mister man alle $y$‑afhængige termer, så integrationskonstanten kan være en funktion af $y$. (11:18)",
+     "evidence": "That's why you need this g of y.",
+     "t": 677.7,
+     "cite": "11:18",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 16
+    },
+    {
+     "type": "short",
+     "question": "Hvilken funktion tilføjes til den integrerede x‑partielle for at kompensere for de mistede $y$‑afhængige termer?",
+     "answer": "g(y)",
+     "explanation": "Den ekstra funktion $g(y)$ repræsenterer den $y$‑afhængige del, som forsvinder ved x‑differentiering. (11:18)",
+     "evidence": "That's why you need this g of y.",
+     "t": 677.7,
+     "cite": "11:18",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 17
+    }
+   ],
+   "transcript_from": "10:07",
+   "transcript_to": "12:08"
+  },
+  {
+   "i": 6,
+   "start": 727.68,
+   "end": 848.0,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad får vi, når vi tager y‑partialen af potentialsfunktionen?",
+     "options": [
+      "$x^2 + 3xy^2 + g'(y)$",
+      "$g'(y)$",
+      "$2x + 3y^2$",
+      "$x^2 + 3xy^2$"
+     ],
+     "answer_index": 0,
+     "explanation": "Den y‑partielle af potentialsfunktionen giver udtrykket $x^2 + 3xy^2 + g'(y)$. (12:36)",
+     "evidence": "we end up getting x^2 + 3x y^ 2 plus g derivative of y",
+     "t": 756.4,
+     "cite": "12:36",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 18
+    },
+    {
+     "type": "mc",
+     "question": "Når vi sætter den y‑partielle lig med $n$, hvad bliver $g'(y)$?",
+     "options": [
+      "$x^2$",
+      "$0$",
+      "$3xy^2$",
+      "$n$"
+     ],
+     "answer_index": 1,
+     "explanation": "Efter at have subtraheret $x^2$ og $3xy^2$ på begge sider, får vi $g'(y)=0$. (13:58)",
+     "evidence": "we get left off with that g prime of y is equal to zero",
+     "t": 838.5,
+     "cite": "13:58",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 19
+    },
+    {
+     "type": "short",
+     "question": "Hvad er $n$ lig med i denne udledning?",
+     "answer": "$x^2 + 3xy^2$",
+     "explanation": "$n$ er givet som den y‑partielle af potentialsfunktionen uden $g'(y)$‑leddet. (13:24)",
+     "evidence": "let's set this equal to n, right? x^2 + 3x y^2",
+     "t": 803.5,
+     "cite": "13:24",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 20
+    }
+   ],
+   "transcript_from": "12:08",
+   "transcript_to": "14:08"
+  },
+  {
+   "i": 7,
+   "start": 848.0,
+   "end": 970.0,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad er $g'(y)$ i udledningen?",
+     "options": [
+      "x",
+      "y",
+      "0",
+      "1"
+     ],
+     "answer_index": 2,
+     "explanation": "$g'(y)$ er nul, så integralet giver kun en konstant. (14:24)",
+     "evidence": "g prime of y is equal to zero, right?",
+     "t": 863.8,
+     "cite": "14:24",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 21
+    },
+    {
+     "type": "mc",
+     "question": "Hvad er $g'(y)$ i dette udsnit?",
+     "options": [
+      "1",
+      "0",
+      "y",
+      "g(y)"
+     ],
+     "answer_index": 1,
+     "explanation": "$g'(y)$ er nul, så integrationen giver kun en konstant. (14:24)",
+     "evidence": "g prime of y is equal to zero, right?",
+     "t": 863.8,
+     "cite": "14:24",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 22
+    },
+    {
+     "type": "short",
+     "question": "Hvad er funktionen $g(y)$?",
+     "answer": "en vilkårlig konstant",
+     "explanation": "Integrationen af $g'(y)=0$ giver kun en konstant. (14:35)",
+     "evidence": "g of y in this case is just equal to some constant",
+     "t": 874.6,
+     "cite": "14:35",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 23
+    }
+   ],
+   "transcript_from": "14:08",
+   "transcript_to": "16:10"
+  },
+  {
+   "i": 8,
+   "start": 970.0,
+   "end": 1091.04,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvilken betingelse skal opfyldes for at differentialligningen er eksakt?",
+     "options": [
+      "∂M/∂y = ∂N/∂x",
+      "M = N",
+      "∂M/∂x = ∂N/∂y",
+      "M + N = 0"
+     ],
+     "answer_index": 0,
+     "explanation": "Eksaktheden kræver, at den partielle af M med hensyn til y er lig den partielle af N med hensyn til x. (17:18)",
+     "evidence": "Since 2 is equal to two, we meet this condition.",
+     "t": 1038.5,
+     "cite": "17:18",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 24
+    },
+    {
+     "type": "mc",
+     "question": "Hvad får vi, når vi integrerer M med hensyn til x for at finde potentialsfunktionen?",
+     "options": [
+      "$xy + g(x)$",
+      "$x^3 + y^3 + C$",
+      "$x^2 + y^2 + h(x)$",
+      "$x^3 + 2xy + g(y)$"
+     ],
+     "answer_index": 3,
+     "explanation": "Integrationen giver $x^3 + 2xy$ plus en vilkårlig funktion af y. (17:51)",
+     "evidence": "This right here is x cubed plus 2xy plus remember some function of y.",
+     "t": 1071.0,
+     "cite": "17:51",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 25
+    }
+   ],
+   "transcript_from": "16:10",
+   "transcript_to": "18:11"
+  },
+  {
+   "i": 9,
+   "start": 1091.04,
+   "end": 1212.0,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad er $g'(y)$ lig med i udledningen?",
+     "options": [
+      "$4y$",
+      "$4x$",
+      "$2y$",
+      "$2x$"
+     ],
+     "answer_index": 0,
+     "explanation": "Ved at sætte den y‑partielle af den foreslåede potentialfunktion lig med $n=2x+4y$ fås $g'(y)=4y$. (19:11)",
+     "evidence": "we actually get left off with g prime of y is equal to 4 y.",
+     "t": 1150.9,
+     "cite": "19:11",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 26
+    },
+    {
+     "type": "mc",
+     "question": "Hvad er $g(y)$ efter integration?",
+     "options": [
+      "$2y$",
+      "$4y^2$",
+      "$y^2$",
+      "$2y^2$"
+     ],
+     "answer_index": 3,
+     "explanation": "Integrationen af $g'(y)=4y$ med hensyn til $y$ giver $g(y)=2y^2$. (19:33)",
+     "evidence": "the integral of 4 y with respect to y is equal to 2 y^2.",
+     "t": 1173.0,
+     "cite": "19:33",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 27
+    },
+    {
+     "type": "short",
+     "question": "Hvad er udtrykket for $g(y)$?",
+     "answer": "$2y^2$",
+     "explanation": "Integrationen af $g'(y)=4y$ giver $g(y)=2y^2$. (19:33)",
+     "evidence": "the integral of 4 y with respect to y is equal to 2 y^2.",
+     "t": 1173.0,
+     "cite": "19:33",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 28
+    }
+   ],
+   "transcript_from": "18:11",
+   "transcript_to": "20:12"
+  },
+  {
+   "i": 10,
+   "start": 1212.0,
+   "end": 1333.44,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad er den partielle afledte med hensyn til $x$ af potentialfunktionen?",
+     "options": [
+      "$3x^2 + 2y$",
+      "$2x + 4y$",
+      "$3x^2$",
+      "$2y^2$"
+     ],
+     "answer_index": 0,
+     "explanation": "Den $x$‑partielle af potentialfunktionen er $3x^2+2y$, som skal svare til $m$. (21:27)",
+     "evidence": "It's 3x^2 + 2 y",
+     "t": 1286.6,
+     "cite": "21:27",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 29
+    },
+    {
+     "type": "short",
+     "question": "Hvilken konstant sættes potentialfunktionen lig med for at få løsningen til differentialligningen?",
+     "answer": "en vilkårlig konstant (ofte betegnet C)",
+     "explanation": "Man sætter potentialfunktionen lig med en arbitrær konstant for at få den endelige løsning. (20:42)",
+     "evidence": "So all we need to do is set this potential function equal to some arbitrary constant.",
+     "t": 1241.7,
+     "cite": "20:42",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 30
+    }
+   ],
+   "transcript_from": "20:12",
+   "transcript_to": "22:13"
+  },
+  {
+   "i": 11,
+   "start": 1333.44,
+   "end": 1455.28,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvilken operation udføres for at fjerne brøken $\\frac{dy}{dx}$ i ligningen?",
+     "options": [
+      "Division af begge sider med $e^{x}$",
+      "Addition af $e^{x}\\sin y\\,dx$ til begge sider",
+      "Multiplikation af begge sider med $dy$",
+      "Multiplikation af begge sider med $dx$"
+     ],
+     "answer_index": 3,
+     "explanation": "Man multiplicerer begge sider med $dx$ for at eliminere $\\frac{dy}{dx}$. (23:01)",
+     "evidence": "we can multiply dx on both sides to get negative e to x sin of y dx is equal to e to x cosine of y dy.",
+     "t": 1380.8,
+     "cite": "23:01",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 31
+    },
+    {
+     "type": "short",
+     "question": "Hvad er det næste skridt, når ligningen er skrevet på formen $m\\,dx + n\\,dy = 0$?",
+     "answer": "Anvende den eksakte differentiallignings‑teknik for at finde potentialfunktionen.",
+     "explanation": "Efter at have fået ligningen i korrekt format, siger videoen, at man nu kan bruge den teknik, man har lært. (24:11)",
+     "evidence": "Now we can use the technique that we've been using",
+     "t": 1450.9,
+     "cite": "24:11",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 32
+    }
+   ],
+   "transcript_from": "22:13",
+   "transcript_to": "24:15"
+  },
+  {
+   "i": 12,
+   "start": 1455.28,
+   "end": 1578.8,
+   "questions": [],
+   "transcript_from": "24:15",
+   "transcript_to": "26:19"
+  },
+  {
+   "i": 13,
+   "start": 1578.8,
+   "end": 1635.36,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvilken del af udtrykket blev erklæret som overflødig i udledningen?",
+     "options": [
+      "$+C$",
+      "$+g(y)$",
+      "$+0$",
+      "$+e^{x}$"
+     ],
+     "answer_index": 2,
+     "explanation": "Der blev påpeget, at \"+0\" er unødvendigt. (26:26)",
+     "evidence": "0 because of the g of y. But plus 0 is unnecessary.",
+     "t": 1585.7,
+     "cite": "26:26",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 33
+    },
+    {
+     "type": "mc",
+     "question": "Hvad er udtrykket for den potentielle funktion (op til en konstant) i denne eksakte differentialligning?",
+     "options": [
+      "$\\sin(x)\\,e^{y}$",
+      "$e^{x}\\sin y$",
+      "$x\\,e^{y}$",
+      "$e^{x}\\cos y$"
+     ],
+     "answer_index": 1,
+     "explanation": "Den potentielle funktion er givet ved $e^{x}\\sin y$. (26:28)",
+     "evidence": "So e to the x sign of y is the solution uh to our potential function.",
+     "t": 1587.8,
+     "cite": "26:28",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 34
+    },
+    {
+     "type": "short",
+     "question": "Hvad skal man gøre med den fundne potensfunktion for at få den endelige løsning?",
+     "answer": "Sætte den lig med en vilkårlig konstant.",
+     "explanation": "Den endelige løsning opnås ved at sætte potensfunktionen lig med en konstant. (26:41)",
+     "evidence": "we should set this equal to just some constant.",
+     "t": 1601.0,
+     "cite": "26:41",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 35
+    }
+   ],
+   "transcript_from": "26:19",
+   "transcript_to": "27:15"
+  }
+ ]
+}

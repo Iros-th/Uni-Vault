@@ -1,0 +1,806 @@
+{
+ "schema": 1,
+ "videoId": "oygmAKm38tU",
+ "title": "Power Series and Radius/Interval of Convergence - Calc 2",
+ "map_title": "Power Series and Radius/Interval of Convergence",
+ "channel": "Computer Engineering Jitty",
+ "course": "Differential Equations and Infinite Series",
+ "source_map": "Courses/Differential Equations and Infinite Series/Speedrun Map.md",
+ "map_line": 385,
+ "captions": {
+  "lang": "en",
+  "auto": true,
+  "cache": "tools/videoquiz/.cache/transcripts/oygmAKm38tU.json"
+ },
+ "generated_at": "2026-10-08T00:28:46",
+ "models": [
+  "gpt-oss:120b-cloud"
+ ],
+ "window_seconds": 120.0,
+ "deck_slug": "Quizzes/Kort/oygmAKm38tU",
+ "rejected_by_validator": 23,
+ "windows": [
+  {
+   "i": 0,
+   "start": 0.0,
+   "end": 121.6,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Ifølge videoen starter en typisk potensrække ved hvilket indeks?",
+     "options": [
+      "n = 1",
+      "n = 2",
+      "n = -∞",
+      "n = 0"
+     ],
+     "answer_index": 3,
+     "explanation": "Det er den sædvanlige konvention, at en potensrække starter ved n = 0. (1:29)",
+     "evidence": "Usually power series will start at zero. That's the typical convention",
+     "t": 88.8,
+     "cite": "1:29",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 0
+    },
+    {
+     "type": "mc",
+     "question": "Hvad er c i en potensrække?",
+     "options": [
+      "koefficienten til x",
+      "eksponenten på x",
+      "centrum for rækken",
+      "radius for konvergens"
+     ],
+     "answer_index": 2,
+     "explanation": "c betegner centrum, dvs. det punkt hvor rækken er centreret. (1:49)",
+     "evidence": "c is equal to the center of your power series where your power series is centered at",
+     "t": 108.6,
+     "cite": "1:49",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 1
+    },
+    {
+     "type": "short",
+     "question": "Skriv udtrykket for leddet i rækken når a_n = 1/n som beskrevet i videoen.",
+     "answer": "$\\frac{1}{n}(x-c)^n$",
+     "explanation": "Videoen viser, at leddet er 1/n ganget med (x‑c) hævet til n‑te potens. (1:34)",
+     "evidence": "you have 1 / n times x - c uh to the^ of n",
+     "t": 93.7,
+     "cite": "1:34",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 2
+    }
+   ],
+   "transcript_from": "0:00",
+   "transcript_to": "2:02"
+  },
+  {
+   "i": 1,
+   "start": 121.6,
+   "end": 242.32,
+   "questions": [
+    {
+     "type": "short",
+     "question": "Hvad er den generelle fremgangsmåde for at finde centrum for en potensrække?",
+     "answer": "Sæt udtrykket i parentesen lig nul og isoler \\(x\\).",
+     "explanation": "Dette giver den \\(x\\)-værdi hvor rækken er centreret. (2:37)",
+     "evidence": "you just look at whatever is inside the parentheses, set it equal to zero and then isolate x.",
+     "t": 156.7,
+     "cite": "2:37",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 3
+    }
+   ],
+   "transcript_from": "2:02",
+   "transcript_to": "4:02"
+  },
+  {
+   "i": 2,
+   "start": 242.32,
+   "end": 362.48,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad er værdien af serien, når x = 2?",
+     "options": [
+      "Uendelig",
+      "0",
+      "Udefineret",
+      "1"
+     ],
+     "answer_index": 1,
+     "explanation": "Når x = 2 giver serien kun nul‑led, så summen er nul. (4:08)",
+     "evidence": "the series with only zeros will converge to zero.",
+     "t": 247.9,
+     "cite": "4:08",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 4
+    },
+    {
+     "type": "mc",
+     "question": "Hvilken type serie får man, når x = 3?",
+     "options": [
+      "p‑serie med p = 2",
+      "Alternating serie",
+      "Harmonisk serie",
+      "Geometrisk serie"
+     ],
+     "answer_index": 2,
+     "explanation": "For x = 3 reduceres udtrykket til den harmoniske række, som divergerer. (4:52)",
+     "evidence": "Now, this is the harmonic series, right?",
+     "t": 291.5,
+     "cite": "4:52",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 5
+    },
+    {
+     "type": "short",
+     "question": "Hvad kaldes det interval af x‑værdier, hvor en potensrække konvergerer?",
+     "answer": "intervallet for konvergens",
+     "explanation": "Det er netop betegnelsen for de x‑værdier, hvor rækken har en endelig sum. (5:13)",
+     "evidence": "this is what the interval of convergence is. It's the interval of values of x that your series converges in",
+     "t": 312.9,
+     "cite": "5:13",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 6
+    }
+   ],
+   "transcript_from": "4:02",
+   "transcript_to": "6:02"
+  },
+  {
+   "i": 3,
+   "start": 362.48,
+   "end": 483.36,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Når man anvender ratio‑testen på en potensrække, hvilke af følgende værdier nævnes IKKE som mulige grænse‑værdier for \\(\\left|\\frac{a_{n+1}}{a_n}\\right|\\)?",
+     "options": [
+      "|x-c|\\,r",
+      "0",
+      "∞",
+      "1/2"
+     ],
+     "answer_index": 3,
+     "explanation": "Videoen nævner kun nul, uendelig og \\(|x-c|\\,r\\) som mulige udfald. (6:21)",
+     "evidence": "You could get zero, you get infinity. You could also get absolute value of x - c time r",
+     "t": 380.6,
+     "cite": "6:21",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 7
+    },
+    {
+     "type": "mc",
+     "question": "Hvad betyder en lukket parentes (bracket) i intervallet for konvergens?",
+     "options": [
+      "Den angiver radius af konvergens",
+      "Den inkluderer tallet i intervallet",
+      "Den udelukker tallet fra intervallet",
+      "Den betyder, at serien divergerer ved dette punkt"
+     ],
+     "answer_index": 1,
+     "explanation": "En lukket parentes betyder, at endpoint‑værdien medtages i intervallet. (7:41)",
+     "evidence": "this closed bracket here just simply means that you include the value two into your interval of convergence",
+     "t": 460.6,
+     "cite": "7:41",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 8
+    },
+    {
+     "type": "short",
+     "question": "Hvad beskriver intervallet for konvergens?",
+     "answer": "Det er de $x$‑værdier, hvor serien konvergerer.",
+     "explanation": "Intervallet angiver de $x$‑værdier, som får serien til at konvergere. (7:08)",
+     "evidence": "Any value between zero and two for x will cause your series to converge. Any value outside of that bounds will cause your series to diverge.",
+     "t": 427.8,
+     "cite": "7:08",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 9
+    }
+   ],
+   "transcript_from": "6:02",
+   "transcript_to": "8:03"
+  },
+  {
+   "i": 4,
+   "start": 483.36,
+   "end": 605.92,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad er radius af konvergens for intervallet $[0,2]$?",
+     "options": [
+      "uendelig",
+      "1",
+      "0",
+      "2"
+     ],
+     "answer_index": 1,
+     "explanation": "Radius beregnes som halvdelen af intervalbredden, altså $(2-0)/2 = 1$. (8:16)",
+     "evidence": "which is 2 over two which is just one. So your radius conversion is just one.",
+     "t": 495.7,
+     "cite": "8:16",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 10
+    },
+    {
+     "type": "mc",
+     "question": "Hvis ratio‑testen giver grænsen $0$, hvad er intervallet for konvergens?",
+     "options": [
+      "$[0,\\infty)$",
+      "$[0,1]$",
+      "$(-\\infty,\\;\\infty)$",
+      "$(-1,1)$"
+     ],
+     "answer_index": 2,
+     "explanation": "Når grænsen er $0$, er radius uendelig, så serien konvergerer over hele den reelle akse. (9:32)",
+     "evidence": "If you get zero your radius of convergence is equal to infinity. Therefore your interval of convergence would simply just be negative infinity to positive infinity.",
+     "t": 571.8,
+     "cite": "9:32",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 11
+    }
+   ],
+   "transcript_from": "8:03",
+   "transcript_to": "10:06"
+  },
+  {
+   "i": 5,
+   "start": 605.92,
+   "end": 726.24,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad betyder det, når ratio‑testen giver resultatet nul for en potensrække?",
+     "options": [
+      "Rækken divergerer for alle x",
+      "Rækken konvergerer kun i centrum",
+      "Rækken konvergerer for enhver x",
+      "Radius af konvergens er nul"
+     ],
+     "answer_index": 2,
+     "explanation": "Hvis ratio‑testen giver nul, konvergerer rækken for alle værdier af x. (10:30)",
+     "evidence": "And this would be an example where your ratio test will give you a result of zero.",
+     "t": 630.5,
+     "cite": "10:30",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 12
+    },
+    {
+     "type": "mc",
+     "question": "Hvis ratio‑testen giver resultatet uendeligt, hvad er konvergensradiusen for rækken?",
+     "options": [
+      "Nul",
+      "Uendelig",
+      "Én",
+      "Udefineret"
+     ],
+     "answer_index": 0,
+     "explanation": "Et uendeligt resultat betyder, at kun ét punkt (centret) konvergerer, så radius er nul. (10:42)",
+     "evidence": "your radius of convergence is zero",
+     "t": 641.6,
+     "cite": "10:42",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 13
+    },
+    {
+     "type": "short",
+     "question": "Hvordan finder man centrum c for en potensrække ifølge videoen?",
+     "answer": "Man ser på udtrykket i parentesen, sætter det lig nul og isolerer x.",
+     "explanation": "Centrum findes ved at sætte den indvendige funktion lig nul og løse for x. (11:21)",
+     "evidence": "just need to uh look at the what'sever inside the parenthesis uh 5 + x2 and set it equal to zero",
+     "t": 680.8,
+     "cite": "11:21",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 14
+    }
+   ],
+   "transcript_from": "10:06",
+   "transcript_to": "12:06"
+  },
+  {
+   "i": 6,
+   "start": 726.24,
+   "end": 846.48,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad repræsenterer r efter at have multipliceret begge sider med r?",
+     "options": [
+      "|x - c|",
+      "c",
+      "r",
+      "1/r"
+     ],
+     "answer_index": 2,
+     "explanation": "r er radius for konvergensen. (13:25)",
+     "evidence": "r is your radius of convergence in this case.",
+     "t": 805.0,
+     "cite": "13:25",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 15
+    },
+    {
+     "type": "mc",
+     "question": "Når man fjerner absolutværditegnet i uligheden, hvilken dobbelt‑ulighed får man?",
+     "options": [
+      "$x - C = \\pm R$",
+      "$|x - C| > R$",
+      "$R < x - C$",
+      "$-R < x - C < R$"
+     ],
+     "answer_index": 3,
+     "explanation": "Fjernelse af absolutværditegnet giver den dobbelte ulighed $-R < x - C < R$. (13:32)",
+     "evidence": "you can actually remove the absolute value so that you get negative R is less than X - C is greater than R.",
+     "t": 812.5,
+     "cite": "13:32",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 16
+    },
+    {
+     "type": "short",
+     "question": "Hvad er intervallet for konvergens udtrykt i c og r?",
+     "answer": "$(c - r, c + r)$",
+     "explanation": "Man lægger c til hver del af -r < x - c < r. (13:46)",
+     "evidence": "if you add C onto every term here, you would be able to get your interval of convergence.",
+     "t": 825.9,
+     "cite": "13:46",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 17
+    }
+   ],
+   "transcript_from": "12:06",
+   "transcript_to": "14:06"
+  },
+  {
+   "i": 7,
+   "start": 846.48,
+   "end": 967.68,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad skal man gøre med endepunkterne i intervallet for konvergens?",
+     "options": [
+      "Altid medtage endepunkterne",
+      "Ignorere endepunkterne",
+      "Teste værdierne i enderne af intervallet",
+      "Altid udelade endepunkterne"
+     ],
+     "answer_index": 2,
+     "explanation": "Man skal teste endepunkterne for at afgøre om serien konvergerer eller divergerer. (14:28)",
+     "evidence": "you would need to test the values at the end of your interval u for x in order to determine if your series if your power series converges or diverges",
+     "t": 867.7,
+     "cite": "14:28",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 18
+    },
+    {
+     "type": "mc",
+     "question": "Hvad siger forelæseren om radius af konvergens for enhver potensrække?",
+     "options": [
+      "En potensrække kan mangle radius af konvergens",
+      "Radius af konvergens er altid nul",
+      "En potensrække har altid en (måske lille) radius af konvergens",
+      "Radius af konvergens er altid uendelig"
+     ],
+     "answer_index": 2,
+     "explanation": "Alle potensrækker har en (eventuelt meget lille) radius af konvergens. (15:05)",
+     "evidence": "in power series it always converges it will always have some radius of convergence",
+     "t": 904.8,
+     "cite": "15:05",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 19
+    },
+    {
+     "type": "short",
+     "question": "Hvilken grænse skal beregnes for at finde radius af konvergens?",
+     "answer": "$\\displaystyle \\lim_{n\\to\\infty}\\frac{a_{n+1}}{a_n}$",
+     "explanation": "Radius findes ved grænsen af forholdet mellem på hinanden følgende koefficienter. (15:40)",
+     "evidence": "First thing we need to find the limit as n approaches infinity for a of n + one over a of n",
+     "t": 940.5,
+     "cite": "15:40",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 20
+    }
+   ],
+   "transcript_from": "14:06",
+   "transcript_to": "16:08"
+  },
+  {
+   "i": 8,
+   "start": 967.68,
+   "end": 1088.96,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad er grænsen af \\(\\frac{|x|}{n+1}\\) når \\(n\\) går mod uendelig?",
+     "options": [
+      "|x|",
+      "∞",
+      "1",
+      "0"
+     ],
+     "answer_index": 3,
+     "explanation": "Når \\(n\\) → ∞, bliver \\(\\frac{1}{n+1}\\) nul, så hele udtrykket går mod 0. (17:26)",
+     "evidence": "we just get 1 over infinity times the absolute value of x. One over infinity is just zero.",
+     "t": 1046.2,
+     "cite": "17:26",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 21
+    },
+    {
+     "type": "mc",
+     "question": "Ifølge ratio‑testen, hvad er radius af konvergens når grænsen er nul?",
+     "options": [
+      "0",
+      "uden definition",
+      "1",
+      "∞"
+     ],
+     "answer_index": 3,
+     "explanation": "Ratio‑testen siger, at hvis grænsen er 0, er radius af konvergens uendelig. (17:39)",
+     "evidence": "If the answer for your limit after the ratio test is equal to zero then your radius of convergence is equal to infinity.",
+     "t": 1058.8,
+     "cite": "17:39",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 22
+    },
+    {
+     "type": "short",
+     "question": "Hvad er intervallet af konvergens for denne potensrække?",
+     "answer": "(-∞,∞)",
+     "explanation": "Radius er uendelig, så rækken konvergerer for alle reelle \\(x\\). (17:55)",
+     "evidence": "is just negative infinity to uh positive infinity. So any real number for x will allow this power series to converge.",
+     "t": 1074.8,
+     "cite": "17:55",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 23
+    }
+   ],
+   "transcript_from": "16:08",
+   "transcript_to": "18:09"
+  },
+  {
+   "i": 9,
+   "start": 1088.96,
+   "end": 1209.68,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "What does the limit simplify to according to the speaker?",
+     "options": [
+      "|(n+1) * x|",
+      "|n * x|",
+      "$|(n+1)! * x^{n+1}|$",
+      "|x|"
+     ],
+     "answer_index": 0,
+     "explanation": "Grænsen reduceres til den absolutte værdi af (n+1)·x. (19:08)",
+     "evidence": "you actually simplify this to get your limit as n approaches infinity for the absolute value of n + 1* x.",
+     "t": 1148.3,
+     "cite": "19:08",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 24
+    },
+    {
+     "type": "short",
+     "question": "Hvad er radius af konvergens, når grænsen er uendelig?",
+     "answer": "0",
+     "explanation": "Når grænsen går mod uendelig, er radius af konvergens nul. (19:35)",
+     "evidence": "if your value for the limit is equal to infinity then your radius convergence is equal to zero.",
+     "t": 1175.3,
+     "cite": "19:35",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 25
+    }
+   ],
+   "transcript_from": "18:09",
+   "transcript_to": "20:10"
+  },
+  {
+   "i": 10,
+   "start": 1209.68,
+   "end": 1330.24,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "If C = 0, at hvilken x‑værdi konvergerer serien?",
+     "options": [
+      "alle reelle x",
+      "x = 1",
+      "ingen x",
+      "x = 0"
+     ],
+     "answer_index": 3,
+     "explanation": "Kun ved x = 0 konvergerer serien, når C er nul. (20:30)",
+     "evidence": "the only value that your series will converge at ... is when X is equal to zero.",
+     "t": 1230.3,
+     "cite": "20:30",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 26
+    },
+    {
+     "type": "short",
+     "question": "Hvilken faktor multipliceres der med, når man tager den reciprokke af brøken i forholdstesten?",
+     "answer": "$\\frac{3^n}{n^2 x^n}$",
+     "explanation": "Man multiplicerer med den reciprokke, dvs. $3^n/(n^2 x^n)$, for at forenkle brøken. (21:22)",
+     "evidence": "multiply by the reciprocal of this fraction. So we can actually flip over this fraction to get times 3 n over n^2 * x ^ of n",
+     "t": 1282.1,
+     "cite": "21:22",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 27
+    }
+   ],
+   "transcript_from": "20:10",
+   "transcript_to": "22:10"
+  },
+  {
+   "i": 11,
+   "start": 1330.24,
+   "end": 1451.2,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Når (n+1)^2 udvides, hvilket led er dominerende for grænsen når n→∞?",
+     "options": [
+      "$2n$",
+      "$n^2+2n+1$",
+      "$1$",
+      "$n^2$"
+     ],
+     "answer_index": 3,
+     "explanation": "Det største eksponentled i tælleren er $n^2$, så kun dette påvirker grænsen. (22:50)",
+     "evidence": "the largest exponent value is n^2. So we only care about the n^2 in this numerator here.",
+     "t": 1370.3,
+     "cite": "22:50",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 28
+    },
+    {
+     "type": "mc",
+     "question": "Hvilken term er den største eksponent i tælleren efter udvidelsen af \\((n+1)^2\\)?",
+     "options": [
+      "1",
+      "$n^2$",
+      "$n^2 + 2n + 1$",
+      "2n"
+     ],
+     "answer_index": 1,
+     "explanation": "Den største eksponent i tælleren er \\(n^2\\), så den dominerer grænsen. (22:50)",
+     "evidence": "the largest exponent value is n^2. So we only care about the n^2 in this numerator here.",
+     "t": 1370.3,
+     "cite": "22:50",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 29
+    },
+    {
+     "type": "short",
+     "question": "Hvad er intervallet for konvergens af serien?",
+     "answer": "$-3 < x < 3$",
+     "explanation": "Uligheden $|x|<3$ omskrives til $-3<x<3$. (23:57)",
+     "evidence": "absolute value of x can be separated to get -3 is less than x and 3 is greater than x",
+     "t": 1437.3,
+     "cite": "23:57",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 30
+    }
+   ],
+   "transcript_from": "22:10",
+   "transcript_to": "24:11"
+  },
+  {
+   "i": 12,
+   "start": 1451.2,
+   "end": 1573.2,
+   "questions": [],
+   "transcript_from": "24:11",
+   "transcript_to": "26:13"
+  },
+  {
+   "i": 13,
+   "start": 1573.2,
+   "end": 1695.04,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvilken test anvendes i videoen til at vise, at serien med led $n^2$ divergerer?",
+     "options": [
+      "Divergenstesten",
+      "Ratio‑testen",
+      "Integraltesten",
+      "Rod‑testen"
+     ],
+     "answer_index": 0,
+     "explanation": "Man ser, at grænsen for $a_n=n^2$ går mod uendelig og derfor er forskellig fra nul, så serien divergerer. (26:32)",
+     "evidence": "Take the limit as n approaches infinity for a of n or for n^2, we get infinity. Right? This doesn't equal zero. Therefore, the series diverges.",
+     "t": 1591.8,
+     "cite": "26:32",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 31
+    },
+    {
+     "type": "mc",
+     "question": "Hvad er radius af konvergens, som beregnes i videoen?",
+     "options": [
+      "6",
+      "1",
+      "2",
+      "3"
+     ],
+     "answer_index": 3,
+     "explanation": "Radius findes som halvdelen af forskellen mellem de to endepunkter: $(3-(-3))/2 = 3$. (26:52)",
+     "evidence": "Remember we subtract upper bound from lower bound and divide it by two and you should get 3 minus3 which is 6 over 2 which is equal to three.",
+     "t": 1611.9,
+     "cite": "26:52",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 32
+    },
+    {
+     "type": "short",
+     "question": "Hvilken intervalnotation beskriver konvergensintervallet for serien?",
+     "answer": "(-3,3)",
+     "explanation": "Ved $x=3$ divergerer serien, så endepunktet må ekskluderes med en åben parentes. (26:43)",
+     "evidence": "So when x is equal to 3, the series also diverges. So we should use an open bracket here, an open parenthesis.",
+     "t": 1602.6,
+     "cite": "26:43",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 33
+    }
+   ],
+   "transcript_from": "26:13",
+   "transcript_to": "28:15"
+  },
+  {
+   "i": 14,
+   "start": 1695.04,
+   "end": 1817.76,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad er intervallet for konvergens (uden endepunkterne)?",
+     "options": [
+      "(0, 2)",
+      "(1/3, 1)",
+      "(-1, 1)",
+      "(1/3, 2)"
+     ],
+     "answer_index": 1,
+     "explanation": "Løsning af $|3x-2|<1$ giver $\\frac{1}{3}<x<1$. (29:31)",
+     "evidence": "you should get 1 over 3. It's less than x less than one.",
+     "t": 1770.6,
+     "cite": "29:31",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 34
+    },
+    {
+     "type": "mc",
+     "question": "Hvad er intervallet for konvergens (uden endepunkterne) efter at have løst uligheden?",
+     "options": [
+      "(0, 2)",
+      "(1/3, 1)",
+      "(-1, 1)",
+      "(1/2, 3/2)"
+     ],
+     "answer_index": 1,
+     "explanation": "Løsning af |3x‑2|<1 giver 1/3 < x < 1. (29:31)",
+     "evidence": "you should get 1 over 3. It's less than x less than one.",
+     "t": 1770.6,
+     "cite": "29:31",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 35
+    },
+    {
+     "type": "short",
+     "question": "Når $x = \\frac{1}{3}$, hvad bliver den generelle term i serien?",
+     "answer": "$\\frac{(-1)^n}{n^2}$",
+     "explanation": "Indsættes $x=\\frac13$ får man $(-1)^n/n^2$, som er en alternerende $p$‑række. (30:00)",
+     "evidence": "we should get 3 * 1 over 3 which is simply 1 - 2 n / n^2 which is equal to -1 ^ of n / n^2.",
+     "t": 1799.6,
+     "cite": "30:00",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 36
+    }
+   ],
+   "transcript_from": "28:15",
+   "transcript_to": "30:18"
+  },
+  {
+   "i": 15,
+   "start": 1817.76,
+   "end": 1938.16,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvilken konvergenstest bruges til at vise, at serien $\\sum \\frac{1}{n^2}$ konvergerer?",
+     "options": [
+      "Sammenligningstesten",
+      "Ratio‑testen",
+      "Integraltesten",
+      "p-serietesten"
+     ],
+     "answer_index": 3,
+     "explanation": "Serien $1/n^2$ er en p‑serie med $p=2>1$, så den konvergerer. (30:30)",
+     "evidence": "Well, we already know 1 over n^2 converges, right? That's the p series test.",
+     "t": 1829.8,
+     "cite": "30:30",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 37
+    },
+    {
+     "type": "mc",
+     "question": "Hvad er radius af konvergens for den betragtede potensrække?",
+     "options": [
+      "1",
+      "2/3",
+      "1/2",
+      "1/3"
+     ],
+     "answer_index": 3,
+     "explanation": "Udregningen giver $\\frac{1}{3}$ som radius. (32:13)",
+     "evidence": "1 over 3 is your radius of convergence.",
+     "t": 1933.3,
+     "cite": "32:13",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 38
+    },
+    {
+     "type": "short",
+     "question": "Hvad er intervallet for konvergens (inklusive endepunkter) for rækken?",
+     "answer": "[1/3,1]",
+     "explanation": "Begge endepunkter $x=\\frac13$ og $x=1$ er inkluderet i intervallet. (31:04)",
+     "evidence": "1 over three is in closed brackets for our interval.",
+     "t": 1863.8,
+     "cite": "31:04",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 39
+    }
+   ],
+   "transcript_from": "30:18",
+   "transcript_to": "32:18"
+  },
+  {
+   "i": 16,
+   "start": 1938.16,
+   "end": 2074.96,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad er radiusen for konvergens for den betragtede potensrække?",
+     "options": [
+      "uendelig",
+      "1",
+      "3",
+      "0"
+     ],
+     "answer_index": 3,
+     "explanation": "Når grænsen går mod uendelig, er radiusen nul. (33:15)",
+     "evidence": "when the answer for your limit is equal to infinity, your radius of convergence is equal to zero.",
+     "t": 1995.4,
+     "cite": "33:15",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 40
+    },
+    {
+     "type": "mc",
+     "question": "Hvad er radiusen for konvergens ifølge videoen?",
+     "options": [
+      "0",
+      "1",
+      "uden definition",
+      "∞"
+     ],
+     "answer_index": 0,
+     "explanation": "Når grænsen går mod uendelig, er radiusen nul. (33:17)",
+     "evidence": "your radius of convergence is equal to zero.",
+     "t": 1997.2,
+     "cite": "33:17",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 41
+    }
+   ],
+   "transcript_from": "32:18",
+   "transcript_to": "34:35"
+  }
+ ]
+}

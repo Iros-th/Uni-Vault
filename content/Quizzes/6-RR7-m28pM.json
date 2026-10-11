@@ -1,0 +1,177 @@
+{
+ "schema": 1,
+ "videoId": "6-RR7-m28pM",
+ "title": "Maclaurin Series Identities - Calculus 2",
+ "map_title": "Maclaurin Series Identities",
+ "channel": "Computer Engineering Jitty",
+ "course": "Differential Equations and Infinite Series",
+ "source_map": "Courses/Differential Equations and Infinite Series/Speedrun Map.md",
+ "map_line": 399,
+ "captions": {
+  "lang": "en",
+  "auto": true,
+  "cache": "tools/videoquiz/.cache/transcripts/6-RR7-m28pM.json"
+ },
+ "generated_at": "2026-10-08T00:32:06",
+ "models": [
+  "gpt-oss:120b-cloud"
+ ],
+ "window_seconds": 120.0,
+ "deck_slug": "Quizzes/Kort/6-RR7-m28pM",
+ "rejected_by_validator": 6,
+ "windows": [
+  {
+   "i": 0,
+   "start": 0.0,
+   "end": 120.64,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad er en Maclaurin‑række?",
+     "options": [
+      "En potensrække med radius 1",
+      "En Taylor‑række centreret ved ét",
+      "En Fourier‑række",
+      "En Taylor‑række centreret ved nul"
+     ],
+     "answer_index": 3,
+     "explanation": "En Maclaurin‑række er netop en Taylor‑række, hvor udvidelsespunktet er $x=0$. (0:15)",
+     "evidence": "A Mclloren series is simply any Taylor series that's centered at zero.",
+     "t": 14.6,
+     "cite": "0:15",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 0
+    },
+    {
+     "type": "mc",
+     "question": "Hvilken uendelig sum svarer til identiteten \\(\\frac{1}{1-x}\\)?",
+     "options": [
+      "$\\sum_{n=0}^{\\infty} 2^{n+1} x^n$",
+      "$\\sum_{n=0}^{\\infty} x^{2n}$",
+      "$\\sum_{n=0}^{\\infty} \\frac{x^n}{n!}$",
+      "$\\sum_{n=0}^{\\infty} x^n$"
+     ],
+     "answer_index": 3,
+     "explanation": "Identiteten \\(\\frac{1}{1-x}\\) udvides til den geometriske række \\(\\sum_{n=0}^{\\infty} x^n\\). (0:55)",
+     "evidence": "the first identity is 1 over 1 - x. It's simply the series of x to the ^ of n starting at zero.",
+     "t": 55.0,
+     "cite": "0:55",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 1
+    },
+    {
+     "type": "short",
+     "question": "Hvad er den generelle term i Maclaurin‑rækken for $e^{x}$?",
+     "answer": "$\\frac{x^{n}}{n!}$",
+     "explanation": "Maclaurin‑udviklingen af $e^{x}$ har koefficienterne $1/n!$. (1:37)",
+     "evidence": "e to the^ x is a very simple pattern. x ^ n over n factorial.",
+     "t": 96.7,
+     "cite": "1:37",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 2
+    }
+   ],
+   "transcript_from": "0:00",
+   "transcript_to": "2:01"
+  },
+  {
+   "i": 1,
+   "start": 120.64,
+   "end": 242.96,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvorfor kan man ikke lave en Maclaurin‑række for $\\ln x$ eller $1/x$ centreret i $x=0$ ifølge videoen?",
+     "options": [
+      "Radius af konvergens ville være uendelig.",
+      "Rækken ville konvergere for langsomt.",
+      "Deres afledte findes ikke i $x=0$.",
+      "Funktionerne er asymptotiske ved nul og har ingen værdi i $x=0$."
+     ],
+     "answer_index": 3,
+     "explanation": "Funktionen er asymptotisk ved nul, så der findes ingen punkt på grafen ved $x=0$. (3:18)",
+     "evidence": "for the functions 1 /x and natural logarithm of x it's asmtotal at zero there's There's no point on your function that actually reaches zero,",
+     "t": 198.3,
+     "cite": "3:18",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 3
+    },
+    {
+     "type": "short",
+     "question": "Skriv den Maclaurin‑række for $\\ln(1+x)$ som den blev præsenteret i videoen.",
+     "answer": "$x - \\frac{x^{2}}{2} + \\frac{x^{3}}{3} - \\dots$",
+     "explanation": "Rækken er alternerende med led $x - x^{2}/2 + x^{3}/3$ osv. (3:01)",
+     "evidence": "it's alternating as you can tell it goes from negative to positive to negative and it's just x - x^2 over 2 + x cubed over 3",
+     "t": 181.4,
+     "cite": "3:01",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 4
+    }
+   ],
+   "transcript_from": "2:01",
+   "transcript_to": "4:03"
+  },
+  {
+   "i": 2,
+   "start": 242.96,
+   "end": 366.48,
+   "questions": [],
+   "transcript_from": "4:03",
+   "transcript_to": "6:06"
+  },
+  {
+   "i": 3,
+   "start": 366.48,
+   "end": 526.48,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Når man indsætter $\\pi$ i Euler‑formlen, hvilken funktion bliver nul?",
+     "options": [
+      "$\\sin(\\pi)$",
+      "i",
+      "$\\cos(\\pi)$",
+      "e"
+     ],
+     "answer_index": 0,
+     "explanation": "I transskriptionen fremgår det, at \"i is sine of pi which is equal to zero\". (6:17)",
+     "evidence": "i is sine of pi which is equal to zero",
+     "t": 377.4,
+     "cite": "6:17",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 5
+    },
+    {
+     "type": "mc",
+     "question": "Hvilket led nævnes i videoen som det næste i sinus‑Taylor‑rækken efter $x^5/5!$?",
+     "options": [
+      "$x^7/7!$",
+      "$x^8/8!$",
+      "$x^9/9!$",
+      "$x^6/6!$"
+     ],
+     "answer_index": 0,
+     "explanation": "Efter $x^5/5!$ nævner videoen leddet $x^7/7!$. (7:13)",
+     "evidence": "X to the^ of 7 7 factorial plus X ^ of 9 over 9 factorial.",
+     "t": 433.0,
+     "cite": "7:13",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 6
+    },
+    {
+     "type": "short",
+     "question": "Skriv Taylor‑rækken for $\\sin x$ op til $x^9$‑leddet som nævnt i videoen.",
+     "answer": "$\\sin x = x - \\frac{x^3}{3!} + \\frac{x^5}{5!} - \\frac{x^7}{7!} + \\frac{x^9}{9!}$",
+     "explanation": "Videoen viser de første fem led i sinus' Taylor‑række, inklusiv $x^9/9!$‑leddet. (7:17)",
+     "evidence": "X ^ of 9 over 9 factorial",
+     "t": 436.7,
+     "cite": "7:17",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 7
+    }
+   ],
+   "transcript_from": "6:06",
+   "transcript_to": "8:46"
+  }
+ ]
+}

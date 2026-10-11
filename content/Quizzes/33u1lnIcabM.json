@@ -1,0 +1,638 @@
+{
+ "schema": 1,
+ "videoId": "33u1lnIcabM",
+ "title": "Integrating Factor Technique - Differential Equations",
+ "map_title": "Integrating Factor",
+ "channel": "Computer Engineering Jitty",
+ "course": "Differential Equations and Infinite Series",
+ "source_map": "Courses/Differential Equations and Infinite Series/Speedrun Map.md",
+ "map_line": 100,
+ "captions": {
+  "lang": "en",
+  "auto": true,
+  "cache": "tools/videoquiz/.cache/transcripts/33u1lnIcabM.json"
+ },
+ "generated_at": "2026-10-07T19:48:12",
+ "models": [
+  "gpt-oss:120b-cloud"
+ ],
+ "window_seconds": 120.0,
+ "deck_slug": "Quizzes/Kort/33u1lnIcabM",
+ "rejected_by_validator": 6,
+ "windows": [
+  {
+   "i": 0,
+   "start": 0.0,
+   "end": 120.16,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvilken betingelse skal den førsteordens afledte $y'$ opfylde for at integrerende faktor‑metoden kan anvendes?",
+     "options": [
+      "Koefﬁcienten skal være 1",
+      "Koefﬁcienten kan være en vilkårlig funktion af $x$",
+      "Koefﬁcienten skal være 0",
+      "Koefﬁcienten skal være $y$"
+     ],
+     "answer_index": 0,
+     "explanation": "Der må ikke være nogen koefﬁcient foran $y'$, dvs. den skal være 1. (1:12)",
+     "evidence": "You must have a first order derivative with no coefficient or just technically a coefficient of one in front of it.",
+     "t": 72.1,
+     "cite": "1:12",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 0
+    },
+    {
+     "type": "mc",
+     "question": "Hvilken af følgende funktioner kan fungere som $p(x)$ i en førsteordens lineær differentialligning, der kan løses med integrerende faktor?",
+     "options": [
+      "$y^2$",
+      "$x^2$",
+      "$4y$",
+      "$4\\cdot \\frac{1}{y}$"
+     ],
+     "answer_index": 1,
+     "explanation": "Kun funktioner, der kun afhænger af $x$, er tilladt som $p(x)$. (1:32)",
+     "evidence": "p of x can be x^2. It could be 1/x. It could be 3x. It could simply just be four.",
+     "t": 92.2,
+     "cite": "1:32",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 1
+    },
+    {
+     "type": "short",
+     "question": "Skriv den standardform for en førsteordens lineær differentialligning, som kan løses med integrerende faktor.",
+     "answer": "$y' + p(x) y = q(x)$",
+     "explanation": "Dette er den generelle form, hvor $p(x)$ kun afhænger af $x$. (1:24)",
+     "evidence": "you must have a function of x times y is equal to some function of x.",
+     "t": 84.4,
+     "cite": "1:24",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 2
+    }
+   ],
+   "transcript_from": "0:00",
+   "transcript_to": "2:00"
+  },
+  {
+   "i": 1,
+   "start": 120.16,
+   "end": 241.92,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad er udtrykket for den integrerende faktor \\(\\mu(x)\\) for en lineær førsteordens differentialligning på formen \\(y' + P(x) y = Q(x)\\)?",
+     "options": [
+      "$e^{\\int Q(x)\\,dx}$",
+      "$e^{\\int P(x)\\,dx}$",
+      "$\\int e^{P(x)}\\,dx$",
+      "$P(x)\\,e^{Q(x)}$"
+     ],
+     "answer_index": 1,
+     "explanation": "Den integrerende faktor findes ved at eksponentiere integralet af \\(P(x)\\). (2:41)",
+     "evidence": "All we need to do is solve the integral of p of x and then put that to the power of e and then we have our integrating factor",
+     "t": 161.1,
+     "cite": "2:41",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 3
+    },
+    {
+     "type": "mc",
+     "question": "Hvad opnås ved at multiplicere differentialligningen med den integrerende faktor \\(\\mu(x)\\)?",
+     "options": [
+      "Den giver direkte løsningen for \\(Q(x)\\)",
+      "Den y‑afhængige term forsvinder",
+      "Den venstre side kan omskrives til et produktregel‑udtryk",
+      "Ligningen bliver homogen"
+     ],
+     "answer_index": 2,
+     "explanation": "Multiplikation med \\(\\mu(x)\\) gør venstre side til en produktregel, så den kan integreres. (3:13)",
+     "evidence": "what the mu of x does is allow you to turn this section, this left portion of your equation into a product rule",
+     "t": 193.3,
+     "cite": "3:13",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 4
+    },
+    {
+     "type": "short",
+     "question": "Hvilket symbol bruges typisk til at betegne den integrerende faktor?",
+     "answer": "$\\mu(x)$",
+     "explanation": "I lærebøger betegnes den integrerende faktor ofte med \\(\\mu(x)\\). (2:51)",
+     "evidence": "often denoted uh in textbooks using mu of x",
+     "t": 171.0,
+     "cite": "2:51",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 5
+    }
+   ],
+   "transcript_from": "2:00",
+   "transcript_to": "4:02"
+  },
+  {
+   "i": 2,
+   "start": 241.92,
+   "end": 363.52,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad er værdien af $p(x)$ i den givne differentialligning?",
+     "options": [
+      "x",
+      "0",
+      "2",
+      "1"
+     ],
+     "answer_index": 2,
+     "explanation": "I eksemplet er koefficienten til funktionen af $x$ lig med to. (5:13)",
+     "evidence": "Two. So in this case two is our p of x.",
+     "t": 313.2,
+     "cite": "5:13",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 6
+    },
+    {
+     "type": "mc",
+     "question": "Hvilken udtryk repræsenterer den integrerende faktor for denne ligning?",
+     "options": [
+      "$e^{2x}$",
+      "$e^{\\int 2\\,dx}$",
+      "$e^{x}$",
+      "$2e^{x}$"
+     ],
+     "answer_index": 1,
+     "explanation": "Den integrerende faktor er eksponentialfunktionen af integralet af $p(x)$. (5:51)",
+     "evidence": "And it's just e to the power of the integral of p of x.",
+     "t": 351.4,
+     "cite": "5:51",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 7
+    },
+    {
+     "type": "short",
+     "question": "Hvad er integralet af $p(x)=2$ med hensyn til $x$ (ignorer konstanten)?",
+     "answer": "2x",
+     "explanation": "Integralet af en konstant $2$ er $2x$ (plus en konstant, som kan udelades). (5:57)",
+     "evidence": "So the integral of 2 with respect to x.",
+     "t": 356.6,
+     "cite": "5:57",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 8
+    }
+   ],
+   "transcript_from": "4:02",
+   "transcript_to": "6:04"
+  },
+  {
+   "i": 3,
+   "start": 363.52,
+   "end": 485.36,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad er den integrerende faktor \\(\\mu(x)\\) i dette trin?",
+     "options": [
+      "$e^{x^2}$",
+      "$e^{2x}$",
+      "$e^{x}$",
+      "2x"
+     ],
+     "answer_index": 1,
+     "explanation": "Integrerende faktor findes ved at integrere koefficienten 2 med hensyn til x, hvilket giver \\(e^{2x}\\). (6:08)",
+     "evidence": "So we have e to the 2x. That is our integrating factor.",
+     "t": 368.5,
+     "cite": "6:08",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 9
+    },
+    {
+     "type": "mc",
+     "question": "Efter at have multipliceret ligningen med den integrerende faktor, hvad svarer venstresiden til?",
+     "options": [
+      "$2 e^{2x} y$",
+      "$e^{2x}\\frac{dy}{dx}+2y$",
+      "$\\frac{d}{dx}\\big(e^{2x} y\\big)$",
+      "$\\frac{d}{dx}\\big(e^{x} y\\big)$"
+     ],
+     "answer_index": 2,
+     "explanation": "Venstresiden kan skrives som den afledte af produktet \\(e^{2x} y\\) ifølge produktreglen. (7:43)",
+     "evidence": "Let's go ahead and write down the derivative of e to the 2x * y.",
+     "t": 463.3,
+     "cite": "7:43",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 10
+    },
+    {
+     "type": "short",
+     "question": "Skriv den generelle formel for produktreglen.",
+     "answer": "(fg)' = f' g + f g'",
+     "explanation": "Produktreglen siger, at derivatet af et produkt er summen af de to mulige afledninger. (8:00)",
+     "evidence": "It's the derivative of some function f * g is",
+     "t": 479.5,
+     "cite": "8:00",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 11
+    }
+   ],
+   "transcript_from": "6:04",
+   "transcript_to": "8:05"
+  },
+  {
+   "i": 4,
+   "start": 485.36,
+   "end": 605.52,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad er den afledte af $e^{2x}$ med hensyn til $x$?",
+     "options": [
+      "$2 e^{2x}$",
+      "$2x e^{2x}$",
+      "$e^{2x}\\ln 2$",
+      "$e^{2x}$"
+     ],
+     "answer_index": 0,
+     "explanation": "Den afledte af $e^{2x}$ er $2e^{2x}$. (8:31)",
+     "evidence": "We get 2 e to the 2x",
+     "t": 511.2,
+     "cite": "8:31",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 12
+    },
+    {
+     "type": "mc",
+     "question": "Hvorfor er den integrerende faktor nødvendig i denne udledning?",
+     "options": [
+      "Den gør det muligt at skrive ligningen som et produkt (product rule).",
+      "Den ændrer differentialligningen til en anden orden.",
+      "Den fjerner behovet for integration.",
+      "Den gør koefficienten til $y$ konstant."
+     ],
+     "answer_index": 0,
+     "explanation": "Uden den integrerende faktor kan man ikke omskrive ligningen som et produkt. (9:14)",
+     "evidence": "you can't separate this as a product rule. But if you use the integrating factor, you can.",
+     "t": 554.3,
+     "cite": "9:14",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 13
+    },
+    {
+     "type": "short",
+     "question": "Hvad er den integrerende faktor i dette eksempel?",
+     "answer": "$e^{2x}$",
+     "explanation": "Den integrerende faktor, som multipliceres på begge sider, er $e^{2x}$. (9:54)",
+     "evidence": "E to 2x is just our integrating factor",
+     "t": 594.4,
+     "cite": "9:54",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 14
+    }
+   ],
+   "transcript_from": "8:05",
+   "transcript_to": "10:06"
+  },
+  {
+   "i": 5,
+   "start": 605.52,
+   "end": 727.36,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad er den integrerende faktor μ(x) i dette eksempel?",
+     "options": [
+      "$e^{x}$",
+      "$e^{3x}$",
+      "$2e^{x}$",
+      "$e^{2x}$"
+     ],
+     "answer_index": 3,
+     "explanation": "Den integrerende faktor er $e^{2x}$ som nævnt i videoen. (10:24)",
+     "evidence": "And the integrating factor is e to the 2x.",
+     "t": 624.2,
+     "cite": "10:24",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 15
+    },
+    {
+     "type": "mc",
+     "question": "Hvilken integrerende faktor nævnes i dette udsnit?",
+     "options": [
+      "$e^{2x}$",
+      "$e^{3x}$",
+      "$\\mu(x)$",
+      "$e^{x}$"
+     ],
+     "answer_index": 0,
+     "explanation": "Forelæseren siger eksplicit, at den integrerende faktor er $e^{2x}$. (10:24)",
+     "evidence": "And the integrating factor is e to the 2x.",
+     "t": 624.2,
+     "cite": "10:24",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 16
+    },
+    {
+     "type": "short",
+     "question": "Hvilken konstant skal tilføjes efter integrationen af begge sider?",
+     "answer": "en vilkårlig konstant (C)",
+     "explanation": "Efter integrationen mangler kun en vilkårlig konstant. (12:03)",
+     "evidence": "Just an arbitrary constant.",
+     "t": 723.3,
+     "cite": "12:03",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 17
+    }
+   ],
+   "transcript_from": "10:06",
+   "transcript_to": "12:07"
+  },
+  {
+   "i": 6,
+   "start": 727.36,
+   "end": 847.68,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad er den integrerende faktor for differentialligningen, som blev behandlet?",
+     "options": [
+      "$e^{\\int -1/x\\,dx}=e^{-\\ln x}$",
+      "$e^{-x}$",
+      "$x$",
+      "$\\frac{1}{x}$"
+     ],
+     "answer_index": 3,
+     "explanation": "Den integrerende faktor er $1/x$, som følger af $e^{-\\ln x}=1/x$. (13:46)",
+     "evidence": "So x the^ of negative 1 which is just equal to 1 /x.",
+     "t": 826.1,
+     "cite": "13:46",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 18
+    },
+    {
+     "type": "short",
+     "question": "Hvad er funktionen $p(x)$ i differentialligningen?",
+     "answer": "-1/x",
+     "explanation": "Ifølge videoen er $p(x) = -1/x$. (13:14)",
+     "evidence": "So p of x is equal to -1 /x, right?",
+     "t": 794.0,
+     "cite": "13:14",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 19
+    }
+   ],
+   "transcript_from": "12:07",
+   "transcript_to": "14:08"
+  },
+  {
+   "i": 7,
+   "start": 847.68,
+   "end": 968.32,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad er den integrerende faktor, der anvendes i udledningen?",
+     "options": [
+      "$x$",
+      "$\\frac{1}{x}$",
+      "$e^{x}$",
+      "$\\frac{1}{x^{2}}$"
+     ],
+     "answer_index": 1,
+     "explanation": "Den integrerende faktor er den funktion, der multipliceres med differentialligningen for at gøre venstresiden til et produkt‑regel‑udtryk. (14:08)",
+     "evidence": "Our integrating factor is 1 /x.",
+     "t": 847.7,
+     "cite": "14:08",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 20
+    },
+    {
+     "type": "mc",
+     "question": "Hvad får man for $\\frac{y}{x}$ efter at have integreret begge sider?",
+     "options": [
+      "$\\frac{x^{3}}{2}+C$",
+      "$x+C$",
+      "$2x+C$",
+      "$\\frac{x^{2}}{2}+C$"
+     ],
+     "answer_index": 3,
+     "explanation": "Integrationen af højre side giver $\\int x\\,dx = \\frac{x^{2}}{2}+C$, så $y/x$ er lig dette udtryk. (15:46)",
+     "evidence": "And then x^2 over 2 is the integral of this plus c.",
+     "t": 945.6,
+     "cite": "15:46",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 21
+    },
+    {
+     "type": "short",
+     "question": "Hvad er den endelige løsning for $y$ som funktion af $x$?",
+     "answer": "$y = \\frac{x^{3}}{2} + C x$",
+     "explanation": "Man multiplicerer $y/x = x^{2}/2 + C$ med $x$ for at isolere $y$. (15:53)",
+     "evidence": "we can multiply by x on both sides to get y is equal to x ^ 3 over2 + c x.",
+     "t": 953.0,
+     "cite": "15:53",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 22
+    }
+   ],
+   "transcript_from": "14:08",
+   "transcript_to": "16:08"
+  },
+  {
+   "i": 8,
+   "start": 968.32,
+   "end": 1089.6,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad bliver koefficienten til \\(y\\) efter at have divideret differentialligningen med \\(2x\\)?",
+     "options": [
+      "$\\(\\frac{1}{2x}\\)$",
+      "$\\(\\frac{1}{2}\\)$",
+      "\\(x\\)",
+      "\\(2x\\)"
+     ],
+     "answer_index": 0,
+     "explanation": "Division med \\(2x\\) giver en term \\(\\frac{1}{2x}y\\). (16:46)",
+     "evidence": "adds a 1 over 2x in front of the y value.",
+     "t": 1006.3,
+     "cite": "16:46",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 23
+    },
+    {
+     "type": "mc",
+     "question": "Hvad er den integrerende faktor \\(\\mu(x)\\) for den omformede ligning?",
+     "options": [
+      "$e^{x}$",
+      "$\\(\\sqrt{x}\\)$",
+      "$\\(\\frac{1}{\\sqrt{x}}\\)$",
+      "x"
+     ],
+     "answer_index": 1,
+     "explanation": "Integrerende faktor er \\(e^{\\int \\frac{1}{2x}dx}=e^{\\frac12\\ln x}=\\sqrt{x}\\). (18:01)",
+     "evidence": "integrating factor is just the square root of x.",
+     "t": 1081.2,
+     "cite": "18:01",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 24
+    },
+    {
+     "type": "short",
+     "question": "Hvad er funktionen \\(p(x)\\) (koefficienten til \\(y\\)) i standardformen af differentialligningen?",
+     "answer": "$\\frac{1}{2x}$",
+     "explanation": "Efter division er koefficienten til \\(y\\) \\(\\frac{1}{2x}\\). (17:16)",
+     "evidence": "it's a positive 1 / 2x.",
+     "t": 1036.0,
+     "cite": "17:16",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 25
+    }
+   ],
+   "transcript_from": "16:08",
+   "transcript_to": "18:10"
+  },
+  {
+   "i": 9,
+   "start": 1089.6,
+   "end": 1210.8,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad er resultatet af integrationen \\(\\int \\frac{x}{2}\\,dx\\) som vist i videoen?",
+     "options": [
+      "$\\frac{1}{3}x^{3/2}+C$",
+      "$\\frac{1}{4}x^{2}+C$",
+      "$\\frac{1}{2}x^{2}+C$",
+      "$\\ln|x|+C$"
+     ],
+     "answer_index": 0,
+     "explanation": "Integrationen af \\(x/2\\) giver \\(\\frac{1}{3}x^{3/2}+C\\). (19:17)",
+     "evidence": "the of uh uh x / 2 which is 1 over 3 x ^ 3 /2 plus c",
+     "t": 1157.4,
+     "cite": "19:17",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 26
+    },
+    {
+     "type": "mc",
+     "question": "Efter at have divideret med \\(\\sqrt{x}\\), hvad er den udtrykte form for \\(y\\)?",
+     "options": [
+      "$y = \\frac{1}{2}x^{2} + C\\sqrt{x}$",
+      "$y = \\frac{C}{x} + \\frac{1}{3}x^{1/2}$",
+      "$y = \\frac{1}{3}x + \\frac{C}{\\sqrt{x}}$",
+      "$y = \\frac{1}{3}x^{2} + Cx$"
+     ],
+     "answer_index": 2,
+     "explanation": "Division med \\(\\sqrt{x}\\) giver \\(y = \\frac{1}{3}x + \\frac{C}{\\sqrt{x}}\\). (19:38)",
+     "evidence": "y is equal to 1 over 3 x ^ of 1 plus c x ^ of - 12 or we can write down c over the roo of x",
+     "t": 1177.8,
+     "cite": "19:38",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 27
+    },
+    {
+     "type": "short",
+     "question": "Hvilken integrerende faktor blev brugt til at omforme differentialligningen?",
+     "answer": "$\\sqrt{x}$",
+     "explanation": "Integrerende faktor er kvadratroden af \\(x\\). (18:10)",
+     "evidence": "sides of our equation by the square root of x",
+     "t": 1089.6,
+     "cite": "18:10",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 28
+    }
+   ],
+   "transcript_from": "18:10",
+   "transcript_to": "20:11"
+  },
+  {
+   "i": 10,
+   "start": 1210.8,
+   "end": 1333.76,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad er funktionen p(x) i den standardform $\\frac{dy}{dx}+p(x)y = q(x)$ som bruges i integrerende faktor‑metoden?",
+     "options": [
+      "$\\frac{3}{x}$",
+      "$\\frac{1}{3x}$",
+      "$\\frac{x}{3}$",
+      "3x"
+     ],
+     "answer_index": 0,
+     "explanation": "p(x) er koefficienten til y i den omskrevne differentialligning. (21:30)",
+     "evidence": "p of x is just 3 over x",
+     "t": 1290.2,
+     "cite": "21:30",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 29
+    },
+    {
+     "type": "mc",
+     "question": "Hvad er den integrerende faktor $\\mu(x)$ for ligningen med $p(x)=\\frac{3}{x}$?",
+     "options": [
+      "$x^3$",
+      "$e^{x^3}$",
+      "$e^{3x}$",
+      "3x"
+     ],
+     "answer_index": 0,
+     "explanation": "Integrerende faktor er $\\mu(x)=e^{\\int p(x)dx}=e^{3\\ln x}=x^3$. (22:04)",
+     "evidence": "our integrating factor is x cubed",
+     "t": 1324.3,
+     "cite": "22:04",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 30
+    },
+    {
+     "type": "short",
+     "question": "Skriv udtrykket for den integrerende faktor før forenkling.",
+     "answer": "$e^{3\\ln x}$",
+     "explanation": "Før forenkling er faktoren $e^{\\int \\frac{3}{x}dx}=e^{3\\ln x}$. (21:26)",
+     "evidence": "Mu of x is equal to e ^ of the integral of p of x. Well, p of x is just 3 over x dx, which is equal to e to the 3 * the integral of 1 /x dx",
+     "t": 1286.3,
+     "cite": "21:26",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 31
+    }
+   ],
+   "transcript_from": "20:11",
+   "transcript_to": "22:14"
+  },
+  {
+   "i": 11,
+   "start": 1333.76,
+   "end": 1451.04,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvilken faktor blev multipliceret på begge sider af differentialligningen for at opnå produktregel‑formen?",
+     "options": [
+      "$x^2$",
+      "$x^3$",
+      "$e^x$",
+      "$\\frac{1}{x^2}$"
+     ],
+     "answer_index": 1,
+     "explanation": "Integrationsfaktoren er $x^3$, som blev ganget på begge sider. (22:30)",
+     "evidence": "we needed to multiply x cubed on both sides of our equation.",
+     "t": 1349.5,
+     "cite": "22:30",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 32
+    },
+    {
+     "type": "short",
+     "question": "Hvad er den anvendte integrerende faktor $\\mu(x)$?",
+     "answer": "$x^3$",
+     "explanation": "Integrationsfaktoren er $\\mu(x)=x^3$, som blev multipliceret på begge sider. (22:30)",
+     "evidence": "we needed to multiply x cubed on both sides of our equation.",
+     "t": 1349.5,
+     "cite": "22:30",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 33
+    }
+   ],
+   "transcript_from": "22:14",
+   "transcript_to": "24:11"
+  }
+ ]
+}

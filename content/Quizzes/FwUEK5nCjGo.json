@@ -1,0 +1,132 @@
+{
+ "schema": 1,
+ "videoId": "FwUEK5nCjGo",
+ "title": "P-Series Test for Convergence and Divergence",
+ "map_title": "P-Series Test",
+ "channel": "Computer Engineering Jitty",
+ "course": "Differential Equations and Infinite Series",
+ "source_map": "Courses/Differential Equations and Infinite Series/Speedrun Map.md",
+ "map_line": 317,
+ "captions": {
+  "lang": "en",
+  "auto": true,
+  "cache": "tools/videoquiz/.cache/transcripts/FwUEK5nCjGo.json"
+ },
+ "generated_at": "2026-10-07T19:57:10",
+ "models": [
+  "gpt-oss:120b-cloud"
+ ],
+ "window_seconds": 120.0,
+ "deck_slug": "Quizzes/Kort/FwUEK5nCjGo",
+ "rejected_by_validator": 1,
+ "windows": [
+  {
+   "i": 0,
+   "start": 0.0,
+   "end": 121.44,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "If the exponent p is less than or equal to 1, what does the p‑serietesten siger om serien?",
+     "options": [
+      "Serien oscillerer",
+      "Serien konvergerer",
+      "Testen er uafgørende",
+      "Serien divergerer"
+     ],
+     "answer_index": 3,
+     "explanation": "If p ≤ 1, the series diverges according to the test. (0:36)",
+     "evidence": "If the exponent p is less than or equal to 1, your series diverges.",
+     "t": 36.2,
+     "cite": "0:36",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 0
+    },
+    {
+     "type": "mc",
+     "question": "Hvilken af følgende serier nævnes som et eksempel på en konvergent p‑serie?",
+     "options": [
+      "$1/n^2$",
+      "$1/n$",
+      "$10/n^{12}$",
+      "$1/n^{0.5}$"
+     ],
+     "answer_index": 0,
+     "explanation": "For $1/n^2$ er eksponenten på n i nævneren større end 1, så serien konvergerer. (1:30)",
+     "evidence": "Now n squared 1 over n^2 well p is greater than one right the exponent on the n value in the denominator is greater than one. Therefore this series converges.",
+     "t": 89.9,
+     "cite": "1:30",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 1
+    },
+    {
+     "type": "short",
+     "question": "Ifølge forelæseren, hvad er p‑værdien for serien $10/n^{12}$?",
+     "answer": "1/2",
+     "explanation": "Forelæseren siger, at p er lig med 1/2 for denne serie. (1:50)",
+     "evidence": "function or the series is equal to 10 over n to the power of 12. Well, that means p is equal to 1/2.",
+     "t": 110.3,
+     "cite": "1:50",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 2
+    }
+   ],
+   "transcript_from": "0:00",
+   "transcript_to": "2:01"
+  },
+  {
+   "i": 1,
+   "start": 121.44,
+   "end": 271.76,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "If a p‑series has exponent p greater than 1, what does the p‑series test say about its convergence?",
+     "options": [
+      "The series oscillates",
+      "The series diverges",
+      "The test is inconclusive",
+      "The series converges"
+     ],
+     "answer_index": 3,
+     "explanation": "Når p er større end 1, konvergerer p‑serien ifølge testen. (3:13)",
+     "evidence": "if p is greater than one. Therefore, the series converges.",
+     "t": 193.0,
+     "cite": "3:13",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 3
+    },
+    {
+     "type": "mc",
+     "question": "For the p‑series with p = -3, hvad konkluderer p‑series testen?",
+     "options": [
+      "Ubeslutsom",
+      "Konvergerer",
+      "Divergerer",
+      "Vekselvirker"
+     ],
+     "answer_index": 2,
+     "explanation": "Da p ≤ 1 (her p = -3), siger testen at serien divergerer. (3:41)",
+     "evidence": "p is less than or equal to 1, then your series diverges",
+     "t": 221.1,
+     "cite": "3:41",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 4
+    },
+    {
+     "type": "short",
+     "question": "Hvad får man som resultat, når man anvender divergenstesten på serien $\\frac{10}{n^3}$?",
+     "answer": "Grænsen er ∞, så serien divergerer",
+     "explanation": "Divergenstesten giver en grænse på uendelig, hvilket betyder divergens. (4:04)",
+     "evidence": "you're going to get that your limit equals infinity",
+     "t": 244.5,
+     "cite": "4:04",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 5
+    }
+   ],
+   "transcript_from": "2:01",
+   "transcript_to": "4:32"
+  }
+ ]
+}

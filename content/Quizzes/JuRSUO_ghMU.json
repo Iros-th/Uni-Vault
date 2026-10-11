@@ -1,0 +1,348 @@
+{
+ "schema": 1,
+ "videoId": "JuRSUO_ghMU",
+ "title": "Geometric Series Test for Convergence and Divergence",
+ "map_title": "Geometric Series Test",
+ "channel": "Computer Engineering Jitty",
+ "course": "Differential Equations and Infinite Series",
+ "source_map": "Courses/Differential Equations and Infinite Series/Speedrun Map.md",
+ "map_line": 317,
+ "captions": {
+  "lang": "en",
+  "auto": true,
+  "cache": "tools/videoquiz/.cache/transcripts/JuRSUO_ghMU.json"
+ },
+ "generated_at": "2026-10-07T19:57:12",
+ "models": [
+  "gpt-oss:120b-cloud"
+ ],
+ "window_seconds": 120.0,
+ "deck_slug": "Quizzes/Kort/JuRSUO_ghMU",
+ "rejected_by_validator": 2,
+ "windows": [
+  {
+   "i": 0,
+   "start": 0.0,
+   "end": 120.24,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad fortæller den geometriske serietest dig om en geometrisk række?",
+     "options": [
+      "Formlen for det n‑te led i rækken",
+      "Om rækken divergerer",
+      "Den værdi, som rækken konvergerer til, hvis den er geometrisk",
+      "Summen af en endelig række"
+     ],
+     "answer_index": 2,
+     "explanation": "Den geometriske serietest giver grænsen for en konvergent geometrisk række. (0:02)",
+     "evidence": "the geometric series test actually tells you what value a number converges at if the series is a geometric series",
+     "t": 1.9,
+     "cite": "0:02",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 0
+    },
+    {
+     "type": "mc",
+     "question": "Hvilken definition beskriver bedst en geometrisk sekvens?",
+     "options": [
+      "En sekvens hvor hvert led er summen af de to foregående",
+      "En sekvens hvor du multiplicerer det næste tal med det samme tal hver gang",
+      "En sekvens bestående af primtal",
+      "En sekvens med skiftende fortegn"
+     ],
+     "answer_index": 1,
+     "explanation": "I en geometrisk sekvens er forholdet mellem på hinanden følgende led konstant. (0:34)",
+     "evidence": "geometric sequence is basically any sequence that has some pattern where you multiply the next number by the same number",
+     "t": 34.0,
+     "cite": "0:34",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 1
+    },
+    {
+     "type": "short",
+     "question": "Skriv den generelle formel for en geometrisk sekvens som den blev præsenteret i videoen.",
+     "answer": "$a_n = a r^{n}$",
+     "explanation": "Funktionen for en geometrisk sekvens er givet ved $a_n = a r^{n}$. (1:56)",
+     "evidence": "that function is a to the n rn",
+     "t": 115.5,
+     "cite": "1:56",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 2
+    }
+   ],
+   "transcript_from": "0:00",
+   "transcript_to": "2:00"
+  },
+  {
+   "i": 1,
+   "start": 120.24,
+   "end": 240.4,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad er den første term $a$ i den geometriske række?",
+     "options": [
+      "1",
+      "$\\frac{3}{8}$",
+      "$\\frac{4}{3}$",
+      "$\\frac{2}{5}$"
+     ],
+     "answer_index": 1,
+     "explanation": "Den første term er givet som $3/8$ i videoen. (2:15)",
+     "evidence": "A is what the first number of the sequence is 3 over 8.",
+     "t": 135.1,
+     "cite": "2:15",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 3
+    },
+    {
+     "type": "mc",
+     "question": "Ifølge videoen konvergerer en geometrisk række, når:",
+     "options": [
+      "r er større end 1",
+      "r er mindre end 1",
+      "a er positiv",
+      "r er lig med 1"
+     ],
+     "answer_index": 1,
+     "explanation": "Rækken konvergerer kun hvis forholdet $r$ er mindre end 1. (3:31)",
+     "evidence": "If r is less than one then the series converges.",
+     "t": 211.4,
+     "cite": "3:31",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 4
+    },
+    {
+     "type": "short",
+     "question": "Hvilken formel bruges til at beregne summen af en konvergent geometrisk række?",
+     "answer": "a/(1-r)",
+     "explanation": "Formlen $a/(1-r)$ giver summen, når $|r|<1$. (2:52)",
+     "evidence": "you can actually solve for the value at which this geometric series converges at using this formula a over 1 - r.",
+     "t": 172.5,
+     "cite": "2:52",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 5
+    }
+   ],
+   "transcript_from": "2:00",
+   "transcript_to": "4:00"
+  },
+  {
+   "i": 2,
+   "start": 240.4,
+   "end": 361.36,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad sker der med en geometrisk række, når den fælles ratio $r$ er større end 1?",
+     "options": [
+      "Leddene nærmer sig nul.",
+      "Rækken konvergerer til en endelig sum.",
+      "Summen er $a/(1-r)$.",
+      "Rækken divergerer til uendelighed."
+     ],
+     "answer_index": 3,
+     "explanation": "Når $r>1$ vokser leddene uden grænse og summen går mod uendelig. (4:07)",
+     "evidence": "Since four over three is greater than one, the numbers just keep going up and up and up and up.",
+     "t": 246.8,
+     "cite": "4:07",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 6
+    },
+    {
+     "type": "mc",
+     "question": "Hvad er værdierne for $a$ og $r$ i det givne eksempel?",
+     "options": [
+      "$a=5$, $r=3$",
+      "$a=1/3$, $r=5$",
+      "$a=5$, $r=1/3$",
+      "$a=3$, $r=5$"
+     ],
+     "answer_index": 2,
+     "explanation": "Den første værdi er fem, og forholdet mellem på hinanden følgende led er $1/3$. (5:53)",
+     "evidence": "a in this case is five and r in this case is 1/3.",
+     "t": 352.6,
+     "cite": "5:53",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 7
+    },
+    {
+     "type": "short",
+     "question": "What are the values of $a$ and $r$ in the example series?",
+     "answer": "a = 5, r = 1/3",
+     "explanation": "I eksemplet er første led $a=5$ og fælles forhold $r=\\frac13$. (5:53)",
+     "evidence": "a in this case is five and r in this case is 1/3",
+     "t": 352.6,
+     "cite": "5:53",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 8
+    }
+   ],
+   "transcript_from": "4:00",
+   "transcript_to": "6:01"
+  },
+  {
+   "i": 3,
+   "start": 361.36,
+   "end": 484.8,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad er konvergensværdien for den geometriske række, som beregnes som $5 \\div \\frac{2}{3}$?",
+     "options": [
+      "$\\frac{5}{2}$",
+      "10",
+      "7.5",
+      "$\\frac{15}{2}$"
+     ],
+     "answer_index": 3,
+     "explanation": "Summen er $5\\div\\frac{2}{3}=\\frac{15}{2}$, og rækken konvergerer til dette tal. (6:08)",
+     "evidence": "Therefore this series converges at the value 15 over2.",
+     "t": 368.0,
+     "cite": "6:08",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 9
+    },
+    {
+     "type": "mc",
+     "question": "Hvad er rækkens adfærd, når den første term er $a=3$ og forholdet er $r=\\frac{3}{2}$?",
+     "options": [
+      "Den oscillerer",
+      "Den konvergerer",
+      "Den divergerer",
+      "Ubestemt"
+     ],
+     "answer_index": 2,
+     "explanation": "Da $r=\\frac{3}{2}\\ge 1$, divergerer den geometriske række. (6:31)",
+     "evidence": "When r is greater than or equal to 1 and the series diverges.",
+     "t": 390.6,
+     "cite": "6:31",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 10
+    },
+    {
+     "type": "short",
+     "question": "Hvad er den første term $a$ i rækken $\\sum_{n=1}^{\\infty} e^{n}$ efter omskrivning til $\\frac{1}{e^{n}}$?",
+     "answer": "1",
+     "explanation": "Efter omskrivning er den første term $a=1$. (7:28)",
+     "evidence": "So a is equal to one in this case.",
+     "t": 447.5,
+     "cite": "7:28",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 11
+    }
+   ],
+   "transcript_from": "6:01",
+   "transcript_to": "8:05"
+  },
+  {
+   "i": 4,
+   "start": 484.8,
+   "end": 606.72,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad er den fælles ratio $r$ i den betragtede geometriske række?",
+     "options": [
+      "$2.71$",
+      "$e$",
+      "$\\frac{1}{e}$",
+      "$1$"
+     ],
+     "answer_index": 2,
+     "explanation": "Ratio‑testen giver $r = 1/e$, som er mindre end 1, så rækken konvergerer. (8:37)",
+     "evidence": "our ratio is 1 over e.",
+     "t": 517.0,
+     "cite": "8:37",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 12
+    },
+    {
+     "type": "mc",
+     "question": "Hvad er summen af den geometriske række med $a=1$ og $r=1/e$?",
+     "options": [
+      "$e-1$",
+      "$\\frac{1}{e-1}$",
+      "$1$",
+      "$\\frac{e}{e-1}$"
+     ],
+     "answer_index": 3,
+     "explanation": "Summen er $\\frac{a}{1-r}=\\frac{1}{1-1/e}=\\frac{e}{e-1}$. (9:20)",
+     "evidence": "we can just flip we can just find the reciprocal of this denominator to get e over e minus one.",
+     "t": 560.3,
+     "cite": "9:20",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 13
+    },
+    {
+     "type": "short",
+     "question": "Ved at anvende potensreglen, hvad bliver udtrykket $(\\frac{1}{4})^{2}$ hævet til $n$?",
+     "answer": "$(\\frac{1}{4})^{2n}$",
+     "explanation": "Eksponenterne multipliceres: $(\\frac14)^{2}\\!^{\\,n}= (\\frac14)^{2n}$. (9:59)",
+     "evidence": "So n the power of 1/4 to the^ of 2 is just equal to 1/4 to the^ of 2n.",
+     "t": 599.4,
+     "cite": "9:59",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 14
+    }
+   ],
+   "transcript_from": "8:05",
+   "transcript_to": "10:07"
+  },
+  {
+   "i": 5,
+   "start": 606.72,
+   "end": 761.28,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad er den fælles ratio $r$ i den første geometriske række?",
+     "options": [
+      "1",
+      "$\\frac{1}{2}$",
+      "$\\frac{1}{16}$",
+      "$\\frac{1}{4}$"
+     ],
+     "answer_index": 2,
+     "explanation": "Rækken har $r = \\frac{1}{16}$ som angivet i udskriften. (10:28)",
+     "evidence": "r is equal to 1 over 16.",
+     "t": 628.2,
+     "cite": "10:28",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 15
+    },
+    {
+     "type": "mc",
+     "question": "Hvad er summen af den anden geometriske række, som diskuteres?",
+     "options": [
+      "48/15",
+      "12",
+      "6",
+      "3"
+     ],
+     "answer_index": 2,
+     "explanation": "Summen beregnes som $\\frac{3}{1-\\frac12}=6$. (12:25)",
+     "evidence": "which is equal to six. Therefore, the series converges at the value six.",
+     "t": 744.9,
+     "cite": "12:25",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 16
+    },
+    {
+     "type": "short",
+     "question": "Hvilken formel bruges til at beregne summen af en uendelig geometrisk række?",
+     "answer": "$S = \\frac{a}{1 - r}$",
+     "explanation": "Formlen fremkommer i udskriften som \"a over 1 - r\". (10:32)",
+     "evidence": "a over 1 - r is equal to 3 over 1 - 1/2.",
+     "t": 631.5,
+     "cite": "10:32",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 17
+    }
+   ],
+   "transcript_from": "10:07",
+   "transcript_to": "12:41"
+  }
+ ]
+}

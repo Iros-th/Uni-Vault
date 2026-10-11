@@ -1,0 +1,240 @@
+{
+ "schema": 1,
+ "videoId": "rhVezcAXvdo",
+ "title": "Divergence Test for Series",
+ "map_title": "Divergence Test",
+ "channel": "Computer Engineering Jitty",
+ "course": "Differential Equations and Infinite Series",
+ "source_map": "Courses/Differential Equations and Infinite Series/Speedrun Map.md",
+ "map_line": 317,
+ "captions": {
+  "lang": "en",
+  "auto": true,
+  "cache": "tools/videoquiz/.cache/transcripts/rhVezcAXvdo.json"
+ },
+ "generated_at": "2026-10-07T19:54:50",
+ "models": [
+  "gpt-oss:120b-cloud"
+ ],
+ "window_seconds": 120.0,
+ "deck_slug": "Quizzes/Kort/rhVezcAXvdo",
+ "rejected_by_validator": 1,
+ "windows": [
+  {
+   "i": 0,
+   "start": 0.0,
+   "end": 120.0,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad fortæller divergenstesten om en uendelig række?",
+     "options": [
+      "Om rækken konvergerer",
+      "Den giver ingen information om rækken",
+      "Både om konvergens og divergens",
+      "Om rækken divergerer"
+     ],
+     "answer_index": 3,
+     "explanation": "Divergenstesten kan kun afgøre, om en række divergerer. (0:10)",
+     "evidence": "it tells you if a series diverges. Diverges if, right? But it cannot tell you if the series converges.",
+     "t": 10.5,
+     "cite": "0:10",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 0
+    },
+    {
+     "type": "mc",
+     "question": "Hvilken påstand er korrekt i forhold til, hvad divergenstesten kan bestemme?",
+     "options": [
+      "Den kan nogle gange bestemme konvergens",
+      "Den er den sværeste test at anvende",
+      "Den virker kun på endelige rækker",
+      "Den kan aldrig fortælle, om en række konvergerer"
+     ],
+     "answer_index": 3,
+     "explanation": "Ifølge videoen kan divergenstesten aldrig afgøre konvergens. (0:26)",
+     "evidence": "Divergence test can never tell you if the series converges.",
+     "t": 26.4,
+     "cite": "0:26",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 1
+    },
+    {
+     "type": "short",
+     "question": "Hvordan defineres en serie i videoen?",
+     "answer": "Summen af alle værdier i en sekvens.",
+     "explanation": "En serie er summen af alle elementerne i en sekvens. (1:01)",
+     "evidence": "when added all the values together in the sequence is called a series.",
+     "t": 61.4,
+     "cite": "1:01",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 2
+    }
+   ],
+   "transcript_from": "0:00",
+   "transcript_to": "2:00"
+  },
+  {
+   "i": 1,
+   "start": 120.0,
+   "end": 240.72,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "If ∂lim_{n\\to\\infty} a_n \\neq 0, hvad siger divergenstesten om serien?",
+     "options": [
+      "Serien oscillerer",
+      "Testen er inkonklusiv",
+      "Serien konvergerer",
+      "Serien divergerer"
+     ],
+     "answer_index": 3,
+     "explanation": "Divergenstesten fastslår, at en serie divergerer når grænsen af leddene ikke er nul. (2:05)",
+     "evidence": "if the limit as n approaches infinity for your function of your sequence does not equal zero, then your series diverges.",
+     "t": 125.4,
+     "cite": "2:05",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 3
+    },
+    {
+     "type": "mc",
+     "question": "Hvis ∂lim_{n\\to\\infty} a_n = 0, hvad kan man konkludere om serien ud fra divergenstesten?",
+     "options": [
+      "Serien konvergerer",
+      "Serien divergerer",
+      "Man kan ikke bestemme konvergens ud fra testen",
+      "Serien er betinget konvergent"
+     ],
+     "answer_index": 2,
+     "explanation": "Når grænsen er nul, giver divergenstesten ingen information om konvergens. (2:40)",
+     "evidence": "if the limit as n approaches infinity for your function a of n does equal zero this does not determine convergence.",
+     "t": 159.6,
+     "cite": "2:40",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 4
+    },
+    {
+     "type": "short",
+     "question": "Når du beregner grænsen af et brøkudtryk i n, hvilke led i tæller og nævner skal du fokusere på?",
+     "answer": "De led med den største eksponent (højeste potens af n) i tæller og nævner.",
+     "explanation": "Kun den største eksponent i både tæller og nævner påvirker grænsen for n→∞. (3:46)",
+     "evidence": "you only care about the largest exponent value in the denominator and numerator.",
+     "t": 226.5,
+     "cite": "3:46",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 5
+    }
+   ],
+   "transcript_from": "2:00",
+   "transcript_to": "4:01"
+  },
+  {
+   "i": 2,
+   "start": 240.72,
+   "end": 363.44,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad er grænsen for udtrykket \\(\\frac{n}{n}\\) når \\(n\\) går mod uendelig?",
+     "options": [
+      "∞",
+      "1",
+      "0",
+      "eksisterer ikke"
+     ],
+     "answer_index": 1,
+     "explanation": "Når tæller og nævner er den samme, forkortes de og giver 1. (4:33)",
+     "evidence": "n / n, well doesn't this just simplify into one? n /n cancel out with each other. So you just get one in the end.",
+     "t": 272.9,
+     "cite": "4:33",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 6
+    },
+    {
+     "type": "mc",
+     "question": "If \n\\(\\lim_{n\\to\\infty} a_n \\neq 0\\) according to the divergence test, what can be concluded about the series?",
+     "options": [
+      "The test is inconclusive",
+      "The series diverges",
+      "The series converges",
+      "Another test is needed"
+     ],
+     "answer_index": 1,
+     "explanation": "Når grænsen ikke er nul, siger divergenstesten at serien divergerer. (5:36)",
+     "evidence": "remember is as the limit as n approaches infinity for a of n when it does not equal zero your series diverges.",
+     "t": 336.1,
+     "cite": "5:36",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 7
+    },
+    {
+     "type": "short",
+     "question": "Hvad skal du gøre, når grænsen af \\(a_n\\) er nul i divergenstesten?",
+     "answer": "Anvende en anden test",
+     "explanation": "Når grænsen er nul, giver divergenstesten ingen konklusion, så man må bruge et andet konvergenstest. (5:48)",
+     "evidence": "Well, that means that we have to use another test. Your results are inconclusive.",
+     "t": 347.6,
+     "cite": "5:48",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 8
+    }
+   ],
+   "transcript_from": "4:01",
+   "transcript_to": "6:03"
+  },
+  {
+   "i": 3,
+   "start": 363.44,
+   "end": 449.76,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvilke led tages kun i betragtning, når grænsen af brøken \\(\\frac{n^2+3}{5n^2-n+2}\\) bestemmes for \\(n\\to\\infty\\)?",
+     "options": [
+      "Kun konstantleddene.",
+      "Kun de højeste potensled i tæller og nævner.",
+      "Kun lineære led.",
+      "Alle led med samme vægt."
+     ],
+     "answer_index": 1,
+     "explanation": "Man ser kun på de største eksponenter, fordi de dominerer for store \\(n\\). (6:33)",
+     "evidence": "you only care about n^2 5 n^2 here and n squed here. the rest too grow too slow to care about when you're talking about in terms of infinity.",
+     "t": 393.4,
+     "cite": "6:33",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 9
+    },
+    {
+     "type": "mc",
+     "question": "Hvad siger divergenstesten om en serie, hvis grænsen af dens led ikke er nul?",
+     "options": [
+      "Hvis grænsen er uendelig, konvergerer serien.",
+      "Hvis grænsen ikke er nul, divergerer serien.",
+      "Hvis grænsen er nul, divergerer serien.",
+      "Hvis grænsen ikke er nul, konvergerer serien."
+     ],
+     "answer_index": 1,
+     "explanation": "Divergenstesten siger, at hvis grænsen ikke er nul, så divergerer serien. (6:59)",
+     "evidence": "If you don't get zero, then your function diverges. Series diverges.",
+     "t": 419.0,
+     "cite": "6:59",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 10
+    },
+    {
+     "type": "short",
+     "question": "Hvad er grænsen af sekvensen \\(\\frac{n^2+3}{5n^2-n+2}\\) når \\(n\\) går mod uendeligt?",
+     "answer": "5",
+     "explanation": "De \\(n\\)-led annulleres, så man får den konstante værdi fem. (6:52)",
+     "evidence": "All right. Well, what we realize is that these n cancels out, so we just get the constant five.",
+     "t": 412.2,
+     "cite": "6:52",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 11
+    }
+   ],
+   "transcript_from": "6:03",
+   "transcript_to": "7:30"
+  }
+ ]
+}

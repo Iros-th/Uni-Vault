@@ -1,0 +1,564 @@
+{
+ "schema": 1,
+ "videoId": "9CfLMV8dZS4",
+ "title": "Introduction to Taylor Series - Calculus 2",
+ "map_title": "Intro to Taylor Series",
+ "channel": "Computer Engineering Jitty",
+ "course": "Differential Equations and Infinite Series",
+ "source_map": "Courses/Differential Equations and Infinite Series/Speedrun Map.md",
+ "map_line": 399,
+ "captions": {
+  "lang": "en",
+  "auto": true,
+  "cache": "tools/videoquiz/.cache/transcripts/9CfLMV8dZS4.json"
+ },
+ "generated_at": "2026-10-08T00:30:41",
+ "models": [
+  "gpt-oss:120b-cloud"
+ ],
+ "window_seconds": 120.0,
+ "deck_slug": "Quizzes/Kort/9CfLMV8dZS4",
+ "rejected_by_validator": 4,
+ "windows": [
+  {
+   "i": 0,
+   "start": 0.0,
+   "end": 120.24,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad er formålet med en Taylor‑række ifølge videoen?",
+     "options": [
+      "Kun at kunne anvendes på polynomier",
+      "At give den eksakte værdi for enhver endelig n",
+      "Kun at give en tilnærmelse på et lille interval",
+      "At tilnærme funktionen og blive eksakt, når man går mod uendelig"
+     ],
+     "answer_index": 3,
+     "explanation": "Taylor‑rækken giver en tilnærmelse, som bliver eksakt i grænsen n→∞. (0:30)",
+     "evidence": "First, it basically uses this summation formula to not necessarily approximate, right? But nearly get your function exactly, especially if you're going on to infinity.",
+     "t": 29.6,
+     "cite": "0:30",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 0
+    },
+    {
+     "type": "mc",
+     "question": "Hvad repræsenterer leddet med n = 0 i Taylor‑rækken?",
+     "options": [
+      "Den første afledte af funktionen",
+      "Et konstant led uden funktion",
+      "Den oprindelige funktion (nul‑derivata)",
+      "Den anden afledte af funktionen"
+     ],
+     "answer_index": 2,
+     "explanation": "Når n = 0, er leddet blot den oprindelige funktion. (1:49)",
+     "evidence": "You have one here, first order zero. It's just the original function.",
+     "t": 109.1,
+     "cite": "1:49",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 1
+    },
+    {
+     "type": "short",
+     "question": "Hvilken funktion udvides i eksemplet?",
+     "answer": "$e^x$",
+     "explanation": "Eksemplet bruger funktionen f(x)=e^x til Taylor‑udvidelsen. (1:11)",
+     "evidence": "f ofx is equal to e to x.",
+     "t": 70.6,
+     "cite": "1:11",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 2
+    }
+   ],
+   "transcript_from": "0:00",
+   "transcript_to": "2:00"
+  },
+  {
+   "i": 1,
+   "start": 120.24,
+   "end": 241.36,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad er værdien af $0!$ ifølge videoen?",
+     "options": [
+      "Udefineret",
+      "1",
+      "2",
+      "0"
+     ],
+     "answer_index": 1,
+     "explanation": "Fakultetet af nul er defineret som 1. (2:22)",
+     "evidence": "zero factorial is one.",
+     "t": 142.2,
+     "cite": "2:22",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 3
+    },
+    {
+     "type": "mc",
+     "question": "Hvad repræsenterer variablen \"a\" i en Taylor‑række?",
+     "options": [
+      "Hvor rækken er centreret",
+      "Fakultetet af n",
+      "Ordenen af den afledte",
+      "Koefﬁcienten til x‑leddet"
+     ],
+     "answer_index": 0,
+     "explanation": "a angiver det punkt, hvor Taylor‑rækkeudviklingen er centreret. (2:27)",
+     "evidence": "A simply represents where your tailaylor series is centered around.",
+     "t": 147.4,
+     "cite": "2:27",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 4
+    },
+    {
+     "type": "short",
+     "question": "Hvad sker der med Taylor‑seriens tilnærmelse, når antallet af termer går mod uendeligt?",
+     "answer": "Den konvergerer til den oprindelige funktion.",
+     "explanation": "Når man tager uendeligt mange led, bliver Taylor‑række lig den oprindelige funktion. (3:24)",
+     "evidence": "when you go into infinity, well, you actually just equal the original function.",
+     "t": 204.2,
+     "cite": "3:24",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 5
+    }
+   ],
+   "transcript_from": "2:00",
+   "transcript_to": "4:01"
+  },
+  {
+   "i": 2,
+   "start": 241.36,
+   "end": 363.36,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad er værdien af $f(0)$ for funktionen $f(x)=e^x$?",
+     "options": [
+      "$e^0$",
+      "$e$",
+      "1",
+      "0"
+     ],
+     "answer_index": 2,
+     "explanation": "Når $x=0$, er $e^0=1$, så $f(0)=1$. (4:52)",
+     "evidence": "e to the x with an input of 0 is just e to the 0, which is just equal to one.",
+     "t": 291.8,
+     "cite": "4:52",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 6
+    },
+    {
+     "type": "mc",
+     "question": "Hvad er den første‑ordens term (n=1) i Taylor‑rækken for $e^x$ centreret i $0$?",
+     "options": [
+      "$e^x$",
+      "$x$",
+      "$\\frac{x^2}{2}$",
+      "1"
+     ],
+     "answer_index": 1,
+     "explanation": "Den første‑ordens term er $\\frac{f'(0)}{1!}(x-0)=1\\cdot x = x$. (6:00)",
+     "evidence": "we just get x to the power",
+     "t": 360.4,
+     "cite": "6:00",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 7
+    },
+    {
+     "type": "short",
+     "question": "Hvad er $1!$ (fakultet af 1)?",
+     "answer": "1",
+     "explanation": "Fakultet af 1 er per definition 1. (5:36)",
+     "evidence": "n factorial which is just one factorial which is just one.",
+     "t": 336.0,
+     "cite": "5:36",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 8
+    }
+   ],
+   "transcript_from": "4:01",
+   "transcript_to": "6:03"
+  },
+  {
+   "i": 3,
+   "start": 363.36,
+   "end": 485.92,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad er nævneren (koefficienten) for $x^3$‑leddet i Taylor‑rækken for $e^x$?",
+     "options": [
+      "24",
+      "120",
+      "6",
+      "3"
+     ],
+     "answer_index": 2,
+     "explanation": "Nævneren er $3! = 6$, som nævnt i videoen. (6:52)",
+     "evidence": "That's simply just 1 over 3 factorial. So you have x ^ of 3 over 6, right? 3 factorial is equal to 6.",
+     "t": 411.5,
+     "cite": "6:52",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 9
+    },
+    {
+     "type": "mc",
+     "question": "Hvordan beskrives en Maclaurin‑række i videoen?",
+     "options": [
+      "En numerisk tilnærmelse af pi",
+      "En række der kun gælder for sinusfunktioner",
+      "En metode til at løse integraler",
+      "En særlig form for Taylor‑række centreret i nul"
+     ],
+     "answer_index": 3,
+     "explanation": "Videoen siger, at en Maclaurin‑række er en grundlæggende identitet for Taylor‑rækker. (7:20)",
+     "evidence": "A Mclloren series is simply just a basic identity um for Taylor series, right? A Mclloren series is just a type of Taylor series that represents specific functions.",
+     "t": 439.5,
+     "cite": "7:20",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 10
+    },
+    {
+     "type": "short",
+     "question": "What is $2!$ equal to in the denominator of the $x^2$ term?",
+     "answer": "2",
+     "explanation": "$2!$ evaluates to 2, giving the term $x^2/2! = x^2/2$. (6:29)",
+     "evidence": "2 factorial which is just two.",
+     "t": 388.7,
+     "cite": "6:29",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 11
+    }
+   ],
+   "transcript_from": "6:03",
+   "transcript_to": "8:06"
+  },
+  {
+   "i": 4,
+   "start": 485.92,
+   "end": 607.76,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvilket udtryk tilføjes efter den lineære term for at forbedre tilnærmelsen af $e^x$?",
+     "options": [
+      "$\\frac{x^2}{2!}$",
+      "$\\frac{x^3}{3!}$",
+      "$x^2$",
+      "$\\frac{x^4}{4!}$"
+     ],
+     "answer_index": 0,
+     "explanation": "Den næste term i Taylor‑rækken er $x^2$ divideret med $2!$. (8:14)",
+     "evidence": "x^2 over two factorial. Oops. Over two factorial. Okay, it's getting an even better approximation.",
+     "t": 493.5,
+     "cite": "8:14",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 12
+    },
+    {
+     "type": "mc",
+     "question": "Hvad sker der med Taylor‑rækken for $e^x$, når antallet af led går mod uendeligt?",
+     "options": [
+      "Den divergerer",
+      "Den konvergerer til 0",
+      "Den konvergerer til 1",
+      "Den konvergerer til $e^x$"
+     ],
+     "answer_index": 3,
+     "explanation": "Når rækken udvides til uendeligt, bliver den præcis $e^x$. (9:30)",
+     "evidence": "If you do this up into infinity, it will simply just equal e to the x.",
+     "t": 569.7,
+     "cite": "9:30",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 13
+    },
+    {
+     "type": "short",
+     "question": "Hvilket punkt anbefaler forelæseren som centrum for Taylor‑rækken?",
+     "answer": "0",
+     "explanation": "Forelæseren foreslår at centrere ved nul for enklere beregninger. (9:57)",
+     "evidence": "I honestly would just recommend picking zero for where your Taylor series is uh centered at.",
+     "t": 597.0,
+     "cite": "9:57",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 14
+    }
+   ],
+   "transcript_from": "8:06",
+   "transcript_to": "10:08"
+  },
+  {
+   "i": 5,
+   "start": 607.76,
+   "end": 727.76,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad er værdien af $0!$ som bruges i det første led i Taylor‑rækken?",
+     "options": [
+      "2",
+      "0",
+      "Udefineret",
+      "1"
+     ],
+     "answer_index": 3,
+     "explanation": "$0!$ er per definition lig 1. (11:20)",
+     "evidence": "n is equal to zero, right? Which is just 0 factorial is just one.",
+     "t": 680.2,
+     "cite": "11:20",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 15
+    },
+    {
+     "type": "mc",
+     "question": "Hvad er værdien af det første (nulte) led i Taylor‑rækken for $f(x)=e^x$ centreret ved $a=4$?",
+     "options": [
+      "$0$",
+      "$e^4$",
+      "$e^{x-4}$",
+      "$1$"
+     ],
+     "answer_index": 1,
+     "explanation": "Det første led er $\\frac{f^{(0)}(4)}{0!}(x-4)^0 = e^4$. (11:34)",
+     "evidence": "it's just e to the 4th, right? So e to the 4th times the reason why I'm erasing this is because this is the power of zero.",
+     "t": 693.6,
+     "cite": "11:34",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 16
+    },
+    {
+     "type": "short",
+     "question": "Skriv udtrykket for det andet led i Taylor‑rækken for $e^x$ centreret ved $a=4$.",
+     "answer": "$(x-4)\\,e^4$",
+     "explanation": "Det andet led er $(x-4)^1\\cdot e^4/1! = (x-4)e^4$. (11:51)",
+     "evidence": "second term? term and is equal to 1. So x - 4 ^ of 1 * e 4 over 1 factorial",
+     "t": 711.0,
+     "cite": "11:51",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 17
+    }
+   ],
+   "transcript_from": "10:08",
+   "transcript_to": "12:08"
+  },
+  {
+   "i": 6,
+   "start": 727.76,
+   "end": 849.04,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad er koefficienten til $(x-4)^2$‑leddet i Taylor‑rækken for $e^x$ centreret i $x=4$?",
+     "options": [
+      "$\\frac{e^4}{6}$",
+      "$e^4$",
+      "$\\frac{e^4}{2}$",
+      "$\\frac{e^4}{24}$"
+     ],
+     "answer_index": 2,
+     "explanation": "Koefficienten er $e^4$ divideret med $2!$, altså $e^4/2$. (12:26)",
+     "evidence": "E to the 4th to the power uh over 2 x - 4^ 2ar",
+     "t": 746.5,
+     "cite": "12:26",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 18
+    },
+    {
+     "type": "mc",
+     "question": "Ifølge forelæseren, hvad sker der når man øger antallet af led $n$ i Taylor‑rækken?",
+     "options": [
+      "Præcisionen forbliver den samme",
+      "Tilnærmelsen bliver mindre præcis",
+      "Tilnærmelsen bliver mere præcis omkring $x=4$",
+      "Rækken divergerer"
+     ],
+     "answer_index": 2,
+     "explanation": "Flere led giver en mere præcis tilnærmelse omkring centrum. (13:24)",
+     "evidence": "you just get more and more accurate uh from the x value 4",
+     "t": 804.2,
+     "cite": "13:24",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 19
+    },
+    {
+     "type": "short",
+     "question": "Hvad er centrum for Taylor‑rækken, der vises i Desmos‑grafen?",
+     "answer": "4",
+     "explanation": "Grafen er centreret ved $x=4$, som nævnt i videoen. (13:04)",
+     "evidence": "this is currently centered at four, right? So, the x value of this is four",
+     "t": 784.4,
+     "cite": "13:04",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 20
+    }
+   ],
+   "transcript_from": "12:08",
+   "transcript_to": "14:09"
+  },
+  {
+   "i": 7,
+   "start": 849.04,
+   "end": 972.8,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "If du bevæger dig længere væk fra centrum for en Taylor‑række, hvad sker der med nøjagtigheden af tilnærmelsen?",
+     "options": [
+      "Nøjagtigheden falder, jo længere væk du kommer.",
+      "Nøjagtigheden forbedres, jo længere væk du kommer.",
+      "Nøjagtigheden svinger uforudsigeligt.",
+      "Nøjagtigheden forbliver den samme uanset afstanden."
+     ],
+     "answer_index": 0,
+     "explanation": "Jo længere væk fra centrum, jo mindre præcis bliver Taylor‑række‑tilnærmelsen. (14:14)",
+     "evidence": "the further you get from four, the less accurate your Taylor series will uh expansion approximation will become basically.",
+     "t": 854.3,
+     "cite": "14:14",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 21
+    },
+    {
+     "type": "mc",
+     "question": "Hvad er værdien af den fjerde afledte af funktionen i punktet $x=0$?",
+     "options": [
+      "2",
+      "24",
+      "6",
+      "1"
+     ],
+     "answer_index": 1,
+     "explanation": "Den fjerde afledte i $0$ er $24$ ifølge de udregnede afledte. (16:06)",
+     "evidence": "you end up getting one, one, two, six, and 24.",
+     "t": 965.9,
+     "cite": "16:06",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 22
+    },
+    {
+     "type": "short",
+     "question": "Skriv den femte term i Taylor‑rækken centreret i $0$ for den funktion, der blev behandlet.",
+     "answer": "$x^4$",
+     "explanation": "Den femte term svarer til $\frac{f^{(4)}(0)}{4!}x^4 = \\frac{24}{24}x^4 = x^4$. (16:06)",
+     "evidence": "you end up getting one, one, two, six, and 24.",
+     "t": 965.9,
+     "cite": "16:06",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 23
+    }
+   ],
+   "transcript_from": "14:09",
+   "transcript_to": "16:13"
+  },
+  {
+   "i": 8,
+   "start": 972.8,
+   "end": 1094.08,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad er værdien af den nulte afledte af funktionen ved $x=0$ som bruges i Taylor‑rækken?",
+     "options": [
+      "0",
+      "3",
+      "2",
+      "1"
+     ],
+     "answer_index": 3,
+     "explanation": "Den nulte afledte ved 0 er lig med 1, hvilket giver første leddets koefficient. (16:57)",
+     "evidence": "our zeroth order derivative with an input of zero, which is one over one.",
+     "t": 1017.4,
+     "cite": "16:57",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 24
+    },
+    {
+     "type": "mc",
+     "question": "Hvad bliver koefficienten til $x^2$‑leddet i Taylor‑udviklingen?",
+     "options": [
+      "1/2",
+      "1",
+      "0",
+      "2"
+     ],
+     "answer_index": 1,
+     "explanation": "Den anden afledte ved 0 er 2, og $2/2! = 1$, så koefficienten er 1. (17:51)",
+     "evidence": "second order derivative the input of 0 is simply two. So we just have 2 over two factorial which is just 2 over2.",
+     "t": 1070.6,
+     "cite": "17:51",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 25
+    },
+    {
+     "type": "short",
+     "question": "Hvad er den generelle koefficient for ethvert $x^n$‑led i denne Taylor‑række?",
+     "answer": "1",
+     "explanation": "For hvert $n$ annullerer den afledte over $n!$‑faktoren, så koefficienten bliver 1. (18:07)",
+     "evidence": "this pattern just continues on and on where this guy right here cancels with the factorial. So you just get one.",
+     "t": 1086.6,
+     "cite": "18:07",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 26
+    }
+   ],
+   "transcript_from": "16:13",
+   "transcript_to": "18:14"
+  },
+  {
+   "i": 9,
+   "start": 1094.08,
+   "end": 1183.76,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "For hvilke $x$‑værdier konvergerer Taylor‑rækken for $\\frac{1}{1-x}$ centreret i $0$?",
+     "options": [
+      "Alle $x$ mindre end $1$",
+      "Alle reelle $x$",
+      "Kun $-1 < x < 1$",
+      "Alle $x$ større end $1$"
+     ],
+     "answer_index": 0,
+     "explanation": "Rækken konvergerer kun for $x$ mindre end $1$. (18:30)",
+     "evidence": "power series only converges when x is less than one.",
+     "t": 1109.5,
+     "cite": "18:30",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 27
+    },
+    {
+     "type": "mc",
+     "question": "Hvis Taylor‑rækken for $\\frac{1}{1-x}$ centreres i $x=2$, hvilke værdier kan den approksimere?",
+     "options": [
+      "Værdier til venstre for den vertikale asymptote",
+      "Ingen værdier konvergerer",
+      "Værdier til højre for den vertikale asymptote",
+      "Begge sider af asymptoten"
+     ],
+     "answer_index": 2,
+     "explanation": "Når centreret ved $x=2$ kan rækken kun give tilnærmelser til højre for $x=1$. (18:56)",
+     "evidence": "your series will actually be able to approximate any value to the right of the vertical asymptote.",
+     "t": 1135.6,
+     "cite": "18:56",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 28
+    },
+    {
+     "type": "short",
+     "question": "Hvad er den generelle form for Taylor‑rækken for $\\frac{1}{1-x}$ centreret i $x=0$?",
+     "answer": "$\\sum_{n=0}^{\\infty} x^{n}$",
+     "explanation": "Rækken er summen af $x^n$ fra $n=0$ til uendeligt. (19:08)",
+     "evidence": "X to the power of n basically.",
+     "t": 1148.0,
+     "cite": "19:08",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 29
+    }
+   ],
+   "transcript_from": "18:14",
+   "transcript_to": "19:44"
+  }
+ ]
+}

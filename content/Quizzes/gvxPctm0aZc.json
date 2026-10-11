@@ -1,0 +1,132 @@
+{
+ "schema": 1,
+ "videoId": "gvxPctm0aZc",
+ "title": "The Difference Between the Power Series and the Taylor Series",
+ "map_title": "Difference Between Power Series and Taylor Series",
+ "channel": "Computer Engineering Jitty",
+ "course": "Differential Equations and Infinite Series",
+ "source_map": "Courses/Differential Equations and Infinite Series/Speedrun Map.md",
+ "map_line": 385,
+ "captions": {
+  "lang": "en",
+  "auto": true,
+  "cache": "tools/videoquiz/.cache/transcripts/gvxPctm0aZc.json"
+ },
+ "generated_at": "2026-10-08T00:29:03",
+ "models": [
+  "gpt-oss:120b-cloud"
+ ],
+ "window_seconds": 120.0,
+ "deck_slug": "Quizzes/Kort/gvxPctm0aZc",
+ "rejected_by_validator": 0,
+ "windows": [
+  {
+   "i": 0,
+   "start": 0.0,
+   "end": 121.52,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvordan beskrives et Taylor‑serie i forhold til en potensserie?",
+     "options": [
+      "Det er en type potensserie",
+      "Det er helt uafhængigt af potensserier",
+      "Det er kun en polynomiel udvidelse uden variabel",
+      "Det er en metode til at løse differentialligninger"
+     ],
+     "answer_index": 0,
+     "explanation": "Et Taylor‑serie er en særlig form for potensserie. (0:06)",
+     "evidence": "a tailaylor series is just a type of power series.",
+     "t": 5.5,
+     "cite": "0:06",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 0
+    },
+    {
+     "type": "mc",
+     "question": "Hvilken egenskab er karakteristisk for en potensserie?",
+     "options": [
+      "Den skal altid starte med indeks 1",
+      "Den konvergerer for alle værdier af x",
+      "Den kan ikke grafisk repræsenteres",
+      "Den indeholder en variabel som x"
+     ],
+     "answer_index": 3,
+     "explanation": "En potensserie er defineret ved at have en variabel, typisk x. (0:08)",
+     "evidence": "what a power series essentially is is just any series with the variable x",
+     "t": 7.9,
+     "cite": "0:08",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 1
+    },
+    {
+     "type": "short",
+     "question": "Hvad sker der med et Taylor‑serie, når antallet af led går mod uendelig?",
+     "answer": "Det konvergerer til den funktion, som serien tilnærmer.",
+     "explanation": "Når man tager uendeligt mange led, bliver Taylor‑serien lig funktionens værdi. (1:56)",
+     "evidence": "as you go into infinity, you actually end up equaling that function.",
+     "t": 116.2,
+     "cite": "1:56",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 2
+    }
+   ],
+   "transcript_from": "0:00",
+   "transcript_to": "2:02"
+  },
+  {
+   "i": 1,
+   "start": 121.52,
+   "end": 221.04,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad er den generelle term i serien for $e^x$ som præsenteres i videoen?",
+     "options": [
+      "$\\displaystyle \\frac{x^{n}}{n!}$",
+      "$\\displaystyle \\frac{n!}{x^{n}}$",
+      "$\\displaystyle \\frac{x^{n+1}}{(n+1)!}$",
+      "$\\displaystyle x^{n}\\,n!$"
+     ],
+     "answer_index": 0,
+     "explanation": "Den generelle term er $x^{n}/n!$, som er den klassiske Maclaurin‑udvikling af $e^x$. (2:07)",
+     "evidence": "x ^ of n / n factorial",
+     "t": 127.0,
+     "cite": "2:07",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 3
+    },
+    {
+     "type": "mc",
+     "question": "Ifølge videoen, hvad er den væsentlige egenskab ved en Taylor‑række i forhold til en generel potensrække?",
+     "options": [
+      "Den er altid centreret omkring $a=0$.",
+      "Den kan kun bruges til eksponentialfunktioner.",
+      "Den approksimerer funktioner og konvergerer til funktionen når $n\\to\\infty$.",
+      "Den har variable koefficienter $c_n$ som kan være funktioner."
+     ],
+     "answer_index": 2,
+     "explanation": "Taylor‑rækken er netop designet til at give en tilnærmelse, som ved uendelig mange led bliver identisk med den oprindelige funktion. (2:41)",
+     "evidence": "what the Taylor series does is approximate functions and as you go into infinity actually just ends up straight up equaling your function",
+     "t": 161.1,
+     "cite": "2:41",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 4
+    },
+    {
+     "type": "short",
+     "question": "Hvad betegner variablen $a$ i både en potensrække og en Taylor‑række?",
+     "answer": "Centreringspunktet (det punkt, hvor rækken er udvidet omkring).",
+     "explanation": "I videoen beskrives $a$ som stedet hvor rækken er centreret. (2:53)",
+     "evidence": "A is simply where your Taylor series and power series are centered at",
+     "t": 173.2,
+     "cite": "2:53",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 5
+    }
+   ],
+   "transcript_from": "2:02",
+   "transcript_to": "3:41"
+  }
+ ]
+}

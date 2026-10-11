@@ -1,0 +1,294 @@
+{
+ "schema": 1,
+ "videoId": "_1Sq2n7xTuc",
+ "title": "Alternating Series Test for Convergence and Divergence",
+ "map_title": "Alternating Series Test",
+ "channel": "Computer Engineering Jitty",
+ "course": "Differential Equations and Infinite Series",
+ "source_map": "Courses/Differential Equations and Infinite Series/Speedrun Map.md",
+ "map_line": 344,
+ "captions": {
+  "lang": "en",
+  "auto": true,
+  "cache": "tools/videoquiz/.cache/transcripts/_1Sq2n7xTuc.json"
+ },
+ "generated_at": "2026-10-08T00:24:45",
+ "models": [
+  "gpt-oss:120b-cloud"
+ ],
+ "window_seconds": 120.0,
+ "deck_slug": "Quizzes/Kort/_1Sq2n7xTuc",
+ "rejected_by_validator": 2,
+ "windows": [
+  {
+   "i": 0,
+   "start": 0.0,
+   "end": 123.44,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad er $b_n$ i den alternerende række‑test?",
+     "options": [
+      "Den afledte af $a_n$",
+      "Den absolutte værdi af $a_n$",
+      "Den negative værdi af $a_n$",
+      "$a_n^2$"
+     ],
+     "answer_index": 1,
+     "explanation": "$b_n$ defineres som den absolutte værdi af $a_n$. (0:57)",
+     "evidence": "b of n is equal to the absolute value of a of n with a little bit of simplification.",
+     "t": 57.4,
+     "cite": "0:57",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 0
+    },
+    {
+     "type": "mc",
+     "question": "Hvilken af følgende betingelser nævnes **ikke** som nødvendig for konvergens af en alternerende række i videoen?",
+     "options": [
+      "$b_n \\ge 0$",
+      "Grænsen $\\lim_{n\\to\\infty} b_n = 0$",
+      "Leddene skifter fortløbende tegn",
+      "$b_n$ er aftagende"
+     ],
+     "answer_index": 1,
+     "explanation": "Videoen nævner kun, at $b_n$ skal være ikke‑negativ og aftagende, men nævner ikke grænse‑betingelsen. (1:22)",
+     "evidence": "B of N must be greater than zero or greater than or greater than or equal to zero. ... B of N must also be decreasing.",
+     "t": 82.3,
+     "cite": "1:22",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 1
+    },
+    {
+     "type": "short",
+     "question": "Hvad er det givne eksempel på en faldende $b_n$‑sekvens?",
+     "answer": "$1, \\frac12, \\frac14, \\frac18$",
+     "explanation": "Eksemplet viser en sekvens, hvor hvert led er halvdelen af det foregående. (1:58)",
+     "evidence": "An example of this would be one 1 and 12 1/4 and 1/8.",
+     "t": 118.0,
+     "cite": "1:58",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 2
+    }
+   ],
+   "transcript_from": "0:00",
+   "transcript_to": "2:03"
+  },
+  {
+   "i": 1,
+   "start": 123.44,
+   "end": 247.36,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad siger divergenstesten, når α_n ≠ 0 når n → ∞?",
+     "options": [
+      "Rækken konvergerer",
+      "Rækken divergerer",
+      "Testen er inkonklusiv",
+      "Rækken er en alternerende række"
+     ],
+     "answer_index": 1,
+     "explanation": "Divergenstesten fastslår, at en række divergerer hvis grænsen for leddet ikke er nul. (2:45)",
+     "evidence": "divergence test states that as the limit as n approaches infinity for some sequence a of n does not equal zero then the series diverges.",
+     "t": 164.6,
+     "cite": "2:45",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 3
+    },
+    {
+     "type": "mc",
+     "question": "Hvad kræver den alternerende rækketest for grænsen af $b_n$?",
+     "options": [
+      "$\\lim_{n\\to\\infty} b_n = \\infty$",
+      "$\\lim_{n\\to\\infty} b_n = 0$",
+      "$\\lim_{n\\to\\infty} b_n \\neq 0$",
+      "Ingen grænsebetingelse"
+     ],
+     "answer_index": 1,
+     "explanation": "Rækketest siger, at hvis grænsen for $b_n$ er nul, konvergerer rækken. (3:20)",
+     "evidence": "as the limit as n approaches infinity for b of n equals zero then your series converges.",
+     "t": 199.7,
+     "cite": "3:20",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 4
+    },
+    {
+     "type": "short",
+     "question": "Hvad er det næste skridt i udledningen af det givne eksempel på en alternerende række?",
+     "answer": "Bestemme $b_n$ (find $b_n$).",
+     "explanation": "Efter at have anført, at rækken er alternerende, skal man først finde udtrykket for $b_n$. (3:59)",
+     "evidence": "First off, let's go ahead and find B of N.",
+     "t": 238.6,
+     "cite": "3:59",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 5
+    }
+   ],
+   "transcript_from": "2:03",
+   "transcript_to": "4:07"
+  },
+  {
+   "i": 2,
+   "start": 247.36,
+   "end": 367.52,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad er den forenklede form af $B(N)$ efter at koefficienterne er fjernet?",
+     "options": [
+      "$1/N^2$",
+      "$3/N^2$",
+      "$N^2$",
+      "1/N"
+     ],
+     "answer_index": 0,
+     "explanation": "Efter forenkling er $B(N)=1/N^2$. (4:32)",
+     "evidence": "so now that you have B of N is equal to 1 / N^2",
+     "t": 271.8,
+     "cite": "4:32",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 6
+    },
+    {
+     "type": "mc",
+     "question": "Hvordan ændrer $B(N)$ sig, når $N$ vokser?",
+     "options": [
+      "Den falder",
+      "Den oscillerer",
+      "Den forbliver konstant",
+      "Den stiger"
+     ],
+     "answer_index": 0,
+     "explanation": "$B(N)$ er en faldende følge, fordi $1/N^2$ bliver mindre når $N$ øges. (4:59)",
+     "evidence": "as the value of n increases, then the value of b of n actually decreases",
+     "t": 299.1,
+     "cite": "4:59",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 7
+    },
+    {
+     "type": "short",
+     "question": "Hvad er grænsen for $B(N)$ når $N \\to \\infty$?",
+     "answer": "0",
+     "explanation": "Grænsen af $1/N^2$ for $N\\to\\infty$ er nul. (5:21)",
+     "evidence": "we get 1 over infinity^2 which is just simply 1 over infinity. This does equal zero.",
+     "t": 321.4,
+     "cite": "5:21",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 8
+    }
+   ],
+   "transcript_from": "4:07",
+   "transcript_to": "6:08"
+  },
+  {
+   "i": 3,
+   "start": 367.52,
+   "end": 489.52,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad er udtrykket for $b_n$ i den betragtede alternerende række?",
+     "options": [
+      "$(-1)^n$",
+      "$\\frac{1}{n}$",
+      "$(-1)^{n+1}$",
+      "$n$"
+     ],
+     "answer_index": 1,
+     "explanation": "$b_n$ er netop $1/n$, som fremgår af definitionen i videoen. (6:57)",
+     "evidence": "limit as N approaches infinity for B of N, which is 1 / N in this case",
+     "t": 417.4,
+     "cite": "6:57",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 9
+    },
+    {
+     "type": "mc",
+     "question": "Hvad er konklusionen for den alternerende række $\\sum (-1)^n/ n$?",
+     "options": [
+      "konvergerer",
+      "konvergerer absolut",
+      "divergerer",
+      "inkonklusiv"
+     ],
+     "answer_index": 0,
+     "explanation": "Ifølge videoen konvergerer den alternerende række $1/n$. (7:53)",
+     "evidence": "the alternating series 1 over N actually does converge",
+     "t": 472.7,
+     "cite": "7:53",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 10
+    },
+    {
+     "type": "short",
+     "question": "Skriv den alternerende række i sigma‑notation med $(-1)^{n+1}$.",
+     "answer": "$\\displaystyle \\sum_{n=1}^{\\infty} \\frac{(-1)^{n+1}}{n}$",
+     "explanation": "Videoen nævner, at man også kan bruge $(-1)^{n+1}$ som den alternerende faktor. (8:04)",
+     "evidence": "It could be negative 1 to the^ of n plus one as well if you wanted to",
+     "t": 484.1,
+     "cite": "8:04",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 11
+    }
+   ],
+   "transcript_from": "6:08",
+   "transcript_to": "8:10"
+  },
+  {
+   "i": 4,
+   "start": 489.52,
+   "end": 587.28,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad er udtrykket for $b_n$ efter at have taget den absolutte værdi af $a_n$?",
+     "options": [
+      "$(n+2)/(n+1)$",
+      "$(n+1)/(n+2)$",
+      "$1$",
+      "$n/(n+1)$"
+     ],
+     "answer_index": 1,
+     "explanation": "Den absolutte værdi fjerner den alternerende del og giver $(n+1)/(n+2)$. (8:28)",
+     "evidence": "you just get n plus1 over n plus2.",
+     "t": 508.5,
+     "cite": "8:28",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 12
+    },
+    {
+     "type": "mc",
+     "question": "Hvorfor kan $b_n$ forenkles til $1$ når $n \\to \\infty$ ifølge forelæseren?",
+     "options": [
+      "Fordi de førende led $n/n$ annullerer hinanden",
+      "Fordi eksponenten er $1$",
+      "Fordi grænsen af $(n+1)/(n+2)$ er $1$",
+      "Fordi både tæller og nævner går mod uendelighed"
+     ],
+     "answer_index": 0,
+     "explanation": "Forelæseren fokuserer på de største eksponenter og ser $n/n$, som giver $1$. (8:47)",
+     "evidence": "So we have n / n. Right? This simplifies into one.",
+     "t": 526.9,
+     "cite": "8:47",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 13
+    },
+    {
+     "type": "short",
+     "question": "Hvilken betingelse i den alternerende serietest fejler for denne række?",
+     "answer": "Grænsen af $b_n$ er ikke nul (den går mod 1).",
+     "explanation": "Limit‑betingelsen kræver at $\\lim_{n\\to\\infty} b_n = 0$, men den er $1$. (9:28)",
+     "evidence": "that just equals one. So this doesn't equal zero.",
+     "t": 567.7,
+     "cite": "9:28",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 14
+    }
+   ],
+   "transcript_from": "8:10",
+   "transcript_to": "9:47"
+  }
+ ]
+}

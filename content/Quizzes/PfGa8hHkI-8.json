@@ -1,0 +1,1348 @@
+{
+ "schema": 1,
+ "videoId": "PfGa8hHkI-8",
+ "title": "Convergence Tests Review - Calc 2 - Div, P-Series, Comparison, Telescoping, Alternating, Ratio, Root",
+ "map_title": "Convergence Tests Review (52 min)",
+ "channel": "Computer Engineering Jitty",
+ "course": "Differential Equations and Infinite Series",
+ "source_map": "Courses/Differential Equations and Infinite Series/Speedrun Map.md",
+ "map_line": 330,
+ "captions": {
+  "lang": "en",
+  "auto": true,
+  "cache": "tools/videoquiz/.cache/transcripts/PfGa8hHkI-8.json"
+ },
+ "generated_at": "2026-10-08T00:36:20",
+ "models": [
+  "gpt-oss:120b-cloud"
+ ],
+ "window_seconds": 120.0,
+ "deck_slug": "Quizzes/Kort/PfGa8hHkI-8",
+ "rejected_by_validator": 20,
+ "windows": [
+  {
+   "i": 0,
+   "start": 0.0,
+   "end": 120.64,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad kan divergencetesten kun afgøre?",
+     "options": [
+      "Kun om en række divergerer",
+      "Kan afgøre både konvergens og divergens",
+      "Kun om en række konvergerer",
+      "Er altid uafgjort"
+     ],
+     "answer_index": 0,
+     "explanation": "Divergencetesten kan kun vise at en række divergerer, ellers er den uafgjort. (0:21)",
+     "evidence": "The divergence test can never determine a convergence. It can only tell you if a series diverges.",
+     "t": 20.9,
+     "cite": "0:21",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 0
+    },
+    {
+     "type": "mc",
+     "question": "Hvad konkluderer divergencetesten for serien \\(\\sum n^2\\)?",
+     "options": [
+      "Uafgjort",
+      "Divergerer",
+      "Konvergerer",
+      "Betinget konvergerer"
+     ],
+     "answer_index": 1,
+     "explanation": "Grænsen for leddet er uendelig, altså forskellig fra nul, så serien divergerer. (1:52)",
+     "evidence": "Since this does not equal 0, your series diverges.",
+     "t": 112.0,
+     "cite": "1:52",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 1
+    },
+    {
+     "type": "short",
+     "question": "Hvad er betingelsen på \\(\\lim_{n\\to\\infty} a_n\\) for at divergencetesten kan konkludere divergens?",
+     "answer": "$\\lim_{n\\to\\infty} a_n \\neq 0$",
+     "explanation": "Hvis grænsen for leddet ikke er nul, så divergerer serien. (0:52)",
+     "evidence": "if this sequence does not equal zero, right? Then your series diverges.",
+     "t": 51.8,
+     "cite": "0:52",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 2
+    }
+   ],
+   "transcript_from": "0:00",
+   "transcript_to": "2:01"
+  },
+  {
+   "i": 1,
+   "start": 120.64,
+   "end": 244.0,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvilken serie nævnes som et eksempel, hvor divergenstesten er inkonklusiv?",
+     "options": [
+      "$\\sum n$",
+      "$\\sum 1/n$",
+      "$\\sum 1/n^2$",
+      "$\\sum (-1)^n/n$"
+     ],
+     "answer_index": 1,
+     "explanation": "Harmonisk række 1/n giver grænsen 0, så divergenstesten er inkonklusiv. (2:05)",
+     "evidence": "1 / n in this case.",
+     "t": 124.7,
+     "cite": "2:05",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 3
+    },
+    {
+     "type": "mc",
+     "question": "If the limit of the sequence aₙ as n→∞ does NOT equal zero, what does the divergence test tell you?",
+     "options": [
+      "The series converges",
+      "The series diverges",
+      "The test is inconclusive",
+      "The series is alternating"
+     ],
+     "answer_index": 1,
+     "explanation": "Divergenstesten siger, at hvis grænsen ikke er nul, så divergerer serien. (3:02)",
+     "evidence": "the condition for divergence is simply if n approaches infinity and your sequence does not equal zero as n approaches infinity.",
+     "t": 182.3,
+     "cite": "3:02",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 4
+    },
+    {
+     "type": "short",
+     "question": "Hvad skal du gøre, når divergenstesten giver et inkonklusivt resultat?",
+     "answer": "Anvende en anden konvergenstest, fx p‑serietesten.",
+     "explanation": "Når testen er inkonklusiv, skal man bruge en anden test. (3:22)",
+     "evidence": "you get an inconclusive result. You have to use another test.",
+     "t": 201.7,
+     "cite": "3:22",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 5
+    }
+   ],
+   "transcript_from": "2:01",
+   "transcript_to": "4:04"
+  },
+  {
+   "i": 2,
+   "start": 244.0,
+   "end": 366.64,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "If the exponent p in a p‑series satisfies p ≤ 1, what does the p‑series test say about the series?",
+     "options": [
+      "Series converges conditionally",
+      "Series converges",
+      "Test is inconclusive",
+      "Series diverges"
+     ],
+     "answer_index": 3,
+     "explanation": "Når p er mindre end eller lig med 1, divergerer serien ifølge p‑serietesten. (4:15)",
+     "evidence": "if P is less than or equal to one, then your series ... diverges",
+     "t": 255.0,
+     "cite": "4:15",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 6
+    },
+    {
+     "type": "mc",
+     "question": "What does the p‑series test predict for the series \\(\\sum_{n=1}^{\\infty} \\frac{1}{n^3}\\)?",
+     "options": [
+      "Conditionally converges",
+      "Inconclusive",
+      "Converges",
+      "Diverges"
+     ],
+     "answer_index": 2,
+     "explanation": "Her er p = 3, og da p > 1 konvergerer serien. (4:27)",
+     "evidence": "if p is greater than one then your series must converge",
+     "t": 267.2,
+     "cite": "4:27",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 7
+    },
+    {
+     "type": "short",
+     "question": "Hvad er eksponenten p for serien $\\sum_{n=1}^{\\infty} \\frac{1}{n^{2}}$?",
+     "answer": "2",
+     "explanation": "The series is of the form 1/n^p, så p er eksponenten på n, som er 2. (4:40)",
+     "evidence": "you have a sum 1 / n the power of two. In this case p is equal to two",
+     "t": 280.1,
+     "cite": "4:40",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 8
+    }
+   ],
+   "transcript_from": "4:04",
+   "transcript_to": "6:07"
+  },
+  {
+   "i": 3,
+   "start": 366.64,
+   "end": 487.28,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "For serien $\\sum \\frac{1}{n^{3/2}}$ hvad er p‑værdien, og konvergerer den?",
+     "options": [
+      "p = 3/2, og den konvergerer",
+      "p = 2/3, og den konvergerer",
+      "p = 3/2, men den divergerer",
+      "p = 2/3, men den divergerer"
+     ],
+     "answer_index": 0,
+     "explanation": "Da $p=3/2>1$, konvergerer p‑rækken. (6:32)",
+     "evidence": "1 / n ^ of 3 over2. And since 3 over2 is greater than 1, ... then your series will converge in this case.",
+     "t": 391.5,
+     "cite": "6:32",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 9
+    },
+    {
+     "type": "mc",
+     "question": "Bestem om serien $\\sum \\frac{1}{n^{3/2}}$ konvergerer eller divergerer.",
+     "options": [
+      "Afhænger af $n$",
+      "Divergerer",
+      "Konvergerer",
+      "Ubestemt"
+     ],
+     "answer_index": 2,
+     "explanation": "Da eksponenten $p=\\frac{3}{2}>1$, konvergerer p‑rækken. (6:34)",
+     "evidence": "Since 3 over2 is greater than 1, then your series will converge in this case.",
+     "t": 394.1,
+     "cite": "6:34",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 10
+    },
+    {
+     "type": "short",
+     "question": "Hvad er eksponenten $p$ for serien $\\sum \\frac{1}{n^{3/2}}$?",
+     "answer": "$\\frac{3}{2}$",
+     "explanation": "I transskriptionen står det, at $p$ er lig med $3/2$. (6:32)",
+     "evidence": "P is equal to 3 over2 in this case.",
+     "t": 391.5,
+     "cite": "6:32",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 11
+    }
+   ],
+   "transcript_from": "6:07",
+   "transcript_to": "8:07"
+  },
+  {
+   "i": 4,
+   "start": 487.28,
+   "end": 608.56,
+   "questions": [
+    {
+     "type": "short",
+     "question": "Hvad er betingelsen for at en geometrisk række divergerer?",
+     "answer": "$|r| \\ge 1$",
+     "explanation": "Når den absolutte værdi af r er større end eller lig med 1, divergerer rækken. (8:42)",
+     "evidence": "if the absolute value of r is greater than uh or equal to one then your series diverges",
+     "t": 522.5,
+     "cite": "8:42",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 12
+    }
+   ],
+   "transcript_from": "8:07",
+   "transcript_to": "10:09"
+  },
+  {
+   "i": 5,
+   "start": 608.56,
+   "end": 730.56,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad er summen af den uendelige geometriske række med startværdi a = 3 og ratio r = 1/2?",
+     "options": [
+      "1.5",
+      "6",
+      "3",
+      "12"
+     ],
+     "answer_index": 1,
+     "explanation": "Summen findes med formelen a/(1‑r) = 3/(1‑1/2) = 6. (10:55)",
+     "evidence": "3 over 1 - r which is 12. So we have 3 over 12 in this case and 3 over 1/2 is simply equal to six.",
+     "t": 654.6,
+     "cite": "10:55",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 13
+    },
+    {
+     "type": "mc",
+     "question": "Ifølge videoen divergerer en geometrisk række når:",
+     "options": [
+      "$|r| < 1$",
+      "$a = 0$",
+      "$|r| \\ge 1$",
+      "$|r| = 0$"
+     ],
+     "answer_index": 2,
+     "explanation": "Når den absolutte værdi af forholdet er større end eller lig 1, divergerer rækken. (12:04)",
+     "evidence": "if r is just greater than or equal to one, your series diverges.",
+     "t": 723.5,
+     "cite": "12:04",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 14
+    },
+    {
+     "type": "short",
+     "question": "Hvilken formel bruges til at bestemme summen af en konvergent geometrisk række?",
+     "answer": "$S = \\frac{a}{1-r}$",
+     "explanation": "Formlen a/(1‑r) giver summen når |r|<1. (10:46)",
+     "evidence": "We could simply use this formula a over 1 - r.",
+     "t": 646.1,
+     "cite": "10:46",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 15
+    }
+   ],
+   "transcript_from": "10:09",
+   "transcript_to": "12:11"
+  },
+  {
+   "i": 6,
+   "start": 730.56,
+   "end": 854.32,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvilke dele af den oprindelige term ignoreres, når man konstruerer $b_n$ til sammenligningstesten?",
+     "options": [
+      "Både konstanterne og de termer med den mindste potens",
+      "Kun konstanterne i nævneren",
+      "Kun de termer med den højeste potens",
+      "Kun konstanterne i tælleren"
+     ],
+     "answer_index": 0,
+     "explanation": "$b_n$ dannes ved at droppe konstanter og de mindste potenser. (13:02)",
+     "evidence": "b of n is simply just a series where you ignore the uh constants, ignore the the numbers that have the smallest power",
+     "t": 781.9,
+     "cite": "13:02",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 16
+    },
+    {
+     "type": "mc",
+     "question": "Hvad er kravet til forholdet mellem $b_n$ og $a_n$ i den direkte sammenligningstest?",
+     "options": [
+      "$b_n$ skal være lig $a_n$",
+      "Der er intet krav til forholdet",
+      "$b_n$ skal være større end $a_n$",
+      "$b_n$ skal være mindre end $a_n$"
+     ],
+     "answer_index": 2,
+     "explanation": "Direkte sammenligningstest kræver, at $b_n$ er større end $a_n$. (14:04)",
+     "evidence": "your series need to be greater than zero and b of n must be greater than a of n.",
+     "t": 843.6,
+     "cite": "14:04",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 17
+    },
+    {
+     "type": "short",
+     "question": "Hvilken positivitet‑betingelse skal opfyldes for serierne i den direkte sammenligningstest?",
+     "answer": "Alle led skal være større end nul.",
+     "explanation": "Testen kræver, at seriernes led er positive. (14:06)",
+     "evidence": "need to be greater than zero and b of n must be greater than a of n",
+     "t": 846.1,
+     "cite": "14:06",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 18
+    }
+   ],
+   "transcript_from": "12:11",
+   "transcript_to": "14:14"
+  },
+  {
+   "i": 7,
+   "start": 854.32,
+   "end": 976.08,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad er værdien af $a_1$ i serien $a_n = \\frac{1}{n^2+3}$?",
+     "options": [
+      "$1$",
+      "$\\frac{1}{4}$",
+      "$\\frac{1}{5}$",
+      "$\\frac{1}{3}$"
+     ],
+     "answer_index": 1,
+     "explanation": "Når $n=1$ får vi $a_1 = \\frac{1}{1^2+3}=\\frac{1}{4}$. (14:35)",
+     "evidence": "when n is equal to 1, we have 1 over 1^2 + 3. Correct? So, we have 1/4 here.",
+     "t": 875.0,
+     "cite": "14:35",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 19
+    },
+    {
+     "type": "mc",
+     "question": "If the series $b_n = \\frac{1}{n^2}$ converges, hvad kan vi konkludere om serien $a_n = \\frac{1}{n^2+3}$?",
+     "options": [
+      "$a_n$ konvergerer kun hvis $b_n$ divergerer",
+      "Ubeslutsom – testen giver ingen information",
+      "$a_n$ konvergerer også",
+      "$a_n$ divergerer"
+     ],
+     "answer_index": 2,
+     "explanation": "If $b_n$ converges then $a_n$ also converges by sammenligningstesten. (16:03)",
+     "evidence": "if b of n converges then a of n also converges.",
+     "t": 962.7,
+     "cite": "16:03",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 20
+    },
+    {
+     "type": "short",
+     "question": "Hvilken ulighed gælder mellem $a_n$ og $b_n$ for alle $n$?",
+     "answer": "$a_n \\le b_n$",
+     "explanation": "Den større nævner i $a_n$ giver en mindre brøkværdi end $b_n$. (15:44)",
+     "evidence": "you’re always going to get a larger denominator for a of n than for b of n.",
+     "t": 944.0,
+     "cite": "15:44",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 21
+    }
+   ],
+   "transcript_from": "14:14",
+   "transcript_to": "16:16"
+  },
+  {
+   "i": 8,
+   "start": 976.08,
+   "end": 1096.8,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvilken implikation er garanteret ifølge forelæseren?",
+     "options": [
+      "Hvis $b_n$ konvergerer, så konvergerer $a_n$.",
+      "Hvis $a_n$ divergerer, så konvergerer $b_n$.",
+      "Hvis $a_n$ konvergerer, så konvergerer $b_n$.",
+      "Hvis $b_n$ divergerer, så divergerer $a_n$."
+     ],
+     "answer_index": 0,
+     "explanation": "Forelæseren siger eksplicit, at konvergens af $b_n$ medfører konvergens af $a_n$. (16:31)",
+     "evidence": "If b of n converges, so if this guy converges, then a of n converges.",
+     "t": 990.7,
+     "cite": "16:31",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 22
+    },
+    {
+     "type": "mc",
+     "question": "Hvilken værdi af $p$ bruges i p‑serietesten i eksemplet?",
+     "options": [
+      "1",
+      "2",
+      "0.5",
+      "3"
+     ],
+     "answer_index": 1,
+     "explanation": "Der står, at $p$ er lig med to i dette tilfælde. (17:58)",
+     "evidence": "The P is equal to two here.",
+     "t": 1078.3,
+     "cite": "17:58",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 23
+    },
+    {
+     "type": "short",
+     "question": "Hvad er næste skridt efter at have fastslået, at $B_n$ konvergerer via p‑serietesten?",
+     "answer": "Man anvender den direkte sammenligningstest og konkluderer, at $A_n$ konvergerer.",
+     "explanation": "Når $B_n$ er kendt som konvergent, bruges den direkte sammenligningstest til at overføre konvergensen til $A_n$. (18:13)",
+     "evidence": "and you know we use the direct comparison test. Since B of N converges",
+     "t": 1092.9,
+     "cite": "18:13",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 24
+    }
+   ],
+   "transcript_from": "16:16",
+   "transcript_to": "18:17"
+  },
+  {
+   "i": 9,
+   "start": 1096.8,
+   "end": 1217.04,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvilken konvergenstest anbefaler forelæseren at bruge i de fleste tilfælde?",
+     "options": [
+      "Limit‑sammenligningstest",
+      "Direkte sammenligningstest",
+      "Ratio‑testen",
+      "Rod‑testen"
+     ],
+     "answer_index": 0,
+     "explanation": "Forelæseren siger, at limit‑sammenligningstest er den mest anvendelige i de fleste situationer. (18:30)",
+     "evidence": "I’d recommend for most cases, you just use limit comparison test.",
+     "t": 1110.5,
+     "cite": "18:30",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 25
+    },
+    {
+     "type": "mc",
+     "question": "Når du finder $b_n$, hvad gør du med konstanterne i udtrykket?",
+     "options": [
+      "Du kvadrerer dem",
+      "Du multiplicerer dem med $n$",
+      "Du beholder dem",
+      "Du ignorerer dem"
+     ],
+     "answer_index": 3,
+     "explanation": "Man skal normalt fjerne (ignorere) konstanterne, når man konstruerer $b_n$. (20:03)",
+     "evidence": "When you find b of n, you usually just want to take out the constants, right? So you can just simply ignore the constants...",
+     "t": 1202.8,
+     "cite": "20:03",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 26
+    },
+    {
+     "type": "short",
+     "question": "Hvordan bestemmer du $b_n$ ud fra $a_n$ i limit‑sammenligningstesten?",
+     "answer": "Man beholder kun de største potenser i tæller og nævner og dropper resten.",
+     "explanation": "Det er netop det, forelæseren beskriver som at fjerne alle eksponenter, der ikke er de største. (19:37)",
+     "evidence": "b of n is another series where you just simply take out all of the exponents that aren't the largest ... in the numerator or denominator.",
+     "t": 1176.6,
+     "cite": "19:37",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 27
+    }
+   ],
+   "transcript_from": "18:17",
+   "transcript_to": "20:17"
+  },
+  {
+   "i": 10,
+   "start": 1217.04,
+   "end": 1341.2,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvilken betingelse på $L$ sikrer, at de to serier har samme konvergensadfærd i limit comparison test?",
+     "options": [
+      "$L$ eksisterer ikke",
+      "$0 < L < \\infty$",
+      "$L = 0$",
+      "$L = \\infty$"
+     ],
+     "answer_index": 1,
+     "explanation": "Hvis $L$ ligger mellem nul og uendelig, konvergerer eller divergerer begge serier sammen. (21:05)",
+     "evidence": "If L is between zero and infinity, then both your series converge and diverge together.",
+     "t": 1264.6,
+     "cite": "21:05",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 28
+    },
+    {
+     "type": "mc",
+     "question": "If $L$ is between 0 og ∞, hvilken af følgende udsagn er korrekt ifølge forelæseren?",
+     "options": [
+      "Hvis $b_n$ konvergerer, så divergerer $a_n$.",
+      "Der er ingen relation mellem $a_n$ og $b_n$.",
+      "Hvis $b_n$ divergerer, så konvergerer $a_n$.",
+      "Hvis $b_n$ divergerer, så divergerer $a_n$."
+     ],
+     "answer_index": 3,
+     "explanation": "Når $L$ er mellem 0 og ∞, følger at divergens af den ene serie medfører divergens af den anden. (21:37)",
+     "evidence": "If B of N diverges then A of N diverges. If B of N converges then A of N converges.",
+     "t": 1297.4,
+     "cite": "21:37",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 29
+    },
+    {
+     "type": "short",
+     "question": "Hvad er den grænse, der skal beregnes i limit comparison testen?",
+     "answer": "$L = \\displaystyle\\lim_{n\\to\\infty}\\frac{a_n}{b_n}$",
+     "explanation": "Man skal tage grænsen af $a_n$ over $b_n$ når $n$ går mod uendelig. (20:42)",
+     "evidence": "the limit as n approaches infinity for a of n over b of n is equal to some value",
+     "t": 1242.2,
+     "cite": "20:42",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 30
+    }
+   ],
+   "transcript_from": "20:17",
+   "transcript_to": "22:21"
+  },
+  {
+   "i": 11,
+   "start": 1341.2,
+   "end": 1463.04,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "If $B_n$ converges, hvad kan man så konkludere om $A_n$?",
+     "options": [
+      "A_n må divergere",
+      "A_n må også konvergere",
+      "A_n vil skifte mellem konvergens og divergens",
+      "Man kan ikke afgøre noget om A_n"
+     ],
+     "answer_index": 1,
+     "explanation": "Når $B_n$ konvergerer, følger det af videoen at $A_n$ også konvergerer. (22:28)",
+     "evidence": "then B of N converges, then A of N must also converge.",
+     "t": 1347.6,
+     "cite": "22:28",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 31
+    },
+    {
+     "type": "mc",
+     "question": "Hvilken betingelse skal grænsen $L$ opfylde i limit‑sammenligningstesten?",
+     "options": [
+      "$0 < L < \\infty$",
+      "Ingen betingelse; ethvert $L$ virker",
+      "$L = \\infty$",
+      "$L = 0$"
+     ],
+     "answer_index": 0,
+     "explanation": "Videoen siger, at $L$ skal ligge mellem 0 og uendelig for at testen giver en entydig konklusion. (23:47)",
+     "evidence": "we need l to be between 0 and infinity for the very general condition",
+     "t": 1427.4,
+     "cite": "23:47",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 32
+    },
+    {
+     "type": "short",
+     "question": "Hvad er $b_n$ i det givne eksempel?",
+     "answer": "$b_n = \\frac{1}{n^3}$",
+     "explanation": "Videoen definerer $b_n$ som \"simply 1 / n^3\". (23:36)",
+     "evidence": "b of n which is simply 1 / n ^ of 3.",
+     "t": 1415.7,
+     "cite": "23:36",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 33
+    }
+   ],
+   "transcript_from": "22:21",
+   "transcript_to": "24:23"
+  },
+  {
+   "i": 12,
+   "start": 1463.04,
+   "end": 1584.24,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Når man beregner grænsen for en brøkfunktion når n→∞, hvilke led skal man fokusere på?",
+     "options": [
+      "Konstantleddene",
+      "Alle led har samme betydning",
+      "De led med de laveste eksponenter",
+      "De led med de højeste eksponenter i tæller og nævner"
+     ],
+     "answer_index": 3,
+     "explanation": "Kun de største eksponenter bestemmer grænsens værdi for n→∞. (24:36)",
+     "evidence": "Largest exponents are 3 n 4th over 2 n 4th.",
+     "t": 1476.2,
+     "cite": "24:36",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 34
+    },
+    {
+     "type": "mc",
+     "question": "If the limit L obtained from the limit comparison test equals 3/2, hvad betyder det for serierne Aₙ og Bₙ?",
+     "options": [
+      "Testen er inkonklusiv",
+      "Den ene konvergerer, den anden divergerer",
+      "De konvergerer eller divergerer begge sammen",
+      "Kun Bₙ konvergerer"
+     ],
+     "answer_index": 2,
+     "explanation": "Et endeligt, positivt L betyder at begge serier har samme konvergensadfærd. (25:10)",
+     "evidence": "we get 3 over2 and remember this is equal to l",
+     "t": 1509.8,
+     "cite": "25:10",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 35
+    },
+    {
+     "type": "short",
+     "question": "Hvad er eksponenten p i p‑serien 1/n^p som anvendes på Bₙ?",
+     "answer": "3",
+     "explanation": "P‑serien er 1/n³, så p = 3. (25:46)",
+     "evidence": "this is 1 / n ^ of 3. And since P is greater than one",
+     "t": 1546.0,
+     "cite": "25:46",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 36
+    }
+   ],
+   "transcript_from": "24:23",
+   "transcript_to": "26:24"
+  },
+  {
+   "i": 13,
+   "start": 1584.24,
+   "end": 1704.4,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvilke brøker viser videoen, at de annullerer hinanden i den teleskoperende sum?",
+     "options": [
+      "$\\frac{1}{2}$ og $\\frac{1}{4}$",
+      "$\\frac{1}{3}$ og $\\frac{1}{5}$",
+      "$\\frac{1}{2}$ og $\\frac{1}{3}$",
+      "Ingen brøker annullerer"
+     ],
+     "answer_index": 2,
+     "explanation": "Videoen påpeger, at $1/2$ og $1/3$ hver gang forekommer både positivt og negativt og dermed annullerer. (28:01)",
+     "evidence": "this 1/2 cancel out with this 1/2. This 1/3 cancels out with this 1/3, right?",
+     "t": 1681.2,
+     "cite": "28:01",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 37
+    },
+    {
+     "type": "mc",
+     "question": "Ifølge videoen, hvilket led annullerer den positive $\\frac{1}{3}$?",
+     "options": [
+      "Det positive $+\\frac{1}{3}$ fra forrige led",
+      "Det negative $-\\frac{1}{2}$",
+      "Det negative $-\\frac{1}{3}$ fra næste led",
+      "Det positive $+\\frac{1}{4}$"
+     ],
+     "answer_index": 2,
+     "explanation": "Den positive $\\frac{1}{3}$ fra ét led møder et negativt $-\\frac{1}{3}$ fra det efterfølgende led og de giver nul. (28:04)",
+     "evidence": "this 1/3 cancels out with this 1/3, right? Because the positive the plus sign distributes into the 1/3. So therefore, this 1/3 is positive. But this 1/3 is negative.",
+     "t": 1684.0,
+     "cite": "28:04",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 38
+    },
+    {
+     "type": "short",
+     "question": "Hvad er den næste term i rækken efter $\\frac{1}{4} - \\frac{1}{3}$?",
+     "answer": "$\\frac{1}{5} - \\frac{1}{4}$",
+     "explanation": "Ifølge den generelle formel $1/n - 1/(n-1)$ giver $n=5$ den næste term. (27:48)",
+     "evidence": "general formula 1 / n minus 1 / n minus one",
+     "t": 1667.8,
+     "cite": "27:48",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 39
+    }
+   ],
+   "transcript_from": "26:24",
+   "transcript_to": "28:24"
+  },
+  {
+   "i": 14,
+   "start": 1704.4,
+   "end": 1826.24,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "I den gennemgåede teleskoperende række, hvilket led bliver annulleret først når n går mod uendelig?",
+     "options": [
+      "Intet led annulleres",
+      "Det midterste led",
+      "Det venstre led",
+      "Det højre led"
+     ],
+     "answer_index": 3,
+     "explanation": "Det højre led forsvinder først, så de resterende led kan blive tilbage. (28:57)",
+     "evidence": "then you realize that the right term gets canceled out first",
+     "t": 1737.4,
+     "cite": "28:57",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 40
+    },
+    {
+     "type": "mc",
+     "question": "Hvilken del af serien bliver annulleret først, når man lader n gå mod uendelig?",
+     "options": [
+      "Ingen term",
+      "Begge termer samtidig",
+      "Den venstre term",
+      "Den højre term"
+     ],
+     "answer_index": 3,
+     "explanation": "Ifølge videoen annulleres den højre term først. (28:57)",
+     "evidence": "then you realize that the right term gets canceled out first",
+     "t": 1737.4,
+     "cite": "28:57",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 41
+    },
+    {
+     "type": "short",
+     "question": "Hvad er udtrykket for summen af serien for et vilkårligt helt tal n?",
+     "answer": "$\\frac{1}{n} - 1$",
+     "explanation": "Videoen giver formlen som \"1 / n minus one\". (29:36)",
+     "evidence": "you get left off with 1 / n minus one",
+     "t": 1775.8,
+     "cite": "29:36",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 42
+    }
+   ],
+   "transcript_from": "28:24",
+   "transcript_to": "30:26"
+  },
+  {
+   "i": 15,
+   "start": 1826.24,
+   "end": 1946.32,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "If a term approaches infinity, hvad er værdien af \\(\\frac{1}{\\text{infinity}}\\) ifølge videoen?",
+     "options": [
+      "∞",
+      "undefined",
+      "0",
+      "1"
+     ],
+     "answer_index": 2,
+     "explanation": "Videoen siger eksplicit, at \\(1/\\text{infinity}=0\\). (30:28)",
+     "evidence": "One over infinity is simply just zero.",
+     "t": 1828.0,
+     "cite": "30:28",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 43
+    },
+    {
+     "type": "mc",
+     "question": "Hvorfor starter den pågældende telescopiske række ved $n=2$ i stedet for $n=1$?",
+     "options": [
+      "Fordi $n=1$ giver division med nul",
+      "Fordi den første term er nul",
+      "Fordi konvergens kun opnås for $n\\ge 2$",
+      "Fordi rækken kun er defineret for lige $n$"
+     ],
+     "answer_index": 0,
+     "explanation": "Ved $n=1$ ville man få $\\frac{1}{0}$, hvilket er meningsløst. (31:04)",
+     "evidence": "if n was equal to 1, then you would have 1 minus one here. That's just one over zero. That doesn't make any sense.",
+     "t": 1864.1,
+     "cite": "31:04",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 44
+    },
+    {
+     "type": "short",
+     "question": "Skriv den generelle form for et led i en alternerende række som beskrevet i videoen.",
+     "answer": "$(-1)^n a_n$",
+     "explanation": "Et alternerende led kan skrives som et positivt led ganget med \\((-1)^n\\), så fortegnet skifter hver gang. (31:56)",
+     "evidence": "anything that makes it so that your series will have the negative of the next number.",
+     "t": 1915.6,
+     "cite": "31:56",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 45
+    }
+   ],
+   "transcript_from": "30:26",
+   "transcript_to": "32:26"
+  },
+  {
+   "i": 16,
+   "start": 1946.32,
+   "end": 2067.44,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvorfor tager man den absolutte værdi af en vekslende (alternating) række?",
+     "options": [
+      "For at kvadrere hvert led",
+      "For at integrere rækken",
+      "For at fjerne den vekslende fortegn",
+      "For at bestemme rækkens grænse"
+     ],
+     "answer_index": 2,
+     "explanation": "Den absolutte værdi fjerner den vekslende faktor i rækken. (32:49)",
+     "evidence": "you just take the absolute value of this which cuts out the alternating part",
+     "t": 1969.4,
+     "cite": "32:49",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 46
+    },
+    {
+     "type": "mc",
+     "question": "Hvordan defineres $b_n$ i den beskrevne test?",
+     "options": [
+      "$b_n$ er $(-1)^n a_n$",
+      "$b_n$ er den negative værdi af $a_n$",
+      "$b_n$ er den absolutte værdi af serien",
+      "$b_n$ er den oprindelige funktion $a_n$"
+     ],
+     "answer_index": 2,
+     "explanation": "$b_n$ er netop den absolutte værdi af den oprindelige serie. (33:00)",
+     "evidence": "B of n is equal to the absolute value of your series.",
+     "t": 1980.4,
+     "cite": "33:00",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 47
+    },
+    {
+     "type": "short",
+     "question": "Hvilken betingelse skal $b_n$ opfylde for at anvende den beskrevne test?",
+     "answer": "Den skal være monotonisk faldende.",
+     "explanation": "Testen kræver, at $b_n$ falder fra led til led. (33:42)",
+     "evidence": "B of N must be monotonically decreasing.",
+     "t": 2021.5,
+     "cite": "33:42",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 48
+    }
+   ],
+   "transcript_from": "32:26",
+   "transcript_to": "34:27"
+  },
+  {
+   "i": 17,
+   "start": 2067.44,
+   "end": 2188.0,
+   "questions": [],
+   "transcript_from": "34:27",
+   "transcript_to": "36:28"
+  },
+  {
+   "i": 18,
+   "start": 2188.0,
+   "end": 2308.4,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad er grænsen for $b_n = \\frac{1}{n}$ når $n$ går mod uendelig?",
+     "options": [
+      "0",
+      "eksisterer ikke",
+      "1",
+      "∞"
+     ],
+     "answer_index": 0,
+     "explanation": "Når $n$ bliver meget stort, bliver $1/n$ arbitrært lille og går mod nul. (37:06)",
+     "evidence": "this equals zero right you get 1 over infinity which is equal to zero",
+     "t": 2225.5,
+     "cite": "37:06",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 49
+    },
+    {
+     "type": "mc",
+     "question": "Ifølge divergenstesten, hvad kan man konkludere hvis grænsen af leddene er nul?",
+     "options": [
+      "Serien oscillerer",
+      "Serien konvergerer",
+      "Serien divergerer",
+      "Testen er inkonklusiv"
+     ],
+     "answer_index": 3,
+     "explanation": "Divergenstesten giver ingen afgørelse når leddenes grænse er nul. (37:50)",
+     "evidence": "If it does equal zero, then your test is inconclusive.",
+     "t": 2269.5,
+     "cite": "37:50",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 50
+    },
+    {
+     "type": "short",
+     "question": "Hvilken betingelse kræver den alternerende serietest for at en serie skal konvergere?",
+     "answer": "$lim_{n\\to\\infty} |a_n| = 0$",
+     "explanation": "Hvis leddenes absolutte værdi går mod nul, konvergerer den alternerende serie. (38:16)",
+     "evidence": "if the limit as n approach infinity for your sequence equals zero right",
+     "t": 2295.8,
+     "cite": "38:16",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 51
+    }
+   ],
+   "transcript_from": "36:28",
+   "transcript_to": "38:28"
+  },
+  {
+   "i": 19,
+   "start": 2308.4,
+   "end": 2430.16,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Ifølge videoen kan den alternerende serietest kun anvendes på hvilken type række?",
+     "options": [
+      "Geometriske rækker",
+      "Alternerende rækker",
+      "p‑rækker",
+      "Alle rækker"
+     ],
+     "answer_index": 1,
+     "explanation": "Den alternerende serietest gælder kun for alternerende rækker. (38:31)",
+     "evidence": "alternating series test says that this is convergence or this determines convergence and this only applies to alternating series",
+     "t": 2310.9,
+     "cite": "38:31",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 52
+    },
+    {
+     "type": "mc",
+     "question": "I hvilke situationer er ratio‑testen typisk mest nyttig?",
+     "options": [
+      "Når serien er en teleskoperende sum",
+      "Når leddet indeholder en eksponent eller fakultet",
+      "Når serien har alternerende fortegn",
+      "Når serien er en p‑serie"
+     ],
+     "answer_index": 1,
+     "explanation": "Ratio‑testen bruges når leddet indeholder en eksponent eller et fakultet. (39:46)",
+     "evidence": "you will use it when you get an exponent or a factorial",
+     "t": 2385.9,
+     "cite": "39:46",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 53
+    },
+    {
+     "type": "short",
+     "question": "Hvad er værdien af $(-1)^{2n}$ for ethvert heltal $n$?",
+     "answer": "1",
+     "explanation": "Et lige eksponent på $-1$ giver altid $+1$. (39:13)",
+     "evidence": "if you put negative 1 to the power of some even number, you're always going to get ... positive one",
+     "t": 2353.1,
+     "cite": "39:13",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 54
+    }
+   ],
+   "transcript_from": "38:28",
+   "transcript_to": "40:30"
+  },
+  {
+   "i": 20,
+   "start": 2430.16,
+   "end": 2551.04,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvilken grænse beregnes i ratio‑testen?",
+     "options": [
+      "$\\displaystyle \\lim_{n\\to\\infty}a_n$",
+      "$\\displaystyle \\lim_{n\\to\\infty}a_{n+1}$",
+      "$\\displaystyle \\lim_{n\\to\\infty}\\frac{a_{n+1}}{a_n}$",
+      "$\\displaystyle \\lim_{n\\to\\infty}\\frac{a_n}{a_{n+1}}$"
+     ],
+     "answer_index": 2,
+     "explanation": "Ratio‑testen bruger grænsen af $a_{n+1}/a_n$ når $n\\to\\infty$. (40:45)",
+     "evidence": "as n approaches infinity for a of n + 1 over a of n.",
+     "t": 2445.1,
+     "cite": "40:45",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 55
+    },
+    {
+     "type": "mc",
+     "question": "If the limit $r$ found by the ratio test is less than 1, hvad betyder det for serien?",
+     "options": [
+      "Man skal anvende en anden test",
+      "Serien divergerer",
+      "Testen er inkonklusiv",
+      "Serien konvergerer"
+     ],
+     "answer_index": 3,
+     "explanation": "Når $r<1$ konkluderes det, at serien konvergerer. (41:40)",
+     "evidence": "If r is less than one, then your series converges.",
+     "t": 2500.4,
+     "cite": "41:40",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 56
+    },
+    {
+     "type": "short",
+     "question": "Hvad er betingelsen for, at ratio‑testen er inkonklusiv?",
+     "answer": "r = 1",
+     "explanation": "Testen er inkonklusiv, når grænsen $r$ er lig 1. (41:55)",
+     "evidence": "If r is equal to one, you get inconclusive.",
+     "t": 2514.6,
+     "cite": "41:55",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 57
+    }
+   ],
+   "transcript_from": "40:30",
+   "transcript_to": "42:31"
+  },
+  {
+   "i": 21,
+   "start": 2551.04,
+   "end": 2671.76,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvilken eksponentregel anvendes for at skrive \\(3^{n+1}\\) som \\(3^{n}\\cdot 3^{1}\\)?",
+     "options": [
+      "$(a^{m})^{n}=a^{mn}$",
+      "$a^{m+n}=a^{m}\\,a^{n}$",
+      "$a^{0}=1$",
+      "$a^{m-n}=\\frac{a^{m}}{a^{n}}$"
+     ],
+     "answer_index": 1,
+     "explanation": "Når man multiplicerer to potenser med samme base, lægges eksponenterne sammen. (43:48)",
+     "evidence": "If you multiply two exponents with the same bases, all you do is just add their exponents n and 1",
+     "t": 2627.8,
+     "cite": "43:48",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 58
+    },
+    {
+     "type": "mc",
+     "question": "Hvad er den forenklede form af forholdet \\(\\frac{a_{n+1}}{a_n}\\)?",
+     "options": [
+      "$\\frac{1}{3(n+1)}$",
+      "$\\frac{3}{n+1}$",
+      "$\\frac{3^{n}}{n!}$",
+      "$\\frac{3^{n+1}}{(n+1)!}$"
+     ],
+     "answer_index": 1,
+     "explanation": "Efter at have forkortet faktorialer og eksponenter får man \\(\\frac{3}{n+1}\\). (44:16)",
+     "evidence": "you just get left off with limit as n approaches infinity for 3 ^ 1 which is just 3 over n + 1",
+     "t": 2656.1,
+     "cite": "44:16",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 59
+    },
+    {
+     "type": "short",
+     "question": "Hvilket udtryk får du, inden du tager grænsen \\(n\\to\\infty\\)?",
+     "answer": "3/(n+1)",
+     "explanation": "Efter forkortning af faktorialer og eksponenter står udtrykket som \\(\\frac{3}{n+1}\\). (44:16)",
+     "evidence": "you just get left off with limit as n approaches infinity for 3 ^ 1 which is just 3 over n + 1",
+     "t": 2656.1,
+     "cite": "44:16",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 60
+    }
+   ],
+   "transcript_from": "42:31",
+   "transcript_to": "44:32"
+  },
+  {
+   "i": 22,
+   "start": 2671.76,
+   "end": 2792.96,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad er grænsen for udtrykket $\\frac{3}{n+1}$ når $n$ går mod uendelig?",
+     "options": [
+      "uendelig",
+      "0",
+      "3",
+      "1"
+     ],
+     "answer_index": 1,
+     "explanation": "Når $n$ bliver meget stort, bliver $\\frac{3}{n+1}$ lig med $\\frac{3}{\\infty}=0$. (44:40)",
+     "evidence": "3 over n + 1 evaluates into 3 over infinity, which is just equal to zero.",
+     "t": 2679.7,
+     "cite": "44:40",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 61
+    },
+    {
+     "type": "mc",
+     "question": "Ifølge videoen, hvilken væksthastigheds‑sammenligning er korrekt?",
+     "options": [
+      "Fakulteter vokser langsommere end eksponentialfunktioner",
+      "Eksponentialfunktioner vokser hurtigere end polynomier",
+      "Polynomier vokser hurtigere end eksponentialfunktioner",
+      "Fakulteter og eksponentialfunktioner vokser med samme hastighed"
+     ],
+     "answer_index": 1,
+     "explanation": "Videoen påpeger, at eksponentialfunktioner vokser hurtigere end polynomier. (45:42)",
+     "evidence": "exponentials grow faster than polomials or power functions.",
+     "t": 2742.1,
+     "cite": "45:42",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 62
+    },
+    {
+     "type": "short",
+     "question": "Ifølge ratio‑testen, hvilken betingelse på $r$ sikrer at en uendelig række konvergerer?",
+     "answer": "r < 1",
+     "explanation": "Ratio‑testen giver konvergens når grænsen $r$ er mindre end 1. (44:50)",
+     "evidence": "when r is less than one then your series converges",
+     "t": 2689.8,
+     "cite": "44:50",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 63
+    }
+   ],
+   "transcript_from": "44:32",
+   "transcript_to": "46:33"
+  },
+  {
+   "i": 23,
+   "start": 2792.96,
+   "end": 2916.56,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvorfor er det fordelagtigt at have hele udtrykket hævet til potensen n, når man anvender rottesten?",
+     "options": [
+      "Det fjerner nævneren helt",
+      "Det omdanner serien til en geometrisk række",
+      "Det sikrer at serien er positiv",
+      "Den n‑te rod kan annullere potensen, så grænsen bliver let at beregne"
+     ],
+     "answer_index": 3,
+     "explanation": "Having the whole term to the n‑th power lets the n‑th root cancel that power. (47:06)",
+     "evidence": "if you have a of n to the power of some n then you can actually cancel out this nth root and this power",
+     "t": 2826.0,
+     "cite": "47:06",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 64
+    },
+    {
+     "type": "mc",
+     "question": "If the limit L in the root test is less than one, what kan man konkludere om serien?",
+     "options": [
+      "Serien oscillerer",
+      "Serien divergerer",
+      "Serien konvergerer",
+      "Testen er inkonklusiv"
+     ],
+     "answer_index": 2,
+     "explanation": "If L < 1 the root test guarantees convergence. (47:41)",
+     "evidence": "If L is less than one or the result of your limit for the root test is less than one, you converge.",
+     "t": 2861.4,
+     "cite": "47:41",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 65
+    },
+    {
+     "type": "short",
+     "question": "Hvad er udtrykket, hvis grænse tages i rottesten?",
+     "answer": "$\\displaystyle \\lim_{n\\to\\infty}\\sqrt[n]{a_n}$",
+     "explanation": "Rottesten undersøger grænsen af den n‑te rod af leddet a_n. (46:55)",
+     "evidence": "the limit as n approaches infinity for the nth root of a of n.",
+     "t": 2815.4,
+     "cite": "46:55",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 66
+    }
+   ],
+   "transcript_from": "46:33",
+   "transcript_to": "48:37"
+  },
+  {
+   "i": 24,
+   "start": 2916.56,
+   "end": 3038.24,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad sker der med $n$‑erne i udtrykket efter at eksponenterne er blevet kombineret?",
+     "options": [
+      "De multipliceres",
+      "De annulleres (cancelleres)",
+      "De lægges sammen",
+      "De bliver til eksponent 2"
+     ],
+     "answer_index": 1,
+     "explanation": "De $n$‑er i tæller og nævner er identiske og derfor kan de forkortes, så de forsvinder. (50:09)",
+     "evidence": "these N's would cancel out. N / N, which is equal to one.",
+     "t": 3008.6,
+     "cite": "50:09",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 67
+    },
+    {
+     "type": "mc",
+     "question": "Når eksponenterne med $n$ forkortes, hvad er den resterende faktor i udtrykket?",
+     "options": [
+      "x^n",
+      "n",
+      "1",
+      "x"
+     ],
+     "answer_index": 3,
+     "explanation": "De $n$'ere i tæller og nævner annulleres, så kun $x$ står tilbage. (50:09)",
+     "evidence": "these N's would cancel out. N / N, which is equal to one. So you would just get X left over, which is our series in this case.",
+     "t": 3008.6,
+     "cite": "50:09",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 68
+    },
+    {
+     "type": "short",
+     "question": "Hvad er det næste skridt efter at have forenklet serien?",
+     "answer": "tage grænsen når n→∞",
+     "explanation": "Efter forenklingen skal man undersøge grænsen for udtrykket når $n$ går mod uendelig. (50:28)",
+     "evidence": "So now we have this all we need to do is take a limit. Well, we realize that if you take a limit as n approaches infinity",
+     "t": 3027.8,
+     "cite": "50:28",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 69
+    }
+   ],
+   "transcript_from": "48:37",
+   "transcript_to": "50:38"
+  },
+  {
+   "i": 25,
+   "start": 3038.24,
+   "end": 3156.8,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad er værdien af L (grænsen) i den udledte beregning?",
+     "options": [
+      "0",
+      "5/2",
+      "2/5",
+      "1"
+     ],
+     "answer_index": 2,
+     "explanation": "Grænsen beregnes til 2/5, som er værdien af L. (51:17)",
+     "evidence": "we just get 2 over 5. And this 2 over 5 is actually equal to L.",
+     "t": 3076.6,
+     "cite": "51:17",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 70
+    },
+    {
+     "type": "mc",
+     "question": "Hvad fastslår videoen om, hvad ratio‑ og rottesten bestemmer?",
+     "options": [
+      "De bestemmer divergens",
+      "De bestemmer betinget konvergens",
+      "De bestemmer kun konvergens, men ikke absolut",
+      "De bestemmer absolut konvergens"
+     ],
+     "answer_index": 3,
+     "explanation": "Videoen siger, at ratio‑ og rottesten afgør absolut konvergens. (51:41)",
+     "evidence": "technically ratio and root test determines absolute convergence.",
+     "t": 3101.4,
+     "cite": "51:41",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 71
+    },
+    {
+     "type": "short",
+     "question": "Hvilken betingelse på L garanterer konvergens ifølge videoen?",
+     "answer": "L < 1",
+     "explanation": "Hvis L er mindre end 1, så konvergerer serien. (51:22)",
+     "evidence": "If L is less than one, then you converge.",
+     "t": 3082.4,
+     "cite": "51:22",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 72
+    }
+   ],
+   "transcript_from": "50:38",
+   "transcript_to": "52:37"
+  }
+ ]
+}

@@ -1,0 +1,692 @@
+{
+ "schema": 1,
+ "videoId": "MjLPJhOyBGU",
+ "title": "Intro to Differential Equations - ODE vs. PDE, Linear vs. Non-Linear DEs, Order of DE",
+ "map_title": "Intro to Differential Equations (ODE vs PDE, linear, orden)",
+ "channel": "Computer Engineering Jitty",
+ "course": "Differential Equations and Infinite Series",
+ "source_map": "Courses/Differential Equations and Infinite Series/Speedrun Map.md",
+ "map_line": 60,
+ "captions": {
+  "lang": "en",
+  "auto": true,
+  "cache": "tools/videoquiz/.cache/transcripts/MjLPJhOyBGU.json"
+ },
+ "generated_at": "2026-10-07T19:42:16",
+ "models": [
+  "gpt-oss:120b-cloud"
+ ],
+ "window_seconds": 120.0,
+ "deck_slug": "Quizzes/Kort/MjLPJhOyBGU",
+ "rejected_by_validator": 13,
+ "windows": [
+  {
+   "i": 0,
+   "start": 0.0,
+   "end": 120.32,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad står forkortelsen ODE for?",
+     "options": [
+      "ordinary differential equation",
+      "partial differential equation",
+      "nonlinear differential equation",
+      "linear differential equation"
+     ],
+     "answer_index": 0,
+     "explanation": "ODE betyder ordinary differential equation. (0:21)",
+     "evidence": "OD stands for ordinary differential equation.",
+     "t": 21.4,
+     "cite": "0:21",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 0
+    },
+    {
+     "type": "mc",
+     "question": "Hvilken af følgende ligninger er et eksempel på en differentialligning?",
+     "options": [
+      "dy/dx = 1",
+      "3x + 5 = 0",
+      "$y = x^2 + 3$",
+      "∫ y \\,dx = 7"
+     ],
+     "answer_index": 0,
+     "explanation": "Ligningen indeholder en afledt, så den er en differentialligning. (1:18)",
+     "evidence": "dy over dx, it's equal to one, right? This has a derivative. This is a differential equation.",
+     "t": 78.0,
+     "cite": "1:18",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 1
+    },
+    {
+     "type": "short",
+     "question": "Hvad er definitionen på en differentialligning?",
+     "answer": "En ligning der indeholder en afledt (derivat).",
+     "explanation": "Definitionen fremgår direkte af videoens forklaring. (1:14)",
+     "evidence": "A differential equation is simply any equation that involves a derivative.",
+     "t": 73.9,
+     "cite": "1:14",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 2
+    }
+   ],
+   "transcript_from": "0:00",
+   "transcript_to": "2:00"
+  },
+  {
+   "i": 1,
+   "start": 120.32,
+   "end": 240.32,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad betyder notationen \\(\\frac{dy}{dx}\\) i videoen?",
+     "options": [
+      "Førsteordens afledt",
+      "Andenordens afledt",
+      "Partiel differential",
+      "Integral"
+     ],
+     "answer_index": 0,
+     "explanation": "Den angiver en førsteordens afledt, dvs. at funktionen differentieres én gang. (2:19)",
+     "evidence": "dy over dx stands for a first order derivative which means you're just taking the derivative of some function a single time.",
+     "t": 139.4,
+     "cite": "2:19",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 3
+    },
+    {
+     "type": "mc",
+     "question": "Hvordan beskriver videoen notation for en andenordens afledt?",
+     "options": [
+      "$\\frac{d y}{dx^2}$",
+      "$\\frac{dy}{dx^2}$",
+      "$\\frac{d y^2}{dx}$",
+      "$\\frac{d^2 y}{dx^2}$"
+     ],
+     "answer_index": 3,
+     "explanation": "Man placerer et kvadrat ved d‑delen og et kvadrat ved x‑delen. (2:31)",
+     "evidence": "you would put the square next to the d not next to the y ... and a square in front of the x",
+     "t": 150.6,
+     "cite": "2:31",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 4
+    },
+    {
+     "type": "short",
+     "question": "Hvilken variabel er den afhængige, og hvilken er den uafhængige?",
+     "answer": "Den afhængige variabel er y, den uafhængige er x.",
+     "explanation": "I notationen er y funktionen (afhængig) og x den uafhængige variabel. (3:35)",
+     "evidence": "y is the dependent variable and x is the independent variable",
+     "t": 214.6,
+     "cite": "3:35",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 5
+    }
+   ],
+   "transcript_from": "2:00",
+   "transcript_to": "4:00"
+  },
+  {
+   "i": 2,
+   "start": 240.32,
+   "end": 362.4,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad betyder variablen placeret øverst i notationen?",
+     "options": [
+      "Den uafhængige variabel",
+      "En parameter",
+      "Den afhængige variabel",
+      "En konstant"
+     ],
+     "answer_index": 2,
+     "explanation": "Variablen øverst repræsenterer den afhængige variabel i en differentialligning. (4:00)",
+     "evidence": "If you see a variable at the top, this stands for um uh the dependent variable.",
+     "t": 240.3,
+     "cite": "4:00",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 6
+    },
+    {
+     "type": "mc",
+     "question": "Hvad angiver variablen i toppen af en brøk i differentialligningsnotation?",
+     "options": [
+      "Den afhængige variabel",
+      "Den uafhængige variabel",
+      "En parameter",
+      "En konstant"
+     ],
+     "answer_index": 0,
+     "explanation": "Variablen i toppen står for den afhængige variabel. (4:00)",
+     "evidence": "If you see a variable at the top, this stands for um uh the dependent variable",
+     "t": 240.3,
+     "cite": "4:00",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 7
+    },
+    {
+     "type": "short",
+     "question": "Skriv differentialligningen $y'' - 3y' + y = 0$ med funktionen $f(x)$ i stedet for $y$.",
+     "answer": "$f''(x) - 3 f'(x) + f(x) = 0$",
+     "explanation": "Man erstatter $y$ med $f(x)$ og de afledte med $f'(x)$ og $f''(x)$. (5:48)",
+     "evidence": "f ofuh f ofxp prime, right? Minus 3 fprime of x plus y is equal to zero",
+     "t": 348.2,
+     "cite": "5:48",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 8
+    }
+   ],
+   "transcript_from": "4:00",
+   "transcript_to": "6:02"
+  },
+  {
+   "i": 3,
+   "start": 362.4,
+   "end": 484.08,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad kendetegner en ordinær differentialligning (ODE) i forhold til antallet af uafhængige variable?",
+     "options": [
+      "Den har flere end én uafhængig variabel",
+      "Den har ingen uafhængige variable",
+      "Den har kun én uafhængig variabel",
+      "Den har kun tid som uafhængig variabel"
+     ],
+     "answer_index": 2,
+     "explanation": "En ODE indeholder kun én uafhængig variabel. (7:05)",
+     "evidence": "an ordinary differential equation is a differential equation where there's only one independent variable.",
+     "t": 425.4,
+     "cite": "7:05",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 9
+    },
+    {
+     "type": "mc",
+     "question": "Hvilken beskrivelse passer på en ordinær differentialligning (ODE)?",
+     "options": [
+      "Den løses ved hjælp af kvantecomputere.",
+      "Den har kun én uafhængig variabel.",
+      "Den involverer afledte med hensyn til flere uafhængige variable.",
+      "Den indeholder altid symbolet for en partiel afledt."
+     ],
+     "answer_index": 1,
+     "explanation": "En ODE har kun én uafhængig variabel. (7:05)",
+     "evidence": "an ordinary differential equation is a differential equation where there's only one independent variable",
+     "t": 425.4,
+     "cite": "7:05",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 10
+    },
+    {
+     "type": "short",
+     "question": "Hvad kaldes en differentialligning, der har mere end én uafhængig variabel?",
+     "answer": "partial differential equation",
+     "explanation": "En differentialligning med flere end én uafhængig variabel er en PDE. (7:28)",
+     "evidence": "A partial differential equation has more than one independent variable.",
+     "t": 447.9,
+     "cite": "7:28",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 11
+    }
+   ],
+   "transcript_from": "6:02",
+   "transcript_to": "8:04"
+  },
+  {
+   "i": 4,
+   "start": 484.08,
+   "end": 605.28,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "If you look at a derivative written in Leibniz notation, what part tells you the independent variable?",
+     "options": [
+      "Exponent",
+      "Numerator",
+      "Both numerator and denominator",
+      "Denominator"
+     ],
+     "answer_index": 3,
+     "explanation": "Denominator‑delen angiver den uafhængige variabel. (8:09)",
+     "evidence": "whatever's in the denominator is the independent variable.",
+     "t": 488.8,
+     "cite": "8:09",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 12
+    },
+    {
+     "type": "mc",
+     "question": "Hvilket tegn gør det sikkert at antage, at en differentialligning er en ordinær differentialligning?",
+     "options": [
+      "Flere end én uafhængig variabel",
+      "Et partielt differentialsymbol (∂)",
+      "Et primetegn (')",
+      "Flere variable i nævneren"
+     ],
+     "answer_index": 2,
+     "explanation": "Et primetegn indikerer en ordinær differentialligning. (8:45)",
+     "evidence": "if you see fp prime, you could this is pretty safe to assume this is just an ordinary differential equation.",
+     "t": 525.4,
+     "cite": "8:45",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 13
+    },
+    {
+     "type": "short",
+     "question": "Hvilket tegn indikerer en ordinær differentialligning i prim‑notation?",
+     "answer": "prime‑symbolet (')",
+     "explanation": "Prime‑symbolet efter funktionen viser, at det er en ODE. (8:45)",
+     "evidence": "if you see fp prime, ... this is pretty safe to assume this is just an ordinary differential equation.",
+     "t": 525.4,
+     "cite": "8:45",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 14
+    }
+   ],
+   "transcript_from": "8:04",
+   "transcript_to": "10:05"
+  },
+  {
+   "i": 5,
+   "start": 605.28,
+   "end": 725.44,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad betyder orden af en differentialligning?",
+     "options": [
+      "Den højeste potens af variablen",
+      "Antallet af afledte du har taget",
+      "Graden af polynomiet",
+      "Antallet af led i ligningen"
+     ],
+     "answer_index": 1,
+     "explanation": "Ordenen angiver hvor mange afledte der indgår i ligningen. (10:21)",
+     "evidence": "order stands for the amount of derivatives you took right",
+     "t": 621.2,
+     "cite": "10:21",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 15
+    },
+    {
+     "type": "short",
+     "question": "Hvad kaldes funktionen $y$ uden nogen afledte i en differentialligning?",
+     "answer": "zeroth derivative",
+     "explanation": "Uden afledte betegnes funktionen som den nulte afledte. (10:50)",
+     "evidence": "actually just our function y by itself stands for the zeroth derivative",
+     "t": 650.0,
+     "cite": "10:50",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 16
+    }
+   ],
+   "transcript_from": "10:05",
+   "transcript_to": "12:05"
+  },
+  {
+   "i": 6,
+   "start": 725.44,
+   "end": 847.04,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad er ordenen af differentialligningen, der kun indeholder $1/x$ og en første‑ordens afledt?",
+     "options": [
+      "Zeroth orden",
+      "Tredje orden",
+      "Første orden",
+      "Anden orden"
+     ],
+     "answer_index": 2,
+     "explanation": "Den højeste afledte i ligningen er kun første‑ordens. (12:14)",
+     "evidence": "the highest order derivative you find in the entire differential equation is the first order",
+     "t": 734.4,
+     "cite": "12:14",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 17
+    },
+    {
+     "type": "mc",
+     "question": "I det andet eksempel hvad betyder kvadratet (\\(\\square\\))?",
+     "options": [
+      "Multiplikation med en konstant",
+      "Første‑ordens afledning",
+      "Ingen afledning (zeroth order)",
+      "Anden‑ordens afledning (to afledninger)"
+     ],
+     "answer_index": 3,
+     "explanation": "Kvadratet står for at tage afledningen to gange. (13:10)",
+     "evidence": "the reason why these two are different is because this right here stands for taking the derivative twice",
+     "t": 789.5,
+     "cite": "13:10",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 18
+    },
+    {
+     "type": "short",
+     "question": "Skriv den udvidede form af den anden‑ordens afledning som den blev præsenteret i videoen.",
+     "answer": "$\\frac{d}{dx}\\left(\\frac{dy}{dx}\\right)$ eller $\\frac{d^2 y}{dx^2}$",
+     "explanation": "Den anden‑ordens afledning skrives som $d/dx$ ganget med $d y/dx$. (13:21)",
+     "evidence": "if I were to expand this guy right here, it'd be d over dx time d over dx * y",
+     "t": 800.9,
+     "cite": "13:21",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 19
+    }
+   ],
+   "transcript_from": "12:05",
+   "transcript_to": "14:07"
+  },
+  {
+   "i": 7,
+   "start": 847.04,
+   "end": 967.2,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad betyder udtrykket $(dy/dx)^2$ i denne sammenhæng?",
+     "options": [
+      "Det er produktet af den første afledte med sig selv.",
+      "Det er den anden afledte af $y$ med hensyn til $x$.",
+      "Det er integralet af $dy/dx$.",
+      "Det er den afledte af $y^2$."
+     ],
+     "answer_index": 0,
+     "explanation": "Det er blot multiplikation af den første‑ordens afledte med sig selv. (14:25)",
+     "evidence": "dy over dx squared is multiplying the first order derivative by itself.",
+     "t": 865.4,
+     "cite": "14:25",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 20
+    },
+    {
+     "type": "mc",
+     "question": "Hvad bestemmer ordenen af en differentialligning?",
+     "options": [
+      "Antallet af termer i ligningen.",
+      "Den højeste potens af $y$.",
+      "Antallet af uafhængige variable.",
+      "Den højeste afledte der forekommer i ligningen."
+     ],
+     "answer_index": 3,
+     "explanation": "Ordnen er den højeste afledte, som optræder i ligningen. (16:00)",
+     "evidence": "the order of this entire differential equation is a third order differential equation because the highest derivative",
+     "t": 959.9,
+     "cite": "16:00",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 21
+    },
+    {
+     "type": "short",
+     "question": "Hvad er ordenen af differentialligningen $y''\\cdot y + \\frac{1}{x} = y'''$?",
+     "answer": "tredje orden",
+     "explanation": "Den højeste afledte er $y'''$, som er af tredje orden. (16:00)",
+     "evidence": "the order of this entire differential equation is a third order differential equation because the highest derivative",
+     "t": 959.9,
+     "cite": "16:00",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 22
+    }
+   ],
+   "transcript_from": "14:07",
+   "transcript_to": "16:07"
+  },
+  {
+   "i": 8,
+   "start": 967.2,
+   "end": 1088.88,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad bestemmer ordenen af en differentialligning?",
+     "options": [
+      "Den højeste ordens afledte i ligningen",
+      "Antallet af led i ligningen",
+      "Antallet af uafhængige variable",
+      "Graden af polynomiet i y"
+     ],
+     "answer_index": 0,
+     "explanation": "Ordenen er givet ved den højeste afledte der forekommer. (16:18)",
+     "evidence": "the order of a differential equation is determined by the highest order derivative in the equation.",
+     "t": 978.2,
+     "cite": "16:18",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 23
+    },
+    {
+     "type": "mc",
+     "question": "Hvilket udtryk gør en differentialligning automatisk ikke‑lineær?",
+     "options": [
+      "y er ganget med sin afledte y'",
+      "y'' + 3y = 0",
+      "Alle led er lineære i y og dets afledte",
+      "y' ganget med y''"
+     ],
+     "answer_index": 3,
+     "explanation": "Når en afledt multipliceres med en anden afledt, er ligningen ikke‑lineær. (17:25)",
+     "evidence": "if you saw the first derivative time the second derivative in any of your differential equations. This is automatically nonlinear.",
+     "t": 1045.3,
+     "cite": "17:25",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 24
+    },
+    {
+     "type": "short",
+     "question": "Hvilken potens skal y og alle dens afledte have for at ligningen er lineær?",
+     "answer": "1",
+     "explanation": "Både y og dens afledte må kun forekomme i første potens. (17:47)",
+     "evidence": "y has to be to the power of one and a derivative of y also has to be ... y' also has to be to the power of one.",
+     "t": 1066.9,
+     "cite": "17:47",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 25
+    }
+   ],
+   "transcript_from": "16:07",
+   "transcript_to": "18:09"
+  },
+  {
+   "i": 9,
+   "start": 1088.88,
+   "end": 1209.52,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvilken betingelse er IKKE nødvendig for at en differentialligning skal være lineær?",
+     "options": [
+      "Ingen trigonometriske funktioner af y må forekomme",
+      "Alle termer skal have første potens",
+      "Koefficienterne skal være konstante",
+      "Ingen funktioner må multipliceres med hinanden"
+     ],
+     "answer_index": 2,
+     "explanation": "Videoen nævner kun de to første betingelser, men kræver ikke konstante koefficienter. (18:18)",
+     "evidence": "Functions can't be multiplied by each other, ... have to be to the first power.",
+     "t": 1097.6,
+     "cite": "18:18",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 26
+    },
+    {
+     "type": "mc",
+     "question": "Hvilket af følgende udtryk gør differentialligningen ikke‑lineær?",
+     "options": [
+      "$y \\cdot \\sin(x)$",
+      "$x^2$",
+      "$y' + y$",
+      "$y^2$"
+     ],
+     "answer_index": 3,
+     "explanation": "Når $y$ forekommer i anden potens, bryder det betingelsen om første potens og gør ligningen ikke‑lineær. (18:28)",
+     "evidence": "since y is being squared or even uh if this was being squared as well right this would be nonlinear",
+     "t": 1107.6,
+     "cite": "18:28",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 27
+    },
+    {
+     "type": "short",
+     "question": "Skriv udtrykket, som nævnes som næste skridt i manipulationen ved 20:04.",
+     "answer": "$y' - \\frac{x}{y}$",
+     "explanation": "Det er den form, der fremkommer når man omskriver udtrykket til $y' - x/y$. (20:02)",
+     "evidence": "if I were to manipulate this to get yp prime minus x over y",
+     "t": 1202.1,
+     "cite": "20:02",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 28
+    }
+   ],
+   "transcript_from": "18:09",
+   "transcript_to": "20:10"
+  },
+  {
+   "i": 10,
+   "start": 1209.52,
+   "end": 1332.72,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvilken betingelse nævnes for at en differentialligning skal være lineær?",
+     "options": [
+      "Terms may be raised to powers higher than one",
+      "No derivative is multiplied by another function of y",
+      "Derivatives may be multiplied together",
+      "The equation must contain only $y''$ terms"
+     ],
+     "answer_index": 1,
+     "explanation": "Lineære ligninger må ikke have derivativer multipliceret med andre funktioner af $y$. (21:50)",
+     "evidence": "none of its derivatives are multiplied by another variable uh another function of y",
+     "t": 1309.8,
+     "cite": "21:50",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 29
+    },
+    {
+     "type": "short",
+     "question": "Efter at have bekræftet, at ingen afledte multipliceres med en anden funktion af $y$, hvad er næste kontrol for linearitet?",
+     "answer": "At sikre, at alle led er til første potens.",
+     "explanation": "Et lineært differentialligningskrav er, at hvert led kun må forekomme i første potens. (21:59)",
+     "evidence": "Everything to the first power. Well, this first derivative is to the first power.",
+     "t": 1318.8,
+     "cite": "21:59",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 30
+    }
+   ],
+   "transcript_from": "20:10",
+   "transcript_to": "22:13"
+  },
+  {
+   "i": 11,
+   "start": 1332.72,
+   "end": 1453.36,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvilket udtryk opfylder betingelsen for linearitet i en differentialligning ifølge videoen?",
+     "options": [
+      "$\\sin(y)$",
+      "$x y'$",
+      "$y^{2}$",
+      "$e^{x} y'$"
+     ],
+     "answer_index": 3,
+     "explanation": "Udtrykket $e^{x} y'$ er lineært fordi y' kun forekommer i første potens og ikke multipliceres med andre y‑led. (22:55)",
+     "evidence": "e to the x * y prime is good as well.",
+     "t": 1375.2,
+     "cite": "22:55",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 31
+    },
+    {
+     "type": "mc",
+     "question": "Hvilken situation ville gøre en differentialligning ikke‑lineær ifølge videoen?",
+     "options": [
+      "y multipliceret med sig selv",
+      "den uafhængige variabel x forekommer alene",
+      "y forekommer i en cosinusfunktion",
+      "y' er ikke multipliceret med en anden afledt"
+     ],
+     "answer_index": 0,
+     "explanation": "Hvis y eller en af dens afledte multipliceres med sig selv, brydes linearitetskriteriet. (23:58)",
+     "evidence": "none of the values y and its constituents are being multiplied by the function y",
+     "t": 1438.0,
+     "cite": "23:58",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 32
+    },
+    {
+     "type": "short",
+     "question": "Ifølge videoen, hvilken potens skal y og alle dens afledte have i en lineær differentialligning?",
+     "answer": "Første potens (potens 1)",
+     "explanation": "Lineære differentialligninger kræver, at y og dens afledte kun forekommer i første potens. (23:39)",
+     "evidence": "every y and all its derivatives need to be to the power of one",
+     "t": 1419.1,
+     "cite": "23:39",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 33
+    }
+   ],
+   "transcript_from": "22:13",
+   "transcript_to": "24:13"
+  },
+  {
+   "i": 12,
+   "start": 1453.36,
+   "end": 1604.88,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad betyder symbolet $y'$ i differentialligninger?",
+     "options": [
+      "den andenordens afledte af y",
+      "den førsteordens afledte af y",
+      "kvadratet af y",
+      "integralet af y"
+     ],
+     "answer_index": 1,
+     "explanation": "$y'$ står for den førsteordens afledte. (24:49)",
+     "evidence": "Y single prime is the first order derivative.",
+     "t": 1489.2,
+     "cite": "24:49",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 34
+    },
+    {
+     "type": "mc",
+     "question": "Hvilken af følgende differentialligninger er ikke‑lineær fordi en afledt er kvadreret?",
+     "options": [
+      "y' = x",
+      "$(y')^2 + 5y = x$",
+      "5y = x",
+      "$d^2y/dx^2 + 5y = x$"
+     ],
+     "answer_index": 1,
+     "explanation": "Ligningen er ikke‑lineær, da den indeholder $(y')^2$, dvs. en kvadreret førsteordens afledt. (25:23)",
+     "evidence": "this differential equation right here is nonlinear and the reason why is because your derivative is being squared.",
+     "t": 1523.4,
+     "cite": "25:23",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 35
+    },
+    {
+     "type": "short",
+     "question": "Hvad repræsenterer notationen $d^2y/dx^2$?",
+     "answer": "den andenordens afledte af y med hensyn til x",
+     "explanation": "$d^2y/dx^2$ er notation for den andenordens afledte. (25:53)",
+     "evidence": "d2 y over dx^2, this is simply second order derivative.",
+     "t": 1553.2,
+     "cite": "25:53",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 36
+    }
+   ],
+   "transcript_from": "24:13",
+   "transcript_to": "26:45"
+  }
+ ]
+}

@@ -1,0 +1,456 @@
+{
+ "schema": 1,
+ "videoId": "ZdTHqG2m-aE",
+ "title": "Telescoping Series Test",
+ "map_title": "Telescoping Series Test",
+ "channel": "Computer Engineering Jitty",
+ "course": "Differential Equations and Infinite Series",
+ "source_map": "Courses/Differential Equations and Infinite Series/Speedrun Map.md",
+ "map_line": 317,
+ "captions": {
+  "lang": "en",
+  "auto": true,
+  "cache": "tools/videoquiz/.cache/transcripts/ZdTHqG2m-aE.json"
+ },
+ "generated_at": "2026-10-07T20:00:33",
+ "models": [
+  "gpt-oss:120b-cloud"
+ ],
+ "window_seconds": 120.0,
+ "deck_slug": "Quizzes/Kort/ZdTHqG2m-aE",
+ "rejected_by_validator": 8,
+ "windows": [
+  {
+   "i": 0,
+   "start": 0.0,
+   "end": 123.76,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvilke termer annullerer hinanden i den teleskoperende sum?",
+     "options": [
+      "Negativ $\\frac{1}{4}$ med positiv $\\frac{1}{5}$",
+      "Negativ $\\frac{1}{2}$ med positiv $\\frac{1}{2}$",
+      "Negativ $\\frac{1}{3}$ med positiv $\\frac{1}{4}$",
+      "Negativ $\\frac{1}{2}$ med positiv $\\frac{1}{3}$"
+     ],
+     "answer_index": 1,
+     "explanation": "Videoen viser, at $-1/2$ ophæver $+1/2$, og tilsvarende for de øvrige brøker. (1:48)",
+     "evidence": "negative - 1/2 actually cancels out with positive 1/2. and negative 1/3 actually cancels out with positive 1/3",
+     "t": 107.5,
+     "cite": "1:48",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 0
+    },
+    {
+     "type": "mc",
+     "question": "Hvilken af følgende udligninger beskriver en korrekt annullering i serien?",
+     "options": [
+      "negativ -1/2 annullerer positiv 1/3",
+      "negativ -1/4 annullerer positiv 1/5",
+      "negativ -1/3 annullerer positiv 1/4",
+      "negativ -1/2 annullerer positiv 1/2"
+     ],
+     "answer_index": 3,
+     "explanation": "I serien annullerer hvert negativt led det efterfølgende positive led med samme værdi. (1:48)",
+     "evidence": "negative - 1/2 actually cancels out with positive 1/2",
+     "t": 107.5,
+     "cite": "1:48",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 1
+    },
+    {
+     "type": "short",
+     "question": "Skriv den generelle formel for rækkens $n$‑te led som funktion af $n$.",
+     "answer": "$\\frac{1}{n} - \\frac{1}{n+1}$",
+     "explanation": "Formlen er den funktion, som videoen introducerer for den teleskoperende række. (1:31)",
+     "evidence": "this as the function 1 / n minus 1 / n + 1",
+     "t": 91.1,
+     "cite": "1:31",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 2
+    }
+   ],
+   "transcript_from": "0:00",
+   "transcript_to": "2:04"
+  },
+  {
+   "i": 1,
+   "start": 123.76,
+   "end": 246.64,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad betyder det, at en serie er en telescopisk (telescoping) serie?",
+     "options": [
+      "Ingen annullering forekommer",
+      "Termerne vokser eksponentielt",
+      "Alle termer summerer til nul",
+      "Senere værdier annullerer tidligere værdier i rækken"
+     ],
+     "answer_index": 3,
+     "explanation": "I en telescopisk serie annullerer senere led de tidligere led. (2:22)",
+     "evidence": "When latter values when future values like later values in your sequence cancel out previous values in the sequence",
+     "t": 142.5,
+     "cite": "2:22",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 3
+    },
+    {
+     "type": "mc",
+     "question": "Hvilket led i den betragtede serie forbliver uannulleret, når n går mod uendelig?",
+     "options": [
+      "Det første led $1$",
+      "Det positive led $\\frac{1}{n}$",
+      "Det positive led $\\frac{1}{n+1}$",
+      "Det negative led $-\\frac{1}{n+1}$"
+     ],
+     "answer_index": 3,
+     "explanation": "Det sidste led $-\\frac{1}{n+1}$ har ingen efterfølgende term til at annullere det. (3:23)",
+     "evidence": "All right. This -1 over n plus one doesn't get cancelceled out because there's no next value to cancel it out up into infinity.",
+     "t": 202.7,
+     "cite": "3:23",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 4
+    },
+    {
+     "type": "short",
+     "question": "Hvad er udtrykket for den delvise sum efter at alle termer er blevet annulleret?",
+     "answer": "$1 - \\frac{1}{n+1}$",
+     "explanation": "Kun den første term og -1/(n+1) overlever, hvilket giver $1-\\frac{1}{n+1}$. (3:38)",
+     "evidence": "1 - 1 over n plus1",
+     "t": 218.2,
+     "cite": "3:38",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 5
+    }
+   ],
+   "transcript_from": "2:04",
+   "transcript_to": "4:07"
+  },
+  {
+   "i": 2,
+   "start": 246.64,
+   "end": 369.12,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad er værdien af serien, når den øvre grænse n sættes til 4?",
+     "options": [
+      "0",
+      "1",
+      "1 - 1/5",
+      "1/5"
+     ],
+     "answer_index": 2,
+     "explanation": "Når n = 4 får man summen 1 minus 1/5. (4:43)",
+     "evidence": "you just get 1 minus 1/5 as your value of your series at n is equal to 4.",
+     "t": 283.1,
+     "cite": "4:43",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 6
+    },
+    {
+     "type": "mc",
+     "question": "Hvad er værdien af den uendelige serie, når n → ∞?",
+     "options": [
+      "1",
+      "serien divergerer",
+      "0",
+      "1/5"
+     ],
+     "answer_index": 0,
+     "explanation": "Når n går mod uendelig, bliver 1/n nul, så udtrykket bliver 1 - 0 = 1. (5:53)",
+     "evidence": "we get 1 - 0 which is simply equal to one",
+     "t": 353.2,
+     "cite": "5:53",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 7
+    },
+    {
+     "type": "short",
+     "question": "Hvilken term bliver ikke annulleret, når n = 4?",
+     "answer": "-1/5",
+     "explanation": "Den sidste negative term -1/5 forbliver, fordi den ikke har en tilsvarende positiv term at annullere med. (4:39)",
+     "evidence": "this negative 1/5 doesn't get cancelceled out if n is equal to 4",
+     "t": 279.0,
+     "cite": "4:39",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 8
+    }
+   ],
+   "transcript_from": "4:07",
+   "transcript_to": "6:09"
+  },
+  {
+   "i": 3,
+   "start": 369.12,
+   "end": 489.84,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvorfor starter den teleskoperende sum ved n = 2 i stedet for n = 1?",
+     "options": [
+      "Fordi det er et vilkårligt valg",
+      "Fordi udtrykket for n = 1 giver division med nul",
+      "Fordi termen for n = 1 er nul",
+      "Fordi serien ville divergere for n = 1"
+     ],
+     "answer_index": 1,
+     "explanation": "For n = 1 får man $2/(1-1)=2/0$, som er udefineret. (7:03)",
+     "evidence": "if you have 2 over 1 - 1, you just get 2 over 0. That doesn't exist.",
+     "t": 423.4,
+     "cite": "7:03",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 9
+    },
+    {
+     "type": "mc",
+     "question": "Hvilket udtryk får man for leddet når n = 4?",
+     "options": [
+      "$\\frac{2}{3} - \\frac{2}{5} + \\frac{2}{4} - \\frac{2}{6}$",
+      "$\\frac{2}{4} - \\frac{2}{6}$",
+      "$\\frac{2}{5} - \\frac{2}{3}$",
+      "$\\frac{2}{3} - \\frac{2}{5}$"
+     ],
+     "answer_index": 0,
+     "explanation": "Når n = 4 skrives leddet som $2/3 - 2/5 + 2/4 - 2/6$. (7:38)",
+     "evidence": "When n is equal to 4, you get 2 over 3 - 2 over 5 + 2 over 4 - 2 over 6.",
+     "t": 458.5,
+     "cite": "7:38",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 10
+    },
+    {
+     "type": "short",
+     "question": "Skriv den generelle formel for leddet som den sidste linje i udsnittet viser.",
+     "answer": "$2 - \\frac{2}{n-1} - \\frac{2}{n+1}$",
+     "explanation": "Den sidste linje giver udtrykket $2 - 2 n -1 - 2 / n + 1$, som fortolkes som $2 - \\frac{2}{n-1} - \\frac{2}{n+1}$. (8:03)",
+     "evidence": "2 - 2 n -1 - 2 / n + 1.",
+     "t": 482.9,
+     "cite": "8:03",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 11
+    }
+   ],
+   "transcript_from": "6:09",
+   "transcript_to": "8:10"
+  },
+  {
+   "i": 4,
+   "start": 489.84,
+   "end": 610.56,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvilket udtryk siger taleren IKKE bliver annulleret i serien?",
+     "options": [
+      "2/3",
+      "2/4",
+      "2/2",
+      "2/6"
+     ],
+     "answer_index": 2,
+     "explanation": "Taleren nævner eksplicit at 2/2 ikke annulleres. (8:38)",
+     "evidence": "this two over two doesn't cancel out and this two over one also doesn't cancel out.",
+     "t": 518.4,
+     "cite": "8:38",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 12
+    },
+    {
+     "type": "mc",
+     "question": "Ifølge videoen, ved hvilket n‑værdi annulleres udtrykket -2/6?",
+     "options": [
+      "n = 6",
+      "n = 8",
+      "n = 7",
+      "n = 5"
+     ],
+     "answer_index": 2,
+     "explanation": "Taleren siger at -2/6 annulleres når n er lig 7. (9:01)",
+     "evidence": "I think it actually cancels out when n is equal to 7.",
+     "t": 541.4,
+     "cite": "9:01",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 13
+    },
+    {
+     "type": "short",
+     "question": "Hvad siger taleren, at værdien af \\(\\frac{2}{\\infty}\\) er?",
+     "answer": "0",
+     "explanation": "Taleren erklærer at 2 over infinity er nul. (10:03)",
+     "evidence": "2 minus minus 2 over infinity. This is just zero.",
+     "t": 602.6,
+     "cite": "10:03",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 14
+    }
+   ],
+   "transcript_from": "8:10",
+   "transcript_to": "10:11"
+  },
+  {
+   "i": 5,
+   "start": 610.56,
+   "end": 733.2,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad er summen af den teleskoperende række som nævnes i videoen?",
+     "options": [
+      "2",
+      "5",
+      "3",
+      "4"
+     ],
+     "answer_index": 2,
+     "explanation": "Rækken konvergerer til værdien tre. (10:11)",
+     "evidence": "really get is 2 plus 1 which is just three. Therefore this telescopic series actually converges at the value three.",
+     "t": 610.6,
+     "cite": "10:11",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 15
+    },
+    {
+     "type": "mc",
+     "question": "Hvilken anden konvergenstest nævnes som en mulig, men mindre sjov, metode?",
+     "options": [
+      "Direct comparison test",
+      "Ratio test",
+      "Integral test",
+      "Root test"
+     ],
+     "answer_index": 0,
+     "explanation": "Videoen nævner direkte sammenligningstest som alternativ. (10:25)",
+     "evidence": "We could just use direct comparison test to solve this if we wanted to, of course.",
+     "t": 625.0,
+     "cite": "10:25",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 16
+    },
+    {
+     "type": "short",
+     "question": "Hvilke to faktorer får nævneren efter at blive splittet?",
+     "answer": "$n+1$ og $n-1$",
+     "explanation": "Den oprindelige nævner kan skrives som produktet af $n+1$ og $n-1$. (10:46)",
+     "evidence": "you can actually separate the values in the denominator into n +1 and n minus one",
+     "t": 646.2,
+     "cite": "10:46",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 17
+    }
+   ],
+   "transcript_from": "10:11",
+   "transcript_to": "12:13"
+  },
+  {
+   "i": 6,
+   "start": 733.2,
+   "end": 854.24,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad er værdierne for a og b, som løses fra systemet a + b = 0 og a + b = 1?",
+     "options": [
+      "a = 1, b = 0",
+      "a = 1, b = 1/2",
+      "a = 1/2, b = 1",
+      "a = 0, b = 1"
+     ],
+     "answer_index": 1,
+     "explanation": "Ved logisk ræsonnement får man a = 1 og b = 1/2. (12:21)",
+     "evidence": "a is equal to 1 and b is equal to 1/2.",
+     "t": 740.8,
+     "cite": "12:21",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 18
+    },
+    {
+     "type": "mc",
+     "question": "Hvad er leddet i serien når \\(n = 3\\)?",
+     "options": [
+      "$\\frac{1}{1} - \\frac{1}{3}$",
+      "$\\frac{1}{2} - \\frac{1}{4}$",
+      "$\\frac{1}{3} - \\frac{1}{5}$",
+      "$\\frac{1}{4} - \\frac{1}{6}$"
+     ],
+     "answer_index": 1,
+     "explanation": "For \\(n=3\\) giver serien leddet \\(\\frac{1}{2} - \\frac{1}{4}\\). (13:52)",
+     "evidence": "when n is equal to 3 you get 1 over 2 - 1 over 4",
+     "t": 832.0,
+     "cite": "13:52",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 19
+    },
+    {
+     "type": "short",
+     "question": "Hvilken konstant faktoreres ud af summen i udledningen?",
+     "answer": "1/2",
+     "explanation": "Der trækkes en faktor 1/2 ud af hele summen. (13:06)",
+     "evidence": "you can actually factor out the 1/2 out of the sum to get 1/2 out here.",
+     "t": 786.2,
+     "cite": "13:06",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 20
+    }
+   ],
+   "transcript_from": "12:13",
+   "transcript_to": "14:14"
+  },
+  {
+   "i": 7,
+   "start": 854.24,
+   "end": 951.04,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad er grænsen for serien, når $n \\to \\infty$?",
+     "options": [
+      "$2$",
+      "$\\frac{3}{2}$",
+      "$1$",
+      "$\\frac{1}{2}$"
+     ],
+     "answer_index": 1,
+     "explanation": "Summen bliver $1 + \\frac12$ når $1/n$ går mod nul, hvilket giver $\\frac32$. (15:19)",
+     "evidence": "you get a simple 1 plus 1/2, which is equal to 3 over2.",
+     "t": 918.6,
+     "cite": "15:19",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 21
+    },
+    {
+     "type": "mc",
+     "question": "Til hvilken værdi konvergerer den teleskoperende række?",
+     "options": [
+      "$\\frac{5}{4}$",
+      "$\\frac{3}{2}$",
+      "$1$",
+      "$2$"
+     ],
+     "answer_index": 1,
+     "explanation": "Efter at de fleste led er annulleret, får man $1 + \\frac12 = \\frac32$. (15:19)",
+     "evidence": "you get a simple 1 plus 1/2, which is equal to 3 over2.",
+     "t": 918.6,
+     "cite": "15:19",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 22
+    },
+    {
+     "type": "short",
+     "question": "Hvilken term i rækken bliver ikke annulleret (cancelleret)?",
+     "answer": "1/2",
+     "explanation": "Den første brøk $1/2$ har ingen tidligere term, der kan annullere den. (14:51)",
+     "evidence": "1/2 doesn't get cancelceled anywhere as well.",
+     "t": 891.4,
+     "cite": "14:51",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 23
+    }
+   ],
+   "transcript_from": "14:14",
+   "transcript_to": "15:51"
+  }
+ ]
+}

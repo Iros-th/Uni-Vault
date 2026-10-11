@@ -1,0 +1,348 @@
+{
+ "schema": 1,
+ "videoId": "48PKUQ9zcpk",
+ "title": "Direct Comparison Test for Convergence and Divergence",
+ "map_title": "Direct Comparison",
+ "channel": "Computer Engineering Jitty",
+ "course": "Differential Equations and Infinite Series",
+ "source_map": "Courses/Differential Equations and Infinite Series/Speedrun Map.md",
+ "map_line": 330,
+ "captions": {
+  "lang": "en",
+  "auto": true,
+  "cache": "tools/videoquiz/.cache/transcripts/48PKUQ9zcpk.json"
+ },
+ "generated_at": "2026-10-07T20:01:09",
+ "models": [
+  "gpt-oss:120b-cloud"
+ ],
+ "window_seconds": 120.0,
+ "deck_slug": "Quizzes/Kort/48PKUQ9zcpk",
+ "rejected_by_validator": 5,
+ "windows": [
+  {
+   "i": 0,
+   "start": 0.0,
+   "end": 120.08,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad kaldes de enkelte led i en række ved den direkte sammenligningstest ifølge videoen?",
+     "options": [
+      "element",
+      "event",
+      "term",
+      "factor"
+     ],
+     "answer_index": 1,
+     "explanation": "Videoen siger, at hvert led i rækken kaldes et \"event\". (0:42)",
+     "evidence": "whatever your sequence is is called a event.",
+     "t": 41.7,
+     "cite": "0:42",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 0
+    },
+    {
+     "type": "mc",
+     "question": "Hvad er hovedformålet med den direkte sammenligningstest?",
+     "options": [
+      "At bestemme konvergensradiusen",
+      "At beregne summen af serien direkte",
+      "At finde en funktion $b_n$ som kan sammenlignes med $a_n",
+      "At omskrive serien til et integral"
+     ],
+     "answer_index": 2,
+     "explanation": "Testen bruges til at finde en sammenligningsfunktion $b_n$. (1:34)",
+     "evidence": "the whole goal of the direct comparison test is to find some function called b of n.",
+     "t": 93.8,
+     "cite": "1:34",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 1
+    },
+    {
+     "type": "short",
+     "question": "Hvilken funktion skal du finde for at sammenligne med $a_n$ i den direkte sammenligningstest?",
+     "answer": "b_n",
+     "explanation": "Målet med testen er at finde en funktion kaldet $b_n$ til sammenligning. (1:34)",
+     "evidence": "The whole goal of the direct comparison test is to find some function called b of n.",
+     "t": 93.8,
+     "cite": "1:34",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 2
+    }
+   ],
+   "transcript_from": "0:00",
+   "transcript_to": "2:00"
+  },
+  {
+   "i": 1,
+   "start": 120.08,
+   "end": 242.4,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvilken betingelse skal sekvenserne $A_n$ og $B_n$ opfylde i den direkte sammenligningstest?",
+     "options": [
+      "$A_n \\ge B_n$ for alle $n$",
+      "$A_n \\le B_n$ for alle $n$",
+      "$A_n = B_n$ for alle $n$",
+      "Ingen betingelse er nødvendig"
+     ],
+     "answer_index": 1,
+     "explanation": "For at kunne anvende testen skal $A_n$ være mindre eller lig $B_n$ for hvert indeks. (2:36)",
+     "evidence": "B must be greater at all values than A.",
+     "t": 156.4,
+     "cite": "2:36",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 3
+    },
+    {
+     "type": "mc",
+     "question": "Når du konstruerer $B_n$, hvad beholder du uændret fra den oprindelige brøk?",
+     "options": [
+      "Eksponenten i nævneren",
+      "Intet, du ændrer alt",
+      "Både tæller og nævner",
+      "Tællerkoefficienten 10"
+     ],
+     "answer_index": 3,
+     "explanation": "Man beholder den samme tæller, nemlig tallet 10. (2:48)",
+     "evidence": "You keep the same numerator 10, right? And you just simply write down the largest exponent and its coefficient.",
+     "t": 168.4,
+     "cite": "2:48",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 4
+    },
+    {
+     "type": "short",
+     "question": "Hvilken eksponent på $n$ i tælleren betragtes som den største eksponentielle værdi?",
+     "answer": "$n^0$",
+     "explanation": "Tælleren $10^n$ er implicit $10^n \\cdot n^0$, så $n^0$ er den største eksponentielle term i tælleren. (3:23)",
+     "evidence": "N^ 0 is equal to 1. So n^0 is the largest exponential value the numerator.",
+     "t": 202.9,
+     "cite": "3:23",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 5
+    }
+   ],
+   "transcript_from": "2:00",
+   "transcript_to": "4:02"
+  },
+  {
+   "i": 2,
+   "start": 242.4,
+   "end": 362.48,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "If $b_n$ converges, what kan man konkludere om $a_n$ i den direkte sammenligningstest?",
+     "options": [
+      "$a_n$ konvergerer også.",
+      "$a_n$ divergerer også.",
+      "Intet kan konkluderes om $a_n$.",
+      "$a_n$ kan både konvergere eller divergere."
+     ],
+     "answer_index": 0,
+     "explanation": "Direkte sammenligningstest siger, at konvergens af $b_n$ medfører konvergens af $a_n$. (5:27)",
+     "evidence": "If b of n converges then a of n converges.",
+     "t": 326.6,
+     "cite": "5:27",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 6
+    },
+    {
+     "type": "mc",
+     "question": "Hvad kan man konkludere om $a_n$ hvis $b_n$ konvergerer i den direkte sammenligningstest?",
+     "options": [
+      "Inkonklusivt om $a_n$",
+      "$a_n$ divergerer",
+      "Ingen konklusion kan drages",
+      "$a_n$ konvergerer"
+     ],
+     "answer_index": 3,
+     "explanation": "Hvis $b_n$ konvergerer, så konvergerer $a_n$ også. (5:27)",
+     "evidence": "If b of n converges then a of n converges.",
+     "t": 326.6,
+     "cite": "5:27",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 7
+    },
+    {
+     "type": "short",
+     "question": "Hvilken test bør man bruge, når $b_n$ divergerer?",
+     "answer": "divergence test",
+     "explanation": "Når $b_n$ divergerer, skal man anvende en anden test, typisk divergenstesten. (5:01)",
+     "evidence": "we need to use a different test and you'd likely just use divergence test.",
+     "t": 301.2,
+     "cite": "5:01",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 8
+    }
+   ],
+   "transcript_from": "4:02",
+   "transcript_to": "6:02"
+  },
+  {
+   "i": 3,
+   "start": 362.48,
+   "end": 483.52,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad er værdien af p i p‑serien når eksponenten er \\(n^3\\)?",
+     "options": [
+      "2",
+      "1",
+      "4",
+      "3"
+     ],
+     "answer_index": 3,
+     "explanation": "Eksponenten er 3, så p‑værdien er 3. (6:04)",
+     "evidence": "Well we have an exponent n to the^ 3. So therefore p is three.",
+     "t": 364.2,
+     "cite": "6:04",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 9
+    },
+    {
+     "type": "mc",
+     "question": "Hvis serien \\(b_n\\) divergerer (p = 1), hvad kan vi konkludere om serien \\(a_n\\) i den direkte sammenligningstest?",
+     "options": [
+      "a_n konvergerer",
+      "a_n divergerer",
+      "Man kan ikke konkludere noget om a_n",
+      "a_n er betinget konvergent"
+     ],
+     "answer_index": 2,
+     "explanation": "Divergens af b_n giver ingen information om a_n i den direkte sammenligningstest. (7:19)",
+     "evidence": "b of n here diverges because p in this function is just one and this is inconclusive.",
+     "t": 439.0,
+     "cite": "7:19",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 10
+    },
+    {
+     "type": "short",
+     "question": "Hvilken test bør anvendes, når b_n divergerer i stedet for den direkte sammenligningstest?",
+     "answer": "limit comparison test",
+     "explanation": "Når b_n divergerer, anbefales limit‑sammenligningstesten. (7:25)",
+     "evidence": "you need to use a different test likely limit comparison test.",
+     "t": 445.0,
+     "cite": "7:25",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 11
+    }
+   ],
+   "transcript_from": "6:02",
+   "transcript_to": "8:04"
+  },
+  {
+   "i": 4,
+   "start": 483.52,
+   "end": 607.28,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvilken forenklet funktion bruges som $b_n$ i den direkte sammenligningstest?",
+     "options": [
+      "1/n",
+      "$8/n^2$",
+      "$1/n^2$",
+      "8/n"
+     ],
+     "answer_index": 2,
+     "explanation": "Man ignorerer den konstante numerator og skriver $b_n = 1/n^2$. (8:27)",
+     "evidence": "you can kind of write down 1 over n to the^ of two. Although this doesn't really necessarily meet the condition where a of n is less than b of n.",
+     "t": 507.0,
+     "cite": "8:27",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 12
+    },
+    {
+     "type": "mc",
+     "question": "Hvilken værdi har eksponenten p i p‑rækken, som bruges til at teste konvergensen af $b_n$?",
+     "options": [
+      "4",
+      "3",
+      "1",
+      "2"
+     ],
+     "answer_index": 3,
+     "explanation": "P‑rækken har eksponenten $p=2$, hvilket er større end 1, så den konvergerer. (9:01)",
+     "evidence": "So P in this case is equal to two.",
+     "t": 540.6,
+     "cite": "9:01",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 13
+    },
+    {
+     "type": "short",
+     "question": "Hvad er den forenklede form af $b_n$, som anvendes i sammenligningen (ignorerer konstanter i tælleren)?",
+     "answer": "$b_n = \\frac{1}{n^2}$",
+     "explanation": "Man kan skrive $b_n$ som $1/n^2$ når man ser på de største eksponenter. (8:27)",
+     "evidence": "you can kind of write down 1 over n to the^ of two.",
+     "t": 507.0,
+     "cite": "8:27",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 14
+    }
+   ],
+   "transcript_from": "8:04",
+   "transcript_to": "10:07"
+  },
+  {
+   "i": 5,
+   "start": 607.28,
+   "end": 699.12,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "If the exponent p in a p‑series is equal to 1, hvad siger p‑serietesten om konvergens?",
+     "options": [
+      "Testen er inkonklusiv",
+      "Serien konvergerer betinget",
+      "Serien divergerer",
+      "Serien konvergerer"
+     ],
+     "answer_index": 2,
+     "explanation": "Når p ≤ 1 divergerer en p‑serie. (10:30)",
+     "evidence": "if p is less than or equal to 1, then the series diverges.",
+     "t": 630.1,
+     "cite": "10:30",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 15
+    },
+    {
+     "type": "mc",
+     "question": "Hvilken af følgende implikationer er korrekt i forhold til serierne a_n og b_n som beskrevet?",
+     "options": [
+      "Hvis b_n konvergerer, så divergerer a_n.",
+      "Hvis a_n divergerer, så divergerer b_n også.",
+      "Hvis b_n divergerer, så divergerer a_n også.",
+      "Hvis a_n konvergerer, så divergerer b_n."
+     ],
+     "answer_index": 1,
+     "explanation": "If a_n diverges, then b_n also diverges er den eneste nævnte gyldige implikation. (11:08)",
+     "evidence": "if a of n diverges, then b of n also diverges.",
+     "t": 668.0,
+     "cite": "11:08",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 16
+    },
+    {
+     "type": "short",
+     "question": "Hvad skal man gøre efter at have konstateret, at b_n divergerer, ifølge videoen?",
+     "answer": "Man skal anvende en anden test, sandsynligvis limit comparison test.",
+     "explanation": "Når testen er inkonklusiv, anbefales en anden test. (11:33)",
+     "evidence": "You would need to use a different test for this likely limit comparison",
+     "t": 693.1,
+     "cite": "11:33",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 17
+    }
+   ],
+   "transcript_from": "10:07",
+   "transcript_to": "11:39"
+  }
+ ]
+}

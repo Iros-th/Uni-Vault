@@ -1,0 +1,402 @@
+{
+ "schema": 1,
+ "videoId": "sMnMTN_lEIY",
+ "title": "Absolute and Conditional Convergence - Calculus 2",
+ "map_title": "Absolute and Conditional Convergence",
+ "channel": "Computer Engineering Jitty",
+ "course": "Differential Equations and Infinite Series",
+ "source_map": "Courses/Differential Equations and Infinite Series/Speedrun Map.md",
+ "map_line": 344,
+ "captions": {
+  "lang": "en",
+  "auto": true,
+  "cache": "tools/videoquiz/.cache/transcripts/sMnMTN_lEIY.json"
+ },
+ "generated_at": "2026-10-08T00:26:00",
+ "models": [
+  "gpt-oss:120b-cloud"
+ ],
+ "window_seconds": 120.0,
+ "deck_slug": "Quizzes/Kort/sMnMTN_lEIY",
+ "rejected_by_validator": 1,
+ "windows": [
+  {
+   "i": 0,
+   "start": 0.0,
+   "end": 121.04,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvilket udsagn er sandt om forholdet mellem absolut og betinget konvergens?",
+     "options": [
+      "Hvis en række konvergerer betinget, må den konvergere absolut.",
+      "Absolut og betinget konvergens er gensidigt udelukkende.",
+      "Betinget konvergens betyder, at rækken af absolutte værdier også konvergerer.",
+      "Hvis en række konvergerer absolut, konvergerer den også betinget."
+     ],
+     "answer_index": 3,
+     "explanation": "Absolut konvergens indebærer også betinget konvergens. (0:52)",
+     "evidence": "If you absolutely converge then you must conditionally converge.",
+     "t": 51.8,
+     "cite": "0:52",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 0
+    },
+    {
+     "type": "mc",
+     "question": "Hvordan defineres betinget konvergens?",
+     "options": [
+      "Kun rækken af absolutte værdier konvergerer.",
+      "Rækken konvergerer, men rækken af absolutte værdier divergerer.",
+      "Både rækken og rækken af absolutte værdier konvergerer.",
+      "Rækken divergerer, men rækken af absolutte værdier konvergerer."
+     ],
+     "answer_index": 1,
+     "explanation": "Betinget konvergens betyder, at selve rækken konvergerer, mens den absolutte række ikke gør det. (1:51)",
+     "evidence": "If you take the absolute value of an alternating series, you kind of just wipe out this guy, then that means you just conditionally converge.",
+     "t": 111.0,
+     "cite": "1:51",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 1
+    },
+    {
+     "type": "short",
+     "question": "Hvad kaldes den typiske form for en betinget konvergent serie?",
+     "answer": "En alternerende serie $(-1)^n a_n$",
+     "explanation": "Betinget konvergens forekommer ofte i alternerende serier. (1:26)",
+     "evidence": "you're going to have an alternating series right -1 to the^ of n * a of n",
+     "t": 85.8,
+     "cite": "1:26",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 2
+    }
+   ],
+   "transcript_from": "0:00",
+   "transcript_to": "2:01"
+  },
+  {
+   "i": 1,
+   "start": 121.04,
+   "end": 243.76,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad betyder det, når en række kun konvergerer betinget?",
+     "options": [
+      "Rækken konvergerer kun for visse n",
+      "Rækken konvergerer absolut",
+      "Rækken divergerer",
+      "Rækken konvergerer, men ikke absolut"
+     ],
+     "answer_index": 3,
+     "explanation": "Betinget konvergens betyder, at rækken konvergerer, men den absolutte række divergerer. (2:05)",
+     "evidence": "then that means you just conditionally converge. You do not absolutely converge.",
+     "t": 125.0,
+     "cite": "2:05",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 3
+    },
+    {
+     "type": "mc",
+     "question": "Hvilken betingelse nævnes i videoen som nødvendig for den alternerende rækketest?",
+     "options": [
+      "Rækken skal have kun endelige mange ledd",
+      "Grænsen for leddene når n→∞ skal være nul",
+      "Rækken skal være absolut konvergent",
+      "Alle leddene skal være negative"
+     ],
+     "answer_index": 1,
+     "explanation": "Videoen siger, at leddenes grænse skal gå mod nul for at opfylde testen. (2:55)",
+     "evidence": "the limit as n approaches infinity for the sequence. And if it equals zero, then that's one of the conditions met for the alternating series test.",
+     "t": 174.6,
+     "cite": "2:55",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 4
+    },
+    {
+     "type": "short",
+     "question": "Hvad er grænsebetingelsen i den alternerende rækketest?",
+     "answer": "$\\displaystyle \\lim_{n\\to\\infty} a_n = 0$",
+     "explanation": "Testen kræver, at leddets grænse går mod nul når n går mod uendelig. (2:51)",
+     "evidence": "And if you take the limit the limit as n approaches infinity for the sequence. And if it equals zero, then that's one of the conditions met for the alternating series test.",
+     "t": 170.6,
+     "cite": "2:51",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 5
+    }
+   ],
+   "transcript_from": "2:01",
+   "transcript_to": "4:04"
+  },
+  {
+   "i": 2,
+   "start": 243.76,
+   "end": 366.16,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad får vi, når vi tager den absolutte værdi af den alternerende harmoniske række?",
+     "options": [
+      "$1/(n+1)$",
+      "$(-1)^{n}/n$",
+      "$1/n$",
+      "$1/n^2$"
+     ],
+     "answer_index": 2,
+     "explanation": "Den absolutte værdi fjerner den alternerende faktor og efterlader den simple harmoniske række $1/n$. (4:10)",
+     "evidence": "if we take the absolute value, we just get left off with 1 / n",
+     "t": 250.0,
+     "cite": "4:10",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 6
+    },
+    {
+     "type": "mc",
+     "question": "Ifølge videoen, hvilken test bør man udføre først, når man undersøger konvergens af en række?",
+     "options": [
+      "Absolute convergence test",
+      "Ratio test",
+      "Alternating series test",
+      "Conditional convergence test"
+     ],
+     "answer_index": 0,
+     "explanation": "Man bør først teste for absolut konvergens, så man kan springe den konditionelle test over, hvis den holder. (5:02)",
+     "evidence": "I very highly recommend that you test for absolute convergence first",
+     "t": 302.5,
+     "cite": "5:02",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 7
+    },
+    {
+     "type": "short",
+     "question": "Hvad er værdien af $p$ i $p$-serietesten for den absolutte række?",
+     "answer": "p = 1",
+     "explanation": "Når man anvender $p$‑serietesten på den absolutte række, er eksponenten $p$ lig med 1. (4:33)",
+     "evidence": "P is equal to one",
+     "t": 273.3,
+     "cite": "4:33",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 8
+    }
+   ],
+   "transcript_from": "4:04",
+   "transcript_to": "6:06"
+  },
+  {
+   "i": 3,
+   "start": 366.16,
+   "end": 487.76,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "If en række konvergerer absolut, hvad siger foredragsholderen om dens konvergens?",
+     "options": [
+      "Den konvergerer også betinget.",
+      "Den konvergerer kun betinget, ikke absolut.",
+      "Den konvergerer betinget, men kun hvis den også er geometrisk.",
+      "Den kan hverken konvergere absolut eller betinget."
+     ],
+     "answer_index": 0,
+     "explanation": "Ifølge foredragsholderen medfører absolut konvergens også betinget konvergens. (6:16)",
+     "evidence": "Now remember, if you absolutely converge, then you also conditionally converge.",
+     "t": 376.1,
+     "cite": "6:16",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 9
+    },
+    {
+     "type": "mc",
+     "question": "Hvilken kendt række sammenlignes $\nfrac{1}{\\ln n}$ med for at afgøre divergens?",
+     "options": [
+      "En geometrisk række med kvotient $\\frac12$",
+      "Den alternerende række $(-1)^n\\frac{1}{n}$",
+      "En $p$‑række med $p=2$",
+      "Den harmoniske række $\\frac{1}{n}$"
+     ],
+     "answer_index": 3,
+     "explanation": "Foredragsholderen bruger sammenligning med den harmoniske række $1/n$. (7:19)",
+     "evidence": "If we compare this to the harmonic series 1 / n, we realize that the natural logarithm grows actually slower than n",
+     "t": 438.6,
+     "cite": "7:19",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 10
+    },
+    {
+     "type": "short",
+     "question": "Hvilken test foreslår foredragsholderen at bruge for at bestemme absolut konvergens af $\nfrac{1}{\\ln n}$?",
+     "answer": "Sammenligningstest med den harmoniske række $\\frac{1}{n}$",
+     "explanation": "Han sammenligner med den harmoniske række for at afgøre divergens. (7:19)",
+     "evidence": "If we compare this to the harmonic series 1 / n, we realize that the natural logarithm grows actually slower than n",
+     "t": 438.6,
+     "cite": "7:19",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 11
+    }
+   ],
+   "transcript_from": "6:06",
+   "transcript_to": "8:08"
+  },
+  {
+   "i": 4,
+   "start": 487.76,
+   "end": 608.16,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad er udtrykket for $b_n$, den absolutte værdi af $a_n$, som bruges i den alternerende række‑test?",
+     "options": [
+      "$\\frac{1}{n}$",
+      "$\\frac{1}{\\ln(n)}$",
+      "$\\frac{n}{\\ln(n)}$",
+      "$\\ln(n)$"
+     ],
+     "answer_index": 1,
+     "explanation": "Videoen definerer $b_n$ som \"simply equal to one over the natural logarithm of n\". (8:45)",
+     "evidence": "simply equal to one over the natural logarithm of n",
+     "t": 524.6,
+     "cite": "8:45",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 12
+    },
+    {
+     "type": "mc",
+     "question": "Ifølge videoen, hvad skal grænsen $\\lim_{n\\to\\infty} b_n$ være for at den alternerende række‑test giver konvergens?",
+     "options": [
+      "Den skal være negativ",
+      "Den skal være $\\infty$",
+      "Den skal være $0$",
+      "Den skal være $1$"
+     ],
+     "answer_index": 3,
+     "explanation": "Videoen konkluderer, at grænsen er \"just equal to one\". (9:29)",
+     "evidence": "which is simply one over infinity, which is just equal to one",
+     "t": 568.8,
+     "cite": "9:29",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 13
+    },
+    {
+     "type": "short",
+     "question": "Hvad er det næste skridt efter at have vist, at $b_n$ er monoton faldende i den alternerende række‑test?",
+     "answer": "Man skal tage grænsen $\\lim_{n\\to\\infty} b_n$.",
+     "explanation": "Videoen siger: \"Now we just need to take the plain old limit as n approaches infinity for b of n\". (9:20)",
+     "evidence": "Now we just need to take the plain old limit as n approaches infinity for b of n",
+     "t": 559.5,
+     "cite": "9:20",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 14
+    }
+   ],
+   "transcript_from": "8:08",
+   "transcript_to": "10:08"
+  },
+  {
+   "i": 5,
+   "start": 608.16,
+   "end": 730.0,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad er grænsen for leddet $a_n = \\frac{3^n}{n^2}$ når $n \\to \\infty$?",
+     "options": [
+      "0",
+      "Et endeligt ikke‑nul tal",
+      "Uendelighed",
+      "Eksisterer ikke"
+     ],
+     "answer_index": 2,
+     "explanation": "Leddet vokser eksponentielt og går mod uendelig, så grænsen er $\\infty$. (11:30)",
+     "evidence": "you simply get infinity in the numerator over two, which is just equal to infinity.",
+     "t": 690.4,
+     "cite": "11:30",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 15
+    },
+    {
+     "type": "mc",
+     "question": "Hvilken test skal bruges for at undersøge, om den oprindelige vekslende række konvergerer betinget?",
+     "options": [
+      "Ratio‑testen",
+      "Divergens‑testen",
+      "Den alternerende rækketest",
+      "Integral‑testen"
+     ],
+     "answer_index": 2,
+     "explanation": "Den alternerende rækketest er designet til at undersøge betinget konvergens af vekslende serier. (12:01)",
+     "evidence": "let's go ahead and use the alternating series test.",
+     "t": 721.1,
+     "cite": "12:01",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 16
+    },
+    {
+     "type": "short",
+     "question": "Hvad er den serie, der opstår når man tager den absolutte værdi af den oprindelige serie?",
+     "answer": "$\\displaystyle \\sum_{n=1}^{\\infty} \\frac{3^n}{n^2}$",
+     "explanation": "Den absolutte værdi fjerner den alternerende faktor og efterlader $3^n/n^2$. (10:14)",
+     "evidence": "we just get 3 ^ of n / n^2.",
+     "t": 613.8,
+     "cite": "10:14",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 17
+    }
+   ],
+   "transcript_from": "10:08",
+   "transcript_to": "12:10"
+  },
+  {
+   "i": 6,
+   "start": 730.0,
+   "end": 791.08,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvorfor konkluderer taleren, at serien divergerer?",
+     "options": [
+      "Den eksponentielle funktion i tælleren vokser hurtigere end potensfunktionen i nævneren.",
+      "Nævneren vokser hurtigere end tælleren.",
+      "Den alternerende serietest viser konvergens.",
+      "Leddene i serien går mod nul."
+     ],
+     "answer_index": 0,
+     "explanation": "Den eksponentielle vækst i tælleren overtrumfer n² i nævneren, så leddene bliver større og serien divergerer. (12:17)",
+     "evidence": "We already know that the exponential here actually grows faster than the power function in the uh in the denominator and the squared.",
+     "t": 736.8,
+     "cite": "12:17",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 18
+    },
+    {
+     "type": "mc",
+     "question": "Hvordan vil taleren beskrive divergensen i stedet for at tale om betinget eller absolut divergens?",
+     "options": [
+      "Kun betinget divergens.",
+      "Man siger blot, at serien divergerer.",
+      "Både betinget og absolut divergens.",
+      "Kun absolut divergens."
+     ],
+     "answer_index": 1,
+     "explanation": "Taleren siger, at man blot vil sige at serien divergerer uden at skelne mellem betinget og absolut. (12:59)",
+     "evidence": "Now you wouldn't just call this conditional divergence and absolute divergence. You would just say that the series diverges.",
+     "t": 779.2,
+     "cite": "12:59",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 19
+    },
+    {
+     "type": "short",
+     "question": "Hvilken konvergenstest siger taleren, at den ikke er nødvendig i dette tilfælde?",
+     "answer": "alternating series test",
+     "explanation": "Taleren bemærker, at den alternerende serietest ikke behøves. (12:13)",
+     "evidence": "We don't even need to use the alternating series test.",
+     "t": 732.9,
+     "cite": "12:13",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 20
+    }
+   ],
+   "transcript_from": "12:10",
+   "transcript_to": "13:11"
+  }
+ ]
+}

@@ -1,0 +1,334 @@
+{
+ "schema": 1,
+ "videoId": "Zd--UbuU1ok",
+ "title": "Introduction to Slope/Direction Fields - Differential Equations",
+ "map_title": "Slope fields",
+ "channel": "Computer Engineering Jitty",
+ "course": "Differential Equations and Infinite Series",
+ "source_map": "Courses/Differential Equations and Infinite Series/Speedrun Map.md",
+ "map_line": 100,
+ "captions": {
+  "lang": "en",
+  "auto": true,
+  "cache": "tools/videoquiz/.cache/transcripts/Zd--UbuU1ok.json"
+ },
+ "generated_at": "2026-10-07T19:50:35",
+ "models": [
+  "gpt-oss:120b-cloud"
+ ],
+ "window_seconds": 120.0,
+ "deck_slug": "Quizzes/Kort/Zd--UbuU1ok",
+ "rejected_by_validator": 14,
+ "windows": [
+  {
+   "i": 0,
+   "start": 0.0,
+   "end": 121.8,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvilken differentialligning beskriver slope‑/direktionsfeltet i videoen?",
+     "options": [
+      "$\\frac{dy}{dx}=y^2$",
+      "$\\frac{dy}{dx}=x$",
+      "$\\frac{dy}{dx}=y$",
+      "$\\frac{dy}{dx}=\\sin y$"
+     ],
+     "answer_index": 2,
+     "explanation": "Videoen siger, at hældningen på ethvert punkt er lig med y‑værdien. (0:12)",
+     "evidence": "the slope at any given point inside of our function is equal to y.",
+     "t": 12.2,
+     "cite": "0:12",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 0
+    },
+    {
+     "type": "mc",
+     "question": "Hvilken differentialligning illustreres i videoen?",
+     "options": [
+      "dy/dx = x",
+      "dy/dx = y",
+      "dy/dx = xy",
+      "$dy/dx = y^2$"
+     ],
+     "answer_index": 1,
+     "explanation": "Videoen siger, at hældningen er lig med y‑værdien. (0:12)",
+     "evidence": "the slope at any given point inside of our function is equal to y.",
+     "t": 12.2,
+     "cite": "0:12",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 1
+    },
+    {
+     "type": "short",
+     "question": "Hvilket tal skal du indsætte i differentialligningen for at finde hældningen i punktet $(-1,-1)$?",
+     "answer": "-1",
+     "explanation": "Man indsætter $y=-1$ i $dy/dx = y$ og får hældningen $-1$. (1:57)",
+     "evidence": "The y value is -1, so we can just plug in -1. So, our again, our slope dy over",
+     "t": 117.2,
+     "cite": "1:57",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 2
+    }
+   ],
+   "transcript_from": "0:00",
+   "transcript_to": "2:02"
+  },
+  {
+   "i": 1,
+   "start": 121.8,
+   "end": 243.0,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad gør et hældningsfelt ifølge forelæseren?",
+     "options": [
+      "Bestemmer stabiliteten af ligevægtspunkter",
+      "Giver numeriske værdier for y",
+      "Viser den eksakte løsningskurve",
+      "Viser den kvalitative opførsel af løsninger uden at løse ligningen"
+     ],
+     "answer_index": 3,
+     "explanation": "Hældningsfeltet giver et visuelt indtryk af løsningerne uden at løse differentialligningen. (3:40)",
+     "evidence": "the slope field shows you what the solution to a differential equation actually looks like without solving the differential equation",
+     "t": 220.5,
+     "cite": "3:40",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 3
+    },
+    {
+     "type": "short",
+     "question": "Hvad repræsenterer de tegnede hældninger i et hældningsfelt?",
+     "answer": "den umiddelbare ændringshastighed (dy/dx) i hvert punkt",
+     "explanation": "Hældningerne svarer til den instantane rate of change. (3:58)",
+     "evidence": "these slopes stand for instantaneous rate",
+     "t": 238.4,
+     "cite": "3:58",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 4
+    }
+   ],
+   "transcript_from": "2:02",
+   "transcript_to": "4:03"
+  },
+  {
+   "i": 2,
+   "start": 243.0,
+   "end": 363.48,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad repræsenterer $dy/dx$ i denne sammenhæng?",
+     "options": [
+      "En anden differentialligning",
+      "Den gennemsnitlige ændring over et interval",
+      "En konstant værdi",
+      "Den øjeblikkelige hældning af løsningen til differentialligningen"
+     ],
+     "answer_index": 3,
+     "explanation": "$dy/dx$ er den øjeblikkelige hældning af løsningen til differentialligningen. (4:17)",
+     "evidence": "this is actually the instantaneous slope of our solution to a differential equation",
+     "t": 257.2,
+     "cite": "4:17",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 5
+    },
+    {
+     "type": "mc",
+     "question": "Hvad er løsningen til differentialligningen med begyndelsesbetingelsen $y(0)=1$?",
+     "options": [
+      "$\\sin x$",
+      "$e^{x}$",
+      "$x^{2}$",
+      "$\\ln x$"
+     ],
+     "answer_index": 1,
+     "explanation": "Løsningen er $e^{x}$, som nævnes i videoen. (5:10)",
+     "evidence": "the solution to this differential equation right here is e to the x",
+     "t": 309.5,
+     "cite": "5:10",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 6
+    },
+    {
+     "type": "short",
+     "question": "Hvad er næste skridt for at finde den specifikke løsning, når begyndelsesbetingelsen er $y(2) = -2$?",
+     "answer": "Tegn en kurve, der krydser punktet (2, -2) og følger hældningerne.",
+     "explanation": "Man skal konstruere en kurve, der passerer gennem den nye begyndelsesbetingelse og følger de givne hældninger. (5:29)",
+     "evidence": "our blue line that we draw needs to cross this initial condition. So, let's draw a graph that crosses this initial condition and follows the slopes",
+     "t": 329.2,
+     "cite": "5:29",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 7
+    }
+   ],
+   "transcript_from": "4:03",
+   "transcript_to": "6:03"
+  },
+  {
+   "i": 3,
+   "start": 363.48,
+   "end": 483.56,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad viser et slope‑field (stigningsfelt) om løsningerne til en differentialligning?",
+     "options": [
+      "kun lineære tilnærmelser",
+      "kun ligevægtspunkter",
+      "kun én bestemt løsning",
+      "alle mulige løsninger"
+     ],
+     "answer_index": 3,
+     "explanation": "Et slope‑field illustrerer alle mulige løsninger til differentialligningen. (6:22)",
+     "evidence": "this slope field doesn't only tell you one solution, it tells you all of the possible solutions of a differential equation",
+     "t": 382.2,
+     "cite": "6:22",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 8
+    },
+    {
+     "type": "mc",
+     "question": "Ifølge forelæseren, hvad sker der med grafen, når hældningen (slope) stiger?",
+     "options": [
+      "grafen bliver skarpere",
+      "grafen forbliver den samme",
+      "grafen begynder at oscillere",
+      "grafen bliver fladere"
+     ],
+     "answer_index": 0,
+     "explanation": "Når hældningen stiger, får grafen en skarpere stigning. (7:19)",
+     "evidence": "As the slope increases, your graph should get just get sharper and the sharper up",
+     "t": 439.0,
+     "cite": "7:19",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 9
+    },
+    {
+     "type": "short",
+     "question": "Hvilken initialbetingelse placerer løsningen på x‑aksen?",
+     "answer": "$y(2)=0$",
+     "explanation": "Initialbetingelsen $y(2)=0$ betyder, at løsningen går gennem punktet på x‑aksen. (7:52)",
+     "evidence": "What if our solution was on the x-axis, right? Like y of 2 is equal to 0",
+     "t": 472.4,
+     "cite": "7:52",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 10
+    }
+   ],
+   "transcript_from": "6:03",
+   "transcript_to": "8:04"
+  },
+  {
+   "i": 4,
+   "start": 483.56,
+   "end": 604.8,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad sker der med en løsningskurve, der starter på x‑aksen i dette retningsfelt?",
+     "options": [
+      "Den går mod uendelighed",
+      "Den krummer straks opad",
+      "Den oscillerer omkring x‑aksen",
+      "Den forbliver på x‑aksen som en lige linje"
+     ],
+     "answer_index": 3,
+     "explanation": "Sløjferne er nul langs x‑aksen, så kurven kan ikke forlade den. (8:19)",
+     "evidence": "we would never be able to escape the x-axis. We would just get a straight line along the x-axis because the slopes are always 0 here.",
+     "t": 499.4,
+     "cite": "8:19",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 11
+    },
+    {
+     "type": "short",
+     "question": "Hvorfor er hældningen nul langs x‑aksen i dette felt?",
+     "answer": "Fordi \\(y=0\\) på x‑aksen, så \\(\\frac{dy}{dx}=0\\).",
+     "explanation": "Når \\(y\\) er nul, giver differentialligningen en hældning på nul. (9:06)",
+     "evidence": "The slope will always be 0 because y will always be 0 along the x-axis.",
+     "t": 546.4,
+     "cite": "9:06",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 12
+    }
+   ],
+   "transcript_from": "8:04",
+   "transcript_to": "10:05"
+  },
+  {
+   "i": 5,
+   "start": 604.8,
+   "end": 726.6,
+   "questions": [
+    {
+     "type": "short",
+     "question": "Hvilken differentialligning beskriver retningsfeltet (hældningen) i videoen?",
+     "answer": "dy/dx = x - y",
+     "explanation": "Slået ud fra udregningen \"x minus y\" som giver hældningen. (10:43)",
+     "evidence": "x, which is one, minus y, which is negative one. And this is equal to two.",
+     "t": 643.0,
+     "cite": "10:43",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 13
+    }
+   ],
+   "transcript_from": "10:05",
+   "transcript_to": "12:07"
+  },
+  {
+   "i": 6,
+   "start": 726.6,
+   "end": 875.12,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "If the initial condition is on the left side of the yellow line, what does the solution do?",
+     "options": [
+      "It crosses the yellow line",
+      "It diverges away from the yellow line",
+      "It stays constant on the yellow line",
+      "It approaches the yellow line but never crosses it"
+     ],
+     "answer_index": 3,
+     "explanation": "Løsningen nærmer sig den gule linje men krydser den aldrig. (12:44)",
+     "evidence": "it looks like that this function just gets closer and closer to the yellow line, but actually never crosses it",
+     "t": 763.9,
+     "cite": "12:44",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 14
+    },
+    {
+     "type": "mc",
+     "question": "According to the video, what must an approximate solution drawn from a slope field never do?",
+     "options": [
+      "Be too steep",
+      "Cross the asymptotic line",
+      "Have the correct initial condition",
+      "Contain discontinuities"
+     ],
+     "answer_index": 1,
+     "explanation": "En tilnærmet løsning må ikke krydse den asymptotiske adfærd. (13:49)",
+     "evidence": "you should never cross asymptotic behavior uh in your slope field with your approximate solution",
+     "t": 829.2,
+     "cite": "13:49",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 15
+    },
+    {
+     "type": "short",
+     "question": "Hvad sker der med en løsning, der starter præcis på asymptoten?",
+     "answer": "Den forbliver på asymptoten og forlader den aldrig.",
+     "explanation": "Hvis startbetingelsen ligger på asymptoten, kan løsningen ikke forlade den. (14:14)",
+     "evidence": "you should never leave the asymptote",
+     "t": 854.2,
+     "cite": "14:14",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 16
+    }
+   ],
+   "transcript_from": "12:07",
+   "transcript_to": "14:35"
+  }
+ ]
+}

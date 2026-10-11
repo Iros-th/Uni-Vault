@@ -1,0 +1,439 @@
+{
+ "schema": 1,
+ "videoId": "ZrwVIxnPp-8",
+ "title": "Arithmetic and Geometric - Implicitly/Explicitly Defined Sequences - Convergence and Divergence",
+ "map_title": "Arithmetic and Geometric / Implicit-Explicit Sequences, convergence",
+ "channel": "Computer Engineering Jitty",
+ "course": "Differential Equations and Infinite Series",
+ "source_map": "Courses/Differential Equations and Infinite Series/Speedrun Map.md",
+ "map_line": 303,
+ "captions": {
+  "lang": "en",
+  "auto": true,
+  "cache": "tools/videoquiz/.cache/transcripts/ZrwVIxnPp-8.json"
+ },
+ "generated_at": "2026-10-07T19:54:49",
+ "models": [
+  "gpt-oss:120b-cloud"
+ ],
+ "window_seconds": 120.0,
+ "deck_slug": "Quizzes/Kort/ZrwVIxnPp-8",
+ "rejected_by_validator": 6,
+ "windows": [
+  {
+   "i": 0,
+   "start": 0.0,
+   "end": 120.08,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad karakteriserer en aritmetisk sekvens?",
+     "options": [
+      "Tallene vokser med kvadrater",
+      "Forskellen mellem på hinanden følgende tal er konstant",
+      "Tallene skifter fortegn hver gang",
+      "Forholdet mellem på hinanden følgende tal er konstant"
+     ],
+     "answer_index": 1,
+     "explanation": "I en aritmetisk sekvens er forskellen mellem på hinanden følgende tal konstant. (0:51)",
+     "evidence": "the difference between the numbers is a constant value.",
+     "t": 50.9,
+     "cite": "0:51",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 0
+    },
+    {
+     "type": "mc",
+     "question": "Hvordan får man hvert næste led i en geometrisk sekvens?",
+     "options": [
+      "Ved at multiplicere det forrige led med et konstant tal",
+      "Ved at trække et konstant tal fra det forrige led",
+      "Ved at lægge et konstant tal til det forrige led",
+      "Ved at dividere det forrige led med et konstant tal"
+     ],
+     "answer_index": 0,
+     "explanation": "I en geometrisk sekvens multipliceres hvert led med en konstant faktor. (1:03)",
+     "evidence": "geometric sequence instead of adding or subtracting, you are multiplying.",
+     "t": 62.6,
+     "cite": "1:03",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 1
+    },
+    {
+     "type": "short",
+     "question": "Hvordan noteres den n‑te term i en sekvens?",
+     "answer": "$a_n$",
+     "explanation": "Notation $a_n$ bruges til at betegne den n‑te term. (1:54)",
+     "evidence": "you would write down a of n a of n.",
+     "t": 114.3,
+     "cite": "1:54",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 2
+    }
+   ],
+   "transcript_from": "0:00",
+   "transcript_to": "2:00"
+  },
+  {
+   "i": 1,
+   "start": 120.08,
+   "end": 241.52,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad er $a_5$ i den viste sekvens?",
+     "options": [
+      "4",
+      "10",
+      "6",
+      "8"
+     ],
+     "answer_index": 3,
+     "explanation": "$a_5$ er 8, fordi femte led i sekvensen er 8. (2:15)",
+     "evidence": "Well, a of five would be eight, right?",
+     "t": 135.4,
+     "cite": "2:15",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 3
+    },
+    {
+     "type": "mc",
+     "question": "I en geometrisk sekvens angiver $n$ hvad?",
+     "options": [
+      "summen af leddene",
+      "leddets nummer",
+      "den fælles ratio",
+      "værdien af leddet"
+     ],
+     "answer_index": 1,
+     "explanation": "$n$ betegner leddets nummer, ikke selve værdien. (2:42)",
+     "evidence": "term only represents the term number, not the value of the term.",
+     "t": 161.5,
+     "cite": "2:42",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 4
+    },
+    {
+     "type": "short",
+     "question": "Hvordan skrives en eksplicit defineret funktion for en sekvens?",
+     "answer": "$a_n = f(n)$",
+     "explanation": "En eksplicit funktion har $a_n$ isoleret og lig med en funktion af $n$. (3:52)",
+     "evidence": "a of n will be equal to some function of n.",
+     "t": 231.6,
+     "cite": "3:52",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 5
+    }
+   ],
+   "transcript_from": "2:00",
+   "transcript_to": "4:02"
+  },
+  {
+   "i": 2,
+   "start": 241.52,
+   "end": 362.96,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad er værdien af $a_1$ for den aritmetiske følge $a_n = 3n - 1$?",
+     "options": [
+      "1",
+      "0",
+      "2",
+      "3"
+     ],
+     "answer_index": 1,
+     "explanation": "Når $n=1$ giver udtrykket $3\\cdot1-1=0$, så $a_1=0$. (4:21)",
+     "evidence": "a of 1 technically is equal to zero.",
+     "t": 261.3,
+     "cite": "4:21",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 6
+    },
+    {
+     "type": "mc",
+     "question": "Hvilken eksplicit formel beskriver den geometriske følge 1, 2, 4, 8, 16?",
+     "options": [
+      "$a_n = 2^{n}$",
+      "$a_n = 2^{n-1}$",
+      "$a_n = 2n$",
+      "$a_n = n^2$"
+     ],
+     "answer_index": 1,
+     "explanation": "Følgen fordobles hver gang, så $a_n = 2^{n-1}$ giver 1,2,4,8,16. (5:47)",
+     "evidence": "a of n would be equal to 2 ^ of n minus one",
+     "t": 347.2,
+     "cite": "5:47",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 7
+    },
+    {
+     "type": "short",
+     "question": "Hvad er $a_1$ for den geometriske følge, når man bruger den eksplicitte formel?",
+     "answer": "1",
+     "explanation": "Ved $n=1$ giver $2^{1-1}=2^0=1$. (5:47)",
+     "evidence": "a of n would be equal to 2 ^ of n minus one",
+     "t": 347.2,
+     "cite": "5:47",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 8
+    }
+   ],
+   "transcript_from": "4:02",
+   "transcript_to": "6:03"
+  },
+  {
+   "i": 3,
+   "start": 362.96,
+   "end": 483.6,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad er værdien af det femte led i den eksplicit definerede sekvens?",
+     "options": [
+      "8",
+      "4",
+      "31",
+      "16"
+     ],
+     "answer_index": 3,
+     "explanation": "Det femte led beregnes som $2^{5-1}=2^4=16$. (6:18)",
+     "evidence": "fifth term 2 ^ of 5 minus one. Well this is equal to 2 ^ 4 which is equal to 16.",
+     "t": 378.3,
+     "cite": "6:18",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 9
+    },
+    {
+     "type": "mc",
+     "question": "Ifølge den rekursive definition $a_n = a_{n-1}+2$, hvad er $a_3$ når $a_2 = 2$?",
+     "options": [
+      "4",
+      "6",
+      "2",
+      "8"
+     ],
+     "answer_index": 0,
+     "explanation": "Man får $a_3 = a_2 + 2 = 2 + 2 = 4$. (7:54)",
+     "evidence": "a of three ... a of two is equal to two. And we if we add two to that we get four.",
+     "t": 474.1,
+     "cite": "7:54",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 10
+    },
+    {
+     "type": "short",
+     "question": "Skriv den rekursive formel for den implicit definerede sekvens.",
+     "answer": "$a_n = a_{n-1} + 2$",
+     "explanation": "Formlen beskriver, at hvert led afhænger af det foregående plus 2. (7:16)",
+     "evidence": "a of n is equal to a of n minus one + 2",
+     "t": 435.5,
+     "cite": "7:16",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 11
+    }
+   ],
+   "transcript_from": "6:03",
+   "transcript_to": "8:04"
+  },
+  {
+   "i": 4,
+   "start": 483.6,
+   "end": 605.12,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad er den tredje termværdi i sekvensen som nævnes i starten?",
+     "options": [
+      "4",
+      "5",
+      "2",
+      "3"
+     ],
+     "answer_index": 0,
+     "explanation": "Den tredje term er angivet til at være fire. (8:04)",
+     "evidence": "Four is the third term value of this sequence.",
+     "t": 483.6,
+     "cite": "8:04",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 12
+    },
+    {
+     "type": "mc",
+     "question": "Hvordan kan man omskrive den implicitte sekvens som nævnes i videoen?",
+     "options": [
+      "$a_{n}=a_{n-1}$",
+      "$a_{n+1}=a_{n+2}$",
+      "$a_{n+2}=a_{n+1}$",
+      "$a_{n}=a_{n+2}$"
+     ],
+     "answer_index": 2,
+     "explanation": "Videoen viser, at man kan skrive a_{n+2}=a_{n+1}. (8:23)",
+     "evidence": "you have a of n + 2 is equal to a of n plus one",
+     "t": 502.6,
+     "cite": "8:23",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 13
+    },
+    {
+     "type": "short",
+     "question": "Hvis du vil finde femte term $a_5$, hvilken værdi af $n$ skal du indsætte i relationen $a_{n+1}=a_n$?",
+     "answer": "4",
+     "explanation": "For at få $a_{5}$ skal $n+1=5$, så $n=4$. (8:54)",
+     "evidence": "n + one would mean that n is equal to four",
+     "t": 534.5,
+     "cite": "8:54",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 14
+    }
+   ],
+   "transcript_from": "8:04",
+   "transcript_to": "10:05"
+  },
+  {
+   "i": 5,
+   "start": 605.12,
+   "end": 726.48,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvorfor kan man i dette tilfælde ikke finde $a_1$?",
+     "options": [
+      "Because we need $a_0$ instead.",
+      "Because $a_1$ is undefined.",
+      "Because $a_1$ would require $n=0$.",
+      "Because the sequence starts at $n=2$."
+     ],
+     "answer_index": 2,
+     "explanation": "Man kan ikke finde $a_1$ fordi det ville betyde at $n$ er nul. (10:18)",
+     "evidence": "So that's why you can't really find a of one in this case because a of one would mean that n is equal to zero here",
+     "t": 618.5,
+     "cite": "10:18",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 15
+    },
+    {
+     "type": "mc",
+     "question": "Hvilket udsagn om eksplicit definerede funktioner er korrekt?",
+     "options": [
+      "$a_n$ appears on both sides of the equation.",
+      "They are always recursive.",
+      "They must include $a_{n+1}$ on the left side.",
+      "$a_n$ appears only on one side of the equation."
+     ],
+     "answer_index": 3,
+     "explanation": "Eksplicit definerede funktioner har kun $a_n$ på den ene side af ligningen. (11:40)",
+     "evidence": "explicitly defined functions just have a of n. That is all on one side of the equation.",
+     "t": 699.9,
+     "cite": "11:40",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 16
+    },
+    {
+     "type": "short",
+     "question": "According to the video, how is an explicitly defined function characterized in terms of $a_n$?",
+     "answer": "It has $a_n$ on only one side of the equation.",
+     "explanation": "Eksplcitt definerede funktioner har $a_n$ kun på én side af ligningen. (11:40)",
+     "evidence": "explicitly defined functions just have a of n. That is all on one side of the equation.",
+     "t": 699.9,
+     "cite": "11:40",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 17
+    }
+   ],
+   "transcript_from": "10:05",
+   "transcript_to": "12:06"
+  },
+  {
+   "i": 6,
+   "start": 726.48,
+   "end": 848.0,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad sker der, hvis man lægger tallene 1,2,3,4,… sammen helt ud til uendelig?",
+     "options": [
+      "Summen går mod uendelig (rækken divergerer).",
+      "Summen oscillerer mellem to værdier.",
+      "Summen konvergerer til et endeligt tal.",
+      "Summen bliver nul."
+     ],
+     "answer_index": 0,
+     "explanation": "Summen af de naturlige tal vokser uden grænse, så rækken divergerer. (13:59)",
+     "evidence": "you get infinity, right? So that means that this sequence diverges.",
+     "t": 839.4,
+     "cite": "13:59",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 18
+    },
+    {
+     "type": "short",
+     "question": "Ifølge videoen, hvad er værdien af $a_5$ i det givne eksempel?",
+     "answer": "5",
+     "explanation": "Ved at anvende rekursionsformlen får man $a_5 = a_4 + a_3 = 2 + 3 = 5$. (13:17)",
+     "evidence": "Therefore, 2 + 3 should equals a of 5, which it does. Five is equal to five.",
+     "t": 797.4,
+     "cite": "13:17",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 19
+    }
+   ],
+   "transcript_from": "12:06",
+   "transcript_to": "14:08"
+  },
+  {
+   "i": 7,
+   "start": 848.0,
+   "end": 1004.32,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "If the sum of the terms of a sequence grows without bound, what does the speaker say about the sequence?",
+     "options": [
+      "It diverges (goes to infinity or negative infinity)",
+      "It oscillates between positive and negative values",
+      "It converges to a finite limit",
+      "It becomes constant after a certain index"
+     ],
+     "answer_index": 0,
+     "explanation": "En uendelig vækst i summen betyder divergens. (14:08)",
+     "evidence": "if the sequence after adding everything up goes to infinity then your sequence diverges. That's what we call ... or going to negative infinity as well.",
+     "t": 848.0,
+     "cite": "14:08",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 20
+    },
+    {
+     "type": "mc",
+     "question": "Hvilken faktor beskriver forholdet mellem på hinanden følgende led i den givne konvergerende sekvens?",
+     "options": [
+      "2",
+      "1/4",
+      "4",
+      "1/2"
+     ],
+     "answer_index": 1,
+     "explanation": "Hvert led er en fjerdedel af det foregående. (14:41)",
+     "evidence": "the pattern between all these are that they're 1/4 of each other. So this is 1/4 of the next one.",
+     "t": 880.6,
+     "cite": "14:41",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 21
+    },
+    {
+     "type": "short",
+     "question": "Hvad kaldes det, når man lægger alle led i en sekvens sammen?",
+     "answer": "serie",
+     "explanation": "Summen af alle led i en sekvens betegnes som en serie. (16:26)",
+     "evidence": "if you add all the numbers in a sequence, it's called a series.",
+     "t": 986.3,
+     "cite": "16:26",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 22
+    }
+   ],
+   "transcript_from": "14:08",
+   "transcript_to": "16:44"
+  }
+ ]
+}

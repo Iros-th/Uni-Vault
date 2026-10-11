@@ -1,0 +1,303 @@
+{
+ "schema": 1,
+ "videoId": "tParkLxuLmo",
+ "title": "Worked Examples on Auxiliary Equation w/ Repeated Roots - Differential Equations",
+ "map_title": "Auxiliary Equation with Repeated Roots",
+ "channel": "Computer Engineering Jitty",
+ "course": "Differential Equations and Infinite Series",
+ "source_map": "Courses/Differential Equations and Infinite Series/Speedrun Map.md",
+ "map_line": 60,
+ "captions": {
+  "lang": "en",
+  "auto": true,
+  "cache": "tools/videoquiz/.cache/transcripts/tParkLxuLmo.json"
+ },
+ "generated_at": "2026-10-07T19:43:28",
+ "models": [
+  "gpt-oss:120b-cloud"
+ ],
+ "window_seconds": 120.0,
+ "deck_slug": "Quizzes/Kort/tParkLxuLmo",
+ "rejected_by_validator": 14,
+ "windows": [
+  {
+   "i": 0,
+   "start": 0.0,
+   "end": 121.28,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Ifølge videoen, hvordan konstruerer man den auxiliary ligning fra en konstant‑koefficient homogen differentialligning?",
+     "options": [
+      "Erstat y'' med r^2, y' med r, og y med ingenting, behold koefficienterne.",
+      "Erstat y'' med r, y' med r, og y med 1.",
+      "Erstat y'' med r, y' med r^2, og y med koefficienten.",
+      "Erstat y'' med r^2, y' med r^2, og y med r."
+     ],
+     "answer_index": 0,
+     "explanation": "Videoen forklarer, at man erstatter y'' med r^2, y' med r og y med ingenting. (1:04)",
+     "evidence": "you turn the y double prime into r squared, turn the y prime into r, and then just turn the y into just nothing",
+     "t": 64.4,
+     "cite": "1:04",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 0
+    },
+    {
+     "type": "mc",
+     "question": "Hvilken form antages som løsning for en konstant‑koefficient homogen differentialligning?",
+     "options": [
+      "$e^{r t^2}$",
+      "$e^{rt}$",
+      "$e^{t/r}$",
+      "$e^{r^2 t}$"
+     ],
+     "answer_index": 1,
+     "explanation": "Videoen siger, at man gætter på løsningen e^{rt}. (1:25)",
+     "evidence": "our guess for the solution to the differential equation is e to the rt.",
+     "t": 85.0,
+     "cite": "1:25",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 1
+    },
+    {
+     "type": "short",
+     "question": "Hvad er den foreslåede form for løsningen på den homogene differentialligning?",
+     "answer": "$e^{rt}$",
+     "explanation": "Videoen siger, at gættet til løsningen er e^{rt}. (1:25)",
+     "evidence": "our guess for the solution to the differential equation is e to the rt",
+     "t": 85.0,
+     "cite": "1:25",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 2
+    }
+   ],
+   "transcript_from": "0:00",
+   "transcript_to": "2:01"
+  },
+  {
+   "i": 1,
+   "start": 121.28,
+   "end": 243.04,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvor mange uafhængige løsninger forventes en anden‑ordens konstant‑koefficient homogen differentialligning at have?",
+     "options": [
+      "to",
+      "tre",
+      "fire",
+      "en"
+     ],
+     "answer_index": 0,
+     "explanation": "For en anden‑ordens ligning er den generelle regel to løsninger. (3:37)",
+     "evidence": "you would expect two solutions. Right? This is just a general rule.",
+     "t": 216.8,
+     "cite": "3:37",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 3
+    },
+    {
+     "type": "short",
+     "question": "Hvad er den generelle løsningsform for den ikke‑gentagne rod‑case med r=2 og r=-4?",
+     "answer": "$y(t)=C_1 e^{2t}+C_2 e^{-4t}$",
+     "explanation": "Når r‑værdierne er 2 og -4, giver de to eksponentielle termer som vist. (2:48)",
+     "evidence": "the solutions to the homogeneous differential equation are e to the 2t and and e to the -4t.",
+     "t": 168.0,
+     "cite": "2:48",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 4
+    }
+   ],
+   "transcript_from": "2:01",
+   "transcript_to": "4:03"
+  },
+  {
+   "i": 2,
+   "start": 243.04,
+   "end": 364.08,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Når én løsning til den homogene differentialligning er $e^{3t}$, hvad er den anden lineært uafhængige løsning?",
+     "options": [
+      "$e^{t}$",
+      "$e^{3t^2}$",
+      "$t e^{3t}$",
+      "$3t e^{3t}$"
+     ],
+     "answer_index": 2,
+     "explanation": "Den anden løsning fås ved at multiplicere den første med den afhængige variabel $t$. (4:09)",
+     "evidence": "You just slap the dependent variable right in front of it, which is just a t.",
+     "t": 249.2,
+     "cite": "4:09",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 5
+    },
+    {
+     "type": "mc",
+     "question": "Hvilken teknik kaldes for at finde den anden lineært uafhængige løsning?",
+     "options": [
+      "method of undetermined coefficients",
+      "Laplace transform",
+      "reduction of order",
+      "variation of parameters"
+     ],
+     "answer_index": 2,
+     "explanation": "Teknikken der giver den anden løsning hedder reduction of order. (4:29)",
+     "evidence": "The technique is called reduction of order",
+     "t": 269.2,
+     "cite": "4:29",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 6
+    },
+    {
+     "type": "short",
+     "question": "Skriv den generelle løsning til den homogene differentialligning med rødderne $r=3$ (dobbelt rod).",
+     "answer": "$c_1 e^{3t} + c_2 t e^{3t}$",
+     "explanation": "Den generelle løsning består af en konstant ganget med hver af de to uafhængige løsninger. (5:26)",
+     "evidence": "So, you put c1 e to the 3t plus again another constant t times e to 3t. And this right here is the general solution to the homogeneous constant coefficient differential equation.",
+     "t": 326.1,
+     "cite": "5:26",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 7
+    }
+   ],
+   "transcript_from": "4:03",
+   "transcript_to": "6:04"
+  },
+  {
+   "i": 3,
+   "start": 364.08,
+   "end": 485.0,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvilken funktion udgør den anden lineært uafhængige løsning ved den gentagne rod r = 1/2?",
+     "options": [
+      "$e^{\\frac12 t}$",
+      "$e^{t}$",
+      "$t e^{\\frac12 t}$",
+      "$t^{2} e^{\\frac12 t}$"
+     ],
+     "answer_index": 2,
+     "explanation": "Den anden løsning fås ved at multiplicere den første med t. (7:37)",
+     "evidence": "t times e to the 1/2 times t.",
+     "t": 456.9,
+     "cite": "7:37",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 8
+    }
+   ],
+   "transcript_from": "6:04",
+   "transcript_to": "8:05"
+  },
+  {
+   "i": 4,
+   "start": 485.0,
+   "end": 606.12,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvor mange lineært uafhængige løsninger forventes for en tredjeordens homogen differentialligning?",
+     "options": [
+      "4",
+      "2",
+      "1",
+      "3"
+     ],
+     "answer_index": 3,
+     "explanation": "En tredjeordens ligning har tre uafhængige løsninger. (8:17)",
+     "evidence": "A third-order will have three solutions.",
+     "t": 496.7,
+     "cite": "8:17",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 9
+    },
+    {
+     "type": "mc",
+     "question": "Hvor mange lineært uafhængige løsninger skal en tredjeordens differentialligning med en tredobbelt rod have?",
+     "options": [
+      "To",
+      "En",
+      "Fire",
+      "Tre"
+     ],
+     "answer_index": 3,
+     "explanation": "En tredjeordens ligning med en tredobbelt rod giver tre lineært uafhængige løsninger. (9:31)",
+     "evidence": "we're going to have three separate solutions, three linearly independent solutions.",
+     "t": 571.0,
+     "cite": "9:31",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 10
+    },
+    {
+     "type": "short",
+     "question": "Hvad er den (gentagne) rod til den auxiliaire ligning?",
+     "answer": "r = 1",
+     "explanation": "Den eneste rod er $r=1$, som er gentaget. (9:13)",
+     "evidence": "the solution to this auxiliary equation is just r is equal to 1.",
+     "t": 552.6,
+     "cite": "9:13",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 11
+    }
+   ],
+   "transcript_from": "8:05",
+   "transcript_to": "10:06"
+  },
+  {
+   "i": 5,
+   "start": 606.12,
+   "end": 704.72,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad er den generelle løsning for en tredjeordens konstant‑koefficient homogen differentialligning med en tredobbelt gentaget rod r=1?",
+     "options": [
+      "$c1 e^{t} + c2 e^{t} + c3 e^{t}$",
+      "$c1 e^{t} + c2 t e^{2t} + c3 t^{2} e^{3t}$",
+      "$c1 e^{t} + c2 t e^{t} + c3 t^{2} e^{t}$",
+      "$c1 e^{t} + c2 t^{2} e^{t} + c3 t^{3} e^{t}$"
+     ],
+     "answer_index": 2,
+     "explanation": "Den korrekte form er $c_1 e^{t}+c_2 t e^{t}+c_3 t^{2}e^{t}$ som nævnt i videoen. (10:50)",
+     "evidence": "c1 e to the t plus c2 t e to the t plus c3 t squared e to the t.",
+     "t": 650.2,
+     "cite": "10:50",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 12
+    },
+    {
+     "type": "mc",
+     "question": "Metoden med at multiplicere med $t$ gælder kun for hvilken type differentialligninger?",
+     "options": [
+      "Ikke‑lineære variable‑koefficient differentialligninger",
+      "Ikke‑homogene differentialligninger",
+      "Konstant‑koefficient homogene differentialligninger",
+      "Første‑ordens separable differentialligninger"
+     ],
+     "answer_index": 2,
+     "explanation": "Videoen understreger, at reglen kun gælder for konstant‑koefficient homogene ligninger. (11:32)",
+     "evidence": "Only in the case for constant coefficient homogeneous differential equations.",
+     "t": 691.6,
+     "cite": "11:32",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 13
+    },
+    {
+     "type": "short",
+     "question": "Hvad skal du \"slap\" foran den eksponentielle term for at få en lineært uafhængig løsning ved gentagne rødder?",
+     "answer": "t",
+     "explanation": "Man multiplicerer med $t$ for hver ekstra multiplicitet. (11:25)",
+     "evidence": "you just slap a t in the front.",
+     "t": 685.3,
+     "cite": "11:25",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 14
+    }
+   ],
+   "transcript_from": "10:06",
+   "transcript_to": "11:45"
+  }
+ ]
+}

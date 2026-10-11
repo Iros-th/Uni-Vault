@@ -1,0 +1,476 @@
+{
+ "schema": 1,
+ "videoId": "O_fexkwNOU8",
+ "title": "Introduction to Separable Differential Equations w/ Practice Problems",
+ "map_title": "Separable DEs",
+ "channel": "Computer Engineering Jitty",
+ "course": "Differential Equations and Infinite Series",
+ "source_map": "Courses/Differential Equations and Infinite Series/Speedrun Map.md",
+ "map_line": 100,
+ "captions": {
+  "lang": "en",
+  "auto": true,
+  "cache": "tools/videoquiz/.cache/transcripts/O_fexkwNOU8.json"
+ },
+ "generated_at": "2026-10-07T19:45:41",
+ "models": [
+  "gpt-oss:120b-cloud"
+ ],
+ "window_seconds": 120.0,
+ "deck_slug": "Quizzes/Kort/O_fexkwNOU8",
+ "rejected_by_validator": 8,
+ "windows": [
+  {
+   "i": 0,
+   "start": 0.0,
+   "end": 120.8,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad er formålet med en separabel differentialligning?",
+     "options": [
+      "At finde en konstant løsning",
+      "At eliminere alle differentialer",
+      "At gøre ligningen lineær",
+      "At flytte alle y‑variabler til den ene side og x‑variabler til den anden side"
+     ],
+     "answer_index": 3,
+     "explanation": "En separabel differentialligning adskiller variablerne, så y‑variabler er på den ene side og x‑variabler på den anden. (0:34)",
+     "evidence": "what do separable differential equations do? Well, they try to move all variables for y on one side of an equation and all variables for x on another.",
+     "t": 34.5,
+     "cite": "0:34",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 0
+    },
+    {
+     "type": "mc",
+     "question": "Når man multiplicerer begge sider af $\\frac{dy}{dx}=3x^2$ med $dx$, hvad får man?",
+     "options": [
+      "$\\frac{dy}{dx} = 3x^2 dx$",
+      "$dx = 3x^2 dy$",
+      "$dy = 3x^2$",
+      "$dy = 3x^2 dx$"
+     ],
+     "answer_index": 3,
+     "explanation": "Multiplikation med $dx$ giver $dy = 3x^2 dx$, så variablerne er adskilt. (0:55)",
+     "evidence": "multiply dx on both sides and we get left off with dy is equal to 3x^2 dx.",
+     "t": 54.8,
+     "cite": "0:55",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 1
+    },
+    {
+     "type": "short",
+     "question": "Hvad er integralet af $1$ med hensyn til $y$?",
+     "answer": "$y$",
+     "explanation": "Integralen af 1 med hensyn til y er simpelthen y. (1:55)",
+     "evidence": "The integral of one with respect to y is just y.",
+     "t": 115.0,
+     "cite": "1:55",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 2
+    }
+   ],
+   "transcript_from": "0:00",
+   "transcript_to": "2:01"
+  },
+  {
+   "i": 1,
+   "start": 120.8,
+   "end": 242.16,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad er den ubestemte integral af $3x^2$ med hensyn til $x$?",
+     "options": [
+      "$3x^3 + C$",
+      "$x^2 + C$",
+      "$9x^2 + C$",
+      "$x^3 + C$"
+     ],
+     "answer_index": 3,
+     "explanation": "Integralet af $3x^2$ er $x^3$ plus en vilkårlig konstant. (2:13)",
+     "evidence": "the integral of 3x^2 is just x cubed, right? plus some arbitrary constant.",
+     "t": 132.9,
+     "cite": "2:13",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 3
+    },
+    {
+     "type": "mc",
+     "question": "Hvorfor kan man udelade konstanten på den ene side, når man integrerer begge sider af en separabel differentialligning?",
+     "options": [
+      "Fordi differentialligningen er lineær.",
+      "Fordi integrationskonstanten kun gælder for x‑variablen.",
+      "Fordi konstanten på y‑siden altid er nul.",
+      "Fordi konstanterne på begge sider kan kombineres til én konstant."
+     ],
+     "answer_index": 3,
+     "explanation": "Man kan blot kombinere $C_1$ og $C_2$ til en enkelt konstant. (2:52)",
+     "evidence": "you can just combine the c1 with the c2.",
+     "t": 171.7,
+     "cite": "2:52",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 4
+    },
+    {
+     "type": "short",
+     "question": "Efter at have divideret begge sider af $dy = \\sin(x)\\, y\\, dx$ med $y$, hvad er den resulterende differentialudtryk?",
+     "answer": "$\\frac{dy}{y} = \\sin(x)\\,dx$",
+     "explanation": "Division med $y$ giver $dy/y = \\sin(x)dx$. (3:57)",
+     "evidence": "so if we divide both sides by y, we get left off with dy over",
+     "t": 236.8,
+     "cite": "3:57",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 5
+    }
+   ],
+   "transcript_from": "2:01",
+   "transcript_to": "4:02"
+  },
+  {
+   "i": 2,
+   "start": 242.16,
+   "end": 363.36,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad er integralet af \\(\\frac{1}{y}\\,dy\\)?",
+     "options": [
+      "$\\ln y$",
+      "e^y",
+      "1/y",
+      "y"
+     ],
+     "answer_index": 0,
+     "explanation": "Integralet af \\(1/y\\) med hensyn til \\(y\\) er den naturlige logaritme. (4:53)",
+     "evidence": "that's just the natural logarithm of y.",
+     "t": 293.4,
+     "cite": "4:53",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 6
+    },
+    {
+     "type": "mc",
+     "question": "Hvilket udtryk får vi for \\(y\\) efter integration og eksponentiering?",
+     "options": [
+      "$y = \\ln(\\sin x)$",
+      "$y = \\sin x + C$",
+      "$y = -\\cos x + C$",
+      "$y = e^{-\\cos x + C_1}$"
+     ],
+     "answer_index": 3,
+     "explanation": "Efter at have eksponentieret \\(\\ln y = -\\cos x + C_1\\) får vi \\(y = e^{-\\cos x + C_1}\\). (5:48)",
+     "evidence": "y is equal to e ^ of negative cosine of x plus c of 1.",
+     "t": 348.4,
+     "cite": "5:48",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 7
+    },
+    {
+     "type": "short",
+     "question": "Hvad er næste skridt efter at have \\(\\ln y = -\\cos x + C_1\\)?",
+     "answer": "Eksponentiere begge sider",
+     "explanation": "Man anvender eksponentialfunktionen for at fjerne logaritmen. (5:36)",
+     "evidence": "E to the power of the natural log of y is equal to e to the power of cosine of x plus c of 1.",
+     "t": 335.8,
+     "cite": "5:36",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 8
+    }
+   ],
+   "transcript_from": "4:02",
+   "transcript_to": "6:03"
+  },
+  {
+   "i": 3,
+   "start": 363.36,
+   "end": 487.68,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvordan kan udtrykket $e^{\\cos x + c_1}$ skrives ved hjælp af egenskaberne for eksponentialfunktioner?",
+     "options": [
+      "$e^{\\cos x + c_1}$ (uændret)",
+      "$e^{\\cos x}\\cdot e^{c_1}$",
+      "$e^{\\cos x} + e^{c_1}$",
+      "$\\cos(e^{x})\\cdot e^{c_1}$"
+     ],
+     "answer_index": 1,
+     "explanation": "Eksponentialfunktionens produktregel giver $e^{a+b}=e^a\\cdot e^b$. (6:14)",
+     "evidence": "from e^ cosine of x plus c1 to e^ cosine of x times e to the power of c1.",
+     "t": 374.3,
+     "cite": "6:14",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 9
+    },
+    {
+     "type": "mc",
+     "question": "Hvorfor er differentialligningen $dy = (x^2 + y)\\,dx$ ikke separabel?",
+     "options": [
+      "Den har ingen konstant term.",
+      "Den indeholder et $y$-led på den side, hvor kun $x$‑variable må forekomme.",
+      "Den kan ikke integreres fordi den er lineær.",
+      "Den indeholder et $x$-led på den side, hvor kun $y$‑variable må forekomme."
+     ],
+     "answer_index": 3,
+     "explanation": "Efter at have flyttet $y\\,dx$ til venstre, er $x$ stadig på den side, der kun skal indeholde $y$‑variable. (7:38)",
+     "evidence": "This x is still on this side. This this side should be left for the y variables.",
+     "t": 458.5,
+     "cite": "7:38",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 10
+    },
+    {
+     "type": "short",
+     "question": "Hvad bliver $e^{c_1}$ til i løsningsudtrykket?",
+     "answer": "en konstant (ofte betegnet $C$)",
+     "explanation": "$e^{c_1}$ er eksponentialen af en konstant og er derfor selv en konstant. (6:24)",
+     "evidence": "E^ c1. That's just e to the power of a constant.",
+     "t": 384.0,
+     "cite": "6:24",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 11
+    }
+   ],
+   "transcript_from": "6:03",
+   "transcript_to": "8:08"
+  },
+  {
+   "i": 4,
+   "start": 487.68,
+   "end": 609.68,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Ifølge videoen, hvilken form skal højre side af en separabel differentialligning have?",
+     "options": [
+      "en forskel mellem to funktioner",
+      "en vilkårlig algebraisk udtryk",
+      "et produkt af en funktion af x og en funktion af y",
+      "en sum af en funktion af x og en funktion af y"
+     ],
+     "answer_index": 2,
+     "explanation": "Den højre side skal kunne skrives som et produkt (eller division) af en funktion af x og en funktion af y. (8:57)",
+     "evidence": "you need to be able to represent your expression as a function of x times a function of y.",
+     "t": 537.4,
+     "cite": "8:57",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 12
+    },
+    {
+     "type": "mc",
+     "question": "Efter at have divideret med $x^3+3x$, hvad får de for $\\frac{dy}{dx}$?",
+     "options": [
+      "$3x^2 + \\frac{3}{x^3 + 3x}$",
+      "$3x^2 + 3$",
+      "$\\frac{3x^2}{x^3 + 3x} + 3$",
+      "$\\frac{3x^2 + 3}{x^3 + 3x}$"
+     ],
+     "answer_index": 0,
+     "explanation": "Resultatet er $3x^2$ plus brøken $\\frac{3}{x^3+3x}$. (10:01)",
+     "evidence": "dy over dx is equal to 3x^2 + 3 over x ^ 3 + 3x.",
+     "t": 600.7,
+     "cite": "10:01",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 13
+    },
+    {
+     "type": "short",
+     "question": "Efter at have isoleret $\\frac{dy}{dx}$, hvad er udtrykket ifølge videoen?",
+     "answer": "$dy/dx = (3x^2 + 3) / (x^3 + 3x)$",
+     "explanation": "Dette er den form, de opnår ved at dividere begge sider med $x^3+3x$. (9:58)",
+     "evidence": "We have dy over dx is equal to 3x^2 + 3 over x ^ 3 + 3x.",
+     "t": 598.1,
+     "cite": "9:58",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 14
+    }
+   ],
+   "transcript_from": "8:08",
+   "transcript_to": "10:10"
+  },
+  {
+   "i": 5,
+   "start": 609.68,
+   "end": 733.52,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvilken handling udføres først for at gøre differentialligningen separabel?",
+     "options": [
+      "Dividere begge sider med y",
+      "Multiplicere begge sider med 9y",
+      "Lægge dx til begge sider",
+      "Multiplicere begge sider med dx"
+     ],
+     "answer_index": 3,
+     "explanation": "Man multiplicerer med dx for at fjerne dx‑brøket i nævneren. (10:30)",
+     "evidence": "multiply by dx on both sides to cancel out this dx in this denominator",
+     "t": 630.3,
+     "cite": "10:30",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 15
+    },
+    {
+     "type": "mc",
+     "question": "Hvad får vi på venstre side efter at have multipliceret med 9y?",
+     "options": [
+      "9 dy",
+      "9y dx",
+      "y dy",
+      "9y dy"
+     ],
+     "answer_index": 3,
+     "explanation": "Multiplikationen med 9y giver produktet 9y·dy. (11:10)",
+     "evidence": "We get 9 yd dy is equal to",
+     "t": 669.6,
+     "cite": "11:10",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 16
+    },
+    {
+     "type": "short",
+     "question": "Hvad er det næste skridt efter at have opnået ligningen 9y dy = (3x²+3x³+3x) dx?",
+     "answer": "Integrer begge sider",
+     "explanation": "Man skal tage integralet af begge sider for at løse ligningen. (11:31)",
+     "evidence": "the next step is to take an integral",
+     "t": 691.4,
+     "cite": "11:31",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 17
+    }
+   ],
+   "transcript_from": "10:10",
+   "transcript_to": "12:14"
+  },
+  {
+   "i": 6,
+   "start": 733.52,
+   "end": 854.08,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad er integralet af $9y$ med hensyn til $y$?",
+     "options": [
+      "$9\\ln y$",
+      "$\\frac{9}{2}y^2$",
+      "$9y^2$",
+      "$\\frac{y^2}{9}$"
+     ],
+     "answer_index": 1,
+     "explanation": "Integrationen giver en faktor 1/2 foran $y^2$. (12:35)",
+     "evidence": "So we should get 9 y 9 / 2 y^2",
+     "t": 754.7,
+     "cite": "12:35",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 18
+    },
+    {
+     "type": "mc",
+     "question": "Ifølge videoen er integralet af $\\frac{3}{x^3}+3x$ med hensyn til $x$",
+     "options": [
+      "$\\ln(x^3)+3x+C$",
+      "$x^3+3x^2+C$",
+      "$-\\frac{3}{2x^2}+3x+C$",
+      "$\\frac{3}{x^2}+3x+C$"
+     ],
+     "answer_index": 0,
+     "explanation": "Resultatet er den naturlige logaritme af $x^3$ plus $3x$ plus en konstant. (12:45)",
+     "evidence": "It was just the natural logarithm of x cubed plus 3x plus c.",
+     "t": 765.1,
+     "cite": "12:45",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 19
+    },
+    {
+     "type": "short",
+     "question": "Efter at have fået $y^2 = \\frac{2}{9}\\ln(x^3)+3x+\\frac{2}{9}c$, hvilken matematisk operation anvendes for at isolere $y$?",
+     "answer": "Tag kvadratroden af begge sider.",
+     "explanation": "Man fjerner kvadratet ved at tage kvadratroden. (13:38)",
+     "evidence": "We take a square root, right? This is equal to the square t of 2 over 9 natural log x cubed + 3x^ 2 + 2 over 9 * c.",
+     "t": 817.5,
+     "cite": "13:38",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 20
+    }
+   ],
+   "transcript_from": "12:14",
+   "transcript_to": "14:14"
+  },
+  {
+   "i": 7,
+   "start": 854.08,
+   "end": 976.96,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvorfor kan den oprindelige differentialligning ikke løses med den separable metode?",
+     "options": [
+      "Den indeholder kun et produkt af en funktion af x og en funktion af y.",
+      "Den har derivatet på begge sider af ligningen.",
+      "Den er allerede på formen $e^{-y}dy = \\cos x\\,dx$.",
+      "Den indeholder en subtraktion af en funktion af x (\"some function of x minus\")."
+     ],
+     "answer_index": 3,
+     "explanation": "Ligningen indeholder et minus‑tegn mellem funktioner af x, så den kan ikke skrives som produkt af en funktion af x og en funktion af y. (14:34)",
+     "evidence": "We can't have subtraction. We can't have some function of x minus we need only a function of x times a function of y",
+     "t": 874.1,
+     "cite": "14:34",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 21
+    },
+    {
+     "type": "short",
+     "question": "Hvilken integral skal tages på begge sider efter separationen?",
+     "answer": "$\\int e^{-y}\\,dy = \\int \\cos x\\,dx$",
+     "explanation": "Efter separationen integreres $e^{-y}dy$ og $\\cos xdx$. (16:10)",
+     "evidence": "Let's go ahead and take the integral of e to the - y d y is equal to the integral of",
+     "t": 969.7,
+     "cite": "16:10",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 22
+    }
+   ],
+   "transcript_from": "14:14",
+   "transcript_to": "16:17"
+  },
+  {
+   "i": 8,
+   "start": 976.96,
+   "end": 1049.84,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad er integralet af \\(\\cos x\\) med hensyn til \\(x\\) ifølge videoen?",
+     "options": [
+      "sine of x + C",
+      "cosine of x",
+      "negative e^{y}",
+      "sine of x plus e"
+     ],
+     "answer_index": 3,
+     "explanation": "Videoen siger, at integralet er \"simply sine of x plus e\". (16:31)",
+     "evidence": "and the integral of cosine of x is just simply sine of x plus e.",
+     "t": 991.3,
+     "cite": "16:31",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 23
+    },
+    {
+     "type": "short",
+     "question": "Hvilken operation anvendes på begge sider for at fjerne eksponentialfunktionen og isolere \\(y\\)?",
+     "answer": "Naturlig logaritme (ln) af begge sider",
+     "explanation": "Logaritmen af en eksponentialfunktion giver eksponenten tilbage. (16:54)",
+     "evidence": "just natural logarithm both sides... it gets rid of the exponential and just leaves the exponent behind which is our negative y",
+     "t": 1013.7,
+     "cite": "16:54",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 24
+    }
+   ],
+   "transcript_from": "16:17",
+   "transcript_to": "17:30"
+  }
+ ]
+}

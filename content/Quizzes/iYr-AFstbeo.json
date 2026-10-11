@@ -1,0 +1,428 @@
+{
+ "schema": 1,
+ "videoId": "iYr-AFstbeo",
+ "title": "Introduction to Homogeneous Constant Coefficient Differential Equations",
+ "map_title": "Intro to Homogeneous Constant Coefficient DEs",
+ "channel": "Computer Engineering Jitty",
+ "course": "Differential Equations and Infinite Series",
+ "source_map": "Courses/Differential Equations and Infinite Series/Speedrun Map.md",
+ "map_line": 60,
+ "captions": {
+  "lang": "en",
+  "auto": true,
+  "cache": "tools/videoquiz/.cache/transcripts/iYr-AFstbeo.json"
+ },
+ "generated_at": "2026-10-07T19:41:11",
+ "models": [
+  "gpt-oss:120b-cloud"
+ ],
+ "window_seconds": 120.0,
+ "deck_slug": "Quizzes/Kort/iYr-AFstbeo",
+ "rejected_by_validator": 29,
+ "windows": [
+  {
+   "i": 0,
+   "start": 0.0,
+   "end": 120.88,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvilken form er den typiske gæt (trial solution) for en konstantkoefficient homogen differentialligning?",
+     "options": [
+      "$r x$",
+      "$e^{rt}$",
+      "$x^3$",
+      "$\\sin(rt)$"
+     ],
+     "answer_index": 1,
+     "explanation": "Eksponentialfunktionen $e^{rt}$ giver den eneste form, der kan løse ligningen. (0:52)",
+     "evidence": "Well, our guess is e to the rt. R being a constant, T being our dependent variable.",
+     "t": 51.6,
+     "cite": "0:52",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 0
+    },
+    {
+     "type": "mc",
+     "question": "If $y = x^3$, hvad er den første afledte $y'$ ifølge videoen?",
+     "options": [
+      "$x^3$",
+      "$3x^2$",
+      "$2x$",
+      "$6x$"
+     ],
+     "answer_index": 1,
+     "explanation": "Den første afledte af $x^3$ er $3x^2$. (1:34)",
+     "evidence": "the derivative of x cubed or y prime is 3x^2",
+     "t": 93.8,
+     "cite": "1:34",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 1
+    },
+    {
+     "type": "short",
+     "question": "Hvad er den anden afledte af $x^3$ som nævnt i videoen?",
+     "answer": "6x",
+     "explanation": "Den anden afledte af $x^3$ er $6x$. (1:34)",
+     "evidence": "So what is x cubed? Well the derivative of x cubed or y prime is 3x^2 and yp prime is 6x.",
+     "t": 93.8,
+     "cite": "1:34",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 2
+    }
+   ],
+   "transcript_from": "0:00",
+   "transcript_to": "2:01"
+  },
+  {
+   "i": 1,
+   "start": 120.88,
+   "end": 242.0,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvilken påstand er korrekt om at bruge et polynomium som gæt til den homogene differentialligning?",
+     "options": [
+      "Termerne er lineært uafhængige og kan ikke annulleres til nul.",
+      "Termerne kan annulleres med passende koefficienter.",
+      "Polynomiegæt opfylder altid differentialligningen.",
+      "Polynomiet er lineært afhængigt."
+     ],
+     "answer_index": 0,
+     "explanation": "Polynomiegæt giver lineært uafhængige termer, så de kan ikke annulleres til nul. (2:07)",
+     "evidence": "all of these terms are linearly independent. We can't cancel each other.",
+     "t": 127.0,
+     "cite": "2:07",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 3
+    },
+    {
+     "type": "short",
+     "question": "Hvad skal begge sider af differentialligningen gøre for at ligningen er korrekt?",
+     "answer": "De skal annullere hinanden til nul (være ens).",
+     "explanation": "Begge sider skal være ens og i dette tilfælde annullere til nul. (2:30)",
+     "evidence": "we need both sides of our equation to be the same. In this case, we need this side of the equation to all cancel out to zero.",
+     "t": 149.8,
+     "cite": "2:30",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 4
+    }
+   ],
+   "transcript_from": "2:01",
+   "transcript_to": "4:02"
+  },
+  {
+   "i": 2,
+   "start": 242.0,
+   "end": 362.0,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad er den første afledte af funktionen $y = e^{rt}$ med hensyn til $t$?",
+     "options": [
+      "$6 e^{rt}$",
+      "$5r e^{rt}$",
+      "$r e^{rt}$",
+      "$r^2 e^{rt}$"
+     ],
+     "answer_index": 2,
+     "explanation": "Den første afledte fås ved kædereglen og giver $r e^{rt}$. (4:37)",
+     "evidence": "the derivative for e to the rt is r right this is chain rule the derivative of e to the rt is r * e rt",
+     "t": 277.1,
+     "cite": "4:37",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 5
+    },
+    {
+     "type": "short",
+     "question": "Hvad er den foreslåede form for løsningen på differentialligningen?",
+     "answer": "$y = e^{rt}$",
+     "explanation": "Man gætter på en eksponentialfunktion $e^{rt}$ som løsning. (4:08)",
+     "evidence": "e to the rt is equal to y. That's our guess for the solution to our differential equation.",
+     "t": 248.4,
+     "cite": "4:08",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 6
+    }
+   ],
+   "transcript_from": "4:02",
+   "transcript_to": "6:02"
+  },
+  {
+   "i": 3,
+   "start": 362.0,
+   "end": 483.6,
+   "questions": [
+    {
+     "type": "short",
+     "question": "Skriv den generelle løsning $y(t)$ til differentialligningen ud fra de fundne $r$‑værdier.",
+     "answer": "$y(t)=C_1 e^{2t}+C_2 e^{3t}$",
+     "explanation": "Løsningerne er $e^{2t}$ og $e^{3t}$, så den lineære kombination giver den generelle løsning. (7:34)",
+     "evidence": "Our answer is ... e to the 2t and the other answer is e to the 3t.",
+     "t": 454.4,
+     "cite": "7:34",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 7
+    }
+   ],
+   "transcript_from": "6:02",
+   "transcript_to": "8:04"
+  },
+  {
+   "i": 4,
+   "start": 483.6,
+   "end": 605.6,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvad er den generelle løsning, der nævnes i videoen for den homogene differentialligning med konstante koefficienter?",
+     "options": [
+      "$c_1 e^{0t} + c_2 e^{t}$",
+      "$c_1 e^{t} + c_2 e^{2t}$",
+      "$c_1 e^{2t} + c_2 e^{3t}$",
+      "$c_1 e^{3t} + c_2 e^{4t}$"
+     ],
+     "answer_index": 2,
+     "explanation": "Løsningen består af to eksponentielle led med eksponenterne 2t og 3t. (8:04)",
+     "evidence": "the 2t plus c2 e 3t.",
+     "t": 483.6,
+     "cite": "8:04",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 8
+    },
+    {
+     "type": "mc",
+     "question": "Hvordan erstattes $y'$ i den såkaldte auxiliary‑ligning?",
+     "options": [
+      "med $r^2$",
+      "med $1$",
+      "med $r$",
+      "med $0$"
+     ],
+     "answer_index": 2,
+     "explanation": "$y'$ erstattes med $r$ i auxiliary‑ligningen. (9:34)",
+     "evidence": "remember y prime turns to r^ 2 y prime turns to r and y just turns into nothing.",
+     "t": 574.3,
+     "cite": "9:34",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 9
+    },
+    {
+     "type": "short",
+     "question": "Hvilken form antages for en løsning til en homogen differentialligning med konstante koefficienter?",
+     "answer": "$y = e^{rt}$",
+     "explanation": "Man gætter på en eksponentialfunktion hvor r er den ubekendte konstant. (8:33)",
+     "evidence": "our guess for the solution to the differential equation is something that looks like so e to the rt where r is the constant",
+     "t": 512.8,
+     "cite": "8:33",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 10
+    }
+   ],
+   "transcript_from": "8:04",
+   "transcript_to": "10:06"
+  },
+  {
+   "i": 5,
+   "start": 605.6,
+   "end": 727.12,
+   "questions": [
+    {
+     "type": "short",
+     "question": "Skriv den generelle løsning (med konstanter) for denne homogene differentialligning med konstante koefficienter.",
+     "answer": "$y(t)=C_1 e^{-3t}+C_2 e^{2t}$",
+     "explanation": "Den generelle løsning er en lineær kombination af de to lineært uafhængige løsninger. (11:36)",
+     "evidence": "If you add two linearly independent solutions together, e to the -3t and e to the 2t, this right here is also a solution.",
+     "t": 696.1,
+     "cite": "11:36",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 11
+    }
+   ],
+   "transcript_from": "10:06",
+   "transcript_to": "12:07"
+  },
+  {
+   "i": 6,
+   "start": 727.12,
+   "end": 848.64,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvilke symboler bruges til de arbitrære konstanter i den fulde generelle løsning?",
+     "options": [
+      "A1 og A2",
+      "α og β",
+      "C1 og C2",
+      "k1 og k2"
+     ],
+     "answer_index": 2,
+     "explanation": "Konstanterne i den generelle løsning betegnes som C1 og C2. (12:48)",
+     "evidence": "C1, C2, right? They're typically denoted as C1 and C2.",
+     "t": 768.2,
+     "cite": "12:48",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 12
+    },
+    {
+     "type": "mc",
+     "question": "Hvad er den første afledte af $y_2 = c_2 e^{2t}$ som nævnt i videoen?",
+     "options": [
+      "$2c_2 e^{2t}$",
+      "$4c_2 e^{2t}$",
+      "$c_2 e^{2t}$",
+      "$2 e^{2t}$"
+     ],
+     "answer_index": 0,
+     "explanation": "Den første afledte får faktoren 2 fra kædereglen. (13:46)",
+     "evidence": "we have a two here e to the 2t right and 4 e to the 2t",
+     "t": 826.5,
+     "cite": "13:46",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 13
+    },
+    {
+     "type": "short",
+     "question": "Hvad er den anden afledte af $y_2 = c_2 e^{2t}$?",
+     "answer": "$4 c_2 e^{2t}$",
+     "explanation": "Den anden afledte får faktoren 4, da den anden afledning af $e^{2t}$ giver $4e^{2t}$. (13:46)",
+     "evidence": "we have a two here e to the 2t right and 4 e to the 2t",
+     "t": 826.5,
+     "cite": "13:46",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 14
+    }
+   ],
+   "transcript_from": "12:07",
+   "transcript_to": "14:09"
+  },
+  {
+   "i": 7,
+   "start": 848.64,
+   "end": 969.6,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvilken ligning får man efter at have faktoreret $C_2$ ud af udtrykket?",
+     "options": [
+      "$4 e^{t} + 2 e^{t} - 6 e^{2t} = 0$",
+      "$4 e^{t} + 2 e^{2t} - 6 e^{t} = 0$",
+      "$4 e^{t} + 2 e^{2t} - 6 e^{2t} = 0$",
+      "$4 e^{t} + 2 e^{2t} - 6 e^{2t}$"
+     ],
+     "answer_index": 2,
+     "explanation": "Efter faktorisering af $C_2$ står udtrykket som $4e^{t}+2e^{2t}-6e^{2t}=0$. (15:03)",
+     "evidence": "So we get 4 e to the t + 2 e to the 2 t - 6 e 2t. This is equal to zero.",
+     "t": 903.3,
+     "cite": "15:03",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 15
+    },
+    {
+     "type": "mc",
+     "question": "Hvad betyder \"homogen\" i sammenhængen med differentialligningen?",
+     "options": [
+      "Den har konstante koefficienter",
+      "Den er ikke‑lineær",
+      "Den er lig nul",
+      "Den har en ikke‑nul højreside"
+     ],
+     "answer_index": 2,
+     "explanation": "En homogen differentialligning har højresiden lig nul. (15:37)",
+     "evidence": "our differential equation is homogeneous which means that it equals zero, right? Homogeneous means it equals zero.",
+     "t": 936.6,
+     "cite": "15:37",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 16
+    },
+    {
+     "type": "short",
+     "question": "Hvad sker der, når man dividerer begge sider af ligningen med $C_2$?",
+     "answer": "C_2 cancelleres ud, så man får den samme ligning uden C_2 (fx $4e^{t}+2e^{2t}-6e^{2t}=0$).",
+     "explanation": "Division med $C_2$ fjerner konstanten, fordi $0$ divideret med en konstant stadig er $0$. (15:27)",
+     "evidence": "It would cancel out because 0 divided by any constant, any number is just zero, right? So it doesn't matter what value c2 is.",
+     "t": 926.6,
+     "cite": "15:27",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 17
+    }
+   ],
+   "transcript_from": "14:09",
+   "transcript_to": "16:10"
+  },
+  {
+   "i": 8,
+   "start": 969.6,
+   "end": 1090.8,
+   "questions": [
+    {
+     "type": "short",
+     "question": "Skriv den kvadratiske formel som blev nævnt i videoen.",
+     "answer": "$x = \\frac{b \\pm \\sqrt{b^2 - 4ac}}{2a}$",
+     "explanation": "Formlen blev gengivet som “x = b plus or - 2 b ^ 2 - 4 a c all over 2 a”. (17:19)",
+     "evidence": "x = b plus or - 2 b ^ 2 - 4 a c all over 2 a",
+     "t": 1039.2,
+     "cite": "17:19",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 18
+    }
+   ],
+   "transcript_from": "16:10",
+   "transcript_to": "18:11"
+  },
+  {
+   "i": 9,
+   "start": 1090.8,
+   "end": 1137.36,
+   "questions": [
+    {
+     "type": "mc",
+     "question": "Hvilke funktioner udgør de lineært uafhængige løsninger til differentialligningen?",
+     "options": [
+      "$e^{t/2}$ og $e^{-3t}$",
+      "$\\sin t$ og $\\cos t$",
+      "$e^{2t}$ og $e^{3t}$",
+      "$e^{\\frac12 t}$ og $e^{3t}$"
+     ],
+     "answer_index": 3,
+     "explanation": "De lineært uafhængige løsninger er eksponentialfunktionerne med rødderne som eksponenter. (18:15)",
+     "evidence": "linearly independent solutions are e to the 1/2 t and e to the 3t.",
+     "t": 1095.3,
+     "cite": "18:15",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 19
+    },
+    {
+     "type": "mc",
+     "question": "Hvilken af følgende udtryk er den generelle løsning $y(t)$?",
+     "options": [
+      "$y(t)=e^{\\frac12 t}+e^{3t}$",
+      "$y(t)=C\\,e^{\\frac12 t}e^{3t}$",
+      "$y(t)=C_1\\sin\\left(\\frac12 t\\right)+C_2\\cos(3t)$",
+      "$y(t)=C_1 e^{\\frac12 t}+C_2 e^{3t}$"
+     ],
+     "answer_index": 3,
+     "explanation": "Den generelle løsning er en lineær kombination af de to uafhængige eksponentielle løsninger med vilkårlige konstanter. (18:32)",
+     "evidence": "And then if they ask for the general solution, y of g is equal to remember the constants in front.",
+     "t": 1112.2,
+     "cite": "18:32",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 20
+    },
+    {
+     "type": "short",
+     "question": "Skriv den generelle løsning $y(t)$ i form af en sum af eksponentialfunktioner med konstanter.",
+     "answer": "$y(t)=C_1 e^{\\frac12 t}+C_2 e^{3t}$",
+     "explanation": "Den generelle løsning er summen af de to uafhængige løsninger multipliceret med arbitrære konstanter. (18:15)",
+     "evidence": "Which means that our linearly independent solutions are e to the 1/2 t and e to the 3t.",
+     "t": 1095.3,
+     "cite": "18:15",
+     "model": "gpt-oss:120b-cloud",
+     "card_index": 21
+    }
+   ],
+   "transcript_from": "18:11",
+   "transcript_to": "18:57"
+  }
+ ]
+}
