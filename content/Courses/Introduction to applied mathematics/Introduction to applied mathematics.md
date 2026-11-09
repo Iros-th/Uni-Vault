@@ -18,6 +18,10 @@ Landing page for this course. Everything I've got so far, lectures, proof notes 
 - Instructor:
 - Term / semester:
 
+## Ugenoter
+
+- [[Courses/Introduction to applied mathematics/Uger/Oversigt|Ugenoter uge for uge (uge 1 til 13)]]
+
 ## Lectures
 
 - [[Applied mathematics introduction lection 1]]

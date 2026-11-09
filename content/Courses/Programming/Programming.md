@@ -29,6 +29,10 @@ These follow the standard intro Python curriculum (the general beginner progress
 - [[11 Klasser og OOP|Klasser og OOP]]
 - [[12 Fejlhåndtering|Fejlhåndtering]]
 
+## Ugenoter
+
+- [[Courses/Programming/Uger/Oversigt|Ugenoter uge 1 til 13 (fra kursussiden programmering.compute.dtu.dk)]]
+
 ## Lektioner
 
 Nummererede skabeloner, klar til at fylde ud efter hver forelæsning.

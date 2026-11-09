@@ -12,6 +12,10 @@ Notes for Differential Equations and Infinite Series. Still filling this in.
 
 Notes for the ODE and series course. Solving equations and checking if sums actually converge.
 
+## Ugenoter
+
+- [[Courses/Differential Equations and Infinite Series/Uger/Oversigt|Ugeoversigt 01025 (uge 1 til 13, E26)]]
+
 ## Lektioner
 
 Numbered templates, ready to fill in after each lecture.

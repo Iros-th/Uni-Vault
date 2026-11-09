@@ -18,6 +18,10 @@ Nummererede skabeloner, klar til at fylde ud efter hver forelæsning.
 
 - [[Courses/Chemistry/Lektioner/index|Alle lektioner (1 til 13)]]
 
+## Ugenoter
+
+- [[Courses/Chemistry/Uger/Oversigt|Ugenoter uge 1 til 13 (efter DTU Learn)]]
+
 ## Fagets struktur
 
 - [[Courses/Chemistry/Pensum|Pensum]]: syllabus og læseplan

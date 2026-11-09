@@ -18,6 +18,10 @@ Landing page for the course. Lectures and notes are linked below, more added as 
 - Instructor:
 - Term / semester:
 
+## Ugenoter
+
+- [[Courses/Matematik 1A/Uger/Oversigt|Ugenoter uge 1 til 11 (fra kursussiden mat1a.compute.dtu.dk)]]
+
 ## Lektioner
 
 Nummererede skabeloner, klar til at fylde ud efter hver forelæsning.

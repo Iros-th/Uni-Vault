@@ -44,3 +44,7 @@ Nummererede skabeloner, klar til at fylde ud efter hver forelæsning.
 ## Questions
 
 -
+
+## Ugenoter
+
+- [[Courses/Diskret matematik/Uger/Oversigt|Ugenoter for efteråret 2026 (uge 1 til 13)]]
