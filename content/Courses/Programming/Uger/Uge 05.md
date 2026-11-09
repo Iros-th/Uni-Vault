@@ -80,6 +80,25 @@ def lucas(i):
 
 print(lucas(3))   # 4
 ```
+### Scope-model: LEGB-reglen for variabelopslag
+
+Når en variabel kaldes, leder Python efter navnet i fire lag fra inderst til yderst:
+
+```text
+  ┌────────────────────────────────────────────────────────┐
+  │ Local (L): Inde i den aktuelle funktion               │
+  │   ┌──────────────────────────────────────────────────┐ │
+  │   │ Enclosing (E): Inde i omsluttende funktioner     │ │
+  │   │   ┌────────────────────────────────────────────┐ │ │
+  │   │   │ Global (G): Filens øverste niveau          │ │ │
+  │   │   │   ┌──────────────────────────────────────┐ │ │ │
+  │   │   │   │ Built-in (B): len, range, print osv. │ │ │ │
+  │   │   │   └──────────────────────────────────────┘ │ │ │
+  │   │   └────────────────────────────────────────────┘ │ │
+  │   └──────────────────────────────────────────────────┘ │
+  └────────────────────────────────────────────────────────┘
+```
+En funktion kan læse globale variable, men forsøg på at overskrive dem uden `global`-nøgleordet opretter blot en ny lokal variabel med samme navn.
 
 ## Opgaver
 
@@ -119,15 +138,6 @@ Ugens struktur: Preparation (Copy-and-Run og selvquiz) før timen, derefter In-C
 
 - Checkpoint 5.1: Normal Range (funktion `normal_range(height)` i `normal_range.py`, returnerer en streng; testscript `test_normal_range.py` ligger på kursussiden)
 - Checkpoint 5.2: Lucas Number (funktion `lucas_number(i)` i `lucas_number.py`, testscript `test_lucas_number.py`). Fra uge 5 kan checkpoints afleveres under Assignments (frivilligt).
-
-## Tjek dig selv
-
-- [ ] Hvad er forskellen på parameter og argument?
-- [ ] Hvad returnerer en funktion uden `return`?
-- [ ] Hvorfor kan jeg ikke bruge en lokal variabel uden for funktionen?
-- [ ] Hvordan læser jeg en traceback nedefra og op?
-- [ ] Hvad skal en afleveret løsning indeholde, og hvad skal den ikke indeholde?
-- [ ] Hvordan tester jeg en funktion med `assert`?
 
 ## Links
 

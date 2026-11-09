@@ -43,6 +43,24 @@ Rangen af $\mathbf{A}$ er antallet af pivotelementer i dens reducerede trappefor
 Søjler uden pivot svarer til frie parametre. Man udtrykker de øvrige ubekendte ved dem (afsnit 6.4). For et inhomogent system er løsningen en partikulær løsning plus løsningen til det tilhørende homogene system (Sætning 6.1.2).
 
 *Eksempel.* $x + y + z = 3$, $y - z = 1$. Sæt $z = t$: $y = 1 + t$, $x = 2 - 2t$. Kontrol: $x + y + z = 2 - 2t + 1 + t + t = 3$.
+### Geometrisk model: Rækkeoperationer og pivot-trappematrix
+
+Gauss-Jordan elimination transformerer en totalmatrix $[A \mid \mathbf{b}]$ til reduceret række-echelonform (RREF):
+
+```text
+  Pivot-trappe (RREF):
+  ┌───┬───┬───┬───┬───┐
+  │ 1 │ * │ 0 │ 0 │ * │   <- Første ledende 1-tal i række 1 (Pivot)
+  ├───┼───┼───┼───┼───┤
+  │ 0 │ 0 │ 1 │ 0 │ * │   <- Næste pivot står strengt til højre
+  ├───┼───┼───┼───┼───┤
+  │ 0 │ 0 │ 0 │ 1 │ * │   <- Søjler uden pivot giver frie variable
+  ├───┼───┼───┼───┼───┤
+  │ 0 │ 0 │ 0 │ 0 │ 0 │   <- Nulrækker samles altid nederst
+  └───┴───┴───┴───┴───┘
+```
+
+**Geometrisk fortolkning i $\mathbb{R}^3$:** Hver lineær ligning repræsenterer en plan i rummet. Løsningsmængden er det geometriske snit: et punkt (entydig løsning), en linje/plan (uendeligt mange løsninger, frie variable), eller intet snit (inkonsistent system, f.eks. parallelle planer).
 
 ## Opgaver
 
@@ -68,15 +86,6 @@ Opgaverne står på kursussiden med de numre, der er gengivet her. Nogle nævner
 - Opgave 4: Parameterfremstilling med flere frie parametre (spørgsmål a til d)
 - Opgave 5: Et inhomogent system
 - Opgave 6: Tre eksempler på lineære ligningssystemer
-
-## Tjek dig selv
-
-- [ ] Hvilke rækkeoperationer er tilladt?
-- [ ] Hvad kendetegner en matrix på reduceret trappeform?
-- [ ] Hvordan aflæser jeg rangen?
-- [ ] Hvornår har et system uendeligt mange løsninger?
-- [ ] Hvad er forskellen på en partikulær og en fuldstændig løsning?
-- [ ] Hvad betyder homogent og inhomogent system?
 
 ## Links
 

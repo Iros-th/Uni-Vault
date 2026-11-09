@@ -43,6 +43,30 @@ Den geometriske multiplicitet $\mathrm{gm}(\lambda) = \dim E_\lambda$ (Definitio
 $\mathbf{A}$ er diagonaliserbar, hvis der findes en basis af egenvektorer. Så er $\mathbf{A} = \mathbf{P}\mathbf{D}\mathbf{P}^{-1}$ med egenvektorerne som søjler i $\mathbf{P}$ og egenværdierne i diagonalmatricen $\mathbf{D}$.
 
 *Eksempel.* For $\mathbf{A}$ ovenfor: egenvektorer $(1,-1)$ (for $\lambda = 1$) og $(1,1)$ (for $\lambda = 3$), så $\mathbf{P} = \begin{pmatrix} 1 & 1 \\ -1 & 1 \end{pmatrix}$ og $\mathbf{D} = \begin{pmatrix} 1 & 0 \\ 0 & 3 \end{pmatrix}$.
+### Dynamisk system-model: Egenværdier som ekspansionsakser
+
+Egenvektorer $\mathbf{v}$ peger i retninger, hvor matricen $A$ blot virker som en skalar strækning eller sammentrækning ($A\mathbf{v} = \lambda \mathbf{v}$):
+
+```text
+                      λ > 1 (Ekspansion langs v)
+                        ^
+                        │
+                        │   A · v = λ v
+                        │  /
+                        │ /
+                        │/
+  ──────────────────────┼──────────────────────>
+                       /│
+                      / │
+                     v  │
+          0 < λ < 1     │
+      (Kontraktion)     │
+```
+
+**Diagonalisering og matrixpotenser ($A = V \Lambda V^{-1}$):**
+Når $A$ diagonaliseres, kan potensen $A^k$ beregnes i et enkelt hug:
+$$A^k = V \Lambda^k V^{-1} = V egin{bmatrix} \lambda_1^k & 0 \ 0 & \lambda_2^k \end{bmatrix} V^{-1}.$$
+Hvis alle $|\lambda_i| < 1$, vil systemet konvergere mod nulpunktet ($A^k 	o 0$ for $k 	o \infty$).
 
 ## Opgaver
 
@@ -68,15 +92,6 @@ Opgaverne står på kursussiden med de numre, der er gengivet her. Nogle nævner
 - Opgave 4: Diagonalisering over de komplekse tal (spørgsmål a til b)
 - Opgave 5: Diagonaliserbar eller ej? (spørgsmål a til d)
 - Opgave 6: Lineær afbildning mellem polynomiumsrum (spørgsmål a til b)
-
-## Tjek dig selv
-
-- [ ] Hvad er definitionen på en egenvektor?
-- [ ] Hvordan finder jeg egenværdierne for en $2 \times 2$ matrix?
-- [ ] Hvordan finder jeg egenrummet $E_\lambda$?
-- [ ] Hvad er forskellen på geometrisk og algebraisk multiplicitet?
-- [ ] Hvornår er en matrix diagonaliserbar?
-- [ ] Hvordan diagonaliserer jeg over de komplekse tal?
 
 ## Links
 

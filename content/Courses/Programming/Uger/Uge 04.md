@@ -73,6 +73,19 @@ for dag in range(100):
     heal = gamma * I
     S, I, R = S - ny, I + ny - heal, R + heal
 ```
+### Iterationsmodel: Løkke-akkumulatoren
+
+En typisk `for`-løkke arbejder ved hjælp af en akkumulator-variabel, der opdateres for hvert gennemløb:
+
+```text
+  Init: total = 0
+  Elementer: [ 10,  20,  30 ]
+                │    │    │
+  Iteration 1:  total = 0 + 10  = 10
+  Iteration 2:  total = 10 + 20 = 30
+  Iteration 3:  total = 30 + 30 = 60
+  Slut: return total (60)
+```
 
 ## Opgaver
 
@@ -118,15 +131,6 @@ Ugens struktur: Preparation (Copy-and-Run og selvquiz) før timen, derefter In-C
 
 - Checkpoint 4.1: Disease Simulation (SIR-model over 100 dage, udskriv hver tiende dag)
 - Checkpoint 4.2: Which Tetrahedral (find $n$ med $T_n = \frac{n(n+1)(n+2)}{6} = t$)
-
-## Tjek dig selv
-
-- [ ] Hvornår vælger jeg `for`, og hvornår `while`?
-- [ ] Hvad giver `list(range(2, 10, 3))`?
-- [ ] Hvorfor kører en `while`-løkke uendeligt, hvis jeg glemmer at ændre variablen i betingelsen?
-- [ ] Hvad gør `break`?
-- [ ] Hvordan tæller man op i en løkke uden at overskrive sin sum?
-- [ ] Hvad er pseudokode?
 
 ## Links
 

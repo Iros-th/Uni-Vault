@@ -35,21 +35,27 @@ tags:
 **Udvidet Euklid (Theorem 6.3).** Man holder styr på $(r_k, s_k, t_k)$ med $r_k = s_k N + t_k M$ og stopper, når $r_n = 0$; så er $\gcd(N,M) = r_{n-1} = s_{n-1}N + t_{n-1}M$. I eksemplet ovenfor: $-7x + 7 = 1 \cdot N + (-x^2 + x - 3) \cdot M$.
 
 **Fælles rødder (Theorem 6.4).** $N$ og $M$ har en fælles rod $x_0$ netop når $\gcd(N,M)$ har roden $x_0$. Så kan man finde fælles rødder ved at finde rødderne i et polynomium af lavere grad. I eksemplet er roden 1 den eneste fælles rod.
+### Algebraisk model: Polynomiers divisionsalgoritme og modulær invers
+
+I polynomieringen $\mathbb{Z}_p[x]$ (hvor koefficienterne regnes modulo et primtal $p$) fungerer polynomiumsdivision præcis som for heltal:
+
+```text
+                 Q(x)    (kvotient)
+             ┌─────────────────────────
+      D(x)   │   A(x)    (dividend)
+             │ - (Q(x) · D(x))
+             ─────────────────────────
+                 R(x)    (rest, med deg(R) < deg(D))
+```
+
+**Betydning for kryptografi og fejlkorrektion (AES / Reed-Solomon):**
+Hvis polynomiet $M(x)$ er irreducibelt (svarer til et primtal), udgør restklasserne $\mathbb{Z}_p[x] / \langle M(x) angle$ et endeligt legeme (Galois Field, $\mathbb{F}_{p^k}$). Udvidet Euklid finder den modulære inverse $A(x)^{-1} \pmod{M(x)}$, som bruges direkte i S-boxen i AES-kryptering.
 
 ## Opgaver
 
 Fra kursussiden: Beelen et al, kapitel 6: **6.16**, **6.17**, **6.18**, **6.19** (fed skrift = lav dem først). Der er ingen opgaver fra Rosen denne uge.
 
 Om opgaverne i noterne (pdf-filen): 6.16 handler om rationale rødder i polynomier med heltalskoefficienter (og at $\sqrt{2}$ og $\sqrt{5}$ er irrationelle); 6.17 undersøger Euklids algoritmes køretid; 6.18 handler om at forkorte rationale funktioner fuldstændigt; 6.19 om opdeling i enhedsbrøker. Bemærk, at noterne selv markerer 6.17 som "Extra exercises, not in the curriculum", mens kursussiden har den med i fed skrift. Hold dig til kursussidens liste og spørg en instruktor, hvis det er uklart.
-
-## Tjek dig selv
-
-- [ ] Kan jeg udføre polynomiumsdivision med rest på papir?
-- [ ] Kan jeg kontrollere svaret med $n = qm + r$ og $\deg r < \deg m$?
-- [ ] Kan jeg køre udvidet Euklid på to polynomier og aflæse $s$ og $t$?
-- [ ] Kan jeg forklare, hvorfor $x - x_0$ er divisor netop når $x_0$ er rod?
-- [ ] Kan jeg finde fælles rødder ud fra gcd?
-- [ ] Kan jeg forklare, hvad der er ens og forskelligt ved Euklids algoritme for tal og for polynomier?
 
 ## Links
 

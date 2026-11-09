@@ -64,6 +64,23 @@ def nulstil(konto):
 nulstil(k)
 print(k.saldo)   # 0
 ```
+### Objektmodel: Klasse som skabelon for instanser
+
+En klasse definerer datastrukturen (attributter) og handlingerne (metoder), mens instanser indeholder de konkrete værdier:
+
+```text
+                 Klasse Bil (Skabelon)
+                 - model
+                 - hastighed
+                 + accelerer()
+                       │
+             ┌─────────┴─────────┐
+             v                   v
+     Instans bil1 (Objekt)   Instans bil2 (Objekt)
+     - model: "Volvo"        - model: "Tesla"
+     - hastighed: 50         - hastighed: 90
+```
+`self` er Python-referencen til det specifikke objekt, hvis metode kaldes.
 
 ## Opgaver
 
@@ -93,15 +110,6 @@ Ugens struktur: Preparation (Copy-and-Run og selvquiz) før timen, derefter In-C
 
 - Checkpoint 10.1: Bank Account
 - Checkpoint 10.2: Event Manager
-
-## Tjek dig selv
-
-- [ ] Hvad er forskellen på en klasse og en instans?
-- [ ] Hvad gør `__init__`, og hvornår kører den?
-- [ ] Hvad er `self`?
-- [ ] Hvorfor ændres et objekt uden for en funktion, hvis funktionen ændrer en attribut?
-- [ ] Hvordan er konventionen for klassenavne?
-- [ ] Hvad gør nøgleordet `pass`?
 
 ## Links
 

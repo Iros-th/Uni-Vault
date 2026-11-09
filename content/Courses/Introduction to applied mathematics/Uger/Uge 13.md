@@ -39,6 +39,30 @@ Sætning 3.3: multiplikation er associativ og kommutativ (kommutativitet følger
 $$z^{-1} = \frac{x}{x^2+y^2} + i\,\frac{-y}{x^2+y^2}.$$
 
 Delen om inversen efterlades som øvelse i noten (Problem 6 nedenfor).
+### Syntesemodel: Den anvendte matematiks ingeniørmæssige cyklus
+
+Fra et fysisk eller datadrevet problem til en valideret løsning:
+
+```text
+    ┌─────────────────────────┐
+    │ Virkelighed / Problem   │ (Trafik, billedstøj, anbefalinger)
+    └───────────┬─────────────┘
+                │  1. Matematisk modellering (ODE, LP, Vektorrum)
+                v
+    ┌─────────────────────────┐
+    │ Formel matematisk model │ (Differentialligning, Simplex, SVD)
+    └───────────┬─────────────┘
+                │  2. Numerisk algoritme & diskretisering (C / Python)
+                v
+    ┌─────────────────────────┐
+    │ Kørbar computersimulering│ (PID feedback, konvolution, gradient descent)
+    └───────────┬─────────────┘
+                │  3. Validering mod empiri & fejljustering
+                v
+    ┌─────────────────────────┐
+    │ Færdig ingeniørløsning  │
+    └─────────────────────────┘
+```
 
 ## Opgaver
 
@@ -61,16 +85,6 @@ Fra `proofs_problems2` ("Proofs: Problem Set Two").
 - Problem 7: De komplekse tal uden $0$ med multiplikation er en gruppe. En gruppe er en mængde $G$ med en binær operation $\ast$ så (1) $\ast$ er associativ, (2) der er et neutralt element $e$ med $e \ast x = x \ast e = x$, (3) hvert $x$ har en invers $x^{-1}$ med $x \ast x^{-1} = x^{-1} \ast x = e$. Afgør med bevis om følgende er grupper: mængden af bijektive afbildninger $f: \mathbb{R} \to \mathbb{R}$ med komposition, og mængden af injektive afbildninger $f: \mathbb{R} \to \mathbb{R}$ med komposition.
 
 `MathProofs1B` nævner også en øvelse om associativitet af kompleks multiplikation ("see the exercises"), men den står ikke som et nummereret problem i `proofs_problems2`.
-
-## Tjek dig selv
-
-- [ ] Kan jeg definere injektiv, surjektiv og bijektiv og bruge det til $|\mathbb{Z}| = |2\mathbb{Z}|$?
-- [ ] Kan jeg forklare hvorfor listen over positive rationale tal giver en bijektion med $\mathbb{Z}_+$?
-- [ ] Kan jeg gennemføre et induktionsbevis med både basistrin og induktionstrin, og sige hvad jeg antager hvornår?
-- [ ] Hvornår har jeg brug for stærk induktion?
-- [ ] Kan jeg bevise formlen for $z^{-1}$ ud fra definitionen af multiplikation i $\mathbb{C}$?
-- [ ] Kan jeg afgøre Fibonacci-udsagn A og B og begrunde det med induktion?
-- [ ] Har hver injektiv $f: \mathbb{R} \to \mathbb{R}$ en invers i mængden af injektive afbildninger? (Relevant for Problem 7.)
 
 ## Links
 

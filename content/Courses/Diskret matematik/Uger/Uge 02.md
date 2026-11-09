@@ -31,6 +31,27 @@ tags:
 **Kardinalitet og potensmængde.** $|A|$ er antallet af elementer i en endelig mængde. Potensmængden $\mathcal{P}(A)$ er mængden af alle delmængder af $A$, og $|\mathcal{P}(A)| = 2^{|A|}$. Eksempel: $\mathcal{P}(\{a,b\}) = \{\emptyset, \{a\}, \{b\}, \{a,b\}\}$, altså $2^2 = 4$ elementer.
 
 **Kartesisk produkt.** $A \times B = \{(a,b) : a \in A, b \in B\}$ er mængden af ordnede par, og $|A \times B| = |A| \cdot |B|$. Eksempel: $\{1,2\} \times \{x,y,z\}$ har $2 \cdot 3 = 6$ par. Rækkefølgen betyder noget, så $A \times B \ne B \times A$ i almindelighed.
+### Bevismodel: Beslutningstræ for bevistyper
+
+Når du møder en påstand af formen $P \implies Q$ til eksamen, hjælper dette beslutningstræ dig med at vælge den mest effektive bevisteknik:
+
+```text
+                  Start: Skal vise P => Q
+                             │
+            Kan Q udledes direkte fra P via definitioner?
+                      /                 \
+                    Ja                   Nej
+                   /                       \
+     [ Direkte bevis ]          Er Q formuleret negativt (f.eks. "x er ulige/irrationel")?
+   Antag P, regn frem til Q                  /                                \
+                                           Ja                                  Nej
+                                          /                                      \
+                         [ Kontraposition ]                             [ Modstridsbevis ]
+                  Antag ¬Q, vis at ¬P følger                     Antag P OG ¬Q, find en modstrid
+                  (Nemmere at arbejde med lige tal)              (F.eks. at √2 = a/b kan forkortes)
+```
+
+**Tommelfingerregel:** Hvis konklusionen indeholder et negationstegn eller et "findes ikke", er kontraposition eller modstrid næsten altid hurtigst.
 
 ## Opgaver
 
@@ -39,15 +60,6 @@ Fra kursussiden, Rosen, "Discrete Mathematics and Its Applications" (2025-udgave
 - Afsnit 1.7: 3, **11**, **37**, **41**
 - Ekstra fra kurset: "Show you are smarter than Kenneth H. Rosen by giving a direct proof for Example 3 in Section 1.7." (I den 8. udgave, jeg har tjekket, er Eksempel 3 beviset for, at hvis $3n + 2$ er ulige, så er $n$ ulige, og det bevises der ved kontraposition. Tjek, at Eksempel 3 er det samme i din udgave. Idé til et direkte bevis: skriv $3n + 2 = 2k + 1$ og isolér $n$.)
 - Afsnit 2.1: **15**, 25, **31**, **41** (**11**, 21, **27**, **37** i 8. udgave)
-
-## Tjek dig selv
-
-- [ ] Kan jeg bevise "hvis $n$ er ulige, så er $n^2$ ulige" direkte?
-- [ ] Kan jeg forklare, hvorfor kontraposition og modstrid ikke er det samme?
-- [ ] Kan jeg vise $A = B$ via to inklusioner?
-- [ ] Kan jeg skrive potensmængden af en mængde med tre elementer ud og tælle den?
-- [ ] Kan jeg regne $|A \times B|$, og forklare hvorfor $A \times B \ne B \times A$?
-- [ ] Ved jeg, hvilke af mine opgavenumre der gælder for 8. udgave?
 
 ## Links
 

@@ -11,7 +11,7 @@ tags:
 
 # Uge 1: Atomer, molekyler og sammensætning
 
-> Kilde: DTU Learn 26020, Week 1 ("Lecture 1 slides.pdf", forelæsning 31. august 2026) og kursusplanen (Chemistry_Foundation_Course_Syllabus_REVISED). Bog: OpenStax Chemistry 2e, kapitel 1, 2 og 3. Velkomst-pptx (Welcome_2026_26020) er ikke læst.
+> Kilde: DTU Learn 26020, Week 1: "Lecture 1 slides.pdf" (forelæsning 31. august 2026), velkomst-pptx "Welcome_2026_26020" (26020_CoourseIntro_GE_LWG.pptx, 7 slides, læst) og kursusplanen (Chemistry_Foundation_Course_Syllabus_REVISED). Kursusmeddelelserne (news) er læst. Bog: OpenStax Chemistry 2e, kapitel 1, 2 og 3. Kunne ikke tilgås: emnet "Welcome_26020" i TOC har ingen filadresse, og viewContent-siden returnerer kun en tom Learn-skal, så indholdet kunne ikke læses (muligvis et link eller en video, ikke undersøgt nærmere). Exercises_Week_01 (quiz) er ikke åbnet.
 
 ## Emner
 
@@ -38,20 +38,40 @@ tags:
 
 **Koncentration.** $c = n/V$ i mol/L (M). Eksempel fra slides: 10 mL 0,01 M KI. $n = 0{,}01\cdot0{,}01 = 1\times10^{-4}$ mol, $MW(\mathrm{KI}) = 165{,}998$ g/mol, så $m = 1\times10^{-4}\cdot165{,}998 = 0{,}0166$ g $= 16{,}6$ mg.
 
+**Kursusopsætning (fra velkomstslides og meddelelser).** Undervisning mandag: øvelser kl. 8 til 10, forelæsning kl. 10.15 til 12, bygning 208 (auditorium 53, streaming til Maker Space 1 og 3). Bog: OpenStax Chemistry 2e (Flowers, Theopold og Langley, open access). Velkomstslides fra 27. august angiver vurdering som aflevering (15 %) og multiple choice (85 %), men meddelelsen af 21. september siger, at afleveringen er skrevet ud af kursusplanen, så eksamen tæller 100 %. Eksamen er multiple choice, elektronisk, 4 timer, alle hjælpemidler undtagen kommunikation med andre og internet (meddelelse 23. august). Tilføjelser til slides efter forelæsningen: formlen for calciumcarbonat er rettet (carbonat har ladning 2-, ikke 1-), og der er et slide til sidst med resultatet af aluminium-brom-forsøget. Spørgsmålet om forskel på stof (matter) og sammensætning (composition) lovede underviseren at definere i forelæsning 2.
+
+### Model: Molbroen (mikroskopisk partikel vs. makroskopisk masse)
+
+Støkiometriske beregninger bygger på molbroen, der forbinder det mikroskopiske atomniveau med det målbare makroskopiske laboratorieniveau:
+
+```
+Makroskopisk masse m (gram)
+       ^                 |
+       |  gange M        |  divideret med M
+       |                 v
+       Stofmængde n (mol)
+       ^                 |
+       |  divideret N_A  |  gange N_A
+       |                 v
+Mikroskopiske partikler N (atomer/molekyler)
+```
+
+Nøglen er altid at gå igennem stofmængden $n$:
+- Fra masse til partikler: $m \xrightarrow{/M} n \xrightarrow{\times N_A} N$.
+- I opløsning: $V \xrightarrow{\times c} n \xrightarrow{\times M} m$.
+
 ## Opgaver
 
 - Exercises_Week_01 (quiz på DTU Learn, ikke åbnet)
 - Slides stiller: navne til formler (ZnCl$_2$, Ba$_3$(PO$_4$)$_2$, MnO$_2$, AlF$_3$, PbSO$_4$) og formler til navne (Fe$_2$O$_3$, CuCl$_2$, NaHCO$_3$, CaCO$_3$, KI). Svarene står på slides.
 - Ingen bogopgaver med nummer er angivet for ugen.
 
-## Tjek dig selv
+## Gamle eksamensspørgsmål om dette emne
 
-- [ ] Kan jeg omregne $\mathrm{m^2/s}$ til $\mathrm{cm^2/s}$ uden at glemme at kvadrere?
-- [ ] Kan jeg udregne molar masse af en forbindelse og antal mol ud fra en masse?
-- [ ] Kan jeg finde en empirisk formel ud fra masseprocenter?
-- [ ] Kan jeg skrive formlen for jern(III)oxid, calciumcarbonat og lithiumjernphosphat ($\mathrm{LiFePO_4}$) og balancere ladningerne?
-- [ ] Kan jeg regne ud hvor mange mg KI der skal til 25 mL 0,020 M opløsning? (Svar: $0{,}025\cdot0{,}020\cdot165{,}998 = 83{,}0$ mg)
-- [ ] Kan jeg forklare forskel på grundstof, atom, molekyle, forbindelse, isotop og ion?
+Numrene refererer til de to gamle eksamenssæt på Learn (efterår 2024 og forår 2025, se Uge 13). Efterår 2024 er læst ved OCR af en scannet PDF, og numrene følger rækkefølgen i filen.
+
+- Efterår 2024: spm. 2 (isotopsymbol for klor-37).
+- Forår 2025: spm. 2 (mol ioner ved opløsning af 1 mol aluminiumsulfat), spm. 28 (sammenligning af $^{72}$Zn, $^{75}$As og $^{74}$Ge: protoner, neutroner, nukleontal).
 
 ## Links
 

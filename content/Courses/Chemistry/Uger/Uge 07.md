@@ -11,7 +11,7 @@ tags:
 
 # Uge 7: Intermolekylære kræfter og opløsninger
 
-> Kilde: DTU Learn 26020, Week 7: "Lecture 6 - post-lecture copy.pdf" (forelæsning 19. oktober 2026; pre-lecture-versionen er ikke læst). Bog: OpenStax Chemistry 2e, kapitel 10 (Liquids and Solids) og 11 (Solutions and Colloids). Uge 6 på Learn er anvendelsesforelæsningen, efterårsferie var 12. til 16. oktober.
+> Kilde: DTU Learn 26020, Week 7: "Lecture 6 - post-lecture copy.pdf" (forelæsning 19. oktober 2026; pre-lecture-versionen er ikke læst). Bog: OpenStax Chemistry 2e, kapitel 10 (Liquids and Solids) og 11 (Solutions and Colloids). Uge 6 på Learn er anvendelsesforelæsningen, efterårsferie var 12. til 16. oktober. Meddelelserne er læst. TOC har to emner med navnet "Lecture 6 - pre-lecture copy": den ene har ingen filadresse (kunne ikke tilgås), den anden er "copy 2.pdf", som er læst og sammenlignet. Exercises_Week_07 (quiz) er ikke åbnet.
 
 ## Emner
 
@@ -39,20 +39,36 @@ tags:
 
 **Kolloider.** Partikler mellem ca. 1 nm og 1 µm: de sætter sig ikke (som en suspension) og er ikke opløste. De spreder lys (Tyndall-effekt). Eksempler: mælk, tåge, flødeskum, remoulade.
 
+**Pre-lecture mod post-lecture og meddelelser.** Pre-lecture (30 sider, filen "Lecture 6 - pre-lecture copy 2.pdf") har en Vevox-afstemning (live poll) som post-lecture (40 sider) ikke har, og lidt andre formuleringer i kolloid-afsnittet; ellers er den en delmængde af post-lecture. Meddelelse 19. oktober: problemerne på sidste slide er helt valgfri ekstra øvelse. Meddelelse 23. oktober: fra uge 8 lægges ekstra øvelsesspørgsmål fra OpenStax ud ved siden af ugens opgaver (de første, "Additional Questions Week 08", er fra kapitel 10 og 11, altså denne uges stof; der kommer ingen ekstra spørgsmål til anvendelsesforelæsning 2).
+
+### Model: Krystalgittermodeller (enhedsceller)
+
+I faste metalliske stoffer pakker atomerne sig i krystalgitter-enhedsceller:
+
+```
+Gittertype              Atomer pr. celle   Koordinationstal   Pakningsbrøk
+--------------------------------------------------------------------------
+Simpel kubisk (SC)             1                  6              52 %
+Body-centered cubic (BCC)      2                  8              68 %
+Face-centered cubic (FCC)      4                 12              74 % (tætpakket)
+Hexagonal close-packed (HCP)   6                 12              74 % (tætpakket)
+```
+
+- **FCC (fx kobber, guld, aluminium):** Atomer i de 8 hjørner ($8 \times \frac{1}{8} = 1$) og på de 6 sideflader ($6 \times \frac{1}{2} = 3$), i alt 4 atomer pr. enhedscelle. Gitterkonstanten opfylder $\sqrt{2}a = 4r$.
+- **BCC (fx jern ved stuetemperatur):** 8 hjørner ($8 \times \frac{1}{8} = 1$) og 1 atom i centrum, i alt 2 atomer pr. enhedscelle. Diagonalen opfylder $\sqrt{3}a = 4r$.
+
 ## Opgaver
 
 - Exercises_Week_07 (quiz på DTU Learn, ikke åbnet)
 - Slides, "Think about these problems before next class": Problem 1 (rangér neopentan, n-pentan og 1-butanol efter kogepunkt) og Problem 2 (frysepunkt for 50 g $\mathrm{CaCl_2}$ i 1,0 kg vand, $K_f=1{,}86$ K kg/mol; og hvad sker der med 50 g NaCl). Løsningerne står i begyndelsen af næste uges slides (se ovenfor).
 - Ingen bogopgaver med nummer er angivet.
 
-## Tjek dig selv
+## Gamle eksamensspørgsmål om dette emne
 
-- [ ] Kan jeg rangere stoffer efter kogepunkt og begrunde med dispersion, dipol og hydrogenbinding?
-- [ ] Kan jeg bruge Clausius-Clapeyron til at finde kogepunktet ved et andet tryk?
-- [ ] Hvorfor kan man ikke bare sige "mere varme" under en faseovergang?
-- [ ] Kan jeg forudsige om et salt er opløseligt ud fra tommelfingerreglerne?
-- [ ] Kan jeg regne $\Delta T_f$ med van't Hoff-faktor og molalitet?
-- [ ] Hvad skiller en kolloid fra en opløsning og en suspension?
+Numrene refererer til de to gamle eksamenssæt på Learn (efterår 2024 og forår 2025, se Uge 13). Efterår 2024 er læst ved OCR af en scannet PDF, og numrene følger rækkefølgen i filen.
+
+- Efterår 2024: spm. 10 (bindinger i fast argon), spm. 11 (frysepunkt for NaBr-opløsning), spm. 12 (enhedscellens volumen for rumcentreret kubisk jern, kap. 10).
+- Forår 2025: spm. 6 (højeste damptryk ved stuetemperatur), spm. 15 (hvorfor HF har højt kogepunkt), spm. 27 (molar masse ud fra kogepunktsforhøjelse). Spm. 22 (kogepunkt for Br$_2$ ud fra $\Delta H$ og $\Delta S$) hører også til uge 11.
 
 ## Links
 

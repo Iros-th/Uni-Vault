@@ -75,6 +75,20 @@ print(l)   # [2, 4, 6]
 ### Konstruktøren list()
 
 `list('hej')` giver `['h', 'e', 'j']`, og `list(range(4))` giver `[0, 1, 2, 3]`. Funktionerne `min()`, `max()`, `sum()` og `len()` virker på lister.
+### Hukommelsesmodel: Liste-aliasing vs. Shallow copy
+
+Da lister er mutable (kan ændres), deler kopier af referencen det underliggende array:
+
+```text
+  Aliasing (b = a):
+  a ──┐
+      ├──> [ 1, 2, 3 ]   <-- Ændres a[0]=99, ændres b[0] automatisk også!
+  b ──┘
+
+  Uafhængig kopi (b = a.copy() eller b = a[:]):
+  a ──> [ 1, 2, 3 ]
+  b ──> [ 1, 2, 3 ]      <-- Separat objekt i heapen
+```
 
 ## Opgaver
 
@@ -121,15 +135,6 @@ Ugens struktur: Preparation (Copy-and-Run og selvquiz) før timen, derefter In-C
 
 - Checkpoint 6.1: Special Occurrence
 - Checkpoint 6.2: First Double Peak
-
-## Tjek dig selv
-
-- [ ] Hvad er forskellen på `b = a` og `b = a.copy()` for lister?
-- [ ] Hvad giver `l[1:3]` og `l[-2:]`?
-- [ ] Hvilke listemetoder ændrer listen, og hvilke giver en ny værdi?
-- [ ] Hvad gør `sort()` ved listen, og hvad returnerer den?
-- [ ] Hvordan ændrer jeg alle elementer i en liste under gennemløb?
-- [ ] Hvad er en ren funktion, og hvad er en modificerende funktion?
 
 ## Links
 

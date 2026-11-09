@@ -11,7 +11,7 @@ tags:
 
 # Uge 6: Anvendelsesforelæsning 1 (polymerer, beregningskemi, DNA)
 
-> Kilde: DTU Learn 26020, Week 6: "class6_Application_PE.pdf" (polyethylen), "JJE_Chemistry_on_computers.pdf" (Janus Juul Eriksen, kun 9 slides med lidt tekst) og "KGA_2026 lecture poly.pdf" (Kira Gerber Astakhova, nukleinsyrer og sekvensering). De tre gif-filer (Diels-Alder, nukleofil aromatisk substitution, IR-spektrum af sukrose) er ikke åbnet. Kursusplanen: mandag 5. oktober 2026, kl. 8.00 øvelse om forelæsning 5, kl. 10.00 biokemi, polymerer, beregningskemi. Ugen er en anvendelsesforelæsning uden nyt bogkapitel.
+> Kilde: DTU Learn 26020, Week 6: "class6_Application_PE.pdf" (polyethylen), "JJE_Chemistry_on_computers.pdf" (Janus Juul Eriksen, kun 9 slides med lidt tekst) og "KGA_2026 lecture poly.pdf" (Kira Gerber Astakhova, nukleinsyrer og sekvensering). De tre gif-filer (Diels-Alder, nukleofil aromatisk substitution, IR-spektrum af sukrose) er ikke åbnet. Kursusplanen: mandag 5. oktober 2026, kl. 8.00 øvelse om forelæsning 5, kl. 10.00 biokemi, polymerer, beregningskemi. Ugen er en anvendelsesforelæsning uden nyt bogkapitel. Meddelelserne er læst.
 
 ## Emner
 
@@ -33,20 +33,60 @@ tags:
 
 **Nukleosider og DNA.** Et nukleosid er base + sukker (2'-deoxyribose i DNA). Helixen holdes af stacking (π-stacking, hydrofobe effekter) og Watson-Crick-hydrogenbindinger. Kools forsøg viste at ikke-hydrogenbundne formlignende baser stadig kan danne stabile par, så H-bindinger er ikke den eneste faktor. Illumina-sekvensering bruger nukleotider med farvestof og reversibel blokering: byg ind, aflæs farve, fraspalt, gentag. Syntese af oligonukleotider sker fast-fase i cyklus: deblok, kobl (phosphoramidit), cap, oxidér. Anvendelser: ASO, siRNA, aptamerer. Slidens pointe: flaskehalsen er i stigende grad levering til de rigtige celler.
 
+**Fra meddelelserne.** Mandag 5. oktober blev auditoriet bedt om at møde kl. 10.00 i stedet for 10.15, med pause omkring 10.40. Midtvejsevalueringen blev genåbnet to gange pga. tekniske problemer og endte som en anonym survey under Activities, Surveys på Learn (åben til 19. oktober). Surveyen er ikke åbnet.
+### Model: Polymerstruktur og krystallinitet (LDPE vs. HDPE)
+
+Mekaniske egenskaber i polymerer bestemmes direkte af kædernes forgrening og evne til at pakke tæt:
+
+```text
+LDPE (Low-Density Polyethylene):
+  Mange sideforgreninger forhindrer tæt pakning -> stor amorf fraktion.
+   ~~~~/\/\~~~~~/\/\~~~~
+        \           \
+         \/\/\       \/\/\~
+  - Massefylde: ca. 0,91 - 0,94 g/cm³
+  - Krystallinitet: 40 - 50 %
+  - Egenskaber: Blød, fleksibel, lavere smeltepunkt (f.eks. bæreposer, plastfilm).
+
+HDPE (High-Density Polyethylene):
+  Lineære kæder uden nævneværdige forgreninger -> pakker tæt i krystallitter.
+   ═════════════════════
+   ═════════════════════  <-- Tæt krystalgitter, stærke Van der Waals-kræfter
+   ═════════════════════
+  - Massefylde: ca. 0,94 - 0,97 g/cm³
+  - Krystallinitet: 70 - 80 %
+  - Egenskaber: Stiv, hård, højere smeltepunkt (f.eks. mælkekander, vandrør).
+```
+
+### Biokemisk model: Watson-Crick baseparring i DNA
+
+DNA-dobbeltstrenget stabiliseres af to komplementære hydrogenbindingsmønstre:
+
+```text
+Adenin (A) = Thymin (T)                Guanin (G) ≡ Cytosin (C)
+  2 hydrogenbindinger                    3 hydrogenbindinger
+
+      [ A ]                                  [ G ]
+      :   :  (2 x H-bånd)                    :   :   :  (3 x H-bånd)
+      [ T ]                                  [ C ]
+
+  Konsekvens for stabilitet:
+  Sekvenser med højt GC-indhold kræver væsentligt højere temperatur (højere Tm)
+  for at denaturere/smelte fra hinanden, fordi 3 H-bindinger binder stærkere end 2.
+```
+
 ## Opgaver
 
 - Exercises_Week_06 (quiz på DTU Learn, ikke åbnet)
 - Kursusplanen: "Exercise on Lecture 5 material" kl. 8.00 den 5. oktober 2026 (emnet er uge 5: Lewis, VSEPR, hybridisering, MO). Selve opgaverne er ikke lagt som fil i Week 6-mappen.
 - Ingen bogopgaver med nummer er angivet.
 
-## Tjek dig selv
+## Gamle eksamensspørgsmål om dette emne
 
-- [ ] Kan jeg forklare hvorfor en varmekrympeslange trækker sig sammen, ud fra tværbinding og krystallisation?
-- [ ] Kan jeg skelne glasdannelse, krystallisation og tværbinding som størkningsmekanismer?
-- [ ] Kan jeg bruge $\sigma=E\varepsilon$ til en lille udregning?
-- [ ] Hvorfor er UHMWPE-fibre så stive i fiberretningen?
-- [ ] Hvad er et nukleosid, og hvad gør en reversibel terminator i sekvensering?
-- [ ] Hvilke molekyleegenskaber kan en computer beregne ud fra energien?
+Numrene refererer til de to gamle eksamenssæt på Learn (efterår 2024 og forår 2025, se Uge 13). Efterår 2024 er læst ved OCR af en scannet PDF, og numrene følger rækkefølgen i filen.
+
+- Efterår 2024: spm. 16 (polymerisationsgrad for PET ud fra molvægten).
+- Forår 2025: ingen spørgsmål direkte om anvendelsesstoffet.
 
 ## Links
 

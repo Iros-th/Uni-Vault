@@ -48,6 +48,21 @@ $$\|\nabla f\| = \sqrt{D_x^2 + D_y^2},$$
 som lyser op ved kanter.
 
 **Poster.** Fra slides: målgruppen er medstuderende, posteren skal støtte en 7 minutters gruppepræsentation, vigtige formler og resultater skal på, gode figurer, ikke for meget tekst (gerne punkter), og tænk på layout. Anbefalet software: vektorgrafik (fx Inkscape) eller LaTeX.
+### Billedbehandlingsmodel: 2D-konvolution og filtrering
+
+Et digitalt billede filtreres ved at glide en $3 \times 3$ vægtmatrix (kerne/kernel) hen over hvert pixel:
+
+```text
+  Billed-pixels (3 x 3 vindue):          Gaussisk udglatningskerne:
+  ┌────┬────┬────┐                       ┌─────┬─────┬─────┐
+  │ p1 │ p2 │ p3 │                       │ 1/16│ 2/16│ 1/16│
+  ├────┼────┼────┤                       ├─────┼─────┼─────┤
+  │ p4 │ p5 │ p6 │      * (konvolut)     │ 2/16│ 4/16│ 2/16│   ──> Nyt pixel p5'
+  ├────┼────┼────┤                       ├─────┼─────┼─────┤
+  │ p7 │ p8 │ p9 │                       │ 1/16│ 2/16│ 1/16│
+  └────┴────┴────┘                       └─────┴─────┴─────┘
+```
+Konvolution dæmper højfrekvent støj i billedet ved at lade nabopixels stemme om den sande lysintensitet.
 
 ## Opgaver
 
@@ -72,16 +87,6 @@ Opgaverne i notebooken (Python, `scipy`, `skimage`, `matplotlib`):
   - **Opgave 4 (fri leg):** egne billeder (omsat til gråtone), andre slags støj, kombinér mean-filter og kantdetektion (hvad sker der når filterstørrelsen ændres, eller når der er flere nuller mellem $1$ og $-1$ i $D_x$ og $D_y$?), og læs om randbetingelserne i `convolve2d`.
 
 Notebooken har selv ingen løsninger.
-
-## Tjek dig selv
-
-- [ ] Kan jeg regne en 1D-foldning i hånden og sige hvor flippet af kernen kommer ind?
-- [ ] Hvorfor er $[-1, 1]$ en tilnærmelse til den afledte, og hvad svarer $h$ til?
-- [ ] Kan jeg beregne $\hat p_{i,j}$ for $K = 1$ på et lille billede?
-- [ ] Hvilken kerne flytter billedet mod højre?
-- [ ] Hvad viser gradientstørrelsen, og hvorfor lyser kanter op?
-- [ ] Hvordan kan man håndtere billedets rand ved filtrering?
-- [ ] Hvad er forskellen på foldning og krydskorrelation?
 
 ## Links
 

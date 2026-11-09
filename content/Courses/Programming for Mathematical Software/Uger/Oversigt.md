@@ -30,4 +30,6 @@ Tilbage til [[Courses/Programming for Mathematical Software/Programming for Math
 
 ## Om kilderne
 
-Noterne er skrevet ud fra modulernes opgaveark (`moduleNN.pdf`) og kursusforsidens modultabel på DTU Learn. Forelæsningsslides (`slidesNN.pdf`), lærebogen og kursets lecture notes er ikke læst igennem, så forklaringerne af begreber er generelle og kan afvige i detaljer fra det underviserne viser.
+Noterne er skrevet ud fra modulernes opgaveark (`moduleNN.pdf`), forelæsningsslides (`slides01.pdf` til `slides10.pdf` og Bernd Dammanns slides i `UnixIntroSlides.pdf` og `slides09.pdf`), løsningsarkene (`sols_module01.pdf` til `sols_module08.pdf` og `solutions09.pdf`), øvelseshæfterne (`UnixIntroLabs.pdf`, `macOS_OpenMP_Compiler.pdf`), filerne i `module07.tar`, `module08.tar`, `msptools_demo.tar` og `exercises09.zip`, kursets tre meddelelser og kursusforsidens modultabel på DTU Learn.
+
+Ikke tilgængeligt: slides og løsninger for modul 11, 12 og 13 (siderne i indholdsfortegnelsen har ingen fil), siderne "Solution examples" og "Example from lecture" uden fil, `demo02` og `solutions09.zip` (API'et giver 404), linket til MSP Tools på `gitlab.gbar.dtu.dk` (kunne ikke nås udefra; koden findes i stedet i `module07.tar`), lærebogen og kursets lecture notes. Quizzer, Autolab-opgaver og afleveringsopgaven (dropbox) er ikke åbnet. Løsningsidéerne under hver opgave er korte resuméer af løsningsarkene, ikke fuld kode.

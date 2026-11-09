@@ -11,7 +11,7 @@ tags:
 
 # Uge 3: Energi, termokemi og reaktioner
 
-> Kilde: DTU Learn 26020, Week 3: "Lecture 3 - post-lecture.pdf" (forelæsning 14. september 2026). "Hess- Law working.pdf" er en håndskrevet løsning, som tekstudtrækket ikke kunne læses rent; den er ikke brugt her. Bog: OpenStax Chemistry 2e, kapitel 5 (Thermochemistry) med et forsmag på kapitel 16.
+> Kilde: DTU Learn 26020, Week 3: "Lecture 3 - post-lecture.pdf" (forelæsning 14. september 2026) og "Lecture 3 - pre-lecture copy.pdf" (30 sider, sammenlignet). "Hess- Law working.pdf" er læst, men er håndskrevet og tekstudtrækket er rodet, se afsnittet nedenfor. Kursusmeddelelserne er læst. Bog: OpenStax Chemistry 2e, kapitel 5 (Thermochemistry) med et forsmag på kapitel 16. Exercises_Week_03 (quiz) er ikke åbnet.
 
 ## Emner
 
@@ -37,19 +37,50 @@ tags:
 
 **Spontan er ikke det samme som hurtig.** Diamant til grafit har $\Delta G<0$ men tager geologisk tid; termit er spontan men kræver en aktiveringsenergi ("gnist"). $\Delta G$ siger om det sker, $E_a$ (uge 8) siger hvor hurtigt.
 
+**Hess' lov, håndskrevet løsning.** Filen "Hess- Law working.pdf" (2 sider) er lagt i Week 3-mappen efter forelæsning 5 som svar på spørgsmål om Hess' lov for sværere systemer (meddelelse 28. september); det er en løsning på et af ugens opgavespørgsmål. Den er håndskrevet, og pdf.js kunne kun trække fragmenter ud af den (reaktioner nummereret 1 til 6, ledetråde om at alle reaktioner skal gå op i ilt, og kJ/mol-tal). Teksten er for rodet til, at jeg kan gengive løsningen uden at gætte, så den er ikke refereret her. Læs selve filen på Learn.
+
+**Rettelser efter forelæsningen (meddelelse 14. september).** Et manglende minustegn i en Hess-udregning er rettet. Opløsningsentalpien for $\mathrm{H_2SO_4}$ i vand skulle ligge mellem ca. $-70$ og $-90$ kJ/mol, og målingen i forsøget gav $-69{,}5$ kJ/mol; at den ligger lidt for lavt i størrelse forklares med varmetab til omgivelserne. Der er tilføjet et billede af thermit-reaktionens resultat. Pre-lecture-versionen (30 sider) er ellers ens med post-lecture uden ekstra opgaver.
+
+### Model: Energidiagram og Hess' lov som energitrappe
+
+En kemisk reaktions entalpiforløb visualiseres ved et energidiagram:
+
+```
+Entalpi H
+  ^
+  |      [ Reaktanter ]
+  |            |
+  |            |  \Delta H < 0  (Eksoterm: varme frigives til omgivelserne)
+  |            v
+  |      [ Produkter ]
+--+----------------------------------------> Reaktionsforløb
+```
+
+Hess' lov siger, at entalpi er en **tilstandsfunktion**: ændringen $\Delta H$ afhænger kun af start- og sluttilstand, ikke af reaktionsvejen:
+
+```
+                  \Delta H_direkte
+[ Reaktanter ] =======================> [ Produkter ]
+      |                                       ^
+      | \Delta H_1                            | \Delta H_2
+      v                                       |
+           [ Mellemtrin / Grundstoffer ] -----+
+```
+
+Derfor kan enhver ukendt reaktionsentalpi beregnes som en trappe:
+$$\Delta H^\circ_{\text{reaktion}} = \Delta H_1 + \Delta H_2 = \sum \nu_p \Delta H_f^\circ(\text{produkter}) - \sum \nu_r \Delta H_f^\circ(\text{reaktanter}).$$
+
 ## Opgaver
 
 - Exercises_Week_03 (quiz på DTU Learn, ikke åbnet)
 - Ingen bogopgaver med nummer er angivet for ugen. Slides henviser til tabel G1 (standard dannelsesentalpier) i bogens appendiks.
 
-## Tjek dig selv
+## Gamle eksamensspørgsmål om dette emne
 
-- [ ] Kan jeg beregne sluttemperaturen når to stoffer med forskellig $c$ og $m$ blandes?
-- [ ] Kan jeg forklare hvorfor $\Delta H = q_P$ men $\Delta U = q_V$?
-- [ ] Kan jeg beregne $\Delta H^\circ_{rx}$ fra dannelsesentalpier, og husker jeg at grundstoffer er 0?
-- [ ] Kan jeg vurdere fortegnet på $\Delta S$ for en reaktion ud fra antal mol gas?
-- [ ] Kan jeg bruge $\Delta G=\Delta H-T\Delta S$ til at finde den temperatur hvor en proces vender?
-- [ ] Hvorfor kan en spontan reaktion stadig være meget langsom?
+Numrene refererer til de to gamle eksamenssæt på Learn (efterår 2024 og forår 2025, se Uge 13). Efterår 2024 er læst ved OCR af en scannet PDF, og numrene følger rækkefølgen i filen.
+
+- Forår 2025: spm. 21 (estimér $\Delta H$ ud fra bindingsenthalpier), spm. 30 (Hess' lov med tre delreaktioner).
+- Efterår 2024: spm. 5 og 6 bruger $\Delta H$, $\Delta S$ og $\Delta G$, se uge 11.
 
 ## Links
 

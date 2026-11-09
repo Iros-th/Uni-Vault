@@ -53,6 +53,17 @@ Tekst skrives som strenge med enkelte eller dobbelte anførselstegn. Et `#` star
 navn = "Iros"
 print("Hej", navn)   # Hej Iros
 ```
+### Eksekveringsmodel: Python fortolkerens eksekveringslinje
+
+Når et Python-program kører, læser fortolkeren kildekoden linje for linje fra top mod bund:
+
+```text
+  kildekode.py ──(Kompilering)──> Bytecode (.pyc) ──(Python Virtual Machine)──> Output
+                                                              │
+                                            Hukommelsestilstand (Variabler):
+                                            x = 5       -> [ x: heltal 5 ]
+                                            print(x*2)  -> Terminal: 10
+```
 
 ## Opgaver
 
@@ -87,15 +98,6 @@ Ugens struktur: Preparation (Copy-and-Run og selvquiz) før timen, derefter In-C
 
 - Checkpoint 1.1: Length of Hypotenuse (script `hypotenuse.py`, Pythagoras)
 - Checkpoint 1.2: Atoms per Gram (script `atoms_per_gram.py`, $N = \frac{m}{M} N_A$ med $N_A \approx 6.022 \cdot 10^{23}$)
-
-## Tjek dig selv
-
-- [ ] Hvad sker der, når et program kører to gange i træk? Husker det værdier fra første kørsel?
-- [ ] Hvad er forskellen på interaktiv tilstand og script-tilstand?
-- [ ] Hvad giver `2 + 3 * 4`, og hvordan ændrer parenteser det?
-- [ ] Hvad gør `**`, og hvad gør `/`?
-- [ ] Hvordan skriver man en kommentar?
-- [ ] Kan jeg køre en `.py`-fil fra IDLE og fra terminalen?
 
 ## Links
 

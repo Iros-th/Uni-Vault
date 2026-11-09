@@ -68,6 +68,21 @@ plt.xlabel('x')
 plt.legend()
 plt.show()
 ```
+### Beregningsmodel: NumPy vektorisering vs. Python lister
+
+NumPy gemmer tal som tætpakkede C-arrays i sammenhængende hukommelse og udnytter CPU'ens SIMD-instruktioner:
+
+```text
+  Python liste af tal:
+  [ pointer ] -> [ PyObject: int 1 ]
+  [ pointer ] -> [ PyObject: int 2 ]   <- Fragmenteret heap-hukommelse, overhead!
+  [ pointer ] -> [ PyObject: int 3 ]
+
+  NumPy ndarray (Vektoriseret):
+  ┌──────┬──────┬──────┐
+  │  1   │  2   │  3   │  <- Tætpakket C-array: a + b beregnes i én hardwarecyklus!
+  └──────┴──────┴──────┘
+```
 
 ## Opgaver
 
@@ -101,15 +116,6 @@ Ugens struktur: Preparation (Copy-and-Run og selvquiz) før timen, derefter In-C
 
 - Checkpoint 12.1: Checkerboard Sum
 - Checkpoint 12.2: Robust Values
-
-## Tjek dig selv
-
-- [ ] Hvad er forskellen på `[1, 2] * 2` for en liste og `np.array([1, 2]) * 2`?
-- [ ] Hvordan vælger jeg alle elementer større end 5 i et array?
-- [ ] Hvad er forallokering, og hvorfor bruges det?
-- [ ] Hvordan tegner jeg to kurver med forklaring i samme figur?
-- [ ] Er NumPy-arrays mutable?
-- [ ] Hvad gør `np.mean()` på et 2D-array uden `axis`?
 
 ## Links
 

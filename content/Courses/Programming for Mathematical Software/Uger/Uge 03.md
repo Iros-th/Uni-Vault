@@ -11,21 +11,40 @@ tags:
 
 # Uge 3: Unix-systemet, løkker, arrays, funktioner
 
-> Kilde: `module03.pdf` på DTU Learn (opgaveark, 17. september 2026) og modultabellen. Slides (`slides03.pdf`, `UnixIntroSlides.pdf`, `UnixIntroLabs.pdf`) er ikke læst. Del 1 af modulet er introduktion til DTU Unix-systemet (Bernd Dammann), del 2 er løkker, arrays og funktioner (Martin Andersen). Pensum: King kap. 6, 8, 9 (uden 9.6), 10; lecture notes Appendix A.5 (build-systemer og makefiles).
+> Kilde: `module03.pdf` (opgaveark, 17. september 2026), `slides03.pdf` (forelæsning 3, 18 slides), `UnixIntroSlides.pdf` (Bernd Dammann, 25 slides), `UnixIntroLabs.pdf` (øvelse 3B), `sols_module03.pdf` og modultabellen. Siderne "Solution examples" og "Example from lecture" uden fil kunne ikke åbnes (topic-API'et giver 404). Del 1 af modulet er introduktion til DTU Unix-systemet, del 2 er løkker, arrays og funktioner (Martin Andersen). Pensum: King kap. 6, 8, 9 (uden 9.6), 10; lecture notes Appendix A.5 (build-systemer og makefiles).
 
 ## Emner
 
-- DTU Unix-systemet (adgang, terminal)
+- DTU Unix-systemet (G-bar, ThinLinc, ssh, HPC)
+- Prioriteter i matematisk software
 - Løkker: `for`, `while`, `do ... while`
-- Arrays (endimensionelle og flerdimensionelle)
-- Funktioner og programorganisation (flere filer, headers)
-- Build-systemer og makefiles
+- Arrays (endimensionelle og flerdimensionelle), row-major lagring
+- Funktioner, array-argumenter og programafslutning
+- Programorganisation med flere filer, headers og makefiles
 
 ## Begreber
 
+**DTU Unix-systemet (UnixIntroSlides).** G-bar er en "remote databar" med Linux (Alma Linux 9.6 på applikationsserverne) og mere end 10000 brugere. Adgang: ThinLinc-fjernskrivebord (klient mod `thinlinc.gbar.dtu.dk`, eller via browser på `https://thinlinc.gbar.dtu.dk/`) eller `ssh` til `login.gbar.dtu.dk` eller `login.hpc.dtu.dk`, hvorefter man starter `linuxsh`. Loginnoderne er kun til login. På DTU-netværk eller VPN er der ingen ændring; udenfor kræver ThinLinc en ssh-nøgle med passphrase (kun klient, ingen webadgang), og ssh kræver nøgle, passphrase og DTU-password. Begrundelsen for at bruge systemet er, at man før eller siden vil løse problemer der ikke passer på laptoppen, mange problemer, eller bruge software der ikke kører på ens egen pc.
+
+Interaktivt arbejde har en "code of conduct": programmer fra menuen kører på flerbrugermaskiner med grænser på 24 timers CPU-tid og 16 GB hukommelse. Mere end det kræver batch-systemet (scheduler, se `www.hpc.dtu.dk`). Filer overføres med WinSCP, FileZilla, Cyberduck, `scp` eller `rsync` (server `transfer.gbar.dtu.dk` ifølge labbet). Undgå mellemrum og nationale tegn i filnavne. Data bliver backet up. Hjælp: `www.gbar.dtu.dk`, `www.hpc.dtu.dk`, `support@cc.dtu.dk`, `support@hpc.dtu.dk`.
+
+Ansvarlig brug af AI på klyngen (slides): fjernudvidelser i VS Code, Cursor eller Zed kan lade en AI-agent arbejde på HPC-systemet uden at man opdager det, fx søge efter en fil udenfor sin egen mappe. Klyngen er ikke ens private computer, og man er altid selv ansvarlig for, hvad der sker under ens konto.
+
+**Lab 3B (UnixIntroLabs).** Log ind med ThinLinc, første gang vælges "Use default config". Opret en mappe uden mellemrum (fx `02635`), lav `hello.c` (gedit), åbn en terminal i mappen ("Open Terminal Here"), kompilér og kør. Den kørbare fil kan ikke køres ved at dobbeltklikke i filhåndteringen (opgaven er at tænke over hvorfor). Valgfrit: VS Code med C/C++-udvidelsen, eller IDE'en Geany; alternativer nævnt er Eclipse, Emacs og vim.
+
+**Prioriteter (slides).** Korrekthed (design med debugging og test i tankerne), numerisk stabilitet, nøjagtighed (model, diskretisering, approksimation), fleksibilitet (abstraktionsniveau, modularitet) og effektivitet (tid og hukommelse). Der er ofte en afvejning mellem effektivitet og de andre.
+
 **Løkker.** `for (int i = 0; i < n; i++)` er standardformen til at løbe et array igennem. `while` tester før hver iteration, `do ... while` efter. `break` afslutter løkken, `continue` springer til næste iteration.
 
-**Arrays.** Et array har fast størrelse, og indeks går fra 0 til $n-1$. C tjekker ikke grænser, så adgang uden for arrayet er udefineret adfærd. Når et array sendes til en funktion, sendes i praksis en adresse, så funktionen kan ændre indholdet. Længden skal sendes med separat.
+**Arrays (slides).** En sammenhængende samling af elementer af samme type, indekseret fra 0: `int data[10] = {2,5,3,4,8,-1,3,5,4,-3};`. C tjekker ikke grænser, så adgang uden for arrayet er udefineret adfærd. Todimensionelle arrays: `double a[3][5] = {{...},{...},{...}};` hvor første indeks er række og andet er kolonne.
+
+**Row-major og column-major (slides).** C, C++ og Objective-C gemmer flerdimensionelle arrays række for række (row-major): `a[1][0]` ligger lige efter `a[0][4]`, og `a[i]` er selv et array (et "array af arrays"). FORTRAN, MATLAB og Julia bruger column-major og 1-baseret indeksering. Det betyder noget for ydelsen, når man løber en matrix igennem, og når man kalder biblioteker (uge 8).
+
+**Variabel-længde arrays (slides).** `size_t n; scanf("%zu", &n); double data[n];` (på Windows/MinGW: `%Iu`). De hedder VLA, blev defineret i C99 og er valgfrie fra C11. Brug dem med forsigtighed, og slå `-Wvla` eller `-Werror=vla` til i `CFLAGS` for at opdage dem. Dynamisk allokering kommer i uge 5.
+
+**Funktioner (slides).** Form: `return-type function-name(arguments) { ... }`. Linjen `return-type function-name(arguments);` er en prototype. Højst én returværdi, og den kan ikke være et array. `void` betyder ingen returværdi og/eller ingen argumenter. Argumenter sendes by value, og variabler er automatiske med scope i blokken `{ }`.
+
+**Array-argumenter (slides).** `int sum_array(int a[], int n)`: længden udelades normalt og skal sendes som ekstra parameter. Er arrayet kortere end `n`, er adfærden udefineret. Arrays sendes (i praksis) by reference, så funktionen kan ændre indholdet; `const` fortæller, at den ikke gør det. Compound literals (C99): `sum_array((int []){3,0,3,4,1}, 5);`.
 
 ```c
 #include <stdio.h>
@@ -45,41 +64,61 @@ int main(void) {
 }
 ```
 
-**Funktioner og prototyper.** En funktion skal være erklæret før brug. Prototypen (`double sum(const double a[], int n);`) lægges typisk i en `.h`-fil, og definitionen i en `.c`-fil. `const` fortæller, at funktionen ikke ændrer argumentet.
+**Programafslutning (slides).** `EXIT_SUCCESS` og `EXIT_FAILURE` er defineret i `stdlib.h`. Programmet kan afsluttes hvor som helst med `exit(EXIT_SUCCESS)` eller `exit(EXIT_FAILURE)`.
 
-**Programorganisation.** Større programmer deles i flere kildefiler, som kompileres hver for sig til `.o`-filer og linkes sammen. `static` på en global funktion eller variabel gør den privat for filen.
+**Flere filer (slides).** Eksemplet er `array_fun.h` med prototyper (`array_sum`, `array_cumsum`, `array_print`) beskyttet af include guards (`#ifndef ARRAY_FUN_H` / `#define ARRAY_FUN_H` / `#endif`), `array_fun.c` med definitionerne, og `myprogram.c` med `main`. Arrayets længde findes med `sizeof(a)/sizeof(double)`. Manuelt bygges det sådan:
 
-**Makefile.** En makefile beskriver, hvilke filer der afhænger af hvilke, så `make` kun genbygger det, der er ændret. Et minimalt eksempel (indrykning med tabulator):
-
-```make
-CFLAGS=-Wall -std=c99
-prog: main.o util.o
-.PHONY: clean
-clean:
-	-$(RM) prog *.o
+```
+$ gcc -Wall -std=c11 -c array_fun.c
+$ gcc -Wall -std=c11 -c myprogram.c
+$ gcc myprogram.o array_fun.o -lm -o myprogram
 ```
 
-Her bruger `make` sine indbyggede regler til at bygge `.o`-filer og linke `prog`.
+Kæden er preprocessing, compilation, assembly og linking (mod `libm` og `libc`). `static` på en global funktion eller variabel gør den privat for filen.
+
+**Makefile (slides).** Form: `variable = value` og `target : dependencies` efterfulgt af en kommando indrykket med tabulator. Make har mange indbyggede regler (se dem med `make -p -f/dev/null`), fx `COMPILE.c = $(CC) $(CFLAGS) $(CPPFLAGS) $(TARGET_ARCH) -c` og `LINK.c = $(CC) $(CFLAGS) $(CPPFLAGS) $(LDFLAGS) $(TARGET_ARCH)`. Implicit afhænger `target` af `target.o`, som afhænger af `target.c`. Man tilføjer eksplicitte afhængigheder (objektfiler afhænger af headers, den kørbare af flere objektfiler). Eksempel fra slides:
+
+```make
+CC=gcc
+CPPFLAGS=
+CFLAGS=-Wall -std=c11
+LDFLAGS=
+LDLIBS=-lm
+
+myprogram: myprogram.o array_fun.o
+myprogram.o: array_fun.h
+array_fun.o: array_fun.h
+
+.PHONY: clean
+clean:
+	-$(RM) myprogram *.o
+```
+
+`.PHONY: clean` betyder, at `clean` ikke danner en fil med det navn. `gcc -MM *.c` genererer afhængigheder automatisk. En generisk makefile bruger `obj=$(patsubst %.c,%.o,$(wildcard *.c))` og `myprogram: $(obj)`.
+### Byggemodel: Make Directed Acyclic Graph (DAG) og dependency tracking
+
+GNU Make opbygger en rettet graf uden kredsløb (DAG) over filernes afhængigheder og sammenligner tidsstempler:
+
+```text
+                       [ myprogram ] (Target)
+                        /         \
+           [ myprogram.o ]       [ array_fun.o ]
+             /        \             /        \
+       [ myprogram.c ] [ fun.h ] [ array_fun.c ]
+```
+Hvis kun `array_fun.c` ændres, genkompileres kun `array_fun.o`, hvorefter `myprogram` linkes på ny. `myprogram.c` berøres overhovedet ikke.
 
 ## Opgaver
 
 Fra `module03.pdf`. Instruktioner: skim King kap. 6, 8, 9 (spring 9.6 over) og 10; læs Appendix A.5 i lecture notes.
 
 - 3.1 Lav "DTU Unix system"-opgaverne.
-- 3.2 Tag quizzen om løkker.
-- 3.3 Tag quizzen om funktioner.
-- 3.4 Tag quizzen om arrays.
+  - Løsningsidé: løsningsarket har ingen løsning her; opgaverne er lab 3B (log ind med ThinLinc, lav og kør hello world fra kommandolinjen, valgfrit VS Code eller Geany).
+- 3.2 Tag quizzen om løkker. (Ikke åbnet.)
+- 3.3 Tag quizzen om funktioner. (Ikke åbnet.)
+- 3.4 Tag quizzen om arrays. (Ikke åbnet.)
 - 3.5 Lav "Module 03"-opgaverne på Autolab.
-
-## Tjek dig selv
-
-- [ ] Hvad er forskellen på `while` og `do ... while`?
-- [ ] Hvad sker der, hvis jeg skriver uden for et arrays grænser?
-- [ ] Hvorfor skal et array's længde sendes med som separat argument?
-- [ ] Hvad bruges `const` til i en parameterliste?
-- [ ] Hvad er en prototype, og hvor placerer man den typisk?
-- [ ] Hvad sparer man ved at bruge `make` frem for at kompilere alt manuelt?
-- [ ] Kan jeg logge ind på DTU Unix-systemet og kompilere et program dér?
+  - Hint fra forelæsningens sidste slide (ikke en løsning): funktionsevaluering uden over- og underflow og catastrophic cancellation, fx Poisson-sandsynligheden $f(k;\lambda) = \frac{\lambda^k}{k!} e^{-\lambda}$ for $k \in \mathbb{N}_0$, $\lambda > 0$. Brug `lgamma()` med $\log\Gamma(k+1) = \log(k!)$, og Stirlings formel $k! = \sqrt{2\pi k}\,(k/e)^k (1 + O(1/k))$. Autolab-løsninger lægges på Learn efter deadline.
 
 ## Links
 

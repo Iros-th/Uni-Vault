@@ -49,6 +49,20 @@ For at vise $P(n)$ for alle $n \ge n_0$ viser man basis $P(n_0)$ og induktionssk
 For $q \ne 1$ er $\sum_{k=0}^{n} q^k = \frac{1 - q^{n+1}}{1 - q}$. Den kan bevises ved induktion.
 
 *Eksempel.* $\sum_{k=0}^{3} 2^k = 1 + 2 + 4 + 8 = 15 = \frac{1 - 2^4}{1 - 2}$.
+### Aritmetisk model: Euklids divisionsalgoritme og induktionstrappe
+
+Induktionsbeviser fungerer som en uendelig trappe af dominobrikker:
+
+```text
+     [ Basis ]        Induktionsantagelse:
+      Trin 1            P(k) er sand
+        │                    │
+        v                    v
+      ┌───┐                ┌───┐
+      │   │ ─────────────> │   │ ─────────────> P(k+1) er sand
+      └───┘ (Brik 1 vælter)└───┘ (Kædereaktion)
+```
+Hvis basisbrikken vælter ($P(1)$ er sand), og faldet af brik $k$ uundgåeligt vælter brik $k+1$, er alle brikker på trappen garanteret at vælte.
 
 ## Opgaver
 
@@ -72,15 +86,6 @@ Opgaverne står på kursussiden med de numre, der er gengivet her. Nogle nævner
 - Opgave 3: Den geometriske række (spørgsmål a til c)
 - Opgave 4: En hoppebold og den geometriske række (spørgsmål a til b)
 - Opgave 5: En ulighed (spørgsmål a til b)
-
-## Tjek dig selv
-
-- [ ] Hvad siger divisionsalgoritmen?
-- [ ] Hvordan afgør jeg, om $(x - 2)$ er en faktor i et polynomium?
-- [ ] Hvordan bestemmer jeg multipliciteten af en rod?
-- [ ] Hvilke to skridt har et induktionsbevis?
-- [ ] Hvad er formlen for en geometrisk sum?
-- [ ] Hvordan faktoriserer jeg et polynomium med reelle koefficienter, når der er komplekse rødder?
 
 ## Links
 

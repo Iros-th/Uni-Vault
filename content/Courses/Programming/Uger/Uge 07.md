@@ -74,6 +74,19 @@ print(repr('a\nb'))             # 'a\nb'
 ```python
 print('yt' in 'Python')   # True
 ```
+### Datamodel: String immutabilitet og indeksering
+
+Strenge i Python er immutable (uforanderlige sekvenser af tegn) med tovejs-indeksering:
+
+```text
+  Tegn:        'P'   'y'   't'   'h'   'o'   'n'
+  Positiv index: 0     1     2     3     4     5
+  Negativ index:-6    -5    -4    -3    -2    -1
+
+  Slicing [start:slut:step]:
+  s[1:4]  --> 'yth'   (fra index 1 til og med 3)
+  s[::-1] --> 'nohtyP' (vender hele strengen baglæns)
+```
 
 ## Opgaver
 
@@ -114,15 +127,6 @@ Ugens struktur: Preparation (Copy-and-Run og selvquiz) før timen, derefter In-C
 
 - Checkpoint 7.1: Arrival Times
 - Checkpoint 7.2: Punctuation Ratio
-
-## Tjek dig selv
-
-- [ ] Hvorfor giver `s[0] = 'x'` en fejl for en streng?
-- [ ] Hvad giver `'a,b,c'.split(',')`?
-- [ ] Hvordan skriver jeg et tal med to decimaler i en f-string?
-- [ ] Hvad er forskellen på `find()` og `index()` hvis delstrengen ikke findes?
-- [ ] Hvad viser `repr()` af en streng med linjeskift?
-- [ ] Hvordan løber man gennem en streng tegn for tegn?
 
 ## Links
 

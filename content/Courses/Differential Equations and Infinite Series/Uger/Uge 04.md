@@ -11,7 +11,7 @@ tags:
 
 # Uge 4: Stabilitet af inhomogene systemer og uendelige rækker
 
-> **Kilde:** Ugeseddel 4 (DTU Learn, 01025 E26), lærebogen 4. udg. afsnit 2.9 og 4.1 til 4.4. SlidesUge4.pdf og WeeklyNotes3.pdf er ikke gennemgået her.
+> **Kilde:** Ugeseddel 4 og SlidesUge4.pdf (DTU Learn, 01025 E26), EkstraOpgaver.pdf (opgave 702), lærebogen afsnit 2.9 og 4.1 til 4.4. WeeklyNotes3.pdf, som ligger under uge 4 på Learn, handler om opgave 919 og er beskrevet i [[Courses/Differential Equations and Infinite Series/Uger/Uge 03|uge 3]]. Sætningsnumre følger slides (kursets 4. udgave).
 
 ## Læseplan
 
@@ -21,20 +21,27 @@ tags:
 
 ## Begreber
 
-### Stabilitet af inhomogene systemer (afsnit 2.9, sætning 2.45 og 2.47)
-Det inhomogene system $\dot{\mathbf x} = A\mathbf x + \mathbf b u$ kaldes asymptotisk stabilt, hvis forskellen mellem to vilkårlige løsninger går mod nul. Sætning 2.45: det sker netop når det homogene system er asymptotisk stabilt. Sætning 2.47: systemet er **BIBO-stabilt** (begrænset input giver begrænset output) netop når det homogene system $\dot{\mathbf x} = A\mathbf x$ er asymptotisk stabilt. Man afgør det altså med egenværdier eller Routh-Hurwitz, præcis som i uge 3.
+### Stabilitet af inhomogene systemer (afsnit 2.9, definition 2.46 og 2.48, sætning 2.47 og 2.49)
+Definition 2.46: det inhomogene system $\dot{\mathbf x} = A\mathbf x + \mathbf u$ er asymptotisk stabilt, hvis der for enhver påvirkning $\mathbf u$ gælder at to vilkårlige løsninger opfylder $\mathbf x_1(t) - \mathbf x_2(t) \to \mathbf 0$. Alle løsninger ender altså i den samme løsning, deraf ordet "stationær løsning". Da det skal gælde for alle $\mathbf u$, er det en egenskab ved $A$. Sætning 2.47: det sker netop når det homogene system er asymptotisk stabilt. Definition 2.48 og sætning 2.49: systemet er **BIBO-stabilt** (bounded input, bounded output: enhver begrænset påvirkning giver begrænsede løsninger) netop når det homogene system $\dot{\mathbf x} = A\mathbf x$ er asymptotisk stabilt. Man afgør det altså med egenværdier eller Routh-Hurwitz, præcis som i uge 3.
 
 **Eksempel.** $\dot x = -2x + \cos t$: egenværdien er $-2 < 0$, så systemet er BIBO-stabilt. Alle løsninger er $x = \frac{2\cos t + \sin t}{5} + ce^{-2t}$ og forskellen mellem to af dem er $ce^{-2t} \to 0$. (Tjek af den partikulære del: $\frac{-2\sin t + \cos t}{5} + \frac{2(2\cos t + \sin t)}{5} = \cos t$.)
 
+**Slides' 1-dimensionale billede (panserformlen).** $\dot x - \lambda_1x = u$ har $x(t) = ce^{\lambda_1t} + e^{\lambda_1t}\int e^{-\lambda_1t}u(t)\,dt$, altså en indsvingningsdel plus en stationær del. Hvis $\lambda_1 < 0$ er systemet asymptotisk stabilt, hvis $\lambda_1 = 0$ forløber naboløsninger parallelt (stabilt), og hvis $\lambda_1 > 0$ fjerner naboløsninger sig eksponentielt fra hinanden.
+
 ### Uegentlige integraler (afsnit 4.1)
-$\int_1^\infty f(x)\,dx$ er defineret som $\lim_{t\to\infty}\int_1^t f(x)\,dx$, hvis grænsen findes.
+Definition 4.1: $\int_a^\infty f(x)\,dx$ er defineret som $\lim_{t\to\infty}\int_a^t f(x)\,dx$, hvis grænsen findes (konvergent), ellers er integralet divergent. Slides' pointe for hele kapitel 4: følger, rækker og uegentlige integraler er alle grænseovergange, og symbolet kan både betyde et tal og en divergent grænseovergang. Regn aldrig med symbolet før eksistensen er vist. Med kvantorer: $g(t) \to a$ betyder $\forall\epsilon > 0\ \exists k: t > k \Rightarrow |g(t) - a| < \epsilon$.
 
 **Eksempel.** $\int_1^\infty \frac{1}{x^2}dx = \lim_{t\to\infty}\left[-\frac1x\right]_1^t = \lim_{t\to\infty}\left(1 - \frac1t\right) = 1$. Derimod er $\int_1^\infty \frac1x dx = \lim \ln t = \infty$ divergent. Generelt er $\int_1^\infty x^{-a}dx$ konvergent netop når $a > 1$.
 
 ### Talfølger og konvergens (afsnit 4.2)
-$x_n \to x$ betyder: for ethvert $\epsilon > 0$ findes $N$ så $|x_n - x| < \epsilon$ for alle $n > N$. I 01025 skal du kunne bruge definitionen med kvantorer, ikke kun regneregler.
+$x_n \to x$ betyder: for ethvert $\epsilon > 0$ findes $N$ så $|x_n - x| < \epsilon$ for alle $n > N$. I 01025 skal du kunne bruge definitionen med kvantorer, ikke kun regneregler. Slides skriver den $\forall\epsilon > 0\ \exists N \in \mathbb N: n \geq N \Rightarrow |x_n - s| \leq \epsilon$. Lemma 4.10: er $x_n \to x$ og $y_n \to y$, så går $\alpha x_n + \beta y_n \to \alpha x + \beta y$; tilsvarende for produkt, kvotient (ikke division med nul) og kontinuerte funktioner.
 
 **Eksempel.** $x_n = \frac{2n+1}{n+3} \to 2$: $|x_n - 2| = \frac{|2n + 1 - 2n - 6|}{n+3} = \frac{5}{n+3}$, som er mindre end $\epsilon$ når $n > \frac5\epsilon - 3$. Vælg $N$ som et heltal større end $\frac5\epsilon$.
+
+### Cauchyfølger (slides, ikke i bogen som definition)
+Hvordan viser man konvergens uden at kende grænseværdien? $\{x_n\}$ er en Cauchyfølge, hvis $\forall\epsilon > 0\ \exists N: n, m \geq N \Rightarrow |x_n - x_m| \leq \epsilon$. I $\mathbb R$ og $\mathbb C$ er en følge konvergent netop når den er en Cauchyfølge (bevises i Topologiske grundbegreber og metriske rum).
+
+**Eksempel.** $x_n = \frac1n$: for $n, m \geq N$ er $|x_n - x_m| \leq \max(\frac1n, \frac1m) \leq \frac1N$, som er $\leq \epsilon$ når $N \geq \frac1\epsilon$.
 
 ### Taylors sætning (afsnit 4.3, læses selv)
 Taylorpolynomiet af grad $N$ omkring $x_0$ er $P_N(x) = \sum_{n=0}^N \frac{f^{(n)}(x_0)}{n!}(x - x_0)^n$, og Taylors formel (lemma 4.12) giver restleddet $\frac{f^{(N+1)}(\xi)}{(N+1)!}(x - x_0)^{N+1}$ for et $\xi$ mellem $x_0$ og $x$.
@@ -42,7 +49,9 @@ Taylorpolynomiet af grad $N$ omkring $x_0$ er $P_N(x) = \sum_{n=0}^N \frac{f^{(n
 **Eksempel.** $e^{0.1} \approx P_2(0.1) = 1 + 0.1 + 0.005 = 1.105$. Restleddet er højst $e^{0.1}\frac{0.1^3}{6} \approx 0.00018$; den sande værdi er $1.10517\ldots$, så fejlen er cirka $0.00017$.
 
 ### Uendelige rækker (afsnit 4.4)
-$\sum_{n=1}^\infty a_n$ er konvergent med sum $S$, hvis afsnitssummerne $S_N = \sum_{n=1}^N a_n$ konvergerer mod $S$. Ellers divergent. Lemma 4.16: at fjerne endeligt mange led ændrer ikke konvergensen. Lemma 4.17: konvergente rækker kan lægges sammen og ganges med konstanter ledvis.
+$\sum_{n=1}^\infty a_n$ er konvergent med sum $S$, hvis afsnitssummerne $S_N = \sum_{n=1}^N a_n$ konvergerer mod $S$. Ellers divergent. Lemma 4.16: summationsindekset må skiftes, $\sum_{n=N}^\infty a_n = \sum_{n=0}^\infty a_{n+N}$, og at fjerne endeligt mange led ændrer ikke konvergensen. Lemma 4.17: konvergente rækker kan lægges sammen og ganges med konstanter ledvis (bevis: lemma 4.10 på afsnitssummerne). Det omvendte gælder ikke: $\sum(a_n + b_n)$ kan konvergere uden at $\sum a_n$ og $\sum b_n$ gør det.
+
+**Summationsrækkefølgen er fast (slides).** En række er matematisk kun sin følge af afsnitssummer. Bytter man om på uendeligt mange led, får man andre afsnitssummer og dermed en anden række. Endeligt mange ombytninger er i orden, fordi $S_N$ er uændret når $N$ er forbi dem.
 
 **Eksempel (teleskoprække).** $\frac{1}{n(n+1)} = \frac1n - \frac{1}{n+1}$, så $S_N = 1 - \frac{1}{N+1} \to 1$. Altså $\sum_{n=1}^\infty \frac{1}{n(n+1)} = 1$.
 
@@ -61,19 +70,35 @@ Afleveres onsdag 30/9 kl. 8, fysisk, og opgave 2 i Möbius. Det tæller 2 % af k
 
 Noten her løser ikke miniprojektet, da det er en bedømt aflevering.
 
-**MC:** svarene på 701 er 3 og 4. Løs nu opgave 702 (EkstraOpgaver.pdf).
+**MC:** svarene på 701 er 3 og 4. Løs nu opgave 702 (EkstraOpgaver.pdf): et $2\times 2$ system med $y = x_2$, hvor man skal vælge overføringsfunktion med definitionsmængde, amplitudekarakteristik og fasekarakteristik (afsnit 2.6 og 2.7).
 
-## Tjek dig selv
-
-- [ ] Hvad er forskellen på stabilitet af det homogene og det inhomogene system, og hvad betyder BIBO-stabil?
-- [ ] Kan jeg afgøre om $\int_1^\infty x^{-a}dx$ konvergerer, og regne værdien ud?
-- [ ] Kan jeg bevise $x_n \to x$ direkte fra definitionen med $\epsilon$ og $N$?
-- [ ] Kan jeg forklare hvorfor $f(t_n) \to a$ for enhver følge $t_n \to \infty$ når $f(t) \to a$, men ikke omvendt?
-- [ ] Ved jeg hvad det betyder at en række er konvergent (afsnitssummer)?
-- [ ] Kan jeg bruge $n$'te ledskriteriet, og ved jeg at det kun kan vise divergens?
+**Gode råd om afleveringer (SlidesUge4):** skriv studienummer tydeligt, sidenumre og arkene i rigtig rækkefølge, og "vend" hvis du fortsætter på bagsiden. $\Leftrightarrow$ må kun stå mellem udsagn (ikke "$2 + 5 \Leftrightarrow 7$"). Lav hellere et konstruktivt bevis eller en direkte udregning end et modstridsbevis. Du behøver ikke skrive opgaveteksten, sætninger og definitioner af.
 
 ## Links
 
 - [[Courses/Differential Equations and Infinite Series/Uger/Oversigt|Ugeoversigt 01025]]
 - Forrige: [[Courses/Differential Equations and Infinite Series/Uger/Uge 03|Uge 3]]
 - Næste: [[Courses/Differential Equations and Infinite Series/Uger/Uge 05|Uge 5: Konvergenskriterier og kvotientrækker]]
+
+
+### Signalbehandlingsmodel: BIBO-stabilitet og impulsrespons
+
+I signalbehandling og reguleringsteori kaldes et system **BIBO-stabilt** (Bounded-Input Bounded-Output), hvis ethvert begrænset indgangssignal frembringer et begrænset udgangssignal:
+
+$$\sup_{t \ge 0} |u(t)| \le M < \infty \implies \sup_{t \ge 0} |y(t)| \le K < \infty.$$
+
+```
+Indgang u(t)                    System                  Udgang y(t)
+Begrænset signal  =======> [ Impulsrespons h(t) ] ======> Begrænset signal
+|u(t)| <= M                h(t) = c^T * e^{At} * b        |y(t)| <= K
+```
+
+Sammenhængen mellem indgang og udgang er givet ved foldningsintegralet:
+
+$$y(t) = \int_0^t h(t - \tau)u(\tau)\,d\tau.$$
+
+Kriteriet for BIBO-stabilitet er ækvivalent med, at systemets impulsrespons er **absolut integrabel**:
+
+$$\int_0^\infty |h(t)|\,dt < \infty.$$
+
+Hvis systemet $\dot{\mathbf x} = A\mathbf x + \mathbf b u$ er asymptotisk stabilt (alle egenværdier har $\operatorname{Re}(\lambda) < 0$), er normen $\|e^{At}\| \le C e^{-\alpha t}$ eksponentielt aftagende. Dermed er impulsresponsen altid absolut integrabel, hvilket beviser sætning 2.49: **asymptotisk stabilitet medfører altid BIBO-stabilitet**.

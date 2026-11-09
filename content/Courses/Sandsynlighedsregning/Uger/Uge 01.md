@@ -39,6 +39,26 @@ tags:
 **Uafhængighed.** $A$ og $B$ er uafhængige, hvis $P(A \cap B) = P(A)\,P(B)$, eller ækvivalent $P(B \mid A) = P(B)$. For flere hændelser kræves, at produktreglen gælder for alle delmængder af hændelserne (afsnit 1.6), ikke kun for par.
 
 **Arbejdsgang for tekstopgaver.** Ugebrevet bruger opgave 1.4.10 til at træne en fast rækkefølge: (1) oversæt til symboler, (2) oversæt oplysninger til formler, (3) definér det, der spørges om, (4) knyt input til output, (5) udled formlen, (6) sæt tal ind.
+### Beslutningsmodel: Bayesiansk sandsynlighedstræ og screening
+
+Bayes' formel $P(A \mid B) = rac{P(B \mid A) P(A)}{P(B)}$ kan altid visualiseres som en to-trins forgrening (Prior -> Likelihood -> Fælles sandsynlighed):
+
+```text
+                  Start
+                 /     \
+       P(Syg) = 0,01   P(Rask) = 0,99  (Prior)
+             /             \
+           [Syg]          [Rask]
+           /   \          /    \
+        0,95   0,05     0,02   0,98    (Sensitivitet / Specificitet)
+        Pos     Neg      Pos    Neg
+         │                │
+         v                v
+      0,0095            0,0198         (Fælles sandsynlighed for Positiv test)
+
+  P(Syg | Positiv) = 0,0095 / (0,0095 + 0,0198) = 0,0095 / 0,0293 ≈ 32,4 %
+```
+Selv med en 95 % pålidelig test er over 67 % af positive tests falske alarmer, hvis sygdommen er sjælden i befolkningen (base rate fallacy).
 
 ## Opgaver
 
@@ -49,15 +69,6 @@ Alle numre er fra Pitman, Probability (kapitel.afsnit.opgave). Kursussiden liste
 Opgaver til selvstudium: 1.1.7, 1.2.4, 1.3.4, 1.4.2, 1.5.5, 1.6.6.
 
 Gamle eksamensspørgsmål fra 16/12/2004: spørgsmål 1, 2, 3, 5 og 20.
-
-## Tjek dig selv
-
-- [ ] Kan jeg beregne $P(A)$ som antal gunstige delt med antal mulige, og se, hvornår det ikke må bruges?
-- [ ] Kan jeg bruge komplementreglen og additionsreglen i en opgave med "mindst ét"?
-- [ ] Kan jeg udlede $P(A \cap B) = P(A)P(B \mid A)$ fra definitionen?
-- [ ] Kan jeg opstille et træ og bruge total sandsynlighed?
-- [ ] Kan jeg gennemføre Bayes-regningen for sygdomstesten og forklare, hvorfor svaret er så lavt?
-- [ ] Kan jeg forklare, hvorfor parvis uafhængighed ikke er nok for tre hændelser?
 
 ## Links
 

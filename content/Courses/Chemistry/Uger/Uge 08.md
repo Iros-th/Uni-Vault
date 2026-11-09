@@ -11,7 +11,7 @@ tags:
 
 # Uge 8: Kinetik og ligevægt
 
-> Kilde: DTU Learn 26020, Week 8: "Lecture 7 - post-lecture copy.pdf" (forelæsning 26. oktober 2026; pre-lecture-versionen er ikke læst). Bog: OpenStax Chemistry 2e, kapitel 12 (Kinetics) og 13 (Fundamental Equilibrium Concepts).
+> Kilde: DTU Learn 26020, Week 8: "Lecture 7 - post-lecture copy.pdf" (forelæsning 26. oktober 2026; pre-lecture-versionen er ikke læst). Bog: OpenStax Chemistry 2e, kapitel 12 (Kinetics) og 13 (Fundamental Equilibrium Concepts). Pre-lecture-versionen "Lecture 7 - pre-lecture copy.pdf" er læst og sammenlignet. Meddelelserne er læst. Additional Questions Week 08 (quiz) er ikke åbnet.
 
 ## Emner
 
@@ -39,6 +39,34 @@ Slides' sætning: termodynamik siger om det sker, kinetik hvor hurtigt, ligevæg
 
 **$Q$ og Le Châtelier.** $Q$ har samme form som $K$ men bruger aktuelle koncentrationer; systemet bevæger sig så $Q\to K$. Eksempel (egen): $[\mathrm{H_2}]=[\mathrm{I_2}]=0{,}50$, $[\mathrm{HI}]=2{,}0$ giver $Q=2{,}0^2/0{,}50^2=16<50{,}5$, så reaktionen går mod produkter. Slides' regneark: tilføj reaktant giver skift mod produkter ($K$ uændret); komprimering skifter mod færre mol gas; en inert gas ved konstant volumen gør intet; kun temperatur ændrer $K$ (endoterm: $K$ vokser ved opvarmning); katalysator ændrer ikke ligevægten. Haber-Bosch: $\mathrm{N_2+3\,H_2\rightleftharpoons2\,NH_3}$, $\Delta H^\circ=-92$ kJ/mol; lav temperatur og højt tryk giver højt udbytte, men i praksis 400 til 500 °C og 150 til 300 bar over jernkatalysator for at få hastighed.
 
+**Pre-lecture mod post-lecture og meddelelser.** Pre-lecture har 34 sider, post-lecture 46. Post-lecture har bl.a. et plot af resultatet af ligevægtsdemonstrationen, som klassen deltog i (meddelelse 26. oktober). Rettelse fra meddelelse 26. oktober: Q11 i Exercises_Week_08 kan være svær, fordi opløselighedstabellen fra kapitel 4 kun nævnes kort; brug Table 4.1 (side 163) i bogen til den opgave. "Additional Questions Week 08" er en quiz med ekstra spørgsmål fra OpenStax kapitel 10 og 11 (ikke åbnet).
+
+### Model: Arrhenius energibarriere og katalysatormodel
+
+Kemiske reaktioner sker ved molekylære sammenstød (kollisionsteori). For at et stød fører til reaktion, kræves:
+1. Korrekt geometrisk orientering.
+2. Tilstrækkelig kinetisk energi til at overvinde aktiveringsenergien $E_a$.
+
+```
+Potentiel energi
+  ^
+  |             * Transition State (aktiveret kompleks)
+  |            / \
+  |           /   \   Uden katalysator (høj E_a)
+  |          / *   \
+  |         / / \   \ Med katalysator (lavere E_a')
+  |  Reaktanter      \
+  |  ---------        \
+  |                    Produkter
+  |                    ---------
+--+----------------------------------------------> Reaktionskoordinat
+```
+
+**Katalysatorens virkemåde:**
+En katalysator ændrer **ikke** reaktionsentalpien $\Delta H^\circ$ eller ligevægtskonstanten $K$. Den tilvejebringer derimod en alternativ reaktionsvej med lavere aktiveringsenergi $E_a'$, hvilket øger hastighedskonstanten $k$ eksponentielt jf. Arrhenius:
+
+$$k = A e^{-\frac{E_a}{RT}}.$$
+
 ## Opgaver
 
 - Exercises_Week_08 (quiz på DTU Learn, ikke åbnet)
@@ -46,14 +74,12 @@ Slides' sætning: termodynamik siger om det sker, kinetik hvor hurtigt, ligevæg
 - Slides, "Think about these problems before next class": Problem 1 (hvor længe holder mælk: åbnet mælk holder 10 dage ved 4 °C og 1 dag ved 22 °C, find $E_a$ og holdbarhed i bil ved 30 °C) og et Problem 2 om $\mathrm{N_2O_4\rightleftharpoons2\,NO_2}$ (endoterm) i et lukket rør flyttet til isvand: hvad sker der med farve og $K$. Løsningerne står i uge 9.
 - Ingen bogopgaver med nummer er angivet.
 
-## Tjek dig selv
+## Gamle eksamensspørgsmål om dette emne
 
-- [ ] Kan jeg bestemme reaktionsordner ud fra en tabel med begyndelseshastigheder og finde $k$?
-- [ ] Kan jeg bruge $\ln[A]_t=\ln[A]_0-kt$ og $t_{1/2}=\ln2/k$?
-- [ ] Kan jeg finde $E_a$ ud fra to temperaturer og to $k$-værdier?
-- [ ] Hvorfor kan hastighedsloven ikke aflæses af den afstemte ligning, når $K$'s eksponenter kan?
-- [ ] Kan jeg sætte en ICE-tabel op og løse for $x$ (fx $\mathrm{H_2+I_2}$)?
-- [ ] Hvad sker der med $K$ og med ligevægtens position ved temperaturstigning, tryk og katalysator?
+Numrene refererer til de to gamle eksamenssæt på Learn (efterår 2024 og forår 2025, se Uge 13). Efterår 2024 er læst ved OCR af en scannet PDF, og numrene følger rækkefølgen i filen.
+
+- Efterår 2024: spm. 13 (reaktionsorden ud fra koncentration mod tid), spm. 15 (ligevægtskonstant ud fra partialtryk). Spm. 18 (pH i mættet Mg(OH)$_2$) bruger opløselighedsprodukt, som jeg ikke har set i de læste slides.
+- Forår 2025: spm. 4 (katalysators virkning), spm. 14 (tryk og ligevægt), spm. 18 (hastighedslov ud fra tabel). Spm. 12 (udfældning, $K_{sp}$) og 24 (molær opløselighed, $K_{sp}$) bruger også opløselighedsprodukt.
 
 ## Links
 

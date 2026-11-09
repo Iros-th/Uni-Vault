@@ -90,6 +90,19 @@ alder = 17
 print(alder >= 18)                 # False
 print(alder > 10 and alder < 20)   # True
 ```
+### Hukommelsesmodel: Variabler som navnemærkater (Pointers til objekter)
+
+I Python er en variabel ikke en "kasse" med data, men en navnemærkat (reference), der peger på et objekt i hukommelsen:
+
+```text
+       Navnerum (Stack/Namespace)             Objekt i Heap-hukommelsen
+       ┌───────────┐                         ┌─────────────────────────┐
+       │     a     │ ───────────────────────>│  Type: int              │
+       ├───────────┤                         │  Værdi: 42              │
+       │     b     │ ───────────────────────>│  Reference Count: 2     │
+       └───────────┘                         └─────────────────────────┘
+```
+Hvis man skriver `b = a`, kopieres værdien 42 ikke. Begge navne peger blot på det samme int-objekt.
 
 ## Opgaver
 
@@ -139,16 +152,6 @@ Ugens struktur: Preparation (Copy-and-Run og selvquiz) før timen, derefter In-C
 
 - Checkpoint 2.1: Road Angle (script `road_angle.py`, $\tan \alpha = g/100$)
 - Checkpoint 2.2: Elapsed Time (script `elapsed_time.py`, sekunder til dage, timer, minutter og sekunder)
-
-## Tjek dig selv
-
-- [ ] Hvad er forskellen på `=` og `==`?
-- [ ] Hvad giver `7 // 2`, `7 % 2` og `7 / 2`?
-- [ ] Hvordan konverterer jeg en streng til et heltal?
-- [ ] Hvad er typen af `3 / 1`?
-- [ ] Hvorfor er `print = 6` en dårlig idé?
-- [ ] Hvornår giver `a and b` værdien `True`?
-- [ ] Hvordan bytter man værdien af to variabler?
 
 ## Links
 

@@ -71,6 +71,27 @@ print('x er', x)   # spor
 if x > 3:
     print('stor')
 ```
+### Beslutningsmodel: Forgreningslogik (if-elif-else)
+
+Betingelser styrer programmets kontrolflow som en række sporskifter:
+
+```text
+                        Start
+                          │
+                   Er x > 0 sand?
+                      /        \
+                    Ja          Nej
+                   /              \
+        [ print("Positiv") ]   Er x == 0 sand?
+                                  /        \
+                                Ja          Nej
+                               /              \
+                     [ print("Nul") ]   [ print("Negativ") ]
+                               \              /
+                                v            v
+                               Samlet slutpunkt
+```
+Kun den **første** sande gren udføres; alle efterfølgende `elif`-betingelser springes over.
 
 ## Opgaver
 
@@ -112,14 +133,6 @@ Ugens struktur: Preparation (Copy-and-Run og selvquiz) før timen, derefter In-C
 
 - Checkpoint 3.1: Astronomical Season (variablene `day`, `month`, resultat i `season`)
 - Checkpoint 3.2: Flowering Period (variablene `start`, `end`, `current`, resultat `is_flowering`)
-
-## Tjek dig selv
-
-- [ ] Hvad sker der, hvis to `elif`-betingelser begge er sande?
-- [ ] Hvorfor er indrykning vigtig?
-- [ ] Hvad er forskellen på `if` efterfulgt af `if` og `if` efterfulgt af `elif`?
-- [ ] Hvordan kan jeg teste en periode, der går over årsskiftet (fx november til februar)?
-- [ ] Hvordan finder jeg en logisk fejl, når koden kører uden fejlmeddelelse?
 
 ## Links
 

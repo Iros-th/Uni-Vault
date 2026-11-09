@@ -38,6 +38,24 @@ tags:
 **Tællelig additivitet.** Resultaterne for endelige fordelinger gælder også for tællelige, så længe summerne konvergerer (øverst side 209).
 
 **Negativ binomial og Bernoulliprocessen.** Antal forsøg for at opnå $n$ succeser (eksempel 4 side 213); den geometriske er $n = 1$. Tankegangen bygger på Bernoulliprocessen, en uendelig række uafhængige Bernoulli-forsøg. Eksempel 5 minder om fødselsdagseksemplet og bygger på afsnit 1.6.
+### Spredningsmodel: Markovs og Chebyshevs ulighedstunneler
+
+Uligheder giver en øvre grænse for halesandsynligheder, selv når man ikke kender den præcise fordeling:
+
+```text
+  Markov (kun for X >= 0):            Chebyshev (for alle med kendt varians):
+  P(X >= a) <= E[X] / a               P(|X - μ| >= kσ) <= 1 / k²
+
+  Pandsynlighed                         Afvigelse fra μ:
+  │                                     │         μ
+  │ *                                   │      ┌──┴──┐
+  │  *                                  │    _/   |   \_
+  │   *                                 │  _/     |     \_
+  │    * <- Maks E[X]/a                 │ /       |       \  <- Halesandsynlighed
+  └───────┴──────────────> x            └────┬─────────┬────> x
+          a                                 μ-kσ      μ+kσ     højst 1/k²
+```
+For enhver tænkelig fordeling gælder f.eks., at højst $1/2^2 = 25 \%$ af massen kan ligge mere end $2\sigma$ væk fra middelværdien.
 
 ## Opgaver
 
@@ -48,15 +66,6 @@ Pitman, Probability (kapitel.afsnit.opgave). Regnes ved øvelsen fredag 2. oktob
 Opgaver til selvstudium: 2.5.9, 3.3.19, 3.4.2.
 
 Gamle eksamensspørgsmål fra 16/12/2004: spørgsmål 9, 10 og 15.
-
-## Tjek dig selv
-
-- [ ] Kan jeg beregne varians med $E(X^2) - \mu^2$?
-- [ ] Kan jeg forklare, hvorfor variansadditionen kræver uafhængighed, men middelværdiadditionen ikke?
-- [ ] Kan jeg bruge Chebyshev til at give en øvre grænse?
-- [ ] Kan jeg skrive en tællevariabel som sum af indikatorer?
-- [ ] Kan jeg udlede middelværdien $1/p$ for den geometriske fordeling?
-- [ ] Kan jeg skelne geometrisk fra negativ binomial?
 
 ## Links
 

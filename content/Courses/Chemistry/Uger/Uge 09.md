@@ -11,7 +11,7 @@ tags:
 
 # Uge 9: Anvendelsesforelæsning 2 (batterier, MOF'er, magnetiske materialer)
 
-> Kilde: DTU Learn 26020, Week 9: "26020 Battery Applications Lecture LWG.pdf" (Leo W. Gordon, 2. november 2026) og "MOFs_ChemistryPolytechnic_2026.pdf" (Kasper S. Pedersen, 36 slides, mest figurer). Kursusplanen: mandag 2. november, kl. 8.00 øvelse om forelæsning 7, kl. 10.00 magnetiske materialer, batterier, maskinlæring i kemi. Ingen slides om maskinlæring er lagt op i Week 9. Ugen er en anvendelsesforelæsning uden nyt bogkapitel.
+> Kilde: DTU Learn 26020, Week 9: "26020 Battery Applications Lecture LWG.pdf" (Leo W. Gordon, 2. november 2026) og "MOFs_ChemistryPolytechnic_2026.pdf" (Kasper S. Pedersen, 36 slides, mest figurer). Kursusplanen: mandag 2. november, kl. 8.00 øvelse om forelæsning 7, kl. 10.00 magnetiske materialer, batterier, maskinlæring i kemi. Ingen slides om maskinlæring er lagt op i Week 9. Ugen er en anvendelsesforelæsning uden nyt bogkapitel. Meddelelserne er læst. Additional Questions Week 09 (quiz) er ikke åbnet.
 
 ## Emner
 
@@ -37,6 +37,43 @@ tags:
 
 **Magnetiske materialer.** Slides viser MOF'er som kvantematerialer (stærke elektroninteraktioner), todimensionelle magneter med $T_C=55$ K, magneter der udligner deres eget felt, og magnetisk køling. Magnetisk entropi for en ion med spin $S$: $S_m=R\ln(2S+1)$; for $\mathrm{Eu^{2+}}$ ($S=7/2$) er $R\ln8=2{,}08R$ (kontrolleret). Teksten på disse slides er sparsom, så detaljerne står ikke her.
 
+**Fra meddelelserne.** Forelæsningen 2. november fik fokus på materialevidenskab: magnetiske materialer (Kasper Pedersen), maskinlæring i kemi (Jakob Dahl) og batterier (Leo Gordon). Start kl. 10.00 med pause kl. 10.45. Samme morgen skrev Leo, at Prof. Dahl var syg og ikke kunne præsentere, så forelæsningen startede som normalt kl. 10.15 efter øvelserne. Der ligger ingen slides om maskinlæring på Learn. "Additional Questions Week 09" findes som quiz i TOC (ikke åbnet), selvom meddelelsen fra 23. oktober siger, at der ikke kommer ekstra spørgsmål til den anden anvendelsesforelæsning.
+### Elektrokemisk model: Litium-ion batteri interkalation og ion-drift
+
+Et genopladeligt litium-ion batteri fungerer via interkalation (indsætning af Li⁺-ioner mellem atomare lag i elektroderne):
+
+```text
+              Afladning (spontan proces, genererer strøm e⁻ ->)
+       (-) Anode (Grafit)                     (+) Katode (LiCoO2)
+      ┌─────────────────┐   Elektrolyt      ┌─────────────────┐
+      │  C  C  C  C  C  │   Li⁺ flux ->     │ CoO2 CoO2 CoO2  │
+      │   o   o   o     │ ───────────────>  │    o    o    o  │
+      │  Li⁺ Li⁺ Li⁺    │ (organisk solvent)│   Li⁺  Li⁺  Li⁺ │
+      └─────────────────┘                   └─────────────────┘
+       Oxidation ved anoden:                 Reduktion ved katoden:
+       LiC6 -> C6 + Li⁺ + e⁻                 CoO2 + Li⁺ + e⁻ -> LiCoO2
+
+              Opladning (påtrykt ydre spænding driver processen modsat)
+       Elektroner og Li⁺ tvinges tilbage i grafit-anoden.
+```
+
+### Materialemodel: Metal-Organiske Netværk (MOF) porearkitektur
+
+MOF'er (Metal-Organic Frameworks) består af metalliske knuder (clusters) forbundet af organiske linkere:
+
+```text
+      [M] ──Linker── [M] ──Linker── [M]
+       │              │              │
+     Linker  (Pore) Linker  (Pore) Linker
+       │              │              │
+      [M] ──Linker── [M] ──Linker── [M]
+
+  Funktionel fordel:
+  - Enormt indre overfladeareal (ofte over 3000 m²/g).
+  - Skræddersyede poremål til selektiv gasopsamling (f.eks. CO2-fangst fra røggas)
+    eller adsorption af vanddamp fra ørkenluft ved lav relativ luftfugtighed.
+```
+
 ## Opgaver
 
 - Exercises_Week_09 (quiz på DTU Learn, ikke åbnet)
@@ -44,14 +81,11 @@ tags:
 - Kursusplanen: "Exercise on Lecture 7 material" kl. 8.00 den 2. november 2026 (emnet er uge 8: kinetik og ligevægt). Selve opgaverne er ikke lagt som fil.
 - Ingen bogopgaver med nummer er angivet.
 
-## Tjek dig selv
+## Gamle eksamensspørgsmål om dette emne
 
-- [ ] Kan jeg pege på anode, katode, elektrolyt og separator og sige hvad der oxideres og reduceres ved afladning?
-- [ ] Kan jeg regne energi i Wh ud fra spænding og kapacitet?
-- [ ] Hvilke tre afvejninger gælder for kapacitet, spænding og cyklingshastighed?
-- [ ] Hvorfor kan opvarmning frigive gas fra en MOF? Kan jeg finde omslagstemperaturen med $T=\Delta H/\Delta S$?
-- [ ] Kan jeg gentage Arrhenius-udregningen for mælk i bil ved 30 °C?
-- [ ] Hvad sker der med farve og $K$ for $\mathrm{N_2O_4\rightleftharpoons2\,NO_2}$ ved afkøling?
+Numrene refererer til de to gamle eksamenssæt på Learn (efterår 2024 og forår 2025, se Uge 13). Efterår 2024 er læst ved OCR af en scannet PDF, og numrene følger rækkefølgen i filen.
+
+- Ingen spørgsmål direkte om batterier, MOF'er eller magnetiske materialer. Galvaniske celler og koncentrationsceller (efterår 2024 spm. 19, forår 2025 spm. 10) ligger i uge 11.
 
 ## Links
 

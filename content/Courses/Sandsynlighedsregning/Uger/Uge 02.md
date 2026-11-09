@@ -36,6 +36,23 @@ tags:
 **Hypergeometrisk fordeling.** Træk $n$ uden tilbagelægning fra en population på $N$ med $G$ "gode": $P(X = k) = \dfrac{\binom{G}{k}\binom{N-G}{n-k}}{\binom{N}{n}}$. Eksempel: 5 kort fra 52, præcis 2 hjerter: $\dfrac{\binom{13}{2}\binom{39}{3}}{\binom{52}{5}} = \dfrac{78 \cdot 9139}{2\,598\,960} \approx 0{,}274$.
 
 **Counting.** Antal ordnede udvælgelser af $r$ blandt $n$ er $n!/(n-r)!$, antal uordnede er $\binom{n}{r}$. Binomial er "med tilbagelægning", hypergeometrisk er "uden".
+### Approksimationsmodel: Binomialfordelingens klokkekonvergens mod normalfordelingen
+
+Når $n$ vokser og $p$ holdes konstant, konvergerer den diskrete binomialfordeling $B(n, p)$ mod den kontinuerte normalfordeling $\mathcal{N}(np, np(1-p))$:
+
+```text
+  Diskrete søjler: B(n, p)          Kontinuert kurve: N(μ, σ²)
+           ┌─┐                                    __---__
+         ┌─┤ ├─┐                                _/       \_
+       ┌─┤ │ │ ├─┐                            _/           \_
+     ┌─┤ │ │ │ │ ├─┐                         /               \
+  ───┴─┴─┴─┴─┴─┴─┴─┴───                   ──/─────────────────\──
+       Diskrete k-værdier                           x (kontinuert)
+```
+
+**Kontinuitetskorrektion (Huskeregel til eksamen):**
+For at medregne hele søjlen ved $k$, udvider man intervallet med 0,5:
+$$P(a \le X \le b) pprox P\left( rac{a - 0{,}5 - np}{\sqrt{np(1-p)}} \le Z \le rac{b + 0{,}5 - np}{\sqrt{np(1-p)}} ight).$$
 
 ## Opgaver
 
@@ -46,14 +63,6 @@ Pitman, Probability (kapitel.afsnit.opgave). Regnes ved øvelsen fredag 18. sept
 Opgaver til selvstudium: R.1.3, R.1.15, 2.1.6, 2.2.6.
 
 Gamle eksamensspørgsmål fra 16/12/2004: spørgsmål 8, 11, 12 og 26.
-
-## Tjek dig selv
-
-- [ ] Kan jeg opstille $P(X = k)$ for en binomialfordeling og forklare hvert led?
-- [ ] Kan jeg bruge kontinuitetskorrektion i normalapproksimationen?
-- [ ] Kan jeg standardisere og aflæse $\Phi$ i en tabel?
-- [ ] Kan jeg forklare, hvorfor $X/n$ koncentrerer sig om $p$ for stor $n$?
-- [ ] Kan jeg afgøre, om en opgave er binomial eller hypergeometrisk?
 
 ## Links
 

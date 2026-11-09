@@ -29,6 +29,25 @@ tags:
 **Uafhængighed.** $X$ og $Y$ er uafhængige, hvis $f(x,y) = f_X(x)f_Y(y)$. I trekant-eksemplet er de ikke uafhængige: området er ikke et rektangel, og $f_X f_Y$ giver ikke konstanten 2.
 
 **Maks-min-problemer som illustration.** Ugebrevet bruger max-min-problemstillingen fra afsnit 4.5 både som eksempel på simultane fordelinger og som repetition. Opgave 4.6.3 anbefales regnet i forvejen.
+### Rumlig model: Simultan 2D sandsynlighedstæthed og marginalisering
+
+For to kontinuerte stokastiske variable $(X, Y)$ svarer sandsynligheden til volumen under tæthedsfladen $f(x, y)$:
+
+```text
+           z = f(x, y)
+             ^
+             │        Volumen = 1
+             │       .-''''-.
+             │     .'        '.
+             │    /   P(A)     \
+             └───/──────────────\─────> y
+                /                \
+               v x
+```
+
+**Marginalisering ("projektion" ned på én akse):**
+For at finde fordelingen af $X$ alene, integreres $y$ væk over hele sit definitionsområde:
+$$f_X(x) = \int_{-\infty}^\infty f(x, y)\,dy.$$
 
 ## Opgaver
 
@@ -39,14 +58,6 @@ Pitman, Probability (kapitel.afsnit.opgave). Regnes ved øvelsen fredag 6. novem
 Opgaver til selvstudium: 4.5.8, 4.6.5, 5.1.4, 5.1.5, 5.2.7.
 
 Gamle eksamensspørgsmål fra 16/12/2004: spørgsmål 23 og 28.
-
-## Tjek dig selv
-
-- [ ] Kan jeg finde en konstant, så $f$ integrerer til 1 over et område?
-- [ ] Kan jeg beregne en sandsynlighed som areal for en ligefordeling?
-- [ ] Kan jeg finde marginale tætheder og sætte grænserne rigtigt?
-- [ ] Kan jeg afgøre, om to kontinuerte variable er uafhængige?
-- [ ] Kan jeg se, hvornår det er lettest at regne på det komplementære område?
 
 ## Links
 

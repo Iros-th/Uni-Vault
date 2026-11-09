@@ -33,6 +33,24 @@ tags:
 **Reglen om iterede middelværdier.** $E\big(E(Y \mid X)\big) = E(Y)$. Metode: find $E(Y \mid X)$ med simple overvejelser, og midl derefter over $X$ (eksemplerne 2, 3 og 4 i afsnittet). Eksempel (terning og mønter): givet $N = n$ er forventet antal kroner $n/2$, så $E(\text{kroner}) = E(N/2) = 3{,}5/2 = 1{,}75$.
 
 **Udtynding af Poisson.** Hvis $N$ er Poisson($\mu$) og man beholder hver af de $N$ uafhængigt med sandsynlighed $p$, bliver antallet beholdt Poisson($p\mu$). Det følger af marginalformlen ovenfor og er den diskrete begrundelse for udtyndingen fra uge 5.
+### Forudsigelsesmodel: Betinget middelværdi som bedste approksimation
+
+Den betingede middelværdi $g(Y) = E[X \mid Y]$ er den funktion af $Y$, der minimerer middelkvadratfejlen $E[(X - g(Y))^2]$:
+
+```text
+       Løsningsrum af alle stokastiske variable:
+                   X
+                  /│
+                 / │ Fejl: X - E[X|Y]  (ortogonal på alle funktioner af Y)
+                /  │
+               v   v
+            ───────o────────────── Underrum af funktioner g(Y)
+                 E[X|Y] (Ortogonal projektion)
+```
+
+**Loven om total forventning (Tower property):**
+$$E[E[X \mid Y]] = E[X].$$
+Gennemsnittet af alle lokale gennemsnit er præcis lig det globale gennemsnit.
 
 ## Opgaver
 
@@ -43,14 +61,6 @@ Pitman, Probability (kapitel.afsnit.opgave). Regnes ved øvelsen fredag 20. nove
 Opgaver til selvstudium: 5.3.12, 5.4.3, 6.1.5. (Kursussiden har den som 6.1.5 med trinvis løsning.)
 
 Gamle eksamensspørgsmål fra 16/12/2004: spørgsmål 6 og 29.
-
-## Tjek dig selv
-
-- [ ] Kan jeg finde en betinget fordeling ud fra en simultan tabel?
-- [ ] Kan jeg bygge en simultan fordeling op af $P(X = x)$ og $P(Y = y \mid X = x)$?
-- [ ] Kan jeg finde den marginale fordeling af $Y$ ved at summere over $X$?
-- [ ] Kan jeg forklare, hvorfor $E(Y \mid X)$ er en stokastisk variabel?
-- [ ] Kan jeg bruge $E(E(Y \mid X)) = E(Y)$ i en to-trins opgave?
 
 ## Links
 

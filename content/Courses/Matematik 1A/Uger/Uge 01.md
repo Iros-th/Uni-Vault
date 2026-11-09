@@ -49,6 +49,27 @@ $P \Rightarrow Q$ er ækvivalent med $\neg Q \Rightarrow \neg P$. Det bruges i k
 Ved ligninger med absolutværdi indfører man tautologien $x < 0 \vee x \ge 0$ og løser i hvert tilfælde (Eksempel 1.4.2 i lærebogen).
 
 *Eksempel.* Løs $|x| = -x + 1$. Hvis $x \ge 0$: $x = -x + 1$, så $x = \tfrac{1}{2}$ (passer med $x \ge 0$). Hvis $x < 0$: $-x = -x + 1$, altså $0 = 1$, ingen løsning. Svaret er $x = \tfrac{1}{2}$.
+### Logikmodel: Boolske sandhedstræer og modstridsstrukturer
+
+Logisk ræsonnement kan visualiseres som et forgrenende sandhedstræ for sammensatte udsagn:
+
+```text
+                  Udsagn: (P ∧ ¬Q) => R
+                           │
+             ┌─────────────┴─────────────┐
+          P er sand                   P er falsk
+             │                           │
+       ┌─────┴─────┐                     │
+    Q sand      Q falsk                  v
+       │           │              (P ∧ ¬Q) er falsk
+       v           v              => implikation er trivielt SAND
+   (P ∧ ¬Q)    (P ∧ ¬Q)
+   er FALSK    er SAND
+       │           │
+       v           v
+    Implik.    Kræver R sand
+     SAND      for sandhed
+```
 
 ## Opgaver
 
@@ -74,15 +95,6 @@ Opgaverne står på kursussiden med de numre, der er gengivet her. Nogle nævner
 - Opgave 3: Implikation/Biimplikation (spørgsmål a til c)
 - Opgave 4: Tautologi (spørgsmål a til d)
 - Opgave 5: Ligninger (ét spørgsmål, a)
-
-## Tjek dig selv
-
-- [ ] Hvornår er $P \Rightarrow Q$ falsk?
-- [ ] Hvad er en tautologi, og kan jeg vise det med en sandhedstabel?
-- [ ] Hvad er kontrapositionen af $P \Rightarrow Q$?
-- [ ] Hvordan er et modstridsbevis opbygget?
-- [ ] Hvornår kan jeg sætte en biimplikationspil mellem to linjer i en udregning?
-- [ ] Kan jeg løse $|2x+1| = |-5x+3|$ ved at dele op i tilfælde?
 
 ## Links
 

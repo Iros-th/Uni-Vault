@@ -11,7 +11,7 @@ tags:
 
 # Uge 4: Elektroner og det periodiske system
 
-> Kilde: DTU Learn 26020, Week 4: "Lecture 4 - post-lecture copy.pdf" (forelæsning 21. september 2026). Mange slides er figurer, så noterne bygger på tekstdelen. Bog: OpenStax Chemistry 2e, kapitel 6 (Electronic Structure and Periodic Properties of Elements).
+> Kilde: DTU Learn 26020, Week 4: "Lecture 4 - post-lecture copy.pdf" (forelæsning 21. september 2026, 42 sider) og "Lecture 4 - pre-lecture copy.pdf" (37 sider, sammenlignet). Mange slides er figurer, så noterne bygger på tekstdelen. Kursusmeddelelserne er læst. Kunne ikke tilgås: emnet "Lecture 4 - post-lecture copy.pptx" har ingen filadresse i TOC (pdf-versionen af samme slides er læst). Bog: OpenStax Chemistry 2e, kapitel 6 (Electronic Structure and Periodic Properties of Elements). Exercises_Week_04 (quiz) er ikke åbnet.
 
 ## Emner
 
@@ -39,19 +39,43 @@ tags:
 
 **Elektronegativitet.** Et mål for hvor hårdt en kerne trækker i delte elektroner i en binding (ca. gennemsnit af elektronaffinitet og ioniseringsenergi). Bruges i uge 5 til at afgøre bindingstype.
 
+**Rettelser og tilføjelser i post-lecture (meddelelse 21. september).** Rettet: (i) forveksling af $\lambda$ og $\nu$, (ii) bølgelængden for 2,4 GHz, (iii) vinkelmomentreglen er $\ell = 0,\dots,n-1$ og ikke op til $n$ (pre-lecture har den gamle fejl), (iv) C-H på sidste slide er flyttet tættere på C. Nyt slide om effektiv kerneladning: det handler om, hvor meget af kernens ladning de yderste elektroner faktisk mærker, fordi kerneelektronerne skærmer, og det forklarer tendenserne i det periodiske system. Pre-lecture har 37 sider mod 42 i post-lecture, og der er ingen ekstra opgaver i pre-lecture. Bemærk: afleveringen er fjernet fra kurset, og der er i stedet korte anvendelsesforelæsninger (uge 6 og 9).
+
+### Model: Kvantemekanisk orbitalmodel og energitrappe
+
+Elektroner i atomer beskrives ikke som partikler i faste baner, men som 3D stående bølger (orbitaler) med sandsynlighedstæthed $|\psi|^2$:
+
+```
+Energi
+  ^
+  |                                        4p  _ _ _
+  |                            3d  _ _ _ _ _
+  |                        4s  _
+  |                                        3p  _ _ _
+  |                        3s  _
+  |                                        2p  _ _ _
+  |                        2s  _
+  |
+  |   1s  _
+--+----------------------------------------------------> Orbitaler
+```
+
+Opbygningsprincipperne (Aufbau-modellen):
+1. **Aufbau-princippet:** Elektroner fyldes i orbitalerne i rækkefølge efter stigende energi ($1s \to 2s \to 2p \to 3s \to 3p \to 4s \to 3d \to \dots$).
+2. **Pauli-udelukkelsesprincippet:** Højst 2 elektroner pr. orbital, og de skal have modsatte spins ($\uparrow\downarrow$, $m_s = \pm 1/2$).
+3. **Hunds regel:** I degenererede orbitaler (fx de tre $2p$-orbitaler) fordeles elektronerne først enkeltvis med parallelle spins ($\uparrow\ \uparrow\ \uparrow$) for at minimere elektron-elektron frastødning.
+
 ## Opgaver
 
 - Exercises_Week_04 (quiz på DTU Learn, ikke åbnet)
 - Ingen bogopgaver med nummer er angivet for ugen.
 
-## Tjek dig selv
+## Gamle eksamensspørgsmål om dette emne
 
-- [ ] Kan jeg regne mellem bølgelængde, frekvens og fotonenergi?
-- [ ] Hvorfor afhænger fotoelektrisk effekt af bølgelængde og ikke af lysets intensitet?
-- [ ] Hvilke værdier kan $\ell$ og $m_\ell$ have for $n=3$?
-- [ ] Kan jeg skrive den fulde og den korte (ædelgas) elektronkonfiguration for et grundstof og en ion?
-- [ ] Kan jeg ordne tre grundstoffer efter atomradius og første ioniseringsenergi?
-- [ ] Hvorfor er en anion større end sit atom?
+Numrene refererer til de to gamle eksamenssæt på Learn (efterår 2024 og forår 2025, se Uge 13). Efterår 2024 er læst ved OCR af en scannet PDF, og numrene følger rækkefølgen i filen.
+
+- Efterår 2024: spm. 1 (rækkefølge efter atomradius i periode 3), spm. 7 (gyldigt sæt kvantetal for en 4d-elektron), spm. 8 (antal yderste elektroner i ædelgasserne).
+- Forår 2025: spm. 8 (valenselektroner i fosfor), spm. 19 (hvilken ion har mindst radius), spm. 25 (gruppe og periode ud fra konfigurationen $4s^2 4p^5$).
 
 ## Links
 

@@ -33,6 +33,26 @@ Mine egne noter fra 7/9 nævner "counting arguments" og "bijections between sets
 **Entydighedsbevis.** Mønsteret fra uge 1: antag at to objekter $A$ og $B$ har egenskaben, og vis $A = B$. Bruges i Problem 1 og Problem 6.
 
 **Bevis eller modbevis.** Opgavetypen i Problem Set One. Først afgør man om påstanden er sand. Er den sand, bruger man et direkte eller indirekte bevis. Er den falsk, finder man et modeksempel. Sample solutions viser at man ofte kan genbruge tidligere opgaver, fx at Problem 3(1) er et specialtilfælde af Problem 2(2).
+### Bevismodel: Modstridsbevisets logiske tragt
+
+Ved beviser for irrationale tal eller uendelighed antager man det stik modsatte af påstanden for at fremprovokere et logisk sammenbrud:
+
+```text
+  Ønsker at bevise: Sætning P er sand
+           │
+           v
+  Antag det modsatte: ¬P er sand  (f.eks. "√2 kan skrives som en uforkortelig brøk a/b")
+           │
+           │  Deduktiv algebraisk manipulation
+           v
+  Konsekvens: a og b er begge lige  (kan forkortes med 2)
+           │
+           v
+  MODSTRID! (Brøken var antaget uforkortelig)
+           │
+           v
+  Konklusion: Antagelsen ¬P er falsk -> Sætning P er uundgåeligt SAND.
+```
 
 ## Opgaver
 
@@ -43,14 +63,6 @@ Samme opgavesæt som uge 1 (`proofs_problems1`):
 - Problem 6 er "additional problem".
 
 Deadline for rapport: 13/9 (fra General Info).
-
-## Tjek dig selv
-
-- [ ] Har jeg afleveret Problem 5 med bevis eller modeksempel til hver af de fire påstande?
-- [ ] Står det tydeligt i min aflevering hvilke fakta jeg bruger uden bevis?
-- [ ] Har jeg sammenlignet mine løsninger med `sample_solutions1` for Problem 1 til 3?
-- [ ] Kan jeg forklare hvad det betyder at en funktion er injektiv, surjektiv og bijektiv?
-- [ ] Har jeg læst feedbacken på afleveringen og brugt den?
 
 ## Links
 

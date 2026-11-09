@@ -11,7 +11,7 @@ tags:
 
 # Uge 2: Reaktioner, støkiometri og gasser
 
-> Kilde: DTU Learn 26020, Week 2: "26020 - Lecture 2 - Post Lecture.pdf" (forelæsning 7. september 2026; pre-lecture-versionen er ikke læst). Bog: OpenStax Chemistry 2e, kapitel 4 (Stoichiometry of Chemical Reactions) og kapitel 9 (Gases).
+> Kilde: DTU Learn 26020, Week 2: "26020 - Lecture 2 - Post Lecture.pdf" (forelæsning 7. september 2026, 38 sider) og pre-lecture-versionen "26020 - Lecture 2 pre-lecture slides.pdf" (36 sider, sammenlignet med post-lecture). Kursusmeddelelserne er læst. Bog: OpenStax Chemistry 2e, kapitel 4 (Stoichiometry of Chemical Reactions) og kapitel 9 (Gases). Exercises_Week_02 (quiz) er ikke åbnet.
 
 ## Emner
 
@@ -39,19 +39,42 @@ tags:
 
 **Samlet eksempel (rust i lukket rum).** Slides: 30 m$^3$ jernrum ved 1 atm og 293 K. $n = \dfrac{101325\cdot30}{8{,}314\cdot293} = 1248$ mol gas, heraf 21 % $\mathrm{O_2}$ = 262 mol. Rust: $\mathrm{4\,Fe + 3\,O_2 \to 2\,Fe_2O_3}$ fjerner $\mathrm{O_2}$ fra gasfasen, så $\dfrac{262{,}1 - x}{1248 - x} = 0{,}10$ giver $x = 152{,}6$ mol $\mathrm{O_2}$. Jern: $\tfrac43\cdot152{,}6 = 203{,}4$ mol $\cdot\,55{,}85 = 11{,}4$ kg.
 
+**Pre-lecture mod post-lecture.** Pre-lecture-slides har 36 sider, post-lecture 38. Alt i pre-lecture findes i post-lecture; de to ekstra sider er slides om intensive og ekstensive egenskaber, som underviseren glemte i uge 1 (meddelelse 31. august). Der er ingen ekstra opgaver i pre-lecture-versionen.
+
+### Model: Idealgas vs. Van der Waals model for reelle gasser
+
+Den ideelle gasmodel ($PV = nRT$) forudsætter to ting:
+1. Gasmolekyler har intet egetvolumen (punktpartikler).
+2. Der er ingen tiltræknings- eller frastødningskræfter mellem molekylerne (perfekt elastiske stød).
+
+Ved højt tryk eller lav temperatur bryder disse antagelser sammen, og vi må anvende **Van der Waals modellen**:
+
+$$\left(P + a\frac{n^2}{V^2}\right)(V - nb) = nRT.$$
+
+```
+             Molekylær tiltrækning a               Partikelvolumen nb
+             (Molekyler trækker i hinanden,         (Molekyler optager plads,
+              rammer væggen med lavere kraft)        så det frie volumen mindskes)
+                       |                                     |
+                       v                                     v
+Idealgas:             P                                      V                = nRT
+Van der Waals:  (P + a * n^2/V^2)                       (V - nb)              = nRT
+```
+
+- Parameteren $a$ korrigerer for intermolekylære tiltrækningskræfter: molekylerne tiltrækker hinanden indad, så trykket mod væggen bliver mindre end for en idealgas.
+- Parameteren $b$ korrigerer for partiklernes egetvolumen: det reelle frie rumfang til rådighed for bevægelse er mindre end beholderens volumen $V$.
+
 ## Opgaver
 
 - Exercises_Week_02 (quiz på DTU Learn, ikke åbnet)
 - Ingen bogopgaver med nummer er angivet for ugen.
 
-## Tjek dig selv
+## Gamle eksamensspørgsmål om dette emne
 
-- [ ] Kan jeg afstemme forbrænding af et kulbrinte og kontrollere antal atomer?
-- [ ] Kan jeg finde limiting reagent når den ene reaktant er givet i mL?
-- [ ] Kan jeg regne procent-udbytte ud fra teoretisk og faktisk udbytte?
-- [ ] Hvilke størrelser holdes konstante i Boyle, Charles og Gay-Lussac?
-- [ ] Kan jeg bruge $PV=nRT$ med konsistente enheder for $R$?
-- [ ] Hvorfor falder det samlede antal mol gas når jern ruster, og hvorfor skal det med i molbrøken?
+Numrene refererer til de to gamle eksamenssæt på Learn (efterår 2024 og forår 2025, se Uge 13). Efterår 2024 er læst ved OCR af en scannet PDF, og numrene følger rækkefølgen i filen.
+
+- Efterår 2024: spm. 3 (mol og gram ethanol ud fra 1 kg fruktose, afstemning og støkiometri), spm. 4 (tryk i en lukket tank efter en reaktion ved høj temperatur, idealgasloven).
+- Forår 2025: spm. 26 (partialtryk i en beholder med et hul), spm. 29 (maksimal masse CaC$_2$ fra en given mængde kulstof, afstemning og støkiometri).
 
 ## Links
 

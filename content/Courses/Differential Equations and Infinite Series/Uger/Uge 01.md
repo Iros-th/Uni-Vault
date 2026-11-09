@@ -11,7 +11,7 @@ tags:
 
 # Uge 1: Differentialligninger af n'te orden og overføringsfunktion
 
-> **Kilde:** Ugeseddel 1 (DTU Learn, 01025 E26) og lærebogen Ole Christensen, *Differentialligninger og uendelige rækker*, 4. udg. (afsnit 1.1 til 1.5, appendiks A.2 og A.3). Opgaveteksterne er slået op i bogens opgavesamling (bilag F). SlidesUge1.pdf er ikke gennemgået her.
+> **Kilde:** Ugeseddel 1 og SlidesUge1.pdf (DTU Learn, 01025 E26), WeekleyNotes1.pdf (løsning til opgave 904), facitliste_studerende.pdf, og lærebogen Ole Christensen, *Differentialligninger og uendelige rækker* (afsnit 1.1 til 1.5, appendiks A.2 og A.3). Opgaveteksterne er slået op i bogens opgavesamling (bilag F). Sætningsnumre følger slides og kursets 4. udgave; se [[Courses/Differential Equations and Infinite Series/Uger/Oversigt|oversigten]] om udgaver.
 
 ## Læseplan
 
@@ -32,6 +32,15 @@ hvor $a_0, \dots, a_n$ er reelle konstanter og $a_0 \neq 0$. Bogen skriver venst
 
 ### Linearitet og løsningsrummet (sætning 1.4 og 1.5)
 Hvis $y_1$ og $y_2$ løser den homogene ligning, så gør $c_1 y_1 + c_2 y_2$ det også. Løsningerne til $D_n(y) = 0$ udgør derfor et vektorrum, og sætning 1.5 siger at dimensionen er præcis $n$. Man skal altså finde $n$ lineært uafhængige løsninger for at have dem alle.
+
+### Differentialoperatoren $D$ (slides, appendiks A.3)
+Slides skriver venstresiden som en operator: $D f = f'$, $D^2 f = f''$, og $D_n = a_0D^n + a_1D^{n-1} + \dots + a_n$ er en afbildning $C^\infty(\mathbb R) \to C^\infty(\mathbb R)$. Alle disse operatorer er lineære, og derfor hedder ligningen lineær. Lighedstegnet i $D_n(y) = u$ er en identitet mellem funktioner, ikke mellem funktionsværdier. Faktorerne $(D - a)$ og $(D - b)$ kommuterer, så faktoriseringen af $P(\lambda)$ giver en faktorisering af operatoren:
+
+$$D_n = a_0(D - \lambda_1)^{p_1}(D - \lambda_2)^{p_2}\cdots(D - \lambda_k)^{p_k}.$$
+
+**Eksempel.** $(D - 1)(D - 2)f = (D - 1)(f' - 2f) = f'' - 2f' - f' + 2f = f'' - 3f' + 2f$, altså $(D-1)(D-2) = D^2 - 3D + 2$, som svarer til $P(\lambda) = (\lambda - 1)(\lambda - 2)$. Regner man $(D-2)(D-1)f$ ud, får man det samme.
+
+Sætning 1.6 har også en anden del: løsninger $e^{\lambda t}$ hørende til forskellige rødder er lineært uafhængige. Beviset er opgave 905 i miniprojekt 1.
 
 ### Karakterligningen og $e^{\lambda t}$ (sætning 1.6)
 Indsætter man $y = e^{\lambda t}$ i den homogene ligning, får man $e^{\lambda t}P(\lambda) = 0$, hvor
@@ -56,6 +65,8 @@ Er $\lambda$ en rod med algebraisk multiplicitet $p$, giver den de $p$ lineært 
 
 **Eksempel.** $y'' - 4y' + 4y = 0$ har $P(\lambda) = (\lambda - 2)^2$, dobbeltrod $2$, og $y(t) = (c_1 + c_2 t)e^{2t}$.
 
+**Eksempler fra slides.** $y'''' - y''' + y'' - y' = 0$ har $P(\lambda) = \lambda(\lambda - 1)(\lambda^2 + 1)$, rødderne $0, 1, \pm i$, og den reelle løsning $y = c_1 + c_2e^{t} + c_3\cos t + c_4\sin t$. Og $y''' + 2y'' + y' = 0$ har $P(\lambda) = \lambda(\lambda + 1)^2$, så $y = c_1 + (c_2 + c_3t)e^{-t}$. Slides bemærker at multiple rødder sjældent opstår "tilfældigt", men kan være ønskede i design.
+
 ### Eksistens og entydighed (sætning 1.18)
 Er $u$ kontinuert på et interval $I$, har begyndelsesværdiproblemet med $y(t_0), y'(t_0), \dots, y^{(n-1)}(t_0)$ givet præcis én løsning.
 
@@ -66,10 +77,12 @@ Den fuldstændige løsning til den inhomogene ligning er én partikulær løsnin
 
 **Eksempel.** $y'' + y = t$. Gæt $y_0 = at + b$: så er $y_0'' + y_0 = at + b = t$, altså $a = 1$, $b = 0$. Fuldstændig løsning: $y = t + c_1\cos t + c_2\sin t$.
 
-### Superpositionsprincippet (sætning 1.22)
+**Når gættet rammer den homogene løsning (slide 32).** Er gættet selv en løsning til den homogene ligning, ganges det med $t^p$, hvor $p$ er multipliciteten af den rod det svarer til. Det følger af opgave 904. **Eksempel.** $y''' + 2y'' + y' = 1$: en konstant er homogen løsning (roden $0$ er simpel), så gæt $y_0 = at$. Så er $y_0''' + 2y_0'' + y_0' = a = 1$, og $y_0 = t$.
+
+### Superpositionsprincippet (sætning 1.23)
 Hvis $y_1$ svarer til påvirkningen $u_1$ og $y_2$ til $u_2$, så svarer $c_1 y_1 + c_2 y_2$ til $c_1 u_1 + c_2 u_2$. Det bruges når højresiden er en sum, fx i opgave 309 (4).
 
-### Overføringsfunktion og stationært svar (afsnit 1.4, sætning 1.24)
+### Overføringsfunktion og stationært svar (afsnit 1.4, sætning 1.25)
 For ligningen $a_0 y^{(n)} + \dots + a_n y = b_0 u^{(m)} + \dots + b_m u$ er overføringsfunktionen
 
 $$H(s) = \frac{b_0 s^m + \dots + b_m}{a_0 s^n + \dots + a_n} = \frac{Q(s)}{P(s)}.$$
@@ -93,8 +106,56 @@ Funktionerne $f_1, \dots, f_k$ er lineært uafhængige, hvis $c_1 f_1(t) + \dots
 
 **Eksempel.** $c_1 e^{t} + c_2 e^{2t} = 0$ for alle $t$. Sæt $t = 0$: $c_1 + c_2 = 0$. Differentiér og sæt $t = 0$: $c_1 + 2c_2 = 0$. Trækkes de fra hinanden, fås $c_2 = 0$ og så $c_1 = 0$.
 
-### Appendiks A.3
-Indeholder beviset for at $e^{\lambda t}, \dots, t^{p-1}e^{\lambda t}$ er lineært uafhængige løsninger (lemma A.13). Nøglen er operatoridentiteten $(D - \lambda)(e^{\lambda t}u) = e^{\lambda t}u'$, som er opgave 904.
+### Appendiks A.3 (lemma A.13 og A.14)
+Lemma A.13: hvis $(D - \lambda_j)^{p_j}y = 0$, så er $D_n(y) = 0$, fordi faktoren kan flyttes helt til højre i faktoriseringen. Lemma A.14 (= opgave 904): $(D - \lambda)^p y = 0$ har de $p$ lineært uafhængige løsninger $e^{\lambda t}, \dots, t^{p-1}e^{\lambda t}$. Nøglen er operatoridentiteten $(D - \lambda)(e^{\lambda t}u) = e^{\lambda t}u'$. Tilsammen beviser de sætning 1.14 og 1.15.
+
+### Fysisk model: Harmonisk oscillator og dæmpede fjedersystemer
+
+Næsten alle lineære 2. ordens ligninger i fysik og mekanik stammer fra Newtons 2. lov anvendt på et masse-fjeder-dæmper system:
+
+```
+      +---+  Fjederkraft F_k = -k*y
+ |====|   |/\/\/\/\/\/\/\/\/\/\/\----+
+ |    |   |                          |
+ | Væg|   |  Dæmperkraft F_c = -c*y' |===> Masse m  ===> y(t)
+ |    |   |---[====]-----------------+   (Inputkraft u(t))
+ +----+
+```
+
+Summen af kræfter giver $m y'' = -c y' - k y + u(t)$, som på standardform er:
+
+$$m y'' + c y' + k y = u(t).$$
+
+Karakterligningen er $m \lambda^2 + c \lambda + k = 0$ med diskriminant $D = c^2 - 4mk$. Systemets opførsel falder i 3 distinkte fysiske regimer:
+
+1. **Underdæmpet ($c^2 < 4mk$, $D < 0$):** Rødderne er komplekst konjugerede $\lambda = -\frac{c}{2m} \pm i\omega_d$, hvor $\omega_d = \sqrt{\frac{k}{m} - \frac{c^2}{4m^2}}$ er den dæmpede egenfrekvens. Løsningen oscillerer med en eksponentielt faldende amplitude:
+   $$y(t) = e^{-\frac{c}{2m}t}\bigl(A\cos(\omega_d t) + B\sin(\omega_d t)\bigr).$$
+2. **Kritisk dæmpet ($c^2 = 4mk$, $D = 0$):** En reel dobbeltrod $\lambda_0 = -\frac{c}{2m}$. Systemet vender tilbage til ligevægt hurtigst muligt uden at svinge over nulpunktet:
+   $$y(t) = (c_1 + c_2 t)e^{-\frac{c}{2m}t}.$$
+   Dette er den ideelle model for støddæmpere i biler og dørlukkere.
+3. **Overdæmpet ($c^2 > 4mk$, $D > 0$):** To negative reelle rødder $\lambda_1, \lambda_2 < 0$. Dæmpningen er så kraftig, at massen langsomt og sejt glider tilbage til ligevægt uden svingninger:
+   $$y(t) = c_1 e^{\lambda_1 t} + c_2 e^{\lambda_2 t}.$$
+
+### Elektrisk system-model: RLC-kredsløb og overføringsfunktion
+
+Der er en 1:1 analogi mellem det mekaniske fjedersystem og et elektrisk RLC-seriekredsløb:
+
+```
+    +---[ R: Modstand ]---[ L: Spole ]---[ C: Kondensator ]---+
+    |                                                         |
+   (+) Indgangsspænding u(t)                                 (-)
+```
+
+Kirchhoffs spændingslov giver for ladningen $q(t)$:
+
+$$L \frac{d^2q}{dt^2} + R \frac{dq}{dt} + \frac{1}{C}q = u(t).$$
+
+Her svarer induktans $L$ til massen $m$, modstand $R$ til dæmperen $c$, og den inverse kapacitans $1/C$ til fjederkonstanten $k$.
+Tages spændingen over kondensatoren som output $y(t) = \frac{1}{C}q(t)$, bliver systemets overføringsfunktion:
+
+$$H(s) = \frac{1/LC}{s^2 + \frac{R}{L}s + \frac{1}{LC}}.$$
+
+Dette er den klassiske model for et **2. ordens lavpasfilter**: lave frekvenser lukkes igennem med forstærkning $H(0) = 1$, mens høje frekvenser dæmpes kraftigt med $1/\omega^2$.
 
 ## Opgaver
 
@@ -109,26 +170,17 @@ Alle numre er fra opgavesamlingen bagerst i lærebogen (bilag F). Facitliste til
 | 320 (ii), (iii) | 1.4 | Overføringsfunktion for $y^{(4)} + 6y'' + 25y = u' + 3u$ og svar på $u = e^{-t}$ og $u = e^{t}\cos t$. Ugesedlen: begge kan regnes på mere end én måde. |
 | 317 | 1.2, 1.3 | Fuldstændig reel løsning til $y^{(4)} + 10y'' + 169y = 0$ og den løsning med $f(0) = 0$, $f'(0) = 1$, $f(t) \to 0$. |
 | 312 | 1.3 | Har $y' - 2y = e^{2t}$ en løsning $Ce^{2t}$? (Hvad sker der når påvirkningen "rammer" en rod.) |
-| 904 (i) til (iii) (vigtig) | A.3 | Bevis for lemma A.13 via $(D-\lambda)(e^{\lambda t}u) = e^{\lambda t}u'$. Ugesedlen spørger: hvad har det med gættemetoden at gøre? |
+| 904 (i) til (iii) (vigtig) | A.3 | Bevis for lemma A.14 via $(D-\lambda)(e^{\lambda t}u) = e^{\lambda t}u'$. Ugesedlen spørger: hvad har det med gættemetoden at gøre? |
 | 913 | A.2 | Vis at $u_1 + u_2$ og $u_1 - u_2$ er lineært uafhængige hvis $u_1, u_2$ er. |
 | 309 (1), (3), (4), hvis tid | 1.3 | Gættemetoden på $\ddot y + 5\dot y - 6y = \cos 2t$ og $\sin 2t$; (3) og (4) skal blot forklares i ord (superposition). |
 | 904 (iv), hvis tid | A.3 | Lineær uafhængighed af $e^{\lambda t}, \dots, t^{p-1}e^{\lambda t}$. |
 
-> [!warning] Rødderne i opgave 317
-> Ugesedlen skriver at rødderne er $\lambda = \pm(1 \pm 3i)$. Med ligningen som den står i 4. udgave ($\lambda^4 + 10\lambda^2 + 169 = 0$) får man $\lambda^2 = -5 \pm 12i$ og dermed $\lambda = \pm(2 \pm 3i)$, fordi $(2+3i)^2 = -5 + 12i$. Tjek hvilken udgave du regner fra og regn selv rødderne efter.
+> [!note] Rødderne i opgave 317 (afklaret)
+> Ugesedlen skriver at rødderne er $\lambda = \pm(1 \pm 3i)$. Det er en fejl i ugesedlen. $\lambda^4 + 10\lambda^2 + 169 = 0$ giver $\lambda^2 = -5 \pm 12i$ og dermed $\lambda = \pm(2 \pm 3i)$, fordi $(2+3i)^2 = -5 + 12i$. Facitlisten (facitliste_studerende.pdf) bekræfter det: den reelle løsning er bygget af $e^{\pm 2t}\cos 3t$ og $e^{\pm 2t}\sin 3t$, og den søgte løsning er $f(t) = \frac13 e^{-2t}\sin 3t$ (tjekket: den løser ligningen, $f(0) = 0$ og $f'(0) = 1$).
 
 **Hjemmeopgavesæt 1:** stilles i Möbius, frist tirsdag 9/9 kl. 20.
 
-## Tjek dig selv
-
-- [ ] Kan jeg opskrive karakterligningen direkte ud fra en $n$'te ordens ligning?
-- [ ] Kan jeg gå fra komplekse rødder $a \pm i\omega$ til reelle løsninger, og forklare hvorfor det er lovligt (lemma 1.8)?
-- [ ] Ved jeg hvilke løsninger en dobbeltrod eller tripelrod giver?
-- [ ] Kan jeg forklare struktursætningen: hvorfor er $y = y_0 + y_{\text{hom}}$ alle løsninger?
-- [ ] Kan jeg finde $H(s)$ og bruge den til stationære svar på $e^{st}$ og på $\cos\omega t$?
-- [ ] Ved jeg hvad der går galt når $s$ er rod i karakterligningen (opgave 312)?
-- [ ] Kan jeg vise lineær uafhængighed ved at starte med en vilkårlig linearkombination lig nul?
-- [ ] Kan jeg beregne amplitude- og fasekarakteristik for en simpel ligning?
+**Løsningsnoter:** WeekleyNotes1.pdf (ligger under uge 2 på DTU Learn) løser opgave 904 (i) til (iii): (i) direkte udregning af $(D-\lambda)(e^{\lambda t}u) = e^{\lambda t}u'$, (ii) gentag (i) $m$ gange og få $(D-\lambda)^m(e^{\lambda t}u) = e^{\lambda t}u^{(m)}$, (iii) sæt $u = t^k$ med $k < p$, så $u^{(p)} = 0$. Facit til 306, 309, 317 og 320 står i facitliste_studerende.pdf.
 
 ## Links
 

@@ -62,6 +62,22 @@ class Broek:
 
 print(Broek(1, 2) + Broek(1, 3))   # 5/6
 ```
+### Nedarvningsmodel: Klassehierarki og polymorfi
+
+En underklasse arver alle egenskaber fra sin overklasse og kan specialisere dem via `super()`:
+
+```text
+                         [ Overklasse: Form ]
+                         - farve
+                         + beregn_areal()
+                                │
+                  ┌─────────────┴─────────────┐
+                  v                           v
+          [ Klasse: Cirkel ]          [ Klasse: Rektangel ]
+          - radius                    - bredde, hojde
+          + beregn_areal() (π·r²)     + beregn_areal() (b·h)
+```
+Polymorfi gør det muligt at kalde `form.beregn_areal()` på en liste af blandede former uden at vide på forhånd, hvilken specifik formtype der er tale om.
 
 ## Opgaver
 
@@ -92,15 +108,6 @@ Ugens struktur: Preparation (Copy-and-Run og selvquiz) før timen, derefter In-C
 
 - Checkpoint 11.1: Overdraft Account
 - Checkpoint 11.2: Limited Event Manager
-
-## Tjek dig selv
-
-- [ ] Hvad er forskellen på overklasse og underklasse?
-- [ ] Hvad betyder det at overskrive en metode?
-- [ ] Hvornår bruger man `super()`?
-- [ ] Hvad gør `__str__`?
-- [ ] Hvilken specialmetode definerer `+`?
-- [ ] Hvorfor skal `__eq__` defineres, for at to instanser kan sammenlignes med `==` på indhold?
 
 ## Links
 

@@ -43,6 +43,22 @@ En ordnet basis $\beta$ er lineært uafhængig og udspænder rummet (Definition 
 Basisskiftematricen ${}_\gamma M_\beta$ (Sætning 10.3.1) omregner $\beta$-koordinater til $\gamma$-koordinater: $[\mathbf{v}]_\gamma = {}_\gamma M_\beta [\mathbf{v}]_\beta$. Dens søjler er $\gamma$-koordinaterne til $\beta$-vektorerne.
 
 *Eksempel.* $\beta = (1, Z)$, $\gamma = (1+Z, Z)$. Så $1 = 1\cdot(1+Z) - 1\cdot Z$ og $Z = 0\cdot(1+Z) + 1\cdot Z$, altså ${}_\gamma M_\beta = \begin{pmatrix} 1 & 0 \\ -1 & 1 \end{pmatrix}$. For $3 + 5Z$ med $[\cdot]_\beta = (3,5)$ fås $(3, -3+5) = (3, 2)$, og tjek: $3(1+Z) + 2Z = 3 + 5Z$.
+### Rummodel: Fundamentalunderrum for en matrix
+
+En $m 	imes n$ matrix $A$ forbinder fire fundamentale underrum i $\mathbb{R}^n$ og $\mathbb{R}^m$:
+
+```text
+      Domæne: R^n                                 Codomæne: R^m
+  ┌───────────────────────┐                   ┌───────────────────────┐
+  │  Rækkerum: Row(A)     │                   │  Søjlerum: Col(A)     │
+  │  Dimension: r         │ ──── A · x ─────> │  Dimension: r         │
+  ├───────────────────────┤ (Bijektiv afb.)   ├───────────────────────┤
+  │  Nulrum: Null(A)      │                   │  Venstre-nulrum:      │
+  │  Dimension: n - r     │ ──── A · x = 0 ──>│  Null(A^T)            │
+  │  (Ortogonalt på Row)  │                   │  Dimension: m - r     │
+  └───────────────────────┘                   └───────────────────────┘
+```
+Dimensionssætningen garanterer: $\dim(\operatorname{Col}(A)) + \dim(\operatorname{Null}(A)) = n$.
 
 ## Opgaver
 
@@ -92,15 +108,6 @@ Notebookens øvelser, som de står:
 - Øvelse 4: opgave 4 fra StoreDag og opgave 1 fra LilleDag uge 7 (matrixalgebra)
 - Øvelse 5: opgave 6 fra StoreDag uge 7, med `inv()`
 - Øvelse 6: opgave 2 (direkte med determinantkommando), 3 og 4 fra LilleDag uge 7
-
-## Tjek dig selv
-
-- [ ] Hvilke krav stilles til et vektorrum?
-- [ ] Hvordan tjekker jeg, om en delmængde er et underrum?
-- [ ] Hvad vil det sige, at polynomier er lineært uafhængige?
-- [ ] Hvordan skifter jeg mellem to baser?
-- [ ] Hvad er koordinatvektoren af $2 + 5Z + Z^2$ i basen $(1, Z, Z^2)$?
-- [ ] Hvorfor er afsnit 10.5 ikke med?
 
 ## Links
 

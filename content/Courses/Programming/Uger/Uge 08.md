@@ -65,6 +65,15 @@ def min_maks(l):
 lav, hoej = min_maks([4, 9, 1])
 print(lav, hoej)   # 1 9
 ```
+### Datastrukturmodel: Hash-tabel for Dictionaries ($O(1)$ opslag)
+
+En dictionary bruger en hash-funktion til at konvertere nøglen direkte til et hukommelsesindeks:
+
+```text
+  Nøgle "alder" ──( hash("alder") % N )──> Bucket index 3 ──> [ "alder": 21 ]
+  Nøgle "navn"  ──( hash("navn") % N )───> Bucket index 7 ──> [ "navn": "Peter" ]
+```
+Dette sikrer, at opslag som `d["alder"]` tager konstant tid $O(1)$ i gennemsnit, uanset om ordbogen rummer 10 eller 10.000.000 elementer.
 
 ## Opgaver
 
@@ -97,15 +106,6 @@ Ugens struktur: Preparation (Copy-and-Run og selvquiz) før timen, derefter In-C
 
 - Checkpoint 8.1: Booklet Layout (mindste hæfte og antal blanke sider)
 - Checkpoint 8.2: Name Frequency
-
-## Tjek dig selv
-
-- [ ] Hvad kan være nøgle i en dictionary, og hvad kan ikke?
-- [ ] Hvad tester `x in d` for en dictionary?
-- [ ] Hvordan tæller man forekomster med en dictionary?
-- [ ] Hvordan opretter jeg en tupel med ét element?
-- [ ] Hvad betyder `a, b = f()`?
-- [ ] Hvad er forskellen på en liste og en tupel?
 
 ## Links
 

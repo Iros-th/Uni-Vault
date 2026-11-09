@@ -29,6 +29,24 @@ tags:
 **Matematisk induktion.** For at vise $P(n)$ for alle $n \ge 1$ viser man (1) basistrinnet $P(1)$ og (2) induktionstrinnet: hvis $P(k)$ gælder, så gælder $P(k+1)$. Eksempel: $1 + 2 + \dots + n = \frac{n(n+1)}{2}$. Basis: $n=1$ giver $1 = 1$. Trin: antag formlen for $k$. Så er $1 + \dots + k + (k+1) = \frac{k(k+1)}{2} + (k+1) = \frac{(k+1)(k+2)}{2}$.
 
 **Typiske fejl i induktion.** Man må ikke glemme basistrinnet, og man må ikke antage det, man vil vise, for $k+1$. Induktionsantagelsen gælder kun for $k$.
+### Systemmodel: Kinesisk restsætning (CRT) som parallelle ure
+
+Hvis moduli $m_1, m_2, \dots, m_k$ er parvist indbyrdes primiske (${\gcd(m_i, m_j) = 1}$), eksisterer der en unik løsning modulo $M = m_1 m_2 \cdots m_k$:
+
+```text
+       x ≡ a1 (mod m1)      x ≡ a2 (mod m2)      x ≡ a3 (mod m3)
+          [ Ur 1 ]             [ Ur 2 ]             [ Ur 3 ]
+          Periode m1           Periode m2           Periode m3
+              \                   │                   /
+               \                  │                  /
+                v                 v                 v
+            ┌───────────────────────────────────────────┐
+            │         Unikt synkroniseret tidspunkt     │
+            │               x mod (m1·m2·m3)            │
+            └───────────────────────────────────────────┘
+```
+
+**Betydning for datalogi:** Store tal kan repræsenteres som små rester modulo flere små primtal. Aritmetik kan køre fuldstændig parallelt uden "carry" på tværs af kanalerne og samles til sidst via CRT.
 
 ## Opgaver
 
@@ -36,14 +54,6 @@ Fra kursussiden, Rosen, "Discrete Mathematics and Its Applications" (2025-udgave
 
 - Afsnit 4.4: **5**, 7, **9**, **11**, 19, **21**, **24**, 29, 35, **39**, 43, **47**, 53
 - Afsnit 5.1: 1, **3**, **5**, 7
-
-## Tjek dig selv
-
-- [ ] Kan jeg afgøre, om $ax \equiv b \pmod m$ har en løsning, og finde alle løsninger?
-- [ ] Kan jeg finde en invers modulo $m$ med udvidet Euklid?
-- [ ] Kan jeg løse to samtidige kongruenser med CRT?
-- [ ] Kan jeg skrive et induktionsbevis med både basis og trin?
-- [ ] Kan jeg forklare, hvorfor CRT kræver indbyrdes primiske moduli?
 
 ## Links
 

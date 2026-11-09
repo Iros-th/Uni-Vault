@@ -33,6 +33,22 @@ tags:
 **Summer af uafhængige variable.** Tætheden af $Z = X + Y$ er foldningen $f_Z(z) = \int f_X(x)f_Y(z - x)\,dx$ (boksen side 372). Eksempel: to uafhængige ligefordelte på $(0,1)$ giver en trekantstæthed på $(0,2)$ med top i 1.
 
 **Forhold.** Formel (f) side 383 for $Y/X$ og formel (g) for uafhængige variable (side 383). Udledningen af F-fordelingen som forhold mellem to $\chi^2$-fordelte størrelser står på plancherne, men gennemgås ikke ved forelæsningen. Ugebrevet anbefaler den til interesserede, især dem der følger statistikkurser.
+### Foldningsmodel: Summen af to uafhængige variable
+
+Tætheden for summen $Z = X + Y$ er givet ved foldningen af $f_X$ og $f_Y$:
+
+```text
+                 f_Z(z) = ∫ f_X(x) · f_Y(z - x) dx
+                 
+         f_X(x)                            f_Y(z - x)
+       ┌────────┐                        ┌────────┐
+       │        │  ──────── foldes ────> │        │
+  ─────┴────────┴───                  ───┴────────┴───> x
+       Variabel x                      Forskudt med z
+```
+
+**Stabilitet af normalfordelingen:**
+Hvis $X \sim \mathcal{N}(\mu_1, \sigma_1^2)$ og $Y \sim \mathcal{N}(\mu_2, \sigma_2^2)$ er uafhængige, så er $X + Y \sim \mathcal{N}(\mu_1 + \mu_2, \sigma_1^2 + \sigma_2^2)$. Varianserne adderes altid direkte.
 
 ## Opgaver
 
@@ -43,14 +59,6 @@ Pitman, Probability (kapitel.afsnit.opgave). Regnes ved øvelsen fredag 13. nove
 Opgaver til selvstudium: 4.4.9, 4.5.7, 5.3.6, 5.4.6.
 
 Gamle eksamensspørgsmål fra 16/12/2004: spørgsmål 25 og 27.
-
-## Tjek dig selv
-
-- [ ] Kan jeg forklare, hvorfor to uafhængige standardnormale giver en rotationssymmetrisk tæthed?
-- [ ] Kan jeg finde fordelingen af $aX + bY$ for uafhængige normalfordelte?
-- [ ] Kan jeg definere $\chi^2$-fordelingen som en gammafordeling?
-- [ ] Kan jeg opstille foldningsintegralet for en sum af to uafhængige kontinuerte variable?
-- [ ] Kan jeg finde fordelingen af et forhold $Y/X$ ud fra formlen side 383?
 
 ## Links
 

@@ -65,6 +65,19 @@ with open('maalinger.csv') as f:
         dele = linje.strip().split(',')
         print(dele)
 ```
+### Ressourcemodel: Sikker filhåndtering med Context Manager
+
+Når filer åbnes, skal operativsystemets ressourcelås (File Handle) altid frigives korrekt:
+
+```text
+  with open("data.txt", "r") as f:
+      ┌───────────────────────────────────┐
+      │ Indgang: Fil åbnes og låses       │
+      │ Behandling: Data læses            │
+      │ Undtagelse/Fejl? Håndteres        │
+      └───────────────────────────────────┘
+  Udgang: f.close() kaldes GARANTERET automatisk (selv hvis programmet crasher)
+```
 
 ## Opgaver
 
@@ -96,15 +109,6 @@ Ugens struktur: Preparation (Copy-and-Run og selvquiz) før timen, derefter In-C
 
 - Checkpoint 9.1: Nitrate Levels (klassificering af nitratværdier fra fil)
 - Checkpoint 9.2: Count Differences
-
-## Tjek dig selv
-
-- [ ] Hvad er arbejdsmappen, og hvorfor kan Python ikke finde min fil?
-- [ ] Hvad er fordelen ved `with open(...)`?
-- [ ] Hvad sker der med en eksisterende fil, når jeg åbner den med `'w'`?
-- [ ] Hvorfor skal jeg ofte bruge `strip()` på en indlæst linje?
-- [ ] Hvad er forskellen på `read()` og `readlines()`?
-- [ ] Hvordan deler jeg en CSV-linje i felter?
 
 ## Links
 

@@ -31,6 +31,17 @@ tags:
 **Korrelation.** $\rho(X,Y) = \dfrac{\mathrm{Cov}(X,Y)}{\sigma_X\sigma_Y}$ (boks nederst side 432), altid mellem $-1$ og $1$ (egenskaber side 433). Uafhængige variable har korrelation 0, men ikke omvendt. Modeksempel: $X$ ligefordelt på $\{-1, 0, 1\}$ og $Y = X^2$ har $\mathrm{Cov}(X,Y) = E(X^3) - E(X)E(Y) = 0$, men $Y$ er helt bestemt af $X$.
 
 **Indikatorer og samvariation.** Afsnittet om indikatorer side 431 viser, hvordan kovarians kvantificerer sammenhængen mellem ikke-uafhængige hændelser.
+### Samvariationsmodel: Kovarians og korrelation $ho$
+
+Korrelationskoefficienten $ho = rac{\operatorname{Cov}(X, Y)}{\sigma_X \sigma_Y} \in [-1, 1]$ måler graden af lineær samvariation:
+
+```text
+  ρ = +1 (Perfekt positiv)      ρ = 0 (Ukorreleret)          ρ = -1 (Perfekt negativ)
+         y ^                           y ^                          y ^
+           │      /                      │    .  :  .                 │             │    /                        │  :  ·  .                   │               │  /                          │    .  :  .                 │                 └──────────> x                └──────────> x               └──────────> x
+```
+
+**Husk:** Ukorrelerethed ($ho = 0$) er **ikke** det samme som uafhængighed! Hvis $Y = X^2$ og $X$ er symmetrisk omkring 0, er $ho = 0$, men $Y$ er 100 % afhængig af $X$.
 
 ## Opgaver
 
@@ -41,14 +52,6 @@ Pitman, Probability (kapitel.afsnit.opgave). Regnes ved øvelsen fredag 27. nove
 Opgaver til selvstudium: 6.1.6, 6.3.5, 6.3.13, 6.4.5.
 
 Gamle eksamensspørgsmål fra 16/12/2004: spørgsmål 19.
-
-## Tjek dig selv
-
-- [ ] Kan jeg finde en betinget tæthed fra en simultan tæthed?
-- [ ] Kan jeg bruge den kontinuerte totale sandsynlighed til at finde en marginal sandsynlighed?
-- [ ] Kan jeg beregne $E(Y \mid X = x)$ og $E(Y)$ ud fra den?
-- [ ] Kan jeg beregne $\mathrm{Cov}(X,Y)$ med $E(XY) - E(X)E(Y)$?
-- [ ] Kan jeg give et eksempel på ukorrelerede, men afhængige variable?
 
 ## Links
 

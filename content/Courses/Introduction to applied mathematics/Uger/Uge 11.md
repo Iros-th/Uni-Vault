@@ -22,16 +22,26 @@ Emnet ud over titlen er ikke beskrevet i det tilgængelige materiale.
 ## Begreber
 
 Ikke udfyldt endnu. Når slides og opgavebeskrivelse er lagt på DTU Learn, kan begreberne tilføjes her.
+### Anbefalingsmodel: Vektorrum og Cosinus-lighed
+
+Kollaborativ filtrering sammenligner brugeres smag ved at måle vinklen mellem deres vurderingsvektorer i $\mathbb{R}^d$:
+
+```text
+                Film B (Sci-Fi) ^
+                                │          Bruger 1 (u)
+                                │         /
+                                │      θ /
+                                │       /   Bruger 2 (v)
+                                │      /  /
+                                │     / /
+                                └────┴─────────────────> Film A (Komedie)
+```
+Cosinus-ligheden måler retningen uafhængigt af, om en bruger generelt giver høje eller lave karakterer:
+$$\cos(\theta) = \frac{\mathbf{u} \cdot \mathbf{v}}{\|\mathbf{u}\| \|\mathbf{v}\|} = \frac{\sum u_i v_i}{\sqrt{\sum u_i^2} \sqrt{\sum v_i^2}} \in [-1, 1].$$
 
 ## Opgaver
 
 Der er endnu ingen opgaver lagt op på DTU Learn for Projekt 5. Deadline for rapporten er 29/11 (fra General Info). Projektet tæller som et af de små projekter med skriftlig/mundtlig rapport (feedback only, $2$ point).
-
-## Tjek dig selv
-
-- [ ] Er der kommet materiale under Project 5 på DTU Learn?
-- [ ] Har min gruppe fået at vide hvem vi er i dette projekt (grupperne er tilfældige pr. projekt)?
-- [ ] Ved jeg hvornår rapporten skal afleveres (29/11)?
 
 ## Links
 

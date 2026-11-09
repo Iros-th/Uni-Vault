@@ -9,25 +9,24 @@ tags:
 
 # Flashcards
 
-Quick revision cards pulled straight from the notes. Each card shows a question, and you click it to reveal the answer underneath.
+Hurtige repetitionskort til aktiv genkaldelse. Hvert kort stiller et spørgsmål, og du klikker på det for at folde svaret ud.
 
-Honest heads up: this is reveal on click, not real spaced repetition. There is no algorithm deciding what to show you next and no memory of what you got right. It is a fast self quiz you can run down the list. If I ever want proper spaced repetition I would need a plugin or an app like Anki, but for a quick pass before class these do the job.
-
-How to use them: read the question, actually try to answer it in your head first, then click to check. Being honest with yourself about the ones you fumbled is the whole point.
+Du kan bruge kortene direkte her på siden, eller åbne [[Studie|Studie-træningsrummet]], som samler alle kortbunkerne i en interaktiv træner med Lær, Test og Genlær (spaced repetition med SM-2 algoritme gemt i din browser).
 
 ## Decks
 
-- [[Programming Flashcards|Programming flashcards]]
-- [[Proofs Flashcards|Proofs and induction flashcards]]
-- [[Discrete Math Flashcards|Diskret matematik flashcards]]
-- [[Chemistry Flashcards|Kemi flashcards]]
-- [[Physics Flashcards|Fysik flashcards]]
-- [[Statistics Flashcards|Statistik flashcards]]
+- [[Flashcards/Differential Equations Flashcards|Differentialligninger og uendelige rækker flashcards]]
+- [[Flashcards/Chemistry Flashcards|Kemi flashcards]]
+- [[Flashcards/Discrete Math Flashcards|Diskret matematik flashcards]]
+- [[Flashcards/Programming Flashcards|Programmering flashcards]]
+- [[Flashcards/Proofs Flashcards|Beviser og induktion flashcards]]
+- [[Flashcards/Physics Flashcards|Fysik flashcards]]
+- [[Flashcards/Statistics Flashcards|Statistik flashcards]]
 
 ## Links
 
-- [[index|Home]]
-- [[Exam-Prep|Exam prep]]
-- [[Self-Tests/Self-Tests|Self-tests]]
+- [[Studie|Studie-træningsrum (Spaced Repetition)]]
+- [[Exam-Prep|Eksamensforberedelse]]
+- [[Self-Tests/Self-Tests|Selvtests]]
 - [[Formelsamling/Formelsamling|Formelsamling]]
-- [[Glossary]]
+- [[Glossary|Glossary]]

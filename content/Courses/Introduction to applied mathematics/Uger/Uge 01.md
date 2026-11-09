@@ -43,6 +43,24 @@ tags:
 **Legemsaksiomerne.** Et legeme er en mængde $F$ med to operationer $+$ og $\ast$, hvor begge er associative og kommutative, der findes $0$ og $1$ med $0 + a = a$ og $1 \ast a = a$, hvert $a$ har additiv invers $-a$, hvert $a \neq 0$ har multiplikativ invers $a^{-1}$, og multiplikation er distributiv over addition. $\mathbb{R}$ og $\mathbb{C}$ er legemer.
 
 Bemærk: i noten står distributiv-loven som $a \ast (b + c) = (a \ast b) + (b \ast c)$, hvilket ser ud som en tastefejl for $(a \ast b) + (a \ast c)$.
+### Bevismodel: Struktur og informationsflow i matematiske beviser
+
+Et formelt matematisk bevis opbygges som en logisk kæde, hvor hver pil er retfærdiggjort af en aksiom, definition eller tidligere sætning:
+
+```text
+  [ Præmisser / Antagelser (P) ]
+               │
+               │   Definitioner & regneregler
+               v
+  [ Mellemresultat 1 (Lemma) ]
+               │
+               │   Sætninger fra pensum
+               v
+  [ Mellemresultat 2 ]
+               │
+               v
+  [ Konklusion / Q.E.D. (Q) ]
+```
 
 ## Opgaver
 
@@ -64,16 +82,6 @@ Fra `proofs_problems1` ("Proofs: Problem Set One"). Man må antage de sædvanlig
 - Problem 6: Vis ud fra legemsaksiomerne at den additive og den multiplikative inverse til et givet element er entydige.
 
 `sample_solutions1` har løsninger til udvalgte opgaver (Problem 1, 2 og 3). Hovedidéerne: Problem 1 viser $a = 1 \cdot a = a \cdot 1 = 1$. Problem 2 bruger modstrid (hvis $\frac{1}{r} = \frac{m}{n}$ er $r = \frac{n}{m}$ rational, og hvis $q + r = \frac{a}{b}$ er $r = \frac{mb - an}{nb}$ rational). Problem 3(1) er et specialtilfælde af 2(2), og 3(2) følger fordi $n + \sqrt{2}$ kan blive så stor man vil.
-
-## Tjek dig selv
-
-- [ ] Kan jeg forklare forskellen på et aksiom og et bevist faktum, og hvorfor man bruger begge i et bevis?
-- [ ] Kan jeg give et modeksempel til "$f'(x_0) = 0$ medfører lokalt ekstremum"?
-- [ ] Kan jeg gennemføre beviset for at $\sqrt{2}$ er irrational uden at kigge i noten?
-- [ ] Hvordan viser man at et objekt er entydigt? (Antag to og vis at de er ens.)
-- [ ] Kan jeg afgøre og begrunde Problem 5(1) til (4)?
-- [ ] Kan jeg nævne alle seks legemsaksiomer?
-- [ ] Hvad tæller i vurderingen: point for projekter, og hvad vejer eksamen?
 
 ## Links
 

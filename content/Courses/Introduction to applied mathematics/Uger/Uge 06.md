@@ -44,20 +44,28 @@ $$s \leftarrow s + \Delta t\, v, \qquad v \leftarrow v + \Delta t\, a,$$
 for både egen bil og forankørende. Koden gemmer faktisk afstand, ønsket afstand og acceleration og plotter dem i to figurer (afstand og acceleration). Det er en primitiv numerisk løsning af differentialligningen $s'' = a$ fra uge 5; med en controller på formen $a = -b\,\dot d - c\,(d - d_{\text{sik}})$ får man netop en ligning af typen $x'' + bx' + cx = 0$ for afvigelsen, og dæmpningen (over-, kritisk, underdæmpet) afgør om bilen svinger.
 
 (Den sidste sætning er min egen kobling mellem koden og `fart.pdf`, ikke noget der står i filen.)
+### Reguleringsmodel: PID-feedback sløjfe for hastighedsstyring
+
+En aktiv fartpilot korrigerer hele tiden motorpådraget $u(t)$ ud fra fejlen $e(t) = v_{\text{ref}} - v(t)$:
+
+```text
+  v_ref    + ┌──────┐  Fejl e(t)  ┌───────────────────┐  u(t)   ┌─────────────┐   v(t)
+  ───────>(+)│ Reg. │────────────>│ PID-Controller    │────────>│ Bil-dynamik │────┬───>
+           ^ └──────┘             │ P: K_p · e        │         └─────────────┘    │
+           │                      │ I: K_i · ∫ e dt   │                            │
+           │ -                    │ D: K_d · de/dt    │                            │
+           └──────────────────────┴───────────────────┴────────────────────────────┘
+                                  Feedback-måling
+```
+- **P (Proportional):** Reagerer på den aktuelle fejl.
+- **I (Integral):** Fjerner stationær fejl (f.eks. ved kørsel op ad bakke).
+- **D (Differential):** Dæmper hurtige udsving og modvirker overskydende acceleration.
 
 ## Opgaver
 
 - Ændr `sikkerheds_afstand(foran_s, foran_v)` og `controller(egen_s, egen_v, foran_s, foran_v)` i del 3 i `simuler.py`. Det er den eneste opgave filen selv nævner ("Jeres opgave er at modificere de to funktioner defineret i del 3").
 - Prøv begge forankørende (`foran1` og `foran2`).
 - Posterprojektet afsluttes med præsentation 19/10, se [[Courses/Introduction to applied mathematics/Uger/Uge 07|Uge 7]].
-
-## Tjek dig selv
-
-- [ ] Kan jeg forklare hvad $d$ og $v_{\text{rel}}$ er, og hvilket fortegn de har når forankørende bremser?
-- [ ] Hvorfor er der brug for et led i $v_{\text{rel}}$ udover $d - d_{\text{sik}}$?
-- [ ] Hvad sker der i simuleringen når `faktisk_acc` klipper accelerationen?
-- [ ] Hvorfor er Eulers metode kun en tilnærmelse, og hvad kunne gå galt med for stort skridt $\Delta t$?
-- [ ] Kan jeg koble controllerens parametre til over-, kritisk og underdæmpet?
 
 ## Links
 

@@ -49,6 +49,24 @@ Differentiation er lineær på rum af polynomier og glatte funktioner. Konstante
 Ligningen har løsning, hvis og kun hvis $\mathbf{w} \in \mathrm{Im}\, T$. Løsningsmængden er en partikulær løsning plus $\ker T$ (Sætning 11.4.2).
 
 *Eksempel.* Hvis $T(\mathbf{v}_0) = \mathbf{w}$, er alle løsninger $\mathbf{v}_0 + \mathbf{k}$ med $\mathbf{k} \in \ker T$.
+### Transformationsmodel: Lineære afbildninger i 2D
+
+Enhver lineær afbildning $T: \mathbb{R}^2 	o \mathbb{R}^2$ er fuldstændig bestemt af, hvor den sender standardbasisvektorerne $\mathbf{e}_1 = egin{bmatrix}1\0\end{bmatrix}$ og $\mathbf{e}_2 = egin{bmatrix}0\1\end{bmatrix}$ hen:
+
+```text
+  Rotation med vinkel θ:               Skævhed (Shear langs x-aksen):
+  ┌                     ┐              ┌         ┐
+  │ cos θ      -sin θ   │              │ 1     k │
+  │ sin θ       cos θ   │              │ 0     1 │
+  └                     ┘              └         ┘
+           y ^                                  y ^
+             │  T(e2)                             │    T(e2)
+             │   ^                                │   ┌──>
+             │   │                                │   │  /
+             │   └───> T(e1)                      │   │ /
+             └───────────> x                      └───┴─────> x
+                                                     T(e1)=e1
+```
 
 ## Opgaver
 
@@ -73,15 +91,6 @@ Opgaverne står på kursussiden med de numre, der er gengivet her. Nogle nævner
 - Opgave 4: Undersøgelse af en lineær afbildning (spørgsmål a til d)
 - Opgave 5: Lineære afbildninger og differentiation (spørgsmål a til b)
 - Opgave 6: Eksempler på lineære afbildninger
-
-## Tjek dig selv
-
-- [ ] Hvilke to krav skal en afbildning opfylde for at være lineær?
-- [ ] Hvordan finder jeg kernen via afbildningsmatricen?
-- [ ] Hvad siger dimensionssætningen?
-- [ ] Hvordan bygger jeg afbildningsmatricen ud fra to baser?
-- [ ] Hvornår er en lineær afbildning injektiv?
-- [ ] Hvordan ser løsningsmængden til $T(\mathbf{v}) = \mathbf{w}$ ud?
 
 ## Links
 

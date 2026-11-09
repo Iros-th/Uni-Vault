@@ -61,6 +61,18 @@ import math
 print(dir(math)[:5])
 help(math.sqrt)
 ```
+### Arkitekturmodel: Modulopbygning og programstruktur
+
+Større softwareprojekter opdeles i selvstændige moduler og pakker:
+
+```text
+  hovedprogram.py (Entry point: if __name__ == "__main__":)
+       │
+       ├── import databehandling.py (Funktioner til vask og parsning af data)
+       ├── import model.py           (Klasser til beregning og optimering)
+       └── import visualisering.py   (Matplotlib grafer og eksport)
+```
+Dette sikrer løs kobling (Loose Coupling) og høj genanvendelighed af koden.
 
 ## Opgaver
 
@@ -87,14 +99,6 @@ Ugens struktur: Preparation (Copy-and-Run og selvquiz) før timen, derefter In-C
 **Closure, checkpoints**
 
 - Ingen checkpoints er listet endnu: kursussiden viser sidste års version af Closure-siden for uge 13.
-
-## Tjek dig selv
-
-- [ ] Hvad er forskellen på `import math` og `from math import sqrt`?
-- [ ] Hvordan importerer jeg en af mine egne `.py`-filer?
-- [ ] Hvad gør `dir()`?
-- [ ] Hvad er et alias, og hvorfor bruger man `np`?
-- [ ] Hvorfor skal man genstarte kernen i en notebook, når man har ændret et importeret modul?
 
 ## Links
 

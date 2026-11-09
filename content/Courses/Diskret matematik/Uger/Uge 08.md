@@ -34,6 +34,22 @@ tags:
 **Kombinationer.** En uordnet udvælgelse: $C(n,r) = \binom{n}{r} = \frac{n!}{r!(n-r)!}$. Eksempel: et udvalg på 3 blandt 10: $\binom{10}{3} = 120$, altså $720 / 3!$. Man dividerer med $r!$ fordi rækkefølgen ikke tæller.
 
 **Ordnet eller uordnet?** Det er det første, man skal afgøre. Spørg: giver det en ny mulighed, hvis jeg bytter om på to valgte? Hvis ja: ordnet (permutation eller produktregel). Hvis nej: kombination.
+### Kombinatorisk model: Stars and Bars (Kugler i kasser)
+
+Når man skal fordele $n$ identiske genstande i $k$ skelnelige kasser, placeres $n$ stjerner og $k-1$ adskillelsesstreger på en linje:
+
+```text
+  Eksempel: 7 stjerner fordeles i 3 kasser (k - 1 = 2 streger):
+  
+      ★ ★ ★ │ ★ ★ │ ★ ★
+      Kasse 1   Kasse 2  Kasse 3
+      (3 stk)   (2 stk)  (2 stk)
+
+  Samlet antal pladser: n + (k - 1) = 7 + 2 = 9
+  Vælg hvor stregerne skal stå: C(n + k - 1, k - 1) = C(9, 2) = 36 måder.
+```
+
+**Dueslagsprincippet (Pigeonhole):** Hvis $N$ genstande placeres i $k$ kasser, findes mindst én kasse med mindst $\lceil N/k ceil$ genstande.
 
 ## Opgaver
 
@@ -42,14 +58,6 @@ Fra kursussiden, Rosen, "Discrete Mathematics and Its Applications" (2025-udgave
 - Afsnit 6.1: 1, **21**, **25**, **47**, 57, 69 (67 i 8. udgave)
 - Afsnit 6.2: **7**, 13, **17**, 31, **37**
 - Afsnit 6.3: **7**, **23**, 31, **43**, 47
-
-## Tjek dig selv
-
-- [ ] Kan jeg vælge mellem produkt-, sum- og subtraktionsregel i en tekstopgave?
-- [ ] Kan jeg forklare forskellen på $P(n,r)$ og $\binom{n}{r}$ med et konkret eksempel?
-- [ ] Kan jeg finde "skuffer" og "genstande" i en skuffeprincip-opgave?
-- [ ] Kan jeg bruge det generaliserede skuffeprincip med loftsfunktionen?
-- [ ] Kan jeg regne $\binom{10}{3}$ i hånden?
 
 ## Links
 

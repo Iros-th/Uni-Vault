@@ -43,6 +43,20 @@ $\mathrm{Null}(\mathbf{A})$ er løsningerne til $\mathbf{Ax} = \mathbf{0}$, og $
 Hvis $\beta = (\mathbf{b}_1, \dots, \mathbf{b}_k)$ er en ordnet basis og $\mathbf{v} = c_1\mathbf{b}_1 + \dots + c_k\mathbf{b}_k$, så er $[\mathbf{v}]_\beta = (c_1, \dots, c_k)$ (Definition 9.5.1). Koordinaterne er løsningen til et lineært ligningssystem.
 
 *Eksempel.* $\beta = ((1,1), (1,-1))$, $\mathbf{v} = (3,5)$: $c_1 + c_2 = 3$, $c_1 - c_2 = 5$, så $c_1 = 4$, $c_2 = -1$ og $[\mathbf{v}]_\beta = (4, -1)$.
+### Koordinatmodel: Basisskift som kommutativt diagram
+
+En vektor $\mathbf{x} \in V$ har forskellige koordinatsøjler afhængigt af den valgte basis:
+
+```text
+       Koordinater i basis B: [x]_B
+                 │
+                 │   Multiplikation med basisskiftmatrix P_(C<-B)
+                 v
+       Koordinater i basis C: [x]_C = P_(C<-B) · [x]_B
+
+  Hvor søjlerne i P_(C<-B) er basisvektorerne fra B udtrykt i basis C:
+  P_(C<-B) = [ [b1]_C   [b2]_C   ...   [bn]_C ]
+```
 
 ## Opgaver
 
@@ -67,15 +81,6 @@ Opgaverne står på kursussiden med de numre, der er gengivet her. Nogle nævner
 - Opgave 4: Ordnede baser og koordinater i $\mathbb{R}^4$ (spørgsmål a til b)
 - Opgave 5: Koordinater mht. en ordnet basis
 - Opgave 6: Eksempler på udspændinger
-
-## Tjek dig selv
-
-- [ ] Hvad er $\mathrm{Span}$ af en liste vektorer?
-- [ ] Hvordan finder jeg en ordnet basis for en udspænding?
-- [ ] Hvordan finder jeg en basis for nulrummet?
-- [ ] Hvad siger dimensionssætningen?
-- [ ] Hvordan finder jeg koordinatvektoren af $\mathbf{v}$ med hensyn til en basis?
-- [ ] Hvad er koordinaterne med hensyn til standardbasen?
 
 ## Links
 

@@ -33,6 +33,27 @@ Fortegnene alternerer. For $n = 2$ er det $|A \cup B| = |A| + |B| - |A \cap B|$.
 **Afvigelser (derangements).** En permutation uden fikspunkter. Antal: $D_n = n! \sum_{k=0}^{n} \frac{(-1)^k}{k!}$. Eksempel: $D_3 = 6(1 - 1 + \tfrac12 - \tfrac16) = 2$. De to er de to cykliske forskydninger af $(1,2,3)$.
 
 **Primtal op til $n$ (sien).** Antal tal $\le n$, der ikke er delelige med nogen af primtallene $p_1, \dots, p_k$, findes ved inklusion-eksklusion på "delelig med $p_i$". Eksempel: antal $\le 100$ uden faktor 2, 3 eller 5: $100 - 50 - 33 - 20 + 16 + 10 + 6 - 3 = 26$.
+### Mængdemodel: Inklusion-eksklusion og derangementer
+
+For tre mængder $A, B, C$ korrigerer inklusion-eksklusion for overordnet overlapning:
+
+```text
+                ┌──────────────┐
+                │      A       │
+          ┌─────┴──────┬───────┴─────┐
+          │  A ∩ B     │   A ∩ C     │
+          │         ┌──┴──┐          │
+          │    B    │A∩B∩C│    C     │
+          └─────────┴──┬──┴──────────┘
+                       │  B ∩ C      │
+                       └─────────────┘
+  |A ∪ B ∪ C| = (|A| + |B| + |C|) - (|A∩B| + |A∩C| + |B∩C|) + |A∩B∩C|
+```
+
+**Derangementer (Frakke- eller hatteproblemet $D_n$):**
+Antal permutationer af $n$ elementer, hvor intet element ender på sin oprindelige plads:
+$$D_n = n! \sum_{k=0}^n rac{(-1)^k}{k!} pprox rac{n!}{e}.$$
+Sandsynligheden for at ingen får sin egen hat tilbage konvergerer lynhurtigt mod $1/e pprox 36{,}8 \%$.
 
 ## Opgaver
 
@@ -40,14 +61,6 @@ Fra kursussiden, Rosen, "Discrete Mathematics and Its Applications" (2025-udgave
 
 - Afsnit 8.5: 1, **5**, 9, **11**, **15**, **23**, 27
 - Afsnit 8.6: 3, **5**, **7**, 13, **21**, **25**
-
-## Tjek dig selv
-
-- [ ] Kan jeg skrive formlen for tre mængder fra hukommelsen?
-- [ ] Kan jeg formulere en tekstopgave som "antal uden nogen egenskab"?
-- [ ] Kan jeg tælle surjektioner med formlen?
-- [ ] Kan jeg beregne $D_4$?
-- [ ] Kan jeg bruge sien til at tælle tal op til 100 uden primfaktorerne 2, 3 og 5?
 
 ## Links
 

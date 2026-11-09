@@ -49,6 +49,23 @@ Hvis $p$ har reelle koefficienter og $z_0$ er rod, så er $\overline{z_0}$ også
 $z^n = w$ har $n$ løsninger (Sætning 5.4.1). Skriv $w = r e^{i\varphi}$, så er $z_k = r^{1/n} e^{i(\varphi + 2\pi k)/n}$ for $k = 0, \dots, n-1$.
 
 *Eksempel.* $z^3 = -8i$: $r = 8$, $\varphi = -\tfrac{\pi}{2}$, så $z_k = 2 e^{i(-\pi/6 + 2\pi k/3)}$, altså $\sqrt{3} - i$, $2i$ og $-\sqrt{3} - i$. Kontrol: $(2i)^3 = 8 i^3 = -8i$.
+### Algebraisk model: Komplekse enhedsrødder på enhedscirklen
+
+Ligningen $z^n = 1$ har præcis $n$ forskellige rødder, som udgør hjørnerne i en regulær $n$-kant indskrevet i enhedscirklen:
+
+```text
+  Eksempel: z⁴ = 1  (4. enhedsrødder: 1, i, -1, -i)
+  
+                     Im
+                     │
+                    (i)
+                     │
+        (-1) ────────┼──────── (1)   Re
+                     │
+                   (-i)
+                     │
+```
+Rødderne er givet ved $\omega_k = e^{i rac{2\pi k}{n}}$ for $k = 0, 1, \dots, n-1$. Summen af alle $n$'te enhedsrødder er altid præcis 0 på grund af symmetrien.
 
 ## Opgaver
 
@@ -73,15 +90,6 @@ Opgaverne står på kursussiden med de numre, der er gengivet her. Nogle nævner
 - Opgave 3: En andengradsligning
 - Opgave 4: Binome andengradsligninger med reel højreside (spørgsmål a til c)
 - Opgave 5: En binom ligning i et udtryk med eksponentialfunktionen (spørgsmål a til b)
-
-## Tjek dig selv
-
-- [ ] Hvad er $e^{a+ib}$ på rektangulær form?
-- [ ] Hvordan finder jeg modulus og argument af $e^{1-i}$?
-- [ ] Hvad kan jeg sige om rødderne i et polynomium med reelle koefficienter?
-- [ ] Hvor mange løsninger har $z^n = w$ for $w \ne 0$?
-- [ ] Hvordan løser jeg en andengradsligning med negativ diskriminant?
-- [ ] Hvordan beregner jeg $z^{10}$ ud fra polær form?
 
 ## Links
 

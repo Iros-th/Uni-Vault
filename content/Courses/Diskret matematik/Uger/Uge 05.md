@@ -35,6 +35,21 @@ tags:
 **Bézouts identitet og udvidet Euklid.** Der findes hele tal $s,t$ med $\gcd(a,b) = sa + tb$. Man finder dem ved at løbe Euklids algoritme baglæns. Eksempel: $21 = 105 - 2 \cdot 42 = 105 - 2(252 - 2 \cdot 105) = 5 \cdot 105 - 2 \cdot 252$.
 
 **Mindste fælles multiplum.** $\operatorname{lcm}(a,b) \cdot \gcd(a,b) = ab$. Eksempel: $\operatorname{lcm}(12, 18) = 12 \cdot 18 / 6 = 36$.
+### Algoritmisk model: Euklids algoritme som geometrisk areal-nedbrydning
+
+At finde $\gcd(a, b)$ svarer til at fliselægge et rektangel med sidelængder $a$ og $b$ med de størst mulige kvadrater:
+
+```text
+  Rektangel 48 x 18:
+  ┌──────────────┬──────────────┬────────┐
+  │              │              │ 12x12  │
+  │   18 x 18    │   18 x 18    ├────────┤  Rest: 48 = 2·18 + 12
+  │              │              │ 6x6│6x6│  Rest: 18 = 1·12 + 6
+  └──────────────┴──────────────┴────────┘  Rest: 12 = 2·6 + 0 -> gcd = 6
+```
+
+**Bézouts identitet (Udvidet Euklid):**
+Baglæns substitution giver heltallene $s$ og $t$, så $s \cdot a + t \cdot b = \gcd(a,b)$. Hvis $\gcd(a, m) = 1$, er $s$ den modulære inverse: $s \cdot a \equiv 1 \pmod m$.
 
 ## Opgaver
 
@@ -42,14 +57,6 @@ Fra kursussiden, Rosen, "Discrete Mathematics and Its Applications" (2025-udgave
 
 - Afsnit 4.3: 3, **11**, 15, **17**, **31**, **33**, 41, **43**, **49**, **51**, **55**
 - Ekstra fra kurset: Bevis, at for ethvert helt tal $n > 1$ og ikke-negativt helt tal $k$ går $n - 1$ op i $n^k - 1$. (Hint: tænk på $n \equiv 1 \pmod{n-1}$ og brug regnereglerne for kongruens fra uge 4.)
-
-## Tjek dig selv
-
-- [ ] Kan jeg primfaktorisere et tal og bruge det til at finde gcd og lcm?
-- [ ] Kan jeg køre Euklids algoritme på to tal uden at fejle rækkefølgen?
-- [ ] Kan jeg finde $s,t$ med $\gcd(a,b) = sa + tb$?
-- [ ] Kan jeg forklare, hvorfor $\gcd(a,b) = \gcd(b, a \bmod b)$?
-- [ ] Kan jeg teste, om et tal under 200 er primtal, med $\sqrt{n}$-reglen?
 
 ## Links
 

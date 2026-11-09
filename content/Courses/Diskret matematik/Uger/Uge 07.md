@@ -34,6 +34,26 @@ tags:
 **Rekursivt definerede mængder.** Man angiver nogle startelementer og nogle regler for at lave nye. Eksempel: $S$ indeholder 3, og hvis $x, y \in S$, så er $x + y \in S$. Så er $S$ netop de positive multipla af 3.
 
 **Strukturel induktion.** For at vise, at alle elementer i en rekursivt defineret mængde har en egenskab, viser man den for startelementerne og viser, at reglerne bevarer den. Eksempel: alle elementer i $S$ ovenfor er delelige med 3, fordi 3 er det, og summen af to multipla af 3 er et multiplum af 3.
+### Rekursionsmodel: Divide-and-Conquer træ og Master Theorem
+
+Mange rekursive algoritmer deler problemet i $a$ delproblemer af størrelse $n/b$, med arbejdet $f(n)$ pr. niveau:
+
+```text
+                      T(n)                         Niveau 0: f(n)
+                   /        \
+              T(n/b)        T(n/b)                 Niveau 1: a · f(n/b)
+             /      \      /      \
+          T(n/b²)  ...   ...    T(n/b²)            Niveau 2: a² · f(n/b²)
+           ...             ...             ...
+          ┌─┬─┬─┬─┬─┬─┬─┬─┬─┬─┬─┬─┬─┬─┬─┬─┐
+          │1│1│1│1│1│1│1│1│1│1│1│1│1│1│1│1│        Blade: n^(log_b a) blade
+          └─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┘
+```
+
+**De tre tilfælde i Master Theorem ($T(n) = a T(n/b) + O(n^d)$):**
+1. $d < \log_b a$: Bladene dominerer -> $T(n) = \Theta(n^{\log_b a})$.
+2. $d = \log_b a$: Arbejdet er jævnt fordelt på alle niveauer -> $T(n) = \Theta(n^d \log n)$.
+3. $d > \log_b a$: Roden dominerer -> $T(n) = \Theta(n^d)$.
 
 ## Opgaver
 
@@ -42,14 +62,6 @@ Fra kursussiden, Rosen, "Discrete Mathematics and Its Applications" (2025-udgave
 - Afsnit 5.1: **19**, **51**, 65, **75**
 - Afsnit 5.2: 5, **27** (3, **25** i 8. udgave)
 - Afsnit 5.3: 1, **5**, **7**, 13, 17, **31**, **45**
-
-## Tjek dig selv
-
-- [ ] Kan jeg afgøre, hvornår jeg skal bruge stærk induktion i stedet for almindelig?
-- [ ] Kan jeg lave et induktionsbevis for en ulighed, hvor basis ikke er $n = 1$?
-- [ ] Kan jeg beregne de første ti led af en rekursivt defineret følge?
-- [ ] Kan jeg give en rekursiv definition af en mængde og bevise en egenskab ved strukturel induktion?
-- [ ] Kan jeg forklare, hvorfor velordningsprincippet og induktion hænger sammen?
 
 ## Links
 

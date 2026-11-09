@@ -1,35 +1,35 @@
 ---
 publish: true
-title: Self-Tests
+title: Selvtests
 type: index
 tags:
   - self-test
   - revision
 ---
 
-# Self-tests
+# Selvtests
 
-Short quizzes per subject. Each question has a hidden answer you reveal by clicking "Show answer" once you have had a proper go on your own.
+Korte opgavesæt og diagnostiske tests per fag. Hvert spørgsmål har et skjult svar, som du kan folde ud for at tjekke dit resultat.
 
-These are for checking whether something actually stuck, not for cramming. Write your answer down or say it out loud first, then open the toggle and compare. If you got the shape of it right, good. If you blanked, that is the note to go back and reread.
+Tag testen med papir og blyant, skriv dit svar ned først, og sammenlign bagefter med facit og mellemregningerne. Du kan også køre alle selvtests i [[Studie|Studie-træningsrummet]], hvor de trækkes ind som interaktive quizkort.
 
-## Tests
+## Tests per fag
 
-- [[Programming Test|Programming self-test]]
-- [[Proofs Test|Proofs and induction self-test]]
-- [[Diskret matematik Test|Diskret matematik self-test]]
-- [[Matematik 1A Test|Matematik 1A self-test]]
-- [[Chemistry Test|Kemi self-test]]
-- [[Physics Test|Fysik self-test]]
-- [[Statistics Test|Statistik self-test]]
-- [[Differential Equations Test|Differential equations self-test]]
-- [[Numerical Algorithms Test|Numerical algorithms self-test]]
-- [[Mathematical Modelling Test|Mathematical modelling self-test]]
+- [[Self-Tests/Differential Equations Test|Differentialligninger og uendelige rækker selvtest]]
+- [[Self-Tests/Chemistry Test|Kemi selvtest]]
+- [[Self-Tests/Diskret matematik Test|Diskret matematik selvtest]]
+- [[Self-Tests/Matematik 1A Test|Matematik 1A selvtest]]
+- [[Self-Tests/Programming Test|Programmering selvtest]]
+- [[Self-Tests/Proofs Test|Beviser og induktion selvtest]]
+- [[Self-Tests/Physics Test|Fysik selvtest]]
+- [[Self-Tests/Statistics Test|Statistik selvtest]]
+- [[Self-Tests/Numerical Algorithms Test|Numeriske algoritmer selvtest]]
+- [[Self-Tests/Mathematical Modelling Test|Matematisk modellering selvtest]]
 
 ## Links
 
-- [[index|Home]]
-- [[Exam-Prep|Exam prep]]
+- [[Studie|Studie-træningsrum]]
+- [[Exam-Prep|Eksamensforberedelse]]
 - [[Flashcards/Flashcards|Flashcards]]
 - [[Formelsamling/Formelsamling|Formelsamling]]
-- [[Glossary]]
+- [[Glossary|Glossary]]

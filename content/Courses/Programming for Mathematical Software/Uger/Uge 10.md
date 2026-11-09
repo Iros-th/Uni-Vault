@@ -11,22 +11,42 @@ tags:
 
 # Uge 10: Test og debugging
 
-> Kilde: `module10.pdf` på DTU Learn (opgaveark, 12. november 2026) og modultabellen. Opgavearket er meget kort og henviser til afleveringsopgaven, som ikke er åbnet. Eventuelle slides og lecture notes er ikke læst. Pensum: lecture notes kap. 9 (Debugging and Testing).
+> Kilde: `module10.pdf` (opgaveark, 12. november 2026) og `slides10.pdf` (forelæsning 10, Martin S. Andersen, 17 slides). Opgavearket er meget kort og henviser til afleveringsopgaven, som ikke er åbnet (dropbox-linket er ikke fulgt). Lecture notes kap. 9 (Debugging and Testing) er ikke læst. Pensum: lecture notes kap. 9.
 
 ## Emner
 
-- Strategier til at finde fejl
-- Enhedstest og sammenligning med en reference
-- Debuggere og værktøjer til hukommelsesfejl
+- Retningslinjer for at skrive testbar kode
+- Indrykning og læsbarhed
+- Kompilerkæden og C-præprocessoren (makroer)
+- Fejlhåndtering, `assert`, debuggere (`-g`, `gdb`)
+- Typiske fejl: stack overflow, pointere, hukommelse, indeksfejl, strenge, makroer
 - Arbejde på afleveringsopgaven
 
 ## Begreber
 
-Dette afsnit er generelt og ikke taget fra kursets slides.
+**Retningslinjer (slides).** Design programmet med test for øje. Byg ikke et fuldt program fra start: start med specifikationer, datastrukturer og tests, og implementér og test ét modul/én funktion ad gangen. Brug betinget kompilering til at tage debugkode med eller ud, brug fejlkontrol og assertions, undgå (for mange) globale variabler, slå advarsler til (`-Wall` og `-Wextra`), sigt efter læsbarhed (undgå som tommelfingerregel `goto`) og brug ordentlig indrykning.
 
-**Test.** Test små enheder (funktioner) hver for sig med kendte svar. Sammenlign floating-point resultater med en tolerance og ikke med `==`. Test også randtilfælde: tomme input, størrelse 1, ikke-kvadratiske matricer.
+**Indrykning (slides).** Slides' to eksempler med `int x = 5;`: `while( x > 0 ); x--;` og `while( x > 0 ) ; x--;`. I begge tilfælde er løkkens krop det tomme udsagn (semikolon efter `while(...)`), så `x--` står uden for løkken, og løkken kører uendeligt mange gange, fordi `x` aldrig ændres. Indrykning ville have vist, at det ikke er det, man mener.
 
-**assert.** `assert(betingelse)` fra `<assert.h>` stopper programmet med en meddelelse, hvis betingelsen er falsk. Den bruges til at fange brud på forudsætninger tidligt. Med `-DNDEBUG` fjernes alle asserts.
+**Compilerkæden (slides).** Præprocessering (`cpp`): `hello.c` bliver til `hello.i`; kompilering (`gcc -S`): `hello.i` bliver til assembler `hello.s`; assembly (`as`): `hello.s` bliver til `hello.o`; linking (`ld`): objektfiler og biblioteker bliver til en kørbar fil.
+
+**Præprocessoren (slides).** Makroer som `#define BUFFER_SIZE 1024` og funktionslignende `#define min(X, Y) ((X) < (Y) ? (X) : (Y))`. Pas på faldgruber. Foruddefinerede makroer: `__FILE__`, `__LINE__`, og fra C99 `__DATE__`, `__TIME__`, `__func__`. Systemmakroer: `_WIN32`, `_WIN64`, `__linux__`, `__APPLE__`, `__MACH__`, `__unix__`. Man kan liste indbyggede makroer med `cpp -dM /dev/null` (Windows uden WSL: `NUL`), og med flag: `gcc -dM -E - [options] < /dev/null`.
+
+**Fejlhåndtering (slides).** Tjek returværdien fra `malloc`, skriv fejl til `stderr` med `__func__` og `__LINE__`, returnér `EXIT_FAILURE`, og sæt pointeren til `NULL` efter `free`.
+
+```c
+double *data = malloc(100*sizeof(*data));
+if (data == NULL) {
+    fprintf(stderr, "Malloc failed in %s function, line %d\n", __func__, __LINE__);
+    return EXIT_FAILURE;
+}
+free(data);
+data = NULL;
+```
+
+**assert (slides).** Boolske udtryk, der skal være sande, med mindre der er en fejl. Nyttige til debugging, men erstatter ikke fejlkontrol. `#include <assert.h>` og `assert(expression);`. Slås fra ved at definere `NDEBUG` før `assert.h`, eller med `-DNDEBUG` (i `CPPFLAGS` i makefilen). Slides' eksempel: `assert(data != NULL); assert(size > 0);` giver ved `my_function(NULL, 5)` en meddelelse med udtrykket, funktionsnavnet, filen og linjen, og programmet afbrydes (abort).
+
+**Debugging (slides).** Kompilér med `-g` for en debugversion. Terminaldebuggere (GNU `gdb`, Intel `idb`, Sun `dbx`, LLVM `lldb`) kan sætte breakpoints, gå trin for trin og undersøge variabler. Integrerede debuggere i IDE'er kan det samme. Man kan også tilføje betinget kompileret debugkode (assertions, udskrivning af udvalgte variabler).
 
 ```c
 #include <assert.h>
@@ -49,26 +69,35 @@ int main(void) {
 }
 ```
 
-**Debugger.** Kompilér med `-g`, og kør programmet i fx `gdb`: sæt breakpoints (`break`), kør (`run`), gå trin for trin (`next`, `step`), udskriv variable (`print`). Det er ofte hurtigere end at fylde koden med `printf`.
+**Typiske fejl (slides).**
 
-**Hukommelsesfejl.** Fejl som skrivning uden for et array, brug af frigjort hukommelse og lækager fanges af værktøjer som `valgrind` eller compilerflaget `-fsanitize=address`.
+- Stack overflow: store automatiske arrays (`double data[2097152]` kræver 16 MB, tjek størrelsen) og rekursive kald. Slides' eksempel er `fibonacci(long n)` kaldt med negativt `n`, som aldrig rammer basistilfældene `n == 0` og `n == 1`; brug en debugger til at spore kaldene.
+- Pointere: uinitialiseret pointer (`double *pd; *pd = 5.0;`, advarsler med `-Wall`) og dereferencing af `NULL` (`int *pi = NULL; *pi = 2;`, brug en assertion før dereferencing).
+- Hukommelse: manglende allokering (`double *A;` og derefter `A[i] = 1.0`, initialisér med `= NULL` og brug assertions), manglende deallokering (hukommelseslæk, tjek `malloc` og `free` eller brug AddressSanitizer eller Valgrind) og manglende `free` i en fejlgren (slides' `some_function` returnerer -1, når `fopen` fejler, uden at frigive `y`).
+- Indeks uden for grænser: `for (int i=0;i<=10;i++)` på `double data[10]`, og `s[5] = '\0'` på `char s[5]`. Brug assertions eller en debugger.
+- Manglende nulafslutning: `char s[5]` fyldt med "Hello" uden plads til `'\0'`, og så `puts(s)`.
+- Utilsigtede makroer: `#define cube(x) x*x*x` med `cube(2+3)` bliver til `2+3*2+3*2+3` og ikke $(2+3)^3$. Tjek præprocessorens output, og sæt parenteser om argumenter.
+### Fejldiagnose-model: Valgrind og memory leak-registrering
 
-**Compileradvarsler.** Kompilér altid med `-Wall` (evt. `-Wextra`) og ret alle advarsler.
+Valgrind overvåger alle heap-allokeringer i en virtuel CPU:
+
+```text
+       Allokering (malloc):            Frigørelse (free):
+       Heap: [ Block A: 100 bytes ] -> Heap: [ Frigivet / tom ]
+       
+  Fejlscenarier:
+  1. Memory Leak: malloc() kaldes uden tilhørende free() før programafslutning.
+  2. Use-After-Free: Pointer p tilgås efter free(p).
+  3. Buffer Overflow: Skrivning ud over allokeret længde (overskriver nabodata).
+```
+Kompilér altid med debug-symboler `-g` for at få præcise filnavne og linjenumre i Valgrind-rapporten.
 
 ## Opgaver
 
 Fra `module10.pdf`:
 
-- Arbejd på afleveringsopgaven ("Work on the assignment"). Der er ingen andre nummererede opgaver i opgavearket for modul 10.
-
-## Tjek dig selv
-
-- [ ] Hvordan tester jeg en funktion, så jeg ved, at den er korrekt?
-- [ ] Hvorfor sammenligner jeg floating-point resultater med en tolerance?
-- [ ] Hvad gør `assert`, og hvordan slår man den fra?
-- [ ] Hvilket compilerflag skal bruges for at kunne debugge med `gdb`?
-- [ ] Hvilke typer fejl kan `valgrind` eller `-fsanitize=address` finde?
-- [ ] Hvilke randtilfælde bør jeg teste for matrixfunktioner?
+- Arbejd på afleveringsopgaven ("Work on the assignment"). Der er ingen andre nummererede opgaver i opgavearket for modul 10. (Afleveringsopgaven er ikke åbnet og beskrives ikke her.)
+- Løsningsark: der er ikke fundet nogen `sols_module10` på Learn.
 
 ## Links
 

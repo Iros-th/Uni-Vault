@@ -45,6 +45,23 @@ Slides stiller opgaven at diskutere hvad zero padding gør ved mean- og medianfi
 $$\text{nut\_ratio} = \frac{\#\text{nødder}}{\#\text{nødder} + \#\text{chokolade}},$$
 
 hvis man følger notebookens variabler `no_nutpixels` og `no_chocpixels`. (Selve formlen er `? # DEFINER` i notebooken, så dette er min læsning af variabelnavnene.)
+### Kantdetektionsmodel: Sobel-gradienter og kantstyrke
+
+Kanter i et billede identificeres ved at beregne gradienten $\nabla I = \left(\frac{\partial I}{\partial x}, \frac{\partial I}{\partial y}\right)$:
+
+```text
+  Sobel-X kerne (finder lodrette kanter):  Sobel-Y kerne (finder vandrette kanter):
+  ┌────┬───┬───┐                          ┌────┬────┬────┐
+  │ -1 │ 0 │ 1 │                          │  1 │  2 │  1 │
+  ├────┼───┼───┤                          ├────┼────┼────┤
+  │ -2 │ 0 │ 2 │                          │  0 │  0 │  0 │
+  ├────┼───┼───┤                          ├────┼────┼────┤
+  │ -1 │ 0 │ 1 │                          │ -1 │ -2 │ -1 │
+  └────┴───┴───┘                          └────┴────┴────┘
+
+  Samlet kantstyrke (gradientmagnitude):  |G| = √(Gx² + Gy²)
+```
+Hvor lysintensiteten ændrer sig brat, skyder gradienten i vejret og markerer en kontur.
 
 ## Opgaver
 
@@ -67,16 +84,6 @@ I notebooken hedder delopgaverne 2.1 a (tærskel på original, `tau = ?`), 2.1 b
 Notebooken udskriver `'Nødder udgør ca. ...% af produktet'`. Indpakningen omkring chokoladen skal man ikke bekymre sig om. Resten af 2.1 (at tælle enkelte bobler) kræver mere avancerede metoder, som kommer i kursus 02502 (Billedanalyse).
 
 Også til posteren: den bedømmes på form, indhold og præsentation (slide "Husk"), og skal afleveres på Learn.
-
-## Tjek dig selv
-
-- [ ] Kan jeg finde medianen af en talliste, også med lige antal tal?
-- [ ] Hvorfor er medianfiltrering ikke en foldning?
-- [ ] Kan jeg forklare hvad zero padding, replikation og spejling antager om verden uden for billedet?
-- [ ] Hvordan vælger jeg tærskler ud fra et histogram, og hvorfor bliver det lettere efter filtrering?
-- [ ] Hvad sker der med segmenteringen når $K$ bliver meget stor?
-- [ ] Hvordan beregner jeg andelen af nødder ud fra en segmentering?
-- [ ] Kan jeg forklare hvornår median er bedre end mean (fx ved salt-og-peber-støj)?
 
 ## Links
 

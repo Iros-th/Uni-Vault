@@ -49,6 +49,25 @@ Et tal med modulus $r$ og argument $\theta$ har $a = r\cos\theta$ og $b = r\sin\
 De inverse trigonometriske funktioner løser $\cos x = c$ osv. inden for deres standardintervaller (se afsnit 2.3). Husk, at $\cos^2 x + \sin^2 x = 1$.
 
 *Eksempel.* $\arcsin\left(\tfrac{1}{2}\right) = \tfrac{\pi}{6}$ og $\arctan(1) = \tfrac{\pi}{4}$.
+### Geometrisk model: Det komplekse talplan og Eulers rotationsvektor
+
+Et komplekst tal $z = x + iy = r e^{i	heta}$ forener cartesiske koordinater med polær rotation:
+
+```text
+                   Im (y)
+                     │          z = x + iy = r e^(iθ)
+                     │         /│
+                     │      r / │
+                     │       /  │ y = r sin θ
+                     │ θ    /   │
+                     └─────┴────┴──────── Re (x)
+                           x = r cos θ
+```
+
+**Multiplikation som rotation og skalering:**
+Når to komplekse tal ganges sammen, ganges deres radier og deres vinkler adderes:
+$$z_1 \cdot z_2 = (r_1 e^{i	heta_1}) \cdot (r_2 e^{i	heta_2}) = (r_1 r_2) e^{i(	heta_1 + 	heta_2)}.$$
+At gange med $i = e^{i\pi/2}$ svarer til en ren $90^\circ$ mod uret-rotation i planen.
 
 ## Opgaver
 
@@ -73,15 +92,6 @@ Opgaverne står på kursussiden med de numre, der er gengivet her. Nogle nævner
 - Opgave 3: Funktionerne $\mathrm{arccos}$, $\mathrm{arcsin}$ og $\mathrm{arctan}$. (spørgsmål a til b)
 - Opgave 4: Cosinus og sinus repetition, del 2. (spørgsmål a til b)
 - Opgave 5:  Polære koordinater (spørgsmål a til d)
-
-## Tjek dig selv
-
-- [ ] Hvad er $i^2$, $i^3$ og $i^4$?
-- [ ] Hvordan dividerer jeg to komplekse tal?
-- [ ] Hvad er forskellen på modulus og realdel?
-- [ ] Hvordan bestemmer jeg hovedargumentet af et tal i 3. kvadrant?
-- [ ] Hvilket interval er værdimængden for $\arctan$?
-- [ ] Hvordan omregner jeg grader til radianer?
 
 ## Links
 

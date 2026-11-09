@@ -49,6 +49,25 @@ Determinanten defineres ved udvikling efter en række eller søjle (Definition 8
 $\mathbf{A}^T$ fås ved at bytte rækker og søjler. En matrix med $\mathbf{A}^T = \mathbf{A}$ er symmetrisk.
 
 *Eksempel.* $\begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix}^T = \begin{pmatrix} 1 & 3 \\ 2 & 4 \end{pmatrix}$.
+### Geometrisk model: Determinanten som areal- og rumfangsskalering
+
+For en $2 	imes 2$ matrix $A = [\mathbf{v}_1 \;\; \mathbf{v}_2]$ er $|\det(A)|$ arealet af det parallelogram, der udspændes af søjlevektorerne:
+
+```text
+                 y ^
+                   │             (v1 + v2)
+                   │             ┌───────┐
+                   │   v2       /       /
+                   │    ┌──────┘       /
+                   │    │  Areal =    /
+                   │    │ |det(A)|   /
+                   │    └───────────┘ v1
+                   └────────────────────> x
+```
+
+- Hvis $\det(A) > 0$: Orienteringen bevares (højrehåndsregel).
+- Hvis $\det(A) < 0$: Orienteringen vendes (spejling).
+- Hvis $\det(A) = 0$: Vektorerne er lineært afhængige, parallelogrammet kollapser til en linje (areal = 0), og matricen er ikke invertibel.
 
 ## Opgaver
 
@@ -100,15 +119,6 @@ Notebookens øvelser, som de står:
 - Øvelse 5: opgave 2 fra StoreDag uge 5, med `sp.roots`
 - Øvelse 6: opgave 2 fra LilleDag uge 4, med `sp.roots`, og tegn de tre løsninger
 - Øvelse 7: opgave 1, 4, 6 og 7 fra StoreDag uge 5
-
-## Tjek dig selv
-
-- [ ] Hvad er definitionen på lineær afhængighed?
-- [ ] Hvornår kan to matricer ganges?
-- [ ] Er $\mathbf{AB} = \mathbf{BA}$ altid?
-- [ ] Hvordan afgør jeg ved determinanten, om en kvadratisk matrix er invertibel?
-- [ ] Hvordan løser jeg $\mathbf{Ax} = \mathbf{b}$ med den inverse?
-- [ ] Hvad er en symmetrisk matrix?
 
 ## Links
 

@@ -34,6 +34,25 @@ tags:
 **Sammensætning og invers.** $(g \circ f)(x) = g(f(x))$. En funktion har en invers $f^{-1}$ netop når den er bijektiv. Eksempel: $f(x) = x + 1$ har $f^{-1}(y) = y - 1$.
 
 **Gulv og loft.** $\lfloor x \rfloor$ er det største hele tal $\le x$, og $\lceil x \rceil$ det mindste hele tal $\ge x$. Eksempel: $\lfloor 2{,}7 \rfloor = 2$, $\lceil 2{,}1 \rceil = 3$, $\lfloor -2{,}5 \rfloor = -3$.
+### Funktionsmodel: Injektiv, surjektiv og bijektiv visualisering
+
+Funktioner $f: A 	o B$ kategoriseres efter, hvordan pile rammer elementer i codomænet $B$:
+
+```text
+Injektiv (1-til-1):             Surjektiv (på):                Bijektiv (isomorfi):
+Højst én pil pr. punkt i B      Mindst én pil pr. punkt i B     Præcis én pil pr. punkt i B
+(Ingen kollisioner)             (Hele B er dækket)             (Perfekt 1-til-1 parring)
+
+  A       B                       A       B                       A       B
+┌───┐   ┌───┐                   ┌───┐   ┌───┐                   ┌───┐   ┌───┐
+│ 1 ├──>│ a │                   │ 1 ├──>│ a │                   │ 1 ├──>│ a │
+│ 2 ├──>│ b │                   │ 2 ├──>│ b │                   │ 2 ├──>│ b │
+│ 3 ├──>│ c │                   │ 3 ├──>│ c │                   │ 3 ├──>│ c │
+└───┘   │ d │ (ikke ramt)       └───┘   └───┘                   └───┘   └───┘
+        └───┘                   (kræver |A| >= |B|)             (|A| = |B|, invertibel)
+```
+
+**Pigeonhole-kobling:** Hvis $|A| > |B|$, kan en funktion $f: A 	o B$ aldrig være injektiv. Mindst to elementer i $A$ må sendes til samme værdi i $B$ (kollision i hash-tabeller).
 
 ## Opgaver
 
@@ -41,15 +60,6 @@ Fra kursussiden, Rosen, "Discrete Mathematics and Its Applications" (2025-udgave
 
 - Afsnit 2.2: 27, 29, 35, 47 (se definitionen over opgave 38)
 - Afsnit 2.3: 9g, 21, 27, 73a
-
-## Tjek dig selv
-
-- [ ] Kan jeg bevise en mængdeidentitet med to inklusioner?
-- [ ] Kan jeg oversætte en mængdeidentitet til en logisk ækvivalens?
-- [ ] Kan jeg bruge $|A \cup B| = |A| + |B| - |A \cap B|$ i en tekstopgave?
-- [ ] Kan jeg afgøre, om en funktion er injektiv og/eller surjektiv, og begrunde det?
-- [ ] Kan jeg beregne $\lfloor -2{,}5 \rfloor$ uden at tage fejl af fortegnet?
-- [ ] Ved jeg, hvorfor en bijektion har en invers?
 
 ## Links
 

@@ -1,6 +1,6 @@
 ---
 publish: true
-title: "01025 uge 8: Generelle funktionsrækker og uniform konvergens"
+title: "01025 uge 8: Uniform konvergens"
 course: Differential Equations and Infinite Series
 type: week
 week: 8
@@ -9,76 +9,143 @@ tags:
   - ugenote
 ---
 
-# Uge 8: Generelle funktionsrækker og uniform konvergens
+# Uge 8: Uniform konvergens
 
-> **Kilde:** Ugeseddel 8 (DTU Learn, 01025 E26), lærebogen 4. udg. afsnit 5.3 og 5.4, eksamenssættet 01025Mat2MatTekEksamenB-E21.pdf (fra zip-filen). SlidesUge8.pdf og WeeklyNotes7.pdf er ikke gennemgået her. Noten "Kontinuitet og Differentiabilitet" ligger i mappen "Noter og ekstra opgaver" i zip-filen.
+> **Kilde:** Ugeseddel 8 og semesterplanen (DTU Learn, 01025 E26), lærebogen Ole Christensen, *Differentialligninger og uendelige rækker* (4. udg., afsnit 5.3 og 5.4, appendiks A.8), notatet KontinuitetOgDifferentiabilitet.pdf, facitliste_studerende.pdf og EkstraOpgaver.pdf (opgave 706). Sætningsnumre følger kursets 4. udgave.
 
 ## Læseplan
 
-- Forelæsning (onsdag 28/10): afsnit 5.3 og 5.4 samt resten af appendiks om potensrækker og generelle rækker, fra beviset for sætning 5.33.
-- Forstå definitionen på kontinuitet, så du kan følge beviset for sætning 5.35.
+- Forelæsning (onsdag 28/10): afsnit 5.3 og 5.4 samt beviset for sætning 5.32 (Weierstrass' M-test) i appendiks A.8.
+- Læs selv: noterne `KontinuitetOgDifferentiabilitet.pdf` i mappen Noter og ekstra opgaver.
 
 ## Begreber
 
-### Funktionsrække og sumfunktion (afsnit 5.3)
-En række $\sum_{n=1}^\infty f_n(x)$ hvor leddene er funktioner. For hvert $x$ er det en talrække; mængden af $x$ hvor den konvergerer er konvergensområdet, og $f(x) = \sum f_n(x)$ er sumfunktionen.
+### Punktvis konvergens (definition 5.22)
+Lad $\{f_n\}$ være en følge af funktioner defineret på et interval $I$. Følgen siges at konvergere **punktvis** mod en grænsefunktion $f$ på $I$, hvis der for ethvert fast $x \in I$ gælder:
 
-**Eksempel.** $\sum_{n=1}^\infty \frac{\sin(nx)}{n^2}$ konvergerer for alle $x$, fordi $\left|\frac{\sin nx}{n^2}\right| \leq \frac{1}{n^2}$.
+$$\lim_{n\to\infty} f_n(x) = f(x).$$
 
-### Punktvis kontra uniform konvergens (afsnit 5.4)
-Punktvis: for hvert $x$ går $S_N(x) \to f(x)$, men hvor hurtigt kan afhænge af $x$. Uniform: der findes for ethvert $\epsilon > 0$ et $N$ der virker for alle $x$ samtidig, dvs. $|f(x) - S_N(x)| \leq \epsilon$ for alle $x$ i intervallet når $N$ er stort nok.
+Med kvantorer skrives det:
 
-**Eksempel.** $\sum_{n=0}^\infty x^n$ konvergerer punktvis på $]-1,1[$, men ikke uniformt: halen er $\frac{x^{N+1}}{1-x}$, og for $x$ tæt på $1$ er den stor uanset $N$. På $[-0.99, 0.99]$ er den derimod uniform, fordi halen højst er $\frac{0.99^{N+1}}{0.01}$.
+$$\forall x \in I \quad \forall \epsilon > 0 \quad \exists N \in \mathbb N \quad \text{så} \quad n \ge N \implies |f_n(x) - f(x)| < \epsilon.$$
 
-### Majorantrække (Weierstrass)
-Hvis $|f_n(x)| \leq k_n$ for alle $x$ i intervallet og $\sum k_n$ er konvergent, kaldes $\sum k_n$ en konvergent majorantrække. Så er $\sum f_n$ uniformt konvergent, og
+Her må valget af $N$ afhænge af både $\epsilon$ og punktet $x$. Punktvis konvergens er en svag egenskab: selv om alle $f_n$ er kontinuerte funktioner, behøver grænsefunktionen $f$ ikke at være kontinuert!
 
-$$|f(x) - S_N(x)| \leq \sum_{n=N+1}^\infty k_n \quad\text{for alle } x.$$
+### Uniform konvergens (definition 5.27)
+Følgen $\{f_n\}$ konvergerer **uniformt** (ensartet) mod $f$ på intervallet $I$, hvis det samme $N$ kan bruges for samtlige punkter $x \in I$ på én gang:
 
-**Eksempel.** For $\sum\frac{\sin nx}{n^2}$ er $k_n = \frac{1}{n^2}$. Med korollar 4.35 er halen højst $\frac{1}{N+1} + \frac{1}{(N+1)^2}$. For fejl $\leq 0.01$ på hele $\mathbb R$ er $N = 100$ nok ($\frac1{101} + \frac1{101^2} \approx 0.00999$).
+$$\forall \epsilon > 0 \quad \exists N \in \mathbb N \quad \text{så} \quad n \ge N \implies \forall x \in I: |f_n(x) - f(x)| \le \epsilon.$$
 
-### Kontinuitet af sumfunktionen (sætning 5.33)
-Er alle $f_n$ kontinuerte på $I$ og har $\sum f_n$ en konvergent majorantrække på $I$, så er sumfunktionen kontinuert på $I$.
+En ækvivalent og meget anvendelig formulering er:
 
-**Eksempel.** $\sum\frac{\sin nx}{n^2}$ er kontinuert på hele $\mathbb R$.
+$$\lim_{n\to\infty} \sup_{x \in I} |f_n(x) - f(x)| = 0.$$
 
-### Ledvis integration (sætning 5.34)
-Under samme antagelser er $\int_a^b \sum f_n(x)\,dx = \sum \int_a^b f_n(x)\,dx$.
+Geometrisk betyder det, at grafen for $f_n$ for $n \ge N$ ligger helt inde i et bånd af bredde $\pm\,\epsilon$ omkring grafen for grænsefunktionen $f$.
 
-### Ledvis differentiation (sætning 5.35)
-Er $f_n$ differentiable og har $\sum f_n'$ en konvergent majorantrække (og $\sum f_n$ konvergerer), så er $f$ differentiabel og $f'(x) = \sum f_n'(x)$. Det er rækken af de **afledte** der skal have en majorant.
+**Klassisk modeksempel.** Betragt $f_n(x) = x^n$ på intervallet $[0, 1]$.
+- For $x \in [0, 1[$ gælder $x^n \to 0$.
+- For $x = 1$ gælder $1^n = 1 \to 1$.
+Grænsefunktionen er $f(x) = 0$ for $x \in [0, 1[$ og $f(1) = 1$. Selvom hver $f_n$ er kontinuert, er grænsefunktionen diskontinuert i $x = 1$. Konvergensen kan derfor umuligt være uniform på $[0, 1]$.
+Hvis man derimod indskrænker til $[0, d]$ med $0 < d < 1$, er $\sup_{x\in [0, d]} |x^n - 0| = d^n \to 0$. Konvergensen **er** uniform på ethvert lukket delinterval $[0, d] \subset [0, 1[$.
 
-**Eksempel.** $f(x) = \sum\frac{\sin nx}{n^3}$: de afledte er $\frac{\cos nx}{n^2}$ med majorant $\sum\frac1{n^2}$, så $f'(x) = \sum\frac{\cos nx}{n^2}$. For $\sum\frac{\sin nx}{n^2}$ giver differentiation $\sum\frac{\cos nx}{n}$, som ikke har en konvergent majorant, og sætningen siger derfor intet.
+### Weierstrass' M-test / Majorantkriteriet (sætning 5.32)
+Dette er kursets vigtigste arbejdsredskab til at bevise uniform konvergens af rækker $\sum_{n=1}^\infty f_n(x)$.
+Antag at der findes en talrække med positive led $\sum_{n=1}^\infty M_n$, således at:
+1. $|f_n(x)| \le M_n$ for alle $x \in I$ og alle $n \ge 1$,
+2. Talrækken $\sum_{n=1}^\infty M_n$ er konvergent ($\sum M_n < \infty$).
 
-### Potensrækker er uniformt konvergente på mindre intervaller (sætning 5.30)
-En potensrække med konvergensradius $\rho > 0$ er uniformt konvergent på ethvert interval $[-r, r]$ med $0 < r < \rho$. Beviset bruger majoranten $\sum |c_n| r^n$. Derfor er sumfunktionen kontinuert og må differentieres ledvis inde i konvergensintervallet.
+Så konvergerer funktionsrækken $\sum_{n=1}^\infty f_n(x)$ **både uniformt og absolut** på intervallet $I$.
 
-## Opgaver (i prioriteret rækkefølge)
+**Eksempel.** Betragt $\sum_{n=1}^\infty \frac{\cos(nx)}{n^2 + x^2}$ for $x \in \mathbb R$.
+For ethvert reelt $x$ gælder $|\cos(nx)| \le 1$ og $n^2 + x^2 \ge n^2$, så
 
-| Opgave | Afsnit | Hvad den handler om |
-|---|---|---|
-| 114 | 5.3, 5.4 | Hvilke rækker har en majorantrække, og hvilke en konvergent majorantrække? Kontinuitet af en sinusrække og sammenhæng med en cosinusrække. |
-| 149 | 5.4 | $f(x) = \sum\frac{1}{3^n}\cos(2^nx)$: konvergens, kontinuitet, differentiabilitet, $f'(0)$. Ugesedlen: plot $S_N$ og dens første og anden afledede for $N = 20$ og $200$ på $[0, 2\pi]$ og $[0.001, 0.002]$. Ser $f$ ud til at være to gange differentiabel? |
-| 151 | 5.4, appendiks B | Rækken for $\ln(1+x)$ har ingen konvergent majorant på $]-1,1]$; kontinuitet og differentiabilitet af $\sum\frac{x^n}{n^2}$. |
-| 818 | 4.5 | Hvis den ikke blev lavet i uge 6. Vink: indskudssætningen. |
-| 152 | 4.4, 4.5, 4.7 | Kvotientrækker der starter senere, en række der skifter form efter 100 led, og en række givet ved afsnitssummen $S_N = \frac1N\cos(N\pi)$. Vink til (c): find $a_n$ og skriv rækken som en alternerende række. |
-| 508 | 4.7, 5.4 | Konvergenstype for $\sum(-1)^{n-1}\tan\frac{1}{\sqrt n}$ og uniform konvergens af $\sum\frac1n\sin\frac{x}{n\sqrt n}$ (eksamensopgave fra kursus 01030). |
+$$\left| \frac{\cos(nx)}{n^2 + x^2} \right| \le \frac{1}{n^2} = M_n.$$
 
-**Hjemmeopgavesæt 7:** opgave 4 fra 01025Mat2MatTekEksamenB-E21.pdf afleveres fysisk senest 4/11 kl. 8. Den handler om $f(t) = \sum_{n=1}^\infty \frac{t\cos(nt)}{n^3}$: uniform konvergens på $[-a,a]$, et $N$ så fejlen er højst $10^{-2}$ på $[-5,5]$, majorant på hele $\mathbb R$, konvergens og kontinuitet. Möbius sæt 7 (to opgaver) samme frist. (Ikke løst her.)
+Da $\sum_{n=1}^\infty \frac{1}{n^2}$ konvergerer ($p=2 > 1$), sikrer Weierstrass' M-test, at rækken konvergerer uniformt og absolut på hele $\mathbb R$.
 
-**MC:** svaret på 705 er 2. Løs nu opgave 706.
+### Hovedsætningerne for uniform konvergens
+Uniform konvergens sikrer, at man lovligt må ombytte grænseovergange:
 
-## Tjek dig selv
+1. **Kontinuitet (sætning 5.29):** Hvis funktionerne $f_n$ er kontinuerte på $I$, og $\sum f_n(x)$ konvergerer uniformt på $I$, så er sumfunktionen $s(x) = \sum_{n=1}^\infty f_n(x)$ **kontinuert** på $I$.
+2. **Ledvis integration (sætning 5.35):** Hvis $f_n$ er kontinuerte og rækken konvergerer uniformt på et begrænset interval $[a, b]$, må integration og summation byttes:
 
-- [ ] Kan jeg forklare forskellen på punktvis og uniform konvergens med et eksempel?
-- [ ] Kan jeg finde en konvergent majorantrække, eller argumentere for at der ingen er?
-- [ ] Kan jeg bruge en majorant til at finde $N$ så fejlen er under $\epsilon$ for alle $x$?
-- [ ] Hvilke antagelser kræver sætning 5.33, 5.34 og 5.35, og hvorfor er det rækken af afledte der skal have en majorant i 5.35?
-- [ ] Kan jeg gengive definitionen af kontinuitet med $\epsilon$ og $\delta$?
-- [ ] Hvorfor er en potensrække uniformt konvergent på $[-r, r]$ for $r < \rho$, men ikke nødvendigvis på $]-\rho, \rho[$?
+   $$\int_a^b \left( \sum_{n=1}^\infty f_n(x) \right) dx = \sum_{n=1}^\infty \int_a^b f_n(x)\,dx.$$
+
+3. **Ledvis differentiation (sætning 5.38):** Hvis $f_n$ er differentiable, rækken $\sum f_n(x_0)$ konvergerer i mindst ét punkt $x_0$, og rækken af afledede $\sum f_n'(x)$ konvergerer **uniformt** på $I$, så er sumfunktionen $s(x)$ differentiabel, og
+
+   $$\left( \sum_{n=1}^\infty f_n(x) \right)' = \sum_{n=1}^\infty f_n'(x).$$
+
+### Geometrisk model: Epsilon-tunnelen (funktionstunnel)
+
+Forskellen på punktvis konvergens og uniform konvergens kan visualiseres ved en $\varepsilon$-tunnel omkring grænsefunktionen $f(x)$:
+
+```
+y ^               +-- f(x) + epsilon
+  |              /
+  |   ==========*========= S_N(x) ligger HELT inde i tunnelen for ALLE x
+  |            /
+  |           +-- f(x) - epsilon
+--+----------------------------------> x
+```
+
+- **Punktvis konvergens:** For hvert enkelt punkt $x$ gælder $S_N(x) \to f(x)$. Vælger vi et $\varepsilon > 0$, vil grafen for $S_N$ på et tidspunkt ramme ind i tunnelen ved dette specifikke $x$. Men tidspunktet $N(x, \varepsilon)$ kan blive uendeligt stort, når $x$ nærmer sig et randpunkt.
+- **Uniform konvergens:** Der findes ét fælles indeks $N(\varepsilon)$, så **hele funktionsgrafen** for $S_N(x)$ ligger fuldstændigt inden i tunnelen $[f(x) - \varepsilon, f(x) + \varepsilon]$ for samtlige $x \in A$ på én gang!
+
+*Modeksemplet $f_n(x) = x^n$ på $[0, 1]$:* For ethvert $x < 1$ går $x^n \to 0$. Men i punktet $x = 1$ er $1^n = 1$. Lige under 1 slipper kurven altid ud af $\varepsilon$-tunnelen, uanset hvor stor $N$ vælges. Derfor er konvergensen ikke uniform, og grænsefunktionen springer diskontinuert fra 0 til 1.
+
+## Opgaver
+
+| Opgave | Afsnit | Hvad den handler om | Facit / Vigtigste konklusion |
+|---|---|---|---|
+| 111 | 5.3 | Majorantrække for trigonometrisk funktionsrække | $\sum \frac{2}{(2n+1)^2} < \infty \implies$ uniform konvergens |
+| 114 | 5.3 | Undersøg fem funktionsrækker for majorantrække | Majorantrække i 2, 3, 4, 5; konvergent majorant i 3 og 5 |
+| 118 | 5.4 | Rækken $\sum \frac{x^2}{1 + n^2 x^2}$ | Punktvis konvergent på $\mathbb R$, uniform på lukkede delmængder |
+| 133 | 5.4 | Rækken $\sum \frac{(-1)^n x^n}{n}$ på $]-1, 1]$ | Ingen konvergent talmajorant, men uniform konvergens på $[0, 1]$ |
+| 149 | 5.4 | Ledvis differentiation af $f(x) = \sum \frac{\sin(nx)}{n^3}$ | $f'(0) = 0$ (eller $\sum 1/n^2$) |
+| 153 | 5.4 | Fejlvurdering ved Weierstrass majorant | $N \ge 9$, fejl 0.138 |
+| 160 | 5.4 | Funktionsrækker og grænser | Uniform konvergens via M-test |
+| 860-864 | A.8 | Teoretiske beviser for funktionsrækker | Beviser fra appendiks A.8 |
+
+### Detaljeret gennemgang af udvalgte opgaver
+
+**Opgave 111.** Betragt rækken $\sum_{n=0}^\infty \frac{2}{(2n+1)^2} \cos((2n+1)x)$ for $x \in \mathbb R$.
+Da $|\cos((2n+1)x)| \le 1$ for alle $x$, gælder vurderingen:
+
+$$\left| \frac{2}{(2n+1)^2} \cos((2n+1)x) \right| \le \frac{2}{(2n+1)^2} = M_n.$$
+
+Talrækken $\sum_{n=0}^\infty \frac{2}{(2n+1)^2}$ konvergerer ved sammenligning med $\sum \frac{1}{n^2}$. Ifølge Weierstrass' M-test konvergerer rækken derfor uniformt og absolut på hele $\mathbb R$. Da hvert led er en kontinuert funktion, er sumfunktionen kontinuert på hele $\mathbb R$.
+
+**Opgave 114.** Undersøg om der findes en majorantrække, og om den er konvergent:
+1. Rækker med ubegrænsede funktioner på ubegrænsede intervaller har sjældent en talmajorant.
+2. $\sum \frac{\sin(nx)}{n}$: $|\frac{\sin(nx)}{n}| \le \frac{1}{n} = M_n$. Dette er en majorantrække, men $\sum \frac{1}{n}$ er divergent, så M-testen kan ikke anvendes med denne majorant.
+3. $\sum \frac{\sin(nx)}{n^2}$: Her er $M_n = \frac{1}{n^2}$, og $\sum \frac{1}{n^2} < \infty$. Dette er en konvergent majorantrække.
+Facit bekræfter: majorantrække i 2, 3, 4, 5; konvergent majorantrække i 3 og 5.
+
+**Opgave 133.** Betragt $\sum_{n=1}^\infty (-1)^n \frac{x^n}{n}$ for $x \in ]-1, 1]$.
+Hvis man søger en talmajorant på $]-1, 1]$, må man tage supremum over intervallet:
+
+$$M_n = \sup_{x \in ]-1, 1]} \left| (-1)^n \frac{x^n}{n} \right| = \frac{1}{n}.$$
+
+Da $\sum_{n=1}^\infty \frac{1}{n} = \infty$, **har rækken ingen konvergent talmajorant** på $]-1, 1]$.
+Alligevel konvergerer rækken uniformt på $[0, 1]$! Dette indses ved at benytte Leibniz' fejlvurdering: For $x \in [0, 1]$ er leddene alternerende, aftagende og går mod 0. Restleddet opfylder
+
+$$|R_N(x)| = \left| \sum_{n=N+1}^\infty (-1)^n \frac{x^n}{n} \right| \le \frac{x^{N+1}}{N+1} \le \frac{1}{N+1}.$$
+
+Da $\frac{1}{N+1} \to 0$ helt uafhængigt af $x$, er konvergensen uniform på $[0, 1]$. Opgaven er vigtig, fordi den viser, at Weierstrass' M-test er en tilstrækkelig betingelse for uniform konvergens, men ikke en nødvendig betingelse!
+
+**Opgave 149.** Lad $f(x) = \sum_{n=1}^\infty \frac{\sin(nx)}{n^3}$.
+1. Da $|\frac{\sin(nx)}{n^3}| \le \frac{1}{n^3}$, og $\sum \frac{1}{n^3} < \infty$, konvergerer rækken uniformt på $\mathbb R$. Sumfunktionen $f$ er derfor kontinuert.
+2. Differentiér formelt led for led: $\sum_{n=1}^\infty \frac{n \cos(nx)}{n^3} = \sum_{n=1}^\infty \frac{\cos(nx)}{n^2}$.
+3. Da $|\frac{\cos(nx)}{n^2}| \le \frac{1}{n^2}$ og $\sum \frac{1}{n^2} < \infty$, konvergerer den differentierede række uniformt på $\mathbb R$.
+4. Sætning 5.38 giver derfor, at $f$ er differentiabel, og $f'(x) = \sum_{n=1}^\infty \frac{\cos(nx)}{n^2}$.
+5. I punktet $x = 0$ fås $f'(0) = \sum_{n=1}^\infty \frac{1}{n^2} = \frac{\pi^2}{6}$.
+
+**Multiple Choice 706 (EkstraOpgaver).** Facit er svarmulighed 3.
 
 ## Links
 
 - [[Courses/Differential Equations and Infinite Series/Uger/Oversigt|Ugeoversigt 01025]]
-- Forrige: [[Courses/Differential Equations and Infinite Series/Uger/Uge 07|Uge 7]]
+- Forrige: [[Courses/Differential Equations and Infinite Series/Uger/Uge 07|Uge 7: Potensrækker]]
 - Næste: [[Courses/Differential Equations and Infinite Series/Uger/Uge 09|Uge 9: Fourierrækker]]
+- [[Differential Equations and Infinite Series]]
+- [[Courses/Differential Equations and Infinite Series/Speedrun Map|Speedrun Map]]

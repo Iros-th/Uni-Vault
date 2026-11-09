@@ -33,6 +33,20 @@ Eksempel: tre uafhængige ligefordelte på $(0,1)$, maksimum: $F_{\max}(x) = x^3
 **Den $k$'te ordensstatistik.** For uafhængige, identisk fordelte kontinuerte variable med tæthed $f$ og fordelingsfunktion $F$ er tætheden af den $k$'te mindste $\dfrac{n!}{(k-1)!\,(n-k)!}\,F(x)^{k-1}\big(1 - F(x)\big)^{n-k} f(x)$ (boks midt på side 326). For ligefordelte på $(0,1)$ er den $k$'te mindste betafordelt. Betafordelingen bruges som eksempel i forelæsninger og opgaver.
 
 **Hvorfor maksimum?** Ugebrevet motiverer det med dimensionering: konstruktioner skal ofte klare maksimal belastning, ikke gennemsnittet.
+### Sorteringsmodel: Ordnede stokastiske variable (Order statistics)
+
+Når $n$ uafhængige målinger sorteres i voksende rækkefølge: $X_{(1)} \le X_{(2)} \le \dots \le X_{(n)}$:
+
+```text
+           X_(1)              X_(k)               X_(n)
+             │                  │                   │
+  ───[───────o───────────────[──o──]───────────────o───────]───> x
+     <- Min  ->              k-te observation     <- Max ->
+```
+
+**Maksimum og minimum:**
+- $P(X_{(n)} \le x) = [F(x)]^n$ (alle $n$ målinger er $\le x$).
+- $P(X_{(1)} > x) = [1 - F(x)]^n$ (alle $n$ målinger er $> x$).
 
 ## Opgaver
 
@@ -43,14 +57,6 @@ Pitman, Probability (kapitel.afsnit.opgave). Regnes ved øvelsen fredag 30. okto
 Opgaver til selvstudium: 4.3.4, 4.4.6, 4.5.4, 4.6.3. Ugebrevet til uge 8 anbefaler at have regnet 4.6.3 inden næste forelæsning.
 
 Gamle eksamensspørgsmål fra 16/12/2004: spørgsmål 7, 21 og 24.
-
-## Tjek dig selv
-
-- [ ] Kan jeg gå mellem tæthed og fordelingsfunktion i begge retninger?
-- [ ] Kan jeg udlede $F_{\max}$ og $F_{\min}$ for uafhængige variable?
-- [ ] Kan jeg simulere en eksponentialfordelt variabel fra en ligefordelt?
-- [ ] Kan jeg opskrive tætheden af den $k$'te ordensstatistik og genkende betafordelingen?
-- [ ] Kan jeg finde medianen af en given fordeling?
 
 ## Links
 

@@ -4,31 +4,42 @@ title: Differential Equations and Infinite Series
 type: course
 tags:
   - course-index
+  - differential-equations
 ---
 
-# Differential Equations and Infinite Series
+# Differentialligninger og uendelige rækker (01025)
 
-Notes for Differential Equations and Infinite Series. Still filling this in.
+Komplet studiesamling for DTU-kurset *01025 Differentialligninger og uendelige rækker*. Arkivet indeholder detaljerede ugenoter for alle 13 uger med begreber, regnede eksempler og facit til alle opgaver, et interaktivt Speedrun Map, samt gennemgange af tidligere års eksamenssæt.
 
-Notes for the ODE and series course. Solving equations and checking if sums actually converge.
+## Studie- og repetitionsværktøjer
 
-## Ugenoter
+- [[Courses/Differential Equations and Infinite Series/Speedrun Map|Speedrun Map]]: Den hurtigste og mest effektive vej gennem hele pensum emne for emne med tidsestimater, eksamensvægt og tjeklister.
+- [[Courses/Differential Equations and Infinite Series/Uger/Oversigt|Ugeoversigt 01025]]: Samlet uge-for-uge oversigt fra uge 1 til uge 13 med pensumafsnit og afleveringsplan.
+- [[Courses/Differential Equations and Infinite Series/Past Exams|Gamle eksamenssæt]]: Autentiske DTU-eksamensopgaver (F23, E18, dec 17 m.fl.) med fuldstændige løsninger og facit.
+- [[Self-Tests/Differential Equations Test|Selvtest]]: Eksamensrelevante øvelsesspørgsmål med skjulte svar.
+- [[Flashcards/Differential Equations Flashcards|Flashcards]]: 25+ repetitionskort der dækker samtlige 7 hovedemner.
+- [[Studie|Studie-træningsrum]]: Interaktiv træningsapp direkte i browseren med Lær, Test og Genlær (spaced repetition).
 
-- [[Courses/Differential Equations and Infinite Series/Uger/Oversigt|Ugeoversigt 01025 (uge 1 til 13, E26)]]
+## Ugenoter (Uge 1 til 13)
 
-## Lektioner
+- [[Courses/Differential Equations and Infinite Series/Uger/Uge 01|Uge 1: n'te ordens lineære ligninger og overføringsfunktion]]
+- [[Courses/Differential Equations and Infinite Series/Uger/Uge 02|Uge 2: Systemer af differentialligninger]]
+- [[Courses/Differential Equations and Infinite Series/Uger/Uge 03|Uge 3: Overføringsfunktion for systemer og stabilitet]]
+- [[Courses/Differential Equations and Infinite Series/Uger/Uge 04|Uge 4: Stabilitet af inhomogene systemer og uendelige rækker]]
+- [[Courses/Differential Equations and Infinite Series/Uger/Uge 05|Uge 5: Konvergenskriterier og kvotientrækker]]
+- [[Courses/Differential Equations and Infinite Series/Uger/Uge 06|Uge 6: Vurdering af summen og alternerende rækker]]
+- [[Courses/Differential Equations and Infinite Series/Uger/Uge 07|Uge 7: Potensrækker]]
+- [[Courses/Differential Equations and Infinite Series/Uger/Uge 08|Uge 8: Uniform konvergens]]
+- [[Courses/Differential Equations and Infinite Series/Uger/Uge 09|Uge 9: Fourierrækker]]
+- [[Courses/Differential Equations and Infinite Series/Uger/Uge 10|Uge 10: Kompleks form og Parseval]]
+- [[Courses/Differential Equations and Infinite Series/Uger/Uge 11|Uge 11: Effekt, Fouriers sætning og miniprojekt 2]]
+- [[Courses/Differential Equations and Infinite Series/Uger/Uge 12|Uge 12: Variable koefficienter, potensrække- og Fourierrækkemetoden]]
+- [[Courses/Differential Equations and Infinite Series/Uger/Uge 13|Uge 13: Ulineære differentialligninger og repetition]]
 
-Numbered templates, ready to fill in after each lecture.
+## Referencer og formler
 
-- [[Courses/Differential Equations and Infinite Series/Lektioner/index|All lectures (1 to 13)]]
-
-## Course structure
-
-- [[Courses/Differential Equations and Infinite Series/Pensum|Syllabus]]: syllabus and reading plan
-- [[Courses/Differential Equations and Infinite Series/Begreber|Terms]]: the key terms gathered
-- [[Reference/Formelsamling/Differentialligninger|Differential equation formulas]]
-- [[Reference/Formelsamling/Oversigt|Formula collection]]
-
-## Key concepts
-
-## Questions
+- [[Courses/Differential Equations and Infinite Series/Pensum|Pensum og kursusplan]]
+- [[Courses/Differential Equations and Infinite Series/Begreber|Begrebsliste]]
+- [[Reference/Formelsamling/Differentialligninger|Formelsamling: Differentialligninger]]
+- [[Reference/Formelsamling/Oversigt|Samlet formelsamling]]
+- [[Courses/Differential Equations and Infinite Series/Lektioner/index|Lektionsskabeloner]]

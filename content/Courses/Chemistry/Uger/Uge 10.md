@@ -11,7 +11,7 @@ tags:
 
 # Uge 10: Syrer og baser
 
-> Kilde: DTU Learn 26020, Week 10: "Lecture 8 - pre-lecture copy.pdf" (forelæsning 9. november 2026). Der er kun pre-lecture-versionen på Learn pr. 2026-11-09, så noterne kan mangle det der kommer til i post-lecture-slides. Bog: OpenStax Chemistry 2e, kapitel 14 (Acid-Base Equilibria).
+> Kilde: DTU Learn 26020, Week 10: "Lecture 8 - pre-lecture copy.pdf" (forelæsning 9. november 2026). Der er kun pre-lecture-versionen på Learn pr. 2026-11-09, så noterne kan mangle det der kommer til i post-lecture-slides. Bog: OpenStax Chemistry 2e, kapitel 14 (Acid-Base Equilibria). Meddelelserne er læst.
 
 ## Emner
 
@@ -40,6 +40,31 @@ tags:
 
 **Syrer og baser i naturen.** $\mathrm{CO_2}$ i vand giver kulsyre og surere hav (overfladens pH faldt fra 8,2 til 8,1, ca. 26 % mere $\mathrm{H_3O^+}$ ifølge slides). Mavesyre er HCl ved pH 1,5 til 2; antacida er baser.
 
+**Fra meddelelserne.** Gamle eksamenssæt (forår 2025 og efterår 2024) blev lagt op 2. november. Svarene er ikke med i selve eksamenssættene og skulle frigives en uge senere; et sæt fra 2023 var lovet i ugen efter, men ligger ikke i Learns TOC pr. 2026-11-09. Efterår 2024-filen på Learn hedder "random_answers", men viser ingen markerede svar. Se Uge 13 for en oversigt over spørgsmålene.
+
+### Model: Syre-base buffermodel og titreringskurve
+
+En buffer modstår ændringer i pH ved tilsætning af syre eller base, fordi den indeholder både en svag syre $\text{HA}$ og dens korresponderende base $\text{A}^-$:
+
+```
+Tilsat stærk syre H+  +  A-  ======>  HA       (pH falder kun minimalt)
+Tilsat stærk base OH- +  HA  ======>  A- + H2O (pH stiger kun minimalt)
+```
+
+Henderson-Hasselbalch ligningen:
+$$\text{pH} = \text{p}K_a + \log\left(\frac{[\text{A}^-]}{[\text{HA}]}\right).$$
+
+Titreringskurve for svag syre med stærk base:
+
+```
+pH
+ ^                    /--- Efter ækvivalenspunkt (overskud af OH-)
+ |          ---------/  (Ækvivalenspunkt: alt HA er omdannet til A-, pH > 7)
+ |         /  (Bufferzone: pH = pKa +/- 1, optimal ved halvækvivalenspunkt pH = pKa)
+ |        /
+ +-------/-------------------------> Tilsat volumen stærk base V_b
+```
+
 ## Opgaver
 
 - Exercises_Week_10 (quiz på DTU Learn, ikke åbnet)
@@ -47,14 +72,12 @@ tags:
 - Egne svar (regnet selv, slides giver dem ikke): 1) pH 1,00 og 2,87, 1,3 %, ens mængde NaOH (samme mol). 2) $K_b=1{,}0\times10^{-14}/1{,}8\times10^{-5}=5{,}6\times10^{-10}$, basisk. 3) pH $=4{,}74+\log(0{,}15/0{,}10)=4{,}92$; efter 0,010 mol HCl: $\mathrm{pH}=4{,}74+\log(0{,}14/0{,}11)=4{,}84$; i rent vand bliver $[\mathrm{H_3O^+}]=0{,}010$ M, pH 2,00.
 - Ingen bogopgaver med nummer er angivet.
 
-## Tjek dig selv
+## Gamle eksamensspørgsmål om dette emne
 
-- [ ] Kan jeg angive konjugeret par i en syre-base-reaktion?
-- [ ] Kan jeg regne pH ud fra $[\mathrm{H_3O^+}]$ og $[\mathrm{OH^-}]$ via $K_w$?
-- [ ] Kan jeg forklare forskellen på en stærk, fortyndet syre og en svag, koncentreret syre?
-- [ ] Kan jeg løse en ICE-tabel for en svag syre og tjekke 5 %-reglen?
-- [ ] Kan jeg bruge Henderson-Hasselbalch til en buffer før og efter tilsætning af syre?
-- [ ] Hvad er pH ved halv-ækvivalens, og hvorfor er ækvivalens-pH over 7 for en svag syre?
+Numrene refererer til de to gamle eksamenssæt på Learn (efterår 2024 og forår 2025, se Uge 13). Efterår 2024 er læst ved OCR af en scannet PDF, og numrene følger rækkefølgen i filen.
+
+- Efterår 2024: spm. 17 (pH efter blanding af fosforsyre og NaOH).
+- Forår 2025: spm. 16 (pH i eddikesyre), spm. 17 (pH i en buffer efter tilsætning af NaOH), spm. 23 (påstande om en svag syre).
 
 ## Links
 

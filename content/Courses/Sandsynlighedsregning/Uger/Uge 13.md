@@ -27,6 +27,27 @@ tags:
 **Formelark til repetition.** Binomial: $E = np$, $\mathrm{Var} = np(1-p)$. Poisson($\mu$): $E = \mathrm{Var} = \mu$. Geometrisk (antal forsøg): $E = 1/p$. Eksponential (rate $\lambda$): $E = 1/\lambda$, $P(T > t) = e^{-\lambda t}$. Gamma($r, \lambda$): $E = r/\lambda$, $\mathrm{Var} = r/\lambda^2$. Ligefordeling på $(a,b)$: $E = (a+b)/2$, $\mathrm{Var} = (b-a)^2/12$. Normal: standardiser med $(X - \mu)/\sigma$. Generelt: $\mathrm{Var}(X) = E(X^2) - (EX)^2$, $E(E(Y \mid X)) = E(Y)$, $\mathrm{Var}(X + Y) = \mathrm{Var} X + \mathrm{Var} Y + 2\,\mathrm{Cov}(X,Y)$.
 
 **Sammenhæng mellem ugerne.** Kapitel 1 til 3 er grundlaget (hændelser, betinget sandsynlighed, diskrete variable, middelværdi, varians). Kapitel 4 til 6 bygger på dem og på analyse (tætheder, variabelskift, simultane og betingede fordelinger, normalfordelingen). Velkomstteksten forklarer, at mange oplever et knæk i indlæringen i anden halvdel af kurset, netop fordi kapitel 4 til 6 trækker på kapitel 1 til 3.
+### Repetitionsmodel: Det store sandsynligheds-slægtskabstræ
+
+Oversigt over hvordan de centrale sandsynlighedsfordelinger forbinder sig til eksamen:
+
+```text
+                   Bernoulli(p)  (1 forsøg: succes/fiasko)
+                        │
+      Summer n uafh.    │
+             ┌──────────┴──────────┐
+             v                     v
+       Binomial(n, p)        Geometrisk(p)  (Antal forsøg til 1. succes)
+             │                     │
+   n -> inf, │           Diskret   │
+   np = λ    v           analog    v
+       Poisson(λ)          Eksponential(λ)  (Kontinuerlig ventetid)
+             │                     │
+   Summer uafh.          Summer n  │
+             v           uafh.     v
+       Normal(μ, σ²) <─────── Gamma(n, λ)
+       (Central Grænseværdisætning)
+```
 
 ## Opgaver
 
@@ -37,14 +58,6 @@ Kursussiden lister til øvelsen fredag 4. december (repetition af uge 12): se [[
 Gamle eksamensspørgsmål fra 16/12/2004: spørgsmål 13 (ugebrev 12).
 
 Kursussiden nævner også en spørgetime fra 14/12/2020 og en række gamle eksamenssæt med løsninger.
-
-## Tjek dig selv
-
-- [ ] Kan jeg regne eksamenssættet fra 16/12/2003 igennem uden hjælp og tjekke mod løsningen?
-- [ ] Kan jeg for hver fordeling i kurset skrive middelværdi, varians og en typisk anvendelse?
-- [ ] Kan jeg vælge mellem binomial, hypergeometrisk, Poisson og geometrisk i en tekstopgave?
-- [ ] Kan jeg gå mellem tæthed, fordelingsfunktion, overlevelsesfunktion og hazard rate?
-- [ ] Ved jeg, hvilke emner jeg stadig er usikker på, og hvilke uger de hører til?
 
 ## Links
 

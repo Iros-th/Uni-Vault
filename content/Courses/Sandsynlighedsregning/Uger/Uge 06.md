@@ -34,6 +34,22 @@ tags:
 **Middelværdi fra overlevelsesfunktionen.** $E(T) = \int_0^\infty P(T > t)\,dt$ (side 299). Eksempel: eksponential giver $\int_0^\infty e^{-\lambda t}dt = 1/\lambda$.
 
 **Variabelskift.** Lineært: $Y = aX + b$ har tæthed $f_Y(y) = \frac{1}{|a|}f_X\!\left(\frac{y-b}{a}\right)$ (nederst side 302). Generelt, når $h$ er monoton og differentiabel: $f_Y(y) = f_X(x)\,/\,|h'(x)|$ med $x = h^{-1}(y)$ (side 304). Variant for mange-til-en øverst side 307. Eksempel: $X$ ligefordelt på $(0,1)$ og $Y = -\ln(X)/\lambda$. Så er $P(Y > y) = P(X < e^{-\lambda y}) = e^{-\lambda y}$, altså er $Y$ eksponentialfordelt med rate $\lambda$.
+### Pålidelighedsmodel: Hazard rate og badekarkurven
+
+Risikoraten (hazard rate) $h(t) = rac{f(t)}{1 - F(t)}$ angiver den momentane fejlrate givet overlevelse indtil tid $t$:
+
+```text
+  h(t) ^
+       │  "Børnesygdomme"               Slitage / Aldring
+       │   (faldende)     Konstant rate     (stigende)
+       │  \              ─────────────            /
+       │   \                                    /
+       │    \__________________________________/
+       └─────────────────────────────────────────────> Tid t
+       Indkøringsfase    Nyttig levetid       Udtjent
+                         h(t) = konstant
+                         => Eksponentialfordeling
+```
 
 ## Opgaver
 
@@ -44,14 +60,6 @@ Pitman, Probability (kapitel.afsnit.opgave). Regnes ved øvelsen fredag 23. okto
 Opgaver til selvstudium: 4.1.5, 4.2.5, 4.3.3, 4.4.3.
 
 Gamle eksamensspørgsmål fra 16/12/2004: spørgsmål 14, 17 og 22.
-
-## Tjek dig selv
-
-- [ ] Kan jeg forklare mangel på hukommelse og vise den med formler?
-- [ ] Kan jeg gå fra Poissonproces til eksponential- og gammafordeling?
-- [ ] Kan jeg udregne hazard rate ud fra tæthed og overlevelsesfunktion?
-- [ ] Kan jeg beregne $E(T)$ fra overlevelsesfunktionen?
-- [ ] Kan jeg finde tætheden af $Y = h(X)$ ved variabelskift?
 
 ## Links
 

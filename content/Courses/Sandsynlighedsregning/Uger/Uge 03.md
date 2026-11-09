@@ -33,6 +33,19 @@ tags:
 **Middelværdi af en funktion.** $E\,g(X) = \sum_x g(x)P(X = x)$ (boks øverst side 175). Eksempel: $E(X^2) = (1 + 4 + 9 + 16 + 25 + 36)/6 = 91/6$. Bemærk $E(X^2) \ne (E X)^2$.
 
 **Linearitet.** $E(aX + bY) = aE(X) + bE(Y)$, uden krav om uafhængighed (regneregler side 167 og 177). Eksempel: summen af to terninger har middelværdi $3{,}5 + 3{,}5 = 7$.
+### Fysisk model: Tyngdepunktsfortolkning af middelværdi $E[X]$
+
+Middelværdien $E[X] = \sum x_i P(X = x_i)$ svarer fysisk til det præcise balancepunkt (tyngdepunkt) på en vippe belastet med masserne $P(X = x_i)$:
+
+```text
+             Masser (sandsynligheder):
+             0,1      0,4            0,3        0,2
+              o        o              o          o
+          ────┴────────┴──────────────┴──────────┴──── (Vippe)
+                                ▲
+                               E[X] (Balancepunkt)
+```
+Hvis vippen understøttes præcis ved $E[X]$, er det samlede drejningsmoment nul: $\sum (x_i - E[X]) P(X = x_i) = 0$.
 
 ## Opgaver
 
@@ -41,14 +54,6 @@ Pitman, Probability (kapitel.afsnit.opgave). Regnes ved øvelsen fredag 25. sept
 Øvelsesopgaver: 3.1.1, 3.2.1, 2.2.9, 3.2.2, 3.1.4, 2.5.4, 3.2.8, 3.1.12. (Ugebrev og kursusside har samme liste.)
 
 Opgaver til selvstudium: 2.1.4, 2.5.5, 3.1.5, 3.2.3.
-
-## Tjek dig selv
-
-- [ ] Kan jeg forklare, hvad en stokastisk variabel er som afbildning, med et eksempel?
-- [ ] Kan jeg finde marginale fordelinger ud fra en simultan tabel?
-- [ ] Kan jeg tjekke uafhængighed ud fra en tabel?
-- [ ] Kan jeg regne $E(X)$ og $E(X^2)$ for en given fordeling?
-- [ ] Kan jeg bruge linearitet af middelværdi uden at antage uafhængighed?
 
 ## Links
 

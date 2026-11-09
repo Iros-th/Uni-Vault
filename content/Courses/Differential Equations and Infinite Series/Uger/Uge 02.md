@@ -11,7 +11,7 @@ tags:
 
 # Uge 2: Systemer af differentialligninger
 
-> **Kilde:** Ugeseddel 2 og semesteroversigten på ugeseddel 1 (DTU Learn, 01025 E26), lærebogen 4. udg. afsnit 2.1 til 2.5. Ugesedlen henviser til "appendiks A.5", semesteroversigten til "A.4"; i den 4. udgave jeg har tjekket mod hedder afsnittet om systemer A.4. SlidesUge2.pdf og WeekleyNotes1.pdf er ikke gennemgået her.
+> **Kilde:** Ugeseddel 2 og semesteroversigten på ugeseddel 1, SlidesUge2.pdf, WeeklyNotes2.pdf (løsning til opgave 914 og 920) og facitliste_studerende.pdf (DTU Learn, 01025 E26), lærebogen afsnit 2.1 til 2.5. Ugesedlen henviser til "appendiks A.5", semesteroversigten til "A.4"; i den ældre PDF jeg har tjekket mod hedder afsnittet om systemer A.4. Sætningsnumre følger slides (kursets 4. udgave), se [[Courses/Differential Equations and Infinite Series/Uger/Oversigt|oversigten]].
 
 ## Læseplan
 
@@ -33,15 +33,19 @@ hvor $A$ er en konstant $n \times n$ matrix. Uden $\mathbf b u$ er systemet homo
 
 **Eksempel.** $y'' + 3y' + 2y = 0$ bliver med $x_1 = y$, $x_2 = y'$ til $\dot x_1 = x_2$, $\dot x_2 = -2x_1 - 3x_2$, altså $A = \begin{pmatrix} 0 & 1 \\ -2 & -3 \end{pmatrix}$.
 
-### Egenværdimetoden, reelle egenværdier (sætning 2.3)
-Hvis $A\mathbf v = \lambda\mathbf v$ med $\mathbf v \neq \mathbf 0$, så er $\mathbf x(t) = e^{\lambda t}\mathbf v$ en løsning.
+### Egenværdimetoden (sætning 2.4)
+Hvis $A\mathbf v = \lambda\mathbf v$ med $\mathbf v \neq \mathbf 0$, så er $\mathbf x(t) = e^{\lambda t}\mathbf v$ en løsning. Løsninger hørende til lineært uafhængige egenvektorer er lineært uafhængige. Slides beviser det med "dagens lemma 2.A": er $\mathbf v_1, \dots, \mathbf v_k$ lineært uafhængige vektorer og $\mu_1, \dots, \mu_k \in \mathbb C$ vilkårlige, så er funktionerne $e^{\mu_1t}\mathbf v_1, \dots, e^{\mu_kt}\mathbf v_k$ lineært uafhængige (sæt $t = 0$ i en linearkombination lig nul).
 
 **Eksempel.** $A = \begin{pmatrix} 1 & 2 \\ 2 & 1 \end{pmatrix}$ har egenværdien $3$ med $\mathbf v = (1,1)^\top$ og $-1$ med $\mathbf v = (1,-1)^\top$ (tjek: $A(1,1)^\top = (3,3)^\top$ og $A(1,-1)^\top = (-1,1)^\top$). Fuldstændig løsning:
 
 $$\mathbf x(t) = c_1 e^{3t}\begin{pmatrix}1\\1\end{pmatrix} + c_2 e^{-t}\begin{pmatrix}1\\-1\end{pmatrix}.$$
 
-### Komplekse egenværdier (lemma 2.4, sætning 2.6)
-Er $\lambda = a + i\omega$ en egenværdi med egenvektor $\mathbf v$, så er $\operatorname{Re}(e^{\lambda t}\mathbf v)$ og $\operatorname{Im}(e^{\lambda t}\mathbf v)$ to reelle, lineært uafhængige løsninger. Den konjugerede egenværdi giver ikke nye reelle løsninger.
+### Komplekse egenværdier (sætning 2.7)
+Er $\lambda = a + i\omega$ en egenværdi med egenvektor $\mathbf v$, så er $\operatorname{Re}(e^{\lambda t}\mathbf v)$ og $\operatorname{Im}(e^{\lambda t}\mathbf v)$ to reelle, lineært uafhængige løsninger. Den konjugerede egenværdi giver ikke nye reelle løsninger. Slides skriver dem ud: med $\lambda = a + i\omega$ er
+
+$$\operatorname{Re}(e^{\lambda t}\mathbf v) = e^{at}\bigl(\cos\omega t\,\operatorname{Re}\mathbf v - \sin\omega t\,\operatorname{Im}\mathbf v\bigr), \qquad \operatorname{Im}(e^{\lambda t}\mathbf v) = e^{at}\bigl(\sin\omega t\,\operatorname{Re}\mathbf v + \cos\omega t\,\operatorname{Im}\mathbf v\bigr).$$
+
+Observation fra slides (ikke eksplicit i bogen): er $A$ reel og $\mathbf x$ en kompleks løsning, så er $\overline{\mathbf x}$ også en løsning, fordi $\overline{A\mathbf x} = A\overline{\mathbf x}$.
 
 **Eksempel.** $A = \begin{pmatrix} 0 & 1 \\ -1 & 0\end{pmatrix}$ har $\lambda = \pm i$. For $\lambda = i$ giver $(A - iI)\mathbf v = \mathbf 0$ egenvektoren $\mathbf v = (1, i)^\top$. Så
 
@@ -49,33 +53,68 @@ $$e^{it}\begin{pmatrix}1\\ i\end{pmatrix} = \begin{pmatrix}\cos t + i\sin t\\ -\
 
 og de reelle løsninger er $(\cos t, -\sin t)^\top$ og $(\sin t, \cos t)^\top$. Tjek den første: $\dot x_1 = -\sin t = x_2$ og $\dot x_2 = -\cos t = -x_1$.
 
-### Algebraisk og geometrisk multiplicitet (sætning 2.10 og 2.11)
-Hvis en egenværdi har algebraisk multiplicitet $p$ men færre end $p$ lineært uafhængige egenvektorer, giver egenværdimetoden ikke nok løsninger. Så søges løsninger af typen $e^{\lambda t}(\mathbf u + t\mathbf v)$, hvor $\mathbf v$ er en egenvektor og $(A - \lambda I)\mathbf u = \mathbf v$.
+### Algebraisk og geometrisk multiplicitet (sætning 2.11)
+Den algebraiske multiplicitet $p$ er antal gange $\lambda$ er rod i det karakteristiske polynomium, den geometriske $q$ er antal lineært uafhængige egenvektorer, og $1 \leq q \leq p$. Slides (sætning 2.11a): er $q < p$, findes vektorer $\mathbf b_{jk}$ så $\mathbf x_j(t) = \mathbf b_{j1}e^{\lambda t} + \mathbf b_{j2}te^{\lambda t} + \dots + \mathbf b_{jj}t^{j-1}e^{\lambda t}$, $j = 1, \dots, p$, er lineært uafhængige løsninger. Hvis en egenværdi har algebraisk multiplicitet $p$ men færre end $p$ lineært uafhængige egenvektorer, giver egenværdimetoden ikke nok løsninger. Så søges løsninger af typen $e^{\lambda t}(\mathbf u + t\mathbf v)$, hvor $\mathbf v$ er en egenvektor og $(A - \lambda I)\mathbf u = \mathbf v$.
 
 **Eksempel.** $A = \begin{pmatrix} 1 & 1 \\ 0 & 1\end{pmatrix}$: $\lambda = 1$ er dobbeltrod, men kun $\mathbf v = (1,0)^\top$ er egenvektor. Løs $(A - I)\mathbf u = \mathbf v$, dvs. $\begin{pmatrix} 0 & 1\\0&0\end{pmatrix}\mathbf u = (1,0)^\top$, fx $\mathbf u = (0,1)^\top$. Anden løsning: $e^{t}(t, 1)^\top$. Tjek: $x_1 = te^t$ giver $\dot x_1 = e^t + te^t = x_1 + x_2$, og $\dot x_2 = e^t = x_2$.
 
-### Fundamentalmatrix (afsnit 2.3, sætning 2.15 og 2.16)
-En fundamentalmatrix $\Phi(t)$ har $n$ lineært uafhængige løsninger som søjler. Så er den fuldstændige løsning til $\dot{\mathbf x} = A\mathbf x$ lig $\mathbf x(t) = \Phi(t)\mathbf c$, og $\Phi(t)$ er invertibel for alle $t$.
+**Eksempel fra slides (indsæt et gæt af formen polynomium gange $e^{\lambda t}$).** $A = \begin{pmatrix}1&0&0\\0&2&-1\\0&1&0\end{pmatrix}$ har $\det(\lambda I - A) = (\lambda - 1)^3$. Her er $A - I = \begin{pmatrix}0&0&0\\0&1&-1\\0&1&-1\end{pmatrix}$ af rang 1, så $q = 2$ med egenvektorer $(1,0,0)^\top$ og $(0,1,1)^\top$. Den tredje løsning: løs $(A - I)\mathbf u = (0,1,1)^\top$, fx $\mathbf u = (0,1,0)^\top$, og få $\mathbf x(t) = e^{t}(0,\,1 + t,\,t)^\top$. Tjek: $\dot x_2 = (2+t)e^t = 2x_2 - x_3$ og $\dot x_3 = (1+t)e^t = x_2$.
+
+### Fundamentalmatrix (afsnit 2.3, sætning 2.16 og 2.17)
+En fundamentalmatrix $\Phi(t)$ har $n$ lineært uafhængige løsninger som søjler. Sætning 2.16: $\Phi(t)$ er regulær (invertibel) for alle $t$. Sætning 2.17: $\dot\Phi = A\Phi$, den fuldstændige løsning er $\mathbf x(t) = \Phi(t)\mathbf c$, og løsningen med $\mathbf x(t_0) = \mathbf x_0$ er $\mathbf x(t) = \Phi(t)[\Phi(t_0)]^{-1}\mathbf x_0$.
 
 **Eksempel.** Fra det første eksempel: $\Phi(t) = \begin{pmatrix} e^{3t} & e^{-t}\\ e^{3t} & -e^{-t}\end{pmatrix}$.
 
-### Eksistens og entydighed (sætning 2.17)
+### Eksistens og entydighed (afsnit 2.3)
 For ethvert $t_0$ og enhver startvektor findes præcis én løsning med $\mathbf x(t_0)$ lig den givne vektor. Med fundamentalmatricen: $\mathbf c = \Phi(t_0)^{-1}\mathbf x(t_0)$.
 
-### Inhomogene systemer (afsnit 2.4, sætning 2.19)
+### Inhomogene systemer (afsnit 2.4, sætning 2.20)
 Den generelle løsningsformel er
 
 $$\mathbf x(t) = \Phi(t)\int \Phi(t)^{-1}\mathbf b\,u(t)\,dt,$$
 
-hvor integrationskonstanten giver den homogene del. Ofte er gættemetoden hurtigere: er påvirkningen konstant, prøv en konstant vektor.
+hvor integrationskonstanten giver den homogene del. Slides skriver den med startbetingelse: løsningen gennem $\mathbf x(t_0) = \mathbf x_0$ er
+
+$$\mathbf x(t) = \Phi(t)[\Phi(t_0)]^{-1}\mathbf x_0 + \Phi(t)\int_{t_0}^{t}[\Phi(\tau)]^{-1}\mathbf u(\tau)\,d\tau.$$
+
+Slides kalder integrationen for "små mirakler"; struktursætningen og superpositionsprincippet gælder som for $n$'te ordens ligninger. Ofte er gættemetoden hurtigere: er påvirkningen konstant, prøv en konstant vektor.
 
 **Eksempel.** $\dot{\mathbf x} = \begin{pmatrix}1&2\\2&1\end{pmatrix}\mathbf x + \begin{pmatrix}3\\0\end{pmatrix}$. Gæt $\mathbf x = \mathbf c$ konstant: $\mathbf 0 = A\mathbf c + (3,0)^\top$, så $\mathbf c = -A^{-1}(3,0)^\top$. Med $A^{-1} = -\frac13\begin{pmatrix}1&-2\\-2&1\end{pmatrix}$ fås $\mathbf c = (1,-2)^\top$. Tjek: $A\mathbf c = (-3, 0)^\top$. Gættet virker kun fordi $\det A \neq 0$ (sammenlign opgave 431 (ii), hvor det går galt).
 
 ### Variable koefficienter (afsnit 2.5)
 Hvis $A = A(t)$ afhænger af $t$, gælder strukturen (fundamentalmatrix, løsningsformel) stadig, men egenværdimetoden virker ikke. Læses selv.
 
-### Lemma A.15
+### Lemma A.16
 Hvis $\mathbf u + i\mathbf v$ og $\mathbf u - i\mathbf v$ er lineært uafhængige i et komplekst vektorrum, så er $\mathbf u$ og $\mathbf v$ også. Det er argumentet bag at real- og imaginærdel giver to uafhængige reelle løsninger. Beviset er hjemmeopgave 912.
+
+### Fysisk model: Koblede blandingstanke (stoftransport)
+
+Et standardeksempel på et 1. ordens differentialligningssystem er to koblede kemiske tanke med saltvand:
+
+```
+     Indløb c_1, F_1              Indløb c_2, F_2
+           |                            |
+           v                            v
+      +----------+   Flow F_12     +----------+
+      |  Tank 1  | --------------> |  Tank 2  |
+      | V_1, x_1 | <-------------- | V_2, x_2 |
+      +----------+   Flow F_21     +----------+
+           |                            |
+           v                            v
+      Udløb F_ud1                  Udløb F_ud2
+```
+
+Lad $x_1(t)$ og $x_2(t)$ være massen af opløst salt i de to tanke. Massebevarelse (ændring = indløb - udløb) giver for konstante væskevolumener $V_1$ og $V_2$:
+
+$$\dot x_1 = -\frac{F_{12} + F_{\text{ud}1}}{V_1}x_1 + \frac{F_{21}}{V_2}x_2 + F_1 c_1,$$
+
+$$\dot x_2 = \frac{F_{12}}{V_1}x_1 - \frac{F_{21} + F_{\text{ud}2}}{V_2}x_2 + F_2 c_2.$$
+
+På vektor-matrix form samles dette som tilstandsrum-modellen:
+
+$$\dot{\mathbf x}(t) = A \mathbf x(t) + \mathbf b u(t), \quad \text{hvor } A = \begin{pmatrix} -k_1 & k_{21} \\ k_{12} & -k_2 \end{pmatrix}.$$
+
+Matricen $A$ har negative diagonalelementer (udstrømning dæmper) og positive off-diagonaler (kobling tilfører stof). Egenværdierne for $A$ er altid strengt negative, hvilket garanterer, at saltkoncentrationerne konvergerer mod en stabil stationær ligevægt.
 
 ## Opgaver
 
@@ -83,23 +122,16 @@ Hvis $\mathbf u + i\mathbf v$ og $\mathbf u - i\mathbf v$ er lineært uafhængig
 |---|---|---|
 | 409 | 2.2 til 2.4 | Fundamentalmatrix for $\begin{pmatrix}5&3\\9&-1\end{pmatrix}$ og fuldstændig løsning med påvirkningen $e^{4t}(3,-5)^\top$. |
 | 411 (i), (ii) | 2.2 | Fuldstændig kompleks og reel løsning til et $3 \times 3$ system. Ugesedlen: et andet valg af egenvektorer får løsningerne til at se forskellige ud, men spannet er det samme. |
-| 414 | 2.2 (sætning 2.10) | $\begin{pmatrix}2&9\\-1&-4\end{pmatrix}$: dobbelt egenværdi, find en løsning af formen $\mathbf u e^{-t} + \mathbf v te^{-t}$. |
-| 914 | 2.2 (sætning 2.6 (b)) | Bevis for at real- og imaginærdel af $e^{\lambda t}\mathbf v$ er uafhængige løsninger. Vink: kompleks konjugér $A\mathbf v = \lambda\mathbf v$. |
+| 414 | 2.2 (sætning 2.11) | $\begin{pmatrix}2&9\\-1&-4\end{pmatrix}$: dobbelt egenværdi, find en løsning af formen $\mathbf u e^{-t} + \mathbf v te^{-t}$. |
+| 914 | 2.2 (sætning 2.7 (b)) | Bevis for at real- og imaginærdel af $e^{\lambda t}\mathbf v$ er uafhængige løsninger. Vink: kompleks konjugér $A\mathbf v = \lambda\mathbf v$. |
 | 431 | 2.3, 2.4 | Inhomogent system hvor gættet med en konstant vektor ikke virker; brug den generelle løsningsformel. |
 
 **Hjemmeopgavesæt 2:** Möbius-opgave senest 15/9 kl. 20, og opgave 903 og 912 afleveres fysisk 16/9 kl. 8.
 
 - 903 (afsnit 1.2, bilag F.7): bevis for sætning 1.14 for andenordens ligninger ved direkte udregning; sætning 1.14 må derfor ikke bruges.
-- 912 (appendiks om systemer): bevis lemma A.15. Ugesedlen understreger at man skal starte med en vilkårlig linearkombination sat lig nul.
+- 912 (appendiks om systemer): bevis lemma A.16 (slides' nummer; A.15 i den ældre PDF). Ugesedlen understreger at man skal starte med en vilkårlig linearkombination sat lig nul.
 
-## Tjek dig selv
-
-- [ ] Kan jeg omskrive en $n$'te ordens ligning til et system af 1. orden?
-- [ ] Kan jeg bruge egenværdimetoden med både reelle og komplekse egenværdier?
-- [ ] Ved jeg hvad jeg gør når den geometriske multiplicitet er mindre end den algebraiske?
-- [ ] Hvad er en fundamentalmatrix, og hvordan finder jeg løsningen med en given startværdi?
-- [ ] Kan jeg bruge den generelle løsningsformel, og ved jeg hvornår gættemetoden med en konstant vektor fejler?
-- [ ] Kan jeg forklare hvorfor den konjugerede egenværdi ikke giver nye reelle løsninger?
+**Løsningsnoter:** WeeklyNotes2.pdf (under uge 3 på DTU Learn) løser opgave 914 (i) til (v): konjugér karakterligningen og $A\mathbf v = \lambda\mathbf v$ for at se at $\bar\lambda$ er rod med egenvektor $\overline{\mathbf v}$, regn real- og imaginærdel af $e^{\lambda t}\mathbf v$ ud, og brug lemmaet fra opgave 912 til uafhængigheden. Den indeholder også opgave 920 (i) (ikke på ugesedlen): et bevis ved indsættelse for at den generelle løsningsformel giver en løsning. Facit til 409, 411, 414 og 431 står i facitliste_studerende.pdf.
 
 ## Links
 

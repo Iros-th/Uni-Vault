@@ -35,6 +35,32 @@ tags:
 **Negation af kvantorer.** $\neg \forall x\, P(x) \equiv \exists x\, \neg P(x)$ og $\neg \exists x\, P(x) \equiv \forall x\, \neg P(x)$. For at modbevise et "for alle" er et enkelt modeksempel nok.
 
 **Indlejrede kvantorer.** Rækkefølgen betyder noget. Over $\mathbb{Z}$ er $\forall x\, \exists y\, (x + y = 0)$ sand (vælg $y = -x$), men $\exists y\, \forall x\, (x + y = 0)$ er falsk, fordi ét $y$ ikke kan virke for alle $x$.
+### Digital logik-model: Logiske porte og Half-Adder kredsløb
+
+Logiske konnektiver er ikke bare abstrakte symboler; de er den fysiske byggeblok i enhver CPU. En 1-bit adder (Half-Adder) beregner summen af to bits $p$ og $q$:
+
+```text
+  p ───┬──────────────┐
+       │              XOR ─── Sum (S = p ⊕ q)
+  q ───┼──────┬───────┘
+       │      │
+       │      └───────┐
+       │              AND ─── Mente / Carry (C = p ∧ q)
+       └──────────────┘
+
+  Sandhedstabel:
+  p | q | Sum (p ⊕ q) | Carry (p ∧ q) | Binær værdi (C S)
+  ──┼───┼─────────────┼───────────────┼──────────────────
+  0 | 0 |      0      |       0       |        00_2 = 0
+  0 | 1 |      1      |       0       |        01_2 = 1
+  1 | 0 |      1      |       0       |        01_2 = 1
+  1 | 1 |      0      |       1       |        10_2 = 2
+```
+
+De Morgans love $
+eg(p \land q) \equiv 
+eg p \lor 
+eg q$ betyder i hardware, at en NAND-port (en universel port) direkte kan erstatte en OR-port med inverterede indgange.
 
 ## Opgaver
 
@@ -44,15 +70,6 @@ Fra kursussiden, Rosen, "Discrete Mathematics and Its Applications" (2025-udgave
 - Afsnit 1.4: **1**, 31, **35**, 37, 41, **55**
 
 Kurset oplyser, at de fleste opgaver er ulige numre, hvis løsninger står bag i bogen.
-
-## Tjek dig selv
-
-- [ ] Kan jeg opstille sandhedstabellen for $p \to q$ og forklare, hvorfor den er sand, når $p$ er falsk?
-- [ ] Kan jeg vise $p \to q \equiv \neg p \lor q$ med en sandhedstabel?
-- [ ] Kan jeg bruge De Morgan til at negere et sammensat udsagn uden at miste en konnektiv?
-- [ ] Kan jeg skelne omvendt fra kontraponeret implikation?
-- [ ] Kan jeg negere $\forall x\, \exists y\, P(x,y)$ og skrive resultatet uden $\neg$ foran kvantorerne?
-- [ ] Kan jeg give et eksempel, hvor $\forall x\, \exists y$ er sand, men $\exists y\, \forall x$ er falsk?
 
 ## Links
 

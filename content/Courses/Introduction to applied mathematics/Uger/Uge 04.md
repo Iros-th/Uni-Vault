@@ -58,21 +58,24 @@ $$u_{c_1} + 1 \le u_{c_2} + |C|\,(1 - x_{c_1 c_2}) \quad \forall\, c_1 \ne c_2,\
 Slidet skriver objektfunktionen som max. Modellen virker kun op til cirka $30$ byer, så heuristikker er stadig nødvendige.
 
 **Videre.** DORS (dansk OR-forening) og DTU-kurser som 42101 Introduktion til operationsanalyse (BSc) og 42112, 42114, 42115 (MSc).
+### Algoritmisk model: Simplex-metodens kantvandring
+
+Simplex-algoritmen finder optimum ved at vandre fra hjørne til nabohjørne langs polyederets kanter, så objektværdien hele tiden forbedres:
+
+```text
+         (Hjørne 1: z=0) ──kant──> (Hjørne 2: z=15)
+                                          │
+                                         kant
+                                          v
+      (Optimalt Hjørne: z=42) <──kant── (Hjørne 3: z=30)
+```
+I Simplex-tableauet svarer hvert skridt til en pivotering: en ikke-basisvariabel træder ind i basen, og en basisvariabel forlader den.
 
 ## Opgaver
 
 - Projektet `OR_Projekt.pdf` fortsætter: spørgsmål 1 til 18 (se listen i [[Courses/Introduction to applied mathematics/Uger/Uge 03|Uge 3]]). Rapportdeadline 27/9.
 - `Tshirt.py` er et løst eksempel (T-shirt-modellen) at tage udgangspunkt i, når projektet skal kodes i PuLP.
 - Slides har ikke nummererede øvelser udover diskussionsspørgsmålene "Opt(KNAPSACK-LP) $\ge$ Opt(KNAPSACK-MIP): hvorfor?" og "Er denne TSP-løsning optimal?".
-
-## Tjek dig selv
-
-- [ ] Kan jeg skrive en tekstopgave om til en model (variable, mål, betingelser)?
-- [ ] Hvordan oversætter jeg "kun hvis", "ikke begge" og "begge eller ingen" til uligheder med binære variable?
-- [ ] Hvorfor er $\text{Opt(LP)} \ge \text{Opt(MIP)}$ for maksimering?
-- [ ] Hvad er forskellen på en eksakt metode og en heuristik, og hvornår er en heuristik fornuftig?
-- [ ] Hvorfor tillader den simple TSP-model delture, og hvad gør $u_c$-variablene?
-- [ ] Hvordan indfører jeg en fast omkostning med en binær variabel (projektets spørgsmål 18)?
 
 ## Links
 

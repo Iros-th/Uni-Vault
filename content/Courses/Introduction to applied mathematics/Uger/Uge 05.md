@@ -48,6 +48,22 @@ Eksempel 5: $x' + x = 1$ giver $x(t) = 1 + ke^{-t}$.
 - $\lambda_1 = \alpha + i\beta$, $\beta > 0$ (komplekst konjugerede): $x(t) = (k_1\cos(\beta t) + k_2\sin(\beta t))e^{\alpha t}$
 
 **Dæmpning (Opgave 10).** For $c > 0$ kaldes ligningen overdæmpet hvis $b > 2\sqrt{c}$, kritisk dæmpet hvis $b = 2\sqrt{c}$ og underdæmpet hvis $0 < b < 2\sqrt{c}$.
+### Fysisk systemmodel: Dynamisk bilmodel for adaptiv fartpilot
+
+Bilens acceleration bestemmes af kraftbalancen mellem motorens trækkraft og de samlede modstandskræfter:
+
+```text
+  Luftmodstand: F_luft = 1/2 · ρ · C_d · A · v²
+  Rullemodstand: F_rul = C_r · m · g
+  Motortrækkraft: F_motor (styres af fartpiloten)
+
+      ┌─────────────────────────┐
+  <── │  F_luft + F_rul + F_bak │ ─── Bil (masse m, hastighed v) ───> F_motor
+      └─────────────────────────┘
+```
+Differentialligningen for systemet:
+$$m \frac{dv}{dt} = F_{\text{motor}} - \frac{1}{2}\rho C_d A v^2 - C_r m g.$$
+Modellen er ulineær på grund af $v^2$-leddet, så omkring en marchhastighed $v_0$ lineariseres den med Taylor-approksimation: $v^2 \approx v_0^2 + 2v_0(v - v_0)$.
 
 ## Opgaver
 
@@ -63,16 +79,6 @@ Opgaverne i `fart.pdf`, nummereret som i noten (der er ingen bogreferencer, kun 
 - **Opgave 8:** Indtegn i et $(b, c)$-koordinatsystem de punkter, hvor $z^2 + bz + c$ har dobbeltrødder. I hvilket område er rødderne reelle, og i hvilket er de to komplekst konjugerede?
 - **Opgave 9:** Brug at $te^{\alpha t} \to 0$ for $t \to \infty$ hvis og kun hvis $\alpha < 0$. Vis at enhver løsning til $x'' + bx' + cx = 0$ går mod $0$ hvis og kun hvis $\operatorname{Re}\lambda_j < 0$ for $j = 1, 2$.
 - **Opgave 10:** Vælg $c > 0$ (fx $c = 4$). Med et CAS-værktøj, tegn løsningen med $x(0) = 1$, $x'(0) = 0$ for (a) $b > 2\sqrt{c}$, (b) $b = 2\sqrt{c}$, (c) $0 < b < 2\sqrt{c}$. (d) Sammenlign over $0 \le t \le T$: hvilken går hurtigst mod $0$?
-
-## Tjek dig selv
-
-- [ ] Kan jeg forklare forskellen på eksplicit og implicit angivet funktion?
-- [ ] Kan jeg udlede løsningsformlen for $x' + p(t)x = q(t)$ ved at gange med $e^{P(t)}$?
-- [ ] Kan jeg løse $x' + x = 1$ og $x' + x/t = 1$?
-- [ ] Hvad er det karakteristiske polynomium, og hvad afgør de tre løsningstilfælde?
-- [ ] Hvornår går alle løsninger mod $0$? (Realdelen af begge rødder er negativ.)
-- [ ] Kan jeg beskrive forskellen på over-, kritisk og underdæmpet?
-- [ ] Kan jeg skifte mellem komplekse og reelle løsninger via realdelen?
 
 ## Links
 

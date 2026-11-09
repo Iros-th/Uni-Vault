@@ -40,6 +40,24 @@ tags:
 **Hamiltonkreds.** En kreds, der besøger hver knude præcis én gang. Der er ingen simpel nødvendig og tilstrækkelig betingelse. Eksempel: $K_n$ med $n \ge 3$ har en.
 
 **Cantor-Schröder-Bernstein.** Hvis der er en injektion $A \to B$ og en injektion $B \to A$, så er der en bijektion mellem $A$ og $B$, altså $|A| = |B|$. Beviset, som kurset nævner, er grafteoretisk. Det er ikke læst her.
+### Grafmodel: Sammenhæng, Euler-veje og håndtrykssætningen
+
+For enhver uorienteret graf $G = (V, E)$ gælder håndtrykssætningen:
+
+$$\sum_{v \in V} \deg(v) = 2 |E|.$$
+
+```text
+       (A) ─────── (B)
+        │  \     /  │        Knudegrader:
+        │   \   /   │        deg(A) = 3, deg(B) = 3
+        │    (C)    │        deg(C) = 4, deg(D) = 2
+        │   /   \   │        Sum af grader = 3 + 3 + 4 + 2 = 12
+       (D) ─────── (E)       Antal kanter |E| = 6  (12 = 2 · 6)
+```
+
+**Euler-sti vs. Euler-kreds (Königsberg-kriteriet):**
+- En sammenhængende graf har en lukket Euler-kreds netop når **alle** knuder har lige grad.
+- Den har en åben Euler-sti netop når **præcis to** knuder har ulige grad (stien starter i den ene og slutter i den anden).
 
 ## Opgaver
 
@@ -50,15 +68,6 @@ Fra kursussiden, Rosen, "Discrete Mathematics and Its Applications" (2025-udgave
 - Afsnit 10.3: 7, **57**
 - Afsnit 10.4: **9**, **11**
 - Afsnit 10.5: 1, **3**, **13**
-
-## Tjek dig selv
-
-- [ ] Kan jeg bruge håndtrykslemmaet til at finde antal kanter ud fra gradsekvensen?
-- [ ] Kan jeg opstille nabomatricen for en lille graf?
-- [ ] Kan jeg argumentere for, at to grafer ikke er isomorfe?
-- [ ] Kan jeg afgøre, om en graf har en Eulerkreds eller Eulersti, bare ved at tælle grader?
-- [ ] Kan jeg forklare forskellen på Euler- og Hamiltonkreds?
-- [ ] Kan jeg formulere Cantor-Schröder-Bernstein-sætningen?
 
 ## Links
 

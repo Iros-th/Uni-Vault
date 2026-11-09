@@ -32,18 +32,39 @@ tags:
 
 **Korrosion og elektrolyse.** Korrosion er en spontan redoxreaktion (fx jern og ilt, se rust-eksemplet i uge 2). Elektrolyse tvinger en ikke-spontan reaktion ved at tilføre elektrisk energi. Batterier (uge 9) er galvaniske celler der kan oplades.
 
+### Model: Galvanisk celle diagram (Daniell-cellen)
+
+En galvanisk celle omdanner kemisk energi fra en spontan redoxreaktion ($\Delta G^\circ < 0$) til elektrisk arbejde:
+
+```
+      Elektronstrøm e-  =====> =====> =====>
+     [ Zn Anode (-) ]                      [ Cu Katode (+) ]
+          |                                       |
+     Oxidation:                              Reduktion:
+     Zn(s) -> Zn^2+ + 2e-                    Cu^2+ + 2e- -> Cu(s)
+          |                                       |
+     [ Opløsning ZnSO_4 ]                  [ Opløsning CuSO_4 ]
+          \__________ Saltbro (K+, NO_3-) ________/
+```
+
+- **Huskeregel:** **AN OX** (Anode = Oxidation) og **RED CAT** (Reduktion = Katode).
+- **Saltbroens rolle:** Opretholder elektrisk neutralitet. Negative anioner ($\text{NO}_3^-$) vandrer mod anoden, mens positive kationer ($\text{K}^+$) vandrer mod katoden.
+- **Cellepotentiale:**
+  $$E^\circ_{\text{celle}} = E^\circ_{\text{katode}} - E^\circ_{\text{anode}} = +0{,}34\text{ V} - (-0{,}76\text{ V}) = +1{,}10\text{ V}.$$
+- **Nernst-ligningen:** Beskriver hvordan spændingen falder, efterhånden som reaktanterne opbruges og $Q = \frac{[\text{Zn}^{2+}]}{[\text{Cu}^{2+}]}$ vokser:
+  $$E = E^\circ - \frac{RT}{nF}\ln Q.$$
+
 ## Opgaver
 
 - Exercises_Week_11 findes ikke i TOC pr. 2026-11-09 (ugen er ikke lagt op).
 - Ingen opgaver nævnt i kursusplanen for ugen.
 
-## Tjek dig selv
+## Gamle eksamensspørgsmål om dette emne
 
-- [ ] Kan jeg koble $\Delta G^\circ$, $K$ og $E^\circ$?
-- [ ] Kan jeg finde oxidationstal og afstemme en redoxreaktion i sur opløsning?
-- [ ] Kan jeg afgøre hvad der er anode og katode og beregne $E^\circ_{celle}$?
-- [ ] Kan jeg bruge Nernst med $Q$ til at finde potentialet ved andre koncentrationer?
-- [ ] Hvad er forskellen på en galvanisk celle og elektrolyse?
+Numrene refererer til de to gamle eksamenssæt på Learn (efterår 2024 og forår 2025, se Uge 13). Efterår 2024 er læst ved OCR af en scannet PDF, og numrene følger rækkefølgen i filen.
+
+- Efterår 2024: spm. 5 (ud fra $\Delta G$ og $\Delta S$ find $\Delta H$), spm. 6 (fortegn af $\Delta H$ og $\Delta S$ og spontanitet), spm. 19 (EMF i koncentrationscelle, Nernst), spm. 20 (afstem redox i sur opløsning, sum af koefficienter).
+- Forår 2025: spm. 5 (oxidationstal for svovl), spm. 10 (galvanisk celle, hvem oxideres), spm. 11 (temperatur hvor reaktionen skifter fra spontan til ikke-spontan), spm. 20 (afstem redox, sum af koefficienter), spm. 22 (kogepunkt ud fra $\Delta H$ og $\Delta S$).
 
 ## Links
 

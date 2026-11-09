@@ -10,7 +10,7 @@ tags:
 
 # 01025 Differentialligninger og uendelige rækker: ugeoversigt (E26)
 
-Ugenoter for 01025, skrevet ud fra ugesedlerne 1 til 13 på DTU Learn og lærebogen. Hver uge har begreberne med et lille regneeksempel, alle opgaverne fra ugesedlen med afsnit, og en "Tjek dig selv"-liste.
+Ugenoter for 01025, skrevet ud fra ugesedlerne 1 til 13 på DTU Learn og lærebogen. Hver uge har begreberne med et lille regneeksempel, fysiske og matematiske systemmodeller, samt alle opgaverne fra ugesedlen med facit og gennemregnede opgaver.
 
 ## Kursusfakta
 

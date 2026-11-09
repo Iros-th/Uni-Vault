@@ -33,6 +33,26 @@ tags:
 **Hasse-diagram.** Tegn kun de "umiddelbare" relationer og udelad løkker og transitive kanter. Mindre elementer tegnes nedenunder. Eksempel: divisorer af 12: $1$ nederst, så $2$ og $3$, så $4$ og $6$, øverst $12$; kanter $1$-$2$, $1$-$3$, $2$-$4$, $2$-$6$, $3$-$6$, $4$-$12$, $6$-$12$.
 
 **Maksimale, minimale, største og mindste element.** Et maksimalt element har intet over sig; et største element er over alle andre. I divisorerne af 12 er 12 det største og 1 det mindste.
+### Ordningsmodel: Hasse-diagrammer for partielle ordninger (Posets)
+
+En partiel ordning er refleksiv, antisymmetrisk og transitiv. I et Hasse-diagram tegnes kun de direkte dækningsrelationer opad:
+
+```text
+  Divisibilitet på mængden {1, 2, 3, 4, 6, 12}:
+  
+                       12
+                     /    \
+                    4      6
+                    │    / │
+                    │   /  │
+                    2  /   3
+                     \/   /
+                      \  /
+                        1
+```
+Element 1 er det mindste element (deler alle), og 12 er det største element. 4 og 6 er usammenlignelige, fordi $4 
+mid 6$ og $6 
+mid 4$.
 
 ## Opgaver
 
@@ -40,14 +60,6 @@ Fra kursussiden, Rosen, "Discrete Mathematics and Its Applications" (2025-udgave
 
 - Afsnit 9.5: 1, 7, **11**, **30**, **35**, **45**
 - Afsnit 9.6: **1**, **3**, 15, **19**, 20, **33**
-
-## Tjek dig selv
-
-- [ ] Kan jeg teste de fire egenskaber på en konkret relation og give modeksempler?
-- [ ] Kan jeg vise, at en relation er en ækvivalensrelation?
-- [ ] Kan jeg angive ækvivalensklasserne og tælle dem?
-- [ ] Kan jeg tegne et Hasse-diagram for delelighed på en lille mængde?
-- [ ] Kan jeg skelne maksimalt element fra største element?
 
 ## Links
 

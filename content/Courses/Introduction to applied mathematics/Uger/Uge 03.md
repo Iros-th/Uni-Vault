@@ -56,6 +56,23 @@ $$\max \sum_i v_i x_i \quad \text{s.t.} \quad \sum_i w_i x_i \le W, \quad x_i \i
 Slides-eksempel med $W = 15$: kop ($w=3$, $v=7$), disketter ($w=4$, $v=10$), papir ($w=12$, $v=4$), T-shirt ($w=2$, $v=4$), bog ($w=6$, $v=8$). `knapsack.py` modellerer det med binære variable.
 
 **Grådig algoritme.** Tag i hver iteration det lokalt bedste valg, her genstande efter værdi/vægt. På eksemplet giver den kop, disketter, T-shirt og bog med værdi $29$. Hvis disketterne vejer $5$ i stedet for $4$, giver grådig valg værdi $21$ (bogen kan ikke være med), mens kop, disketter og bog giver $25$. Pointen er at en grådig algoritme kan være heldig eller uheldig.
+### Optimeringsmodel: Lineær programmering i 2D (Det tilladte polyeder)
+
+Et lineært optimeringsproblem maksimerer en linje $z = c_1 x_1 + c_2 x_2$ over et tilladt område afgrænset af lineære uligheder:
+
+```text
+       x2 ^
+          │         / Rand: a1 x1 + a2 x2 = b
+          │        /
+          │  ┌────/────────┐
+          │  │   /         │
+          │  │  / Tilladt  │  --> Niveaulinje for objektfunktion z
+          │  │ /  område   │      skubbes i retningen (c1, c2)
+          │  │/ (Polyeder) │      indtil det sidste hjørnepunkt rammes!
+          └──┴─────────────┴──────────> x1
+             Hjørne (Extreme point) = Optimal løsning!
+```
+Den fundamentale sætning i lineær programmering garanterer, at hvis der findes en optimal løsning, findes der altid mindst ét hjørnepunkt (ekstremum), der er optimalt.
 
 ## Opgaver
 
@@ -81,16 +98,6 @@ Opgaverne, nummereret som i PDF'en:
 16. Hvor meget er sparet i forhold til rederiets oprindelige tankning?
 17. Kan antallet af begrænsninger og/eller variable reduceres?
 18. Faste ekstraomkostninger $c_i$ ved at tanke i havn $i$ (Mombasa $200000$, Zanzibar $100000$, Victoria $400000$, Salalah $300000$ dollar, betales kun hvis der tankes). Tilføj variable, begrænsninger, domæne og opdatér objektfunktionen.
-
-## Tjek dig selv
-
-- [ ] Kan jeg pege på beslutningsvariable, objektfunktion og betingelser i bryggeri-modellen?
-- [ ] Kan jeg tegne bryggeriets lovlige område og finde hjørnet $(0{,}4;\ 1{,}9)$?
-- [ ] Hvorfor er heltalsoptimum $10$ lavere end LP-optimum $11{,}1$?
-- [ ] Kan jeg opstille assignment-problemet med $x_{ij}$ og forklare de to summer?
-- [ ] Kan jeg vise på rygsækseksemplet at en grådig algoritme ikke altid er optimal?
-- [ ] Kan jeg forklare med ord hvad $h_{is}$, $f_{is}$ og $l_{is}$ er?
-- [ ] Hvad er forskellen på at tanke "det samme i begge tanke" (spørgsmål 14) og den frie model?
 
 ## Links
 
