@@ -33,8 +33,7 @@ tags:
 
 **Middelværdi fra overlevelsesfunktionen.** $E(T) = \int_0^\infty P(T > t)\,dt$ (side 299). Eksempel: eksponential giver $\int_0^\infty e^{-\lambda t}dt = 1/\lambda$.
 
-**Fra hazard rate til overlevelsesfunktion (side 300, kursorisk pensum).** Med $G(t) = P(T > t)$ er $h(t) = -G'(t)/G(t)$, så $G(t) = \exp\!\left(-\int_0^t h(u)\,du
-ight)$. Eksempel: konstant $h = \lambda$ giver $G(t) = e^{-\lambda t}$.
+**Fra hazard rate til overlevelsesfunktion (side 300, kursorisk pensum).** Med $G(t) = P(T > t)$ er $h(t) = -G'(t)/G(t)$, så $G(t) = \exp\!\left(-\int_0^t h(u)\,du\right)$. Eksempel: konstant $h = \lambda$ giver $G(t) = e^{-\lambda t}$.
 
 **Variabelskift.** Lineært: $Y = aX + b$ har tæthed $f_Y(y) = \frac{1}{|a|}f_X\!\left(\frac{y-b}{a}\right)$ (nederst side 302). Generelt, når $h$ er monoton og differentiabel: $f_Y(y) = f_X(x)\,/\,|h'(x)|$ med $x = h^{-1}(y)$ (side 304). Variant for mange-til-en øverst side 307. Eksempel 6 og 7 (side 308-309) er pensum, men kan læses kursorisk. Eksempel: $X$ ligefordelt på $(0,1)$ og $Y = -\ln(X)/\lambda$. Så er $P(Y > y) = P(X < e^{-\lambda y}) = e^{-\lambda y}$, altså er $Y$ eksponentialfordelt med rate $\lambda$.
 ## Opgaver
