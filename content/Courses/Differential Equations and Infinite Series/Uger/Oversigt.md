@@ -98,7 +98,7 @@ Kursusbeskrivelsens læringsmål (kurser.dtu.dk) dækker de samme emner: løsnin
 
 ## Hjemmeopgaver
 
-Alle 10 hjemmeopgavesæt og begge miniprojekter står samlet på [[Courses/Differential Equations and Infinite Series/Hjemmeopgaver|Hjemmeopgaver og miniprojekter]] med frist, indhold, teori og fremgangsmåde.
+Løsninger til de skriftlige hjemmeopgaver og miniprojekt 1 står på [[Courses/Differential Equations and Infinite Series/Hjemmeopgaver|Hjemmeopgaver og miniprojekter]].
 
 ## Links
 
