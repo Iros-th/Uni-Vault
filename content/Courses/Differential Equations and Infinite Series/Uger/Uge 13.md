@@ -11,8 +11,6 @@ tags:
 
 # Uge 13: Ulineære differentialligninger og repetition
 
-> **Kilde:** ugeseddel 13, 01025Mat2MatTekEksamen-E25.pdf og 01025Mat2MatTekEksamen-E25-Løsning.pdf, facitliste_studerende.pdf, EkstraOpgaver.pdf (opgave 966), eksamenssættene i zip-filen (DTU Learn, 01025 E26); lærebogen afsnit 3.1 til 3.3. Ingen slides til uge 13 på DTU Learn; sætningsnumrene i kapitel 3 er fra den ældre bog-PDF.
-
 ## Læseplan
 
 - Forelæsning (onsdag 2/12): afsnit 3.1, 3.2 og 3.3 i lærebogen.
@@ -150,12 +148,12 @@ Systemet er $\dot x = x^2 + y^2 - x + 2y + 1$, $\dot y = x - y - 1$.
 
 ## Tjek dig selv
 
-- [ ] Kan jeg finde alle stationære punkter, også når ligningssystemet er ulineært?
-- [ ] Kan jeg opstille funktionalmatricen og bruge sætning 3.7?
-- [ ] Ved jeg hvad sætning 3.7 ikke kan afgøre (egenværdi med realdel nul)?
-- [ ] Kan jeg analysere et 1-dimensionalt system med fortegnslinje og $f'(x_s)$?
-- [ ] Har jeg regnet mindst ét helt gammelt eksamenssæt under eksamensforhold, uden computer?
-- [ ] Kan jeg alle hovedsætningerne fra uge 1 til 12 uden at slå op (se [[Courses/Differential Equations and Infinite Series/Uger/Oversigt|oversigten]])?
+- [ ] Hvordan findes alle stationære punkter, også når ligningssystemet er ulineært?
+- [ ] Hvordan opstilles funktionalmatricen, og hvad siger sætning 3.7?
+- [ ] Hvad kan sætning 3.7 ikke afgøre (egenværdi med realdel nul)?
+- [ ] Hvordan analyseres et 1-dimensionalt system med fortegnslinje og $f'(x_s)$?
+- [ ] Hvilket gammelt eksamenssæt er regnet helt igennem under eksamensforhold, uden computer?
+- [ ] Hvilke hovedsætninger fra uge 1 til 12 skal kunne bruges uden opslag (se [[Courses/Differential Equations and Infinite Series/Uger/Oversigt|oversigten]])?
 
 ## Links
 

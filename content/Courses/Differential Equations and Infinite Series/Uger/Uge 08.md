@@ -11,8 +11,6 @@ tags:
 
 # Uge 8: Uniform konvergens
 
-> **Kilde:** ugeseddel 8, SlidesUge8.pdf, WeeklyNotes7.pdf og WeeklyNotes8_v3.pdf, facitliste_studerende.pdf, EkstraOpgaver.pdf (opgave 706), eksamenssættet 01025Mat2MatTekEksamenB-E21.pdf og noten KontinuitetOgDifferentiabilitet.pdf i zip-filen (DTU Learn, 01025 E26); lærebogen afsnit 5.3 og 5.4. Sætningsnumre som i slides (i den ældre bog-PDF er sætning 5.35, 5.36 og 5.37 nummereret 5.33, 5.34 og 5.35).
-
 ## Læseplan
 
 - Forelæsning (onsdag 28/10): afsnit 5.3 og 5.4 samt resten af appendiks om potensrækker og generelle rækker.
@@ -81,7 +79,7 @@ Bevisidé (slides): $g = \sum f_n'$ er kontinuert, og ledvis integration giver $
 
 **Om opgave 149.** Rækken af afledte er $-\sum \left(\frac23\right)^n\sin(2^nx)$ med den konvergente majorant $\sum\left(\frac23\right)^n$, så $f$ er differentiabel, og $f'(0) = 0$ fordi $\sin 0 = 0$. Differentieres igen, får leddene størrelsen $\left(\frac43\right)^n$, og der er ingen konvergent majorant; sætning 5.37 siger derfor intet om $f''$.
 
-**Hjemmeopgavesæt 7:** opgave 4 fra 01025Mat2MatTekEksamenB-E21.pdf, fysisk senest 4/11 kl. 8, og Möbius sæt 7 (to opgaver) samme frist. Opgave 4 handler om $f(t) = \sum_{n=1}^\infty \frac{t\cos(nt)}{n^3}$: uniform konvergens på $[-a,a]$, et $N$ så fejlen er højst $10^{-2}$ på $[-5,5]$, majorant på hele $\mathbb R$, konvergens og kontinuitet. Bedømt aflevering.
+**Hjemmeopgavesæt 7:** opgave 4 fra 01025Mat2MatTekEksamenB-E21.pdf (uniform konvergens og majoranter for $\sum \frac{t\cos(nt)}{n^3}$), fysisk 4/11 kl. 8, og Möbius sæt 7 samme frist. Se [[Courses/Differential Equations and Infinite Series/Hjemmeopgaver|Hjemmeopgaver]].
 
 **MC:** svaret på 705 er 2. Ugens MC-opgave er 706 (EkstraOpgaver.pdf): er $\sum_{n=2}^\infty \frac{(-1)^n}{n\ln n}$ divergent, absolut konvergent eller betinget konvergent? Facit (ugeseddel 9): 3, betinget konvergent.
 

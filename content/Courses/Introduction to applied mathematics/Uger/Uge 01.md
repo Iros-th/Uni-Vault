@@ -42,7 +42,7 @@ tags:
 
 **Legemsaksiomerne.** Et legeme er en mængde $F$ med to operationer $+$ og $\ast$, hvor begge er associative og kommutative, der findes $0$ og $1$ med $0 + a = a$ og $1 \ast a = a$, hvert $a$ har additiv invers $-a$, hvert $a \neq 0$ har multiplikativ invers $a^{-1}$, og multiplikation er distributiv over addition. $\mathbb{R}$ og $\mathbb{C}$ er legemer.
 
-I noten står distributivloven som $a st (b + c) = (a st b) + (b st c)$, formentlig en tastefejl for $(a st b) + (a st c)$.
+I noten står distributivloven som $a \ast (b + c) = (a \ast b) + (b \ast c)$, formentlig en tastefejl for $(a \ast b) + (a \ast c)$.
 ## Opgaver
 
 Fra `proofs_problems1` ("Proofs: Problem Set One"). Man må antage de sædvanlige regneregler for $\mathbb{Z}$ og $\mathbb{Q}$, at $\mathbb{Q} \subset \mathbb{R}$, at $\sqrt{2}$ eksisterer, og at $\sqrt{2}$ er irrational.

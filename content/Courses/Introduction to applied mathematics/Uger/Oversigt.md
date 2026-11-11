@@ -28,8 +28,28 @@ Kurset er projektbaseret, og hver uge er en mandag kl. 13 til 17. Plan fra Gener
 
 ## Andet materiale
 
-- LaTeX: `READ_ME.pdf` på DTU Learn (Using LaTeX) giver fire trin: opret profil på overleaf.com, vælg "New Project", vælg "existing project (.zip)" og upload `Roligheds_Template.zip`, og åbn filen i Overleaf. Selve skabelonen (en zip) er ikke læst.
-- Mine egne lektionsnoter: [[Applied mathematics introduction lection 1]], [[Lection 1 Introduction to applied mathematics]], [[Lection 2 continuation of proofs]], [[Lection 3 Operations research]], [[Lection 5 Operations research 1]].
+- LaTeX: `READ_ME.pdf` på DTU Learn (Using LaTeX) giver fire trin: opret profil på overleaf.com, vælg "New Project", vælg "existing project (.zip)" og upload `Roligheds_Template.zip`, og åbn filen i Overleaf.
+- Indhold i `Roligheds_Template.zip`: `main.tex` (dokumentklasse `article`, titel "Roligheds Template", indlæser `preamble.tex` og otte filer `Assignments/opgave1.tex` til `opgave8.tex` som "Problem 1" til "Problem 8"), `preamble.tex` (pakker som `babel` dansk/engelsk, `amsmath`, `amsthm`, `amssymb`, `graphicx`, `minted` til kildekode, `enumitem`, `booktabs`, `polynom` og A4 med 2 cm marginer), samt to pdf-filer "Symbols in LaTex" og "LaTeX Cheatsheet" og et eksempelbillede. Opgave-filerne er korte eksempler: skrive og oversætte i Overleaf, formler i tekst med dollartegn og med `align*`, matricer, indsætte billeder via File, Upload og `figure`, indsætte Python-kode med `minted`, samt en forklaring på filoversigten og på at `preamble.tex` ikke bør ændres uden at man ved, hvad pakkerne bruges til.
+- Ældre lektionsnoter: [[Applied mathematics introduction lection 1]], [[Lection 1 Introduction to applied mathematics]], [[Lection 2 continuation of proofs]], [[Lection 3 Operations research]], [[Lection 5 Operations research 1]].
+
+## Pensum
+
+Kilde: General Info (`02525_IntroAppMat2026v3`) og kursusbasen (kurser.dtu.dk/course/02525). Karakteren er bestået/ikke bestået: projektarbejde 30 % og skriftlig eksamen 70 % (4 timer, skriftlige hjælpemidler tilladt ifølge kursusbasen; General Info angiver uden elektroniske hjælpemidler). Eksamen er 22/1 2027 og dækker en stor del af kursets pensum. Projekterne med mundtlig præsentation (Aktiv fartpilot og Filtrering) er ikke en del af den skriftlige eksamen.
+
+| Projekt | Uge | Emne |
+|---|---|---|
+| 1 del A, Mathematical proofs 1 (Types of argument) | 1 og 2 | direkte bevis, modeksempel, modstrid, legemsaksiomer |
+| 2, Operations Research | 3 og 4 | optimeringsmodeller, LP, heltal, rygsæk, assignment, grådige algoritmer, branch and bound, TSP |
+| 3, Aktiv fartpilot | 5 til 7 | andenordens differentialligninger, controller og simulering (poster, ikke til skriftlig eksamen) |
+| 4, Filtrering | 8 til 10 | filtrering, konvolution, kanter, segmentering (poster, ikke til skriftlig eksamen) |
+| 5, Filmanbefaling | 11 og 12 | materiale ikke tilgængeligt i DTU Learn |
+| 1 del B, Mathematical proofs 2 (Definition of Limit) | 13 | tælleargumenter, induktion, komplekse tal som $\mathbb{R} \times \mathbb{R}$, grupper |
+| 6, Geometri | januar A (4. til 6. januar 2027) | endnu ingen ugenote |
+| 7, Større projekt | januar B (8. til 19. januar 2027) | endnu ingen ugenote |
+
+Projektpoint (30 i alt): 4 små projekter med rapport (feedback only) á 2 point, 2 tre-ugers projekter med poster á 6 point og ét stort januarprojekt på 10 point.
+
+Meddelelser på DTU Learn: Python-supportside https://pythonsupport.dtu.dk/course/02525.html, PuLP-problemer 14/9 (se Uge 3), poster 19/10 (se Uge 7), og et møde 19/10 kl. 10.30 til 11.30 om eksamensregler og 2. semester for AnMat-studerende.
 
 ## Links
 

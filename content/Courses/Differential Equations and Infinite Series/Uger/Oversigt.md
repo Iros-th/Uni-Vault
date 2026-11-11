@@ -12,8 +12,6 @@ tags:
 
 Ugenoter for 01025. Hver uge har begreberne med et lille regneeksempel, opgaverne fra ugesedlen med afsnit, løsningsnoter til de opgaver som WeeklyNotes på DTU Learn dækker, og en "Tjek dig selv"-liste.
 
-> **Kilde:** ugesedlerne 1 til 13, SlidesUge1.pdf til SlidesUge10.pdf, Maple-filerne (MapleUge6, Uge7Potensrækker, MapleUge9, Uge10Maple og de tilhørende .mw-filer), WeeklyNotes (uge 1, 2, 3, 5, 6, 7, 8 og 9), facitliste_studerende.pdf, Pensumliste-2026.pdf, 01025Mat2MatTekEksamen-E25.pdf med løsning, zip-filen "Materiale til 01025 Differentialligninger og uendelige rækker" og opslagene (DTU Learn, 01025 E26); kursusbeskrivelsen på kurser.dtu.dk/course/01025; lærebogen Ole Christensen, *Differentialligninger og uendelige rækker*. Ingen slides til uge 11 til 13 og ingen WeeklyNotes til uge 4 og 10 til 13 på DTU Learn.
-
 ## Kursusfakta
 
 - **Underviser:** Peter Røgen. Hjælpelærer: Rasmus Julius Jensen. Forelæsning onsdag kl. 8 til 10, øvelser kl. 10 til 12, Aud 49 i bygning 303A.
@@ -98,7 +96,7 @@ Kursusbeskrivelsens læringsmål (kurser.dtu.dk) dækker de samme emner: løsnin
 - 23/9: spørgetid flyttet til mandag kl. 12:10; til Möbius-opgaven med komplekse koefficienter kan $|P(x)|$ regnes i Python, fx `abs(x**2 - x*1j + 7)`.
 - 5/10: anonym midtvejsevaluering i kalenderen.
 
-## Bedømte afleveringer
+## Hjemmeopgaver
 
 Alle 10 hjemmeopgavesæt og begge miniprojekter står samlet på [[Courses/Differential Equations and Infinite Series/Hjemmeopgaver|Hjemmeopgaver og miniprojekter]] med frist, indhold, teori og fremgangsmåde.
 

@@ -11,8 +11,6 @@ tags:
 
 # Uge 7: Potensrækker
 
-> **Kilde:** ugeseddel 7, SlidesUge7.pdf, Uge7Potensrækker.pdf og Uge7Potensrarkke.mw, WeeklyNotes6.pdf og WeeklyNotes7.pdf, facitliste_studerende.pdf, EkstraOpgaver.pdf (opgave 705), eksamenssættet maj 2024 (01025Mat2MatTekEksamenAogB-F24.pdf i zip-filen) (DTU Learn, 01025 E26); lærebogen afsnit 5.1 og 5.2 og appendiks B. Ugesedlen henviser til beviserne for sætning 5.13 og 5.17 i "appendiks A.9, side 220 til 221"; i den ældre bog-PDF står de i A.8. Sætningsnumre som i slides.
-
 ## Læseplan
 
 - Forelæsning (onsdag 21/10): afsnit 5.2 (5.1 er gennemgået i uge 5) og beviserne for sætning 5.13 og 5.17 i appendiks.
@@ -95,9 +93,7 @@ Maple-filen plotter en lakunær potensrække (kun potenserne $x^{2^n}$ er med, m
 | 136 | 5.2 | Konvergensradius for $\sum\frac{2^n}{n}x^n$ og et funktionsudtryk for $f'(x)$. Facit: $\rho = \frac12$, $f'(x) = \frac{2}{1-2x}$. |
 | 815 | 5.1, 5.2 (korollar 5.5) | Hvor mange led af rækken for $\ln\frac{1+x}{1-x}$ giver fejl $\leq 0.1$ i $x = \frac12$ og på hele $[0, \frac12]$? Se vurderingen ovenfor. |
 
-**Hjemmeopgavesæt 6** (fysisk senest 28/10 kl. 8; Möbius sæt 6 senest 27/10 kl. 20). Bedømt aflevering.
-- Opgave 1 fra del B af eksamenssættet 13. maj 2024 (01025Mat2MatTekEksamenAogB-F24.pdf, afsnit 4.5 og 4.7): vis at $\sum_{n=1}^\infty (-1)^n\frac{100+n}{2+n^3}$ er absolut konvergent, og find for rækken $\sum_{n=1}^\infty (-1)^n\frac{100+n}{2+n^k}$, $k \in \mathbb N$, den mindste $k$ der giver absolut konvergens og den mindste $k$ der giver konvergens.
-- Spiseseddelopgave 1 (iii) og (iv) fra ugesedlen, en redigeret udgave af bogens opgave 811 (afsnit 4.5): en mere generel udgave af kvotientkriteriet, hvor man kun antager $|a_{n+1}| \leq C|a_n|$ med $C < 1$, ikke at kvotienten konvergerer. Spørgsmål (i) og (ii) må bruges som vink.
+**Hjemmeopgavesæt 6:** opgave 1 fra del B af eksamenssættet maj 2024 (konvergenstype for $\sum (-1)^n\frac{100+n}{2+n^k}$, afsnit 4.5 og 4.7) og spiseseddelopgave 1 (iii) og (iv) (en generalisering af kvotientkriteriet, bogens opgave 811), fysisk 28/10 kl. 8; Möbius sæt 6 senest 27/10 kl. 20. Se [[Courses/Differential Equations and Infinite Series/Hjemmeopgaver|Hjemmeopgaver]].
 
 **MC:** svaret på 704 er 4. Ugens MC-opgave er 705 (EkstraOpgaver.pdf): en kvotientrække med kvotient $\frac45$ der starter ved $n = 2$; divergent, eller konvergent med hvilken sum? Facit (ugeseddel 8): 2.
 

@@ -1,6 +1,6 @@
 ---
 publish: true
-title: "01025 uge 10: Fourierrækker på kompleks form og Parsevals sætning"
+title: "01025 uge 10: Kompleks form og Parsevals sætning"
 course: Differential Equations and Infinite Series
 type: week
 week: 10
@@ -9,15 +9,13 @@ tags:
   - ugenote
 ---
 
-# Uge 10: Fourierrækker på kompleks form og Parsevals sætning
-
-> **Kilde:** ugeseddel 10, SlidesUge10.pdf, Uge10Maple.pdf og Uge10Maple.mw, WeeklyNotes9.pdf, facitliste_studerende.pdf, EkstraOpgaver.pdf (opgave 708), eksamenssættet 01025Mat2MatTekEksamenB-E18.pdf (zip-filen) (DTU Learn, 01025 E26); lærebogen afsnit 6.2 til 6.4 og appendiks C. Sætningsnumre som i slides (i den ældre bog-PDF: korollar 6.16, sætning 6.17, lemma 6.20, 6.22, 6.23 og sætning 6.25).
+# Uge 10: Kompleks form og Parsevals sætning
 
 ## Læseplan
 
 - Forelæsning (onsdag 11/11): afsnit 6.2 (fejlvurderinger), 6.3 (kompleks form) og 6.4 (Parsevals sætning).
 - Læs selv: appendiks C for formlerne på kompleks form med vilkårlig periode $T$.
-- Forberedelse til miniprojekt 2 (uge 11): det anbefales kraftigt at løse projektopgave 2, 3 og 4 (i)-(iii) allerede nu.
+- Ifølge ugesedlen kan projektopgave 2, 3 og 4 (i) til (iii) i miniprojekt 2 laves allerede i uge 10.
 
 ## Begreber
 
@@ -162,7 +160,7 @@ Lad $f: \mathbb{R} \to \mathbb{C}$ være en $T$-periodisk funktion, der er integ
    $$\left|\frac{a^n}{n^a}\right| \le \left(\frac{1}{2}\right)^n = M_n.$$
    Da $\sum_{n=1}^\infty (1/2)^n$ er en konvergent kvotientrække, sikrer Weierstrass' M-test, at rækken konvergerer uniformt på $[0, 1/2]$.
 
-**Hjemmeopgavesæt 9:** Möbius Sæt9-01025 senest 18/11 kl. 20. Bedømt aflevering.
+**Hjemmeopgavesæt 9:** Möbius Sæt9-01025 senest 18/11 kl. 20. Se [[Courses/Differential Equations and Infinite Series/Hjemmeopgaver|Hjemmeopgaver]].
 
 **MC:** svaret på 707 er 2. Ugens MC-opgave er 708 (EkstraOpgaver.pdf): konvergensområdet for $\sum_{n=0}^\infty \frac{3^n}{2^n + 1}x^n$. Facit (ugeseddel 11): 1, absolut konvergent for $|x| < \frac23$ og divergent for $|x| \geq \frac23$ (i $x = \pm\frac23$ går leddene ikke mod $0$).
 
@@ -172,12 +170,12 @@ Lad $f: \mathbb{R} \to \mathbb{C}$ være en $T$-periodisk funktion, der er integ
 
 ## Tjek dig selv
 
-- [ ] Kan jeg gå frem og tilbage mellem $a_n, b_n$ og $c_n$?
-- [ ] Ved jeg hvorfor $c_{-n} = \overline{c_n}$ når $f$ er reel?
-- [ ] Kan jeg skrive Parsevals sætning op på både reel og kompleks form?
-- [ ] Kan jeg bruge Parseval til at finde summen af en talrække?
-- [ ] Kan jeg vurdere $|f(x) - S_N(x)|$ uniformt med en majorant og integralkriteriet?
-- [ ] Kan jeg forklare og bevise regel (R1) om integraler over en periode?
+- [ ] Hvordan går man frem og tilbage mellem $a_n, b_n$ og $c_n$?
+- [ ] Hvorfor er $c_{-n} = \overline{c_n}$ når $f$ er reel?
+- [ ] Hvordan lyder Parsevals sætning på reel og på kompleks form?
+- [ ] Hvordan bruges Parseval til at finde summen af en talrække?
+- [ ] Hvordan vurderes $|f(x) - S_N(x)|$ uniformt med korollar 6.20 eller sætning 6.21?
+- [ ] Hvordan bevises regel (R1) om integraler over en periode?
 
 ## Links
 

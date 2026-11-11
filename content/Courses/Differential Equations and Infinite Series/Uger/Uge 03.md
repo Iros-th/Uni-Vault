@@ -11,8 +11,6 @@ tags:
 
 # Uge 3: Overføringsfunktion for systemer og stabilitet
 
-> **Kilde:** ugeseddel 3, SlidesUge3.pdf, WeeklyNotes3.pdf, facitliste_studerende.pdf, EkstraOpgaver.pdf (opgave 701) (DTU Learn, 01025 E26); lærebogen afsnit 2.6 til 2.8. Ugesedlen nævner appendiks "A.2 og A.6"; i den ældre bog-PDF står stabilitetsbeviserne i A.5. Sætningsnumre som i slides, se [[Courses/Differential Equations and Infinite Series/Uger/Oversigt|oversigten]].
-
 ## Læseplan
 
 - Forelæsning: afsnit 2.6 og 2.8 samt appendiks om lineær algebra og stabilitet.
@@ -97,7 +95,7 @@ Påvirkningen $u = \sin 2t = \operatorname{Im}(e^{2it})$ giver $H(2i) = \frac{1}
 | 417 | 2.6 | Overføringsfunktion for et $2\times 2$ system og stationært svar på $u = \cos t$. Ugesedlen henviser til formlen for den inverse $2\times 2$ matrix bagest i bogen. |
 | 507 | 2.8 | Asymptotisk stabilitet af $\begin{pmatrix}a&2\\a&1\end{pmatrix}$ afhængigt af $a$. Vink til (iii): skriv rødderne op og se på fortegnene. |
 
-**Hjemmeopgavesæt 3:** Möbius senest 22/9 kl. 20, og opgave 915 (afsnit 2.6, bevis for løsningsudtrykket (2.34): $\mathbf x_0 e^{st}$ er løsning netop når $\mathbf x_0 = -(A - sI)^{-1}\mathbf b$) afleveres fysisk 23/9 kl. 8. Bedømt aflevering.
+**Hjemmeopgavesæt 3:** Möbius (senest 22/9 kl. 20) og opgave 915 (afsnit 2.6), fysisk 23/9 kl. 8. Se [[Courses/Differential Equations and Infinite Series/Hjemmeopgaver|Hjemmeopgaver]].
 
 **Løsningsnoter:** WeeklyNotes3.pdf (under uge 4 på DTU Learn) løser opgave 919. Nøgleidéer: forkort $H(s) = \frac{s+1}{s^2-1} = \frac{1}{s-1}$ men behold definitionsmængden $s \neq \pm 1$; for $u = e^{-t}$ er højresiden $u' + u = 0$, så ligningen bliver homogen; for $u = e^{t}$ (roden $1$) findes den partikulære løsning $te^{t}$ med formlen for reduktion af orden (sætning 1.31 i den ældre PDF); en sum af påvirkninger løses led for led med superposition, hvor leddet der rammer en rod skal behandles for sig. Facit til 411, 417, 422 og 507 står i facitliste_studerende.pdf.
 
@@ -105,12 +103,12 @@ Miniprojekt 1 stilles i uge 4; ifølge ugesedlen kan opgave 1 (i) til (iv) og op
 
 ## Tjek dig selv
 
-- [ ] Kan jeg udlede $H(s) = -\mathbf d^\top(A - sI)^{-1}\mathbf b$ fra gættet $\mathbf x = \mathbf x_0 e^{st}$?
-- [ ] Kan jeg skelne stabil og asymptotisk stabil, og give et eksempel på stabil men ikke asymptotisk stabil?
-- [ ] Ved jeg hvorfor en egenværdi med realdel nul og for få egenvektorer giver ustabilitet?
-- [ ] Kan jeg bruge Routh-Hurwitz på et 2. og 3. grads polynomium?
-- [ ] Kan jeg bruge spor og determinant til at afgøre stabilitet af et $2\times 2$ system?
-- [ ] Husker jeg definitionsmængden for $H(s)$, også når der kan forkortes?
+- [ ] Hvordan udledes $H(s) = -\mathbf d^\top(A - sI)^{-1}\mathbf b$ fra gættet $\mathbf x = \mathbf x_0 e^{st}$?
+- [ ] Hvad er forskellen på stabil og asymptotisk stabil, og hvilket system er stabilt men ikke asymptotisk stabilt?
+- [ ] Hvorfor giver en egenværdi med realdel nul og for få egenvektorer ustabilitet?
+- [ ] Hvordan bruges Routh-Hurwitz på et polynomium af grad 2 og 3?
+- [ ] Hvordan afgør spor og determinant stabiliteten af et $2\times 2$ system?
+- [ ] Hvad er definitionsmængden for $H(s)$, også når der kan forkortes?
 
 ## Links
 

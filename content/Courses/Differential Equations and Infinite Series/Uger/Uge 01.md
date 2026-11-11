@@ -1,6 +1,6 @@
 ---
 publish: true
-title: "01025 uge 1: Differentialligninger af n'te orden og overføringsfunktion"
+title: "01025 uge 1: n'te ordens ligninger og overføringsfunktion"
 course: Differential Equations and Infinite Series
 type: week
 week: 1
@@ -9,7 +9,7 @@ tags:
   - ugenote
 ---
 
-# Uge 1: Differentialligninger af n'te orden og overføringsfunktion
+# Uge 1: n'te ordens ligninger og overføringsfunktion
 
 
 ## Læseplan
@@ -112,7 +112,7 @@ Lemma A.13: hvis $(D - \lambda_j)^{p_j}y = 0$, så er $D_n(y) = 0$, fordi faktor
 
 Alle numre er fra opgavesamlingen bagerst i lærebogen (bilag F). Facitlisten (facitliste_studerende.pdf) har svar til øvelsesopgaverne i bogen.
 
-**Opvarmningsopgave** (ugesedlen): ud fra en graf af en løsning skal du sige hvad du kan om ligningen, rødderne i karakterligningen, ordenen og om der er periodiske løsninger.
+**Opvarmningsopgave** (ugesedlen): hvad kan man ud fra en graf af en løsning sige om ligningen, rødderne i karakterligningen, ordenen og om der er periodiske løsninger?
 
 | Opgave | Afsnit | Hvad den handler om |
 |---|---|---|
@@ -129,20 +129,20 @@ Alle numre er fra opgavesamlingen bagerst i lærebogen (bilag F). Facitlisten (f
 > [!note] Rødderne i opgave 317
 > Ugesedlen angiver rødderne $\lambda = \pm(1 \pm 3i)$; det passer ikke med ligningen. $\lambda^4 + 10\lambda^2 + 169 = 0$ giver $\lambda^2 = -5 \pm 12i$ og dermed $\lambda = \pm(2 \pm 3i)$, fordi $(2+3i)^2 = -5 + 12i$. Facitlisten (facitliste_studerende.pdf) bekræfter det: den reelle løsning er bygget af $e^{\pm 2t}\cos 3t$ og $e^{\pm 2t}\sin 3t$, og den søgte løsning er $f(t) = \frac13 e^{-2t}\sin 3t$ (den løser ligningen, og $f(0) = 0$, $f'(0) = 1$).
 
-**Hjemmeopgavesæt 1:** Möbius, frist tirsdag 9/9 kl. 20. Bedømt aflevering.
+**Hjemmeopgavesæt 1:** Möbius, frist tirsdag 9/9 kl. 20. Se [[Courses/Differential Equations and Infinite Series/Hjemmeopgaver|Hjemmeopgaver]].
 
 **Løsningsnoter:** WeekleyNotes1.pdf (under uge 2 på DTU Learn) løser opgave 904 (i) til (iii): (i) direkte udregning af $(D-\lambda)(e^{\lambda t}u) = e^{\lambda t}u'$, (ii) gentag (i) $m$ gange og få $(D-\lambda)^m(e^{\lambda t}u) = e^{\lambda t}u^{(m)}$, (iii) sæt $u = t^k$ med $k < p$, så $u^{(p)} = 0$. Facit til 306, 309, 317 og 320 står i facitliste_studerende.pdf.
 
 ## Tjek dig selv
 
-- [ ] Kan jeg opskrive karakterligningen direkte ud fra en $n$'te ordens ligning?
-- [ ] Kan jeg gå fra komplekse rødder $a \pm i\omega$ til reelle løsninger, og forklare hvorfor det er lovligt (lemma 1.8)?
-- [ ] Ved jeg hvilke løsninger en dobbeltrod eller tripelrod giver?
-- [ ] Kan jeg forklare struktursætningen: hvorfor er $y = y_0 + y_{\text{hom}}$ alle løsninger?
-- [ ] Kan jeg finde $H(s)$ og bruge den til stationære svar på $e^{st}$ og på $\cos\omega t$?
-- [ ] Ved jeg hvad der går galt når $s$ er rod i karakterligningen (opgave 312)?
-- [ ] Kan jeg vise lineær uafhængighed ved at starte med en vilkårlig linearkombination lig nul?
-- [ ] Kan jeg beregne amplitude- og fasekarakteristik for en simpel ligning?
+- [ ] Hvordan opskrives karakterligningen direkte ud fra en $n$'te ordens ligning?
+- [ ] Hvordan fås reelle løsninger fra komplekse rødder $a \pm i\omega$, og hvorfor er det lovligt (lemma 1.8)?
+- [ ] Hvilke løsninger giver en dobbeltrod eller en tripelrod?
+- [ ] Hvorfor er $y = y_0 + y_{\text{hom}}$ alle løsninger (struktursætningen)?
+- [ ] Hvordan findes $H(s)$, og hvordan bruges den til stationære svar på $e^{st}$ og på $\cos\omega t$?
+- [ ] Hvad går galt når $s$ er rod i karakterligningen (opgave 312), og hvad gør gættemetoden så?
+- [ ] Hvordan vises lineær uafhængighed ved at starte med en vilkårlig linearkombination lig nul?
+- [ ] Hvordan beregnes amplitude- og fasekarakteristik for en simpel ligning?
 
 ## Links
 

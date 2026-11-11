@@ -11,8 +11,6 @@ tags:
 
 # Uge 2: Systemer af differentialligninger
 
-> **Kilde:** ugeseddel 2 og semesteroversigten på ugeseddel 1, SlidesUge2.pdf, WeeklyNotes2.pdf, facitliste_studerende.pdf (DTU Learn, 01025 E26); lærebogen afsnit 2.1 til 2.5. Ugesedlen henviser til "appendiks A.5", semesteroversigten til "A.4"; i den ældre bog-PDF hedder afsnittet om systemer A.4. Sætningsnumre som i slides, se [[Courses/Differential Equations and Infinite Series/Uger/Oversigt|oversigten]].
-
 ## Læseplan
 
 - Forelæsning (onsdag 9/9): afsnit 2.1, 2.2, 2.3 og 2.4 samt appendiks om systemer (se kildenoten).
@@ -97,23 +95,18 @@ Hvis $\mathbf u + i\mathbf v$ og $\mathbf u - i\mathbf v$ er lineært uafhængig
 | 914 | 2.2 (sætning 2.7 (b)) | Bevis for at real- og imaginærdel af $e^{\lambda t}\mathbf v$ er uafhængige løsninger. Vink: kompleks konjugér $A\mathbf v = \lambda\mathbf v$. |
 | 431 | 2.3, 2.4 | Inhomogent system hvor gættet med en konstant vektor ikke virker; brug den generelle løsningsformel. |
 
-**Hjemmeopgavesæt 2:** Möbius-opgave senest 15/9 kl. 20, og opgave 903 og 912 afleveres fysisk 16/9 kl. 8.
-
-- 903 (afsnit 1.2, bilag F.7): bevis for sætning 1.14 for andenordens ligninger ved direkte udregning; sætning 1.14 må derfor ikke bruges.
-- 912 (appendiks om systemer): bevis lemma A.16 (A.15 i den ældre PDF). Ugesedlen understreger at man skal starte med en vilkårlig linearkombination sat lig nul.
-
-Bedømt aflevering.
+**Hjemmeopgavesæt 2:** Möbius (senest 15/9 kl. 20) og opgave 903 (bevis for sætning 1.14 for andenordens ligninger) og 912 (bevis for lemma A.16), fysisk 16/9 kl. 8. Se [[Courses/Differential Equations and Infinite Series/Hjemmeopgaver|Hjemmeopgaver]].
 
 **Løsningsnoter:** WeeklyNotes2.pdf (under uge 3 på DTU Learn) løser opgave 914 (i) til (v): konjugér karakterligningen og $A\mathbf v = \lambda\mathbf v$ for at se at $\bar\lambda$ er rod med egenvektor $\overline{\mathbf v}$, regn real- og imaginærdel af $e^{\lambda t}\mathbf v$ ud, og brug lemmaet fra opgave 912 til uafhængigheden. Den indeholder også opgave 920 (i) (ikke på ugesedlen): et bevis ved indsættelse for at den generelle løsningsformel giver en løsning. Facit til 409, 411, 414 og 431 står i facitliste_studerende.pdf.
 
 ## Tjek dig selv
 
-- [ ] Kan jeg omskrive en $n$'te ordens ligning til et system af 1. orden?
-- [ ] Kan jeg bruge egenværdimetoden med både reelle og komplekse egenværdier?
-- [ ] Ved jeg hvad jeg gør når den geometriske multiplicitet er mindre end den algebraiske?
-- [ ] Hvad er en fundamentalmatrix, og hvordan finder jeg løsningen med en given startværdi?
-- [ ] Kan jeg bruge den generelle løsningsformel, og ved jeg hvornår gættemetoden med en konstant vektor fejler?
-- [ ] Kan jeg forklare hvorfor den konjugerede egenværdi ikke giver nye reelle løsninger?
+- [ ] Hvordan omskrives en $n$'te ordens ligning til et system af 1. orden?
+- [ ] Hvordan bruges egenværdimetoden med både reelle og komplekse egenværdier?
+- [ ] Hvad gør man når den geometriske multiplicitet er mindre end den algebraiske?
+- [ ] Hvad er en fundamentalmatrix, og hvordan findes løsningen med en given startværdi?
+- [ ] Hvordan bruges den generelle løsningsformel, og hvornår fejler gættemetoden med en konstant vektor?
+- [ ] Hvorfor giver den konjugerede egenværdi ikke nye reelle løsninger?
 
 ## Links
 

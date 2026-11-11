@@ -33,7 +33,7 @@ tags:
 **Middelværdi af en funktion.** $E\,g(X) = \sum_x g(x)P(X = x)$ (boks øverst side 175). Eksempel: $E(X^2) = (1 + 4 + 9 + 16 + 25 + 36)/6 = 91/6$. Bemærk $E(X^2) \ne (E X)^2$.
 
 **Linearitet.** $E(aX + bY) = aE(X) + bE(Y)$, uden krav om uafhængighed (regneregler side 167 og 177). Eksempel: summen af to terninger har middelværdi $3{,}5 + 3{,}5 = 7$.
-**Forventning og prediction (side 178-179, kursorisk pensum).** Hvis man skal gætte værdien af $X$ med et fast tal $c$, er $Eig[(X - c)^2ig] = \mathrm{Var}(X) + (E X - c)^2$ mindst for $c = E(X)$. Middelværdien er altså det bedste gæt i middelkvadratisk forstand.
+**Forventning og prediction (side 178-179, kursorisk pensum).** Hvis man skal gætte værdien af $X$ med et fast tal $c$, er $E\big[(X - c)^2\big] = \mathrm{Var}(X) + (E X - c)^2$ mindst for $c = E(X)$. Middelværdien er altså det bedste gæt i middelkvadratisk forstand.
 
 ## Opgaver
 

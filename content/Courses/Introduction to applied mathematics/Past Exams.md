@@ -11,34 +11,7 @@ tags:
 
 # Applied math past exams
 
-Where old exam sets and practice problems live for this course. Empty for now, I add to it as I get hold of sets.
-
-How I plan to use it: put the problem in, have a proper go without looking, then write out my own proof and note where I got stuck. The stuck bits are exactly the ones to review before an exam.
-
-## How I file a set
-
-For each set I make a section with:
-
-- **Year and type** (ordinary, re-exam, practice)
-- **The problems**, short, or a link if I have a file
-- **My proof or working**
-- **Where it went wrong** so I do not repeat it
-
-## Sets
-
-_(none yet, added over time)_
-
-<!--
-Template to copy:
-
-### 20XX ordinary
-
-**Problem 1.** ...
-
-My proof: ...
-
-Where it went wrong: ...
--->
+Der er ikke lagt tidligere eksamenssæt til 02525 ud på DTU Learn eller kursussiden. Den skriftlige eksamen er 22/1 2027 og omfatter en stor del af kursets pensum (se Pensum i [[Courses/Introduction to applied mathematics/Uger/Oversigt|ugeoversigten]]). Projekter med mundtlig præsentation er ikke en del af den skriftlige eksamen.
 
 ## Links
 

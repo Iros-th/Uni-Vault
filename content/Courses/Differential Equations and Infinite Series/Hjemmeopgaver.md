@@ -53,7 +53,7 @@ Alle afleveringer i porteføljen samlet ét sted, med frist, hvad opgaven går u
 **Opgave 903 (afsnit 1.2):** for $a_0y'' + a_1y' + a_2y = 0$ skal man vise ved indsættelse at $y = te^{\lambda_0 t}$ giver $(2a_0\lambda_0 + a_1)e^{\lambda_0 t}$, og derfra at $te^{\lambda_0 t}$ er en løsning netop når $\lambda_0$ er dobbeltrod. Opgaven er et bevis for sætning 1.14 i et specialtilfælde, så sætning 1.14 må ikke bruges.
 - Vink: ved en dobbeltrod er $\lambda_0 = \frac{-a_1 \pm 0}{2a_0}$, altså $2a_0\lambda_0 + a_1 = 0$.
 
-**Opgave 912 (appendiks om systemer):** bevis lemma A.15: hvis $\mathbf u + i\mathbf v$ og $\mathbf u - i\mathbf v$ er lineært uafhængige, er $\mathbf u$ og $\mathbf v$ det også.
+**Opgave 912 (appendiks om systemer):** bevis lemma A.16 (A.15 i ældre udgaver): hvis $\mathbf u + i\mathbf v$ og $\mathbf u - i\mathbf v$ er lineært uafhængige, er $\mathbf u$ og $\mathbf v$ det også.
 - Vink: start med en vilkårlig linearkombination $c_1\mathbf u + c_2\mathbf v = \mathbf 0$ og udtryk $\mathbf u$ og $\mathbf v$ ved $\mathbf w_1 = \mathbf u + i\mathbf v$ og $\mathbf w_2 = \mathbf u - i\mathbf v$.
 
 ## Hjemmeopgavesæt 3
@@ -142,7 +142,7 @@ Projektopgave 2 og 3 hører sammen: et system løses med Fourierrækkemetoden, o
 **Projektopgave 1 (appendiks om Fouriers sætning):**
 - Læs beviset for propositionen (ugesedlens A.32) og løs opgave 872: vis at $\varphi(x) = f(x+u)$ opfylder betingelserne i lemmaet, og at $\int_{-\pi}^{\pi}\varphi(x)e^{-inx}dx = e^{inu}\int_{-\pi}^{\pi}f(y)e^{-iny}dy$.
 - Tillægsspørgsmål (iv): vis at $\frac12\bigl(|a_n|^2 + |b_n|^2\bigr)$ ikke ændres ved forskydning fra $x$ til $x+u$ (energien i frekvens $n$ afhænger ikke af koordinatsystemet).
-- Vink: omskriv til $c_n$ og brug $|e^{inu}| = 1$; regel (R1) i lemma 6.2 gør substitutionen lovlig.
+- Vink: omskriv til $c_n$ og brug $|e^{inu}| = 1$; regel (R1) i lemma 6.5 gør substitutionen lovlig.
 
 **Projektopgave 2:** opgave 518 (i) og (ii): en kontinuert, stykkevis differentiabel funktion med $a_n = 0$ og $b_n = \frac1{n^3}$. Opstil Fourierrækken på kompleks form, og find $N$ så $|f(x) - S_N(x)| \leq 0.1$ for alle $x$.
 - Metode: majorant på halen ($\sum |b_n|$) og korollar 4.35.

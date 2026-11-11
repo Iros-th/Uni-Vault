@@ -11,8 +11,6 @@ tags:
 
 # Uge 6: Vurdering af summen og alternerende rækker
 
-> **Kilde:** ugeseddel 6, SlidesUge6.pdf, MapleUge6.pdf og Uge6Maple.mw, WeeklyNotes6.pdf, facitliste_studerende.pdf, EkstraOpgaver.pdf (opgave 704) (DTU Learn, 01025 E26); lærebogen afsnit 4.6 og 4.7. Sætningsnumre som i slides. Ugesedlens "metode 1 og metode 2 på side 104" svarer til metode (i) og (ii) side 102 til 103 i den ældre bog-PDF.
-
 ## Læseplan
 
 - Forelæsning (onsdag 7/10): afsnit 4.6 (vurdering af summen) og afsnit 4.7 (alternerende rækker og Leibniz).
@@ -133,18 +131,18 @@ Dette viser pr. definition, at $c x_n \to c x$.
 
 **MC:** svarene på 703 er 4 og 1. Ugens MC-opgave er 704 (EkstraOpgaver.pdf): for hvilke værdier af parameteren $a$ et $3\times 3$ system er asymptotisk stabilt (afsnit 2.8, Routh-Hurwitz). Facit (ugeseddel 7): 4.
 
-**Hjemmeopgavesæt 5:** kun Möbius, senest 20/10 kl. 20. Bedømt aflevering.
+**Hjemmeopgavesæt 5:** kun Möbius, senest 20/10 kl. 20. Se [[Courses/Differential Equations and Infinite Series/Hjemmeopgaver|Hjemmeopgaver]].
 
 **Løsningsnoter:** WeeklyNotes6.pdf (under uge 7 på DTU Learn) løser opgave 131 (integralvurdering af halen, se ovenfor), 816 (i) til (vi) (vurdering af $\frac{n!}{n^n}$ og sammenligning med $\sum n^{-3/2}$ i (vi)) og 108 (ækvivalens med $\sum \frac{1}{\sqrt n}$, og forklaringen at rækken er en omordning af $\sum\frac{(-1)^{n-1}}{\sqrt n}$). Løsningerne er fra en ældre udgave og henviser til "korollar 4.22" og "metode (ii) side 88". Opgave 818 er løst i WeeklyNotes8_v3.pdf (uge 8).
 
 ## Tjek dig selv
 
-- [ ] Kan jeg forklare forskellen på metode (i) og (ii), og hvorfor (ii) bruger færre led?
-- [ ] Kan jeg regne $\int_{N+1}^\infty f$ for $f(x) = x^{-p}$?
-- [ ] Kender jeg de tre betingelser i Leibniz' kriterium, og kan jeg bruge fejlvurderingen $b_{N+1}$?
-- [ ] Kan jeg give et eksempel på en betinget konvergent række?
-- [ ] Ved jeg hvorfor integralkriteriet kræver at $f$ er aftagende (opgave 818)?
-- [ ] Kan jeg skrive et $\epsilon$-$N$ bevis for en regneregel for talfølger?
+- [ ] Hvad er forskellen på metode (i) og (ii), og hvorfor bruger (ii) færre led?
+- [ ] Hvad er $\int_{N+1}^\infty x^{-p}\,dx$?
+- [ ] Hvad er de tre betingelser i Leibniz' kriterium, og hvordan bruges fejlvurderingen $b_{N+1}$?
+- [ ] Hvilken række er betinget konvergent, og hvorfor?
+- [ ] Hvorfor kræver integralkriteriet at $f$ er aftagende (opgave 818)?
+- [ ] Hvordan ser et $\epsilon$-$N$ bevis for en regneregel for talfølger ud?
 
 ## Links
 

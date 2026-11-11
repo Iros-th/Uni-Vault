@@ -11,8 +11,6 @@ tags:
 
 # Uge 9: Fourierrækker
 
-> **Kilde:** ugeseddel 9, SlidesUge9.pdf, MapleUge9.pdf og Uge9Maple.mw, WeeklyNotes9.pdf, facitliste_studerende.pdf, EkstraOpgaver.pdf (opgave 707) (DTU Learn, 01025 E26); lærebogen afsnit 6.1, 6.2 og appendiks C. Sætningsnumre som i slides (i den ældre bog-PDF: lemma 6.2, sætning 6.3, korollar 6.4, sætning 6.12 og korollar 6.13).
-
 ## Læseplan
 
 - Forelæsning (onsdag 4/11): afsnit 6.1 og 6.2 i lærebogen.
@@ -128,13 +126,13 @@ Her er endda $\frac{n}{2n+1} \leq \frac12$ for alle $n$, så $|a_n| \leq \left(\
 
 | Opgave | Afsnit | Hvad den handler om | Facit / Vigtigste konklusion |
 |---|---|---|---|
-| 864, kun $f_1, f_2, f_3$ | 6.1, 6.2 | Skitsér $f_1 = \|\cos x\|$, $f_2 = x^3$, $f_3 = \sqrt{\|x\|}$ udvidet $2\pi$-periodisk | $f_1$ er kontinuert og stykkevis differentiabel; $f_2$ har spring i $\pm\pi$; $f_3$ mangler differentiabilitet i $0$ |
+| 864, kun $f_1, f_2, f_3$ | 6.1, 6.2 | Skitsér $f_1 = \lvert\cos x\rvert$, $f_2 = x^3$, $f_3 = \sqrt{\lvert x\rvert}$ udvidet $2\pi$-periodisk | $f_1$ er kontinuert og stykkevis differentiabel; $f_2$ har spring i $\pm\pi$; $f_3$ mangler differentiabilitet i $0$ |
 | 228 (undt. v) | 6.1, 6.2 | $f(x) = \cos x$ på $]0, \pi]$, $0$ på $]\pi, 2\pi]$: skitse, konvergens, sum i $x = 0$, $a_0$ | Sum i $x=0$ er $\frac12$, $a_0 = 0$ (facit) |
 | 222 (alt undtagen (c)) | 6.1, 6.2 | $f(t) = t$ på $[-\pi, \pi[$ udvidet periodisk; (c) laves i uge 10 | $a_n = 0$, $b_n = \frac{2(-1)^{n+1}}{n}$, rækkesum $\pi/4$ i $t=\pi/2$, sum er $0$ for $t = \pm\pi$ |
 | 861 | 6.1 | Egenskaber ved produkter af lige og ulige funktioner | Lige $\times$ lige er lige, ulige $\times$ ulige er lige, lige $\times$ ulige er ulige |
 | 860 | 6.1 | Entydig spaltning af enhver funktion i lige og ulige del | $f(x) = \frac{f(x)+f(-x)}{2} + \frac{f(x)-f(-x)}{2}$ |
 | 225 | 6.1, 6.2 | Fourierkoefficienter for den konstante funktion $f(x) = 1$; ugesedlen: en konsekvens af at en Fourierrække under passende antagelser er sin egen Fourierrække | $a_0 = 2$, $a_n = 0$ og $b_n = 0$ for $n \ge 1$; rækken er lig funktionen |
-| 209 | 6.1, 6.2, 5.4 | Afskåret cosinus: $f(t) = \cos t$ for $\|t\| < \pi/4$, ellers $0$ | Lige funktion ($b_n=0$), $a_0 = \frac{\sqrt{2}}{\pi}$, $a_1 = \frac{1}{4} + \frac{1}{2\pi}$; $f$ springer i $\pm\frac\pi4$, så konvergensen er ikke uniform og der er ingen konvergent majorantrække |
+| 209 | 6.1, 6.2, 5.4 | Afskåret cosinus: $f(t) = \cos t$ for $\lvert t\rvert < \pi/4$, ellers $0$ | Lige funktion ($b_n=0$), $a_0 = \frac{\sqrt{2}}{\pi}$, $a_1 = \frac{1}{4} + \frac{1}{2\pi}$; $f$ springer i $\pm\frac\pi4$, så konvergensen er ikke uniform og der er ingen konvergent majorantrække |
 | 813 | 4.5 | Bevis for Cauchys rodkriterium | Følger ved majorisering af kvotientrækken $\sum C^n$ |
 
 ### Detaljeret gennemgang af udvalgte opgaver
@@ -168,7 +166,7 @@ Her er endda $\frac{n}{2n+1} \leq \frac12$ for alle $n$, så $|a_n| \leq \left(\
   - Ulige $\times$ ulige: $(fg)(-x) = f(-x)g(-x) = (-f(x))(-g(x)) = f(x)g(x) = (fg)(x)$ (lige).
   - Lige $\times$ ulige: $(fg)(-x) = f(-x)g(-x) = f(x)(-g(x)) = -(fg)(x)$ (ulige).
 
-**Hjemmeopgavesæt 8** (senest 11/11 kl. 8): to sæt i Möbius. Sæt8MC-01025 kan kun besvares én gang. I Sæt8B-01025 kan man få en ny tilfældig opgave efter scoren; den seneste score tæller. Bedømt aflevering.
+**Hjemmeopgavesæt 8:** to Möbius-sæt (Sæt8MC-01025 og Sæt8B-01025), senest 11/11 kl. 8. Se [[Courses/Differential Equations and Infinite Series/Hjemmeopgaver|Hjemmeopgaver]].
 
 **MC:** svaret på 706 er 3. Ugens MC-opgave er 707 (EkstraOpgaver.pdf): konvergensradius for $\sum_{n=0}^\infty \cosh(n)\,x^n$. Facit (ugeseddel 10): 2, dvs. $\rho = e^{-1}$, fordi $\frac{\cosh(n+1)}{\cosh n} \to e$.
 
@@ -176,13 +174,13 @@ Her er endda $\frac{n}{2n+1} \leq \frac12$ for alle $n$, så $|a_n| \leq \left(\
 
 ## Tjek dig selv
 
-- [ ] Kan jeg formlerne for $a_n$ og $b_n$, og husker jeg $\frac12a_0$?
-- [ ] Kan jeg bruge lige/ulige til at halvere arbejdet?
-- [ ] Kan jeg sige præcis hvad Fourierrækken konvergerer mod i et springpunkt?
+- [ ] Hvad er formlerne for $a_n$ og $b_n$, og hvorfor står der $\frac12a_0$?
+- [ ] Hvordan halverer lige/ulige symmetri arbejdet?
+- [ ] Hvad konvergerer Fourierrækken mod i et springpunkt?
 - [ ] Hvornår kan $\sim$ erstattes af $=$?
-- [ ] Kan jeg bruge Fouriers sætning i et konkret punkt til at finde summen af en talrække?
-- [ ] Kan jeg omregne til en $T$-periodisk funktion med $\omega = 2\pi/T$?
-- [ ] Kan jeg skitsere en periodisk udvidelse korrekt, inkl. værdierne i springpunkterne?
+- [ ] Hvordan bruges Fouriers sætning i et konkret punkt til at finde summen af en talrække?
+- [ ] Hvordan omregnes til en $T$-periodisk funktion med $\omega = 2\pi/T$?
+- [ ] Hvordan skitseres en periodisk udvidelse korrekt, inkl. værdierne i springpunkterne?
 
 ## Links
 

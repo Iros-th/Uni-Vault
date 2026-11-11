@@ -11,8 +11,6 @@ tags:
 
 # Uge 5: Konvergenskriterier og kvotientrækker
 
-> **Kilde:** ugeseddel 5, SlidesUge5.pdf, WeeklyNotes5.pdf, facitliste_studerende.pdf, EkstraOpgaver.pdf (opgave 703, 963, 964) (DTU Learn, 01025 E26); lærebogen afsnit 4.5 og 5.1 med beviserne i appendiks (ugesedlens "A.8", A.7 i den ældre bog-PDF). Sætningsnumre som i slides.
-
 ## Læseplan
 
 - Forelæsning (onsdag 30/9): afsnit 4.5 og 5.1, samt beviserne for sætning 4.27 (absolut konvergens) og sætning 4.30 (kvotientkriteriet) i appendiks.
@@ -171,7 +169,7 @@ Da grænseværdien er strengt under 1, er rækken konvergent.
 - (b) $\sum \frac{1}{n+\sin n}$: Da $-1 \le \sin n \le 1$, er $\frac{1/(n+\sin n)}{1/n} = \frac{n}{n+\sin n} = \frac{1}{1 + \frac{\sin n}{n}} \to 1$. Da $\sum \frac{1}{n}$ divergerer, divergerer rækken ved ækvivalenskriteriet.
 - (c) $\sum \frac{1}{\sqrt n}$: Dette er en $p$-række med $p = 1/2 \le 1$, som divergerer.
 
-**Hjemmeopgavesæt 4:** Opgave A på ugesedlen afleveres fysisk 7/10 kl. 8, Möbius sæt 4 senest 6/10 kl. 20. Opgave A handler om kvotientkriteriet anvendt på $\sum a_n$, $\sum (n^2 + 7n + 3)a_n$ og $\sum P(n)a_n$ for et polynomium $P$, når $\frac{a_{n+1}}{a_n} \to C < 1$. Ugesedlens vink: der findes $M$ så $P(n) \neq 0$ for $n \geq M$, og summen deles ved $M$. Bedømt aflevering.
+**Hjemmeopgavesæt 4:** Opgave A på ugesedlen (kvotientkriteriet på $\sum P(n)a_n$), fysisk 7/10 kl. 8, og Möbius sæt 4 senest 6/10 kl. 20. Se [[Courses/Differential Equations and Infinite Series/Hjemmeopgaver|Hjemmeopgaver]].
 
 **MC:** svarene på 702 er 2, 3 og 5. Ugens MC-opgave er 703 (EkstraOpgaver.pdf): stabilitet og fuldstændig reel løsning for et $2\times 2$ system med komplekse egenværdier (afsnit 2.2 og 2.8). Facit (ugeseddel 6): 4 og 1.
 
@@ -179,12 +177,12 @@ Da grænseværdien er strengt under 1, er rækken konvergent.
 
 ## Tjek dig selv
 
-- [ ] Kan jeg vælge det rigtige kriterium (sammenligning, ækvivalens, kvotient, integral) ud fra hvordan leddene ser ud?
-- [ ] Ved jeg hvorfor kvotientkriteriet ikke kan afgøre $\sum\frac{1}{n^p}$?
-- [ ] Kan jeg bevise at absolut konvergens medfører konvergens (appendiksbeviset)?
-- [ ] Kan jeg finde summen af en kvotientrække der starter ved $n = N$?
-- [ ] Ved jeg præcis for hvilke $p$ rækken $\sum\frac1{n^p}$ konvergerer, og hvorfor?
-- [ ] Kan jeg finde de $x$ hvor en simpel række med variable led konvergerer?
+- [ ] Hvilket kriterium (sammenligning, ækvivalens, kvotient, integral) passer til hvilke led?
+- [ ] Hvorfor kan kvotientkriteriet ikke afgøre $\sum\frac{1}{n^p}$?
+- [ ] Hvordan bevises at absolut konvergens medfører konvergens?
+- [ ] Hvad er summen af en kvotientrække der starter ved $n = N$?
+- [ ] For hvilke $p$ konvergerer $\sum\frac1{n^p}$, og hvorfor?
+- [ ] For hvilke $x$ konvergerer en simpel række med variable led som $\sum (x+1)^n$?
 
 ## Links
 

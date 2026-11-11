@@ -11,8 +11,6 @@ tags:
 
 # Uge 11: Effekt, Fouriers sætning og miniprojekt 2
 
-> **Kilde:** ugeseddel 11, facitliste_studerende.pdf, EkstraOpgaver.pdf (opgave 709) (DTU Learn, 01025 E26); lærebogen afsnit 7.3, lemma 6.5 og appendiks om Fouriers sætning. Ingen slides til uge 11 på DTU Learn. Ugesedlen henviser til "proposition A.32" og "A.10, siderne 224 til 230"; i den ældre bog-PDF svarer det til appendiks A.9 og propositionerne A.25 til A.30 (opgave 872 nævner selv proposition A.28). Semesteroversigten på ugeseddel 1 lægger Parseval og Fourierrækkemetoden (6.4 og 7.2) i denne uge; ifølge ugeseddel 10 og 12 gennemgås de i uge 10 og 12.
-
 ## Læseplan
 
 - Forelæsning (onsdag 18/11): afsnit 7.3, opgave 863 (i) og (iv), og dele af beviset for Fouriers sætning.
@@ -54,14 +52,7 @@ Regel (R1) i lemma 6.5 (integralet over en hel periode afhænger ikke af hvor pe
 
 ## Miniprojekt 2
 
-Tæller 2 % af karakteren. Bedømt aflevering.
-
-- **Projektopgave 1:** læs beviset for propositionen i appendiks (ugesedlens A.32), løs opgave 872 og tillægsspørgsmål (iv) om at $\frac12(|a_n|^2 + |b_n|^2)$ ikke ændres ved forskydning.
-- **Projektopgave 2:** opgave 518 (i) og (ii) i bogen: en funktion med $a_n = 0$ og $b_n = \frac1{n^3}$, Fourierrækken på kompleks form og en afsnitssum med fejl $\leq 0.1$.
-- **Projektopgave 3:** vis at en ulige $2\pi$-periodisk funktion, givet på $[0,\pi]$ ved en kontinuert differentiabel $g$ med $g(0) = g(\pi) = 0$, er kontinuert og kontinuert differentiabel.
-- **Projektopgave 4:** systemet $\dot{\mathbf x} = \begin{pmatrix}1&-1\\3&-2\end{pmatrix}\mathbf x + \begin{pmatrix}1\\1\end{pmatrix}u$, $y = x_1 + 2x_2$: asymptotisk stabilitet, overføringsfunktion, løsning som Fourierrække (Fourierrækkemetoden, sætning 7.8, se [[Courses/Differential Equations and Infinite Series/Uger/Uge 12|uge 12]]), fejlvurdering og valg af $N$ så fejlen er højst $0.001$, og plots.
-
-Ugesedlens CAS-råd: plot realdelen af afsnitssummen på kompleks form, efter at have tjekket at imaginærdelen er på størrelse med maskinnøjagtigheden.
+Erstatter øvelserne; fysisk aflevering senest 25/11 kl. 8, 2 % af karakteren. Fire projektopgaver: beviset for propositionen i appendiks (ugesedlens A.32) med opgave 872 og forskydning af koordinatsystemet, opgave 518 (Fourierrække med $b_n = \frac{1}{n^3}$), en ulige periodisk udvidelse der skal være kontinuert differentiabel, og Fourierrækkemetoden på et $2\times 2$ system med fejlvurdering. Se [[Courses/Differential Equations and Infinite Series/Hjemmeopgaver|Hjemmeopgaver]].
 
 ## Opgaver
 

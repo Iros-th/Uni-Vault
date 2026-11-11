@@ -10,13 +10,14 @@ tags:
 
 # Introduction to applied mathematics
 
-Landing page for this course. Everything I've got so far, lectures, proof notes and study tools, is linked below.
+Kursus 02525 Introduction to Applied Mathematics (Introduktion til anvendt matematik), 10 ECTS. Lektioner, bevisnoter og studieværktøjer er linket nedenfor.
 
 ## Overview
 
-- Course code:
-- Instructor:
-- Term / semester:
+- Kursusnummer: 02525
+- Kursusansvarlig: David Brander
+- Semester: efterår 2026 (mandage 13 til 17) og januar 2027
+- Evaluering: bestået/ikke bestået; projekter 30 % og skriftlig eksamen 70 % (22/1 2027)
 
 ## Ugenoter
 

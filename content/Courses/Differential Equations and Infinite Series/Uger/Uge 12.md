@@ -1,6 +1,6 @@
 ---
 publish: true
-title: "01025 uge 12: Variable koefficienter, potensrækkemetoden og Fourierrækkemetoden"
+title: "01025 uge 12: Variable koefficienter og rækkemetoder"
 course: Differential Equations and Infinite Series
 type: week
 week: 12
@@ -9,9 +9,7 @@ tags:
   - ugenote
 ---
 
-# Uge 12: Variable koefficienter, potensrækkemetoden og Fourierrækkemetoden
-
-> **Kilde:** ugeseddel 12, facitliste_studerende.pdf, eksamenssættet 01025Mat2Eksamen-dec-17.pdf (zip-filen) (DTU Learn, 01025 E26); lærebogen afsnit 1.6, 7.1 og 7.2. Ingen slides til uge 12 på DTU Learn; sætningsnumrene 1.31, 7.6 og 7.8 er fra den ældre bog-PDF og kan afvige i 4. udgave. Semesteroversigten kalder ugen "2. ordens diff.lign. potensrækkemetoden" og nævner projekt 2; ifølge ugeseddel 11 afleveres miniprojekt 2 i denne uge (25/11).
+# Uge 12: Variable koefficienter og rækkemetoder
 
 ## Læseplan
 
@@ -156,7 +154,7 @@ hvor $H(s) = -\mathbf c^\top(A - sI)^{-1}\mathbf b = \mathbf c^\top(sI - A)^{-1}
 4. Konvergensradius:
    Fra rekursionen ses at $\frac{a_{n+3}}{a_n} = \frac{1}{(n+3)(n+2)} \to 0$ for $n \to \infty$. Kvotientkriteriet viser, at potensrækken konvergerer for alle $x \in \mathbb{R}$, så konvergensradius er $\rho = \infty$.
 
-**Hjemmeopgavesæt 10:** to Möbius-opgaver, ingen fysisk aflevering, senest onsdag 2/12 kl. 8. Først Sæt10-inhomogen-01025 (op til 10 forsøg), derefter Sæt10-01025 (ét forsøg). Bedømt aflevering.
+**Hjemmeopgavesæt 10:** to Möbius-opgaver (Sæt10-inhomogen-01025 og Sæt10-01025), senest onsdag 2/12 kl. 8. Se [[Courses/Differential Equations and Infinite Series/Hjemmeopgaver|Hjemmeopgaver]].
 
 **MC:** svaret på 709 er 3 i både (a) og (b).
 

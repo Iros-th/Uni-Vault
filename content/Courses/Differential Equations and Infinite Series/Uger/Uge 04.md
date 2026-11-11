@@ -1,6 +1,6 @@
 ---
 publish: true
-title: "01025 uge 4: Stabilitet af inhomogene systemer og uendelige rækker"
+title: "01025 uge 4: Inhomogen stabilitet og uendelige rækker"
 course: Differential Equations and Infinite Series
 type: week
 week: 4
@@ -9,9 +9,7 @@ tags:
   - ugenote
 ---
 
-# Uge 4: Stabilitet af inhomogene systemer og uendelige rækker
-
-> **Kilde:** ugeseddel 4, SlidesUge4.pdf, EkstraOpgaver.pdf (opgave 702) (DTU Learn, 01025 E26); lærebogen afsnit 2.9 og 4.1 til 4.4. WeeklyNotes3.pdf, som ligger under uge 4 på Learn, hører til opgave 919 i [[Courses/Differential Equations and Infinite Series/Uger/Uge 03|uge 3]]. Sætningsnumre som i slides.
+# Uge 4: Inhomogen stabilitet og uendelige rækker
 
 ## Læseplan
 
@@ -34,7 +32,7 @@ Definition 4.1: $\int_a^\infty f(x)\,dx$ er defineret som $\lim_{t\to\infty}\int
 **Eksempel.** $\int_1^\infty \frac{1}{x^2}dx = \lim_{t\to\infty}\left[-\frac1x\right]_1^t = \lim_{t\to\infty}\left(1 - \frac1t\right) = 1$. Derimod er $\int_1^\infty \frac1x dx = \lim \ln t = \infty$ divergent. Generelt er $\int_1^\infty x^{-a}dx$ konvergent netop når $a > 1$.
 
 ### Talfølger og konvergens (afsnit 4.2)
-$x_n \to x$ betyder: for ethvert $\epsilon > 0$ findes $N$ så $|x_n - x| < \epsilon$ for alle $n > N$. I 01025 skal du kunne bruge definitionen med kvantorer, ikke kun regneregler. Slides skriver den $\forall\epsilon > 0\ \exists N \in \mathbb N: n \geq N \Rightarrow |x_n - s| \leq \epsilon$. Lemma 4.10: er $x_n \to x$ og $y_n \to y$, så går $\alpha x_n + \beta y_n \to \alpha x + \beta y$; tilsvarende for produkt, kvotient (ikke division med nul) og kontinuerte funktioner.
+$x_n \to x$ betyder: for ethvert $\epsilon > 0$ findes $N$ så $|x_n - x| < \epsilon$ for alle $n > N$. I 01025 bruges definitionen med kvantorer, ikke kun regneregler. Slides skriver den $\forall\epsilon > 0\ \exists N \in \mathbb N: n \geq N \Rightarrow |x_n - s| \leq \epsilon$. Lemma 4.10: er $x_n \to x$ og $y_n \to y$, så går $\alpha x_n + \beta y_n \to \alpha x + \beta y$; tilsvarende for produkt, kvotient (ikke division med nul) og kontinuerte funktioner.
 
 **Eksempel.** $x_n = \frac{2n+1}{n+3} \to 2$: $|x_n - 2| = \frac{|2n + 1 - 2n - 6|}{n+3} = \frac{5}{n+3}$, som er mindre end $\epsilon$ når $n > \frac5\epsilon - 3$. Vælg $N$ som et heltal større end $\frac5\epsilon$.
 
@@ -62,13 +60,7 @@ Hvis $a_n \not\to 0$, er rækken divergent. Det omvendte gælder ikke: $\sum \fr
 
 ## Miniprojekt 1 (erstatter øvelserne)
 
-Afleveres onsdag 30/9 kl. 8, fysisk, og opgave 2 i Möbius. Det tæller 2 % af karakteren. Bedømmelsen vægter matematisk korrekthed højest og læsbarhed lidt.
-
-- **Opgave 1 (lineær uafhængighed, afsnit 1.2 og 4.2):** vis at $e^{\lambda_1 t}, te^{\lambda_1 t}, t^2e^{\lambda_1 t}, e^{\lambda_2 t}, te^{\lambda_2 t}, t^2e^{\lambda_2 t}$ er lineært uafhængige ved at dividere med den hurtigst voksende funktion og lade $t \to \infty$. Bagefter med komplekse rødder, hvor man lader $t \to \infty$ gennem en talfølge $t_n = \frac{2\pi n}{\omega}$ (delspørgsmål (v) til (vii)).
-- **Opgave 2 (overføringsfunktion, afsnit 1.4):** stillet i Möbius; design af en diskantknap i et elektrisk kredsløb.
-- **Opgave 3 (komplekse koefficienter):** ja/nej-spørgsmål med begrundelse om ligninger hvor $a_0, \dots, a_n$ er komplekse. Inspiration: $y' + iy = 0$.
-
-Bedømt aflevering.
+Fysisk aflevering onsdag 30/9 kl. 8, opgave 2 i Möbius; 2 % af karakteren. Tre opgaver: lineær uafhængighed af funktionerne $t^ke^{\lambda t}$ (afsnit 1.2 og 4.2), overføringsfunktion for et elektrisk kredsløb (afsnit 1.4) og ligninger med komplekse koefficienter. Se [[Courses/Differential Equations and Infinite Series/Hjemmeopgaver|Hjemmeopgaver]].
 
 **MC:** svarene på 701 er 3 og 4. Ugens MC-opgave er 702 (EkstraOpgaver.pdf): et $2\times 2$ system med $y = x_2$, hvor man skal vælge overføringsfunktion med definitionsmængde, amplitudekarakteristik og fasekarakteristik (afsnit 2.6 og 2.7).
 
@@ -77,11 +69,11 @@ Bedømt aflevering.
 ## Tjek dig selv
 
 - [ ] Hvad er forskellen på stabilitet af det homogene og det inhomogene system, og hvad betyder BIBO-stabil?
-- [ ] Kan jeg afgøre om $\int_1^\infty x^{-a}dx$ konvergerer, og regne værdien ud?
-- [ ] Kan jeg bevise $x_n \to x$ direkte fra definitionen med $\epsilon$ og $N$?
-- [ ] Kan jeg forklare hvorfor $f(t_n) \to a$ for enhver følge $t_n \to \infty$ når $f(t) \to a$, men ikke omvendt?
-- [ ] Ved jeg hvad det betyder at en række er konvergent (afsnitssummer)?
-- [ ] Kan jeg bruge $n$'te ledskriteriet, og ved jeg at det kun kan vise divergens?
+- [ ] For hvilke $a$ konvergerer $\int_1^\infty x^{-a}dx$, og hvad er værdien?
+- [ ] Hvordan bevises $x_n \to x$ direkte fra definitionen med $\epsilon$ og $N$?
+- [ ] Hvorfor gælder $f(t_n) \to a$ for enhver følge $t_n \to \infty$ når $f(t) \to a$, men ikke omvendt?
+- [ ] Hvad betyder det at en række er konvergent (afsnitssummer)?
+- [ ] Hvad kan $n$'te ledskriteriet vise, og hvad kan det ikke?
 
 ## Links
 
