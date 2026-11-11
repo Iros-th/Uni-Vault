@@ -11,7 +11,7 @@ tags:
 
 # Uge 12: Grafer og Cantor-Schröder-Bernstein-sætningen
 
-> Kilde: ugeplanen på kursussiden https://www2.imm.dtu.dk/courses/01017/2026/ (uge W12, 26. november). Begrebsforklaringerne er skrevet ud fra emnerne i planen; der er ingen slides. Afsnitstitler er tjekket mod en lokal tekst af Rosen, 8. udgave (kapitel 10). Det grafteoretiske bevis for Cantor-Schröder-Bernstein, som planen nævner, ligger ikke som link på kursussiden, så det er ikke læst. Planen oplyser, at sætningen hedder Schröder-Bernstein i opgave 41 i afsnit 2.5.
+> Kilde: ugeplanen på kursussiden https://www2.imm.dtu.dk/courses/01017/2026/ (uge W12, 26. november), Rosen kapitel 10 (10.1 til 10.5) i Rosen, "Discrete Mathematics and Its Applications". Slides er ikke anvendt. Det grafteoretiske bevis for Cantor-Schröder-Bernstein, som planen nævner, er ikke tilgængeligt som link på kursussiden. Planen oplyser, at sætningen hedder Schröder-Bernstein i opgave 41 i afsnit 2.5.
 
 ## Emner
 
@@ -39,29 +39,10 @@ tags:
 
 **Hamiltonkreds.** En kreds, der besøger hver knude præcis én gang. Der er ingen simpel nødvendig og tilstrækkelig betingelse. Eksempel: $K_n$ med $n \ge 3$ har en.
 
-**Cantor-Schröder-Bernstein.** Hvis der er en injektion $A \to B$ og en injektion $B \to A$, så er der en bijektion mellem $A$ og $B$, altså $|A| = |B|$. Beviset, som kurset nævner, er grafteoretisk. Det er ikke læst her.
-### Grafmodel: Sammenhæng, Euler-veje og håndtrykssætningen
-
-For enhver uorienteret graf $G = (V, E)$ gælder håndtrykssætningen:
-
-$$\sum_{v \in V} \deg(v) = 2 |E|.$$
-
-```text
-       (A) ─────── (B)
-        │  \     /  │        Knudegrader:
-        │   \   /   │        deg(A) = 3, deg(B) = 3
-        │    (C)    │        deg(C) = 4, deg(D) = 2
-        │   /   \   │        Sum af grader = 3 + 3 + 4 + 2 = 12
-       (D) ─────── (E)       Antal kanter |E| = 6  (12 = 2 · 6)
-```
-
-**Euler-sti vs. Euler-kreds (Königsberg-kriteriet):**
-- En sammenhængende graf har en lukket Euler-kreds netop når **alle** knuder har lige grad.
-- Den har en åben Euler-sti netop når **præcis to** knuder har ulige grad (stien starter i den ene og slutter i den anden).
-
+**Cantor-Schröder-Bernstein.** Hvis der er en injektion $A \to B$ og en injektion $B \to A$, så er der en bijektion mellem $A$ og $B$, altså $|A| = |B|$. Kurset nævner et grafteoretisk bevis for sætningen.
 ## Opgaver
 
-Fra kursussiden, Rosen, "Discrete Mathematics and Its Applications" (2025-udgaven). Fed skrift betyder, at kurset vil have dem lavet først. Hvor 8. udgave har andre numre, står de i parentes.
+Fra kursussiden, Rosen (2025-udgaven). Fed skrift betyder, at kurset anbefaler at lave dem først. Hvor 8. udgave har andre numre, står de i parentes.
 
 - Afsnit 10.1: **11**
 - Afsnit 10.2: **5**, **47** (**43** i 8. udgave), 59 (55 i 8. udgave)

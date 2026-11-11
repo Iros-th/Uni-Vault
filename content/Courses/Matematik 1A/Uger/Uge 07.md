@@ -11,7 +11,7 @@ tags:
 
 # Uge 7: Matrixalgebra og determinanter
 
-> Kilde: kursussiden mat1a.compute.dtu.dk (linket som Course Homepage på DTU Learn for 01001), siderne Lektionsoversigt, Ugeprogram semesteruge 7 og Opgaver Store Dag/Lille Dag uge 7. Python-delen er fra notebooken på DTU Learn. Bogen er kursets lærebog (udgave 2026).
+> Kilde: kursussiden mat1a.compute.dtu.dk, siderne Lektionsoversigt, Ugeprogram semesteruge 7 og Opgaver Store Dag/Lille Dag uge 7. Python-delen er fra notebooken på DTU Learn. Bogen er kursets lærebog (udgave 2026).
 
 ## Emner
 
@@ -49,26 +49,6 @@ Determinanten defineres ved udvikling efter en række eller søjle (Definition 8
 $\mathbf{A}^T$ fås ved at bytte rækker og søjler. En matrix med $\mathbf{A}^T = \mathbf{A}$ er symmetrisk.
 
 *Eksempel.* $\begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix}^T = \begin{pmatrix} 1 & 3 \\ 2 & 4 \end{pmatrix}$.
-### Geometrisk model: Determinanten som areal- og rumfangsskalering
-
-For en $2 	imes 2$ matrix $A = [\mathbf{v}_1 \;\; \mathbf{v}_2]$ er $|\det(A)|$ arealet af det parallelogram, der udspændes af søjlevektorerne:
-
-```text
-                 y ^
-                   │             (v1 + v2)
-                   │             ┌───────┐
-                   │   v2       /       /
-                   │    ┌──────┘       /
-                   │    │  Areal =    /
-                   │    │ |det(A)|   /
-                   │    └───────────┘ v1
-                   └────────────────────> x
-```
-
-- Hvis $\det(A) > 0$: Orienteringen bevares (højrehåndsregel).
-- Hvis $\det(A) < 0$: Orienteringen vendes (spejling).
-- Hvis $\det(A) = 0$: Vektorerne er lineært afhængige, parallelogrammet kollapser til en linje (areal = 0), og matricen er ikke invertibel.
-
 ## Opgaver
 
 Opgaverne står på kursussiden med de numre, der er gengivet her. Nogle nævner bogen, fx definition eller sætning, i deres hints (se begreberne ovenfor).

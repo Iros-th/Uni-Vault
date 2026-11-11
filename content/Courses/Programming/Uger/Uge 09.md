@@ -11,7 +11,7 @@ tags:
 
 # Uge 9: Filer
 
-> Kilde: kursussiden programmering.compute.dtu.dk (linket som Material på DTU Learn for 02002), siderne Week 9: Preparation, In-Class og Closure. DTU Learn selv har intet indhold at læse for dette kursus. Pensum i bog: TP kapitel 13, *Files and Databases*, afsnittet *Filenames and paths*, og afsnit 7.2 om at læse filer. At skrive filer er ikke dækket i bogen, men på kursussiden.
+> Kilde: kursussiden programmering.compute.dtu.dk, siderne Week 9: Preparation, In-Class og Closure og Advanced. Pensum i bog: TP kapitel 13, *Files and Databases*, afsnittet *Filenames and paths*, og afsnit 7.2 om at læse filer. At skrive filer er ikke dækket i bogen, men på kursussiden.
 
 ## Emner
 
@@ -25,7 +25,7 @@ tags:
 
 ### Stier og os
 
-Python læser filer relativt til arbejdsmappen (CWD). `os.getcwd()`, `os.listdir()`, `os.path.isfile()` og `os.path.join()` hjælper med at finde filer.
+Python læser filer relativt til arbejdsmappen (CWD). `os.getcwd()`, `os.listdir()`, `os.path.isfile()`, `os.path.isdir()` og `os.path.join()` hjælper med at finde filer og mapper.
 
 ```python
 import os
@@ -65,20 +65,6 @@ with open('maalinger.csv') as f:
         dele = linje.strip().split(',')
         print(dele)
 ```
-### Ressourcemodel: Sikker filhåndtering med Context Manager
-
-Når filer åbnes, skal operativsystemets ressourcelås (File Handle) altid frigives korrekt:
-
-```text
-  with open("data.txt", "r") as f:
-      ┌───────────────────────────────────┐
-      │ Indgang: Fil åbnes og låses       │
-      │ Behandling: Data læses            │
-      │ Undtagelse/Fejl? Håndteres        │
-      └───────────────────────────────────┘
-  Udgang: f.close() kaldes GARANTERET automatisk (selv hvis programmet crasher)
-```
-
 ## Opgaver
 
 Ugens struktur: Preparation (Copy-and-Run og selvquiz) før timen, derefter In-Class (demo, Coding Practice, Problem Solving), og til sidst Closure (syllabus og checkpoints). Hver torsdag er der quiz og live-demo 13:00 til 14:00, derefter selvstændigt arbejde med Coding Practice.
@@ -109,6 +95,17 @@ Ugens struktur: Preparation (Copy-and-Run og selvquiz) før timen, derefter In-C
 
 - Checkpoint 9.1: Nitrate Levels (klassificering af nitratværdier fra fil)
 - Checkpoint 9.2: Count Differences
+
+## Advanced (ikke pensum)
+
+Kursussidens Advanced-side for uge 9. Ingen obligatoriske opgaver eller eksamensspørgsmål bygger på den.
+
+- Læse en fil linje for linje med readline().
+- Oprette mapper med os.mkdir() og os.makedirs().
+- Tilføje til en fil (append-tilstand).
+- shutil, glob og pathlib til filer og stier.
+- Pickle-filer (binære, gemmer vilkårlige objekter).
+- JSON- og CSV-filer.
 
 ## Links
 

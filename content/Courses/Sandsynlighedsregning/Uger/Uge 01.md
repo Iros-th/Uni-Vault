@@ -11,7 +11,7 @@ tags:
 
 # Uge 1: Grundbegreber, betinget sandsynlighed og uafhængighed
 
-> Kilde: kursussiden http://www2.imm.dtu.dk/courses/02405/ (forelæsning 4. september, afsnit 1.1, (1.2), 1.3, 1.4, 1.5 og 1.6), ugebrevet til forelæsning 1 (uge1.laesevejledning.html) og velkomstteksten (velkomsttekst.pdf, dateret 2024). Lærebog: Jim Pitman, Probability (Springer, 1993). Velkomstteksten skønner sværhedsgraden til "middel", ca. 61 sider. Slides, videoer og multiple-choice-løsninger ligger som links på kursussiden og er ikke læst her.
+> Kilde: kursussiden http://www2.imm.dtu.dk/courses/02405/ (forelæsning 4. september, afsnit 1.1, (1.2), 1.3, 1.4, 1.5 og 1.6), ugebrevet til forelæsning 1 (uge1.laesevejledning.html) og velkomstteksten (velkomsttekst.pdf, dateret 2024). Lærebog: Jim Pitman, Probability (Springer, 1993). Velkomstteksten skønner sværhedsgraden til "middel", ca. 61 sider. Slides, videoer og multiple-choice-løsninger er ikke anvendt.
 
 ## Emner
 
@@ -39,32 +39,13 @@ tags:
 **Uafhængighed.** $A$ og $B$ er uafhængige, hvis $P(A \cap B) = P(A)\,P(B)$, eller ækvivalent $P(B \mid A) = P(B)$. For flere hændelser kræves, at produktreglen gælder for alle delmængder af hændelserne (afsnit 1.6), ikke kun for par.
 
 **Arbejdsgang for tekstopgaver.** Ugebrevet bruger opgave 1.4.10 til at træne en fast rækkefølge: (1) oversæt til symboler, (2) oversæt oplysninger til formler, (3) definér det, der spørges om, (4) knyt input til output, (5) udled formlen, (6) sæt tal ind.
-### Beslutningsmodel: Bayesiansk sandsynlighedstræ og screening
-
-Bayes' formel $P(A \mid B) = rac{P(B \mid A) P(A)}{P(B)}$ kan altid visualiseres som en to-trins forgrening (Prior -> Likelihood -> Fælles sandsynlighed):
-
-```text
-                  Start
-                 /     \
-       P(Syg) = 0,01   P(Rask) = 0,99  (Prior)
-             /             \
-           [Syg]          [Rask]
-           /   \          /    \
-        0,95   0,05     0,02   0,98    (Sensitivitet / Specificitet)
-        Pos     Neg      Pos    Neg
-         │                │
-         v                v
-      0,0095            0,0198         (Fælles sandsynlighed for Positiv test)
-
-  P(Syg | Positiv) = 0,0095 / (0,0095 + 0,0198) = 0,0095 / 0,0293 ≈ 32,4 %
-```
-Selv med en 95 % pålidelig test er over 67 % af positive tests falske alarmer, hvis sygdommen er sjælden i befolkningen (base rate fallacy).
+**Kursorisk pensum i kapitel 1.** Emnerne "Discussion" (fra nederst side 63) og "Generalization" (side 64 til midt side 66) er pensum, men kan læses kursorisk.
 
 ## Opgaver
 
 Alle numre er fra Pitman, Probability (kapitel.afsnit.opgave). Kursussiden lister ingen øvelsesopgaver under 4. september; opgaverne herunder regnes ved øvelsen fredag 11. september.
 
-Øvelsesopgaver (ugebrevets liste): 1.3.1, 1.3.2, 1.3.8, 1.4.1, 1.4.11, 1.5.1, 1.6.1, (1.3.12\*). Opgaver med \* er supplerende og lidt mere udfordrende. Kursussidens liste afviger lidt: den har 1.3.2, 1.3.8, 1.4.1, 1.4.11, 1.5.1, 1.6.1 og 1.3.11 (og 1.3.1 kun under "ældre løsninger"). Spørg en instruktor, hvis det er uklart.
+Øvelsesopgaver (ugebrevets liste): 1.3.1, 1.3.2, 1.3.8, 1.4.1, 1.4.11, 1.5.1, 1.6.1, (1.3.12\*). Opgaver med \* er supplerende og lidt mere udfordrende. Kursussidens liste afviger lidt: den har 1.3.2, 1.3.8, 1.4.1, 1.4.11, 1.5.1, 1.6.1 og 1.3.11 (og 1.3.1 kun under "ældre løsninger").
 
 Opgaver til selvstudium: 1.1.7, 1.2.4, 1.3.4, 1.4.2, 1.5.5, 1.6.6.
 

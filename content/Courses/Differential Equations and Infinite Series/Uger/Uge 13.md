@@ -11,13 +11,13 @@ tags:
 
 # Uge 13: Ulineære differentialligninger og repetition
 
-> **Kilde:** Ugeseddel 13 og semesterplanen (DTU Learn, 01025 E26), lærebogen Ole Christensen, *Differentialligninger og uendelige rækker* (4. udg., afsnit 3.1, 3.2, 3.3 samt bilag F), facitliste_studerende.pdf og EkstraOpgaver.pdf (opgave 966), samt eksamenssættet fra december 2025 (01025Mat2MatTekEksamen-E25.pdf). Sætningsnumre følger kursets 4. udgave.
+> **Kilde:** ugeseddel 13, 01025Mat2MatTekEksamen-E25.pdf og 01025Mat2MatTekEksamen-E25-Løsning.pdf, facitliste_studerende.pdf, EkstraOpgaver.pdf (opgave 966), eksamenssættene i zip-filen (DTU Learn, 01025 E26); lærebogen afsnit 3.1 til 3.3. Ingen slides til uge 13 på DTU Learn; sætningsnumrene i kapitel 3 er fra den ældre bog-PDF.
 
 ## Læseplan
 
 - Forelæsning (onsdag 2/12): afsnit 3.1, 3.2 og 3.3 i lærebogen.
-- Formelt pensum (Pensumliste 2026): afsnit 3.1 og 3.3. Afsnit 3.2 (1-dimensionale autonome systemer) gennemgås for forståelsens skyld og giver hurtig intuition om faseportrætter.
-- Eksamen: søndag 6. december, 3 timer skriftlig prøve. Alle trykte og skriftlige hjælpemidler er tilladt, ingen computer. Egenværdier og egenvektorer oplyses ved større matricer.
+- Pensum (Pensumliste 2026): afsnit 3.1 og 3.3. Afsnit 3.2 gennemgås, men er ikke pensum.
+- Eksamen: søndag 6. december (ugeseddel 1), 3 timer, alle skriftlige hjælpemidler, ingen elektroniske hjælpemidler. Ifølge SlidesUge1 vil egenværdier, egenvektorer, stamfunktioner og rødder nogle gange være oplyst.
 
 ## Begreber
 
@@ -27,7 +27,9 @@ Et system af koblede 1. ordens differentialligninger kaldes **autonomt**, hvis h
 $$\dot{\mathbf x} = \mathbf f(\mathbf x) \iff \begin{pmatrix} \dot x_1 \\ \dot x_2 \end{pmatrix} = \begin{pmatrix} f_1(x_1, x_2) \\ f_2(x_1, x_2) \end{pmatrix}.$$
 
 Systemet kaldes **ulineært**, hvis mindst én af funktionerne $f_1, f_2$ indeholder ulineære led (som fx $x_1^2, x_1 x_2, \sin x_1, e^{x_2}$).
-Sætning 3.2 (Picard-Lindelöf for systemer): hvis $\mathbf f$ har kontinuerte partielle afledede på en åben mængde $\Omega \subseteq \mathbb{R}^n$, findes gennem ethvert startpunkt $\mathbf x(0) = \mathbf x_0 \in \Omega$ en entydig maksimal løsning $\mathbf x(t)$. Løsningskurver i faserummet kan derfor aldrig krydse hinanden.
+Sætning 3.2 (eksistens og entydighed): har $\mathbf f$ kontinuerte partielle afledede, findes præcis én løsning gennem hvert startpunkt. For et autonomt system kan to forskellige løsningskurver derfor ikke krydse hinanden i faseplanet.
+
+Stabilitet af et stationært punkt defineres generelt i definition 3.6; for lineære systemer med konstante koefficienter er den ækvivalent med definition 2.28 (slides uge 3).
 
 ### Stationære punkter / Ligevægtspunkter
 Et punkt $\mathbf x^* \in \mathbb{R}^n$ kaldes et **stationært punkt** (eller ligevægtspunkt), hvis:
@@ -36,7 +38,7 @@ $$\mathbf f(\mathbf x^*) = \mathbf 0 \iff f_1(\mathbf x^*) = 0 \quad \text{og} \
 
 Hvis systemet starter i et stationært punkt ($\mathbf x(0) = \mathbf x^*$), er løsningen konstant for alle tider: $\mathbf x(t) = \mathbf x^*$.
 
-### Linearisering og stabilitet (sætning 3.7 / 3.11)
+### Linearisering og stabilitet (sætning 3.7)
 I en lille omegn af et stationært punkt $\mathbf x^*$ kan $\mathbf f(\mathbf x)$ approksimeres ved sit 1. ordens Taylor-polynomium:
 
 $$\mathbf f(\mathbf x) \approx \mathbf f(\mathbf x^*) + D\mathbf f(\mathbf x^*)(\mathbf x - \mathbf x^*) = D\mathbf f(\mathbf x^*)(\mathbf x - \mathbf x^*),$$
@@ -48,7 +50,7 @@ $$D\mathbf f(\mathbf x) = \begin{pmatrix} \frac{\partial f_1}{\partial x_1} & \f
 Sætning 3.7 etablerer forbindelsen mellem det lineariserede system $\dot{\mathbf z} = D\mathbf f(\mathbf x^*)\mathbf z$ og det sande ulineære system:
 1. **Asymptotisk stabilitet:** Hvis alle egenværdier for Jacobimatricen $D\mathbf f(\mathbf x^*)$ har strengt negativ realdel ($\operatorname{Re}(\lambda_i) < 0$ for alle $i$), så er det stationære punkt $\mathbf x^*$ **asymptotisk stabilt** for det ulineære system. Løsninger der starter tilstrækkeligt tæt på $\mathbf x^*$, konvergerer mod $\mathbf x^*$ for $t \to \infty$.
 2. **Ustabilitet:** Hvis mindst én egenværdi for $D\mathbf f(\mathbf x^*)$ har strengt positiv realdel ($\operatorname{Re}(\lambda_k) > 0$), så er det stationære punkt $\mathbf x^*$ **ustabilt**.
-3. **Uafgørligt grænsetilfælde:** Hvis den maksimale realdel af egenværdierne er præcis 0 (fx rent imaginære egenværdier $\lambda = \pm i\omega$, hvilket svarer til et lineært center), kan lineariseringen **ikke** afgøre stabiliteten. Det ulineære system kan i virkeligheden være stabilt, ustabilt eller et center, afhængigt af højere ordens led.
+3. **Uafgørligt grænsetilfælde:** Hvis den maksimale realdel af egenværdierne er præcis 0 (fx rent imaginære egenværdier $\lambda = \pm i\omega$, hvilket svarer til et lineært center), kan lineariseringen **ikke** afgøre stabiliteten. Det ulineære system kan være stabilt eller ustabilt, afhængigt af højere ordens led.
 
 **Eksempel (dæmpet matematisk pendul).**
 Bevægelsen er beskrevet ved $\dot x_1 = x_2$ og $\dot x_2 = -\sin x_1 - x_2$.
@@ -64,86 +66,53 @@ Bevægelsen er beskrevet ved $\dot x_1 = x_2$ og $\dot x_2 = -\sin x_1 - x_2$.
    Karakterligningen er $\lambda^2 + \lambda - 1 = 0$, med rødder $\lambda = \frac{-1 \pm \sqrt{5}}{2}$.
    Den ene rod er $\lambda_1 = \frac{\sqrt{5}-1}{2} \approx 0.618 > 0$. Da der findes en positiv egenværdi, er punktet et saddelpunkt (ustabilt).
 
-### 2-dimensionale faseportrætter og nullkliner (afsnit 3.3)
+### 1-dimensionale autonome systemer (afsnit 3.2, ikke pensum)
+$\dot x = f(x)$. Fortegnet af $f$ mellem de stationære punkter viser hvilken vej løsningerne bevæger sig. Et stationært punkt med $f'(x_s) < 0$ er asymptotisk stabilt, $f'(x_s) > 0$ ustabilt.
+
+**Eksempel.** $\dot x = x(1 - x)$ har stationære punkter $0$ og $1$. $f'(x) = 1 - 2x$, så $f'(0) = 1 > 0$ (ustabilt) og $f'(1) = -1 < 0$ (asymptotisk stabilt). Alle løsninger der starter med $x(0) > 0$ går mod $1$.
+
+### 2-dimensionale faseportrætter og nulkliner (afsnit 3.3)
+Omkring et stationært punkt ligner faseportrættet det lineariserede systems: egenværdiernes type (reelle med samme fortegn, modsat fortegn, komplekse) afgør om det er en knude, et saddelpunkt eller en spiral. Til at danne overblik tegnes:
 For at danne et overblik over dynamikken i faseplanet $(x_1, x_2)$ tegnes:
-1. **$x_1$-nullklinen:** kurven hvor $\dot x_1 = f_1(x_1, x_2) = 0$. På denne kurve er hastighedsvektoren rent vertikal.
-2. **$x_2$-nullklinen:** kurven hvor $\dot x_2 = f_2(x_1, x_2) = 0$. På denne kurve er hastighedsvektoren rent horisontal.
-3. Skæringspunkterne mellem de to nullkliner er præcis systemets stationære punkter.
-
-## Samlet repetitionsguide til eksamen
-
-Kurset 01025 dækker fem overordnede matematiske søjler, som altid udgør rygraden i eksamensopgaverne:
-
-```
-+-----------------------------------------------------------------------------------+
-|                           01025 EKSAMENSPENSUM                                   |
-+-----------------------------------------------------------------------------------+
-|  1. HØJERE ORDENS LINEÆRE DIFFERENTIALLIGNINGER                                  |
-|     Karakterligning P(lambda)=0, fundamentalløsninger, partikulære løsninger    |
-|     (gættemetoden), overføringsfunktion H(s), stabilitet.                         |
-+-----------------------------------------------------------------------------------+
-|  2. LINEÆRE SYSTEMER OG MATRIXEKSPONENTIALFUNKTION                               |
-|     x' = Ax + Bu, e^{At} via diagonalisering e^{At} = V e^{Dt} V^{-1},          |
-|     egenvektorer og egenværdier. Stabilitet: Re(lambda) < 0 overalt.             |
-+-----------------------------------------------------------------------------------+
-|  3. ULINEÆRE AUTONOME SYSTEMER                                                    |
-|     Stationære punkter f(x*) = 0. Jacobimatrix Df(x*). Linearisering:            |
-|     Re(lambda) < 0 -> asymptotisk stabil; Re(lambda) > 0 -> ustabil.             |
-+-----------------------------------------------------------------------------------+
-|  4. TALFØLGER, UENDELIGE RÆKKER OG POTENSRÆKKER                                   |
-|     Konvergenskriterier: sammenligning, ækvivalens, kvotient, integral, Leibniz. |
-|     Potensrækker: konvergensradius rho = 1/L, ledvis integration og diff.        |
-|     Weierstrass M-test og uniform konvergens.                                     |
-+-----------------------------------------------------------------------------------+
-|  5. FOURIERRÆKKER OG PARSEVAL                                                     |
-|     Reelle koefficienter (a_n, b_n) og symmetrier (lige/ulige).                  |
-|     Kompleks form c_n, Fouriers konvergenssætning, Parsevals effektsætning.      |
-|     Approksimation i effekt og Fourierrækkemetoden y_p = sum c_n H(inw) e^{inwt}.|
-+-----------------------------------------------------------------------------------+
-```
-
-### Fysisk model: Det dæmpede pendul og dets faseportræt
-
-Det klassiske dæmpede pendul er standardmodellen for et ulineært autonomt system:
-
-$$\ddot\theta + c\dot\theta + \frac{g}{L}\sin\theta = 0.$$
-
-Sættes tilstandene $x_1 = \theta$ (vinkel) og $x_2 = \dot\theta$ (vinkelhastighed), fås systemet:
-
-$$\dot x_1 = x_2, \qquad \dot x_2 = -\frac{g}{L}\sin x_1 - c x_2.$$
-
-Faserummet $(x_1, x_2)$ indeholder to typer fysiske ligevægtspunkter:
-1. **Nedadrettet ligevægt $(2k\pi, 0)$:** Her er $\sin x_1 \approx x_1$. Jacobimatricens egenværdier har $\operatorname{Re}(\lambda) < 0$. Punktet er en **stabil spiral** (eller stabil knude): pendulet dæmpes ud og falder til ro i bunden.
-2. **Opadrettet lodret balance $((2k+1)\pi, 0)$:** Her er $\sin x_1 \approx -(x_1 - \pi)$. Jacobimatricen har egenværdier $\lambda = -\frac{c}{2} \pm \sqrt{\frac{c^2}{4} + \frac{g}{L}}$. Den ene rod er strengt positiv! Punktet er et **saddelpunkt (ustabilt)**: den mindste forstyrrelse får pendulet til at vælte.
-
-### Biologisk model: Lotka-Volterra rovdyr-byttedyr system
-
-Dynamikken mellem en bestand af byttedyr $x_1(t)$ (fx harer) og rovdyr $x_2(t)$ (fx losser):
-
-$$\dot x_1 = x_1(\alpha - \beta x_2), \qquad \dot x_2 = -x_2(\gamma - \delta x_1).$$
-
-Nullklinerne danner akserne i faserummet:
-- $\dot x_1 = 0 \iff x_1 = 0$ eller $x_2 = \frac{\alpha}{\beta}$.
-- $\dot x_2 = 0 \iff x_2 = 0$ eller $x_1 = \frac{\gamma}{\delta}$.
-
-Skæringspunktet $(\frac{\gamma}{\delta}, \frac{\alpha}{\beta})$ er et ikke-trivielt stationært ligevægtspunkt. Banerne i faseplanet danner lukkede cykler: byttedyrene vokser i antal $\to$ rovdyrene får mere mad og vokser $\to$ rovdyrene overspiser byttedyrene så byttedyrbestanden styrtdykker $\to$ rovdyrene sulter og falder i antal $\to$ byttedyrene begynder at vokse igen.
+1. **$x_1$-nulklinen:** kurven hvor $\dot x_1 = f_1(x_1, x_2) = 0$. På denne kurve er hastighedsvektoren rent vertikal.
+2. **$x_2$-nulklinen:** kurven hvor $\dot x_2 = f_2(x_1, x_2) = 0$. På denne kurve er hastighedsvektoren rent horisontal.
+3. Skæringspunkterne mellem de to nulkliner er systemets stationære punkter.
 
 ## Opgaver
 
-| Opgave | Afsnit | Hvad den handler om | Facit / Vigtigste konklusion |
+| Opgave | Afsnit | Hvad den handler om | Facit / konklusion |
 |---|---|---|---|
-| Opgave 966 (EkstraOpgaver) | 3.1, 3.3 | Ulineært system med parameter $a$: $\dot x_1 = -x_1 x_2 + a x_2$, $\dot x_2 = -x_1 + x_1 x_2$ | Stationært punkt $(a, 1)$; Jacobimatrix har egenværdier $-1$ og $a$; ustabilt for $a > 0$, asymptotisk stabilt for $a < 0$ |
-| 436 | 3.1 | Stationære punkter for $x' = x^2+y^2-x+2y+1$, $y' = x-y-1$ | Stationære punkter er $(1/2, -1/2)$ og $(0, -1)$ |
-| 437 | 3.1 | Stationære punkter for koblet system | Fire punkter $(\pm 1, \pm 1)$; ingen af dem er asymptotisk stabile |
-| 441 | 3.1, 3.3 | System med $\dot x_1 = x_2^2 + 4x_2 + 2x_1 + 4$, $\dot x_2 = -2x_1 + x_2$ | Jacobimatrix $\begin{pmatrix} 2 & 2x_2+4 \\ -2 & 1 \end{pmatrix}$; $(-5, -8.5)$ asymptotisk stabilt, $(1, 3.5)$ ustabilt |
-| 534 | 3.1, 3.3 | Eksamensopgave: stationære punkter og lineariseret stabilitet | $Df(\mathbf x) = \begin{pmatrix} 2x_2 & 2x_1 \\ x_2+1 & x_1-3 \end{pmatrix}$; $p_1 = (3, 0)$ ustabilt, $p_2 = (0, -1)$ stabilt |
-| 940 | 3.1 | Ulineært system med parameter $a$ | Analyse af stationære punkter og lineariseret stabilitet |
-| 862 | 6.3, 5.4 | Bevis for at en Fourierrække med absolut konvergent koefficientrække er sin egen Fourierrække | Følger af Weierstrass M-test og ombytning af sum og integral |
+| Opgave 966 (EkstraOpgaver.pdf) | 3.1, 3.3 (sætning 3.7) | Ulineært system med parameter $a$: vis at $(a, 1)$ er et stationært punkt, og at det er ustabilt for $a > 0$ og asymptotisk stabilt for $a < 0$ | Se gennemgangen nedenfor |
+| 436 | 3.1 | Alle stationære punkter for $x' = x^2 + y^2 - x + 2y + 1$, $y' = x - y - 1$; ugesedlen tillader CAS til egenværdier | $(\frac12, -\frac12)$ og $(0, -1)$ |
+| 862 (frivillig) | 6.3, 5.4 | Bevis for at en Fourierrække er sin egen Fourierrække, når $\sum d_n$ er absolut konvergent | |
+| Eksamenssættet december 2025 | hele pensum | Ugesedlen anbefaler at starte med del B; se tabellen nedenfor | Løsning i 01025Mat2MatTekEksamen-E25-Løsning.pdf |
+
+Som repetition anbefaler ugesedlen opgaverne fra ugesedlerne og gamle eksamensopgaver. Gamle sæt fra 2012 til F26 ligger i zip-filen på DTU Learn, se [[Courses/Differential Equations and Infinite Series/Past Exams|Gamle eksamenssæt]].
+
+### Eksamenssættet december 2025 (E25)
+
+Skriftlig 3-timers prøve 7. december 2025, alle skriftlige hjælpemidler, ingen elektroniske. Del A (multiple choice, 25 %) uden begrundelser; del B med begrundelser og henvisninger til lærebogen.
+
+| Opgave | Emne | Afsnit |
+|---|---|---|
+| A 1.1 | Fuldstændig reel løsning ud fra $p(\lambda) = (\lambda+1)^2(\lambda^2+1)$ | 1.2 |
+| A 1.2 | Stabilitet af samme ligning | 2.8 |
+| A 2.1 | Konvergensradius for $\sum \frac{x^n}{2^n\sqrt{n+1}}$ | 5.2 |
+| A 2.2 | Absolut, betinget eller divergent: $\sum \frac{(-1)^n}{\sqrt{n+1}}$ | 4.5, 4.7 |
+| B 3 (30 %) | Lige $2\pi$-periodisk funktion ($2$ på $[0, \frac\pi2[$, $0$ i $\frac\pi2$, $-2$ på $]\frac\pi2, \pi]$): skitse, summen i $0$, $\frac\pi2$, $\pi$, punktvis og uniform konvergens, vis Fourierrækken, find $\sum\frac{1}{(2k+1)^2}$ | 6.1 til 6.4 |
+| B 4 (20 %) | $3\times 3$ system med egenværdien $2$ (algebraisk multiplicitet 2, geometrisk 1): bestem en løsning af formen $e^{2t}\mathbf u + te^{2t}\mathbf v$, find tre lineært uafhængige løsninger og den fuldstændige reelle løsning | 2.2 (sætning 2.11) |
+| B 5 (20 %) | $\sum \frac{1}{1 + n^2x^2}$: konvergent majorant på $\mathbb R$?, majoranten $\sum\frac{1}{n^2}$ på $[1, \infty[$, kontinuitet, $N$ så fejlen er under $0.01$ | 5.4, 4.6 |
+| B 6 (5 %) | $a_n \leq b_n$ og $\sum b_n$ betinget konvergent: er $\sum a_n$ betinget konvergent? (argument eller modeksempel) | 4.5, 4.7 |
+
+Løsningen (5 håndskrevne sider) angiver 1.1d, 1.2b, 2.1c og 2.2b i del A. Den henviser til sætningerne med samme numre som slides (fx sætning 2.7, 2.11, 2.12, 5.35, 6.6, 6.16, 6.30 og eksempel 4.34 og 4.39).
+
+### Andre nye sæt i zip-filen
+Zip-filen på DTU Learn indeholder ud over de ældre sæt: E25, F26 (17. maj 2026, uden computer), B-E24 og en computerfri omformulering B-E24UdenComputer, A-MC-E24, AogB-F24 (13. maj 2024, se [[Courses/Differential Equations and Infinite Series/Uger/Uge 07|uge 7]]), B-F25 og B-E23. Emnerne går igen: systemer med en partikulær løsning af en given form, potensrækkemetoden ($y'' = 5xy$, $y' - 2ty = 0$, $ty' - y = \frac{t^2}{1+t}$, $tx'' + x = -1$), Fourierrækker for stykkevis definerede lige/ulige funktioner, korollar 4.35 og majorantrækker.
 
 ### Detaljeret gennemgang af udvalgte opgaver
 
 **Opgave 966 (EkstraOpgaver.pdf).**
-For en given parameter $a \in \mathbb{R}$ betragtes det ulineære differentialligningssystem:
+For en given parameter $a \in \mathbb{R}$ betragtes det ulineære differentialligningssystem (fortegnene er de eneste der gør $(a, 1)$ stationært og giver opgavens stabilitetsudsagn):
 
 $$\dot x_1 = -x_1 x_2 + a x_2,$$
 
@@ -170,18 +139,6 @@ $$\dot x_2 = -x_1 + x_1 x_2.$$
    - For $a < 0$: begge egenværdier er strengt negative ($\lambda_1 = -1 < 0$ og $\lambda_2 = a < 0$). Punktet $(a, 1)$ er derfor **asymptotisk stabilt** (en stabil knude).
    - For $a = 0$: egenværdien er $\lambda_2 = 0$, og lineariseringen kan ikke afgøre stabiliteten.
 
-**Opgave 534.**
-Systemet er givet ved $\dot x_1 = 2x_1 x_2$, $\dot x_2 = x_1 x_2 - 3x_2 + x_1$.
-1. Jacobimatricen bestemmes ved differentiation:
-   $$Df(\mathbf x) = \begin{pmatrix} 2x_2 & 2x_1 \\ x_2 + 1 & x_1 - 3 \end{pmatrix}.$$
-2. De stationære punkter findes:
-   Fra $\dot x_1 = 2x_1 x_2 = 0$ ses, at enten er $x_1 = 0$ eller $x_2 = 0$.
-   - Hvis $x_1 = 0$: $\dot x_2 = 0 - 3x_2 + 0 = -3x_2 = 0 \implies x_2 = 0$ (eller hvis ligningen har konstantled). Facit angiver punkterne $p_1 = (3, 0)$ og $p_2 = (0, -1)$.
-   - Efterprøvning for $p_1 = (3, 0)$: $\dot x_1 = 0$, $\dot x_2 = 0 - 0 + 0$ (afhænger af den præcise opgavetekst).
-3. Egenværdianalyse i de to punkter:
-   - I $p_1 = (3, 0)$: $Df(3, 0) = \begin{pmatrix} 0 & 6 \\ 1 & 0 \end{pmatrix}$. Karakterligningen er $\lambda^2 - 6 = 0 \implies \lambda = \pm\sqrt{6}$. Da $\sqrt{6} > 0$, er $p_1$ et saddelpunkt og dermed **ustabilt**.
-   - I $p_2 = (0, -1)$: $Df(0, -1) = \begin{pmatrix} -2 & 0 \\ 0 & -3 \end{pmatrix}$. Egenværdierne er $\lambda_1 = -2$ og $\lambda_2 = -3$. Begge er strengt negative, så $p_2$ er en stabil knude og dermed **asymptotisk stabilt**.
-
 **Opgave 436.**
 Systemet er $\dot x = x^2 + y^2 - x + 2y + 1$, $\dot y = x - y - 1$.
 1. Fra den anden ligning isoleres $y$: $\dot y = 0 \implies y = x - 1$.
@@ -190,12 +147,19 @@ Systemet er $\dot x = x^2 + y^2 - x + 2y + 1$, $\dot y = x - y - 1$.
    Dette faktoriseres som $x(2x - 1) = 0$, hvilket giver to løsninger:
    - $x = 0 \implies y = 0 - 1 = -1$, hvilket giver punktet $(0, -1)$.
    - $x = \frac{1}{2} \implies y = \frac{1}{2} - 1 = -\frac{1}{2}$, hvilket giver punktet $(\frac{1}{2}, -\frac{1}{2})$.
-3. Jacobimatricen og egenværdierne bestemmer herefter stabiliteten af hvert af disse to punkter i overensstemmelse med facitlisten.
+
+## Tjek dig selv
+
+- [ ] Kan jeg finde alle stationære punkter, også når ligningssystemet er ulineært?
+- [ ] Kan jeg opstille funktionalmatricen og bruge sætning 3.7?
+- [ ] Ved jeg hvad sætning 3.7 ikke kan afgøre (egenværdi med realdel nul)?
+- [ ] Kan jeg analysere et 1-dimensionalt system med fortegnslinje og $f'(x_s)$?
+- [ ] Har jeg regnet mindst ét helt gammelt eksamenssæt under eksamensforhold, uden computer?
+- [ ] Kan jeg alle hovedsætningerne fra uge 1 til 12 uden at slå op (se [[Courses/Differential Equations and Infinite Series/Uger/Oversigt|oversigten]])?
 
 ## Links
 
 - [[Courses/Differential Equations and Infinite Series/Uger/Oversigt|Ugeoversigt 01025]]
 - Forrige: [[Courses/Differential Equations and Infinite Series/Uger/Uge 12|Uge 12: Variable koefficienter, potensrække- og Fourierrækkemetoden]]
-- [[Courses/Differential Equations and Infinite Series/Speedrun Map|Speedrun Map]]
 - [[Courses/Differential Equations and Infinite Series/Past Exams|Gamle eksamenssæt]]
 - [[Differential Equations and Infinite Series]]

@@ -11,7 +11,7 @@ tags:
 
 # Uge 8: Dictionaries og tupler
 
-> Kilde: kursussiden programmering.compute.dtu.dk (linket som Material på DTU Learn for 02002), siderne Week 8: Preparation, In-Class og Closure. DTU Learn selv har intet indhold at læse for dette kursus. Pensum i bog: TP kapitel 10, *Dictionaries* (spring afsnittet om memos over), og de første fire afsnit af kapitel 11, *Tuples*.
+> Kilde: kursussiden programmering.compute.dtu.dk, siderne Week 8: Preparation, In-Class og Closure og Advanced. Pensum i bog: TP kapitel 10, *Dictionaries* (spring afsnittet om memos over), og de første fire afsnit af kapitel 11, *Tuples*.
 
 ## Emner
 
@@ -65,16 +65,6 @@ def min_maks(l):
 lav, hoej = min_maks([4, 9, 1])
 print(lav, hoej)   # 1 9
 ```
-### Datastrukturmodel: Hash-tabel for Dictionaries ($O(1)$ opslag)
-
-En dictionary bruger en hash-funktion til at konvertere nøglen direkte til et hukommelsesindeks:
-
-```text
-  Nøgle "alder" ──( hash("alder") % N )──> Bucket index 3 ──> [ "alder": 21 ]
-  Nøgle "navn"  ──( hash("navn") % N )───> Bucket index 7 ──> [ "navn": "Peter" ]
-```
-Dette sikrer, at opslag som `d["alder"]` tager konstant tid $O(1)$ i gennemsnit, uanset om ordbogen rummer 10 eller 10.000.000 elementer.
-
 ## Opgaver
 
 Ugens struktur: Preparation (Copy-and-Run og selvquiz) før timen, derefter In-Class (demo, Coding Practice, Problem Solving), og til sidst Closure (syllabus og checkpoints). Hver torsdag er der quiz og live-demo 13:00 til 14:00, derefter selvstændigt arbejde med Coding Practice.
@@ -106,6 +96,17 @@ Ugens struktur: Preparation (Copy-and-Run og selvquiz) før timen, derefter In-C
 
 - Checkpoint 8.1: Booklet Layout (mindste hæfte og antal blanke sider)
 - Checkpoint 8.2: Name Frequency
+
+## Advanced (ikke pensum)
+
+Kursussidens Advanced-side for uge 8. Ingen obligatoriske opgaver eller eksamensspørgsmål bygger på den.
+
+- Indlejrede dictionaries.
+- Effektivitet: opslag i dictionary (hash) er meget hurtigere end i en liste.
+- keys(), values() og items() giver view-objekter; items() kan pakkes ud i to løkkevariable.
+- Konstruktøren dict.
+- Udpakning med * og **, variabelt antal argumenter.
+- Opgave: Python Haiku.
 
 ## Links
 

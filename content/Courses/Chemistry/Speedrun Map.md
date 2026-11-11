@@ -16,10 +16,10 @@ Hurtigste vej gennem generel kemi: først regnefærdighederne (mol og støkiomet
 
 Hører sammen med [[Courses/Chemistry/Begreber|Begreber]], [[Flashcards/Chemistry Flashcards|flashcards]] og [[Self-Tests/Chemistry Test|selvtesten]].
 
-> [!warning] Pensum er tyndt
-> [[Courses/Chemistry/Pensum|Pensum]] er en tom skabelon, og alle 13 [[Courses/Chemistry/Lektioner/index|lektioner]] er tomme. [[Courses/Chemistry/Begreber|Begreber]] nævner kun mol, molar masse, koncentration, atom/ion/molekyle, funktionelle grupper og det periodiske system. Resten af kortet (gasser, termokemi, ligevægt, syrer/baser, redox, kinetik) er **antaget** ud fra et standardkursus i generel kemi, ikke ud fra dit pensum. Ret rækkefølgen og slet emner når du kender de officielle emner (fx fra kursusbasen).
+> [!info] Pensum
+> Rækkefølgen følger emnerne i kursusbeskrivelsen og kursusplanen for 26020 (se [[Courses/Chemistry/Pensum|Pensum]] og pensumtabellen i [[Courses/Chemistry/Uger/Oversigt|ugeoversigten]]). Anvendelsesforelæsningerne i uge 6 og 9 er ikke medtaget. Opløselighedsprodukt ($K_{sp}$) indgår under kemisk ligevægt, fordi emnet optræder i begge gamle eksamenssæt ([[Courses/Chemistry/Past Exams|Past Exams]]).
 
-**Forklaring:** ★ = Jitty-video (kanalen "Computer Engineering Jitty", engelsk, som jeg har antaget er den Jitty du mener). Alle videolinks er fundet ved søgning; ingen er gættet. Timer er et skøn for en der skal bestå, ikke mestre alt. Eksamensvægt (høj/med/lav) er mit skøn ud fra emnets rolle i faget, ikke fra en officiel eksamensplan.
+**Forklaring:** ★ = video fra kanalen "Computer Engineering Jitty" (engelsk). Alle videolinks er fundet ved søgning; ingen er gættet. Timer er et skøn for at bestå, ikke for at mestre alt. Eksamensvægt (høj/med/lav) er et skøn ud fra emnets rolle i faget og fordelingen af spørgsmål i de to gamle eksamenssæt, ikke fra en officiel eksamensplan.
 
 ## Speedrun-rækkefølge
 
@@ -30,20 +30,20 @@ Hører sammen med [[Courses/Chemistry/Begreber|Begreber]], [[Flashcards/Chemistr
 | 3 | Opløsninger og koncentration | 3 | høj: koncentration er nævnt i Begreber og bruges i syre/base, ligevægt og titrering |
 | 4 | Atomstruktur og det periodiske system | 4 | med: grundlag for binding og tendenser; typisk korte teori- og konfigurationsspørgsmål |
 | 5 | Kemisk binding og molekylgeometri | 6 | høj: binding er en af fagets tre søjler (reaktioner, binding, mol) |
-| 6 | Gasser | 2 | med: kort emne, formler direkte brugbare; antaget pensum |
-| 7 | Termokemi og termodynamik | 5 | med: antaget pensum; formelstyret og let at score på når man kan metoden |
+| 6 | Gasser | 2 | med: kort emne (uge 2), formler direkte brugbare |
+| 7 | Termokemi og termodynamik | 5 | med: pensum (uge 3 og 11); formelstyret og let at score på, når metoden sidder |
 | 8 | Kemisk ligevægt | 5 | høj: klassisk flertrinsopgave; kobler mol-regning til syre/base og opløselighed |
 | 9 | Syrer, baser og buffere | 6 | høj: næsten altid en hel opgave; bygger på ligevægt |
-| 10 | Redox og elektrokemi | 4 | med: antaget pensum; mekanisk metode, nem at øve |
-| 11 | Kemisk kinetik | 3 | lav: antaget pensum; ofte en kortere opgave hvis den er med |
+| 10 | Redox og elektrokemi | 4 | med: pensum (uge 11); mekanisk metode, nem at øve |
+| 11 | Kemisk kinetik | 3 | med: pensum (uge 8); 1 til 2 spørgsmål pr. gammelt eksamenssæt |
 | 12 | Organisk kemi: funktionelle grupper | 3 | med: vaulten har egen reference-note; omfang i kurset er uklart |
 
-**Samlet skøn: ca. 51 timer.** Hvis tiden er knap: tag alle emner med vægt *høj* først, og spring dem med *lav* over til sidst.
+**Samlet skøn: ca. 51 timer.** Hvis tiden er knap: emner med vægt *høj* først.
 
 ## Lærebog
-Kursets egen bog er ikke angivet i vaulten. Jeg bruger derfor gratis [OpenStax Chemistry 2e](https://openstax.org/books/chemistry-2e/pages/1-introduction) som reference; kapitelnumre nedenfor er derfra. Tjek mod din faktiske bog.
+Kursets bog er [OpenStax Chemistry 2e](https://openstax.org/books/chemistry-2e/pages/1-introduction) (gratis); kapitelnumre nedenfor er derfra.
 
-Supplement: [Khan Academy Chemistry](https://www.khanacademy.org/science/chemistry), [LibreTexts General Chemistry](https://chem.libretexts.org/Bookshelves/General_Chemistry), [MIT OCW 5.111](https://ocw.mit.edu/courses/5-111sc-principles-of-chemical-science-fall-2014/). Jitty har ingen kemivideoer jeg kunne finde, så kemi er dækket af Organic Chemistry Tutor og Professor Dave.
+Supplement: [Khan Academy Chemistry](https://www.khanacademy.org/science/chemistry), [LibreTexts General Chemistry](https://chem.libretexts.org/Bookshelves/General_Chemistry), [MIT OCW 5.111](https://ocw.mit.edu/courses/5-111sc-principles-of-chemical-science-fall-2014/). Kanalen Jitty har ingen kemivideoer, så kemi er dækket af Organic Chemistry Tutor og Professor Dave.
 
 ## 1. Måling, enheder og nomenklatur
 
@@ -80,9 +80,9 @@ Supplement: [Khan Academy Chemistry](https://www.khanacademy.org/science/chemist
 **Øv:** Lav 20 flashcards med ionnavne/ladninger ([[Flashcards/Chemistry Flashcards|Chemistry Flashcards]]).
 
 ### Mestringstjekliste: Måling, enheder og nomenklatur
-- [ ] Jeg omregner enheder uden at tabe en faktor
-- [ ] Jeg afrunder korrekt til signifikante cifre
-- [ ] Jeg navngiver og skriver formler for ioniske forbindelser
+- [ ] Kunne omregne enheder uden at tabe en faktor
+- [ ] Kunne afrunde korrekt til signifikante cifre
+- [ ] Kunne navngive og skriver formler for ioniske forbindelser
 
 ## 2. Mol, formler og støkiometri
 
@@ -101,7 +101,7 @@ Supplement: [Khan Academy Chemistry](https://www.khanacademy.org/science/chemist
 - [The Organic Chemistry Tutor: molar masse](https://www.youtube.com/watch?v=c_zHROisdP4)
 - [OpenStax kap. 3 (Composition of Substances and Solutions)](https://openstax.org/books/chemistry-2e/pages/3-introduction)
 
-**Øv:** 15 gram/mol/partikel-opgaver, så du aldrig tøver om hvilken vej du skal gange.
+**Øv:** 15 gram/mol/partikel-opgaver, så der aldrig tvivles om, hvilken vej der skal ganges.
 
 ### Empirisk og molekylformel
 
@@ -134,9 +134,9 @@ Supplement: [Khan Academy Chemistry](https://www.khanacademy.org/science/chemist
 **Øv:** 10 støkiometriopgaver med mindst 4 begrænsende-reaktant-opgaver; typisk eksamenstype.
 
 ### Mestringstjekliste: Mol, formler og støkiometri
-- [ ] Jeg kan gå g, mol, mol, g i én løbende udregning
-- [ ] Jeg finder begrænsende reaktant og udbytte uden at gætte
-- [ ] Jeg udleder molekylformel fra procent eller forbrændingsdata
+- [ ] Kunne gå g, mol, mol, g i én løbende udregning
+- [ ] Kunne finde begrænsende reaktant og udbytte uden at gætte
+- [ ] Kunne udlede molekylformel fra procent eller forbrændingsdata
 
 ## 3. Opløsninger og koncentration
 
@@ -170,9 +170,9 @@ Supplement: [Khan Academy Chemistry](https://www.khanacademy.org/science/chemist
 **Øv:** 5 opgaver der går mL, mol, mol, g.
 
 ### Mestringstjekliste: Opløsninger og koncentration
-- [ ] Jeg omregner mellem mol, volumen og molaritet i alle retninger
-- [ ] Jeg bruger c₁V₁ = c₂V₂ korrekt
-- [ ] Jeg skriver nettoioneligning
+- [ ] Kunne omregne mellem mol, volumen og molaritet i alle retninger
+- [ ] Kunne bruge c₁V₁ = c₂V₂ korrekt
+- [ ] Kunne skrive nettoioneligning
 
 ## 4. Atomstruktur og det periodiske system
 
@@ -207,8 +207,8 @@ Supplement: [Khan Academy Chemistry](https://www.khanacademy.org/science/chemist
 **Øv:** Rangér 10 sæt af grundstoffer efter radius og ioniseringsenergi.
 
 ### Mestringstjekliste: Atomstruktur og det periodiske system
-- [ ] Jeg skriver konfiguration for alle grundstoffer op til Z=36
-- [ ] Jeg forklarer tendenser i én sætning
+- [ ] Kunne skrive konfiguration for alle grundstoffer op til Z=36
+- [ ] Kunne forklare tendenser i én sætning
 
 ## 5. Kemisk binding og molekylgeometri
 
@@ -258,12 +258,12 @@ Supplement: [Khan Academy Chemistry](https://www.khanacademy.org/science/chemist
 **Øv:** Rangér 5 sæt forbindelser efter kogepunkt og begrund.
 
 ### Mestringstjekliste: Kemisk binding og molekylgeometri
-- [ ] Jeg tegner Lewis, geometri og polaritet i ét forløb
-- [ ] Jeg ved hvilken intermolekylær kraft der dominerer og hvorfor
+- [ ] Kunne tegne Lewis, geometri og polaritet i ét forløb
+- [ ] Vide hvilken intermolekylær kraft der dominerer og hvorfor
 
 ## 6. Gasser
 
-**Tid:** ca. 2 t. **Eksamensvægt:** med (kort emne, formler direkte brugbare; antaget pensum).
+**Tid:** ca. 2 t. **Eksamensvægt:** med (kort emne, formler direkte brugbare).
 
 ### Idealgasloven
 
@@ -280,12 +280,12 @@ Supplement: [Khan Academy Chemistry](https://www.khanacademy.org/science/chemist
 **Øv:** 8 opgaver; vær konsekvent med K, atm/kPa og L.
 
 ### Mestringstjekliste: Gasser
-- [ ] Jeg vælger rigtig R-værdi til rigtige enheder
-- [ ] Jeg bruger PV=nRT i en støkiometriopgave
+- [ ] Kunne vælge rigtig R-værdi til rigtige enheder
+- [ ] Kunne bruge PV=nRT i en støkiometriopgave
 
 ## 7. Termokemi og termodynamik
 
-**Tid:** ca. 5 t. **Eksamensvægt:** med (antaget pensum; formelstyret og let at score på når man kan metoden).
+**Tid:** ca. 5 t. **Eksamensvægt:** med (formelstyret og let at score på, når metoden sidder).
 
 ### Varme, kalorimetri og entalpi
 
@@ -319,8 +319,8 @@ Supplement: [Khan Academy Chemistry](https://www.khanacademy.org/science/chemist
 **Øv:** 6 opgaver: forudsig spontanitet og find omslagstemperatur.
 
 ### Mestringstjekliste: Termokemi og termodynamik
-- [ ] Jeg løser Hess-opgaver med tabelværdier
-- [ ] Jeg bestemmer spontanitet ud fra ΔH, ΔS og T
+- [ ] Kunne løse Hess-opgaver med tabelværdier
+- [ ] Kunne bestemme spontanitet ud fra ΔH, ΔS og T
 
 ## 8. Kemisk ligevægt
 
@@ -356,8 +356,8 @@ Supplement: [Khan Academy Chemistry](https://www.khanacademy.org/science/chemist
 **Øv:** 5 Le Chatelier-forudsigelser og 5 Ksp-opgaver.
 
 ### Mestringstjekliste: Kemisk ligevægt
-- [ ] Jeg opstiller og løser en ICE-tabel uden hjælp
-- [ ] Jeg forudsiger skift ved forstyrrelse og kan sige hvorfor
+- [ ] Kunne opstille og løser en ICE-tabel uden hjælp
+- [ ] Kunne forudsige skift ved forstyrrelse og kan sige hvorfor
 
 ## 9. Syrer, baser og buffere
 
@@ -396,13 +396,13 @@ Supplement: [Khan Academy Chemistry](https://www.khanacademy.org/science/chemist
 **Øv:** 5 bufferopgaver og 3 titreringskurver (skitsér og beregn pH ved 4 punkter).
 
 ### Mestringstjekliste: Syrer, baser og buffere
-- [ ] Jeg beregner pH for stærk og svag syre/base
-- [ ] Jeg bruger Henderson-Hasselbalch og kender halvækvivalenspunktet
-- [ ] Jeg skitserer en titreringskurve
+- [ ] Kunne beregne pH for stærk og svag syre/base
+- [ ] Kunne bruge Henderson-Hasselbalch og kender halvækvivalenspunktet
+- [ ] Kunne skitsere en titreringskurve
 
 ## 10. Redox og elektrokemi
 
-**Tid:** ca. 4 t. **Eksamensvægt:** med (antaget pensum; mekanisk metode, nem at øve).
+**Tid:** ca. 4 t. **Eksamensvægt:** med (mekanisk metode, nem at øve).
 
 ### Oxidationstal og afstemning af redox
 
@@ -434,12 +434,12 @@ Supplement: [Khan Academy Chemistry](https://www.khanacademy.org/science/chemist
 **Øv:** 5 opgaver: E°cell, spontanitet og Nernst.
 
 ### Mestringstjekliste: Redox og elektrokemi
-- [ ] Jeg afstemmer redox i syre og base
-- [ ] Jeg beregner E°cell og bruger Nernst
+- [ ] Kunne afstemme redox i syre og base
+- [ ] Kunne beregne E°cell og bruger Nernst
 
 ## 11. Kemisk kinetik
 
-**Tid:** ca. 3 t. **Eksamensvægt:** lav (antaget pensum; ofte en kortere opgave hvis den er med).
+**Tid:** ca. 3 t. **Eksamensvægt:** med (1 til 2 spørgsmål pr. gammelt eksamenssæt).
 
 ### Hastighedslove og integrerede love
 
@@ -458,8 +458,8 @@ Supplement: [Khan Academy Chemistry](https://www.khanacademy.org/science/chemist
 **Øv:** 4 ordensbestemmelser og 4 halveringstidsopgaver.
 
 ### Mestringstjekliste: Kemisk kinetik
-- [ ] Jeg finder orden og k fra tabel
-- [ ] Jeg vælger rigtig integreret lov
+- [ ] Kunne finde orden og k fra tabel
+- [ ] Kunne vælge rigtig integreret lov
 
 ## 12. Organisk kemi: funktionelle grupper
 
@@ -483,8 +483,8 @@ Supplement: [Khan Academy Chemistry](https://www.khanacademy.org/science/chemist
 **Øv:** Identificér grupperne i 10 tegnede molekyler og navngiv 10 alkaner.
 
 ### Mestringstjekliste: Organisk kemi: funktionelle grupper
-- [ ] Jeg peger på alle funktionelle grupper i et molekyle
-- [ ] Jeg navngiver forgrenede alkaner
+- [ ] Kunne pege på alle funktionelle grupper i et molekyle
+- [ ] Kunne navngive forgrenede alkaner
 
 ## Links
 - [[Chemistry]]

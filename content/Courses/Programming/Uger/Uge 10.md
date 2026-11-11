@@ -11,7 +11,7 @@ tags:
 
 # Uge 10: Klasser I
 
-> Kilde: kursussiden programmering.compute.dtu.dk (linket som Material på DTU Learn for 02002), siderne Week 10: Preparation, In-Class og Closure. DTU Learn selv har intet indhold at læse for dette kursus. Pensum i bog: Sektionerne op til og med *Objects are mutable* i TP kapitel 14, *Classes and Functions*, samt sektion 1 til 3 og 6 i kapitel 15, *Classes and Methods* (metoder og `__init__`).
+> Kilde: kursussiden programmering.compute.dtu.dk, siderne Week 10: Preparation, In-Class og Closure og Advanced. Pensum i bog: Sektionerne op til og med *Objects are mutable* i TP kapitel 14, *Classes and Functions*, samt sektion 1 til 3 og 6 i kapitel 15, *Classes and Methods* (metoder og `__init__`).
 
 ## Emner
 
@@ -64,24 +64,6 @@ def nulstil(konto):
 nulstil(k)
 print(k.saldo)   # 0
 ```
-### Objektmodel: Klasse som skabelon for instanser
-
-En klasse definerer datastrukturen (attributter) og handlingerne (metoder), mens instanser indeholder de konkrete værdier:
-
-```text
-                 Klasse Bil (Skabelon)
-                 - model
-                 - hastighed
-                 + accelerer()
-                       │
-             ┌─────────┴─────────┐
-             v                   v
-     Instans bil1 (Objekt)   Instans bil2 (Objekt)
-     - model: "Volvo"        - model: "Tesla"
-     - hastighed: 50         - hastighed: 90
-```
-`self` er Python-referencen til det specifikke objekt, hvis metode kaldes.
-
 ## Opgaver
 
 Ugens struktur: Preparation (Copy-and-Run og selvquiz) før timen, derefter In-Class (demo, Coding Practice, Problem Solving), og til sidst Closure (syllabus og checkpoints). Hver torsdag er der quiz og live-demo 13:00 til 14:00, derefter selvstændigt arbejde med Coding Practice.
@@ -110,6 +92,15 @@ Ugens struktur: Preparation (Copy-and-Run og selvquiz) før timen, derefter In-C
 
 - Checkpoint 10.1: Bank Account
 - Checkpoint 10.2: Event Manager
+
+## Advanced (ikke pensum)
+
+Kursussidens Advanced-side for uge 10. Ingen obligatoriske opgaver eller eksamensspørgsmål bygger på den.
+
+- Flere eksempler: metoder med andre objekter som argumenter, og metoder der returnerer et nyt objekt.
+- Objekter som almindelige værdier (variable, argumenter, lister af objekter).
+- I Python er alt et objekt: funktioner og klasser er også objekter.
+- Kopiering af objekter med copy-modulet.
 
 ## Links
 

@@ -11,7 +11,7 @@ tags:
 
 # Uge 7: Strenge
 
-> Kilde: kursussiden programmering.compute.dtu.dk (linket som Material på DTU Learn for 02002), siderne Week 7: Preparation, In-Class og Closure. DTU Learn selv har intet indhold at læse for dette kursus. Pensum i bog: TP kapitel 8, *Strings and Regular Expressions*, de første fem afsnit, samt f-strings fra andet afsnit af kapitel 13.
+> Kilde: kursussiden programmering.compute.dtu.dk, siderne Week 7: Preparation, In-Class og Closure og Advanced. Pensum i bog: TP kapitel 8, *Strings and Regular Expressions*, de første fem afsnit, samt f-strings fra andet afsnit af kapitel 13.
 
 ## Emner
 
@@ -74,20 +74,6 @@ print(repr('a\nb'))             # 'a\nb'
 ```python
 print('yt' in 'Python')   # True
 ```
-### Datamodel: String immutabilitet og indeksering
-
-Strenge i Python er immutable (uforanderlige sekvenser af tegn) med tovejs-indeksering:
-
-```text
-  Tegn:        'P'   'y'   't'   'h'   'o'   'n'
-  Positiv index: 0     1     2     3     4     5
-  Negativ index:-6    -5    -4    -3    -2    -1
-
-  Slicing [start:slut:step]:
-  s[1:4]  --> 'yth'   (fra index 1 til og med 3)
-  s[::-1] --> 'nohtyP' (vender hele strengen baglæns)
-```
-
 ## Opgaver
 
 Ugens struktur: Preparation (Copy-and-Run og selvquiz) før timen, derefter In-Class (demo, Coding Practice, Problem Solving), og til sidst Closure (syllabus og checkpoints). Hver torsdag er der quiz og live-demo 13:00 til 14:00, derefter selvstændigt arbejde med Coding Practice.
@@ -127,6 +113,17 @@ Ugens struktur: Preparation (Copy-and-Run og selvquiz) før timen, derefter In-C
 
 - Checkpoint 7.1: Arrival Times
 - Checkpoint 7.2: Punctuation Ratio
+
+## Advanced (ikke pensum)
+
+Kursussidens Advanced-side for uge 7. Ingen obligatoriske opgaver eller eksamensspørgsmål bygger på den.
+
+- Kædede strengmetoder (rækkefølgen betyder noget).
+- split med maksimalt antal opdelinger.
+- Unicode-tegn.
+- Flere f-strings og fejlfinding med f-strings (specifikationen =).
+- Flere nye linjer og flerlinjede strenge med tre anførselstegn.
+- Opgave: Shake It off.
 
 ## Links
 

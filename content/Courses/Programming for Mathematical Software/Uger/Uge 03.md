@@ -11,7 +11,7 @@ tags:
 
 # Uge 3: Unix-systemet, løkker, arrays, funktioner
 
-> Kilde: `module03.pdf` (opgaveark, 17. september 2026), `slides03.pdf` (forelæsning 3, 18 slides), `UnixIntroSlides.pdf` (Bernd Dammann, 25 slides), `UnixIntroLabs.pdf` (øvelse 3B), `sols_module03.pdf` og modultabellen. Siderne "Solution examples" og "Example from lecture" uden fil kunne ikke åbnes (topic-API'et giver 404). Del 1 af modulet er introduktion til DTU Unix-systemet, del 2 er løkker, arrays og funktioner (Martin Andersen). Pensum: King kap. 6, 8, 9 (uden 9.6), 10; lecture notes Appendix A.5 (build-systemer og makefiles).
+> Kilde: `module03.pdf` (opgaveark, 17. september 2026), `slides03.pdf` (forelæsning 3, 18 slides), `UnixIntroSlides.pdf` (Bernd Dammann, 25 slides), `UnixIntroLabs.pdf` (øvelse 3B), `sols_module03.pdf` og modultabellen. Siderne "Solution examples" og "Example from lecture" har ingen fil i DTU Learn. Del 1 af modulet er introduktion til DTU Unix-systemet, del 2 er løkker, arrays og funktioner (Martin Andersen). Pensum: King kap. 6, 8, 9 (uden 9.6), 10; lecture notes Appendix A.5 (build-systemer og makefiles).
 
 ## Emner
 
@@ -95,7 +95,7 @@ clean:
 ```
 
 `.PHONY: clean` betyder, at `clean` ikke danner en fil med det navn. `gcc -MM *.c` genererer afhængigheder automatisk. En generisk makefile bruger `obj=$(patsubst %.c,%.o,$(wildcard *.c))` og `myprogram: $(obj)`.
-### Byggemodel: Make Directed Acyclic Graph (DAG) og dependency tracking
+### Byggemodel: Make Directed Acyclic Graph (DAG) og dependency tracking (supplerende illustration, ikke fra slides)
 
 GNU Make opbygger en rettet graf uden kredsløb (DAG) over filernes afhængigheder og sammenligner tidsstempler:
 
@@ -114,11 +114,19 @@ Fra `module03.pdf`. Instruktioner: skim King kap. 6, 8, 9 (spring 9.6 over) og 1
 
 - 3.1 Lav "DTU Unix system"-opgaverne.
   - Løsningsidé: løsningsarket har ingen løsning her; opgaverne er lab 3B (log ind med ThinLinc, lav og kør hello world fra kommandolinjen, valgfrit VS Code eller Geany).
-- 3.2 Tag quizzen om løkker. (Ikke åbnet.)
-- 3.3 Tag quizzen om funktioner. (Ikke åbnet.)
-- 3.4 Tag quizzen om arrays. (Ikke åbnet.)
+- 3.2 Tag quizzen om løkker.
+- 3.3 Tag quizzen om funktioner.
+- 3.4 Tag quizzen om arrays.
 - 3.5 Lav "Module 03"-opgaverne på Autolab.
   - Hint fra forelæsningens sidste slide (ikke en løsning): funktionsevaluering uden over- og underflow og catastrophic cancellation, fx Poisson-sandsynligheden $f(k;\lambda) = \frac{\lambda^k}{k!} e^{-\lambda}$ for $k \in \mathbb{N}_0$, $\lambda > 0$. Brug `lgamma()` med $\log\Gamma(k+1) = \log(k!)$, og Stirlings formel $k! = \sqrt{2\pi k}\,(k/e)^k (1 + O(1/k))$. Autolab-løsninger lægges på Learn efter deadline.
+
+## Tjek dig selv
+
+- [ ] Hvordan logger man ind på DTU Unix-systemet (ThinLinc og ssh), og hvad er loginnoder til?
+- [ ] Hvad er forskellen på row-major og column-major lagring, og hvilken bruger C?
+- [ ] Hvordan sendes et array til en funktion, og hvorfor skal længden med?
+- [ ] Hvad er et variabel-længde array, og hvilke begrænsninger har det?
+- [ ] Hvordan opdeles et program i flere filer, og hvad indeholder en `Makefile`-regel (mål, afhængigheder, kommando)?
 
 ## Links
 

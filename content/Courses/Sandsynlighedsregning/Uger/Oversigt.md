@@ -29,7 +29,39 @@ Kursus 02405 Sandsynlighedsregning. Forelæsning fredag 10-12 (bygning 306, audi
 ## Praktisk
 
 - Ugens forelæsning har et ugebrev med læsevejledning på kursussiden. Øvelsesopgaverne for et ugebrev regnes ved øvelsen ugen efter (se hver uge for datoer).
+- Ifølge velkomstmeddelelsen på DTU Learn starter øvelsesregningen i uge 2. Her regnes opgaver fra ugen før samt repetition fra ugen før det. Løsninger til øvelsesopgaverne er "trinvise" pdf-filer og ældre, mindre udførlige løsninger.
 - Opgaver med \* er supplerende og lidt mere udfordrende.
+
+## Pensum
+
+Kilde: pensumlisten på kursussiden (pensum.pdf) og kursusbasen. Pensum er kapitel 1 til 6 i Pitman, Probability, samt kendskab til "Distribution Summaries". Ikke pensum, men kan læses kursorisk: "The skew-normal approximation" (side 104 midt til side 108 øverst i afsnit 2.2) og afsnit 2.3 (side 111-115).
+
+Pensum, der kan læses kursorisk:
+
+- Kapitel 1: "Discussion" fra nederst side 63 og "Generalization" fra side 64 til midt side 66 (uge 1).
+- Kapitel 3: "Expectation and Prediction", side 178-179 (uge 3).
+- Kapitel 3: "How $\sigma$ affects the shape of the distribution" og "Skewness", side 224-226 (uge 4).
+- Kapitel 3: afsnit 3.6, side 237-243 (uge 5).
+- Kapitel 4: udledningen af $G(t) = \exp(-\int_0^t h(u)\,du)$, side 300, og eksempel 6 og 7, side 308-309 (uge 6).
+- Kapitel 6: eksempel 5, side 421-422 (uge 11).
+
+| Uge | Pitman |
+|---|---|
+| 1 | 1.1 til 1.6 |
+| 2 | 2.1, 2.2, 2.5 og Appendiks 1 (counting); 2.4 er pensum og dækkes stort set af 3.5 |
+| 3 | 3.1, 3.2 |
+| 4 | 3.3, 3.4 |
+| 5 | 3.5, (3.6), 4.1 |
+| 6 | 4.2, 4.3, 4.4 |
+| 7 | 4.5, 4.6 |
+| 8 | 5.1, 5.2 |
+| 9 | 5.3, 5.4 |
+| 10 | 6.1, 6.2 |
+| 11 | 6.3, 6.4 |
+| 12 | 6.5 |
+| 13 | repetition (eksamenssæt 16/12/2003) |
+
+Eksamen: kursusbasen angiver skriftlig eksamen på 4 timer med alle hjælpemidler uden adgang til internettet.
 
 ## Links
 

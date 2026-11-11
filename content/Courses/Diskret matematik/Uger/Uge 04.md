@@ -11,7 +11,7 @@ tags:
 
 # Uge 4: Modulær aritmetik
 
-> Kilde: ugeplanen på kursussiden https://www2.imm.dtu.dk/courses/01017/2026/ (uge W4, 24. september). Begrebsforklaringerne er skrevet ud fra emnerne i planen; der er ingen slides. Afsnitstitler er tjekket mod en lokal tekst af Rosen, 8. udgave.
+> Kilde: ugeplanen på kursussiden https://www2.imm.dtu.dk/courses/01017/2026/ (uge W4, 24. september), Rosen afsnit 4.1 og en smule af 4.3 i Rosen, "Discrete Mathematics and Its Applications". Slides er ikke anvendt.
 
 ## Emner
 
@@ -32,32 +32,9 @@ tags:
 **Division er forsigtig.** Man må ikke altid forkorte. $2 \cdot 3 \equiv 2 \cdot 0 \pmod 6$, men man kan ikke dele med 2 og få $3 \equiv 0 \pmod 6$. Forkortelse af $c$ virker, når $\gcd(c, m) = 1$ (kommer tilbage til i uge 5 og 6).
 
 **Aritmetik modulo $m$.** Regning i $\mathbb{Z}_m = \{0, 1, \dots, m-1\}$ med $+$ og $\cdot$ taget modulo $m$. Eksempel i $\mathbb{Z}_7$: $5 \cdot 4 = 20 \equiv 6$.
-### Modulær model: Kongruensklasser og cirkulære buffere
-
-Regning modulo $m$ fungerer som et ur med $m$ timer ($0, 1, \dots, m-1$). Al overskydende værdi "vikles rundt":
-
-```text
-                       0 (m)
-                    11       1
-                  10           2
-                 9       |       3
-                  8      v      4
-                    7        5
-                         6
-```
-
-**Hurtig modulær eksponentiering (Repeated Squaring):**
-Når man skal beregne $a^b \pmod m$ for store tal (som i RSA), beregner man potenser $a^1, a^2, a^4, a^8, \dots \pmod m$ ved gentagen kvadrering:
-
-```text
-  b = 13 = 8 + 4 + 1  (binært: 1101_2)
-  a^13 mod m = (a^8 mod m) · (a^4 mod m) · (a^1 mod m) mod m
-```
-Dette reducerer tidsforbruget fra $O(b)$ multiplikationer til $O(\log b)$ trin.
-
 ## Opgaver
 
-Fra kursussiden, Rosen, "Discrete Mathematics and Its Applications" (2025-udgaven). Fed skrift betyder, at kurset vil have dem lavet først. Planen angiver ingen afvigende numre for 8. udgave i denne uge.
+Fra kursussiden, Rosen (2025-udgaven). Fed skrift betyder, at kurset anbefaler at lave dem først. Planen angiver ingen afvigende numre for 8. udgave i denne uge.
 
 - Afsnit 4.1: 1, **5**, **9**, 17, 21, **29**, **41**, **43**, **44**, **45**, **47**, 51
 

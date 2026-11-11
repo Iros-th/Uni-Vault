@@ -11,7 +11,7 @@ tags:
 
 # Uge 3: Mængder og funktioner
 
-> Kilde: ugeplanen på kursussiden https://www2.imm.dtu.dk/courses/01017/2026/ (uge W3, 17. september). Begrebsforklaringerne er skrevet ud fra emnerne i planen; der er ingen slides. Afsnitstitler er tjekket mod en lokal tekst af Rosen, 8. udgave.
+> Kilde: ugeplanen på kursussiden https://www2.imm.dtu.dk/courses/01017/2026/ (uge W3, 17. september), Rosen afsnit 2.2 og 2.3 i Rosen, "Discrete Mathematics and Its Applications". Slides er ikke anvendt.
 
 ## Emner
 
@@ -34,26 +34,6 @@ tags:
 **Sammensætning og invers.** $(g \circ f)(x) = g(f(x))$. En funktion har en invers $f^{-1}$ netop når den er bijektiv. Eksempel: $f(x) = x + 1$ har $f^{-1}(y) = y - 1$.
 
 **Gulv og loft.** $\lfloor x \rfloor$ er det største hele tal $\le x$, og $\lceil x \rceil$ det mindste hele tal $\ge x$. Eksempel: $\lfloor 2{,}7 \rfloor = 2$, $\lceil 2{,}1 \rceil = 3$, $\lfloor -2{,}5 \rfloor = -3$.
-### Funktionsmodel: Injektiv, surjektiv og bijektiv visualisering
-
-Funktioner $f: A 	o B$ kategoriseres efter, hvordan pile rammer elementer i codomænet $B$:
-
-```text
-Injektiv (1-til-1):             Surjektiv (på):                Bijektiv (isomorfi):
-Højst én pil pr. punkt i B      Mindst én pil pr. punkt i B     Præcis én pil pr. punkt i B
-(Ingen kollisioner)             (Hele B er dækket)             (Perfekt 1-til-1 parring)
-
-  A       B                       A       B                       A       B
-┌───┐   ┌───┐                   ┌───┐   ┌───┐                   ┌───┐   ┌───┐
-│ 1 ├──>│ a │                   │ 1 ├──>│ a │                   │ 1 ├──>│ a │
-│ 2 ├──>│ b │                   │ 2 ├──>│ b │                   │ 2 ├──>│ b │
-│ 3 ├──>│ c │                   │ 3 ├──>│ c │                   │ 3 ├──>│ c │
-└───┘   │ d │ (ikke ramt)       └───┘   └───┘                   └───┘   └───┘
-        └───┘                   (kræver |A| >= |B|)             (|A| = |B|, invertibel)
-```
-
-**Pigeonhole-kobling:** Hvis $|A| > |B|$, kan en funktion $f: A 	o B$ aldrig være injektiv. Mindst to elementer i $A$ må sendes til samme værdi i $B$ (kollision i hash-tabeller).
-
 ## Opgaver
 
 Fra kursussiden, Rosen, "Discrete Mathematics and Its Applications" (2025-udgaven). Ingen opgaver er markeret fed i denne uge, og planen angiver ingen afvigende numre for 8. udgave.

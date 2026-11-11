@@ -11,7 +11,7 @@ tags:
 
 # Uge 8: Ligefordeling i planen og simultane tætheder
 
-> Kilde: kursussiden http://www2.imm.dtu.dk/courses/02405/ (forelæsning 30. oktober, afsnit 5.1 og 5.2) og ugebrevet til forelæsning 8. Lærebog: Jim Pitman, Probability. Velkomstteksten skønner sværhedsgraden til "under middel", ca. 14 sider. Slides er ikke læst.
+> Kilde: kursussiden http://www2.imm.dtu.dk/courses/02405/ (forelæsning 30. oktober, afsnit 5.1 og 5.2) og ugebrevet til forelæsning 8. Lærebog: Jim Pitman, Probability. Velkomstteksten skønner sværhedsgraden til "under middel", ca. 14 sider. Slides er ikke anvendt.
 
 ## Emner
 
@@ -29,26 +29,6 @@ tags:
 **Uafhængighed.** $X$ og $Y$ er uafhængige, hvis $f(x,y) = f_X(x)f_Y(y)$. I trekant-eksemplet er de ikke uafhængige: området er ikke et rektangel, og $f_X f_Y$ giver ikke konstanten 2.
 
 **Maks-min-problemer som illustration.** Ugebrevet bruger max-min-problemstillingen fra afsnit 4.5 både som eksempel på simultane fordelinger og som repetition. Opgave 4.6.3 anbefales regnet i forvejen.
-### Rumlig model: Simultan 2D sandsynlighedstæthed og marginalisering
-
-For to kontinuerte stokastiske variable $(X, Y)$ svarer sandsynligheden til volumen under tæthedsfladen $f(x, y)$:
-
-```text
-           z = f(x, y)
-             ^
-             │        Volumen = 1
-             │       .-''''-.
-             │     .'        '.
-             │    /   P(A)     \
-             └───/──────────────\─────> y
-                /                \
-               v x
-```
-
-**Marginalisering ("projektion" ned på én akse):**
-For at finde fordelingen af $X$ alene, integreres $y$ væk over hele sit definitionsområde:
-$$f_X(x) = \int_{-\infty}^\infty f(x, y)\,dy.$$
-
 ## Opgaver
 
 Pitman, Probability (kapitel.afsnit.opgave). Regnes ved øvelsen fredag 6. november.

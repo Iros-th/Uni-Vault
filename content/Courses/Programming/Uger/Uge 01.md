@@ -11,7 +11,7 @@ tags:
 
 # Uge 1: Introduktion
 
-> Kilde: kursussiden programmering.compute.dtu.dk (linket som Material på DTU Learn for 02002), siderne Week 1: Preparation, In-Class og Closure. DTU Learn selv har intet indhold at læse for dette kursus. Pensum i bog: Think Python (TP) kapitel 1, *Programming as a way of thinking*.
+> Kilde: kursussiden programmering.compute.dtu.dk, siderne Week 1: Preparation, In-Class og Closure og Advanced. Pensum i bog: Think Python (TP) kapitel 1, *Programming as a way of thinking*.
 
 ## Emner
 
@@ -45,6 +45,10 @@ print(2 ** 10)       # 1024
 print(round(3.14159, 2))  # 3.14
 ```
 
+### Måder at køre Python
+
+I IDLE kan man bruge både interaktiv tilstand (linje for linje) og script-tilstand (en gemt `.py`-fil). Python kan også køres fra en terminal, i Jupyter notebooks (celler) og direkte i en browser. IDLE skal man kunne bruge, de øvrige skal man kende til.
+
 ### Tekst og kommentarer
 
 Tekst skrives som strenge med enkelte eller dobbelte anførselstegn. Et `#` starter en kommentar, som Python ignorerer. Indrykning og store/små bogstaver har betydning i Python.
@@ -53,18 +57,6 @@ Tekst skrives som strenge med enkelte eller dobbelte anførselstegn. Et `#` star
 navn = "Iros"
 print("Hej", navn)   # Hej Iros
 ```
-### Eksekveringsmodel: Python fortolkerens eksekveringslinje
-
-Når et Python-program kører, læser fortolkeren kildekoden linje for linje fra top mod bund:
-
-```text
-  kildekode.py ──(Kompilering)──> Bytecode (.pyc) ──(Python Virtual Machine)──> Output
-                                                              │
-                                            Hukommelsestilstand (Variabler):
-                                            x = 5       -> [ x: heltal 5 ]
-                                            print(x*2)  -> Terminal: 10
-```
-
 ## Opgaver
 
 Ugens struktur: Preparation (Copy-and-Run og selvquiz) før timen, derefter In-Class (demo, Coding Practice, Problem Solving), og til sidst Closure (syllabus og checkpoints). Hver torsdag er der quiz og live-demo 13:00 til 14:00, derefter selvstændigt arbejde med Coding Practice.
@@ -98,6 +90,16 @@ Ugens struktur: Preparation (Copy-and-Run og selvquiz) før timen, derefter In-C
 
 - Checkpoint 1.1: Length of Hypotenuse (script `hypotenuse.py`, Pythagoras)
 - Checkpoint 1.2: Atoms per Gram (script `atoms_per_gram.py`, $N = \frac{m}{M} N_A$ med $N_A \approx 6.022 \cdot 10^{23}$)
+
+## Advanced (ikke pensum)
+
+Kursussidens Advanced-side for uge 1. Ingen obligatoriske opgaver eller eksamensspørgsmål bygger på den.
+
+- Køre et downloadet script (week01.zip, downloaded_python_script.py).
+- Terminal: kommandolinjen til at køre Python og navigere i mapper (tutorials fra Django Girls og W3Schools).
+- Interaktiv Python og scripts kørt fra terminalen.
+- Flere detaljer om print() og input().
+- Små opgaver: vejrrapport og tilfældighed.
 
 ## Links
 

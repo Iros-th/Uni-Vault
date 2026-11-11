@@ -10,13 +10,15 @@ tags:
 
 # Diskret matematik
 
-Landing page for the course. Lectures and notes are linked below, more added as I go.
+Kursus 01017 Discrete Mathematics (Diskret matematik).
 
 ## Overview
 
-- Course code:
-- Instructor:
-- Term / semester:
+- Kursusnummer: 01017 (5 ECTS)
+- Kursusansvarlig: David Earl Roberson, medansvarlig Carsten Thomassen
+- Semester: efterår 2026, forelæsning torsdag 8-10 og øvelser torsdag 10-12
+- Bog: Rosen, Discrete Mathematics and Its Applications
+- Eksamen: 3 timers digital multiple choice (84 %) og fire afleveringer (16 %)
 
 ## Lectures
 

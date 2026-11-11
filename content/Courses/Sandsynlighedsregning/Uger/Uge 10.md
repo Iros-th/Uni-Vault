@@ -11,7 +11,7 @@ tags:
 
 # Uge 10: Betingede diskrete fordelinger og betinget middelværdi
 
-> Kilde: kursussiden http://www2.imm.dtu.dk/courses/02405/ (forelæsning 13. november, afsnit 6.1 og 6.2) og ugebrevet til forelæsning 10. Lærebog: Jim Pitman, Probability. Velkomstteksten skønner sværhedsgraden til "middel", ca. 11 sider. Slides er ikke læst.
+> Kilde: kursussiden http://www2.imm.dtu.dk/courses/02405/ (forelæsning 13. november, afsnit 6.1 og 6.2) og ugebrevet til forelæsning 10. Lærebog: Jim Pitman, Probability. Velkomstteksten skønner sværhedsgraden til "middel", ca. 11 sider. Slides er ikke anvendt.
 
 ## Emner
 
@@ -33,28 +33,9 @@ tags:
 **Reglen om iterede middelværdier.** $E\big(E(Y \mid X)\big) = E(Y)$. Metode: find $E(Y \mid X)$ med simple overvejelser, og midl derefter over $X$ (eksemplerne 2, 3 og 4 i afsnittet). Eksempel (terning og mønter): givet $N = n$ er forventet antal kroner $n/2$, så $E(\text{kroner}) = E(N/2) = 3{,}5/2 = 1{,}75$.
 
 **Udtynding af Poisson.** Hvis $N$ er Poisson($\mu$) og man beholder hver af de $N$ uafhængigt med sandsynlighed $p$, bliver antallet beholdt Poisson($p\mu$). Det følger af marginalformlen ovenfor og er den diskrete begrundelse for udtyndingen fra uge 5.
-### Forudsigelsesmodel: Betinget middelværdi som bedste approksimation
-
-Den betingede middelværdi $g(Y) = E[X \mid Y]$ er den funktion af $Y$, der minimerer middelkvadratfejlen $E[(X - g(Y))^2]$:
-
-```text
-       Løsningsrum af alle stokastiske variable:
-                   X
-                  /│
-                 / │ Fejl: X - E[X|Y]  (ortogonal på alle funktioner af Y)
-                /  │
-               v   v
-            ───────o────────────── Underrum af funktioner g(Y)
-                 E[X|Y] (Ortogonal projektion)
-```
-
-**Loven om total forventning (Tower property):**
-$$E[E[X \mid Y]] = E[X].$$
-Gennemsnittet af alle lokale gennemsnit er præcis lig det globale gennemsnit.
-
 ## Opgaver
 
-Pitman, Probability (kapitel.afsnit.opgave). Regnes ved øvelsen fredag 20. november. (Ugebrevet skriver 13/11/26, men det er forelæsningens egen dato; kursussiden lister opgaverne under 20. november.)
+Pitman, Probability (kapitel.afsnit.opgave). Regnes ved øvelsen fredag 20. november. (Kursussiden lister opgaverne under 20. november.)
 
 Øvelsesopgaver: 6.1.1, 6.2.1, 5.3.9, 6.2.4, (5.4.7, 6.1.3). (Ugebrev og kursusside har samme liste.)
 

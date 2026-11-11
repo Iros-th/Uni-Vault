@@ -11,9 +11,11 @@ tags:
 
 # Uge 6: Anvendelsesforelæsning 1 (polymerer, beregningskemi, DNA)
 
-> Kilde: DTU Learn 26020, Week 6: "class6_Application_PE.pdf" (polyethylen), "JJE_Chemistry_on_computers.pdf" (Janus Juul Eriksen, kun 9 slides med lidt tekst) og "KGA_2026 lecture poly.pdf" (Kira Gerber Astakhova, nukleinsyrer og sekvensering). De tre gif-filer (Diels-Alder, nukleofil aromatisk substitution, IR-spektrum af sukrose) er ikke åbnet. Kursusplanen: mandag 5. oktober 2026, kl. 8.00 øvelse om forelæsning 5, kl. 10.00 biokemi, polymerer, beregningskemi. Ugen er en anvendelsesforelæsning uden nyt bogkapitel. Meddelelserne er læst.
+> Kilde: DTU Learn 26020, uge 6: "class6_Application_PE.pdf" (polyethylen), "JJE_Chemistry_on_computers.pdf" (Janus Juul Eriksen, 9 slides) og "KGA_2026 lecture poly.pdf" (Kira Gerber Astakhova, nukleinsyrer og sekvensering), kursusplanen og kursusmeddelelserne. Tre gif-filer (Diels-Alder, nukleofil aromatisk substitution, IR-spektrum af sukrose) er ikke medtaget. Kursusplanen: mandag 5. oktober 2026, kl. 8.00 øvelse om forelæsning 5, kl. 10.00 biokemi, polymerer og beregningskemi. Ugen er en anvendelsesforelæsning uden nyt bogkapitel.
 
 ## Emner
+
+Anvendelsesforelæsning: kursusbeskrivelsen angiver ikke stoffet som pensum (ikke pensum, læses selv). Eksamenssættene har ét spørgsmål herfra (PET, spm. 16 i efterår 2024); polymerer og kondensation er også pensum via uge 12.
 
 - Polyethylen (PE): syntese, tværbinding, størkningsmekanismer, mekaniske egenskaber
 - Beregningskemi: hvad en computer kan regne på molekyler
@@ -29,12 +31,13 @@ tags:
 
 **Stivhed.** Hookes lov: $\sigma = E\varepsilon$ med $\sigma = F/A$ og $\varepsilon = (l-l_0)/l_0$; $E$ er Youngs modul. Slides: stål ca. 200 GPa, de fleste faste polymerer ca. 1 GPa. Egen udregning: 10 N på 1 mm$^2$ er $\sigma = 10$ MPa; med $E=1$ GPa er $\varepsilon = 0{,}01$ (1 %). UHMWPE-fibre har $E\approx150$ GPa (densitet 0,97 g/cm$^3$), fordi krystallerne er rettet langs fiberen; krystallen er anisotrop ($E_\parallel \approx 240$ GPa, $E_\perp \approx 3$ til $9$ GPa).
 
-**Beregningskemi.** Slides: man beregner energien af molekyler og materialer ved at løse den elektroniske Schrödinger-ligning numerisk i videnskabelig software; andre egenskaber fås som afledede af energien (fx IR-spektre). Pointen er at kemikere i stigende grad har brug for programmering og maskinlæring (robotter, autonom syntese, generativ AI til materialedesign). Teksten på slides er kort, så detaljer om metoderne står ikke her.
+**Beregningskemi.** Slides: man beregner energien af molekyler og materialer ved at løse den elektroniske Schrödinger-ligning numerisk i videnskabelig software; andre egenskaber fås som afledede af energien (fx IR-spektre). Pointen er at kemikere i stigende grad har brug for programmering og maskinlæring (robotter, autonom syntese, generativ AI til materialedesign).
 
 **Nukleosider og DNA.** Et nukleosid er base + sukker (2'-deoxyribose i DNA). Helixen holdes af stacking (π-stacking, hydrofobe effekter) og Watson-Crick-hydrogenbindinger. Kools forsøg viste at ikke-hydrogenbundne formlignende baser stadig kan danne stabile par, så H-bindinger er ikke den eneste faktor. Illumina-sekvensering bruger nukleotider med farvestof og reversibel blokering: byg ind, aflæs farve, fraspalt, gentag. Syntese af oligonukleotider sker fast-fase i cyklus: deblok, kobl (phosphoramidit), cap, oxidér. Anvendelser: ASO, siRNA, aptamerer. Slidens pointe: flaskehalsen er i stigende grad levering til de rigtige celler.
 
-**Fra meddelelserne.** Mandag 5. oktober blev auditoriet bedt om at møde kl. 10.00 i stedet for 10.15, med pause omkring 10.40. Midtvejsevalueringen blev genåbnet to gange pga. tekniske problemer og endte som en anonym survey under Activities, Surveys på Learn (åben til 19. oktober). Surveyen er ikke åbnet.
-### Model: Polymerstruktur og krystallinitet (LDPE vs. HDPE)
+**Praktisk.** Mandag 5. oktober startede forelæsningen kl. 10.00 i stedet for 10.15, med pause omkring 10.40. Midtvejsevalueringen er en anonym survey under Activities, Surveys på Learn (åben til 19. oktober).
+
+### Model: Polymerstruktur og krystallinitet (LDPE vs. HDPE) (supplerende illustration, ikke fra slides), ikke pensum
 
 Mekaniske egenskaber i polymerer bestemmes direkte af kædernes forgrening og evne til at pakke tæt:
 
@@ -58,7 +61,7 @@ HDPE (High-Density Polyethylene):
   - Egenskaber: Stiv, hård, højere smeltepunkt (f.eks. mælkekander, vandrør).
 ```
 
-### Biokemisk model: Watson-Crick baseparring i DNA
+### Biokemisk model: Watson-Crick baseparring i DNA (supplerende illustration, ikke fra slides), ikke pensum
 
 DNA-dobbeltstrenget stabiliseres af to komplementære hydrogenbindingsmønstre:
 
@@ -77,16 +80,24 @@ Adenin (A) = Thymin (T)                Guanin (G) ≡ Cytosin (C)
 
 ## Opgaver
 
-- Exercises_Week_06 (quiz på DTU Learn, ikke åbnet)
-- Kursusplanen: "Exercise on Lecture 5 material" kl. 8.00 den 5. oktober 2026 (emnet er uge 5: Lewis, VSEPR, hybridisering, MO). Selve opgaverne er ikke lagt som fil i Week 6-mappen.
+- Exercises_Week_06 (quiz på DTU Learn)
+- Kursusplanen: "Exercise on Lecture 5 material" kl. 8.00 den 5. oktober 2026 (emnet er uge 5: Lewis, VSEPR, hybridisering, MO). Opgaverne er ikke lagt som fil i uge 6-mappen.
 - Ingen bogopgaver med nummer er angivet.
 
 ## Gamle eksamensspørgsmål om dette emne
 
-Numrene refererer til de to gamle eksamenssæt på Learn (efterår 2024 og forår 2025, se Uge 13). Efterår 2024 er læst ved OCR af en scannet PDF, og numrene følger rækkefølgen i filen.
+Numrene refererer til de to gamle eksamenssæt på Learn (efterår 2024 og forår 2025, se Uge 13). Numrene for efterår 2024 følger rækkefølgen i den scannede fil.
 
 - Efterår 2024: spm. 16 (polymerisationsgrad for PET ud fra molvægten).
 - Forår 2025: ingen spørgsmål direkte om anvendelsesstoffet.
+
+## Tjek dig selv
+
+- [ ] Hvordan dannes polyethylen ved additionspolymerisation, og hvor mange ethylenenheder har en kæde med en given molar masse?
+- [ ] Hvad er forskellen på glasdannelse, krystallisation og tværbinding som størkningsmekanismer?
+- [ ] Hvad udtrykker Youngs modul $E$ i $\sigma=E\varepsilon$?
+- [ ] Hvad er et nukleosid, og hvilke kræfter holder DNA-helixen sammen?
+- [ ] Hvorfor smelter GC-rige DNA-sekvenser ved højere temperatur end AT-rige?
 
 ## Links
 

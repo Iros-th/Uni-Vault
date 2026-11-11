@@ -11,7 +11,7 @@ tags:
 
 # Uge 8: Kinetik og ligevægt
 
-> Kilde: DTU Learn 26020, Week 8: "Lecture 7 - post-lecture copy.pdf" (forelæsning 26. oktober 2026; pre-lecture-versionen er ikke læst). Bog: OpenStax Chemistry 2e, kapitel 12 (Kinetics) og 13 (Fundamental Equilibrium Concepts). Pre-lecture-versionen "Lecture 7 - pre-lecture copy.pdf" er læst og sammenlignet. Meddelelserne er læst. Additional Questions Week 08 (quiz) er ikke åbnet.
+> Kilde: DTU Learn 26020, uge 8: "Lecture 7 - post-lecture copy.pdf" (forelæsning 26. oktober 2026), "Lecture 7 - pre-lecture copy.pdf" og kursusmeddelelserne. Bog: OpenStax Chemistry 2e, kapitel 12 (Kinetics) og 13 (Fundamental Equilibrium Concepts).
 
 ## Emner
 
@@ -29,7 +29,7 @@ Slides' sætning: termodynamik siger om det sker, kinetik hvor hurtigt, ligevæg
 
 **Hastighedslov.** $r = k[A]^m[B]^n$, ordenen er $m+n$ og må bestemmes eksperimentelt (ikke aflæses af den afstemte ligning). $k$ afhænger af temperaturen, ikke koncentrationen, og dens enhed afhænger af ordenen. Begyndelseshastigheder, slides: $[A]$ fordobles giver dobbelt hastighed (1. orden i A), $[B]$ fordobles giver firedobbelt (2. orden i B), så $r = k[A][B]^2$. Egen udregning af $k$ fra forsøg 1: $k = 2{,}0\times10^{-3}/(0{,}10\cdot0{,}10^2) = 2{,}0\ \mathrm{L^2\,mol^{-2}\,s^{-1}}$; forsøg 2 og 3 giver samme værdi.
 
-**Første orden, integreret.** $\ln[A]_t = \ln[A]_0 - kt$, dvs. $[A]_t = [A]_0e^{-kt}$, og halveringstid $t_{1/2} = \ln2/k$. Slides (koffein, halveringstid 5 h): $k = \ln2/(5\cdot3600) = 3{,}85\times10^{-5}\ \mathrm{s^{-1}}$ (kontrolleret). Efter 15 h (tre halveringstider) er $(\tfrac12)^3 = 12{,}5\,\%$ tilbage.
+**Første orden, integreret.** $\ln[A]_t = \ln[A]_0 - kt$, dvs. $[A]_t = [A]_0e^{-kt}$, og halveringstid $t_{1/2} = \ln2/k$. Slides (koffein, halveringstid 5 h): $k = \ln2/(5\cdot3600) = 3{,}85\times10^{-5}\ \mathrm{s^{-1}}$. Efter 15 h (tre halveringstider) er $(\tfrac12)^3 = 12{,}5\,\%$ tilbage.
 
 **Arrhenius.** $k = Ae^{-E_a/RT}$, $\ln k = -\dfrac{E_a}{R}\dfrac1T+\ln A$, og $\ln\dfrac{k_2}{k_1} = -\dfrac{E_a}{R}\left(\dfrac1{T_2}-\dfrac1{T_1}\right)$. Slides' datasæt (280 til 320 K): $E_a = 3{,}96/0{,}000446\cdot8{,}314\approx 74$ kJ/mol. Egen udregning (mælk, se uge 9): 10 gange hurtigere ved 22 °C end 4 °C giver $E_a = 8{,}314\cdot\ln10/(1/277{,}15-1/295{,}15) = 87$ kJ/mol.
 
@@ -41,7 +41,7 @@ Slides' sætning: termodynamik siger om det sker, kinetik hvor hurtigt, ligevæg
 
 **Pre-lecture mod post-lecture og meddelelser.** Pre-lecture har 34 sider, post-lecture 46. Post-lecture har bl.a. et plot af resultatet af ligevægtsdemonstrationen, som klassen deltog i (meddelelse 26. oktober). Rettelse fra meddelelse 26. oktober: Q11 i Exercises_Week_08 kan være svær, fordi opløselighedstabellen fra kapitel 4 kun nævnes kort; brug Table 4.1 (side 163) i bogen til den opgave. "Additional Questions Week 08" er en quiz med ekstra spørgsmål fra OpenStax kapitel 10 og 11 (ikke åbnet).
 
-### Model: Arrhenius energibarriere og katalysatormodel
+### Model: Arrhenius energibarriere og katalysatormodel (supplerende illustration, ikke fra slides)
 
 Kemiske reaktioner sker ved molekylære sammenstød (kollisionsteori). For at et stød fører til reaktion, kræves:
 1. Korrekt geometrisk orientering.
@@ -69,17 +69,26 @@ $$k = A e^{-\frac{E_a}{RT}}.$$
 
 ## Opgaver
 
-- Exercises_Week_08 (quiz på DTU Learn, ikke åbnet)
-- Additional Questions Week 08 (quiz på DTU Learn, ikke åbnet)
+- Exercises_Week_08 (quiz på DTU Learn)
+- Additional Questions Week 08 (quiz på DTU Learn)
 - Slides, "Think about these problems before next class": Problem 1 (hvor længe holder mælk: åbnet mælk holder 10 dage ved 4 °C og 1 dag ved 22 °C, find $E_a$ og holdbarhed i bil ved 30 °C) og et Problem 2 om $\mathrm{N_2O_4\rightleftharpoons2\,NO_2}$ (endoterm) i et lukket rør flyttet til isvand: hvad sker der med farve og $K$. Løsningerne står i uge 9.
 - Ingen bogopgaver med nummer er angivet.
 
 ## Gamle eksamensspørgsmål om dette emne
 
-Numrene refererer til de to gamle eksamenssæt på Learn (efterår 2024 og forår 2025, se Uge 13). Efterår 2024 er læst ved OCR af en scannet PDF, og numrene følger rækkefølgen i filen.
+Numrene refererer til de to gamle eksamenssæt på Learn (efterår 2024 og forår 2025, se Uge 13). Numrene for efterår 2024 følger rækkefølgen i den scannede fil.
 
-- Efterår 2024: spm. 13 (reaktionsorden ud fra koncentration mod tid), spm. 15 (ligevægtskonstant ud fra partialtryk). Spm. 18 (pH i mættet Mg(OH)$_2$) bruger opløselighedsprodukt, som jeg ikke har set i de læste slides.
-- Forår 2025: spm. 4 (katalysators virkning), spm. 14 (tryk og ligevægt), spm. 18 (hastighedslov ud fra tabel). Spm. 12 (udfældning, $K_{sp}$) og 24 (molær opløselighed, $K_{sp}$) bruger også opløselighedsprodukt.
+- Efterår 2024: spm. 13 (reaktionsorden ud fra koncentration mod tid), spm. 15 (ligevægtskonstant ud fra partialtryk). Spm. 18 (pH i mættet Mg(OH)$_2$) bruger opløselighedsprodukt, se uge 10.
+- Forår 2025: spm. 4 (katalysators virkning), spm. 14 (tryk og ligevægt), spm. 18 (hastighedslov ud fra tabel). Spm. 12 (udfældning, $K_{sp}$) og 24 (molær opløselighed, $K_{sp}$) bruger også opløselighedsprodukt, se uge 10.
+
+## Tjek dig selv
+
+- [ ] Hvordan bestemmes reaktionsordenerne og $k$ ud fra begyndelseshastigheder?
+- [ ] Hvordan ser den integrerede 1. ordens hastighedslov ud, og hvordan findes halveringstiden?
+- [ ] Hvordan bruges to-punkts-Arrhenius til at finde $E_a$?
+- [ ] Hvordan bestemmer det langsomste trin hastighedsloven for en mekanisme?
+- [ ] Hvordan sammenlignes $Q$ og $K$ for at forudsige reaktionens retning?
+- [ ] Hvad sker der med $K$ og ligevægtens placering ved ændring af temperatur, tryk og ved tilsætning af katalysator?
 
 ## Links
 

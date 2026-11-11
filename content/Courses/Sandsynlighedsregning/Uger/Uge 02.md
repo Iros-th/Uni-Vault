@@ -11,7 +11,7 @@ tags:
 
 # Uge 2: Binomialfordelingen, normalapproksimation og hypergeometrisk fordeling
 
-> Kilde: kursussiden http://www2.imm.dtu.dk/courses/02405/ (forelæsning 11. september, afsnit 2.1, 2.2, 2.5 og Appendiks 1 om counting) og ugebrevet til forelæsning 2. Lærebog: Jim Pitman, Probability. Velkomstteksten skønner sværhedsgraden til "under middel", ca. 39 sider. Slides og videoer er ikke læst.
+> Kilde: kursussiden http://www2.imm.dtu.dk/courses/02405/ (forelæsning 11. september, afsnit 2.1, 2.2, 2.5 og Appendiks 1 om counting) og ugebrevet til forelæsning 2. Lærebog: Jim Pitman, Probability. Velkomstteksten skønner sværhedsgraden til "under middel", ca. 39 sider. Slides og videoer er ikke anvendt.
 
 ## Emner
 
@@ -36,24 +36,6 @@ tags:
 **Hypergeometrisk fordeling.** Træk $n$ uden tilbagelægning fra en population på $N$ med $G$ "gode": $P(X = k) = \dfrac{\binom{G}{k}\binom{N-G}{n-k}}{\binom{N}{n}}$. Eksempel: 5 kort fra 52, præcis 2 hjerter: $\dfrac{\binom{13}{2}\binom{39}{3}}{\binom{52}{5}} = \dfrac{78 \cdot 9139}{2\,598\,960} \approx 0{,}274$.
 
 **Counting.** Antal ordnede udvælgelser af $r$ blandt $n$ er $n!/(n-r)!$, antal uordnede er $\binom{n}{r}$. Binomial er "med tilbagelægning", hypergeometrisk er "uden".
-### Approksimationsmodel: Binomialfordelingens klokkekonvergens mod normalfordelingen
-
-Når $n$ vokser og $p$ holdes konstant, konvergerer den diskrete binomialfordeling $B(n, p)$ mod den kontinuerte normalfordeling $\mathcal{N}(np, np(1-p))$:
-
-```text
-  Diskrete søjler: B(n, p)          Kontinuert kurve: N(μ, σ²)
-           ┌─┐                                    __---__
-         ┌─┤ ├─┐                                _/       \_
-       ┌─┤ │ │ ├─┐                            _/           \_
-     ┌─┤ │ │ │ │ ├─┐                         /               \
-  ───┴─┴─┴─┴─┴─┴─┴─┴───                   ──/─────────────────\──
-       Diskrete k-værdier                           x (kontinuert)
-```
-
-**Kontinuitetskorrektion (Huskeregel til eksamen):**
-For at medregne hele søjlen ved $k$, udvider man intervallet med 0,5:
-$$P(a \le X \le b) pprox P\left( rac{a - 0{,}5 - np}{\sqrt{np(1-p)}} \le Z \le rac{b + 0{,}5 - np}{\sqrt{np(1-p)}} ight).$$
-
 ## Opgaver
 
 Pitman, Probability (kapitel.afsnit.opgave). Regnes ved øvelsen fredag 18. september.

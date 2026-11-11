@@ -29,22 +29,6 @@ tags:
 **Postere bedømmes på tre ting** (slides): form (indbydende og overskuelig, balance mellem tekst og illustrationer, grafisk udtryk støtter indholdet), indhold (kan læses uden en der forklarer, korrekt, fokuseret og fyldestgørende), præsentation (øv den, og design posteren så den støtter præsentationen). Lav et layout og bed om feedback. Husk at aflevere på Learn. Målgruppen er medstuderende, og præsentationen er på cirka 7 minutter (slides fra 26/10).
 
 **Foredraget "maskiner der ser".** Rasmus Larsen gav 16/9 2026 et bredere foredrag om hvordan billedanalyse har udviklet sig fra mønstergenkendelse til AI. Slides indeholder bl.a. DSAGM's 50 års jubilæum (1976 til 2026), tidlig industriel billedanalyse (kontrol af søm, kvalitetsgradering af parketstave hos Junckers), multispektrale kameraer, procesovervågning af mejeriprodukter, feature-beskrivelser og visuelle "ordbøger" med k-means, U-Net, og anvendelser i landmærker, skibe fra satellitbilleder, CT af nyrer, kompositter til vindmølleblade og nervefibre. Det er inspiration, ikke pensum, og der er ingen opgaver knyttet til det.
-### Segmenteringsmodel: Histogram og Otsu-tærskelværdi
-
-Billedsegmentering deler pixels i forgrund (f.eks. celler) og baggrund ud fra deres gråtonefordeling:
-
-```text
-  Antal pixels ^
-               │      Baggrund             Forgrund
-               │        .-.                  .-.
-               │       /   \\                /   \\
-               │      /     \\              /     \\
-               │     /       \\    Tærskel /       \\
-               └────┴─────────┴───────┬───┴─────────┴─────> Gråtone (0-255)
-                                    T_opt (Otsu)
-```
-Otsus metode vælger tærskelværdien $T$, som minimerer variansen inden for hver klasse (eller ækvivalent maksimerer variansen mellem de to klasser).
-
 ## Opgaver
 
 - Aflever og fremlæg posteren for Filtreringsprojektet (del 1 og del 2).

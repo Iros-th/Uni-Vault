@@ -11,7 +11,7 @@ tags:
 
 # Uge 13: Polynomier og den udvidede euklidiske algoritme
 
-> Kilde: ugeplanen på kursussiden https://www2.imm.dtu.dk/courses/01017/2026/ (uge W13, 3. december) og kapitel 6 ("Polynomials") i Beelen et al., Discrete Mathematics, som er linket fra planen (https://www2.imm.dtu.dk/courses/01017/2026/book/discrete_math_book.pdf). Kapitlet er læst; begreberne og eksemplerne nedenfor følger det.
+> Kilde: ugeplanen på kursussiden https://www2.imm.dtu.dk/courses/01017/2026/ (uge W13, 3. december) og kapitel 6 ("Polynomials") i Beelen et al., Discrete Mathematics, som er linket fra planen (https://www2.imm.dtu.dk/courses/01017/2026/book/discrete_math_book.pdf). Begreberne og eksemplerne nedenfor følger kapitlet.
 
 ## Emner
 
@@ -49,13 +49,14 @@ I polynomieringen $\mathbb{Z}_p[x]$ (hvor koefficienterne regnes modulo et primt
 ```
 
 **Betydning for kryptografi og fejlkorrektion (AES / Reed-Solomon):**
-Hvis polynomiet $M(x)$ er irreducibelt (svarer til et primtal), udgør restklasserne $\mathbb{Z}_p[x] / \langle M(x) angle$ et endeligt legeme (Galois Field, $\mathbb{F}_{p^k}$). Udvidet Euklid finder den modulære inverse $A(x)^{-1} \pmod{M(x)}$, som bruges direkte i S-boxen i AES-kryptering.
+Hvis polynomiet $M(x)$ er irreducibelt (svarer til et primtal), udgør restklasserne $\mathbb{Z}_p[x] / \langle M(x) 
+angle$ et endeligt legeme (Galois Field, $\mathbb{F}_{p^k}$). Udvidet Euklid finder den modulære inverse $A(x)^{-1} \pmod{M(x)}$, som bruges direkte i S-boxen i AES-kryptering.
 
 ## Opgaver
 
 Fra kursussiden: Beelen et al, kapitel 6: **6.16**, **6.17**, **6.18**, **6.19** (fed skrift = lav dem først). Der er ingen opgaver fra Rosen denne uge.
 
-Om opgaverne i noterne (pdf-filen): 6.16 handler om rationale rødder i polynomier med heltalskoefficienter (og at $\sqrt{2}$ og $\sqrt{5}$ er irrationelle); 6.17 undersøger Euklids algoritmes køretid; 6.18 handler om at forkorte rationale funktioner fuldstændigt; 6.19 om opdeling i enhedsbrøker. Bemærk, at noterne selv markerer 6.17 som "Extra exercises, not in the curriculum", mens kursussiden har den med i fed skrift. Hold dig til kursussidens liste og spørg en instruktor, hvis det er uklart.
+Om opgaverne i noterne (pdf-filen): 6.16 handler om rationale rødder i polynomier med heltalskoefficienter (og at $\sqrt{2}$ og $\sqrt{5}$ er irrationelle); 6.17 undersøger Euklids algoritmes køretid; 6.18 handler om at forkorte rationale funktioner fuldstændigt; 6.19 om opdeling i enhedsbrøker. Noterne markerer selv 6.17 som "Extra exercises, not in the curriculum", mens kursussiden har den med i fed skrift.
 
 ## Links
 

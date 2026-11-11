@@ -11,7 +11,7 @@ tags:
 
 # Uge 7: Fordelingsfunktion, maksimum og minimum, ordnede variable
 
-> Kilde: kursussiden http://www2.imm.dtu.dk/courses/02405/ (forelæsning 23. oktober, afsnit 4.5 og 4.6; 16. oktober er ikke på planen) og ugebrevet til forelæsning 7. Lærebog: Jim Pitman, Probability. Velkomstteksten skønner sværhedsgraden til "over middel", ca. 18 sider. Slides er ikke læst.
+> Kilde: kursussiden http://www2.imm.dtu.dk/courses/02405/ (forelæsning 23. oktober, afsnit 4.5 og 4.6; 16. oktober er ikke på planen) og ugebrevet til forelæsning 7. Lærebog: Jim Pitman, Probability. Velkomstteksten skønner sværhedsgraden til "over middel", ca. 18 sider. Slides er ikke anvendt.
 
 ## Emner
 
@@ -30,24 +30,9 @@ tags:
 
 Eksempel: tre uafhængige ligefordelte på $(0,1)$, maksimum: $F_{\max}(x) = x^3$, tæthed $3x^2$, middelværdi $\int_0^1 x\cdot 3x^2dx = 3/4$. Eksempel: minimum af $n$ uafhængige eksponentialfordelte med rate $\lambda$ har $P(\min > t) = e^{-n\lambda t}$, altså eksponential med rate $n\lambda$.
 
-**Den $k$'te ordensstatistik.** For uafhængige, identisk fordelte kontinuerte variable med tæthed $f$ og fordelingsfunktion $F$ er tætheden af den $k$'te mindste $\dfrac{n!}{(k-1)!\,(n-k)!}\,F(x)^{k-1}\big(1 - F(x)\big)^{n-k} f(x)$ (boks midt på side 326). For ligefordelte på $(0,1)$ er den $k$'te mindste betafordelt. Betafordelingen bruges som eksempel i forelæsninger og opgaver.
+**Den $k$'te ordensstatistik.** For uafhængige, identisk fordelte kontinuerte variable med tæthed $f$ og fordelingsfunktion $F$ er tætheden af den $k$'te mindste $\dfrac{n!}{(k-1)!\,(n-k)!}\,F(x)^{k-1}\big(1 - F(x)\big)^{n-k} f(x)$ (boks midt på side 326). For ligefordelte på $(0,1)$ er den $k$'te mindste betafordelt.
 
 **Hvorfor maksimum?** Ugebrevet motiverer det med dimensionering: konstruktioner skal ofte klare maksimal belastning, ikke gennemsnittet.
-### Sorteringsmodel: Ordnede stokastiske variable (Order statistics)
-
-Når $n$ uafhængige målinger sorteres i voksende rækkefølge: $X_{(1)} \le X_{(2)} \le \dots \le X_{(n)}$:
-
-```text
-           X_(1)              X_(k)               X_(n)
-             │                  │                   │
-  ───[───────o───────────────[──o──]───────────────o───────]───> x
-     <- Min  ->              k-te observation     <- Max ->
-```
-
-**Maksimum og minimum:**
-- $P(X_{(n)} \le x) = [F(x)]^n$ (alle $n$ målinger er $\le x$).
-- $P(X_{(1)} > x) = [1 - F(x)]^n$ (alle $n$ målinger er $> x$).
-
 ## Opgaver
 
 Pitman, Probability (kapitel.afsnit.opgave). Regnes ved øvelsen fredag 30. oktober.

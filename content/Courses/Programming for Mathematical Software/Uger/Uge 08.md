@@ -11,7 +11,7 @@ tags:
 
 # Uge 8: Eksterne biblioteker (BLAS og LAPACK)
 
-> Kilde: `module08.pdf` (opgaveark, 29. oktober 2026), `slides08.pdf` (forelæsning 8, 26 slides), `sols_module08.pdf` og `module08.tar` (`example_blas.c`, `example_cblas.c`, `README.md` og fire makefiler til Gbar, MinGW, Ubuntu og macOS). Pensum: lecture notes kap. 8 (External Libraries for Numerical Linear Algebra). Autolab-opgaverne er ikke vist i løsningsarket.
+> Kilde: `module08.pdf` (opgaveark, 29. oktober 2026), `slides08.pdf` (forelæsning 8, 26 slides), `sols_module08.pdf` og `module08.tar` (`example_blas.c`, `example_cblas.c`, `README.md` og fire makefiler til Gbar, MinGW, Ubuntu og macOS). Pensum: lecture notes kap. 8 (External Libraries for Numerical Linear Algebra). Autolab-opgaverne indgår ikke i løsningsarket.
 
 ## Emner
 
@@ -67,7 +67,7 @@ int main(void) {
 **LAPACK (slides).** Bibliotek fra 1990'erne til numerisk lineær algebra: matrixfaktoriseringer (LU, Cholesky, QR, SVD, Schur), lineære ligningssystemer, mindste kvadraters problemer, egenværdi- og singulærværdiproblemer. Det bruger BLAS som byggeklodser. Til afleveringen bruges `DGESV`.
 
 **Windows.** Opgavearket skriver, at BLAS og LAPACK findes på mange Unix/Linux-systemer inkl. DTU Unix og macOS, men ikke på Windows. WSL-brugere kan installere OpenBLAS med `sudo apt-get install libopenblas-dev`.
-### Ydelsesmodel: Roofline-modellen og aritmetisk intensitet
+### Ydelsesmodel: Roofline-modellen og aritmetisk intensitet (supplerende illustration, ikke fra slides, ikke pensum)
 
 Roofline-modellen sætter et teoretisk loft over programmets beregningshastighed ud fra den aritmetiske intensitet $I$ (FLOPs pr. overført byte):
 
@@ -94,6 +94,15 @@ Fra `module08.pdf`. Instruktioner: læs lecture notes kap. 8.
 - 8.1 Download `module08.tar` fra DTU Learn. Den indeholder to eksempler, `example_blas.c` og `example_cblas.c`, der skalerer et array af `double` med BLAS-rutinen `dscal`, samt en Makefile. Det første eksempel inkluderer prototypen for `dscal_` eksplicit; det andet bruger CBLAS og `cblas_dscal`. Læs og forstå eksemplerne (opgavearket forklarer argumenterne `n`, `a`, `x`, `incx` og brugen af `const`).
   - Løsningsidé: løsningsarket er en forklaring af eksemplerne (ingen egen kode). Eksemplerne skalerer `{1,2,3,4,5}` med 3.0 og udskriver `x[i]` med `%.4g`; byg med `make -f Makefile_Ubuntu` (eller den makefile der passer til dit system).
 - 8.2 Lav "Module 08"-opgaverne på Autolab. Slides: niveau 1 (`dscal`, `daxpy`) og niveau 2 (`dtrsv`); husk, at BLAS antager kolonnevis lagring. (Løsninger lægges på Learn efter deadline.)
+
+## Tjek dig selv
+
+- [ ] Hvad dækker BLAS niveau 1, 2 og 3, og hvordan er navneskemaet opbygget?
+- [ ] Hvorfor er et BLAS-kald ofte hurtigere end egne løkker?
+- [ ] Hvad er stride og leading dimension (LDA), og hvordan lagres en matrix i BLAS?
+- [ ] Hvordan kaldes en Fortran-baseret BLAS-funktion fra C, og hvordan adskiller CBLAS sig?
+- [ ] Hvordan linkes mod BLAS og LAPACK?
+- [ ] Hvilke problemer løser LAPACK?
 
 ## Links
 

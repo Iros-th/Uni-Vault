@@ -11,7 +11,7 @@ tags:
 
 # Uge 10: Lineære afbildninger
 
-> Kilde: kursussiden mat1a.compute.dtu.dk (linket som Course Homepage på DTU Learn for 01001), siderne Lektionsoversigt, Ugeprogram semesteruge 10 og Opgaver Store Dag/Lille Dag uge 10. Bogen er kursets lærebog (udgave 2026).
+> Kilde: kursussiden mat1a.compute.dtu.dk, siderne Lektionsoversigt, Ugeprogram semesteruge 10 og Opgaver Store Dag/Lille Dag uge 10. Bogen er kursets lærebog (udgave 2026).
 
 ## Emner
 
@@ -49,25 +49,6 @@ Differentiation er lineær på rum af polynomier og glatte funktioner. Konstante
 Ligningen har løsning, hvis og kun hvis $\mathbf{w} \in \mathrm{Im}\, T$. Løsningsmængden er en partikulær løsning plus $\ker T$ (Sætning 11.4.2).
 
 *Eksempel.* Hvis $T(\mathbf{v}_0) = \mathbf{w}$, er alle løsninger $\mathbf{v}_0 + \mathbf{k}$ med $\mathbf{k} \in \ker T$.
-### Transformationsmodel: Lineære afbildninger i 2D
-
-Enhver lineær afbildning $T: \mathbb{R}^2 	o \mathbb{R}^2$ er fuldstændig bestemt af, hvor den sender standardbasisvektorerne $\mathbf{e}_1 = egin{bmatrix}1\0\end{bmatrix}$ og $\mathbf{e}_2 = egin{bmatrix}0\1\end{bmatrix}$ hen:
-
-```text
-  Rotation med vinkel θ:               Skævhed (Shear langs x-aksen):
-  ┌                     ┐              ┌         ┐
-  │ cos θ      -sin θ   │              │ 1     k │
-  │ sin θ       cos θ   │              │ 0     1 │
-  └                     ┘              └         ┘
-           y ^                                  y ^
-             │  T(e2)                             │    T(e2)
-             │   ^                                │   ┌──>
-             │   │                                │   │  /
-             │   └───> T(e1)                      │   │ /
-             └───────────> x                      └───┴─────> x
-                                                     T(e1)=e1
-```
-
 ## Opgaver
 
 Opgaverne står på kursussiden med de numre, der er gengivet her. Nogle nævner bogen, fx definition eller sætning, i deres hints (se begreberne ovenfor).

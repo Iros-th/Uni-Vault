@@ -11,7 +11,7 @@ tags:
 
 # Uge 7: Intermolekylære kræfter og opløsninger
 
-> Kilde: DTU Learn 26020, Week 7: "Lecture 6 - post-lecture copy.pdf" (forelæsning 19. oktober 2026; pre-lecture-versionen er ikke læst). Bog: OpenStax Chemistry 2e, kapitel 10 (Liquids and Solids) og 11 (Solutions and Colloids). Uge 6 på Learn er anvendelsesforelæsningen, efterårsferie var 12. til 16. oktober. Meddelelserne er læst. TOC har to emner med navnet "Lecture 6 - pre-lecture copy": den ene har ingen filadresse (kunne ikke tilgås), den anden er "copy 2.pdf", som er læst og sammenlignet. Exercises_Week_07 (quiz) er ikke åbnet.
+> Kilde: DTU Learn 26020, uge 7: "Lecture 6 - post-lecture copy.pdf" (forelæsning 19. oktober 2026), "Lecture 6 - pre-lecture copy 2.pdf" og kursusmeddelelserne. Én af to poster med navnet "Lecture 6 - pre-lecture copy" er ikke tilgængelig i DTU Learn. Bog: OpenStax Chemistry 2e, kapitel 10 (Liquids and Solids) og 11 (Solutions and Colloids). Uge 6 på Learn er anvendelsesforelæsningen; efterårsferie var 12. til 16. oktober.
 
 ## Emner
 
@@ -27,7 +27,7 @@ tags:
 
 **Damptryk.** Afhænger kun af stof og temperatur, ikke af mængde væske. Stærkere intermolekylære kræfter giver lavere damptryk. Slides: vand 2,3 kPa, ethanol 5,9, acetone 24,6, diethylether 58,6 kPa. Kogepunkt er den temperatur hvor damptryk = ydre tryk.
 
-**Clausius-Clapeyron.** $\ln\dfrac{P_2}{P_1} = \dfrac{\Delta H_{vap}}{R}\left(\dfrac{1}{T_1}-\dfrac{1}{T_2}\right)$. Slides, Mount Everest: $P_2 = 0{,}33$ atm, $P_1=1$ atm, $T_1=373{,}15$ K, $\Delta H_{vap}=40{,}7$ kJ/mol. $\dfrac1{T_2} = \dfrac1{373{,}15}-\dfrac{8{,}314}{40700}\ln0{,}33 = 2{,}680\times10^{-3}+2{,}265\times10^{-4} = 2{,}907\times10^{-3}$, så $T_2 = 344$ K = 71 °C (kontrolleret).
+**Clausius-Clapeyron.** $\ln\dfrac{P_2}{P_1} = \dfrac{\Delta H_{vap}}{R}\left(\dfrac{1}{T_1}-\dfrac{1}{T_2}\right)$. Slides, Mount Everest: $P_2 = 0{,}33$ atm, $P_1=1$ atm, $T_1=373{,}15$ K, $\Delta H_{vap}=40{,}7$ kJ/mol. $\dfrac1{T_2} = \dfrac1{373{,}15}-\dfrac{8{,}314}{40700}\ln0{,}33 = 2{,}680\times10^{-3}+2{,}265\times10^{-4} = 2{,}907\times10^{-3}$, så $T_2 = 344$ K = 71 °C.
 
 **Faseovergange.** Under en faseændring tages energi op uden temperaturændring (latent varme, fx smeltevarme), mens opvarmning i en fase er sensibel varme $q=mc\Delta T$. Fasediagrammet for vand og $\mathrm{CO_2}$ (tøris sublimerer ved atmosfæretryk, $-78{,}5$ °C) er figurer på slides.
 
@@ -41,7 +41,7 @@ tags:
 
 **Pre-lecture mod post-lecture og meddelelser.** Pre-lecture (30 sider, filen "Lecture 6 - pre-lecture copy 2.pdf") har en Vevox-afstemning (live poll) som post-lecture (40 sider) ikke har, og lidt andre formuleringer i kolloid-afsnittet; ellers er den en delmængde af post-lecture. Meddelelse 19. oktober: problemerne på sidste slide er helt valgfri ekstra øvelse. Meddelelse 23. oktober: fra uge 8 lægges ekstra øvelsesspørgsmål fra OpenStax ud ved siden af ugens opgaver (de første, "Additional Questions Week 08", er fra kapitel 10 og 11, altså denne uges stof; der kommer ingen ekstra spørgsmål til anvendelsesforelæsning 2).
 
-### Model: Krystalgittermodeller (enhedsceller)
+### Model: Krystalgittermodeller (enhedsceller) (supplerende, OpenStax kap. 10, ikke fra slides)
 
 I faste metalliske stoffer pakker atomerne sig i krystalgitter-enhedsceller:
 
@@ -59,16 +59,26 @@ Hexagonal close-packed (HCP)   6                 12              74 % (tætpakke
 
 ## Opgaver
 
-- Exercises_Week_07 (quiz på DTU Learn, ikke åbnet)
+- Exercises_Week_07 (quiz på DTU Learn)
 - Slides, "Think about these problems before next class": Problem 1 (rangér neopentan, n-pentan og 1-butanol efter kogepunkt) og Problem 2 (frysepunkt for 50 g $\mathrm{CaCl_2}$ i 1,0 kg vand, $K_f=1{,}86$ K kg/mol; og hvad sker der med 50 g NaCl). Løsningerne står i begyndelsen af næste uges slides (se ovenfor).
 - Ingen bogopgaver med nummer er angivet.
 
 ## Gamle eksamensspørgsmål om dette emne
 
-Numrene refererer til de to gamle eksamenssæt på Learn (efterår 2024 og forår 2025, se Uge 13). Efterår 2024 er læst ved OCR af en scannet PDF, og numrene følger rækkefølgen i filen.
+Numrene refererer til de to gamle eksamenssæt på Learn (efterår 2024 og forår 2025, se Uge 13). Numrene for efterår 2024 følger rækkefølgen i den scannede fil.
 
 - Efterår 2024: spm. 10 (bindinger i fast argon), spm. 11 (frysepunkt for NaBr-opløsning), spm. 12 (enhedscellens volumen for rumcentreret kubisk jern, kap. 10).
 - Forår 2025: spm. 6 (højeste damptryk ved stuetemperatur), spm. 15 (hvorfor HF har højt kogepunkt), spm. 27 (molar masse ud fra kogepunktsforhøjelse). Spm. 22 (kogepunkt for Br$_2$ ud fra $\Delta H$ og $\Delta S$) hører også til uge 11.
+
+## Tjek dig selv
+
+- [ ] Hvordan rangeres stoffer efter kogepunkt ud fra intermolekylære kræfter og molekylform?
+- [ ] Hvordan bruges Clausius-Clapeyron til at finde kogepunktet ved lavere tryk?
+- [ ] Hvad kendetegner de fire krystaltyper (ionisk, molekylær, kovalent netværk, metallisk)?
+- [ ] Hvilke tommelfingerregler gælder for saltes opløselighed i vand?
+- [ ] Hvordan beregnes frysepunktssænkning og osmotisk tryk, og hvad er van't Hoff-faktoren for $\mathrm{NaCl}$ og $\mathrm{CaCl_2}$?
+- [ ] Hvordan adskiller en kolloid sig fra en opløsning og en suspension?
+- [ ] Hvor mange atomer rummer en FCC- og en BCC-enhedscelle?
 
 ## Links
 

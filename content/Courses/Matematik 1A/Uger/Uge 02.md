@@ -11,7 +11,7 @@ tags:
 
 # Uge 2: Mængder og funktioner
 
-> Kilde: kursussiden mat1a.compute.dtu.dk (linket som Course Homepage på DTU Learn for 01001), siderne Lektionsoversigt, Ugeprogram semesteruge 2 og Opgaver Store Dag/Lille Dag uge 2. Bogen er kursets lærebog (udgave 2026).
+> Kilde: kursussiden mat1a.compute.dtu.dk, siderne Lektionsoversigt, Ugeprogram semesteruge 2 og Opgaver Store Dag/Lille Dag uge 2. Bogen er kursets lærebog (udgave 2026).
 
 ## Emner
 
@@ -49,23 +49,6 @@ $\exp: \mathbb{R} \to \mathbb{R}_{>0}$ er bijektiv, og $\ln$ er den inverse (Eks
 En rekursiv definition angiver startværdier og en regel, der bruger de forrige led (Eksempel 3.1.2: Fibonacci). Sumtegnet $\sum_{k=1}^{n} a_k$ er en kort skrivemåde for $a_1 + \dots + a_n$.
 
 *Eksempel.* $a_0 = 1$, $a_n = 2 a_{n-1}$ giver $a_n = 2^n$. Og $\sum_{k=1}^{4} k^2 = 1 + 4 + 9 + 16 = 30$.
-### Relations- og funktionsmodel: Injektiv, surjektiv og fiber-opdeling
-
-En funktions opførsel $f: X 	o Y$ kan aflæses direkte af fibrene (urbillederne $f^{-1}(\{y\})$):
-
-```text
-       Domæne X                           Codomæne Y
-    ┌────────────┐                      ┌────────────┐
-    │  x1 ───────┼─────────────────────>│     y1     │
-    │  x2 ───────┼──────────┐           │            │
-    │            │          └──────────>│     y2     │
-    │  x3 ───────┼─────────────────────>│            │
-    │            │                      │     y3     │ (Ikke ramt -> Ikke surjektiv)
-    └────────────┘                      └────────────┘
-     x2 og x3 rammer samme y2
-     -> Ikke injektiv (kollision)
-```
-
 ## Opgaver
 
 Opgaverne står på kursussiden med de numre, der er gengivet her. Nogle nævner bogen, fx definition eller sætning, i deres hints (se begreberne ovenfor).

@@ -11,7 +11,7 @@ tags:
 
 # Uge 3: Operations Research, del 1
 
-> Kilde: DTU Learn 02525, Project 2: `OR_Lecture1.pdf` (Thomas Stidsen, 14/9 2026), `OR_Projekt.pdf` (brændstofprojektet), `bryggeri.py`, `bryggeri_integer.py`, `knapsack.py`. Mandag 14/9 2026. Mine egne noter: [[Lection 3 Operations research]].
+> Kilde: DTU Learn 02525, Project 2: `OR_Lecture1.pdf` (Thomas Stidsen, 14/9 2026), `OR_Projekt.pdf` (brændstofprojektet), `bryggeri.py`, `bryggeri_integer.py`, `knapsack.py`. Mandag 14/9 2026. Ældre lektionsnote: [[Lection 3 Operations research]].
 
 ## Emner
 
@@ -56,24 +56,6 @@ $$\max \sum_i v_i x_i \quad \text{s.t.} \quad \sum_i w_i x_i \le W, \quad x_i \i
 Slides-eksempel med $W = 15$: kop ($w=3$, $v=7$), disketter ($w=4$, $v=10$), papir ($w=12$, $v=4$), T-shirt ($w=2$, $v=4$), bog ($w=6$, $v=8$). `knapsack.py` modellerer det med binære variable.
 
 **Grådig algoritme.** Tag i hver iteration det lokalt bedste valg, her genstande efter værdi/vægt. På eksemplet giver den kop, disketter, T-shirt og bog med værdi $29$. Hvis disketterne vejer $5$ i stedet for $4$, giver grådig valg værdi $21$ (bogen kan ikke være med), mens kop, disketter og bog giver $25$. Pointen er at en grådig algoritme kan være heldig eller uheldig.
-### Optimeringsmodel: Lineær programmering i 2D (Det tilladte polyeder)
-
-Et lineært optimeringsproblem maksimerer en linje $z = c_1 x_1 + c_2 x_2$ over et tilladt område afgrænset af lineære uligheder:
-
-```text
-       x2 ^
-          │         / Rand: a1 x1 + a2 x2 = b
-          │        /
-          │  ┌────/────────┐
-          │  │   /         │
-          │  │  / Tilladt  │  --> Niveaulinje for objektfunktion z
-          │  │ /  område   │      skubbes i retningen (c1, c2)
-          │  │/ (Polyeder) │      indtil det sidste hjørnepunkt rammes!
-          └──┴─────────────┴──────────> x1
-             Hjørne (Extreme point) = Optimal løsning!
-```
-Den fundamentale sætning i lineær programmering garanterer, at hvis der findes en optimal løsning, findes der altid mindst ét hjørnepunkt (ekstremum), der er optimalt.
-
 ## Opgaver
 
 Projektet `OR_Projekt.pdf`, "Optimering i containerbranchen: reducering af omkostninger til brændstof". Skibet sejler Mombasa, Zanzibar, Victoria, Salalah og tilbage til Mombasa, har 2 tanke á $3500$ mt og skal have præcis $1000$ mt reserve ved ankomst til Mombasa. Data i opgaven: forbrug til næste havn $700$, $1800$, $2200$, $2800$ mt, reserve ved ankomst $1000$ (start), $1200$, $1800$, $2800$ mt, brændstofpris $600$, $900$, $1100$, $1200$ dollar pr. mt. Rapportdeadline 27/9.

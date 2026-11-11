@@ -11,7 +11,7 @@ tags:
 
 # Uge 5: Bindinger, geometri og hybridisering
 
-> Kilde: DTU Learn 26020, Week 5: "Lecture 5 - post-lecture 2.pdf" (forelæsning 28. september 2026, 43 sider) og "Lecture 5 - pre-lecture copy.pdf" (41 sider, sammenlignet). Videoen "VSEPR in action.mov" er ikke set. Kursusmeddelelserne er læst. Molekylorbital-diagrammerne er figurer, så MO-delen er skrevet ud fra slidetekst og standardregler (markeret). Bog: OpenStax Chemistry 2e, kapitel 7 (Chemical Bonding and Molecular Geometry) og 8 (Advanced Theories of Covalent Bonding). Exercises_Week_05 (quiz) er ikke åbnet.
+> Kilde: DTU Learn 26020, uge 5: "Lecture 5 - post-lecture 2.pdf" (forelæsning 28. september 2026, 43 sider), "Lecture 5 - pre-lecture copy.pdf" (41 sider) og kursusmeddelelserne. Videoen "VSEPR in action.mov" er ikke medtaget. MO-diagrammerne på slides er figurer; MO-afsnittet bygger på slidetekst og standardregler. Bog: OpenStax Chemistry 2e, kapitel 7 (Chemical Bonding and Molecular Geometry) og 8 (Advanced Theories of Covalent Bonding).
 
 ## Emner
 
@@ -35,9 +35,9 @@ tags:
 
 **MO-teori for toatomige molekyler.** Bindingsorden $BO = \tfrac12(n_{bindende} - n_{antibindende})$. For $\mathrm{Li_2}$ til $\mathrm{N_2}$ blandes 2s og 2p, så $\sigma_{2p}$ ligger over $\pi_{2p}$-parret (slides). Egen udregning efter standardreglerne: $\mathrm{N_2}$ har 10 valenselektroner, 8 bindende og 2 antibindende, $BO = 3$. $\mathrm{O_2}$ har 12 valenselektroner, 8 bindende og 4 antibindende, $BO = 2$, med to uparrede elektroner i $\pi^*$ (paramagnetisk). Læreren forventer at man kan fylde MO'er efter Aufbau, Hund og Pauli, ikke at man konstruerer $\mathrm{I_3^-}$-diagrammet selv.
 
-**Pre-lecture mod post-lecture.** Pre-lecture har 41 sider, post-lecture 43. Pre-lecture har kun nogle få afvigelser i formuleringen (bl.a. i afsnittet om NH$_3$ og elektrondomæner og om rækkefølgen Lewis-struktur, formelle ladninger, resonansformer); ingen ekstra opgaver. Fra meddelelsen 28. september: VSEPR-videoen er lagt op som separat fil, og der er et YouTube-link til en video om oxygens paramagnetisme (som O$_2$s MO-diagram forudsiger): https://www.youtube.com/watch?v=Lt4P6ctf06Q (linket er ikke åbnet). Den håndskrevne Hess-løsning ligger i Week 3-mappen.
+**Pre-lecture mod post-lecture.** Pre-lecture har 41 sider, post-lecture 43. Pre-lecture har kun nogle få afvigelser i formuleringen (bl.a. i afsnittet om NH$_3$ og elektrondomæner og om rækkefølgen Lewis-struktur, formelle ladninger, resonansformer); ingen ekstra opgaver. Fra meddelelsen 28. september: VSEPR-videoen er lagt op som separat fil, og der er et YouTube-link til en video om oxygens paramagnetisme (som O$_2$s MO-diagram forudsiger): https://www.youtube.com/watch?v=Lt4P6ctf06Q. Den håndskrevne Hess-løsning ligger i Week 3-mappen.
 
-### Model: VSEPR 3D-geometri og hybridisering
+### Model: VSEPR 3D-geometri og hybridisering (supplerende illustration, ikke fra slides)
 
 VSEPR-modellen (Valence Shell Electron Pair Repulsion) bygger på, at elektrondomæner (bindinger og frie elektronpar) frastøder hinanden og indtager den geometri, der maksimerer den indbyrdes vinkel:
 
@@ -51,21 +51,31 @@ Domæner   Elektronpargeometri     Hybridisering    Bindingsvinkel    Eksempel
    6      Oktaedrisk              sp^3d^2          90 grader         SF_6
 ```
 
+Rækkerne med $sp^3d$ og $sp^3d^2$ er den klassiske beskrivelse; slides angiver, at forklaringen med d-orbitaler er forældet (se Udvidet oktet ovenfor).
+
 **Regel om frie elektronpar (lone pairs):** Frie par fylder mere i rummet end bindende elektronpar.
 I vand ($\text{H}_2\text{O}$) er der 4 domæner (2 bindende par, 2 frie par): elektronpargeometrien er tetraedrisk, men de to frie par klemmer $\text{H-O-H}$ bindingsvinklen ned fra $109{,}5^\circ$ til $104{,}5^\circ$, hvilket giver en **vinklet** molekylgeometri med et kraftigt permanent dipolmoment.
 
 ## Opgaver
 
-- Exercises_Week_05 (quiz på DTU Learn, ikke åbnet)
+- Exercises_Week_05 (quiz på DTU Learn)
 - Kursusplanen: "Applications lecture 1, 8.00: Exercise on Lecture 5 material" (5. oktober 2026, se uge 6).
 - Ingen bogopgaver med nummer er angivet for ugen.
 
 ## Gamle eksamensspørgsmål om dette emne
 
-Numrene refererer til de to gamle eksamenssæt på Learn (efterår 2024 og forår 2025, se Uge 13). Efterår 2024 er læst ved OCR af en scannet PDF, og numrene følger rækkefølgen i filen.
+Numrene refererer til de to gamle eksamenssæt på Learn (efterår 2024 og forår 2025, se Uge 13). Numrene for efterår 2024 følger rækkefølgen i den scannede fil.
 
 - Efterår 2024: spm. 9 (hvilke molekyler er plane: NH$_3$, SF$_6$, BH$_3$, CH$_4$).
 - Forår 2025: spm. 1 (H-N-H-vinklen i hydrazin), spm. 3 (hvilket molekyle er ikke plant), spm. 9 (geometri og polaritet af CS$_2$), spm. 13 (formel ladning på N i nitrat).
+
+## Tjek dig selv
+
+- [ ] Hvordan bruges elektronegativitetsforskellen $\Delta\chi$ til at klassificere en binding?
+- [ ] Hvordan tegnes en Lewis-struktur, og hvordan beregnes formel ladning?
+- [ ] Hvilke geometrier hører til 2 til 6 elektrondomæner, og hvordan påvirker frie elektronpar bindingsvinklerne?
+- [ ] Hvilken hybridisering har C i $\mathrm{CH_4}$, $\mathrm{C_2H_4}$ og $\mathrm{C_2H_2}$?
+- [ ] Hvordan beregnes bindingsorden i MO-teori, og hvorfor er $\mathrm{O_2}$ paramagnetisk?
 
 ## Links
 

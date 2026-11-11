@@ -86,7 +86,7 @@ int main(void) {
 **Ansvarlig brug af AI (slides).** Godt: forklare syntaks, compilerfejl og advarsler, sammenligne alternative implementeringer, lave små eksempler man kan studere, hjælpe med at debugge og med stilgennemgang, stille hvorfor- og hvordan-spørgsmål. Dårligt: aflevere AI-kode man ikke forstår, kopiere uden at teste, bruge AI til at omgå øvelserne, stole på ydelses- eller talresultater uden at validere, og bede AI løse en opgave før man selv har prøvet. Slides understreger, at man selv er ansvarlig for al kode, alle resultater og forklaringer man afleverer.
 
 **Ressourcer (slides).** Lærebog: K. N. King, "C Programming: A Modern Approach", 2. udgave (2008). Supplement: Horton, "Beginning C" (5. udgave, 2013) og "Beginning C++" (2014), Big-O Cheat Sheet og "Learn to Solve It". Redaktører: VS Code eller Zed. Værktøjer: GNU Make og GNU debugger.
-### Systemmodel: C-kompileringskæden (Build pipeline)
+### Systemmodel: C-kompileringskæden (Build pipeline) (supplerende illustration, ikke fra slides)
 
 Kompilering af C-kode er en fire-trins proces fra menneskelæselig tekst til eksekverbar maskinkode:
 
@@ -111,10 +111,19 @@ Fra `module01.pdf`. Inden opgaverne: sørg for at have en C-compiler og en tekst
   - Løsningsarket skriver, at løsninger til Autolab-opgaver lægges på DTU Learn efter deadline.
 - 1.3 Lav programming projects 2 og 3 (kap. 2, s. 34) i lærebogen.
   - Løsningsidé (løsningsarket viser `king_ch2pp2.c`, kugles volumen): læs radius med `scanf("%lf", &r)` og tjek at returværdien er 1, beregn $\frac{4}{3}\pi r^3$ og print med `%.3f`. Brug `M_PI` med `#ifndef`-sikring og `LDLIBS= -lm` i `Makefile`. Skriv brøken med decimalpunktum (`4.0f/3.0f`), ellers bliver det heltalsdivision.
-- 1.4 Tag quizzen om basal C. (Quizzen er ikke åbnet; løsningsarket siger, at svarnøglen findes under "Answer Key" i quizzen.)
+- 1.4 Tag quizzen om basal C. (Svarnøglen findes under "Answer Key" i quizzen.)
 - 1.5 Lav exercises 1 og 2 (kap. 3, s. 49) i lærebogen.
   - Løsningsidé (exercise 1, `king_ch3ex1.c`): fire `printf`-kald med formaterne `"%6d,%4d"` (86 og 1040), `"%12.5e"` (30.253), `"%.4f"` (83.162) og `"%-6.2g"` (.0000009979). Kør programmet og se, hvordan bredde, justering og eksponentform opfører sig.
 - Valgfri: Se Robert Fano forklare Scientific Computing.
+
+## Tjek dig selv
+
+- [ ] Hvilke trin gennemgår en kildefil, fra preprocessor til kørbar fil?
+- [ ] Hvad gør `-Wall`, og hvorfor skal `-lm` med, når `math.h` bruges?
+- [ ] Hvorfor bruger `scanf` formatet `%lf` til `double`, og hvorfor skal returværdien tjekkes?
+- [ ] Hvad er forskellen på `7 / 2` og `7.0 / 2` i C?
+- [ ] Hvorfor er $(UU^T)x$ langsommere end $U(U^Tx)$, selvom de er matematisk ens?
+- [ ] Hvilke anvendelser af AI beskriver slides som gode og dårlige?
 
 ## Links
 

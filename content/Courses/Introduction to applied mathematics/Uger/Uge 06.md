@@ -41,25 +41,7 @@ Sikkerhedsafstanden i skabelonen er $d_{\text{sik}} = 1{,}0\cdot v_{\text{foran}
 
 $$s \leftarrow s + \Delta t\, v, \qquad v \leftarrow v + \Delta t\, a,$$
 
-for både egen bil og forankørende. Koden gemmer faktisk afstand, ønsket afstand og acceleration og plotter dem i to figurer (afstand og acceleration). Det er en primitiv numerisk løsning af differentialligningen $s'' = a$ fra uge 5; med en controller på formen $a = -b\,\dot d - c\,(d - d_{\text{sik}})$ får man netop en ligning af typen $x'' + bx' + cx = 0$ for afvigelsen, og dæmpningen (over-, kritisk, underdæmpet) afgør om bilen svinger.
-
-(Den sidste sætning er min egen kobling mellem koden og `fart.pdf`, ikke noget der står i filen.)
-### Reguleringsmodel: PID-feedback sløjfe for hastighedsstyring
-
-En aktiv fartpilot korrigerer hele tiden motorpådraget $u(t)$ ud fra fejlen $e(t) = v_{\text{ref}} - v(t)$:
-
-```text
-  v_ref    + ┌──────┐  Fejl e(t)  ┌───────────────────┐  u(t)   ┌─────────────┐   v(t)
-  ───────>(+)│ Reg. │────────────>│ PID-Controller    │────────>│ Bil-dynamik │────┬───>
-           ^ └──────┘             │ P: K_p · e        │         └─────────────┘    │
-           │                      │ I: K_i · ∫ e dt   │                            │
-           │ -                    │ D: K_d · de/dt    │                            │
-           └──────────────────────┴───────────────────┴────────────────────────────┘
-                                  Feedback-måling
-```
-- **P (Proportional):** Reagerer på den aktuelle fejl.
-- **I (Integral):** Fjerner stationær fejl (f.eks. ved kørsel op ad bakke).
-- **D (Differential):** Dæmper hurtige udsving og modvirker overskydende acceleration.
+for både egen bil og forankørende. Koden gemmer faktisk afstand, ønsket afstand og acceleration og plotter dem i to figurer (afstand og acceleration). Det er en primitiv numerisk løsning af differentialligningen $s'' = a$ fra uge 5.
 
 ## Opgaver
 

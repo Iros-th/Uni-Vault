@@ -11,7 +11,7 @@ tags:
 
 # Uge 4: Stabilitet af inhomogene systemer og uendelige rækker
 
-> **Kilde:** Ugeseddel 4 og SlidesUge4.pdf (DTU Learn, 01025 E26), EkstraOpgaver.pdf (opgave 702), lærebogen afsnit 2.9 og 4.1 til 4.4. WeeklyNotes3.pdf, som ligger under uge 4 på Learn, handler om opgave 919 og er beskrevet i [[Courses/Differential Equations and Infinite Series/Uger/Uge 03|uge 3]]. Sætningsnumre følger slides (kursets 4. udgave).
+> **Kilde:** ugeseddel 4, SlidesUge4.pdf, EkstraOpgaver.pdf (opgave 702) (DTU Learn, 01025 E26); lærebogen afsnit 2.9 og 4.1 til 4.4. WeeklyNotes3.pdf, som ligger under uge 4 på Learn, hører til opgave 919 i [[Courses/Differential Equations and Infinite Series/Uger/Uge 03|uge 3]]. Sætningsnumre som i slides.
 
 ## Læseplan
 
@@ -68,37 +68,23 @@ Afleveres onsdag 30/9 kl. 8, fysisk, og opgave 2 i Möbius. Det tæller 2 % af k
 - **Opgave 2 (overføringsfunktion, afsnit 1.4):** stillet i Möbius; design af en diskantknap i et elektrisk kredsløb.
 - **Opgave 3 (komplekse koefficienter):** ja/nej-spørgsmål med begrundelse om ligninger hvor $a_0, \dots, a_n$ er komplekse. Inspiration: $y' + iy = 0$.
 
-Noten her løser ikke miniprojektet, da det er en bedømt aflevering.
+Bedømt aflevering.
 
-**MC:** svarene på 701 er 3 og 4. Løs nu opgave 702 (EkstraOpgaver.pdf): et $2\times 2$ system med $y = x_2$, hvor man skal vælge overføringsfunktion med definitionsmængde, amplitudekarakteristik og fasekarakteristik (afsnit 2.6 og 2.7).
+**MC:** svarene på 701 er 3 og 4. Ugens MC-opgave er 702 (EkstraOpgaver.pdf): et $2\times 2$ system med $y = x_2$, hvor man skal vælge overføringsfunktion med definitionsmængde, amplitudekarakteristik og fasekarakteristik (afsnit 2.6 og 2.7).
 
-**Gode råd om afleveringer (SlidesUge4):** skriv studienummer tydeligt, sidenumre og arkene i rigtig rækkefølge, og "vend" hvis du fortsætter på bagsiden. $\Leftrightarrow$ må kun stå mellem udsagn (ikke "$2 + 5 \Leftrightarrow 7$"). Lav hellere et konstruktivt bevis eller en direkte udregning end et modstridsbevis. Du behøver ikke skrive opgaveteksten, sætninger og definitioner af.
+**Gode råd om afleveringer (SlidesUge4):** tydeligt studienummer, sidenumre, arkene i rigtig rækkefølge og "vend" ved fortsættelse på bagsiden. $\Leftrightarrow$ står kun mellem udsagn (ikke "$2 + 5 \Leftrightarrow 7$"). Et konstruktivt bevis eller en direkte udregning foretrækkes frem for et modstridsbevis. Opgavetekst, sætninger og definitioner skal ikke skrives af.
+
+## Tjek dig selv
+
+- [ ] Hvad er forskellen på stabilitet af det homogene og det inhomogene system, og hvad betyder BIBO-stabil?
+- [ ] Kan jeg afgøre om $\int_1^\infty x^{-a}dx$ konvergerer, og regne værdien ud?
+- [ ] Kan jeg bevise $x_n \to x$ direkte fra definitionen med $\epsilon$ og $N$?
+- [ ] Kan jeg forklare hvorfor $f(t_n) \to a$ for enhver følge $t_n \to \infty$ når $f(t) \to a$, men ikke omvendt?
+- [ ] Ved jeg hvad det betyder at en række er konvergent (afsnitssummer)?
+- [ ] Kan jeg bruge $n$'te ledskriteriet, og ved jeg at det kun kan vise divergens?
 
 ## Links
 
 - [[Courses/Differential Equations and Infinite Series/Uger/Oversigt|Ugeoversigt 01025]]
 - Forrige: [[Courses/Differential Equations and Infinite Series/Uger/Uge 03|Uge 3]]
 - Næste: [[Courses/Differential Equations and Infinite Series/Uger/Uge 05|Uge 5: Konvergenskriterier og kvotientrækker]]
-
-
-### Signalbehandlingsmodel: BIBO-stabilitet og impulsrespons
-
-I signalbehandling og reguleringsteori kaldes et system **BIBO-stabilt** (Bounded-Input Bounded-Output), hvis ethvert begrænset indgangssignal frembringer et begrænset udgangssignal:
-
-$$\sup_{t \ge 0} |u(t)| \le M < \infty \implies \sup_{t \ge 0} |y(t)| \le K < \infty.$$
-
-```
-Indgang u(t)                    System                  Udgang y(t)
-Begrænset signal  =======> [ Impulsrespons h(t) ] ======> Begrænset signal
-|u(t)| <= M                h(t) = c^T * e^{At} * b        |y(t)| <= K
-```
-
-Sammenhængen mellem indgang og udgang er givet ved foldningsintegralet:
-
-$$y(t) = \int_0^t h(t - \tau)u(\tau)\,d\tau.$$
-
-Kriteriet for BIBO-stabilitet er ækvivalent med, at systemets impulsrespons er **absolut integrabel**:
-
-$$\int_0^\infty |h(t)|\,dt < \infty.$$
-
-Hvis systemet $\dot{\mathbf x} = A\mathbf x + \mathbf b u$ er asymptotisk stabilt (alle egenværdier har $\operatorname{Re}(\lambda) < 0$), er normen $\|e^{At}\| \le C e^{-\alpha t}$ eksponentielt aftagende. Dermed er impulsresponsen altid absolut integrabel, hvilket beviser sætning 2.49: **asymptotisk stabilitet medfører altid BIBO-stabilitet**.

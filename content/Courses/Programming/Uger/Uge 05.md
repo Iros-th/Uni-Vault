@@ -11,7 +11,7 @@ tags:
 
 # Uge 5: Funktioner
 
-> Kilde: kursussiden programmering.compute.dtu.dk (linket som Material på DTU Learn for 02002), siderne Week 5: Preparation, In-Class og Closure. DTU Learn selv har intet indhold at læse for dette kursus. Pensum i bog: TP kapitel 3, *Functions* (spring stack diagrams over), og de fem første afsnit af kapitel 6, *Return Values*.
+> Kilde: kursussiden programmering.compute.dtu.dk, siderne Week 5: Preparation, In-Class og Closure og Advanced. Pensum i bog: TP kapitel 3, *Functions* (spring stack diagrams over), og de fem første afsnit af kapitel 6, *Return Values*.
 
 ## Emner
 
@@ -54,9 +54,13 @@ z = hils('Ida')   # z er None
 
 Variable defineret inde i en funktion findes kun dér. Parametre og lokale variable forsvinder, når funktionen er færdig.
 
+### Tracebacks
+
+Et traceback viser kæden af funktionskald, der førte til fejlen, og til sidst fejltypen og beskeden. Den linje, der faktisk fejlede, står nederst. Eksempel: `ZeroDivisionError: division by zero` angiver, at der blev divideret med 0.
+
 ### Test og dokumentation
 
-Skriv funktioner trin for trin, start gerne som et almindeligt script. Test med kendte svar, og beskriv funktionen med en docstring.
+Skriv funktioner trin for trin (inkrementel udvikling): start som et almindeligt script, pak det ind i en funktion, og brug midlertidige `print`-linjer som stillads (scaffolding), der fjernes bagefter. Test med kendte svar, og beskriv funktionen med en docstring.
 
 ```python
 def naeste_lige(n):
@@ -80,26 +84,6 @@ def lucas(i):
 
 print(lucas(3))   # 4
 ```
-### Scope-model: LEGB-reglen for variabelopslag
-
-Når en variabel kaldes, leder Python efter navnet i fire lag fra inderst til yderst:
-
-```text
-  ┌────────────────────────────────────────────────────────┐
-  │ Local (L): Inde i den aktuelle funktion               │
-  │   ┌──────────────────────────────────────────────────┐ │
-  │   │ Enclosing (E): Inde i omsluttende funktioner     │ │
-  │   │   ┌────────────────────────────────────────────┐ │ │
-  │   │   │ Global (G): Filens øverste niveau          │ │ │
-  │   │   │   ┌──────────────────────────────────────┐ │ │ │
-  │   │   │   │ Built-in (B): len, range, print osv. │ │ │ │
-  │   │   │   └──────────────────────────────────────┘ │ │ │
-  │   │   └────────────────────────────────────────────┘ │ │
-  │   └──────────────────────────────────────────────────┘ │
-  └────────────────────────────────────────────────────────┘
-```
-En funktion kan læse globale variable, men forsøg på at overskrive dem uden `global`-nøgleordet opretter blot en ny lokal variabel med samme navn.
-
 ## Opgaver
 
 Ugens struktur: Preparation (Copy-and-Run og selvquiz) før timen, derefter In-Class (demo, Coding Practice, Problem Solving), og til sidst Closure (syllabus og checkpoints). Hver torsdag er der quiz og live-demo 13:00 til 14:00, derefter selvstændigt arbejde med Coding Practice.
@@ -138,6 +122,17 @@ Ugens struktur: Preparation (Copy-and-Run og selvquiz) før timen, derefter In-C
 
 - Checkpoint 5.1: Normal Range (funktion `normal_range(height)` i `normal_range.py`, returnerer en streng; testscript `test_normal_range.py` ligger på kursussiden)
 - Checkpoint 5.2: Lucas Number (funktion `lucas_number(i)` i `lucas_number.py`, testscript `test_lucas_number.py`). Fra uge 5 kan checkpoints afleveres under Assignments (frivilligt).
+
+## Advanced (ikke pensum)
+
+Kursussidens Advanced-side for uge 5. Ingen obligatoriske opgaver eller eksamensspørgsmål bygger på den.
+
+- Rekursion: fakultet og Fibonacci med rekursive funktioner.
+- Delelighed, alle divisorer og antal gange et tal er deleligt.
+- Primtal og faktorisering.
+- Standardværdier, positionelle og nøgleords-argumenter.
+- Globale variabler, rækkefølgen funktioner defineres i, navngivning af funktioner.
+- Opgaver: central number, største fælles divisor og simulering af et faldende bold.
 
 ## Links
 

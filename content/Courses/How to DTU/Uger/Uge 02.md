@@ -11,7 +11,7 @@ tags:
 
 # Modul 2: Praktisk inden din første undervisning
 
-> Kilde: DTU Learn, How to DTU, modul "2) Praktisk inden din første undervisning" (lektionerne Skema og første undervisning, Find vej på campus, Bøger og computer, Studiekort, SU og bolig, Før-start-merit). Videoer er ikke set.
+> Kilde: DTU Learn, How to DTU, modul "2) Praktisk inden din første undervisning" (Skema og første undervisning, Find vej på campus, Bøger og computer, Studiekort, SU og bolig, Før-start-merit). Videoer er ikke gennemgået.
 
 ## Emner
 
@@ -26,7 +26,7 @@ På første semester er du automatisk tilmeldt undervisningen. Undervisningen st
 
 ### Find vej på campus
 
-Lyngby og Ballerup Campus er store. Hjælp: siden "Find vej" på dtu.dk og appen MazeMap (ruteplanlægger, kan bruges i browser). Bus 40E kører mellem Ballerup og Lyngby.
+Lyngby og Ballerup Campus er store. Hjælp: siden om at finde vej på dtu.dk og appen MazeMap (ruteplanlægger, kan bruges i browser). Bus 40E kører mellem Ballerup og Lyngby.
 
 ### Bøger og computer
 
@@ -43,25 +43,19 @@ SU søges via minSU, så snart du har sagt ja til pladsen; tidligst udbetaling f
 ### Før-start-merit
 
 Har du bestået kurser fra en tidligere, ufærdig uddannelse, vurderes de til før-start-merit. Fra DTU sker det automatisk. Fra en anden institution søger du selv via merit.dtu.dk, når du har takket ja. Afgørelsen kommer på studentermailen, som regel omkring semesterstart. Får du merit, skal du selv afmelde de kurser, du har fået merit for.
-### Systemmodel: DTU's digitale platforme og informationsflow
-
-For at navigere DTU's IT-infrastruktur uden friktion:
-
-```text
-  ┌─────────────────────────────────────────────────────────────────┐
-  │ DTU Inside (Portalen: intranet, officielle opslag, studiekort)  │
-  ├─────────────────────────────────────────────────────────────────┤
-  │ DTU Learn (Kursusrum: ugesedler, opgaver, slides, Möbius tests) │
-  ├─────────────────────────────────────────────────────────────────┤
-  │ Studieplan (Kurser.dtu.dk: pensum, eksamensdatoer, ECTS)        │
-  ├─────────────────────────────────────────────────────────────────┤
-  │ Gbar / HPC Unix (Regnekraft: SSH til login.gbar.dtu.dk)         │
-  └─────────────────────────────────────────────────────────────────┘
-```
 
 ## Opgaver
 
 Ingen.
+
+## Tjek dig selv
+
+- [ ] Hvornår starter undervisningen, og hvor finder jeg mit skema?
+- [ ] Hvornår kommer skemaet for første undervisningsuge?
+- [ ] Hvad koster bøger cirka pr. semester?
+- [ ] Hvornår får jeg mit studiekort, og hvor følger jeg status?
+- [ ] Hvad sker der med SU, hvis jeg bliver mere end 6 måneder forsinket?
+- [ ] Hvordan søger jeg før-start-merit, hvis min tidligere uddannelse er fra en anden institution?
 
 ## Links
 

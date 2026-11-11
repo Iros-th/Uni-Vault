@@ -11,7 +11,7 @@ tags:
 
 # Uge 2: Variabler og typer
 
-> Kilde: kursussiden programmering.compute.dtu.dk (linket som Material på DTU Learn for 02002), siderne Week 2: Preparation, In-Class og Closure. DTU Learn selv har intet indhold at læse for dette kursus. Pensum i bog: TP kapitel 2, *Variables and Statements* (spring state diagram over), plus de tre første afsnit af kapitel 5, *Conditionals and Recursion*.
+> Kilde: kursussiden programmering.compute.dtu.dk, siderne Week 2: Preparation, In-Class og Closure og Advanced. Pensum i bog: TP kapitel 2, *Variables and Statements* (spring state diagram over), plus de tre første afsnit af kapitel 5, *Conditionals and Recursion*.
 
 ## Emner
 
@@ -36,6 +36,10 @@ navn = 'Anna'
 print(type(x), type(pris), type(navn))
 # <class 'int'> <class 'float'> <class 'str'>
 ```
+
+### God praksis
+
+Variabelnavne må ikke ligne indbyggede navne: efter `print = 6` kan `print()` ikke længere bruges i det program. Navne skal være sigende, og man bør læse fejlmeddelelsen (fejltype og linjenummer) før man ændrer i koden.
 
 ### Omtildeling og sammensat tildeling
 
@@ -83,27 +87,13 @@ print(math.degrees(math.atan(0.05)))
 
 ### Boolske udtryk
 
-Sammenligninger (`==`, `!=`, `<`, `>`, `<=`, `>=`) giver `True` eller `False`. De kombineres med `and`, `or` og `not`.
+Sammenligninger (`==`, `!=`, `<`, `>`, `<=`, `>=`) giver `True` eller `False`. De kombineres med `and`, `or` og `not`. Funktionen `bool()` konverterer en værdi til en boolsk værdi: `bool(0)` og `bool('')` er `False`, `bool(5)` og `bool('a')` er `True`.
 
 ```python
 alder = 17
 print(alder >= 18)                 # False
 print(alder > 10 and alder < 20)   # True
 ```
-### Hukommelsesmodel: Variabler som navnemærkater (Pointers til objekter)
-
-I Python er en variabel ikke en "kasse" med data, men en navnemærkat (reference), der peger på et objekt i hukommelsen:
-
-```text
-       Navnerum (Stack/Namespace)             Objekt i Heap-hukommelsen
-       ┌───────────┐                         ┌─────────────────────────┐
-       │     a     │ ───────────────────────>│  Type: int              │
-       ├───────────┤                         │  Værdi: 42              │
-       │     b     │ ───────────────────────>│  Reference Count: 2     │
-       └───────────┘                         └─────────────────────────┘
-```
-Hvis man skriver `b = a`, kopieres værdien 42 ikke. Begge navne peger blot på det samme int-objekt.
-
 ## Opgaver
 
 Ugens struktur: Preparation (Copy-and-Run og selvquiz) før timen, derefter In-Class (demo, Coding Practice, Problem Solving), og til sidst Closure (syllabus og checkpoints). Hver torsdag er der quiz og live-demo 13:00 til 14:00, derefter selvstændigt arbejde med Coding Practice.
@@ -152,6 +142,14 @@ Ugens struktur: Preparation (Copy-and-Run og selvquiz) før timen, derefter In-C
 
 - Checkpoint 2.1: Road Angle (script `road_angle.py`, $\tan \alpha = g/100$)
 - Checkpoint 2.2: Elapsed Time (script `elapsed_time.py`, sekunder til dage, timer, minutter og sekunder)
+
+## Advanced (ikke pensum)
+
+Kursussidens Advanced-side for uge 2. Ingen obligatoriske opgaver eller eksamensspørgsmål bygger på den.
+
+- Flydende tal er approksimationer (fx er 0.1 gemt som 0.1000000000000000055...), så flydende tal sammenlignes med abs(a - b) < 1e-10 frem for ==.
+- Videnskabelig notation: 1e4 er 10000.0 og 3.1e-4 er 0.00031.
+- Opgaver: Plancks ligning, fødselsår, booleske variable, bytte af variable, andre numeriske typer.
 
 ## Links
 

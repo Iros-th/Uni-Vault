@@ -11,7 +11,6 @@ tags:
 
 # Uge 1: Differentialligninger af n'te orden og overføringsfunktion
 
-> **Kilde:** Ugeseddel 1 og SlidesUge1.pdf (DTU Learn, 01025 E26), WeekleyNotes1.pdf (løsning til opgave 904), facitliste_studerende.pdf, og lærebogen Ole Christensen, *Differentialligninger og uendelige rækker* (afsnit 1.1 til 1.5, appendiks A.2 og A.3). Opgaveteksterne er slået op i bogens opgavesamling (bilag F). Sætningsnumre følger slides og kursets 4. udgave; se [[Courses/Differential Equations and Infinite Series/Uger/Oversigt|oversigten]] om udgaver.
 
 ## Læseplan
 
@@ -109,57 +108,9 @@ Funktionerne $f_1, \dots, f_k$ er lineært uafhængige, hvis $c_1 f_1(t) + \dots
 ### Appendiks A.3 (lemma A.13 og A.14)
 Lemma A.13: hvis $(D - \lambda_j)^{p_j}y = 0$, så er $D_n(y) = 0$, fordi faktoren kan flyttes helt til højre i faktoriseringen. Lemma A.14 (= opgave 904): $(D - \lambda)^p y = 0$ har de $p$ lineært uafhængige løsninger $e^{\lambda t}, \dots, t^{p-1}e^{\lambda t}$. Nøglen er operatoridentiteten $(D - \lambda)(e^{\lambda t}u) = e^{\lambda t}u'$. Tilsammen beviser de sætning 1.14 og 1.15.
 
-### Fysisk model: Harmonisk oscillator og dæmpede fjedersystemer
-
-Næsten alle lineære 2. ordens ligninger i fysik og mekanik stammer fra Newtons 2. lov anvendt på et masse-fjeder-dæmper system:
-
-```
-      +---+  Fjederkraft F_k = -k*y
- |====|   |/\/\/\/\/\/\/\/\/\/\/\----+
- |    |   |                          |
- | Væg|   |  Dæmperkraft F_c = -c*y' |===> Masse m  ===> y(t)
- |    |   |---[====]-----------------+   (Inputkraft u(t))
- +----+
-```
-
-Summen af kræfter giver $m y'' = -c y' - k y + u(t)$, som på standardform er:
-
-$$m y'' + c y' + k y = u(t).$$
-
-Karakterligningen er $m \lambda^2 + c \lambda + k = 0$ med diskriminant $D = c^2 - 4mk$. Systemets opførsel falder i 3 distinkte fysiske regimer:
-
-1. **Underdæmpet ($c^2 < 4mk$, $D < 0$):** Rødderne er komplekst konjugerede $\lambda = -\frac{c}{2m} \pm i\omega_d$, hvor $\omega_d = \sqrt{\frac{k}{m} - \frac{c^2}{4m^2}}$ er den dæmpede egenfrekvens. Løsningen oscillerer med en eksponentielt faldende amplitude:
-   $$y(t) = e^{-\frac{c}{2m}t}\bigl(A\cos(\omega_d t) + B\sin(\omega_d t)\bigr).$$
-2. **Kritisk dæmpet ($c^2 = 4mk$, $D = 0$):** En reel dobbeltrod $\lambda_0 = -\frac{c}{2m}$. Systemet vender tilbage til ligevægt hurtigst muligt uden at svinge over nulpunktet:
-   $$y(t) = (c_1 + c_2 t)e^{-\frac{c}{2m}t}.$$
-   Dette er den ideelle model for støddæmpere i biler og dørlukkere.
-3. **Overdæmpet ($c^2 > 4mk$, $D > 0$):** To negative reelle rødder $\lambda_1, \lambda_2 < 0$. Dæmpningen er så kraftig, at massen langsomt og sejt glider tilbage til ligevægt uden svingninger:
-   $$y(t) = c_1 e^{\lambda_1 t} + c_2 e^{\lambda_2 t}.$$
-
-### Elektrisk system-model: RLC-kredsløb og overføringsfunktion
-
-Der er en 1:1 analogi mellem det mekaniske fjedersystem og et elektrisk RLC-seriekredsløb:
-
-```
-    +---[ R: Modstand ]---[ L: Spole ]---[ C: Kondensator ]---+
-    |                                                         |
-   (+) Indgangsspænding u(t)                                 (-)
-```
-
-Kirchhoffs spændingslov giver for ladningen $q(t)$:
-
-$$L \frac{d^2q}{dt^2} + R \frac{dq}{dt} + \frac{1}{C}q = u(t).$$
-
-Her svarer induktans $L$ til massen $m$, modstand $R$ til dæmperen $c$, og den inverse kapacitans $1/C$ til fjederkonstanten $k$.
-Tages spændingen over kondensatoren som output $y(t) = \frac{1}{C}q(t)$, bliver systemets overføringsfunktion:
-
-$$H(s) = \frac{1/LC}{s^2 + \frac{R}{L}s + \frac{1}{LC}}.$$
-
-Dette er den klassiske model for et **2. ordens lavpasfilter**: lave frekvenser lukkes igennem med forstærkning $H(0) = 1$, mens høje frekvenser dæmpes kraftigt med $1/\omega^2$.
-
 ## Opgaver
 
-Alle numre er fra opgavesamlingen bagerst i lærebogen (bilag F). Facitliste til alle øvelsesopgaver ligger i zip-filen på DTU Learn.
+Alle numre er fra opgavesamlingen bagerst i lærebogen (bilag F). Facitlisten (facitliste_studerende.pdf) har svar til øvelsesopgaverne i bogen.
 
 **Opvarmningsopgave** (ugesedlen): ud fra en graf af en løsning skal du sige hvad du kan om ligningen, rødderne i karakterligningen, ordenen og om der er periodiske løsninger.
 
@@ -175,12 +126,23 @@ Alle numre er fra opgavesamlingen bagerst i lærebogen (bilag F). Facitliste til
 | 309 (1), (3), (4), hvis tid | 1.3 | Gættemetoden på $\ddot y + 5\dot y - 6y = \cos 2t$ og $\sin 2t$; (3) og (4) skal blot forklares i ord (superposition). |
 | 904 (iv), hvis tid | A.3 | Lineær uafhængighed af $e^{\lambda t}, \dots, t^{p-1}e^{\lambda t}$. |
 
-> [!note] Rødderne i opgave 317 (afklaret)
-> Ugesedlen skriver at rødderne er $\lambda = \pm(1 \pm 3i)$. Det er en fejl i ugesedlen. $\lambda^4 + 10\lambda^2 + 169 = 0$ giver $\lambda^2 = -5 \pm 12i$ og dermed $\lambda = \pm(2 \pm 3i)$, fordi $(2+3i)^2 = -5 + 12i$. Facitlisten (facitliste_studerende.pdf) bekræfter det: den reelle løsning er bygget af $e^{\pm 2t}\cos 3t$ og $e^{\pm 2t}\sin 3t$, og den søgte løsning er $f(t) = \frac13 e^{-2t}\sin 3t$ (tjekket: den løser ligningen, $f(0) = 0$ og $f'(0) = 1$).
+> [!note] Rødderne i opgave 317
+> Ugesedlen angiver rødderne $\lambda = \pm(1 \pm 3i)$; det passer ikke med ligningen. $\lambda^4 + 10\lambda^2 + 169 = 0$ giver $\lambda^2 = -5 \pm 12i$ og dermed $\lambda = \pm(2 \pm 3i)$, fordi $(2+3i)^2 = -5 + 12i$. Facitlisten (facitliste_studerende.pdf) bekræfter det: den reelle løsning er bygget af $e^{\pm 2t}\cos 3t$ og $e^{\pm 2t}\sin 3t$, og den søgte løsning er $f(t) = \frac13 e^{-2t}\sin 3t$ (den løser ligningen, og $f(0) = 0$, $f'(0) = 1$).
 
-**Hjemmeopgavesæt 1:** stilles i Möbius, frist tirsdag 9/9 kl. 20.
+**Hjemmeopgavesæt 1:** Möbius, frist tirsdag 9/9 kl. 20. Bedømt aflevering.
 
-**Løsningsnoter:** WeekleyNotes1.pdf (ligger under uge 2 på DTU Learn) løser opgave 904 (i) til (iii): (i) direkte udregning af $(D-\lambda)(e^{\lambda t}u) = e^{\lambda t}u'$, (ii) gentag (i) $m$ gange og få $(D-\lambda)^m(e^{\lambda t}u) = e^{\lambda t}u^{(m)}$, (iii) sæt $u = t^k$ med $k < p$, så $u^{(p)} = 0$. Facit til 306, 309, 317 og 320 står i facitliste_studerende.pdf.
+**Løsningsnoter:** WeekleyNotes1.pdf (under uge 2 på DTU Learn) løser opgave 904 (i) til (iii): (i) direkte udregning af $(D-\lambda)(e^{\lambda t}u) = e^{\lambda t}u'$, (ii) gentag (i) $m$ gange og få $(D-\lambda)^m(e^{\lambda t}u) = e^{\lambda t}u^{(m)}$, (iii) sæt $u = t^k$ med $k < p$, så $u^{(p)} = 0$. Facit til 306, 309, 317 og 320 står i facitliste_studerende.pdf.
+
+## Tjek dig selv
+
+- [ ] Kan jeg opskrive karakterligningen direkte ud fra en $n$'te ordens ligning?
+- [ ] Kan jeg gå fra komplekse rødder $a \pm i\omega$ til reelle løsninger, og forklare hvorfor det er lovligt (lemma 1.8)?
+- [ ] Ved jeg hvilke løsninger en dobbeltrod eller tripelrod giver?
+- [ ] Kan jeg forklare struktursætningen: hvorfor er $y = y_0 + y_{\text{hom}}$ alle løsninger?
+- [ ] Kan jeg finde $H(s)$ og bruge den til stationære svar på $e^{st}$ og på $\cos\omega t$?
+- [ ] Ved jeg hvad der går galt når $s$ er rod i karakterligningen (opgave 312)?
+- [ ] Kan jeg vise lineær uafhængighed ved at starte med en vilkårlig linearkombination lig nul?
+- [ ] Kan jeg beregne amplitude- og fasekarakteristik for en simpel ligning?
 
 ## Links
 

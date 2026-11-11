@@ -11,7 +11,7 @@ tags:
 
 # Uge 13: Mathematical proofs (del B)
 
-> Kilde: DTU Learn 02525, Project 1: `MathProofs1B.pdf` (David Brander, "Proofs in Mathematics, Part II") og `proofs_problems2.pdf` ("Proofs: Problem Set Two"); tidsplanen står i General Info. Mandag 30/11 2026, rapportdeadline 6/12. General Info kalder emnet "Mathematical proofs 2 (Definition of Limit)", men de to filer på DTU Learn handler om tælleargumenter, induktion og konstruktion af komplekse tal. Grænseværdidefinitionen ligger ikke som fil endnu.
+> Kilde: DTU Learn 02525, Project 1: `MathProofs1B.pdf` (David Brander, "Proofs in Mathematics, Part II") og `proofs_problems2.pdf` ("Proofs: Problem Set Two"); tidsplanen står i General Info. Mandag 30/11 2026, rapportdeadline 6/12. General Info kalder emnet "Mathematical proofs 2 (Definition of Limit)"; de to filer på DTU Learn handler om tælleargumenter, induktion og konstruktion af komplekse tal, og grænseværdidefinitionen indgår ikke i dem.
 
 ## Emner
 
@@ -39,31 +39,6 @@ Sætning 3.3: multiplikation er associativ og kommutativ (kommutativitet følger
 $$z^{-1} = \frac{x}{x^2+y^2} + i\,\frac{-y}{x^2+y^2}.$$
 
 Delen om inversen efterlades som øvelse i noten (Problem 6 nedenfor).
-### Syntesemodel: Den anvendte matematiks ingeniørmæssige cyklus
-
-Fra et fysisk eller datadrevet problem til en valideret løsning:
-
-```text
-    ┌─────────────────────────┐
-    │ Virkelighed / Problem   │ (Trafik, billedstøj, anbefalinger)
-    └───────────┬─────────────┘
-                │  1. Matematisk modellering (ODE, LP, Vektorrum)
-                v
-    ┌─────────────────────────┐
-    │ Formel matematisk model │ (Differentialligning, Simplex, SVD)
-    └───────────┬─────────────┘
-                │  2. Numerisk algoritme & diskretisering (C / Python)
-                v
-    ┌─────────────────────────┐
-    │ Kørbar computersimulering│ (PID feedback, konvolution, gradient descent)
-    └───────────┬─────────────┘
-                │  3. Validering mod empiri & fejljustering
-                v
-    ┌─────────────────────────┐
-    │ Færdig ingeniørløsning  │
-    └─────────────────────────┘
-```
-
 ## Opgaver
 
 Fra `proofs_problems2` ("Proofs: Problem Set Two").

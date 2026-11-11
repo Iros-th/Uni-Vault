@@ -11,11 +11,11 @@ tags:
 
 # Uge 5: Konvergenskriterier og kvotientrækker
 
-> **Kilde:** Ugeseddel 5 og semesterplanen (DTU Learn, 01025 E26), lærebogen Ole Christensen, *Differentialligninger og uendelige rækker* (4. udg., afsnit 4.5, 5.1 samt appendiks A.7), facitliste_studerende.pdf og EkstraOpgaver.pdf (opgave 703, 963, 964). Sætningsnumre følger kursets 4. udgave.
+> **Kilde:** ugeseddel 5, SlidesUge5.pdf, WeeklyNotes5.pdf, facitliste_studerende.pdf, EkstraOpgaver.pdf (opgave 703, 963, 964) (DTU Learn, 01025 E26); lærebogen afsnit 4.5 og 5.1 med beviserne i appendiks (ugesedlens "A.8", A.7 i den ældre bog-PDF). Sætningsnumre som i slides.
 
 ## Læseplan
 
-- Forelæsning (onsdag 30/9): afsnit 4.5 og 5.1, samt beviserne for sætning 4.27 (absolut konvergens) og sætning 4.30 (kvotientkriteriet) i appendiks A.7.
+- Forelæsning (onsdag 30/9): afsnit 4.5 og 5.1, samt beviserne for sætning 4.27 (absolut konvergens) og sætning 4.30 (kvotientkriteriet) i appendiks.
 - Husk fra forelæsningen: $\sum_{n=1}^\infty \frac1n$ er divergent (den harmoniske række), selv om leddene går mod 0. At $a_n \to 0$ er en nødvendig, men ikke tilstrækkelig betingelse for konvergens.
 
 ## Begreber
@@ -27,14 +27,21 @@ Lad $0 \le a_n \le b_n$ for alle $n \ge N$.
 
 Reglen bruges til at klemme en kompliceret række ind under en kendt konvergent række (oftest en $p$-række $\sum \frac{1}{n^p}$ med $p > 1$ eller en kvotientrække).
 
+**Beviset (slides).** Med $S_N = \sum_{n=1}^N a_n$ og $T_N = \sum_{n=1}^N b_n$ er $0 \leq S_N \leq T_N$, og $S_N$ er voksende. (i) Konvergerer $T_N$, er $S_N$ opadtil begrænset og konvergerer derfor (påstand A nedenfor). (ii) Divergerer $S_N$, kan den ikke være begrænset (igen påstand A), så $S_N \to \infty$ og dermed $T_N \to \infty$.
+
+### Supremum og monotone følger (appendiks A.1, definition A.1 og lemma A.3)
+En mængde $E \subseteq \mathbb R$ er opadtil begrænset, hvis der findes $\beta$ med $x \leq \beta$ for alle $x \in E$. Den mindste øvre grænse hedder supremum, $\sup E$. Eksistensen af supremum er et aksiom for de reelle tal. Lemma A.3 (påstand A): en voksende, opadtil begrænset følge af reelle tal er konvergent med grænseværdi $\sup\{k_n\}$.
+
+**Eksempler (slides).** $\sup\,]-\infty, 4] = \sup\,]-\infty, 4[ = 4$, $\sup\{-1, -\frac12, -\frac13, \dots\} = 0$ og $\sup\{\sin n : n \in \mathbb N\} = 1$. I de tre sidste tilfælde tilhører supremum ikke mængden.
+
 **Eksempel.** Betragt $\sum_{n=1}^\infty \frac{1}{n^2 + \sqrt{n}}$. Da $\sqrt{n} \ge 0$, er $n^2 + \sqrt{n} \ge n^2$, og dermed
 
 $$0 \le \frac{1}{n^2 + \sqrt{n}} \le \frac{1}{n^2}.$$
 
 Da $\sum_{n=1}^\infty \frac{1}{n^2}$ konvergerer ($p$-række med $p = 2 > 1$), konvergerer $\sum_{n=1}^\infty \frac{1}{n^2 + \sqrt{n}}$ ifølge sammenligningskriteriet.
 
-### Ækvivalenskriteriet / Grænsesammenligningskriteriet (sætning 4.24)
-Lad $a_n > 0$ og $b_n > 0$. Hvis
+### Ækvivalenskriteriet (definition 4.23, sætning 4.24)
+Lad $a_n > 0$ og $b_n > 0$. Rækkerne kaldes ækvivalente (definition 4.23), hvis
 
 $$\lim_{n\to\infty} \frac{a_n}{b_n} = C$$
 
@@ -48,16 +55,16 @@ $$\frac{a_n}{b_n} = \frac{\frac{2n+1}{n^3-4}}{\frac{1}{n^2}} = \frac{2n^3 + n^2}
 
 Da grænseværdien $C = 2$ er strengt positiv og endelig, og $\sum \frac{1}{n^2}$ konvergerer, er den oprindelige række konvergent.
 
-### Absolut konvergens og beviset i appendiks A.7 (sætning 4.27)
-En række $\sum a_n$ kaldes **absolut konvergent**, hvis rækken af numeriske værdier $\sum |a_n|$ konvergerer. Sætning 4.27 slår fast: enhver absolut konvergent række er konvergent, og der gælder
+### Absolut og betinget konvergens (definition 4.26 og 4.28, sætning 4.27)
+En række $\sum a_n$ kaldes **absolut konvergent**, hvis rækken af numeriske værdier $\sum |a_n|$ konvergerer, og **betinget konvergent**, hvis $\sum a_n$ konvergerer men $\sum |a_n|$ divergerer. For en reel betinget konvergent række divergerer både summen af de positive og summen af de negative led; kun rækkefølgen giver en endelig sum, og ved at bytte om på leddene kan man opnå enhver sum eller divergens (slides). Sætning 4.27 slår fast: enhver absolut konvergent række er konvergent, og der gælder
 
 $$\left| \sum_{n=1}^\infty a_n \right| \le \sum_{n=1}^\infty |a_n|.$$
 
-**Bevisidé fra appendiks A.7 (reelle tal):** Skriv leddene opdelt i positiv og negativ del, $a_n = a_n^+ - a_n^-$, hvor $a_n^+ = \max(a_n, 0)$ og $a_n^- = \max(-a_n, 0)$. Da gælder $0 \le a_n^+ \le |a_n|$ og $0 \le a_n^- \le |a_n|$. Da $\sum |a_n|$ konvergerer, konvergerer både $\sum a_n^+$ og $\sum a_n^-$ ifølge sammenligningskriteriet. Følgelig konvergerer differensen $\sum a_n = \sum a_n^+ - \sum a_n^-$. For komplekse led $a_n = u_n + i v_n$ følger konvergensen af at $|u_n| \le |a_n|$ og $|v_n| \le |a_n|$.
+**Beviset (slides, reelle led):** sæt $c_n = a_n + |a_n|$. Så er $0 \leq c_n \leq 2|a_n|$, og da $\sum 2|a_n|$ konvergerer (lemma 4.17), konvergerer $\sum c_n$ efter sammenligningskriteriet. Derfor konvergerer $\sum a_n = \sum c_n - \sum |a_n|$ (lemma 4.17). For komplekse led $a_n = u_n + i v_n$ bruges $|u_n| \le |a_n|$ og $|v_n| \le |a_n|$.
 
 **Eksempel.** Rækken $\sum_{n=1}^\infty \frac{\cos(n)}{n^2}$ har led med vekslende fortegn. Da $|\cos(n)| \le 1$, er $|\frac{\cos(n)}{n^2}| \le \frac{1}{n^2}$. Rækken af absolutte værdier er majoriseret af den konvergente række $\sum \frac{1}{n^2}$, så rækken er absolut konvergent og derfor konvergent.
 
-### Kvotientkriteriet og beviset i appendiks A.7 (sætning 4.30)
+### Kvotientkriteriet (sætning 4.30)
 Antag at $a_n \neq 0$ for alle $n$, og at grænseværdien
 
 $$\lim_{n\to\infty} \left|\frac{a_{n+1}}{a_n}\right| = C$$
@@ -67,7 +74,7 @@ eksisterer.
 2. Hvis $C > 1$, er rækken $\sum a_n$ divergent (da leddene $|a_n|$ vokser og ikke går mod nul).
 3. Hvis $C = 1$, giver kriteriet ingen oplysning. Rækken kan være konvergent eller divergent.
 
-**Bevisidé fra appendiks A.7:** Hvis $C < 1$, vælges et reelt tal $q$ så $C < q < 1$. Da kvotienten konvergerer mod $C$, findes et indeks $N$ så $|\frac{a_{n+1}}{a_n}| \le q$ for alle $n \ge N$. Ved gentagen anvendelse fås $|a_{N+k}| \le |a_N| q^k$ for alle $k \ge 0$. Da $q < 1$, konvergerer den geometriske række $\sum q^k$, og dermed konvergerer $\sum |a_n|$ ved sammenligningskriteriet.
+**Bevisidé:** Hvis $C < 1$, vælges et reelt tal $q$ så $C < q < 1$. Da kvotienten konvergerer mod $C$, findes et indeks $N$ så $|\frac{a_{n+1}}{a_n}| \le q$ for alle $n \ge N$. Ved gentagen anvendelse fås $|a_{N+k}| \le |a_N| q^k$ for alle $k \ge 0$. Da $q < 1$, konvergerer den geometriske række $\sum q^k$, og dermed konvergerer $\sum |a_n|$ ved sammenligningskriteriet.
 
 **Eksempel.** Undersøg $\sum_{n=1}^\infty \frac{n^2}{2^n}$. Her er
 
@@ -75,7 +82,7 @@ $$\left|\frac{a_{n+1}}{a_n}\right| = \frac{(n+1)^2}{2^{n+1}} \cdot \frac{2^n}{n^
 
 Da $C = \frac{1}{2} < 1$, er rækken absolut konvergent.
 
-**Advarsel om $C = 1$:** For $p$-rækken $\sum \frac{1}{n^p}$ er $\frac{a_{n+1}}{a_n} = (\frac{n}{n+1})^p \to 1$ for alle $p$. Men rækken divergerer for $p=1$ og konvergerer for $p=2$. Kvotientkriteriet kan aldrig bruges på rækker, hvis led opfører sig som potenser af $n$; det er skræddersyet til fakulteter og eksponentialfunktioner.
+**Advarsel om $C = 1$:** For $p$-rækken $\sum \frac{1}{n^p}$ er $\frac{a_{n+1}}{a_n} = (\frac{n}{n+1})^p \to 1$ for alle $p$. Men rækken divergerer for $p=1$ og konvergerer for $p=2$. Kvotientkriteriet kan ikke afgøre rækker, hvis led opfører sig som potenser af $n$; slides kalder det groft (det "ser ikke polynomier") og velegnet til led med fakulteter og eksponentialfunktioner.
 
 ### Integralkriteriet (sætning 4.33)
 Lad $f: [1, \infty[ \to [0, \infty[$ være en kontinuert, ikke-negativ og aftagende funktion. Så er rækken $\sum_{n=1}^\infty f(n)$ konvergent hvis og kun hvis det uegentlige integral
@@ -113,34 +120,14 @@ $$\sum_{n=N}^\infty x^n = \frac{x^N}{1 - x}.$$
 ### Rækker med variable led og sumfunktioner (afsnit 5.1)
 Når en rækkes led afhænger af en variabel $x$, $\sum_{n=0}^\infty f_n(x)$, afhænger konvergensen af værdien af $x$. Mængden af de $x$, hvor rækken konvergerer, kaldes konvergensmængden, og på denne mængde definerer rækken en **sumfunktion** $f(x) = \sum_{n=0}^\infty f_n(x)$.
 
-### Fysisk model: Den hoppende bold (geometrisk henfald)
-
-Kvotientrækker $\sum q^n$ modellerer processer, hvor en fast brøkdel af en størrelse bevares i hvert trin. Et klassisk eksempel er en elastisk bold sluppet fra højde $h_0$:
-
-```
-Højde
-  ^    *
-  |   / \     *
-  |  /   \   / \   *
-  | /     \ /   \ / \
---+--------*-----*---*----> Tid
-```
-
-Ved hvert stød taber bolden energi, så tilbagespringshøjden er $h_n = h_0 q^n$, hvor $q = e^2 < 1$ er restitutionstallet i kvadrat.
-Den samlede tilbagelagte lodrette distance efter uendeligt mange hop er:
-
-$$D = h_0 + 2h_0 q + 2h_0 q^2 + 2h_0 q^3 + \dots = h_0 + 2h_0 \sum_{n=1}^\infty q^n = h_0 + 2h_0 \frac{q}{1 - q} = h_0 \frac{1 + q}{1 - q}.$$
-
-Selv om bolden teoretisk set foretager uendeligt mange hop, er både den samlede distance $D$ og den samlede tid endelig! Dette illustrerer kvotientrækkens konvergens: når kvotienten opfylder $|q| < 1$, svinder leddene eksponentielt hurtigt, og summen er veldefineret.
-
 ## Opgaver
 
 | Opgave | Afsnit | Hvad den handler om | Facit / Vigtigste konklusion |
 |---|---|---|---|
 | 432 | 2.8, 2.9 | Stabilitet af homogent og inhomogent $2\times 2$ system | Begge systemer er asymptotisk stabile (og BIBO-stabile) |
 | 925 | 2.8 | Routh-Hurwitz for vilkårlig $2\times 2$ matrix | Asymptotisk stabil $\iff \operatorname{tr}(A) < 0$ og $\det(A) > 0$ |
-| 963 | 4.2 | Fire talfølger fra EkstraOpgaver | (a) $3/5$, (b) $0$, (c) $0$, (d) $e^2$ |
-| 964 | 4.1 | Tre uegentlige integraler | (a) $1/3$ (konv.), (b) $\pi/4$ (konv.), (c) divergent |
+| 963 | 4.2 | Fire talfølger fra EkstraOpgaver | (i) $\frac{n^2+1}{n}$ divergerer, (ii) $\frac{1}{\ln n + 1} \to 0$, (iii) $\frac{\ln n}{\ln n^2} = \frac12$, (iv) brøken af to fjerdegradspolynomier går mod $\frac34$ |
+| 964 | 4.1 | Tre uegentlige integraler: to potensfunktioner på $[1, \infty[$ og $\sin x$ på $[0, \infty[$ | $\int_0^t \sin x\,dx = 1 - \cos t$ har ingen grænseværdi, så det sidste er divergent |
 | 144 | 5.1 | Konvergens og sumfunktion for $\sum_{n=0}^\infty (x+1)^n$ | Konvergent for $x \in ]-2, 0[$, sumfunktion $f(x) = -1/x$ |
 | 103 | 4.4, 4.5 | Seks rækker (a til f), konvergens og sum | (b) konv. sum $1/4$, (f) konv. sum $1/4$, resten divergente |
 | 816 (i-iv) | 4.5 | Konvergensforhold for $\sum \frac{n!\ln n}{n^n}$ | Konvergent ved kvotientkriteriet, kvotient går mod $1/e < 1$ |
@@ -149,7 +136,7 @@ Selv om bolden teoretisk set foretager uendeligt mange hop, er både den samlede
 ### Detaljeret gennemgang af udvalgte opgaver
 
 **Opgave 432.** Systemet har matrix $A = \begin{pmatrix} -3 & 1 \\ 4 & -3 \end{pmatrix}$.
-Karakterligningen er $\det(A - \lambda I) = (-3-\lambda)^2 - 4 = \lambda^2 + 6\lambda + 5 = (\lambda + 1)(\lambda + 5) = 0$. Egenværdierne er $\lambda_1 = -1$ og $\lambda_2 = -5$. Begge har strengt negativ realdel, så det homogene system $\dot{\mathbf x} = A\mathbf x$ er asymptotisk stabilt (sætning 2.37). For det inhomogene system med påvirkning $\mathbf u(t) = (\cos t, \sin t)^\top$ sikrer sætning 2.47, at systemet er asymptotisk stabilt, og da $\mathbf u$ er begrænset, er alle løsninger begrænsede (BIBO-stabilitet jf. sætning 2.49).
+Karakterligningen er $\det(A - \lambda I) = (-3-\lambda)^2 - 4 = \lambda^2 + 6\lambda + 5 = (\lambda + 1)(\lambda + 5) = 0$. Egenværdierne er $\lambda_1 = -1$ og $\lambda_2 = -5$. Begge har strengt negativ realdel, så det homogene system $\dot{\mathbf x} = A\mathbf x$ er asymptotisk stabilt (sætning 2.38). For det inhomogene system med påvirkning $\mathbf u(t) = (\cos t, \sin t)^\top$ sikrer sætning 2.47, at systemet er asymptotisk stabilt, og da $\mathbf u$ er begrænset, er alle løsninger begrænsede (BIBO-stabilitet jf. sætning 2.49).
 
 **Opgave 925.** Lad $A = \begin{pmatrix} a & b \\ c & d \end{pmatrix}$.
 1. Det karakteristiske polynomium er $P(\lambda) = \det(A - \lambda I) = \lambda^2 - (a+d)\lambda + (ad-bc) = \lambda^2 - \operatorname{tr}(A)\lambda + \det(A)$.
@@ -162,15 +149,9 @@ Karakterligningen er $\det(A - \lambda I) = (-3-\lambda)^2 - 4 = \lambda^2 + 6\l
 
 $$f(x) = \frac{1}{1 - (x+1)} = \frac{1}{-x} = -\frac{1}{x}.$$
 
-**Opgave 103 (b).** Rækken er $\sum_{n=1}^\infty \frac{1}{n(n+1)(n+2)}$. Partialbrøksudspaltning giver
+**Opgave 103 (b) og (f).** (b) er kvotientrækken $\sum_{n=1}^\infty \left(\frac15\right)^n = \frac{1/5}{1 - 1/5} = \frac14$ (korollar 5.5 med $N = 1$). (f) er en teleskoprække:
 
-$$\frac{1}{n(n+1)(n+2)} = \frac{1}{2}\left(\frac{1}{n(n+1)} - \frac{1}{(n+1)(n+2)}\right).$$
-
-Dette er en teleskoperende sum. Afsnitssummen $S_N$ er
-
-$$S_N = \frac{1}{2}\sum_{n=1}^N \left(\frac{1}{n(n+1)} - \frac{1}{(n+1)(n+2)}\right) = \frac{1}{2}\left(\frac{1}{1 \cdot 2} - \frac{1}{(N+1)(N+2)}\right).$$
-
-Når $N \to \infty$, forsvinder det sidste led, og summen bliver $\frac{1}{2} \cdot \frac{1}{2} = \frac{1}{4}$.
+$$\frac{1}{(n+3)(n+4)} = \frac{1}{n+3} - \frac{1}{n+4}, \qquad S_N = \frac14 - \frac{1}{N+4} \to \frac14.$$
 
 **Opgave 816.** Rækken er $\sum_{n=1}^\infty a_n$ med $a_n = \frac{n!\ln n}{n^n}$.
 - I (i) vurderes brøken: $n! = 1 \cdot 2 \cdot 3 \cdots n \le 1 \cdot n \cdot n \cdots n = n^{n-1}$. Derfor er $\frac{n!}{n^n} \le \frac{1}{n}$, hvilket giver $a_n \le \frac{\ln n}{n}$.
@@ -190,14 +171,20 @@ Da grænseværdien er strengt under 1, er rækken konvergent.
 - (b) $\sum \frac{1}{n+\sin n}$: Da $-1 \le \sin n \le 1$, er $\frac{1/(n+\sin n)}{1/n} = \frac{n}{n+\sin n} = \frac{1}{1 + \frac{\sin n}{n}} \to 1$. Da $\sum \frac{1}{n}$ divergerer, divergerer rækken ved ækvivalenskriteriet.
 - (c) $\sum \frac{1}{\sqrt n}$: Dette er en $p$-række med $p = 1/2 \le 1$, som divergerer.
 
-**Hjemmeopgavesæt 4 (Opgave A).**
-Opgaven betragter en række med positive led $\sum a_n$, hvor $\lim_{n\to\infty} \frac{a_{n+1}}{a_n} = C < 1$. For et vilkårligt polynomium $P(n) = c_k n^k + \dots + c_0$ med positiv ledende koefficient er $P(n) > 0$ for alle $n \ge M$. Betragt rækken $\sum_{n=M}^\infty P(n)a_n$. Kvotienten mellem to på hinanden følgende led er
+**Hjemmeopgavesæt 4:** Opgave A på ugesedlen afleveres fysisk 7/10 kl. 8, Möbius sæt 4 senest 6/10 kl. 20. Opgave A handler om kvotientkriteriet anvendt på $\sum a_n$, $\sum (n^2 + 7n + 3)a_n$ og $\sum P(n)a_n$ for et polynomium $P$, når $\frac{a_{n+1}}{a_n} \to C < 1$. Ugesedlens vink: der findes $M$ så $P(n) \neq 0$ for $n \geq M$, og summen deles ved $M$. Bedømt aflevering.
 
-$$\frac{P(n+1)a_{n+1}}{P(n)a_n} = \frac{P(n+1)}{P(n)} \cdot \frac{a_{n+1}}{a_n}.$$
+**MC:** svarene på 702 er 2, 3 og 5. Ugens MC-opgave er 703 (EkstraOpgaver.pdf): stabilitet og fuldstændig reel løsning for et $2\times 2$ system med komplekse egenværdier (afsnit 2.2 og 2.8). Facit (ugeseddel 6): 4 og 1.
 
-Da polynomier af samme grad opfylder $\lim_{n\to\infty} \frac{P(n+1)}{P(n)} = 1$, konvergerer hele kvotienten mod $1 \cdot C = C < 1$. Følgelig konvergerer $\sum P(n)a_n$ altid ved kvotientkriteriet. Multiplikation med et polynomium kan aldrig forpurre konvergensen, når kvotientkriteriet først har vist eksponentiel dæmpning.
+**Løsningsnoter:** WeeklyNotes5.pdf (under uge 6 på DTU Learn) løser opgave 816 (i) til (iii): vurdér $\frac{n!}{n^n} \leq \frac1n$, bemærk at $a_n \to 0$ ikke afgør noget, og brug kvotientkriteriet med $\left(\frac{n}{n+1}\right)^n \to e^{-1}$ og $\frac{\ln(n+1)}{\ln n} \to 1$. Facit til 103, 144 og 150 står i facitliste_studerende.pdf.
 
-**Multiple Choice 703 (EkstraOpgaver).** Facit er 4 og 1. Spørgsmål 1 om konvergensafgørelse har svarmulighed 4 som korrekt, og spørgsmål 2 om kvotientrækker har svarmulighed 1 som korrekt.
+## Tjek dig selv
+
+- [ ] Kan jeg vælge det rigtige kriterium (sammenligning, ækvivalens, kvotient, integral) ud fra hvordan leddene ser ud?
+- [ ] Ved jeg hvorfor kvotientkriteriet ikke kan afgøre $\sum\frac{1}{n^p}$?
+- [ ] Kan jeg bevise at absolut konvergens medfører konvergens (appendiksbeviset)?
+- [ ] Kan jeg finde summen af en kvotientrække der starter ved $n = N$?
+- [ ] Ved jeg præcis for hvilke $p$ rækken $\sum\frac1{n^p}$ konvergerer, og hvorfor?
+- [ ] Kan jeg finde de $x$ hvor en simpel række med variable led konvergerer?
 
 ## Links
 

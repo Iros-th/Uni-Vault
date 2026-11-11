@@ -11,54 +11,49 @@ tags:
 
 # Modul 4: Campus og studieliv
 
-> Kilde: DTU Learn, How to DTU, modul "4) Campus og studieliv" (lektionerne Faciliteter på campus, Foreningsliv og studiemiljø, Sundhed og trivsel).
+> Kilde: DTU Learn, How to DTU, modul "4) Campus og studieliv" (Dit campus, Dit studiemiljø, Plads til mangfoldighed, Netværk og faglige fællesskaber). Videoer er ikke gennemgået.
 
 ## Emner
 
-- Faciliteter på Lyngby Campus: biblioteket, grupperum, værksteder (Skylab) og kantiner.
-- Polyteknisk Forening (PF), studenterforeninger, S-Huset og fredagsbarer.
-- Trivsel, SPS (Specialpædagogisk støtte) og studiepræstationer.
+- Faciliteter på Lyngby og Ballerup Campus og biblioteket.
+- Polyteknisk Forening (PF), klubber og fællesskaber.
+- Mangfoldighed og inklusion, SPS.
+- Netværk og faglige fællesskaber.
 
 ## Begreber
 
-### DTU Bibliotek (Bygning 101)
+### Campus
 
-Campus' centrale studieoase: åbent 24/7 med studiekort, udstyret med stillezoner, grupperum og databaser til videnskabelige artikler. Bøger reserveres og afhentes automatisk.
+Uddannelsen hører til Lyngby Campus (indviet 1974, omkring 11.000 studerende, over 100 bygninger, bygget på en gammel flyvestation), men Ballerup Campus kan også bruges. Der er læsepladser, grupperum, laboratorier og værksteder, kantiner, S-huset (PF's studenterhus), Polyteknisk Boghandel og grønne områder. Det gamle bibliotek i Ballerup er fra sommeren 2026 en studiezone med grupperum, lounge og stillezone.
 
-### DTU Skylab
+### DTU Bibliotek
 
-DTU's innovations- og prototypehub (Bygning 373A). Giver studerende fri adgang til 3D-printere, laserskærere, metal- og træværksteder samt startup-inkubatorer til egne projekter og kurser.
+På Lyngby Campus og online (DTU Findit: over 600.000 e-bøger og artikler). Hjælp til databaser og litteratursøgning, print, bookbare grupperum, kurser i informationssøgning og referencehåndtering. DTU anbefaler Health and Safety E-learning og evakueringsvideoen.
 
-### S-Huset og foreningsliv
+### Polyteknisk Forening (PF)
 
-Polyteknisk Forening (PF) varetager de studerendes interesser i studienævn og konsistorium. S-Huset (Bygning 101) er det sociale knudepunkt med café, spil og faglige foreninger (f.eks. DTU RoboCup, Formula Student).
+DTU's studenterforening, grundlagt 1846. Alle aktive er studerende. PF driver blandt andet S-huset, skitur, revy og surfcamp, hobbyklubber, og arbejder politisk i studienævnene. Medlemskab giver rabatter og netværk. Mere på pf.dk.
 
-### Trivsel og studievejledning
+### Mangfoldighed
 
-DTU tilbyder anonym vejledning, workshops mod eksamensangst, studieteknik-kurser og SPS-støtte til studerende med funktionsnedsættelser eller ordblindhed.
+DTU lægger vægt på et inkluderende miljø. Fællesskaber: Feministisk Forum, DTU LGBTQ+, DTU Trans Forum, Forum for Diversitet og Inklusion, Student's Culture Hub, Solsikkesnoren. SPS-enheden og Studievejledningen støtter studerende med funktionsnedsættelse.
 
-### Facilitets- og studiemiljømodel: DTU Lyngby Campus økosystem
+### Netværk og fagligt fællesskab
 
-Oversigt over de vigtigste knudepunkter for en ny ingeniørstuderende:
-
-```text
-  ┌─────────────────────────────────────────────────────────────────┐
-  │ Bygning 101: Hovedbygning (Bibliotek, SU, PF, Kantine, S-Huset) │
-  ├─────────────────────────────────────────────────────────────────┤
-  │ Bygning 303: Matematik & DTU Compute (Forelæsninger & øvelser)  │
-  ├─────────────────────────────────────────────────────────────────┤
-  │ Bygning 373: DTU Skylab (Makerspace, 3D-print, prototyping)    │
-  ├─────────────────────────────────────────────────────────────────┤
-  │ Bygning 208/211: Kemi & Fysiske laboratorier                    │
-  └─────────────────────────────────────────────────────────────────┘
-```
+Mottoet er "DTU er en holdsport". Medstuderende ses som kolleger, der tages initiativ til studiegrupper, der følges med i events på student.dtu.dk og studiemail, og viden deles: studerende er ikke konkurrenter.
 
 ## Opgaver
 
-Ingen afleveringer. Gennemse modulet og lokaliser dine undervisningsbygninger i MazeMap.
+Ingen.
+
+## Tjek dig selv
+
+- [ ] Hvilken campus hører uddannelsen til, og kan den anden bruges?
+- [ ] Hvad er PF, og hvornår blev det grundlagt?
+- [ ] Hvor kan studerende med funktionsnedsættelse få støtte?
+- [ ] Nævn tre tips til at opbygge et fagligt netværk.
 
 ## Links
 
-- [[Courses/How to DTU/Uger/Uge 01|Modul 1: Anvendt Matematik]]
-- [[Courses/How to DTU/Uger/Uge 02|Modul 2: Praktisk inden første undervisning]]
-- [[Courses/How to DTU/Uger/Uge 03|Modul 3: Dit digitale studieliv]]
+- [[Courses/How to DTU/Uger/Oversigt|Oversigt over modulerne]]
+- [[Courses/How to DTU/How to DTU|How to DTU]]

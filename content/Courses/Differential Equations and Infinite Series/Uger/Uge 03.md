@@ -11,7 +11,7 @@ tags:
 
 # Uge 3: Overføringsfunktion for systemer og stabilitet
 
-> **Kilde:** Ugeseddel 3, SlidesUge3.pdf, WeeklyNotes3.pdf (løsning til opgave 919) og facitliste_studerende.pdf (DTU Learn, 01025 E26), lærebogen afsnit 2.6 til 2.8. Ugesedlen nævner appendiks "A.2 og A.6"; i den ældre PDF jeg har tjekket mod er stabilitetsbeviserne i A.5. Sætningsnumre følger slides (kursets 4. udgave), se [[Courses/Differential Equations and Infinite Series/Uger/Oversigt|oversigten]].
+> **Kilde:** ugeseddel 3, SlidesUge3.pdf, WeeklyNotes3.pdf, facitliste_studerende.pdf, EkstraOpgaver.pdf (opgave 701) (DTU Learn, 01025 E26); lærebogen afsnit 2.6 til 2.8. Ugesedlen nævner appendiks "A.2 og A.6"; i den ældre bog-PDF står stabilitetsbeviserne i A.5. Sætningsnumre som i slides, se [[Courses/Differential Equations and Infinite Series/Uger/Oversigt|oversigten]].
 
 ## Læseplan
 
@@ -30,7 +30,7 @@ $$H(s) = -\mathbf d^\top (A - sI)^{-1}\mathbf b.$$
 
 $$H(s) = \frac{1}{s+1} + \frac{1}{s+2}, \qquad s \neq -1, -2.$$
 
-(Kontrolleret numerisk for $s = 0.5$ og $s = 2$.)
+
 
 ### Stationært svar på $\cos\omega t$
 Ligesom for $n$'te ordens ligninger: er $\det(A - i\omega I) \neq 0$, giver $u = \cos\omega t$ svaret $y = \operatorname{Re}\bigl(H(i\omega)e^{i\omega t}\bigr)$.
@@ -77,7 +77,7 @@ Man kan afgøre om alle rødder har negativ realdel uden at finde dem. Slides' g
 Bogens bevis for sætning 2.36 deles i lemmaer: A.17 ($e^{\lambda t}\mathbf v$ med reel $\lambda$ er begrænset netop når $\lambda \leq 0$), A.18 ($n$ forskellige reelle egenværdier: stabilt netop når alle $\lambda_k \leq 0$) og A.19 ($n$ forskellige egenværdier: stabilt netop når alle $\operatorname{Re}\lambda_k \leq 0$).
 
 ### Spor og determinant for $2 \times 2$ (opgave 925)
-For en $2\times 2$ matrix er det karakteristiske polynomium $\lambda^2 - \operatorname{tr}(A)\lambda + \det A$, så Routh-Hurwitz giver: asymptotisk stabilt netop når $\det A > 0$ og $\operatorname{tr} A < 0$. (Opgave 925 beder dig vise det; den står på ugeseddel 5.)
+For en $2\times 2$ matrix er det karakteristiske polynomium $\lambda^2 - \operatorname{tr}(A)\lambda + \det A$, så Routh-Hurwitz giver: asymptotisk stabilt netop når $\det A > 0$ og $\operatorname{tr} A < 0$. (Det er opgave 925 på ugeseddel 5.)
 
 ### MC-eksempel: opgave 701 (facit står på ugeseddel 4: svar 3 og 4)
 Ligningen $y''' + y'' + 2y' + 2y = u' + u$ har
@@ -85,52 +85,6 @@ Ligningen $y''' + y'' + 2y' + 2y = u' + u$ har
 $$H(s) = \frac{s+1}{s^3 + s^2 + 2s + 2} = \frac{s+1}{(s+1)(s^2+2)} = \frac{1}{s^2+2}, \quad s \notin \{-1, \pm i\sqrt2\}.$$
 
 Påvirkningen $u = \sin 2t = \operatorname{Im}(e^{2it})$ giver $H(2i) = \frac{1}{-4+2} = -\frac12$, så $y = -\frac12\sin 2t$. Pas på definitionsmængden: den er stadig bestemt af nævneren før forkortning.
-
-### Teknisk model: Frekvenskarakteristik og resonanspeak
-
-Når et stabilt system med overføringsfunktion $H(s)$ påvirkes af en sinusbølge $u(t) = \cos(\omega t)$, dør den transiente homogene løsning $e^{At}\mathbf x_0$ ud, og der resterer kun det stationære harmoniske output:
-
-$$y_p(t) = |H(i\omega)|\cos\bigl(\omega t + \arg(H(i\omega))\bigr).$$
-
-Funktionen $|H(i\omega)|$ kaldes **amplitudekarakteristikken** og $\phi(\omega) = \arg(H(i\omega))$ kaldes **fasekarakteristikken**.
-
-```
-Forstærkning |H(iw)|
-  ^
-  |        * Resonanstoppen (ved egenfrekvens w_0)
-  |       / \
-  |      /   \
-  |-----+     \                  Dæmpning ved høje frekvenser
-  |            \__________
---+-----+-------+------------------------> Frekvens w
-  0    w_1     w_0
-```
-
-Hvis systemets dæmpning $c$ er lille, har $|H(i\omega)|$ en skarp resonanstop nær den udtæmpede resonansfrekvens $\omega_0 = \sqrt{k/m}$. Hvis man fodrer systemet med en kraft i netop denne frekvens, forstærkes outputtet voldsomt, hvilket kan føre til mekanisk brud (fx takomabro-effekt).
-
-### Stabilitetskort i det komplekse plan
-
-Systemets dynamik styres af hvor egenværdierne $\lambda_j$ ligger i det komplekse plan:
-
-```
-            Im(lambda)
-                 ^
-    STABILT      |      USTABILT
-    (Dæmpet)     |     (Eksploderer)
-       x         |
-                 |
-       x         |         x
-  ---------------+---------------> Re(lambda)
-       x         |
-                 |
-       x         |
-                 |
-```
-
-- Reelle negative rødder: ren eksponentiel dæmpning mod origo.
-- Komplekse rødder med $\operatorname{Re}(\lambda) < 0$: dæmpede spiralkurver mod origo.
-- Rødder på den imaginære akse $\operatorname{Re}(\lambda) = 0$: udæmpede oscillerende svingninger (marginal stabilitet).
-- Rødder i højre halvplan $\operatorname{Re}(\lambda) > 0$: eksponentielt voksende ustabilitet.
 
 ## Opgaver
 
@@ -140,14 +94,23 @@ Systemets dynamik styres af hvor egenværdierne $\lambda_j$ ligger i det komplek
 | 411 (iii), (iv) | 2.8 | Er $3\times 3$-systemet fra sidste uge stabilt og asymptotisk stabilt? |
 | 422 (i), (ii) | 2.8 | Stabilitet af to systemer. Ugesedlen oplyser egenværdierne: $\frac{-1 \pm \sqrt{93}}{2}$ i (i) og cirka $-0.3686 \pm 1.9158i$ og $-0.2627$ i (ii). |
 | 919 | 1.4 | Hvad sker der når $s$ er rod i karakterligningen? Ligningen $y'' - y = u' + u$. Til (iv): sætning 2.20/eksempel 2.21 (ugesedlens numre) eller gæt som på slide 32 i SlidesUge1 (gang gættet med $t$, se uge 1). |
-| 417 | 2.6 | Overføringsfunktion for et $2\times 2$ system og stationært svar på $u = \cos t$. Den inverse $2\times 2$ matrix står på side 242 og bogens omslag. |
+| 417 | 2.6 | Overføringsfunktion for et $2\times 2$ system og stationært svar på $u = \cos t$. Ugesedlen henviser til formlen for den inverse $2\times 2$ matrix bagest i bogen. |
 | 507 | 2.8 | Asymptotisk stabilitet af $\begin{pmatrix}a&2\\a&1\end{pmatrix}$ afhængigt af $a$. Vink til (iii): skriv rødderne op og se på fortegnene. |
 
-**Hjemmeopgavesæt 3:** Möbius senest 22/9 kl. 20, og opgave 915 (afsnit 2.6, bevis for løsningsudtrykket (2.34): $\mathbf x_0 e^{st}$ er løsning netop når $\mathbf x_0 = -(A - sI)^{-1}\mathbf b$) afleveres fysisk 23/9 kl. 8.
+**Hjemmeopgavesæt 3:** Möbius senest 22/9 kl. 20, og opgave 915 (afsnit 2.6, bevis for løsningsudtrykket (2.34): $\mathbf x_0 e^{st}$ er løsning netop når $\mathbf x_0 = -(A - sI)^{-1}\mathbf b$) afleveres fysisk 23/9 kl. 8. Bedømt aflevering.
 
 **Løsningsnoter:** WeeklyNotes3.pdf (under uge 4 på DTU Learn) løser opgave 919. Nøgleidéer: forkort $H(s) = \frac{s+1}{s^2-1} = \frac{1}{s-1}$ men behold definitionsmængden $s \neq \pm 1$; for $u = e^{-t}$ er højresiden $u' + u = 0$, så ligningen bliver homogen; for $u = e^{t}$ (roden $1$) findes den partikulære løsning $te^{t}$ med formlen for reduktion af orden (sætning 1.31 i den ældre PDF); en sum af påvirkninger løses led for led med superposition, hvor leddet der rammer en rod skal behandles for sig. Facit til 411, 417, 422 og 507 står i facitliste_studerende.pdf.
 
-Miniprojekt 1 kommer i uge 4. Opgave 1 (i) til (iv) og opgave 3 kan laves allerede nu.
+Miniprojekt 1 stilles i uge 4; ifølge ugesedlen kan opgave 1 (i) til (iv) og opgave 3 laves allerede i uge 3.
+
+## Tjek dig selv
+
+- [ ] Kan jeg udlede $H(s) = -\mathbf d^\top(A - sI)^{-1}\mathbf b$ fra gættet $\mathbf x = \mathbf x_0 e^{st}$?
+- [ ] Kan jeg skelne stabil og asymptotisk stabil, og give et eksempel på stabil men ikke asymptotisk stabil?
+- [ ] Ved jeg hvorfor en egenværdi med realdel nul og for få egenvektorer giver ustabilitet?
+- [ ] Kan jeg bruge Routh-Hurwitz på et 2. og 3. grads polynomium?
+- [ ] Kan jeg bruge spor og determinant til at afgøre stabilitet af et $2\times 2$ system?
+- [ ] Husker jeg definitionsmængden for $H(s)$, også når der kan forkortes?
 
 ## Links
 

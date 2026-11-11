@@ -11,7 +11,7 @@ tags:
 
 # Uge 11: Klasser II
 
-> Kilde: kursussiden programmering.compute.dtu.dk (linket som Material på DTU Learn for 02002), siderne Week 11: Preparation, In-Class og Closure. DTU Learn selv har intet indhold at læse for dette kursus. Pensum i bog: TP kapitel 17, *Inheritance*, og afsnittet om operator overloading i kapitel 15.
+> Kilde: kursussiden programmering.compute.dtu.dk, siderne Week 11: Preparation, In-Class og Closure og Advanced. Pensum i bog: TP kapitel 17, *Inheritance*, og afsnittet om operator overloading i kapitel 15.
 
 ## Emner
 
@@ -62,23 +62,6 @@ class Broek:
 
 print(Broek(1, 2) + Broek(1, 3))   # 5/6
 ```
-### Nedarvningsmodel: Klassehierarki og polymorfi
-
-En underklasse arver alle egenskaber fra sin overklasse og kan specialisere dem via `super()`:
-
-```text
-                         [ Overklasse: Form ]
-                         - farve
-                         + beregn_areal()
-                                │
-                  ┌─────────────┴─────────────┐
-                  v                           v
-          [ Klasse: Cirkel ]          [ Klasse: Rektangel ]
-          - radius                    - bredde, hojde
-          + beregn_areal() (π·r²)     + beregn_areal() (b·h)
-```
-Polymorfi gør det muligt at kalde `form.beregn_areal()` på en liste af blandede former uden at vide på forhånd, hvilken specifik formtype der er tale om.
-
 ## Opgaver
 
 Ugens struktur: Preparation (Copy-and-Run og selvquiz) før timen, derefter In-Class (demo, Coding Practice, Problem Solving), og til sidst Closure (syllabus og checkpoints). Hver torsdag er der quiz og live-demo 13:00 til 14:00, derefter selvstændigt arbejde med Coding Practice.
@@ -108,6 +91,15 @@ Ugens struktur: Preparation (Copy-and-Run og selvquiz) før timen, derefter In-C
 
 - Checkpoint 11.1: Overdraft Account
 - Checkpoint 11.2: Limited Event Manager
+
+## Advanced (ikke pensum)
+
+Kursussidens Advanced-side for uge 11 (siden vises som sidste års version, kan blive rettet). Ingen obligatoriske opgaver eller eksamensspørgsmål bygger på den.
+
+- Mere operator-overloading (BaseMetricUnit, enheder).
+- type(self)() opretter et nyt objekt af samme klasse som self, så __add__ kan nedarves.
+- Nedarvning fra indbyggede klasser (str, dict, tuple, list), fx en dict-underklasse med addition.
+- Opgaver: Cat-klassen, klasse-nedarvning og sammenligning af katte.
 
 ## Links
 

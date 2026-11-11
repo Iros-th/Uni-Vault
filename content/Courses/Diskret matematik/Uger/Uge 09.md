@@ -11,7 +11,7 @@ tags:
 
 # Uge 9: Binomialformlen
 
-> Kilde: ugeplanen på kursussiden https://www2.imm.dtu.dk/courses/01017/2026/ (uge W9, 5. november). Begrebsforklaringerne er skrevet ud fra emnerne i planen; der er ingen slides. Afsnitstitel er tjekket mod en lokal tekst af Rosen, 8. udgave (afsnit 6.4, "Binomial Coefficients and Identities").
+> Kilde: ugeplanen på kursussiden https://www2.imm.dtu.dk/courses/01017/2026/ (uge W9, 5. november), Rosen afsnit 6.4 i Rosen, "Discrete Mathematics and Its Applications". Slides er ikke anvendt.
 
 ## Emner
 
@@ -32,32 +32,13 @@ tags:
 **Vandermondes identitet.** $\binom{m+n}{r} = \sum_{k=0}^{r} \binom{m}{r-k}\binom{n}{k}$. Tænk på $r$ udvalgte fra to grupper på $m$ og $n$; $k$ af dem kommer fra den ene gruppe.
 
 **Kombinatorisk bevis.** Man viser en identitet ved at tælle det samme på to måder. Det er ofte hurtigere end algebra.
-### Geometrisk model: Pascals trekant og symmetriske delmængder
-
-Binomialkoefficienten $inom{n}{k}$ tæller antallet af måder at vælge en delmængde på $k$ elementer ud af $n$:
-
-```text
-  n=0:                 1
-  n=1:               1   1
-  n=2:             1   2   1
-  n=3:           1   3   3   1
-  n=4:         1   4   6   4   1
-  n=5:       1   5  10  10   5   1
-
-  Pascals identitet:  C(n, k) = C(n-1, k-1) + C(n-1, k)
-  (Et bestemt element er enten valgt eller ikke valgt)
-
-  Symmetri:  C(n, k) = C(n, n-k)
-  (At vælge de k, du tager med, er det samme som at vælge de n-k, du lader ligge)
-```
-
 ## Opgaver
 
-Fra kursussiden, Rosen, "Discrete Mathematics and Its Applications" (2025-udgaven). Fed skrift betyder, at kurset vil have dem lavet først. Planen angiver ingen afvigende numre for 8. udgave i denne uge.
+Fra kursussiden, Rosen (2025-udgaven). Fed skrift betyder, at kurset anbefaler at lave dem først. Planen angiver ingen afvigende numre for 8. udgave i denne uge.
 
 - Afsnit 6.4: 7, **9**, **11**, 17, **21**, 23, **29**, **33**, **35**, **37**, **39**
 
-Rettelse fra kurset: ifølge en meddelelse til kurset skal opgave 39 i afsnit 6.4 lyde, at man skal bevise Corollary 1, ikke Theorem 4. Det står ikke i selve ugeplanen på kursussiden, og meddelelsen er ikke læst direkte ved udarbejdelsen af dette notat (oplysningen er givet videre). Tjek meddelelsen på DTU Learn.
+Rettelse (meddelelse 5. november): i opgave 39 i afsnit 6.4 skal man bevise Corollary 1 i stedet for Theorem 4.
 
 ## Links
 

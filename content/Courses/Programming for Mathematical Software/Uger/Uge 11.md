@@ -11,7 +11,7 @@ tags:
 
 # Uge 11: Rekursion
 
-> Kilde: `module11.pdf` på DTU Learn (opgaveark, 19. november 2026) og modultabellen. Siderne "sols_module11" (løsninger) og eventuelle slides har ingen fil på Learn (topic-API'et giver 404), så der er ingen løsningsidéer eller forelæsningsslides at bygge på for dette modul. Slides fra uge 10 nævner dog `fibonacci()` med negativt argument som eksempel på stack overflow. Pensum: King afsnit 9.6 (s. 204 til 209); repetér worst-case tidskompleksitet for adgang, søgning, indsættelse og sletning i arrays og sammenhængende lister (Big-O Cheat Sheet).
+> Kilde: `module11.pdf` på DTU Learn (opgaveark, 19. november 2026) og modultabellen. Løsninger ("sols_module11") og slides har ingen fil i DTU Learn; noten bygger på opgavearket. Slides fra uge 10 nævner dog `fibonacci()` med negativt argument som eksempel på stack overflow. Pensum: King afsnit 9.6 (s. 204 til 209); repetition af worst-case tidskompleksitet for adgang, søgning, indsættelse og sletning i arrays og sammenhængende lister (Big-O Cheat Sheet).
 
 ## Emner
 
@@ -70,8 +70,8 @@ unsigned long fib_iter(unsigned long n) {
 }
 ```
 
-**Overløb.** Et `unsigned long` er 4 eller 8 bytes afhængigt af systemet. Ved 8 bytes er det største Fibonacci-tal, der kan repræsenteres, $F_{93} = 12200160415121876738$ (jeg har regnet det ud, men tjek det med dit eget program). Ved 4 bytes er det $F_{47} = 2971215073$.
-### Eksekveringsmodel: Call stack frame vækst og Stack Overflow
+**Overløb.** Et `unsigned long` er 4 eller 8 bytes afhængigt af systemet. Ved 8 bytes er det største Fibonacci-tal, der kan repræsenteres, $F_{93} = 12200160415121876738$ (egen udregning). Ved 4 bytes er det $F_{47} = 2971215073$.
+### Eksekveringsmodel: Call stack frame vækst og Stack Overflow (supplerende illustration, ikke fra slides)
 
 Hvert funktionskald opretter en ny stak-ramme (Stack Frame) med returadresse og lokale variable:
 
@@ -101,6 +101,14 @@ Fra `module11.pdf`. Instruktioner: læs King 9.6; repetér Big-O Cheat Sheet; in
   - (d) Omskriv Fibonacci-funktionen, så den undgår rekursive kald (returtype `unsigned long`). Hvad er tidskompleksitet og pladskompleksitet?
   - (e) Mål CPU-tiden for den rekursive variant og din modificerede version for forskellige $n$. Afspejler den målte tid de Big-O-kompleksiteter, du udledte?
   - (f) Find det største Fibonacci-tal, der kan repræsenteres som `unsigned long`. Hint: `unsigned long` er 4 eller 8 bytes afhængigt af systemet.
+
+## Tjek dig selv
+
+- [ ] Hvad er en rekursiv funktion, og hvorfor skal den have et basistilfælde?
+- [ ] Hvorfor vokser antallet af kald eksponentielt i den naive rekursive Fibonacci?
+- [ ] Hvad er tids- og pladskompleksiteten af den rekursive og den iterative Fibonacci?
+- [ ] Hvordan måles rekursionsdybden, og hvad sker der ved manglende basistilfælde?
+- [ ] Hvilket er det største Fibonacci-tal, et `unsigned long` kan rumme på 8 bytes?
 
 ## Links
 

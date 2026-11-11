@@ -11,7 +11,7 @@ tags:
 
 # Uge 5: Abstrakte datastrukturer og dynamisk hukommelse
 
-> Kilde: `module05.pdf` (opgaveark, 1. oktober 2026), `slides05.pdf` (forelæsning 5, 29 slides), `sols_module05.pdf` (løsningseksempler) og modultabellen. Siden "Solution examples" uden fil kunne ikke åbnes (404). `msptools_demo.tar` og linket til MSP Tools (`https://gitlab.gbar.dtu.dk/mskan/msptools`): se afsnittet "MSP Tools" nedenfor. Pensum: King kap. 14, 16, 17.1 til 17.6; lecture notes kap. 5 (Data Structures).
+> Kilde: `module05.pdf` (opgaveark, 1. oktober 2026), `slides05.pdf` (forelæsning 5, 29 slides), `sols_module05.pdf` (løsningseksempler) og modultabellen. Siden "Solution examples" har ingen fil i DTU Learn. `msptools_demo.tar` og linket til MSP Tools (`https://gitlab.gbar.dtu.dk/mskan/msptools`): se afsnittet "MSP Tools" nedenfor. Pensum: King kap. 14, 16, 17.1 til 17.6; lecture notes kap. 5 (Data Structures).
 
 ## Emner
 
@@ -85,7 +85,7 @@ clean:
 	-$(RM) myprogram
 ```
 
-Det eksterne gitlab-link (`https://gitlab.gbar.dtu.dk/mskan/msptools`) kunne ikke åbnes udefra (tidsudløb på forbindelsen, formentlig kun nåbart fra DTUs netværk eller VPN). Til gengæld indeholder kursets filer koden:
+Det eksterne gitlab-link (`https://gitlab.gbar.dtu.dk/mskan/msptools`) er formentlig kun tilgængeligt fra DTUs netværk eller VPN. Kursets filer indeholder koden:
 
 - `msptools_demo.tar` indeholder en lille projektmappe med `example.c`, en `Makefile` og `msptools.tar`. Makefilen har to valg: klon biblioteket med `git clone`, eller pak `msptools.tar` ud i mappen `msptools` og kør `make` dér. `example.c` allokerer et dynamisk array med `array_alloc(4)`, tilføjer elleve tal `0.1*k` med `array_push_back` (så kapaciteten må vokse), udskriver med `array_print` og frigiver med `array_dealloc`.
 - Den samme MSP Tools-kode (version 1.0.2, 9. oktober 2025, BSD 2-Clause, Martin S. Andersen) ligger også i `module07.tar` og `exercises09.zip`. Biblioteket bygges til `lib/libmsptools.a` med `ar rcs` (`CFLAGS=-Wall -O3 -std=c99`).
@@ -103,7 +103,7 @@ Moduler i biblioteket (headerfiler i `include/`, samlet i `msptools.h`):
 | `misc.h` | `enum storage_order {RowMajor, ColMajor}`, `enum cstype {CSC, CSR}` | returkoderne `MSP_SUCCESS`, `MSP_FAILURE`, `MSP_MEM_ERR`, `MSP_FILE_ERR`, `MSP_ILLEGAL_INPUT`, `MSP_STRIDE_ERR`, `MSP_DIM_ERR` |
 
 README'en viser, hvordan en matrix gemmes og læses som tekstfil (`array2d_to_file("A.txt", A)` og `array2d_from_file("A.txt")`), og at samme tekstformat kan læses og skrives med NumPy (`np.savetxt`/`np.loadtxt`), MATLAB (`save ... -ascii -double` / `load`) og Julia (`writedlm`/`readdlm`). Eksempelfilen `data/A1.txt` er en 4-gange-3 matrix, og `data/v1.txt` er vektoren $(1,2,3)$.
-### Allokeringsmodel: 2D-matrix layout (Pointer-array vs. sammenhængende 1D)
+### Allokeringsmodel: 2D-matrix layout (Pointer-array vs. sammenhængende 1D) (supplerende illustration, ikke fra slides)
 
 To fundamentalt forskellige måder at allokere en $M \times N$ matrix dynamisk i C:
 
@@ -123,13 +123,22 @@ Metode B er dramatisk hurtigere i videnskabelige beregninger, fordi data ligger 
 
 Fra `module05.pdf`. Instruktioner: læs King kap. 14, 16 og 17.1 til 17.6; læs lecture notes kap. 5.
 
-- 5.1 Tag quizzen om structs. (Ikke åbnet.)
+- 5.1 Tag quizzen om structs.
 - 5.2 Lav exercises 2, 3 og 10 (kap. 16, s. 408) i lærebogen.
   - Løsningsidé: ex. 2 bruger en anonym struct med `real` og `imaginary`, tildeling mellem structs (`c1 = c2`) og addition felt for felt. Ex. 3 laver `struct complex` med funktionerne `make_complex(real, imaginary)` (returnerer en struct med navngivne felter) og `add_complex(a, b)`. Ex. 10 laver `struct rectangle` af to `struct point` og funktionerne `area`, `center` (heltalsdivision), `move` (kopi af rektanglet, forskyd begge hjørner) og `inside` (returnerer `false` hvis punktet ligger udenfor på x- eller y-aksen, ellers `true`).
 - 5.3 Lav exercise 3 (kap. 17, s. 453) i lærebogen.
   - Løsningsidé: `create_array(n, initial_value)` returnerer `NULL` for $n\le0$ eller hvis `malloc` fejler, ellers et array fyldt med `initial_value`. Kalderen tjekker for `NULL` og kalder `free`.
 - 5.4 Lav "Module 05"-opgaverne på Autolab. (Løsninger lægges på Learn efter deadline.)
 - Valgfri 5.5: Skim Wikipedia-artiklen "List of data structures" for at se almindelige datastrukturer.
+
+## Tjek dig selv
+
+- [ ] Hvad er en abstrakt datatype, og hvordan adskiller en stak sig fra en kø?
+- [ ] Hvordan bruges `malloc`, `calloc`, `realloc` og `free`, og hvorfor skal resultatet tjekkes for `NULL`?
+- [ ] Hvilke fejl kan opstå ved dynamisk hukommelse (dobbelt `free`, brug efter `free`, læk)?
+- [ ] Hvad er forskellen på stack og heap?
+- [ ] Hvordan vokser et dynamisk array, og hvornår er en kædet liste bedre end et array?
+- [ ] Hvilke måder findes til at allokere en todimensionel matrix, og hvad er fordelen ved en sammenhængende 1D-allokering?
 
 ## Links
 

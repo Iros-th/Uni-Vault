@@ -11,7 +11,7 @@ tags:
 
 # Uge 6: Lineære ligningssystemer og Gauss-elimination
 
-> Kilde: kursussiden mat1a.compute.dtu.dk (linket som Course Homepage på DTU Learn for 01001), siderne Lektionsoversigt, Ugeprogram semesteruge 6 og Opgaver Store Dag/Lille Dag uge 6. Bogen er kursets lærebog (udgave 2026).
+> Kilde: kursussiden mat1a.compute.dtu.dk, siderne Lektionsoversigt, Ugeprogram semesteruge 6 og Opgaver Store Dag/Lille Dag uge 6. Bogen er kursets lærebog (udgave 2026).
 
 ## Emner
 
@@ -43,25 +43,6 @@ Rangen af $\mathbf{A}$ er antallet af pivotelementer i dens reducerede trappefor
 Søjler uden pivot svarer til frie parametre. Man udtrykker de øvrige ubekendte ved dem (afsnit 6.4). For et inhomogent system er løsningen en partikulær løsning plus løsningen til det tilhørende homogene system (Sætning 6.1.2).
 
 *Eksempel.* $x + y + z = 3$, $y - z = 1$. Sæt $z = t$: $y = 1 + t$, $x = 2 - 2t$. Kontrol: $x + y + z = 2 - 2t + 1 + t + t = 3$.
-### Geometrisk model: Rækkeoperationer og pivot-trappematrix
-
-Gauss-Jordan elimination transformerer en totalmatrix $[A \mid \mathbf{b}]$ til reduceret række-echelonform (RREF):
-
-```text
-  Pivot-trappe (RREF):
-  ┌───┬───┬───┬───┬───┐
-  │ 1 │ * │ 0 │ 0 │ * │   <- Første ledende 1-tal i række 1 (Pivot)
-  ├───┼───┼───┼───┼───┤
-  │ 0 │ 0 │ 1 │ 0 │ * │   <- Næste pivot står strengt til højre
-  ├───┼───┼───┼───┼───┤
-  │ 0 │ 0 │ 0 │ 1 │ * │   <- Søjler uden pivot giver frie variable
-  ├───┼───┼───┼───┼───┤
-  │ 0 │ 0 │ 0 │ 0 │ 0 │   <- Nulrækker samles altid nederst
-  └───┴───┴───┴───┴───┘
-```
-
-**Geometrisk fortolkning i $\mathbb{R}^3$:** Hver lineær ligning repræsenterer en plan i rummet. Løsningsmængden er det geometriske snit: et punkt (entydig løsning), en linje/plan (uendeligt mange løsninger, frie variable), eller intet snit (inkonsistent system, f.eks. parallelle planer).
-
 ## Opgaver
 
 Opgaverne står på kursussiden med de numre, der er gengivet her. Nogle nævner bogen, fx definition eller sætning, i deres hints (se begreberne ovenfor).

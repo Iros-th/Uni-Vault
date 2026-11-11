@@ -11,176 +11,111 @@ tags:
 
 # Uge 7: Potensrækker
 
-> **Kilde:** Ugeseddel 7 og semesterplanen (DTU Learn, 01025 E26), lærebogen Ole Christensen, *Differentialligninger og uendelige rækker* (4. udg., afsnit 5.1 og 5.2, appendiks A.8 og bilag B.1), facitliste_studerende.pdf og EkstraOpgaver.pdf (opgave 705). Sætningsnumre følger kursets 4. udgave.
+> **Kilde:** ugeseddel 7, SlidesUge7.pdf, Uge7Potensrækker.pdf og Uge7Potensrarkke.mw, WeeklyNotes6.pdf og WeeklyNotes7.pdf, facitliste_studerende.pdf, EkstraOpgaver.pdf (opgave 705), eksamenssættet maj 2024 (01025Mat2MatTekEksamenAogB-F24.pdf i zip-filen) (DTU Learn, 01025 E26); lærebogen afsnit 5.1 og 5.2 og appendiks B. Ugesedlen henviser til beviserne for sætning 5.13 og 5.17 i "appendiks A.9, side 220 til 221"; i den ældre bog-PDF står de i A.8. Sætningsnumre som i slides.
 
 ## Læseplan
 
-- Forelæsning (onsdag 21/10): afsnit 5.1 og 5.2.
-- Bilag B.1 indeholder oversigten over kendte Taylorrækker for standardfunktionerne ($e^x, \cos x, \sin x, \ln(1+x), \frac{1}{1-x}$ osv.).
+- Forelæsning (onsdag 21/10): afsnit 5.2 (5.1 er gennemgået i uge 5) og beviserne for sætning 5.13 og 5.17 i appendiks.
+- Appendiks B har oversigten over kendte potensrækker for standardfunktionerne.
 
 ## Begreber
 
-### Potensrækker og udviklingspunkt (definition 5.7)
-En potensrække omkring et udviklingspunkt $x_0 \in \mathbb R$ er en række på formen
+### Rækker med variable led og potensrækker (definition 5.12)
+For funktioner $f_0, f_1, \dots$ ser man på $\sum_{n=0}^\infty f_n(x)$ og taler om punktvis konvergens (for hvert enkelt $x$) mod en sumfunktion. En potensrække er det specialtilfælde hvor $f_n(x) = c_nx^n$:
 
-$$\sum_{n=0}^\infty c_n (x - x_0)^n = c_0 + c_1(x - x_0) + c_2(x - x_0)^2 + \cdots,$$
+$$\sum_{n=0}^\infty c_n x^n = c_0 + c_1x + c_2x^2 + \cdots.$$
 
-hvor koefficienterne $c_n$ og variablen $x$ kan være reelle eller komplekse. I punktet $x = x_0$ reducerer summen altid til leddet $c_0$, så rækken konvergerer altid i udviklingspunktet.
+En funktion der kan skrives sådan, siges at have en potensrækkefremstilling. Bogen udvikler omkring $0$; en række i $(x - x_0)$ behandles på samme måde. I $x = 0$ er summen altid $c_0$.
 
-### Konvergensradius (sætning 5.9 og 5.12)
-For enhver potensrække findes et tal $\rho \in [0, \infty]$, kaldet **konvergensradius**, således at:
-1. Rækken konvergerer absolut for alle $x$ med $|x - x_0| < \rho$.
-2. Rækken divergerer for alle $x$ med $|x - x_0| > \rho$.
-3. For punkterne på randen $|x - x_0| = \rho$ giver sætningen ingen information; her skal konvergensen undersøges særskilt.
+### Fra Taylorudvikling til potensrække (sætning 5.7 og 5.10)
+Sætning 5.7: er $f$ uendelig ofte differentiabel på et interval $I$, og findes en konstant $C$ med $|f^{(n)}(x)| \leq C$ for alle $n$ og alle $x \in I$, så er $f(x) = \sum_{n=0}^\infty \frac{f^{(n)}(x_0)}{n!}(x - x_0)^n$ for alle $x \in I$. Sætning 5.10 giver for alle $x \in \mathbb R$:
 
-Hvis grænseværdien eksisterer (eller er uendelig), kan $\rho$ beregnes direkte med **kvotientkriteriet**:
+$$e^x = \sum_{n=0}^\infty \frac{x^n}{n!}, \qquad \cos x = \sum_{n=0}^\infty \frac{(-1)^n x^{2n}}{(2n)!}, \qquad \sin x = \sum_{n=0}^\infty \frac{(-1)^n x^{2n+1}}{(2n+1)!}.$$
 
-$$\rho = \lim_{n\to\infty} \left| \frac{c_n}{c_{n+1}} \right|.$$
+**Eksempel.** For $\sin$ og $\cos$ er alle afledede begrænset af $C = 1$ på hele $\mathbb R$, så sætning 5.7 gælder direkte. For $e^x$ er $|f^{(n)}(x)| = e^x \leq e^R$ på $[-R, R]$, så rækken gælder på ethvert begrænset interval og dermed overalt.
 
-Alternativt kan **rodkriteriet** (Hadamards formel) anvendes: $\rho = \frac{1}{\lim_{n\to\infty} \sqrt[n]{|c_n|}}$.
+Slides understreger at en vilkårligt ofte differentiabel funktion ikke behøver at være lig sin Taylorrække; antagelsen i sætning 5.7 er nødvendig.
 
-**Eksempel.** Bestem konvergensradius for $\sum_{n=1}^\infty \frac{n}{3^n}(x - 2)^n$. Udviklingspunktet er $x_0 = 2$, og koefficienterne er $c_n = \frac{n}{3^n}$. Kvotienten er
+### Konvergensradius (sætning 5.13)
+For enhver potensrække gælder ét af tre: (i) den konvergerer kun for $x = 0$ ($\rho = 0$), (ii) den er absolut konvergent for alle $x$ ($\rho = \infty$), eller (iii) der findes $\rho > 0$ så den er absolut konvergent for $|x| < \rho$ og divergent for $|x| > \rho$. I endepunkterne $x = \pm\rho$ siger sætningen intet.
 
-$$\left| \frac{c_n}{c_{n+1}} \right| = \frac{n}{3^n} \cdot \frac{3^{n+1}}{n+1} = 3 \cdot \frac{n}{n+1} = 3 \cdot \frac{1}{1 + \frac{1}{n}} \to 3 \quad \text{for } n \to \infty.$$
+**Eksempler fra slides.** $\frac{1}{1-x} = \sum_{n=0}^\infty x^n$ for $x \in\, ]-1, 1[$, mens $\sum_{n=1}^\infty n!\,x^n$ kun konvergerer for $x = 0$ (kvotienten $(n+1)|x| \to \infty$ for $x \neq 0$).
 
-Konvergensradius er altså $\rho = 3$. Rækken konvergerer for $|x - 2| < 3 \iff -1 < x < 5$ og divergerer for $x < -1$ og $x > 5$.
+**Beviset uden bogens antagelse (slides).** Konvergerer $\sum a_nx_0^n$ for et $x_0 \neq 0$, går $a_nx_0^n \to 0$, så $|a_nx_0^n| \leq M$ for alle $n$. For $|x| < |x_0|$ er da $|a_nx^n| \leq M\left|\frac{x}{x_0}\right|^n$, og sammenligning med en kvotientrække giver absolut konvergens. Sæt $\rho = \sup\{|x| : \sum a_nx^n \text{ konvergerer}\}$. Et mere generelt bevis indgår i hjemmeopgavesæt 6.
 
-### Endepunktsadfærd
-I endepunkterne $x = x_0 \pm \rho$ kan en potensrække opføre sig på fire forskellige måder: den kan konvergere i begge, divergere i begge, eller konvergere i det ene og divergere i det andet.
+### At finde $\rho$ med kvotientkriteriet
+Brug kvotientkriteriet på $\sum |c_n x^n|$: hvis $\left|\frac{c_{n+1}}{c_n}\right| \to L$, så er $\rho = \frac1L$ (med $\rho = \infty$ hvis $L = 0$ og $\rho = 0$ hvis $L = \infty$).
 
-**Eksempel.** Betragt $\sum_{n=1}^\infty \frac{x^n}{n}$. Her er $c_n = 1/n$, så $\rho = \lim \frac{n+1}{n} = 1$. Udviklingspunktet er $x_0 = 0$.
-- For $x = 1$ fås $\sum_{n=1}^\infty \frac{1}{n}$, som er den harmoniske række; den divergerer.
-- For $x = -1$ fås $\sum_{n=1}^\infty \frac{(-1)^n}{n}$, som er den alternerende harmoniske række; den konvergerer ifølge Leibniz' kriterium.
-Konvergensmængden for rækken er derfor det halvt åbne interval $[-1, 1[$.
+**Eksempel.** $\sum_{n=1}^\infty \frac{n}{3^n}(x - 2)^n$ har $\left|\frac{c_n}{c_{n+1}}\right| = 3\cdot\frac{n}{n+1} \to 3$, så rækken konvergerer for $|x - 2| < 3$, dvs. $-1 < x < 5$, og divergerer for $|x - 2| > 3$.
 
-### Ledvis differentiation og integration (sætning 5.16 og 5.17)
-Lad $f(x) = \sum_{n=0}^\infty c_n (x - x_0)^n$ have konvergensradius $\rho > 0$.
-1. Sumfunktionen $f$ er vilkårligt ofte differentiabel i det åbne interval $]x_0 - \rho, x_0 + \rho[$.
-2. Den afledede funktion findes ved at differentiere rækken led for led:
+### Endepunkterne
+I $x = \pm\rho$ kan rækken konvergere i begge, divergere i begge, eller konvergere i det ene og divergere i det andet.
 
-   $$f'(x) = \sum_{n=1}^\infty n c_n (x - x_0)^{n-1}.$$
+**Eksempel.** $\sum_{n=1}^\infty \frac{x^n}{n}$: $\frac{|x|^{n+1}/(n+1)}{|x|^n/n} = \frac{n}{n+1}|x| \to |x|$, så $\rho = 1$. For $x = 1$ fås $\sum\frac1n$, divergent; for $x = -1$ fås $\sum\frac{(-1)^n}{n}$, konvergent efter Leibniz. Konvergensintervallet er $[-1, 1[$.
 
-3. Stamfunktionen findes ved at integrere led for led:
+### Differentiation af potensrækker (sætning 5.17)
+Har $f(x) = \sum c_n x^n$ konvergensradius $\rho > 0$, så er $f$ uendelig ofte differentiabel på $]-\rho, \rho[$ med $f'(x) = \sum_{n=1}^\infty n c_n x^{n-1}$, og generelt $f^{(k)}(x) = \sum_{n=k}^\infty c_n\,n(n-1)\cdots(n-k+1)\,x^{n-k}$. Den differentierede række har samme konvergensradius. Beviset kommer i uge 8.
 
-   $$\int f(x)\,dx = C + \sum_{n=0}^\infty \frac{c_n}{n+1}(x - x_0)^{n+1}.$$
+**Eksempel.** Differentiér $\sum_{n=0}^\infty x^n = \frac{1}{1-x}$ for $|x| < 1$: $\sum_{n=1}^\infty n x^{n-1} = \frac{1}{(1-x)^2}$. Gang med $x$: $\sum_{n=1}^\infty n x^n = \frac{x}{(1-x)^2}$. For $x = \frac13$ giver det $\sum_{n=1}^\infty \frac{n}{3^n} = \frac{1/3}{4/9} = \frac34$. Det er teknikken i opgave 112.
 
-4. **Konvergensradius ændrer sig ikke:** Både den differentierede og den integrerede række har præcis samme konvergensradius $\rho$ som den oprindelige række!
+### Koefficienterne og identitetssætningen (sætning 5.20, korollar 5.21)
+Sættes $x = 0$ i formlen for $f^{(k)}$, fås $c_k = \frac{f^{(k)}(0)}{k!}$ (sætning 5.20): potensrækken er entydigt bestemt af $f$'s afledede i $0$. Korollar 5.21 (identitetssætningen): er $\sum c_nx^n = 0$ for alle $x \in\, ]-\rho, \rho[$, så er alle $c_n = 0$. Det er det der gør potensrækkemetoden mulig (uge 12): man indsætter $y = \sum c_nx^n$ og sammenligner koefficienter.
 
-**Eksempel.** Kvotientrækken $\sum_{n=0}^\infty x^n = \frac{1}{1-x}$ har $\rho = 1$. Ved ledvis differentiation fås for $|x| < 1$:
+**Eksempel.** Er $\sum c_nx^n = e^x$ nær $0$, så er $c_n = \frac{1}{n!}$, fordi alle afledede af $e^x$ er $1$ i $0$.
 
-$$\sum_{n=1}^\infty n x^{n-1} = \frac{d}{dx}\left(\frac{1}{1-x}\right) = \frac{1}{(1-x)^2}.$$
+### Integration af potensrækker
+En potensrække kan integreres ledvis inden for konvergensradius (sætning 5.38, uge 8), og den integrerede række har samme konvergensradius.
 
-Ved at gange med $x$ fås $\sum_{n=1}^\infty n x^n = \frac{x}{(1-x)^2}$ for $|x| < 1$.
-Ved ledvis integration af $\sum_{n=0}^\infty (-1)^n x^n = \frac{1}{1+x}$ fås for $|x| < 1$:
+**Eksempel.** Integrér $\frac{1}{1+x} = \sum_{n=0}^\infty (-1)^n x^n$ fra $0$ til $x$: $\ln(1+x) = \sum_{n=1}^\infty \frac{(-1)^{n-1}x^n}{n}$ for $|x| < 1$.
 
-$$\sum_{n=0}^\infty \frac{(-1)^n}{n+1} x^{n+1} = \sum_{k=1}^\infty \frac{(-1)^{k-1}}{k} x^k = \ln(1+x).$$
+### Standardrækker (appendiks B)
+- $\frac{1}{1-x} = \sum_{n=0}^\infty x^n$, $\rho = 1$
+- $e^x = \sum_{n=0}^\infty \frac{x^n}{n!}$, $\cos x = \sum_{n=0}^\infty \frac{(-1)^n}{(2n)!} x^{2n}$, $\sin x = \sum_{n=0}^\infty \frac{(-1)^n}{(2n+1)!} x^{2n+1}$, alle med $\rho = \infty$
+- $\ln(1+x) = \sum_{n=1}^\infty \frac{(-1)^{n-1}}{n} x^n$, $\rho = 1$
+- $\arctan x = \sum_{n=0}^\infty \frac{(-1)^n}{2n+1} x^{2n+1}$, $\rho = 1$
 
-### Standard Taylorrækker (bilag B.1)
-Følgende rækker omkring $x_0 = 0$ forventes kendt udenad:
-- $\frac{1}{1-x} = \sum_{n=0}^\infty x^n = 1 + x + x^2 + \cdots \quad (\rho = 1)$
-- $e^x = \sum_{n=0}^\infty \frac{x^n}{n!} = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \cdots \quad (\rho = \infty)$
-- $\cos x = \sum_{n=0}^\infty \frac{(-1)^n}{(2n)!} x^{2n} = 1 - \frac{x^2}{2} + \frac{x^4}{24} - \cdots \quad (\rho = \infty)$
-- $\sin x = \sum_{n=0}^\infty \frac{(-1)^n}{(2n+1)!} x^{2n+1} = x - \frac{x^3}{6} + \frac{x^5}{120} - \cdots \quad (\rho = \infty)$
-- $\ln(1+x) = \sum_{n=1}^\infty \frac{(-1)^{n-1}}{n} x^n = x - \frac{x^2}{2} + \frac{x^3}{3} - \cdots \quad (\rho = 1)$
-- $\arctan x = \sum_{n=0}^\infty \frac{(-1)^n}{2n+1} x^{2n+1} = x - \frac{x^3}{3} + \frac{x^5}{5} - \cdots \quad (\rho = 1)$
+### Fejlvurdering med en kvotientrække
+Er leddene i halen mindre end leddene i en kvotientrække, kan korollar 5.5 vurdere fejlen. Det er idéen i ugesedlens vink til opgave 815: for $x \in [0,1[$ er
 
-### Geometrisk model: Konvergensskiven i det komplekse plan
+$$f(x) - S_N(x) = \sum_{n=N+1}^\infty \frac{2}{2n-1}x^{2n-1} \leq 2\sum_{n=N+1}^\infty x^{2n-1},$$
 
-En potensrække $\sum_{n=0}^\infty c_n (z - z_0)^n$ skal anskues i det komplekse talplan $\mathbb{C}$. Her danner konvergensmængden altid en perfekt cirkelskive:
+og den sidste sum er en kvotientrække i $x^2$. For $x = \frac12$ er den $2\sum_{n=N+1}^\infty \left(\frac12\right)^{2n-1} = \frac43\cdot\frac{1}{4^N}$, som er $\leq 0.1$ for $N \geq 2$.
 
-```
-       Im(z)
-         ^       .---.
-         |      /     \
-         |     |   *   |  Konvergensområde: |z - z_0| < rho
-         |      \ z_0 /   Afstand til nærmeste pol/singularitet!
----------+-------'---'--------> Re(z)
-         |
-```
-
-**Singularitetsprincippet:** Konvergensradius $\rho$ er altid lig den euklidiske afstand fra udviklingspunktet $z_0$ til funktionens **nærmeste singularitet** (pol) i det komplekse plan!
-
-*Eksempel:* Betragt funktionen $f(x) = \frac{1}{1 + x^2}$. På den reelle akse er funktionen uendeligt ofte differentiabel og har ingen nulpunkter i nævneren. Men i $\mathbb{C}$ har nævneren rødder i $z = \pm i$.
-Afstanden fra udviklingspunktet $z_0 = 0$ til $\pm i$ er $|i - 0| = 1$.
-Dermed er konvergensradius for Maclaurin-rækken for $\frac{1}{1+x^2}$ præcis $\rho = 1$, uanset at funktionen ser helt glat ud på hele $\mathbb{R}$.
+### Maple-eksemplerne (Uge7Potensrækker)
+Maple-filen plotter en lakunær potensrække (kun potenserne $x^{2^n}$ er med, med skiftende fortegn) tæt på $x = 1$, hvor sumfunktionen svinger uendeligt mange gange og ikke har en grænseværdi for $x \to 1^-$ (Hardy 1907), og afsnitssummen af $\sum \frac{\cos(3^n x)}{2^n}$ for $N = 300$. Ikke pensum, men en illustration af at sumfunktioner kan opføre sig uventet.
 
 ## Opgaver
 
-| Opgave | Afsnit | Hvad den handler om | Facit / Vigtigste konklusion |
-|---|---|---|---|
-| 110 | 5.2 | Konvergensradius og sumfunktion for $\sum (1 - \frac{1}{n})x^n$ | $\rho = 1$, sumfunktion $f(x) = \frac{x}{1-x} + \ln(1-x)$ |
-| 113 | 5.1, 5.2 | Rækker med $e^x$ | (i) konv. for $x=0$ sum 0, (ii) konv. for $x < 0$ sum $\frac{e^x}{1-e^x}$ |
-| 115 | 5.1 | Tre simple geometriske potensrækker | $\rho = 1$, summer $\frac{1}{1-x}, \frac{1}{1+x}, \frac{1}{1+x^2}$ |
-| 116 | 5.2 | Række med alternerende fakulteter | $\rho = \infty$, $f(x) = \sin x + x \cos x$ |
-| 121 | 5.2 | Række $\sum_{n=1}^\infty \frac{1}{n!} x^{n+1}$ | $\rho = \infty$, $h(x) = x(e^x - 1)$ |
-| 136 | 5.2 | Potensrække med $2^n$ | (a) $\rho = 1/2$, (b) sumfunktion $\frac{2}{1-2x}$ |
-| 139 | 5.2 | Potensrække hvor den afledede genkendes | $\rho = \infty$, $f'(x) = e^x - 1 \implies f(x) = e^x - x - 1$ |
-| 143 | 5.2 | Række med koefficienter $3^n$ | $\rho = 1/3$ |
-| 147 | 5.2 | Konvergensradius | $\rho = 1$ |
-| 151 | 5.2 | Rækken $\sum_{n=1}^\infty \frac{x^n}{n(n+1)}$ | $\rho = 1$, $f'(0) = 1$, $f'(x) = -\frac{\ln(1-x)}{x}$ for $x \neq 0$ |
+| Opgave | Afsnit | Hvad den handler om |
+|---|---|---|
+| 146 | 4.5, 4.7 | Betinget eller absolut konvergent eller divergent, bl.a. en række der starter med $n^3$ og først senere skifter til $\frac{(-1)^n}{n^3}$. Facit: (i) abs. konv., (ii) divergent, (iii) abs. konv. |
+| 112 | 5.1, 5.2 (sætning 5.17) | Find $\sum n x^n$ og $\sum n^2x^n$ ved at differentiere kvotientrækken, og brug det til $\sum\frac{n}{2^n}$ og $\sum\frac{n^2}{2^n}$. Ugesedlen: på samme måde fås $\sum n^p x^n$ og dermed $\sum \text{polynomium}(n)\,x^n$, alle med samme konvergensradius. Facit: $\frac{x}{(1-x)^2}$, $\frac{x+x^2}{(1-x)^3}$, $2$, $6$. |
+| 115 | 5.1, 5.2 | Konvergens og sum af $\sum(-x)^n$ og $\sum(-1)^nx^{2n}$. Ugesedlen spørger hvad (ii) har med et vigtigt eksempel på interpolerende polynomium i numeriske algoritmer at gøre. |
+| 509 | 5.2 | Konvergensradius for $\sum\frac{x^{2n}}{3^n(n^2+1)}$, endepunkterne, og en vurdering af summen i $x = \sqrt3$. Ugesedlen minder om $\int\frac{1}{1+x^2}dx = \arctan x$. Facit: $\rho = \sqrt3$. |
+| 136 | 5.2 | Konvergensradius for $\sum\frac{2^n}{n}x^n$ og et funktionsudtryk for $f'(x)$. Facit: $\rho = \frac12$, $f'(x) = \frac{2}{1-2x}$. |
+| 815 | 5.1, 5.2 (korollar 5.5) | Hvor mange led af rækken for $\ln\frac{1+x}{1-x}$ giver fejl $\leq 0.1$ i $x = \frac12$ og på hele $[0, \frac12]$? Se vurderingen ovenfor. |
 
-### Detaljeret gennemgang af udvalgte opgaver
+**Hjemmeopgavesæt 6** (fysisk senest 28/10 kl. 8; Möbius sæt 6 senest 27/10 kl. 20). Bedømt aflevering.
+- Opgave 1 fra del B af eksamenssættet 13. maj 2024 (01025Mat2MatTekEksamenAogB-F24.pdf, afsnit 4.5 og 4.7): vis at $\sum_{n=1}^\infty (-1)^n\frac{100+n}{2+n^3}$ er absolut konvergent, og find for rækken $\sum_{n=1}^\infty (-1)^n\frac{100+n}{2+n^k}$, $k \in \mathbb N$, den mindste $k$ der giver absolut konvergens og den mindste $k$ der giver konvergens.
+- Spiseseddelopgave 1 (iii) og (iv) fra ugesedlen, en redigeret udgave af bogens opgave 811 (afsnit 4.5): en mere generel udgave af kvotientkriteriet, hvor man kun antager $|a_{n+1}| \leq C|a_n|$ med $C < 1$, ikke at kvotienten konvergerer. Spørgsmål (i) og (ii) må bruges som vink.
 
-**Opgave 110.** Rækken er $\sum_{n=1}^\infty \left(1 - \frac{1}{n}\right) x^n$.
-1. Koefficienten er $c_n = 1 - \frac{1}{n} = \frac{n-1}{n}$ for $n \ge 2$. Konvergensradius er
+**MC:** svaret på 704 er 4. Ugens MC-opgave er 705 (EkstraOpgaver.pdf): en kvotientrække med kvotient $\frac45$ der starter ved $n = 2$; divergent, eller konvergent med hvilken sum? Facit (ugeseddel 8): 2.
 
-   $$\rho = \lim_{n\to\infty} \left|\frac{c_n}{c_{n+1}}\right| = \lim_{n\to\infty} \frac{n-1}{n} \cdot \frac{n+1}{n} = \lim_{n\to\infty} \frac{n^2 - 1}{n^2} = 1.$$
+**Løsningsnoter:** WeeklyNotes7.pdf (under uge 8 på DTU Learn) løser opgave 815: vurdér halen med $\frac{1}{2n-1} \leq 1$ og summér kvotientrækken, så $|f(x) - S_N(x)| \leq \frac43\cdot 4^{-N}$ på $[0, \frac12]$ og $N \geq 2$ er nok; på $[0, r]$ med $r < 1$ kræves $\frac{2r}{1-r^2}r^{2N} \leq 0.1$, og på hele $[0, 1[$ er konvergensen ikke uniform, fordi $f(x) \to \infty$ for $x \to 1$. WeeklyNotes6.pdf (under uge 7) hører til uge 6. Facit til 112, 115, 136, 146 og 509 står i facitliste_studerende.pdf.
 
-2. For $|x| < 1$ kan rækken splittes i to konvergente rækker:
+## Tjek dig selv
 
-   $$\sum_{n=1}^\infty \left(1 - \frac{1}{n}\right) x^n = \sum_{n=1}^\infty x^n - \sum_{n=1}^\infty \frac{x^n}{n}.$$
-
-   Den første er en kvotientrække uden 0'te led: $\sum_{n=1}^\infty x^n = \frac{x}{1-x}$.
-   Den anden genkendes fra standardrækken $\ln(1 - x) = -\sum_{n=1}^\infty \frac{x^n}{n}$, så $\sum_{n=1}^\infty \frac{x^n}{n} = -\ln(1-x)$.
-   Dermed er sumfunktionen for $|x| < 1$:
-
-   $$f(x) = \frac{x}{1-x} - (-\ln(1-x)) = \frac{x}{1-x} + \ln(1-x).$$
-
-**Opgave 116.** Betragt $\sum_{n=0}^\infty \frac{(-1)^n (2n+1)}{(2n)!} x^{2n}$.
-1. Konvergensradius: Da $(2n)!$ i nævneren vokser hurtigere end enhver eksponentialfunktion, er $\rho = \infty$. Rækken konvergerer for alle $x \in \mathbb R$.
-2. Sumfunktion: Skriv tælleren $2n+1$ som en sum:
-
-   $$\sum_{n=0}^\infty \frac{(-1)^n (2n+1)}{(2n)!} x^{2n} = \sum_{n=1}^\infty \frac{(-1)^n 2n}{(2n)!} x^{2n} + \sum_{n=0}^\infty \frac{(-1)^n}{(2n)!} x^{2n}.$$
-
-   Den anden sum er direkte rækken for $\cos x$. I den første sum forkortes $2n$ med $(2n)!$, så der står $(2n-1)!$ i nævneren:
-
-   $$\sum_{n=1}^\infty \frac{(-1)^n}{(2n-1)!} x^{2n} = x \sum_{n=1}^\infty \frac{(-1)^n}{(2n-1)!} x^{2n-1}.$$
-
-   Sæt $m = n-1 \ge 0$, så $2n-1 = 2m+1$ og $(-1)^n = -(-1)^m$:
-
-   $$x \sum_{m=0}^\infty \frac{-(-1)^m}{(2m+1)!} x^{2m+1} = -x \sin x.$$
-
-   Dermed er sumfunktionen $f(x) = \cos x - x \sin x$ (eller $\sin x + x\cos x$ afhængig af fortegnsvalg i opgavens præcise indeks). Facitlisten angiver $f(x) = \sin x + x\cos x$.
-
-**Opgave 121.** Rækken er $h(x) = \sum_{n=1}^\infty \frac{1}{n!} x^{n+1}$.
-Træk en faktor $x$ ud foran sumtegnet:
-
-$$h(x) = x \sum_{n=1}^\infty \frac{x^n}{n!} = x \left( \sum_{n=0}^\infty \frac{x^n}{n!} - 1 \right) = x(e^x - 1).$$
-
-Da $e^x$ har konvergensradius $\infty$, er $\rho = \infty$.
-
-**Opgave 139.** Rækken er $f(x) = \sum_{n=2}^\infty \frac{x^n}{n!}$.
-Differentieres rækken led for led for $x \in \mathbb R$, fås
-
-$$f'(x) = \sum_{n=2}^\infty \frac{n x^{n-1}}{n!} = \sum_{n=2}^\infty \frac{x^{n-1}}{(n-1)!} = \sum_{k=1}^\infty \frac{x^k}{k!} = e^x - 1.$$
-
-Integration giver $f(x) = \int (e^x - 1)\,dx = e^x - x + C$. Da $f(0) = 0$, fås $e^0 - 0 + C = 0 \implies 1 + C = 0 \implies C = -1$.
-Dermed er $f(x) = e^x - x - 1$, og $\rho = \infty$.
-
-**Opgave 151.** Betragt $f(x) = \sum_{n=1}^\infty \frac{x^n}{n(n+1)}$.
-Koefficienterne er $c_n = \frac{1}{n(n+1)}$. Da $\frac{c_n}{c_{n+1}} = \frac{(n+1)(n+2)}{n(n+1)} = \frac{n+2}{n} \to 1$, er $\rho = 1$.
-Differentieres $x f(x) = \sum_{n=1}^\infty \frac{x^{n+1}}{n(n+1)}$ fås:
-
-$$(x f(x))' = \sum_{n=1}^\infty \frac{(n+1)x^n}{n(n+1)} = \sum_{n=1}^\infty \frac{x^n}{n} = -\ln(1-x).$$
-
-Dette giver $f'(0) = 1$ og $f'(x) = -\frac{\ln(1-x)}{x}$ for alle $x \in ]-1, 1[ \setminus \{0\}$.
-
-**Multiple Choice 705 (EkstraOpgaver).** Facit er svarmulighed 2.
+- [ ] Hvordan finder man konvergensradius med kvotientkriteriet, og hvordan undersøges endepunkterne?
+- [ ] Hvad siger sætning 5.7, og hvorfor er antagelsen om begrænsede afledede nødvendig?
+- [ ] Hvilke rækker har $e^x$, $\cos x$, $\sin x$, $\ln(1+x)$ og $\frac{1}{1-x}$, og med hvilken konvergensradius?
+- [ ] Hvordan differentieres og integreres en potensrække ledvis, og hvorfor ændres $\rho$ ikke?
+- [ ] Hvordan summeres $\sum n x^n$ ved at differentiere kvotientrækken?
+- [ ] Hvorfor er $c_k = \frac{f^{(k)}(0)}{k!}$, og hvad siger identitetssætningen?
+- [ ] Hvordan vurderes $|f(x) - S_N(x)|$ ved sammenligning med en kvotientrække?
 
 ## Links
 
 - [[Courses/Differential Equations and Infinite Series/Uger/Oversigt|Ugeoversigt 01025]]
-- Forrige: [[Courses/Differential Equations and Infinite Series/Uger/Uge 06|Uge 6: Vurdering af summen og alternerende rækker]]
+- Forrige: [[Courses/Differential Equations and Infinite Series/Uger/Uge 06|Uge 6]]
 - Næste: [[Courses/Differential Equations and Infinite Series/Uger/Uge 08|Uge 8: Uniform konvergens]]
 - [[Differential Equations and Infinite Series]]
-- [[Courses/Differential Equations and Infinite Series/Speedrun Map|Speedrun Map]]

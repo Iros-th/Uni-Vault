@@ -11,9 +11,9 @@ tags:
 
 # Uge 13: Moduler
 
-> Kilde: kursussiden programmering.compute.dtu.dk (linket som Material på DTU Learn for 02002), siderne Week 13: Preparation, In-Class og Closure. DTU Learn selv har intet indhold at læse for dette kursus. Pensum i bog: Kapitel 13, *Modules and Packages*, i *Whirlwind Tour of Python* (Jake VanderPlas). Tilsvarende indhold i Kaggle-tutorialen *Working with External Libraries*.
+> Kilde: kursussiden programmering.compute.dtu.dk, siderne Week 13: Preparation, In-Class og Closure og Advanced. Pensum i bog: Kapitel 13, *Modules and Packages*, i *Whirlwind Tour of Python* (Jake VanderPlas). Tilsvarende indhold i Kaggle-tutorialen *Working with External Libraries*.
 
-> Bemærk: Closure-siden for uge 13 viser en advarsel om, at den er sidste års version. Indholdet kan ændre sig lidt.
+Closure-siden for uge 13 er markeret som sidste års version, og indholdet kan ændre sig lidt.
 
 ## Emner
 
@@ -61,19 +61,6 @@ import math
 print(dir(math)[:5])
 help(math.sqrt)
 ```
-### Arkitekturmodel: Modulopbygning og programstruktur
-
-Større softwareprojekter opdeles i selvstændige moduler og pakker:
-
-```text
-  hovedprogram.py (Entry point: if __name__ == "__main__":)
-       │
-       ├── import databehandling.py (Funktioner til vask og parsning af data)
-       ├── import model.py           (Klasser til beregning og optimering)
-       └── import visualisering.py   (Matplotlib grafer og eksport)
-```
-Dette sikrer løs kobling (Loose Coupling) og høj genanvendelighed af koden.
-
 ## Opgaver
 
 Ugens struktur: Preparation (Copy-and-Run og selvquiz) før timen, derefter In-Class (demo, Coding Practice, Problem Solving), og til sidst Closure (syllabus og checkpoints). Hver torsdag er der quiz og live-demo 13:00 til 14:00, derefter selvstændigt arbejde med Coding Practice.
@@ -99,6 +86,14 @@ Ugens struktur: Preparation (Copy-and-Run og selvquiz) før timen, derefter In-C
 **Closure, checkpoints**
 
 - Ingen checkpoints er listet endnu: kursussiden viser sidste års version af Closure-siden for uge 13.
+
+## Advanced (ikke pensum)
+
+Kursussidens Advanced-side for uge 13 (siden vises som sidste års version, kan blive rettet). Ingen obligatoriske opgaver eller eksamensspørgsmål bygger på den.
+
+- Nyttige moduler i standardbiblioteket: shutil, glob, collections, datetime, random, time, argparse, json, pickle, csv, statistics.
+- Tredjepartsbiblioteker: pandas, scikit-learn, requests, pytest, opencv-python, pillow, pytorch, sympy.
+- Advent of Code i december.
 
 ## Links
 

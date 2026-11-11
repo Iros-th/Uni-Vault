@@ -11,7 +11,7 @@ tags:
 
 # Uge 1: Kursusintro og Mathematical proofs (del A)
 
-> Kilde: DTU Learn 02525 (orgUnitId 326329): General Info `02525_IntroAppMat2026v3 - Copy.pdf`, Project 1 `MathProofs1A.pdf` (David Brander, "Proofs in Mathematics, Part I"), `proofs_problems1 - Copy.pdf` og `sample_solutions1 - Copy.pdf`. Mandag 31/8 2026. Mine egne lektionsnoter: [[Applied mathematics introduction lection 1]] og [[Lection 1 Introduction to applied mathematics]].
+> Kilde: DTU Learn 02525 (orgUnitId 326329): General Info `02525_IntroAppMat2026v3 - Copy.pdf`, Project 1 `MathProofs1A.pdf` (David Brander, "Proofs in Mathematics, Part I"), `proofs_problems1 - Copy.pdf` og `sample_solutions1 - Copy.pdf`. Mandag 31/8 2026. Ældre lektionsnoter: [[Applied mathematics introduction lection 1]] og [[Lection 1 Introduction to applied mathematics]].
 
 ## Emner
 
@@ -42,26 +42,7 @@ tags:
 
 **Legemsaksiomerne.** Et legeme er en mængde $F$ med to operationer $+$ og $\ast$, hvor begge er associative og kommutative, der findes $0$ og $1$ med $0 + a = a$ og $1 \ast a = a$, hvert $a$ har additiv invers $-a$, hvert $a \neq 0$ har multiplikativ invers $a^{-1}$, og multiplikation er distributiv over addition. $\mathbb{R}$ og $\mathbb{C}$ er legemer.
 
-Bemærk: i noten står distributiv-loven som $a \ast (b + c) = (a \ast b) + (b \ast c)$, hvilket ser ud som en tastefejl for $(a \ast b) + (a \ast c)$.
-### Bevismodel: Struktur og informationsflow i matematiske beviser
-
-Et formelt matematisk bevis opbygges som en logisk kæde, hvor hver pil er retfærdiggjort af en aksiom, definition eller tidligere sætning:
-
-```text
-  [ Præmisser / Antagelser (P) ]
-               │
-               │   Definitioner & regneregler
-               v
-  [ Mellemresultat 1 (Lemma) ]
-               │
-               │   Sætninger fra pensum
-               v
-  [ Mellemresultat 2 ]
-               │
-               v
-  [ Konklusion / Q.E.D. (Q) ]
-```
-
+I noten står distributivloven som $a st (b + c) = (a st b) + (b st c)$, formentlig en tastefejl for $(a st b) + (a st c)$.
 ## Opgaver
 
 Fra `proofs_problems1` ("Proofs: Problem Set One"). Man må antage de sædvanlige regneregler for $\mathbb{Z}$ og $\mathbb{Q}$, at $\mathbb{Q} \subset \mathbb{R}$, at $\sqrt{2}$ eksisterer, og at $\sqrt{2}$ er irrational.

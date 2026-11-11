@@ -11,7 +11,7 @@ tags:
 
 # Uge 8: Udspænding, ordnet basis og koordinater
 
-> Kilde: kursussiden mat1a.compute.dtu.dk (linket som Course Homepage på DTU Learn for 01001), siderne Lektionsoversigt, Ugeprogram semesteruge 8 og Opgaver Store Dag/Lille Dag uge 8. Bogen er kursets lærebog (udgave 2026).
+> Kilde: kursussiden mat1a.compute.dtu.dk, siderne Lektionsoversigt, Ugeprogram semesteruge 8 og Opgaver Store Dag/Lille Dag uge 8. Bogen er kursets lærebog (udgave 2026).
 
 ## Emner
 
@@ -43,21 +43,6 @@ $\mathrm{Null}(\mathbf{A})$ er løsningerne til $\mathbf{Ax} = \mathbf{0}$, og $
 Hvis $\beta = (\mathbf{b}_1, \dots, \mathbf{b}_k)$ er en ordnet basis og $\mathbf{v} = c_1\mathbf{b}_1 + \dots + c_k\mathbf{b}_k$, så er $[\mathbf{v}]_\beta = (c_1, \dots, c_k)$ (Definition 9.5.1). Koordinaterne er løsningen til et lineært ligningssystem.
 
 *Eksempel.* $\beta = ((1,1), (1,-1))$, $\mathbf{v} = (3,5)$: $c_1 + c_2 = 3$, $c_1 - c_2 = 5$, så $c_1 = 4$, $c_2 = -1$ og $[\mathbf{v}]_\beta = (4, -1)$.
-### Koordinatmodel: Basisskift som kommutativt diagram
-
-En vektor $\mathbf{x} \in V$ har forskellige koordinatsøjler afhængigt af den valgte basis:
-
-```text
-       Koordinater i basis B: [x]_B
-                 │
-                 │   Multiplikation med basisskiftmatrix P_(C<-B)
-                 v
-       Koordinater i basis C: [x]_C = P_(C<-B) · [x]_B
-
-  Hvor søjlerne i P_(C<-B) er basisvektorerne fra B udtrykt i basis C:
-  P_(C<-B) = [ [b1]_C   [b2]_C   ...   [bn]_C ]
-```
-
 ## Opgaver
 
 Opgaverne står på kursussiden med de numre, der er gengivet her. Nogle nævner bogen, fx definition eller sætning, i deres hints (se begreberne ovenfor).

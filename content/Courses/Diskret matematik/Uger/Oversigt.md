@@ -29,7 +29,31 @@ Kursus 01017 Discrete Mathematics. Forelæsning torsdag 8-10, øvelser torsdag 1
 ## Praktisk
 
 - Fire obligatoriske afleveringer i par eller tre, vægt 4 % hver (16 % i alt); eksamen er 3 timers digital multiple choice (84 %). Ingen internet eller AI til eksamen, andre hjælpemidler er tilladt.
-- Afleveringer afleveres på DTU Learn (se de enkelte `Aflevering`-noter).
+- Afleveringer afleveres på DTU Learn. Meddelelser på DTU Learn: Aflevering 1 fristen søndag 20. september kl. 23.59, Aflevering 2 søndag 11. oktober kl. 23.59 og Aflevering 3 søndag 8. november kl. 23.59 (frist for at tilmelde sig grupper: fredagen før kl. 23.59; hver aflevering har sine egne grupper). Aflevering sker som én pdf-fil, og kun sidste aflevering bedømmes. Aflevering bedømmes på en skala fra 0 til 4. Sene afleveringer accepteres ikke, og tidligere års afleveringer kan ikke genbruges; point fra dette års afleveringer kan overføres til reeksamen. Opgavenumre i afleveringerne refererer til 2025-udgaven af bogen, og 8. udgavens nummer står i rødt, hvor det afviger.
+- Pointspærring: 01019 og 01904. Skemaplacering E2B (torsdag 8-12), bygning 306.
+- Undervisere: David Earl Roberson (kursusansvarlig) og Carsten Thomassen.
+
+## Pensum
+
+Kursussiden angiver, at alt stof fra forelæsninger, ugentlige øvelser og obligatoriske afleveringer kan komme til eksamen. Materialet er udvalgte emner fra Rosen (2025-udgaven eller 8. udgave) samt kapitel 6 i Beelen et al., Discrete Mathematics.
+
+| Uge | Materiale |
+|---|---|
+| 1 | Rosen 1.1 og 1.4 (udsagnslogik, prædikater og kvantorer) |
+| 2 | Rosen 1.7 og 2.1 (beviser, mængder) |
+| 3 | Rosen 2.2 og 2.3 (mængdeoperationer, funktioner) |
+| 4 | Rosen 4.1 og en smule af 4.3 (delelighed, modulær aritmetik) |
+| 5 | Rosen 4.3 (primtal, gcd, Euklids algoritme) |
+| 6 | Rosen 4.4 og 5.1 (kongruenser, kinesisk restsætning, induktion) |
+| 7 | Rosen 5.1, 5.2 og 5.3 (induktion, rekursion, strukturel induktion) |
+| 8 | Rosen 6.1, 6.2 og 6.3 (optælling, skuffeprincippet, permutationer og kombinationer) |
+| 9 | Rosen 6.4 (binomialkoefficienter og binomialformlen) |
+| 10 | Rosen 8.5 og 8.6 (inklusion-eksklusion og anvendelser) |
+| 11 | Rosen 9.5 og 9.6 (ækvivalensrelationer, partielle ordninger) |
+| 12 | Rosen kapitel 10, afsnit 10.1 til 10.5, og det grafteoretiske bevis for Cantor-Schröder-Bernstein |
+| 13 | Beelen et al., kapitel 6 (polynomier, udvidet Euklid) |
+
+Læringsmålene i kursusbasen: matematisk sprog og notation, afgøre om simple udsagn er korrekte, identificere logisk struktur i beviser, grundlæggende logik, tælleteknik, binomialkoefficienter og identiteter, grafteori og argumentation for metodevalg.
 
 ## Links
 

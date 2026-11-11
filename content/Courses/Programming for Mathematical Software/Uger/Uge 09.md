@@ -11,7 +11,7 @@ tags:
 
 # Uge 9: Parallelle beregninger og OpenMP
 
-> Kilde: `module09.pdf` (opgaveark, 5. november 2026, Bernd Dammann) med hjemmearbejde, `slides09.pdf` (37 slides, Bernd Dammann), `solutions09.pdf`, `macOS_OpenMP_Compiler.pdf` og `exercises09.zip` (skabeloner: `main.c`, `hello_world_v2.c`, `datatools.c/.h`, `my_dgemv.c/.h`, `my_dgemv_v1.c`, `my_dgemv_v2.c`, `Makefile.Linux`, `Makefile.macOS` og MSP Tools). Siderne "Solution examples" og `solutions09.zip` uden indhold kunne ikke åbnes (404). Ingen læsning fra lærebogen er angivet for dette modul.
+> Kilde: `module09.pdf` (opgaveark, 5. november 2026, Bernd Dammann) med hjemmearbejde, `slides09.pdf` (37 slides, Bernd Dammann), `solutions09.pdf`, `macOS_OpenMP_Compiler.pdf` og `exercises09.zip` (skabeloner: `main.c`, `hello_world_v2.c`, `datatools.c/.h`, `my_dgemv.c/.h`, `my_dgemv_v1.c`, `my_dgemv_v2.c`, `Makefile.Linux`, `Makefile.macOS` og MSP Tools). Siderne "Solution examples" og `solutions09.zip` har intet tilgængeligt indhold i DTU Learn. Ingen læsning fra lærebogen er angivet for dette modul.
 
 ## Emner
 
@@ -75,7 +75,7 @@ Kombineret form med C99-løkke: `#pragma omp parallel for shared(a,b,c)` og `for
 **macOS (macOS_OpenMP_Compiler).** Standardcompileren Clang på macOS understøtter ikke OpenMP. Installér Homebrew og derefter `brew install libomp`. Kompilér med `-Xpreprocessor -fopenmp` og link med `-lomp`. Makefile-eksempel: `CC=clang`, `BREWDIR=$(shell brew --prefix)`, `CPPFLAGS=-I$(BREWDIR)/opt/libomp/include`, `CFLAGS=-Wall -Xpreprocessor -fopenmp`, `LDFLAGS=-L$(BREWDIR)/opt/libomp/lib`, `LDLIBS=-lomp`. Skabelonmakefilen `Makefile.macOS` i zip-filen gør det samme, når `OPENMP` er sat.
 
 **Skabelonerne i `exercises09.zip`.** `datatools.c` har `init_data(m, n, a, B, c, ref)` (fylder $B_{ij}=i$, vektoren `c` med ettaller og referencen `ref[i]=n*i`, og afviser for små arrays eller forkerte dimensioner) og `check_results(comment, m, n, a, ref)` (sammenligner relativt med tolerance $100\epsilon$ og tæller fejl). `Makefile.Linux` bruger `OPT = -O3` og `OPENMP =` (tom; sæt fx `OPENMP=-fopenmp`), og `main.c` er en tom skabelon med `#ifdef _OPENMP` til timer. `my_dgemv_v1.c` og `my_dgemv_v2.c` er de to fulde versioner fra modul 7.
-### Parallelitetsmodel: OpenMP Fork-Join og Amdahls lov
+### Parallelitetsmodel: OpenMP Fork-Join og Amdahls lov (supplerende illustration, ikke fra slides)
 
 OpenMP anvender en Fork-Join model, hvor en master-tråd spalter ud i et team af parallelle tråde ved `#pragma omp parallel`:
 
@@ -113,6 +113,14 @@ Fra `module09.pdf`. Hjemmearbejde: indhent uafsluttede opgaver (især modul 7, d
     - 3.2 Kolonnevis: ydre løkke over $j$ og indre over $i$. Parallellisér med OpenMP. Hvad er anderledes end ved rækkevis versionen? Tænk på dataafhængigheder.
   - 4. Lav en version af tidsmålingen fra modul 7, der måler vægurstid. Gentag eksperimenterne for den parallelle version med $m = n$ og $n = 100, 300, \dots, 3000$ og forskelligt antal tråde, fra 1 til maksimalt antal kerner (på DTU Unix vises antallet med `cpucount` eller `lscpu`). Hvad kan du sige om speed-up for forskellige $n$? Brug `omp_get_wtime()`, styr tråde med `OMP_NUM_THREADS` og kompilér med `-O3`.
   - Løsningsidé (`solutions09.pdf`): I. Vægtid: `t1 = omp_get_wtime(); ...; t2 = omp_get_wtime();` giver sekunder (gang med 1000 for ms); man kan definere makroerne `mytimer`/`delta_t` med `#ifdef _OPENMP` for at vælge mellem `omp_get_wtime` og `clock`. II. Allokér `A`, `x`, `y` og referencevektoren `r`, kald `init_data(m,n,y,A,x,r)` og til sidst `check_results("row", m, n, y, r)`; stop hvis der er fejl. III. Generisk `my_dgemv`: ved RowMajor en række ad gangen med en sum (indre løkke over $j$, stride 1); ved ColMajor først `y *= beta`, derefter for hver kolonne $j$ en indre løkke over $i$ (stride 1). IV. `omp_dgemv`: ved RowMajor sættes `#pragma omp parallel for` på den ydre løkke over $i$ (hver tråd får egne `y[i]`). Ved ColMajor skal den ydre $j$-løkke være sekventiel (alle iterationer opdaterer samme `y[i]`), så man har en `#pragma omp parallel` omkring $j$-løkken og `#pragma omp for` på den indre løkke over $i$. Resultater (16-kernet Xeon E5-2665, GCC 9.2.0): køretiden falder med flere tråde, men effekten aftager; for rækkevis version er speed-up godt for 2, 4 og 8 tråde (undtagen for de mindste matricer), nogle steder endda over den teoretiske værdi pga. cache-effekter, og faldet ved 8 tråde for store matricer skyldes ikke-optimal hukommelsesadgang. Kolonneversionen har lavere køretid med flere kerner, men dårligere speed-up end rækkeversionen, fordi arbejdet i den parallelle region er fordelt anderledes og hukommelsen tilgås anderledes; løsningen siger, at det kan "fixes", men at det ligger uden for kurset.
+
+## Tjek dig selv
+
+- [ ] Hvad er en tråd, og hvad er forskellen på multi-threaded og multi-process modeller?
+- [ ] Hvordan måles vægurstid i et parallelt program (`omp_get_wtime`)?
+- [ ] Hvordan defineres speed-up, og hvad siger Amdahls lov om den øvre grænse?
+- [ ] Hvordan paralleliseres en løkke med `#pragma omp parallel for`, og hvordan styres antal tråde?
+- [ ] Hvilke løkker kan ikke paralleliseres direkte (dataafhængigheder)?
 
 ## Links
 

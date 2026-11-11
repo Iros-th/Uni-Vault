@@ -11,20 +11,18 @@ tags:
 
 # Uge 2: Mathematical proofs, fortsat og aflevering
 
-> Kilde: General Info (`02525_IntroAppMat2026v3 - Copy.pdf`), `proofs_problems1 - Copy.pdf`, `sample_solutions1 - Copy.pdf` og `MathProofs1A.pdf` på DTU Learn. Mandag 7/9 2026, rapportdeadline 13/9. Mine egne lektionsnoter: [[Lection 2 continuation of proofs]].
+> Kilde: General Info (`02525_IntroAppMat2026v3 - Copy.pdf`), `proofs_problems1 - Copy.pdf`, `sample_solutions1 - Copy.pdf` og `MathProofs1A.pdf` på DTU Learn. Mandag 7/9 2026, rapportdeadline 13/9. Ældre lektionsnote: [[Lection 2 continuation of proofs]].
 
 ## Emner
 
 - Fortsat arbejde med Projekt 1 del A, "Types of argument" (planen: uge 1 og 2)
 - Aflevering (Problem 5 fra Problem Set One) senest søndag 13/9
 - Gennemgang af løsninger til udvalgte opgaver
-- Fra mine egne noter: tællebeviser og bijektioner mellem mængder
 
 ## Hvad kurset selv siger om ugen
 
 General Info samler uge 1 og 2 under "Projekt 1 (del A): Mathematical proofs 1 (Types of argument)" med datoerne 31/8 og 7/9 og deadline 13/9. Der ligger ikke noget separat materiale for uge 2 på DTU Learn ud over det i uge 1. Materialet om tælleargumenter, bijektioner og induktion (`MathProofs1B`, `proofs_problems2`) hører ifølge planen til Projekt 1 del B i uge 13, se [[Courses/Introduction to applied mathematics/Uger/Uge 13|Uge 13]].
 
-Mine egne noter fra 7/9 nævner "counting arguments" og "bijections between sets" samt "maps of number sets". Det passer med emnerne i `MathProofs1B`, men jeg har ikke kunnet bekræfte på DTU Learn at de blev gennemgået netop denne mandag.
 
 ## Begreber
 
@@ -33,27 +31,6 @@ Mine egne noter fra 7/9 nævner "counting arguments" og "bijections between sets
 **Entydighedsbevis.** Mønsteret fra uge 1: antag at to objekter $A$ og $B$ har egenskaben, og vis $A = B$. Bruges i Problem 1 og Problem 6.
 
 **Bevis eller modbevis.** Opgavetypen i Problem Set One. Først afgør man om påstanden er sand. Er den sand, bruger man et direkte eller indirekte bevis. Er den falsk, finder man et modeksempel. Sample solutions viser at man ofte kan genbruge tidligere opgaver, fx at Problem 3(1) er et specialtilfælde af Problem 2(2).
-### Bevismodel: Modstridsbevisets logiske tragt
-
-Ved beviser for irrationale tal eller uendelighed antager man det stik modsatte af påstanden for at fremprovokere et logisk sammenbrud:
-
-```text
-  Ønsker at bevise: Sætning P er sand
-           │
-           v
-  Antag det modsatte: ¬P er sand  (f.eks. "√2 kan skrives som en uforkortelig brøk a/b")
-           │
-           │  Deduktiv algebraisk manipulation
-           v
-  Konsekvens: a og b er begge lige  (kan forkortes med 2)
-           │
-           v
-  MODSTRID! (Brøken var antaget uforkortelig)
-           │
-           v
-  Konklusion: Antagelsen ¬P er falsk -> Sætning P er uundgåeligt SAND.
-```
-
 ## Opgaver
 
 Samme opgavesæt som uge 1 (`proofs_problems1`):

@@ -11,7 +11,7 @@ tags:
 
 # Uge 12: NumPy og Matplotlib
 
-> Kilde: kursussiden programmering.compute.dtu.dk (linket som Material på DTU Learn for 02002), siderne Week 12: Preparation, In-Class og Closure. DTU Learn selv har intet indhold at læse for dette kursus. Pensum i bog: Ingen bogkapitel. Kursussiden henviser til NumPys *Absolute Beginners Tutorial*, W3Schools (NumPy og Matplotlib) og Matplotlibs *Quick Start*.
+> Kilde: kursussiden programmering.compute.dtu.dk, siderne Week 12: Preparation, In-Class og Closure og Advanced. Pensum i bog: Ingen bogkapitel. Kursussiden henviser til NumPys *Absolute Beginners Tutorial*, W3Schools (NumPy og Matplotlib) og Matplotlibs *Quick Start*.
 
 ## Emner
 
@@ -68,22 +68,6 @@ plt.xlabel('x')
 plt.legend()
 plt.show()
 ```
-### Beregningsmodel: NumPy vektorisering vs. Python lister
-
-NumPy gemmer tal som tætpakkede C-arrays i sammenhængende hukommelse og udnytter CPU'ens SIMD-instruktioner:
-
-```text
-  Python liste af tal:
-  [ pointer ] -> [ PyObject: int 1 ]
-  [ pointer ] -> [ PyObject: int 2 ]   <- Fragmenteret heap-hukommelse, overhead!
-  [ pointer ] -> [ PyObject: int 3 ]
-
-  NumPy ndarray (Vektoriseret):
-  ┌──────┬──────┬──────┐
-  │  1   │  2   │  3   │  <- Tætpakket C-array: a + b beregnes i én hardwarecyklus!
-  └──────┴──────┴──────┘
-```
-
 ## Opgaver
 
 Ugens struktur: Preparation (Copy-and-Run og selvquiz) før timen, derefter In-Class (demo, Coding Practice, Problem Solving), og til sidst Closure (syllabus og checkpoints). Hver torsdag er der quiz og live-demo 13:00 til 14:00, derefter selvstændigt arbejde med Coding Practice.
@@ -116,6 +100,15 @@ Ugens struktur: Preparation (Copy-and-Run og selvquiz) før timen, derefter In-C
 
 - Checkpoint 12.1: Checkerboard Sum
 - Checkpoint 12.2: Robust Values
+
+## Advanced (ikke pensum)
+
+Kursussidens Advanced-side for uge 12 (siden vises som sidste års version, kan blive rettet). Ingen obligatoriske opgaver eller eksamensspørgsmål bygger på den.
+
+- Lineær algebra med NumPy: matrix-vektor-produkt med @, løsning af lineære systemer og egenværdier.
+- Heatmaps med plt.imshow() og np.meshgrid.
+- Hvorfor præallokering betyder noget (fx de første 10 Fibonacci-tal).
+- Opgave: Counting Integers.
 
 ## Links
 

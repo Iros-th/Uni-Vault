@@ -11,7 +11,7 @@ tags:
 
 # Uge 4: Løkker
 
-> Kilde: kursussiden programmering.compute.dtu.dk (linket som Material på DTU Learn for 02002), siderne Week 4: Preparation, In-Class og Closure. DTU Learn selv har intet indhold at læse for dette kursus. Pensum i bog: TP kapitel 7, *Iteration and Search*. Kurset gennemgår både for- og while-løkker, så læs også kursussidens egen tekst.
+> Kilde: kursussiden programmering.compute.dtu.dk, siderne Week 4: Preparation, In-Class og Closure og Advanced. Pensum i bog: TP kapitel 7, *Iteration and Search*. Bogen forklarer kun for-løkker, mens kurset gennemgår både for- og while-løkker; kursussidens egen tekst og CS50 lecture 2 dækker begge.
 
 ## Emner
 
@@ -73,20 +73,6 @@ for dag in range(100):
     heal = gamma * I
     S, I, R = S - ny, I + ny - heal, R + heal
 ```
-### Iterationsmodel: Løkke-akkumulatoren
-
-En typisk `for`-løkke arbejder ved hjælp af en akkumulator-variabel, der opdateres for hvert gennemløb:
-
-```text
-  Init: total = 0
-  Elementer: [ 10,  20,  30 ]
-                │    │    │
-  Iteration 1:  total = 0 + 10  = 10
-  Iteration 2:  total = 10 + 20 = 30
-  Iteration 3:  total = 30 + 30 = 60
-  Slut: return total (60)
-```
-
 ## Opgaver
 
 Ugens struktur: Preparation (Copy-and-Run og selvquiz) før timen, derefter In-Class (demo, Coding Practice, Problem Solving), og til sidst Closure (syllabus og checkpoints). Hver torsdag er der quiz og live-demo 13:00 til 14:00, derefter selvstændigt arbejde med Coding Practice.
@@ -131,6 +117,16 @@ Ugens struktur: Preparation (Copy-and-Run og selvquiz) før timen, derefter In-C
 
 - Checkpoint 4.1: Disease Simulation (SIR-model over 100 dage, udskriv hver tiende dag)
 - Checkpoint 4.2: Which Tetrahedral (find $n$ med $T_n = \frac{n(n+1)(n+2)}{6} = t$)
+
+## Advanced (ikke pensum)
+
+Kursussidens Advanced-side for uge 4. Ingen obligatoriske opgaver eller eksamensspørgsmål bygger på den.
+
+- continue springer resten af løkkens blok over.
+- Walrus-operatoren := tildeler og evaluerer samtidig.
+- _ som variabelnavn for en værdi, der ikke bruges.
+- Gentagen halvering stopper, fordi flydende tal har en mindste repræsentabel størrelse; sammenligning af flydende tal kræver en tærskel.
+- Effektive løkker (undgå unødige beregninger), opgaverne How Many Guesses? og Fibonacci-følgen.
 
 ## Links
 

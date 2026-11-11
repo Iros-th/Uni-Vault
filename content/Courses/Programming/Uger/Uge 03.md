@@ -11,7 +11,7 @@ tags:
 
 # Uge 3: Betingelser
 
-> Kilde: kursussiden programmering.compute.dtu.dk (linket som Material på DTU Learn for 02002), siderne Week 3: Preparation, In-Class og Closure. DTU Learn selv har intet indhold at læse for dette kursus. Pensum i bog: TP kapitel 5, *Conditionals and Recursion*, afsnittene om if, else, kædede og indlejrede betingelser.
+> Kilde: kursussiden programmering.compute.dtu.dk, siderne Week 3: Preparation, In-Class og Closure og Advanced. Pensum i bog: TP kapitel 5, *Conditionals and Recursion*, afsnittene om if, else, kædede og indlejrede betingelser.
 
 ## Emner
 
@@ -71,28 +71,6 @@ print('x er', x)   # spor
 if x > 3:
     print('stor')
 ```
-### Beslutningsmodel: Forgreningslogik (if-elif-else)
-
-Betingelser styrer programmets kontrolflow som en række sporskifter:
-
-```text
-                        Start
-                          │
-                   Er x > 0 sand?
-                      /        \
-                    Ja          Nej
-                   /              \
-        [ print("Positiv") ]   Er x == 0 sand?
-                                  /        \
-                                Ja          Nej
-                               /              \
-                     [ print("Nul") ]   [ print("Negativ") ]
-                               \              /
-                                v            v
-                               Samlet slutpunkt
-```
-Kun den **første** sande gren udføres; alle efterfølgende `elif`-betingelser springes over.
-
 ## Opgaver
 
 Ugens struktur: Preparation (Copy-and-Run og selvquiz) før timen, derefter In-Class (demo, Coding Practice, Problem Solving), og til sidst Closure (syllabus og checkpoints). Hver torsdag er der quiz og live-demo 13:00 til 14:00, derefter selvstændigt arbejde med Coding Practice.
@@ -133,6 +111,16 @@ Ugens struktur: Preparation (Copy-and-Run og selvquiz) før timen, derefter In-C
 
 - Checkpoint 3.1: Astronomical Season (variablene `day`, `month`, resultat i `season`)
 - Checkpoint 3.2: Flowering Period (variablene `start`, `end`, `current`, resultat `is_flowering`)
+
+## Advanced (ikke pensum)
+
+Kursussidens Advanced-side for uge 3. Ingen obligatoriske opgaver eller eksamensspørgsmål bygger på den.
+
+- Ikke-booleske betingelser: Python caster tal og strenge til bool (0, 0.0 og tom streng er False).
+- Betingede udtryk i tildeling på én linje.
+- Nøgleordet pass som tom blok.
+- Betingelser over flere linjer med parenteser.
+- Opgave: gættespillet.
 
 ## Links
 

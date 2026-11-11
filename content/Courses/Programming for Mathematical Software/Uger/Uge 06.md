@@ -11,7 +11,7 @@ tags:
 
 # Uge 6: Filer og data, sparse matricer
 
-> Kilde: `module06.pdf` (opgaveark, 8. oktober 2026), `slides06.pdf` (forelæsning 6, 26 slides), `sols_module06.pdf` (løsningseksempler), og MSP Tools-koden fra `module07.tar` (headers, eksempler, `data/`). Siden "Solution examples" uden fil kunne ikke åbnes (404), og gitlab-linket til MSP Tools kunne ikke nås udefra. Pensum: King kap. 13, 22, 23.6; lecture notes kap. 6 (Sparse Matrices).
+> Kilde: `module06.pdf` (opgaveark, 8. oktober 2026), `slides06.pdf` (forelæsning 6, 26 slides), `sols_module06.pdf` (løsningseksempler), og MSP Tools-koden fra `module07.tar` (headers, eksempler, `data/`). Siden "Solution examples" har ingen fil i DTU Learn, og gitlab-linket til MSP Tools er ikke nåbart udefra. Pensum: King kap. 13, 22, 23.6; lecture notes kap. 6 (Sparse Matrices).
 
 ## Emner
 
@@ -81,7 +81,7 @@ int main(void) {
 **64-bit programmeringsmodeller (slides).** Typebredder i bit: LP64 (Unix/Linux/macOS): `int` 32, `long` 64, `long long` 64, pointer 64, `size_t` 64. LLP64 (Windows x64): `long` er kun 32. ILP64 (nogle HPC-værktøjskæder): `int` er 64.
 
 **MSP Tools og filformat.** `array2d_from_file` / `array2d_to_file` bruger et tekstformat med ét tal pr. position adskilt af mellemrum, en række pr. linje (`data/A1.txt` er en 4-gange-3 matrix, `data/v1.txt` vektoren `1.0 2.0 3.0`). `coo_from_file` læser Matrix Market-formatet (`data/MM1.txt` starter med `%%MatrixMarket matrix coordinate real general`, efterfulgt af kommentarlinjer der begynder med `%`).
-### Matrixmodel: CSR (Compressed Sparse Row) komprimeret lagerformat
+### Matrixmodel: CSR (Compressed Sparse Row) komprimeret lagerformat (supplerende illustration, ikke fra slides)
 
 Store sparse matricer med mange nuller spilder hukommelse. CSR-formatet gemmer kun de $NNZ$ (non-zero) elementer i tre arrays:
 
@@ -100,9 +100,9 @@ Store sparse matricer med mange nuller spilder hukommelse. CSR-formatet gemmer k
 
 Fra `module06.pdf`. Instruktioner: læs King kap. 13, 22 og 23.6; læs lecture notes kap. 6.
 
-- 6.1 Tag quizzen om strenge. (Ikke åbnet.)
+- 6.1 Tag quizzen om strenge.
 - 6.2 Lav exercise 5 (kap. 13, s. 309) i lærebogen.
-  - Løsningsidé: to funktioner der laver en streng om til store bogstaver med `toupper` (`ctype.h`): (a) med indeks og `strlen` i en `for`-løkke, (b) med pointer: `for (; *s != '\0'; s++) *s = toupper(*s);`. Programmet tager strengen som kommandolinjeargument og allokerer `strlen+1` bytes. Min egen bemærkning: løsningen kopierer med `strncpy(str, argv[1], n)`, som ikke selv skriver `\0` når kilden er `n` tegn lang, så det er sikrere at kopiere `n+1` tegn eller bruge `strcpy`.
+  - Løsningsidé: to funktioner der laver en streng om til store bogstaver med `toupper` (`ctype.h`): (a) med indeks og `strlen` i en `for`-løkke, (b) med pointer: `for (; *s != '\0'; s++) *s = toupper(*s);`. Programmet tager strengen som kommandolinjeargument og allokerer `strlen+1` bytes. Bemærkning: løsningen kopierer med `strncpy(str, argv[1], n)`, som ikke selv skriver `\0` når kilden er `n` tegn lang, så det er sikrere at kopiere `n+1` tegn eller bruge `strcpy`.
 - 6.3 Lav exercise 12 (kap. 22, s. 583) i lærebogen.
   - Løsningsidé: `count_periods(filename)` åbner filen med `fopen`, løber den igennem med `while ((c = fgetc(fp)) != EOF)` og tæller tegn lig `'.'`. Gem returværdien i en `int` (ikke `char`) så `EOF` kan skelnes. Kommenteret i løsningen: kald `fgetc` kun én gang pr. løkkeiteration.
 - 6.4 Lav "Module 06"-opgaverne på Autolab. (Løsninger lægges på Learn efter deadline.)
@@ -113,6 +113,15 @@ Fra `module06.pdf`. Instruktioner: læs King kap. 13, 22 og 23.6; læs lecture n
   - (d) Lav et program, der med msptools læser et todimensionelt array fra en tekstfil (`array2d_from_file()`) og udskriver det (`array2d_print()`). Brug filen `data/A1.txt` som testcase.
   - (e) Lav et program, der læser en sparse matrix fra en tekstfil (`coo_from_file()`) og udskriver den (`coo_print()`). Brug filen `data/MM1.txt` som testcase.
   - Løsningsidé: (a) `git clone`, `cd msptools && make`, `make test`. (b) `make --directory examples` og `./examples/array_example01` (programmet læser tal indtil et ikke-tal tastes, og bruger `array_push_back`). (c) Indsæt `printf("Capacity: %zu\n", a->capacity);` før udskriften. (d) og (e): tag filnavnet fra `argv[1]`, kald `array2d_from_file` hhv. `coo_from_file`, tjek for `NULL`, udskriv, og frigiv med `array2d_dealloc` hhv. `coo_dealloc`.
+
+## Tjek dig selv
+
+- [ ] Hvad er en sparse matrix, og hvordan lagres den i COO-, CSC- og CSR-format?
+- [ ] Hvornår er et sparse format bedre end et tæt array?
+- [ ] Hvorfor er en streng i C et `char`-array med `\0`, og hvorfor er `strcpy` og `gets` usikre?
+- [ ] Hvordan læses programargumenter via `argc` og `argv`?
+- [ ] Hvilke formatspecifikationer sikrer, at en `double` eller `float` kan genskabes fra en tekstfil?
+- [ ] Hvad er forskellen på tekst- og binære filer, og hvad er endianness?
 
 ## Links
 

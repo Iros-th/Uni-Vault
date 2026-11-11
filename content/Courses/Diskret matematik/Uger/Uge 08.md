@@ -11,7 +11,7 @@ tags:
 
 # Uge 8: Optælling
 
-> Kilde: ugeplanen på kursussiden https://www2.imm.dtu.dk/courses/01017/2026/ (uge W8, 29. oktober). Begrebsforklaringerne er skrevet ud fra emnerne i planen; der er ingen slides. Afsnitstitler er tjekket mod en lokal tekst af Rosen, 8. udgave (6.1 "The Basics of Counting", 6.2 "The Pigeonhole Principle", 6.3 "Permutations and Combinations").
+> Kilde: ugeplanen på kursussiden https://www2.imm.dtu.dk/courses/01017/2026/ (uge W8, 29. oktober), Rosen afsnit 6.1, 6.2 og 6.3 i Rosen, "Discrete Mathematics and Its Applications". Slides er ikke anvendt.
 
 ## Emner
 
@@ -34,26 +34,9 @@ tags:
 **Kombinationer.** En uordnet udvælgelse: $C(n,r) = \binom{n}{r} = \frac{n!}{r!(n-r)!}$. Eksempel: et udvalg på 3 blandt 10: $\binom{10}{3} = 120$, altså $720 / 3!$. Man dividerer med $r!$ fordi rækkefølgen ikke tæller.
 
 **Ordnet eller uordnet?** Det er det første, man skal afgøre. Spørg: giver det en ny mulighed, hvis jeg bytter om på to valgte? Hvis ja: ordnet (permutation eller produktregel). Hvis nej: kombination.
-### Kombinatorisk model: Stars and Bars (Kugler i kasser)
-
-Når man skal fordele $n$ identiske genstande i $k$ skelnelige kasser, placeres $n$ stjerner og $k-1$ adskillelsesstreger på en linje:
-
-```text
-  Eksempel: 7 stjerner fordeles i 3 kasser (k - 1 = 2 streger):
-  
-      ★ ★ ★ │ ★ ★ │ ★ ★
-      Kasse 1   Kasse 2  Kasse 3
-      (3 stk)   (2 stk)  (2 stk)
-
-  Samlet antal pladser: n + (k - 1) = 7 + 2 = 9
-  Vælg hvor stregerne skal stå: C(n + k - 1, k - 1) = C(9, 2) = 36 måder.
-```
-
-**Dueslagsprincippet (Pigeonhole):** Hvis $N$ genstande placeres i $k$ kasser, findes mindst én kasse med mindst $\lceil N/k ceil$ genstande.
-
 ## Opgaver
 
-Fra kursussiden, Rosen, "Discrete Mathematics and Its Applications" (2025-udgaven). Fed skrift betyder, at kurset vil have dem lavet først. Hvor 8. udgave har andre numre, står de i parentes.
+Fra kursussiden, Rosen (2025-udgaven). Fed skrift betyder, at kurset anbefaler at lave dem først. Hvor 8. udgave har andre numre, står de i parentes.
 
 - Afsnit 6.1: 1, **21**, **25**, **47**, 57, 69 (67 i 8. udgave)
 - Afsnit 6.2: **7**, 13, **17**, 31, **37**

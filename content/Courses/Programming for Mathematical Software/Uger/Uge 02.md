@@ -11,7 +11,7 @@ tags:
 
 # Uge 2: Flydende tal, kontrolstrukturer, basistyper
 
-> Kilde: `module02.pdf` (opgaveark, 10. september 2026), `slides02.pdf` (forelæsning 2, 27 slides), `sols_module02.pdf` (løsningseksempler) og modultabellen. Linket "demo02" på siden kunne ikke åbnes (topic-API'et giver 404). Pensum: King kap. 4, 5 (skim), kap. 7 (læs), 23.1, 23.4; lecture notes kap. 2 og 3.
+> Kilde: `module02.pdf` (opgaveark, 10. september 2026), `slides02.pdf` (forelæsning 2, 27 slides), `sols_module02.pdf` (løsningseksempler) og modultabellen. Eksemplet "demo02" er ikke tilgængeligt i DTU Learn. Pensum: King kap. 4, 5 (skim), kap. 7 (læs), 23.1, 23.4; lecture notes kap. 2 og 3.
 
 ## Emner
 
@@ -73,7 +73,7 @@ int main(void) {
     return 0;
 }
 ```
-### Hukommelsesmodel: IEEE 754 flydende tal (double precision bit-layout)
+### Hukommelsesmodel: IEEE 754 flydende tal (double precision bit-layout) (supplerende illustration, ikke fra slides)
 
 En 64-bit `double` i C er opdelt i tre felter ifølge IEEE 754-standarden:
 
@@ -98,13 +98,23 @@ Fra `module02.pdf`. Instruktioner: skim King kap. 4 og 5, læs kap. 7; læs lect
   - Løsningsidé: falsk. $\mathrm{fl}(\mathrm{fl}(ab)c) = (ab)(1+\delta_1)c(1+\delta_2)$ og $\mathrm{fl}(a\,\mathrm{fl}(bc)) = (bc)(1+\delta_3)a(1+\delta_4)$ er ikke ens i almindelighed, fordi afrundingsfejlene $\delta_i$ er forskellige. Hvis $a = c$, er $\delta_1 = \delta_3$ og $\delta_2 = \delta_4$, så er de ens.
 - 2.2 Sandt eller falsk? Den distributive egenskab gælder for floating-point aritmetik, dvs. $a(b+c) = ab + ac$ for floating-point tal $a$, $b$, $c$.
   - Løsningsidé: falsk, samme metode. $\mathrm{fl}(a\,\mathrm{fl}(b+c))$ har to afrundinger, mens $\mathrm{fl}(\mathrm{fl}(ab) + \mathrm{fl}(ac))$ har tre, med forskellige $\delta$.
-- 2.3 Tag quizzen om `if`-sætninger. (Ikke åbnet; svarnøgle ligger i quizzen.)
-- 2.4 Tag quizzen om eksplicit typekonvertering (typecasting). Gæt ikke: skriv kode og find svaret. (Ikke åbnet.)
+- 2.3 Tag quizzen om `if`-sætninger. (Svarnøgle i quizzen.)
+- 2.4 Tag quizzen om eksplicit typekonvertering (typecasting). Gæt ikke: skriv kode og find svaret.
 - 2.5 Lav "Module 02"-opgaverne på Autolab. (Løsninger lægges på Learn efter deadline.)
 - 2.6 Lav exercise 14 (kap. 7, s. 159) i lærebogen.
   - Løsningsidé: Newtons iteration for kvadratrod. Start med $y = 1$, gentag $y \leftarrow \tfrac{1}{2}(y + x/y)$ indtil $|y - y_{old}| \le 10^{-5} y$. Tjek først at `scanf` lykkedes, og at $x$ er endelig og positiv (`isfinite`). Print $x$, $y$, $x/y$ og gennemsnittet for hver iteration.
 - 2.7 Skriv et program med en heltalsvariabel med værdien 2.343.432.205. Vælg en passende datatype, og udskriv værdien og dens hexadecimale repræsentation med `printf()`. Hvor mange hex-cifre skal der til for at repræsentere en byte? Hint: brug `%x` eller `%X`.
   - Løsningsidé: tallet er større end $2^{31}-1$ men mindre end $2^{32}-1$, så brug `unsigned int` (32 bit) og `printf("%u ... %X", a, a)`. Ét hex-ciffer er 4 bit ($16 = 2^4$), så en byte (8 bit) kræver 2 hex-cifre.
+
+## Tjek dig selv
+
+- [ ] Hvorfor gælder $(a+b)+c=a+(b+c)$ ikke for flydende tal?
+- [ ] Hvad er machine epsilon $\epsilon$ og unit round-off $u$, og hvad er deres værdier for `double`?
+- [ ] Hvordan er en `double` opdelt i fortegn, eksponent og signifikand, og hvilke specialværdier findes?
+- [ ] Hvad er catastrophic cancellation, og hvilke omskrivninger eller funktioner (`expm1`, `log1p`, `hypot`) kan undgå det?
+- [ ] Hvorfor bør flydende tal ikke sammenlignes med `==`, og hvad bruges i stedet?
+- [ ] Hvad sker der ved overflow af `int` og `unsigned int`?
+- [ ] Hvor mange hex-cifre svarer til én byte?
 
 ## Links
 

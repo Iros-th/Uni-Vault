@@ -11,7 +11,7 @@ tags:
 
 # Uge 2: Systemer af differentialligninger
 
-> **Kilde:** Ugeseddel 2 og semesteroversigten på ugeseddel 1, SlidesUge2.pdf, WeeklyNotes2.pdf (løsning til opgave 914 og 920) og facitliste_studerende.pdf (DTU Learn, 01025 E26), lærebogen afsnit 2.1 til 2.5. Ugesedlen henviser til "appendiks A.5", semesteroversigten til "A.4"; i den ældre PDF jeg har tjekket mod hedder afsnittet om systemer A.4. Sætningsnumre følger slides (kursets 4. udgave), se [[Courses/Differential Equations and Infinite Series/Uger/Oversigt|oversigten]].
+> **Kilde:** ugeseddel 2 og semesteroversigten på ugeseddel 1, SlidesUge2.pdf, WeeklyNotes2.pdf, facitliste_studerende.pdf (DTU Learn, 01025 E26); lærebogen afsnit 2.1 til 2.5. Ugesedlen henviser til "appendiks A.5", semesteroversigten til "A.4"; i den ældre bog-PDF hedder afsnittet om systemer A.4. Sætningsnumre som i slides, se [[Courses/Differential Equations and Infinite Series/Uger/Oversigt|oversigten]].
 
 ## Læseplan
 
@@ -85,36 +85,7 @@ Slides kalder integrationen for "små mirakler"; struktursætningen og superposi
 Hvis $A = A(t)$ afhænger af $t$, gælder strukturen (fundamentalmatrix, løsningsformel) stadig, men egenværdimetoden virker ikke. Læses selv.
 
 ### Lemma A.16
-Hvis $\mathbf u + i\mathbf v$ og $\mathbf u - i\mathbf v$ er lineært uafhængige i et komplekst vektorrum, så er $\mathbf u$ og $\mathbf v$ også. Det er argumentet bag at real- og imaginærdel giver to uafhængige reelle løsninger. Beviset er hjemmeopgave 912.
-
-### Fysisk model: Koblede blandingstanke (stoftransport)
-
-Et standardeksempel på et 1. ordens differentialligningssystem er to koblede kemiske tanke med saltvand:
-
-```
-     Indløb c_1, F_1              Indløb c_2, F_2
-           |                            |
-           v                            v
-      +----------+   Flow F_12     +----------+
-      |  Tank 1  | --------------> |  Tank 2  |
-      | V_1, x_1 | <-------------- | V_2, x_2 |
-      +----------+   Flow F_21     +----------+
-           |                            |
-           v                            v
-      Udløb F_ud1                  Udløb F_ud2
-```
-
-Lad $x_1(t)$ og $x_2(t)$ være massen af opløst salt i de to tanke. Massebevarelse (ændring = indløb - udløb) giver for konstante væskevolumener $V_1$ og $V_2$:
-
-$$\dot x_1 = -\frac{F_{12} + F_{\text{ud}1}}{V_1}x_1 + \frac{F_{21}}{V_2}x_2 + F_1 c_1,$$
-
-$$\dot x_2 = \frac{F_{12}}{V_1}x_1 - \frac{F_{21} + F_{\text{ud}2}}{V_2}x_2 + F_2 c_2.$$
-
-På vektor-matrix form samles dette som tilstandsrum-modellen:
-
-$$\dot{\mathbf x}(t) = A \mathbf x(t) + \mathbf b u(t), \quad \text{hvor } A = \begin{pmatrix} -k_1 & k_{21} \\ k_{12} & -k_2 \end{pmatrix}.$$
-
-Matricen $A$ har negative diagonalelementer (udstrømning dæmper) og positive off-diagonaler (kobling tilfører stof). Egenværdierne for $A$ er altid strengt negative, hvilket garanterer, at saltkoncentrationerne konvergerer mod en stabil stationær ligevægt.
+Hvis $\mathbf u + i\mathbf v$ og $\mathbf u - i\mathbf v$ er lineært uafhængige i et komplekst vektorrum, så er $\mathbf u$ og $\mathbf v$ også. Det er argumentet bag at real- og imaginærdel giver to uafhængige reelle løsninger. Beviset er opgave 912 i hjemmeopgavesæt 2.
 
 ## Opgaver
 
@@ -129,9 +100,20 @@ Matricen $A$ har negative diagonalelementer (udstrømning dæmper) og positive o
 **Hjemmeopgavesæt 2:** Möbius-opgave senest 15/9 kl. 20, og opgave 903 og 912 afleveres fysisk 16/9 kl. 8.
 
 - 903 (afsnit 1.2, bilag F.7): bevis for sætning 1.14 for andenordens ligninger ved direkte udregning; sætning 1.14 må derfor ikke bruges.
-- 912 (appendiks om systemer): bevis lemma A.16 (slides' nummer; A.15 i den ældre PDF). Ugesedlen understreger at man skal starte med en vilkårlig linearkombination sat lig nul.
+- 912 (appendiks om systemer): bevis lemma A.16 (A.15 i den ældre PDF). Ugesedlen understreger at man skal starte med en vilkårlig linearkombination sat lig nul.
+
+Bedømt aflevering.
 
 **Løsningsnoter:** WeeklyNotes2.pdf (under uge 3 på DTU Learn) løser opgave 914 (i) til (v): konjugér karakterligningen og $A\mathbf v = \lambda\mathbf v$ for at se at $\bar\lambda$ er rod med egenvektor $\overline{\mathbf v}$, regn real- og imaginærdel af $e^{\lambda t}\mathbf v$ ud, og brug lemmaet fra opgave 912 til uafhængigheden. Den indeholder også opgave 920 (i) (ikke på ugesedlen): et bevis ved indsættelse for at den generelle løsningsformel giver en løsning. Facit til 409, 411, 414 og 431 står i facitliste_studerende.pdf.
+
+## Tjek dig selv
+
+- [ ] Kan jeg omskrive en $n$'te ordens ligning til et system af 1. orden?
+- [ ] Kan jeg bruge egenværdimetoden med både reelle og komplekse egenværdier?
+- [ ] Ved jeg hvad jeg gør når den geometriske multiplicitet er mindre end den algebraiske?
+- [ ] Hvad er en fundamentalmatrix, og hvordan finder jeg løsningen med en given startværdi?
+- [ ] Kan jeg bruge den generelle løsningsformel, og ved jeg hvornår gættemetoden med en konstant vektor fejler?
+- [ ] Kan jeg forklare hvorfor den konjugerede egenværdi ikke giver nye reelle løsninger?
 
 ## Links
 

@@ -11,7 +11,7 @@ tags:
 
 # Uge 5: Poissonfordelingen og kontinuerte stokastiske variable
 
-> Kilde: kursussiden http://www2.imm.dtu.dk/courses/02405/ (forelæsning 2. oktober, afsnit 3.5, (3.6) og 4.1; 3.6 læses kursorisk; forelæsningen holdes af Nicolai Siim Larsen) og ugebrevet til forelæsning 5. Lærebog: Jim Pitman, Probability. Velkomstteksten skønner sværhedsgraden til "middel", ca. 30 sider for afsnit 3.5 til 4.1. Slides er ikke læst.
+> Kilde: kursussiden http://www2.imm.dtu.dk/courses/02405/ (forelæsning 2. oktober, afsnit 3.5, (3.6) og 4.1; 3.6 læses kursorisk; forelæsningen holdes af Nicolai Siim Larsen) og ugebrevet til forelæsning 5. Lærebog: Jim Pitman, Probability. Velkomstteksten skønner sværhedsgraden til "middel", ca. 30 sider for afsnit 3.5 til 4.1. Slides er ikke anvendt.
 
 ## Emner
 
@@ -34,23 +34,6 @@ tags:
 **Ligefordeling på $(a,b)$.** Tæthed $1/(b-a)$ på intervallet, $E(X) = (a+b)/2$, $\mathrm{Var}(X) = (b-a)^2/12$ (side 264-265). Eksempel: $X$ ligefordelt på $(0,1)$, $P(X < 0{,}3) = 0{,}3$.
 
 **Normalfordelingen $N(\mu, \sigma^2)$.** Tæthed $\dfrac{1}{\sigma\sqrt{2\pi}}\,e^{-(x-\mu)^2/(2\sigma^2)}$ (side 266-267). Standardisering $Z = (X - \mu)/\sigma$ giver $N(0,1)$. Eksempel 3 side 271 er nyttigt; side 272-275 kan springes over første gang.
-### Tidslinjemodel: Poisson-proces ankomster og eksponentielle ventetider
-
-En Poisson-proces med intensitet $\lambda$ hændelser pr. tidsenhed forbinder to komplementære perspektiver:
-
-```text
-  Tidslinje med uafhængige ankomster:
-  ───|───────────|──────|─────────────|───────|─────────> Tid t
-     <- W1 = Exp ->     <- W3 = Exp ->
-     (Ventetid mellem hændelser: kontinuerlig, Exponential(λ))
-
-  Antal hændelser N(t) i fast tidsvindue t: Diskret, Poisson(λt)
-```
-
-**Hukommelsesløshed (Memoryless property):**
-$$P(W > s + t \mid W > s) = P(W > t).$$
-At komponenten har overlevet i $s$ timer uden at gå i stykker, ændrer overhovedet ikke sandsynligheden for, at den overlever yderligere $t$ timer.
-
 ## Opgaver
 
 Pitman, Probability (kapitel.afsnit.opgave). Regnes ved øvelsen fredag 9. oktober.

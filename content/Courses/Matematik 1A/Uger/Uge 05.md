@@ -11,7 +11,7 @@ tags:
 
 # Uge 5: Divisionsalgoritmen og induktion
 
-> Kilde: kursussiden mat1a.compute.dtu.dk (linket som Course Homepage på DTU Learn for 01001), siderne Lektionsoversigt, Ugeprogram semesteruge 5 og Opgaver Store Dag/Lille Dag uge 5. Bogen er kursets lærebog (udgave 2026).
+> Kilde: kursussiden mat1a.compute.dtu.dk, siderne Lektionsoversigt, Ugeprogram semesteruge 5 og Opgaver Store Dag/Lille Dag uge 5. Bogen er kursets lærebog (udgave 2026).
 
 ## Emner
 
@@ -49,21 +49,6 @@ For at vise $P(n)$ for alle $n \ge n_0$ viser man basis $P(n_0)$ og induktionssk
 For $q \ne 1$ er $\sum_{k=0}^{n} q^k = \frac{1 - q^{n+1}}{1 - q}$. Den kan bevises ved induktion.
 
 *Eksempel.* $\sum_{k=0}^{3} 2^k = 1 + 2 + 4 + 8 = 15 = \frac{1 - 2^4}{1 - 2}$.
-### Aritmetisk model: Euklids divisionsalgoritme og induktionstrappe
-
-Induktionsbeviser fungerer som en uendelig trappe af dominobrikker:
-
-```text
-     [ Basis ]        Induktionsantagelse:
-      Trin 1            P(k) er sand
-        │                    │
-        v                    v
-      ┌───┐                ┌───┐
-      │   │ ─────────────> │   │ ─────────────> P(k+1) er sand
-      └───┘ (Brik 1 vælter)└───┘ (Kædereaktion)
-```
-Hvis basisbrikken vælter ($P(1)$ er sand), og faldet af brik $k$ uundgåeligt vælter brik $k+1$, er alle brikker på trappen garanteret at vælte.
-
 ## Opgaver
 
 Opgaverne står på kursussiden med de numre, der er gengivet her. Nogle nævner bogen, fx definition eller sætning, i deres hints (se begreberne ovenfor).

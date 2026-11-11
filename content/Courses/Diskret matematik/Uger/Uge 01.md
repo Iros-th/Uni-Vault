@@ -11,7 +11,7 @@ tags:
 
 # Uge 1: Udsagnslogik og prædikatlogik
 
-> Kilde: ugeplanen på kursussiden https://www2.imm.dtu.dk/courses/01017/2026/ (uge W1, 3. september). Begrebsforklaringerne er skrevet ud fra emnerne og afsnitsnumrene i planen; DTU Learns indholdsområde er tomt, så der er ingen slides at støtte sig til. Afsnitstitler er tjekket mod en lokal tekst af Rosen, 8. udgave.
+> Kilde: ugeplanen på kursussiden https://www2.imm.dtu.dk/courses/01017/2026/ (uge W1, 3. september), Rosen afsnit 1.1 og 1.4 i Rosen, "Discrete Mathematics and Its Applications". Slides er ikke anvendt.
 
 ## Emner
 
@@ -35,36 +35,9 @@ tags:
 **Negation af kvantorer.** $\neg \forall x\, P(x) \equiv \exists x\, \neg P(x)$ og $\neg \exists x\, P(x) \equiv \forall x\, \neg P(x)$. For at modbevise et "for alle" er et enkelt modeksempel nok.
 
 **Indlejrede kvantorer.** Rækkefølgen betyder noget. Over $\mathbb{Z}$ er $\forall x\, \exists y\, (x + y = 0)$ sand (vælg $y = -x$), men $\exists y\, \forall x\, (x + y = 0)$ er falsk, fordi ét $y$ ikke kan virke for alle $x$.
-### Digital logik-model: Logiske porte og Half-Adder kredsløb
-
-Logiske konnektiver er ikke bare abstrakte symboler; de er den fysiske byggeblok i enhver CPU. En 1-bit adder (Half-Adder) beregner summen af to bits $p$ og $q$:
-
-```text
-  p ───┬──────────────┐
-       │              XOR ─── Sum (S = p ⊕ q)
-  q ───┼──────┬───────┘
-       │      │
-       │      └───────┐
-       │              AND ─── Mente / Carry (C = p ∧ q)
-       └──────────────┘
-
-  Sandhedstabel:
-  p | q | Sum (p ⊕ q) | Carry (p ∧ q) | Binær værdi (C S)
-  ──┼───┼─────────────┼───────────────┼──────────────────
-  0 | 0 |      0      |       0       |        00_2 = 0
-  0 | 1 |      1      |       0       |        01_2 = 1
-  1 | 0 |      1      |       0       |        01_2 = 1
-  1 | 1 |      0      |       1       |        10_2 = 2
-```
-
-De Morgans love $
-eg(p \land q) \equiv 
-eg p \lor 
-eg q$ betyder i hardware, at en NAND-port (en universel port) direkte kan erstatte en OR-port med inverterede indgange.
-
 ## Opgaver
 
-Fra kursussiden, Rosen, "Discrete Mathematics and Its Applications" (2025-udgaven). Fed skrift betyder, at kurset vil have dem lavet først. Her er der ingen afvigende numre for 8. udgave i planen.
+Fra kursussiden, Rosen (2025-udgaven). Fed skrift betyder, at kurset anbefaler at lave dem først. Her er der ingen afvigende numre for 8. udgave i planen.
 
 - Afsnit 1.1: **1**, 3, **11**, **37**, 53
 - Afsnit 1.4: **1**, 31, **35**, 37, 41, **55**

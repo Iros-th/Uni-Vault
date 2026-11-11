@@ -33,7 +33,7 @@ $$\max \sum_j c_j x_j \quad \text{s.t.} \quad \sum_j A_{ij}x_j \le b_i \;\forall
 
 $$\max\; 2x_1 + 3x_2 \quad \text{s.t.} \quad x_1 + x_2 \ge 3,\;\; 20x_1 + 10x_2 \le 80,\;\; x_2 \le 2x_1,\;\; x_1, x_2 \ge 0.$$
 
-Slides bemærker at $x_1, x_2 \ge 0$ ikke sikrer heltal, men at det optimale her tilfældigvis er heltallet. Vil man være sikker, bruger man $x_1, x_2 \in \mathbb{N}_0$, som i `Tshirt.py` (`cat='Integer'`, `lowBound=0`). (Min egen kontrolregning, ikke fra slides: hjørnet $x_1 = 2$, $x_2 = 4$ giver profit $16$.)
+Slides bemærker at $x_1, x_2 \ge 0$ ikke sikrer heltal, men at det optimale her tilfældigvis er heltallet. Vil man være sikker, bruger man $x_1, x_2 \in \mathbb{N}_0$, som i `Tshirt.py` (`cat='Integer'`, `lowBound=0`).
 
 **Logiske betingelser med binære variable.** Eksempel med fire venner, $x_i \in \{0, 1\}$ for om ven $i$ inviteres:
 
@@ -58,19 +58,6 @@ $$u_{c_1} + 1 \le u_{c_2} + |C|\,(1 - x_{c_1 c_2}) \quad \forall\, c_1 \ne c_2,\
 Slidet skriver objektfunktionen som max. Modellen virker kun op til cirka $30$ byer, så heuristikker er stadig nødvendige.
 
 **Videre.** DORS (dansk OR-forening) og DTU-kurser som 42101 Introduktion til operationsanalyse (BSc) og 42112, 42114, 42115 (MSc).
-### Algoritmisk model: Simplex-metodens kantvandring
-
-Simplex-algoritmen finder optimum ved at vandre fra hjørne til nabohjørne langs polyederets kanter, så objektværdien hele tiden forbedres:
-
-```text
-         (Hjørne 1: z=0) ──kant──> (Hjørne 2: z=15)
-                                          │
-                                         kant
-                                          v
-      (Optimalt Hjørne: z=42) <──kant── (Hjørne 3: z=30)
-```
-I Simplex-tableauet svarer hvert skridt til en pivotering: en ikke-basisvariabel træder ind i basen, og en basisvariabel forlader den.
-
 ## Opgaver
 
 - Projektet `OR_Projekt.pdf` fortsætter: spørgsmål 1 til 18 (se listen i [[Courses/Introduction to applied mathematics/Uger/Uge 03|Uge 3]]). Rapportdeadline 27/9.

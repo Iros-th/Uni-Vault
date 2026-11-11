@@ -11,7 +11,7 @@ tags:
 
 # Uge 7: Hukommelsesmodel, timing, kompleksitet og compileroptimering
 
-> Kilde: `module07.pdf` (opgaveark, 22. oktober 2026), `slides07.pdf` (forelæsning 7, 29 slides), `sols_module07.pdf` (løsningseksempler) og `module07.tar` (skabeloner: `part1/` med `datasize1.c`, `ex1.c`, `Makefile`; `part2/` med `testcase.c`, `example.c`, tomme `my_dgemv_v1/v2` og hele MSP Tools). Siden "Solution examples" uden fil kunne ikke åbnes (404). Pensum: King kap. 26.3; lecture notes kap. 7 (Complexity and Performance). Under dette modul ligger også et link til en "Assignment" (dropbox) som ikke er åbnet; kursussiden skriver, at koden afleveres på Autolab og en individuel rapport på DTU Learn.
+> Kilde: `module07.pdf` (opgaveark, 22. oktober 2026), `slides07.pdf` (forelæsning 7, 29 slides), `sols_module07.pdf` (løsningseksempler) og `module07.tar` (skabeloner: `part1/` med `datasize1.c`, `ex1.c`, `Makefile`; `part2/` med `testcase.c`, `example.c`, tomme `my_dgemv_v1/v2` og hele MSP Tools). Siden "Solution examples" har ingen fil i DTU Learn. Pensum: King kap. 26.3; lecture notes kap. 7 (Complexity and Performance). Modulet har en bedømt aflevering ("Assignment"): koden afleveres på Autolab og en individuel rapport på DTU Learn.
 
 ## Emner
 
@@ -72,7 +72,7 @@ void dgemv_rowmajor(int m, int n, double alpha, const double *A,
 ```
 
 **Skabelonerne i `module07.tar`.** `part1`: `datasize1.c` (funktionen ovenfor), `ex1.c` (skabelon med `MAX_SIZE 16777216` og tom `main`) og en `Makefile` med `CFLAGS=-Wall -std=c11 $(OPT)`. `part2`: `testcase(n, order, &A, &x, &y)` bygger en $n\times n$ testmatrix og vektorer (en Householder-agtig matrix $I-2\,pq^T$ med $y$ normeret) med MSP Tools i valgt lagringsrækkefølge, og `example.c` allokerer et testcase med $n=50$, men har kaldene til `my_dgemv_v1/v2` og tidtagningen udkommenteret. Funktionerne `my_dgemv_v1.c` og `my_dgemv_v2.c` er tomme (`/* Insert your code here */`).
-### Hardwaremodel: CPU cache-hierarki og Spatial Locality
+### Hardwaremodel: CPU cache-hierarki og Spatial Locality (supplerende illustration, ikke fra slides)
 
 En moderne CPU er mange gange hurtigere end hovedhukommelsen (RAM). Cachen henter hele linjer af 64 bytes ad gangen:
 
@@ -109,6 +109,15 @@ Fra `module07.pdf`. Instruktioner: læs lecture notes kap. 7; indhent uafslutted
   - (d) Kompilér med `-O0`, `-O1`, `-O2` og `-O3` og gentag begge målinger. Hvor meget betyder optimeringen? Med GCC kan man også prøve `-funroll-loops`.
   - (e) (Valgfri) Mål ydeevnen i FLOPS for `my_dgemv_vN()`. Hint: tæl floating-point operationer i løkkelegemet; antallet afhænger af $m$ og $n$.
   - Løsningsidé: `v1` er den række-orienterede metode (indre løkke over $j$ med en sum), `v2` den kolonne-orienterede (indre løkke over $i$ opdaterer `y[i]`); begge starter med `y *= beta` og tjekker pointere og dimensioner. Måling: gentag kaldet `NREPEAT` gange og del tiden. Resultatet: alle versioner får gavn af optimering; for store $n$ er `v1` hurtigst med rækkevis input og `v2` hurtigst med kolonnevis input, fordi adgangen følger lagringsrækkefølgen (spatial lokalitet). (e) `v1` bruger $3mn+2m$ FLOPs og `v2` $3mn+m$, så med $m=n$ er ydeevnen $\frac{3n^2+2n}{T}\cdot10^{-9}$ hhv. $\frac{3n^2+n}{T}\cdot10^{-9}$ GFLOPS. Løsningen påpeger også, at `v2` med kolonnevis input når langt højere throughput end `v1` med rækkevis input, fordi den indre løkke i `v1` har en afhængighed gennem `sum`, som hindrer vektorisering. Det kan afhjælpes med flere uafhængige delsummer, eller med `-ffast-math`, som lader compileren omordne floating-point-operationer.
+
+## Tjek dig selv
+
+- [ ] Hvordan måles køretid i et C-program, og hvad bruges profilering til?
+- [ ] Hvad betyder $O(n)$, $O(n^2)$ og $O(2^n)$, og hvad er forskellen på tids- og pladskompleksitet?
+- [ ] Hvorfor er adgang til en matrix række for række hurtigere end søjle for søjle i C?
+- [ ] Hvordan viser cachehierarkiet sig i en graf over ydeevne mod arraystørrelse?
+- [ ] Hvad gør compilerflagene `-O2` og `-O3`?
+- [ ] Hvordan implementeres matrix-vektor-produktet `dgemv` med løkker i to rækkefølger, og hvilken er hurtigst?
 
 ## Links
 

@@ -11,7 +11,7 @@ tags:
 
 # Uge 4: Conditioning, numerisk stabilitet, pointere
 
-> Kilde: `module04.pdf` (opgaveark, 24. september 2026), `slides04.pdf` (forelæsning 4, 28 slides), `sols_module04.pdf` (løsningseksempler) og modultabellen. Siden "Solution examples" uden fil kunne ikke åbnes (404). Pensum: King kap. 11, 12, 15.4; lecture notes kap. 4 (Conditioning and numerical stability).
+> Kilde: `module04.pdf` (opgaveark, 24. september 2026), `slides04.pdf` (forelæsning 4, 28 slides), `sols_module04.pdf` (løsningseksempler) og modultabellen. Siden "Solution examples" har ingen fil i DTU Learn. Pensum: King kap. 11, 12, 15.4; lecture notes kap. 4 (Conditioning and numerical stability).
 
 ## Emner
 
@@ -89,7 +89,7 @@ int main(void) {
 **Pointere som returværdier (slides).** En funktion kan returnere en pointer (fx `int *max(int *a, int *b)`), men aldrig en pointer til en automatisk lokal variabel, for den findes ikke længere efter kaldet.
 
 **`const` og pointere (slides).** `const double *a` er en pointer til en konstant `double` (compileren afviser `*a = 0;` og `a[i] = 4;`). `double * const a` er en konstant pointer til en `double`. Selve pointeren er en lokal variabel (sendt by value) og kan overskrives. Eksempel: `void mean_var(const double *a, int n, double *mean, double *var)` giver to resultater via output-pointere.
-### Maskinmodel: Virtuelt adresserum og pointer-adresser
+### Maskinmodel: Virtuelt adresserum og pointer-adresser (supplerende illustration, ikke fra slides)
 
 Når et program kører, tildeler styresystemet en virtuel hukommelsesmodel (typisk 48-bit adresser på moderne 64-bit arkitekturer):
 
@@ -114,7 +114,7 @@ En pointer er blot en variabel, hvis værdi er en 64-bit heltaladresse ($8$ byte
 
 Fra `module04.pdf`. Instruktioner: læs King kap. 11, 12 og 15.4; læs lecture notes kap. 4.
 
-- 4.1 Tag quizzen om pointere (spørgsmål 5 og 6 handler om dynamisk hukommelse, som er næste uges emne, og kan springes over). (Ikke åbnet.)
+- 4.1 Tag quizzen om pointere (spørgsmål 5 og 6 handler om dynamisk hukommelse, som er næste uges emne, og kan springes over).
 - 4.2 Analysér det givne program (array `arr[10] = {19,74,13,67,44,80,7,36,9,77}`, pointer `p = arr`, løkke `while (++i < 10) val += *(p++);`, derefter `val /= 10;` og `printf("Value: %.2f\n", val);`). Hvad beregner det? Omskriv programmet, så koden bliver mere læsbar.
   - Løsningsidé: programmet beregner gennemsnittet af de ti tal. Omskriv til en `for`-løkke med indeks, `val += arr[i];`, og fjern pointeren `p`.
 - 4.3 Hvad er betingelsestallet for $f(x) = \cos(x)$?
@@ -130,6 +130,15 @@ Fra `module04.pdf`. Instruktioner: læs King kap. 11, 12 og 15.4; læs lecture n
   - Løsningsidé: begge bruger output-pointere. Ex. 3 (`avg_sum`): summér i `*sum` og sæt `*avg = *sum/n`. Ex. 6 (`find_two_largest`): initialiser `*largest` og `*second_largest` ud fra de to første elementer, og opdater i en løkke fra indeks 2 (hvis `a[i] > *largest` rykkes den gamle største ned, ellers sammenlignes med den næststørste).
 - 4.8 Lav exercises 6 og 9 (kap. 12, s. 273 til 274) i lærebogen.
   - Løsningsidé: pointerudgaver af løkker. Ex. 6 (`sum_array`): `for (p = a; p < a+n; p++) sum += *p;`. Ex. 9 (`inner_product`): to pointere `pa` og `pb` som øges i samme løkke, `sum += *(pa++) * *(pb++)`.
+
+## Tjek dig selv
+
+- [ ] Hvad er forskellen på et problems conditioning og en algoritmes numeriske stabilitet?
+- [ ] Hvordan defineres betingelsestallet for en funktion?
+- [ ] Hvad er forward og backward error?
+- [ ] Hvorfor kan summation af $\exp(x)$ som række give et dårligt resultat for negative $x$, og hvordan hjælper Kahans summation?
+- [ ] Hvad betyder call-by-value i C, og hvordan giver pointere en funktion adgang til kalderens variabel?
+- [ ] Hvad betyder `const` i pointerdeklarationer?
 
 ## Links
 

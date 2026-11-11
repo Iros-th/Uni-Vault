@@ -11,7 +11,7 @@ tags:
 
 # Uge 5: Aktiv fartpilot, teori
 
-> Kilde: DTU Learn 02525, Projekt 3 (aktiv fartpilot), "Projekt uge 1 Teori": `fart.pdf` ("Aktiv fartpilot, Noter om andenordens lineære differentialligninger", Christian Henriksen, 2025). Mandag 28/9 2026. Mine egne lektionsnoter: [[Lection 5 Operations research 1]] (filen hedder "Operations research", men indholdet handler om fartpiloten).
+> Kilde: DTU Learn 02525, Projekt 3 (aktiv fartpilot), "Projekt uge 1 Teori": `fart.pdf` ("Aktiv fartpilot, Noter om andenordens lineære differentialligninger", Christian Henriksen, 2025). Mandag 28/9 2026. Ældre lektionsnote: [[Lection 5 Operations research 1]].
 
 ## Emner
 
@@ -48,23 +48,6 @@ Eksempel 5: $x' + x = 1$ giver $x(t) = 1 + ke^{-t}$.
 - $\lambda_1 = \alpha + i\beta$, $\beta > 0$ (komplekst konjugerede): $x(t) = (k_1\cos(\beta t) + k_2\sin(\beta t))e^{\alpha t}$
 
 **Dæmpning (Opgave 10).** For $c > 0$ kaldes ligningen overdæmpet hvis $b > 2\sqrt{c}$, kritisk dæmpet hvis $b = 2\sqrt{c}$ og underdæmpet hvis $0 < b < 2\sqrt{c}$.
-### Fysisk systemmodel: Dynamisk bilmodel for adaptiv fartpilot
-
-Bilens acceleration bestemmes af kraftbalancen mellem motorens trækkraft og de samlede modstandskræfter:
-
-```text
-  Luftmodstand: F_luft = 1/2 · ρ · C_d · A · v²
-  Rullemodstand: F_rul = C_r · m · g
-  Motortrækkraft: F_motor (styres af fartpiloten)
-
-      ┌─────────────────────────┐
-  <── │  F_luft + F_rul + F_bak │ ─── Bil (masse m, hastighed v) ───> F_motor
-      └─────────────────────────┘
-```
-Differentialligningen for systemet:
-$$m \frac{dv}{dt} = F_{\text{motor}} - \frac{1}{2}\rho C_d A v^2 - C_r m g.$$
-Modellen er ulineær på grund af $v^2$-leddet, så omkring en marchhastighed $v_0$ lineariseres den med Taylor-approksimation: $v^2 \approx v_0^2 + 2v_0(v - v_0)$.
-
 ## Opgaver
 
 Opgaverne i `fart.pdf`, nummereret som i noten (der er ingen bogreferencer, kun denne note):

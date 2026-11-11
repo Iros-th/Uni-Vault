@@ -11,7 +11,7 @@ tags:
 
 # Uge 1: Udsagnslogik
 
-> Kilde: kursussiden mat1a.compute.dtu.dk (linket som Course Homepage på DTU Learn for 01001), siderne Lektionsoversigt, Ugeprogram semesteruge 1 og Opgaver Store Dag/Lille Dag uge 1. Bogen er kursets lærebog (udgave 2026).
+> Kilde: kursussiden mat1a.compute.dtu.dk, siderne Lektionsoversigt, Ugeprogram semesteruge 1 og Opgaver Store Dag/Lille Dag uge 1. Bogen er kursets lærebog (udgave 2026).
 
 ## Emner
 
@@ -49,28 +49,6 @@ $P \Rightarrow Q$ er ækvivalent med $\neg Q \Rightarrow \neg P$. Det bruges i k
 Ved ligninger med absolutværdi indfører man tautologien $x < 0 \vee x \ge 0$ og løser i hvert tilfælde (Eksempel 1.4.2 i lærebogen).
 
 *Eksempel.* Løs $|x| = -x + 1$. Hvis $x \ge 0$: $x = -x + 1$, så $x = \tfrac{1}{2}$ (passer med $x \ge 0$). Hvis $x < 0$: $-x = -x + 1$, altså $0 = 1$, ingen løsning. Svaret er $x = \tfrac{1}{2}$.
-### Logikmodel: Boolske sandhedstræer og modstridsstrukturer
-
-Logisk ræsonnement kan visualiseres som et forgrenende sandhedstræ for sammensatte udsagn:
-
-```text
-                  Udsagn: (P ∧ ¬Q) => R
-                           │
-             ┌─────────────┴─────────────┐
-          P er sand                   P er falsk
-             │                           │
-       ┌─────┴─────┐                     │
-    Q sand      Q falsk                  v
-       │           │              (P ∧ ¬Q) er falsk
-       v           v              => implikation er trivielt SAND
-   (P ∧ ¬Q)    (P ∧ ¬Q)
-   er FALSK    er SAND
-       │           │
-       v           v
-    Implik.    Kræver R sand
-     SAND      for sandhed
-```
-
 ## Opgaver
 
 Opgaverne står på kursussiden med de numre, der er gengivet her. Nogle nævner bogen, fx definition eller sætning, i deres hints (se begreberne ovenfor).

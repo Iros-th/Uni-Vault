@@ -11,7 +11,7 @@ tags:
 
 # Uge 4: Varians, Markov og Chebyshev, geometrisk fordeling
 
-> Kilde: kursussiden http://www2.imm.dtu.dk/courses/02405/ (forelæsning 25. september, afsnit 3.3 og 3.4) og ugebrevet til forelæsning 4. Lærebog: Jim Pitman, Probability. Velkomstteksten skønner sværhedsgraden til "middel", ca. 39 sider. Indikatormetoden (side 168-173) og Markovs ulighed (side 174) blev ifølge ugebrev 3 udskudt til denne uge. Slides og videoer er ikke læst.
+> Kilde: kursussiden http://www2.imm.dtu.dk/courses/02405/ (forelæsning 25. september, afsnit 3.3 og 3.4) og ugebrevet til forelæsning 4. Lærebog: Jim Pitman, Probability. Velkomstteksten skønner sværhedsgraden til "middel", ca. 39 sider. Indikatormetoden (side 168-173) og Markovs ulighed (side 174) blev ifølge ugebrev 3 udskudt til denne uge. Slides og videoer er ikke anvendt.
 
 ## Emner
 
@@ -31,6 +31,8 @@ tags:
 
 **Chebyshevs ulighed.** $P(|X - \mu| \ge k\sigma) \le 1/k^2$. Eksempel: højst $1/4$ af sandsynligheden ligger mere end to spredninger fra middelværdien, uanset fordelingen. Begge uligheder giver grove, men almene halegrænser.
 
+**Skævhed og fordelingens form (side 224-226, kursorisk pensum).** Emnerne "How $\sigma$ affects the shape of the distribution" og "Skewness" er pensum, men kan læses kursorisk.
+
 **Indikatormetoden.** $I_A = 1$ hvis $A$ indtræffer, ellers 0, og $E(I_A) = P(A)$. En tællevariabel skrives som sum af indikatorer, og linearitet giver middelværdien. Eksempel: antal fikspunkter i en tilfældig permutation af $n$ elementer: hver position har sandsynlighed $1/n$, så $E = n \cdot \frac{1}{n} = 1$.
 
 **Geometrisk fordeling.** Antal forsøg indtil første succes: $P(X = k) = (1-p)^{k-1}p$ for $k = 1, 2, \dots$ med $E(X) = 1/p$. Eksempel: antal kast med en terning til første sekser: $P(X = 3) = (5/6)^2 \cdot (1/6) \approx 0{,}116$, $E(X) = 6$.
@@ -38,28 +40,9 @@ tags:
 **Tællelig additivitet.** Resultaterne for endelige fordelinger gælder også for tællelige, så længe summerne konvergerer (øverst side 209).
 
 **Negativ binomial og Bernoulliprocessen.** Antal forsøg for at opnå $n$ succeser (eksempel 4 side 213); den geometriske er $n = 1$. Tankegangen bygger på Bernoulliprocessen, en uendelig række uafhængige Bernoulli-forsøg. Eksempel 5 minder om fødselsdagseksemplet og bygger på afsnit 1.6.
-### Spredningsmodel: Markovs og Chebyshevs ulighedstunneler
-
-Uligheder giver en øvre grænse for halesandsynligheder, selv når man ikke kender den præcise fordeling:
-
-```text
-  Markov (kun for X >= 0):            Chebyshev (for alle med kendt varians):
-  P(X >= a) <= E[X] / a               P(|X - μ| >= kσ) <= 1 / k²
-
-  Pandsynlighed                         Afvigelse fra μ:
-  │                                     │         μ
-  │ *                                   │      ┌──┴──┐
-  │  *                                  │    _/   |   \_
-  │   *                                 │  _/     |     \_
-  │    * <- Maks E[X]/a                 │ /       |       \  <- Halesandsynlighed
-  └───────┴──────────────> x            └────┬─────────┬────> x
-          a                                 μ-kσ      μ+kσ     højst 1/k²
-```
-For enhver tænkelig fordeling gælder f.eks., at højst $1/2^2 = 25 \%$ af massen kan ligge mere end $2\sigma$ væk fra middelværdien.
-
 ## Opgaver
 
-Pitman, Probability (kapitel.afsnit.opgave). Regnes ved øvelsen fredag 2. oktober. (Ugebrevet skriver 2/10/25, formentlig en tastefejl for 2026.)
+Pitman, Probability (kapitel.afsnit.opgave). Regnes ved øvelsen fredag 2. oktober.
 
 Øvelsesopgaver: 3.3.1, 3.4.1, 3.2.14, 3.3.2, 3.4.9, 3.3.4. (Ugebrev og kursusside har samme liste.)
 

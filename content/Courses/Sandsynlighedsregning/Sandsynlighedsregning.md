@@ -8,14 +8,15 @@ tags:
 
 # Sandsynlighedsregning (02405)
 
-Landing page for kurset 02405 Sandsynlighedsregning, efterår 2026. DTU Learn (orgUnitId 326334) har ikke noget indhold i indholdsområdet, så materialet er den offentlige kursusside.
+Kursus 02405 Sandsynlighedsregning (Probability theory), efterår 2026, 5 ECTS. Ugenoterne bygger på den offentlige kursusside og kursusbasen.
 
 ## Overview
 
-- Course code: 02405
-- Instructor: Bo Friis Nielsen (bfni@dtu.dk); øvelsesvejledere Mathias Rohde Markvardsen og Nikolaj Bloch; nogle forelæsninger holdes af Nicolai Siim Larsen
-- Term / semester: efterår 2026
-- Time and place: forelæsning fredag 10-12, bygning 306, auditorium 34; øvelser fredag 8.00-9.50, bygning 306, klasselokale 198 og 199
+- Kursusnummer: 02405
+- Kursusansvarlig: Bo Friis Nielsen (bfni@dtu.dk); øvelsesvejledere Mathias Rohde Markvardsen og Nikolaj Bloch; nogle forelæsninger holdes af Nicolai Siim Larsen
+- Semester: efterår 2026 (skemaplacering E4B, fredag 8-12)
+- Tid og sted: forelæsning fredag 10-12, bygning 306, auditorium 34; øvelser fredag 8.00-9.50, bygning 306, klasselokale 198 og 199
+- Faglige forudsætninger: kompetencer svarende til 01005 (Matematik 1), som skal være erhvervet senest samtidigt
 - Lærebog: Jim Pitman, Probability (Springer, 1993). Brug lærebogens parametrisering af fordelingerne, særligt eksponentialfordelingen, også hvis fordelingsoversigten fra 02402 afviger.
 - Kursusside: http://www2.imm.dtu.dk/courses/02405/
 
@@ -44,8 +45,8 @@ Efter velkomstteksten (dateret 2024) dækker kurset: sandsynlighedsbegrebet, bet
 
 ## Eksamen
 
-Velkomstteksten (2024): eksamen er multiple choice, typisk 30 spørgsmål, der dækker pensum bredt. Gamle eksamenssæt med løsninger ligger nederst på kursussiden. Tjek eksamensformen for 2026 på DTU Learn.
+Kursusbasen (2026/2027): skriftlig eksamen på 4 timer, alle hjælpemidler uden adgang til internettet, 7-trinsskala, ekstern censur. Velkomstteksten (2024) beskriver eksamen som multiple choice, typisk 30 spørgsmål, der dækker pensum bredt. Gamle eksamenssæt med løsninger ligger nederst på kursussiden.
 
-## Questions
+## Bemærkning
 
-- Hvilke uger er det vigtigst at følge med i? Velkomstteksten advarer om, at mange får svært ved anden halvdel (kapitel 4 til 6).
+Velkomstteksten angiver, at mange får svært ved anden halvdel af kurset (kapitel 4 til 6).

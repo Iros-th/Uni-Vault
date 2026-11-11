@@ -8,13 +8,11 @@ tags:
 
 # Programming
 
-Notes for Programming. Still filling this in.
-
-This is where I dump everything from the intro programming course, code snippets, exercises, the stuff that finally clicked.
+Kursus 02002 Computer Programming (Polyteknisk grundlag), 5 ECTS, efterår 2026. Sproget er Python. Kursushjemmeside: https://programmering.compute.dtu.dk/. Kursusansvarlig: Vedrana Andersen Dahl, medansvarlige Morten Rieger Hannemose og Jakob Sauer Jørgensen. Undervisning torsdag 13 til 17.
 
 ## Notes
 
-These follow the standard intro Python curriculum (the general beginner progression, since I could not read the exact DTU pensum). Python is the language for this course.
+Emnenoter efter en generel indføring i Python (følger ikke kursets ugeopdeling). Ugenoterne under Ugenoter følger kursets egen syllabus.
 
 - [[01 Variabler og datatyper|Variabler og datatyper]]
 - [[02 Input og output|Input og output]]
@@ -57,7 +55,7 @@ Alt til dette fag samlet ét sted.
 - [[Courses/Programming/Cheat Sheet|Cheat sheet]]: det vigtigste syntaks på én side
 - [[Flashcards/Programming Flashcards|Flashcards]]: hurtig selvtest, klik for at vende kortet
 - [[Self-Tests/Programming Test|Self-test]]: små prøver med skjulte svar
-- [[Courses/Programming/Past Exams|Past exams]]: gamle sæt, fyldes på løbende
+- [[Courses/Programming/Past Exams|Past exams]]: oversigt over tidligere eksamenssæt
 
 ## Key concepts
 

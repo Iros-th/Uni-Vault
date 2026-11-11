@@ -11,7 +11,7 @@ tags:
 
 # Uge 6: Eksponential- og gammafordeling, hazard rate og variabelskift
 
-> Kilde: kursussiden http://www2.imm.dtu.dk/courses/02405/ (forelæsning 9. oktober, afsnit 4.2, 4.3 og 4.4) og ugebrevet til forelæsning 6. Lærebog: Jim Pitman, Probability. Velkomstteksten skønner sværhedsgraden til "middel", ca. 28 sider. Kursussiden advarer om, at lærebogens parametrisering (især af eksponentialfordelingen) altid bruges i kurset, også hvis fordelingsoversigten fra 02402 afviger. Slides er ikke læst.
+> Kilde: kursussiden http://www2.imm.dtu.dk/courses/02405/ (forelæsning 9. oktober, afsnit 4.2, 4.3 og 4.4) og ugebrevet til forelæsning 6. Lærebog: Jim Pitman, Probability. Velkomstteksten skønner sværhedsgraden til "middel", ca. 28 sider. Kursussiden advarer om, at lærebogens parametrisering (især af eksponentialfordelingen) altid bruges i kurset, også hvis fordelingsoversigten fra 02402 afviger. Slides er ikke anvendt.
 
 ## Emner
 
@@ -33,24 +33,10 @@ tags:
 
 **Middelværdi fra overlevelsesfunktionen.** $E(T) = \int_0^\infty P(T > t)\,dt$ (side 299). Eksempel: eksponential giver $\int_0^\infty e^{-\lambda t}dt = 1/\lambda$.
 
-**Variabelskift.** Lineært: $Y = aX + b$ har tæthed $f_Y(y) = \frac{1}{|a|}f_X\!\left(\frac{y-b}{a}\right)$ (nederst side 302). Generelt, når $h$ er monoton og differentiabel: $f_Y(y) = f_X(x)\,/\,|h'(x)|$ med $x = h^{-1}(y)$ (side 304). Variant for mange-til-en øverst side 307. Eksempel: $X$ ligefordelt på $(0,1)$ og $Y = -\ln(X)/\lambda$. Så er $P(Y > y) = P(X < e^{-\lambda y}) = e^{-\lambda y}$, altså er $Y$ eksponentialfordelt med rate $\lambda$.
-### Pålidelighedsmodel: Hazard rate og badekarkurven
+**Fra hazard rate til overlevelsesfunktion (side 300, kursorisk pensum).** Med $G(t) = P(T > t)$ er $h(t) = -G'(t)/G(t)$, så $G(t) = \exp\!\left(-\int_0^t h(u)\,du
+ight)$. Eksempel: konstant $h = \lambda$ giver $G(t) = e^{-\lambda t}$.
 
-Risikoraten (hazard rate) $h(t) = rac{f(t)}{1 - F(t)}$ angiver den momentane fejlrate givet overlevelse indtil tid $t$:
-
-```text
-  h(t) ^
-       │  "Børnesygdomme"               Slitage / Aldring
-       │   (faldende)     Konstant rate     (stigende)
-       │  \              ─────────────            /
-       │   \                                    /
-       │    \__________________________________/
-       └─────────────────────────────────────────────> Tid t
-       Indkøringsfase    Nyttig levetid       Udtjent
-                         h(t) = konstant
-                         => Eksponentialfordeling
-```
-
+**Variabelskift.** Lineært: $Y = aX + b$ har tæthed $f_Y(y) = \frac{1}{|a|}f_X\!\left(\frac{y-b}{a}\right)$ (nederst side 302). Generelt, når $h$ er monoton og differentiabel: $f_Y(y) = f_X(x)\,/\,|h'(x)|$ med $x = h^{-1}(y)$ (side 304). Variant for mange-til-en øverst side 307. Eksempel 6 og 7 (side 308-309) er pensum, men kan læses kursorisk. Eksempel: $X$ ligefordelt på $(0,1)$ og $Y = -\ln(X)/\lambda$. Så er $P(Y > y) = P(X < e^{-\lambda y}) = e^{-\lambda y}$, altså er $Y$ eksponentialfordelt med rate $\lambda$.
 ## Opgaver
 
 Pitman, Probability (kapitel.afsnit.opgave). Regnes ved øvelsen fredag 23. oktober. (Ugebrev og kursusside afviger lidt, se nedenfor.)

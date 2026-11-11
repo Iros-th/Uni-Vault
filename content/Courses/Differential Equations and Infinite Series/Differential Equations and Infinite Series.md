@@ -9,13 +9,14 @@ tags:
 
 # Differentialligninger og uendelige rækker (01025)
 
-Komplet studiesamling for DTU-kurset *01025 Differentialligninger og uendelige rækker*. Arkivet indeholder detaljerede ugenoter for alle 13 uger med begreber, regnede eksempler og facit til alle opgaver, et interaktivt Speedrun Map, samt gennemgange af tidligere års eksamenssæt.
+Komplet studiesamling for DTU-kurset *01025 Differentialligninger og uendelige rækker*. Samlingen har ugenoter for alle 13 uger med begreber, regnede eksempler og ugens opgaver, en side med alle hjemmeopgaver og miniprojekter, et Speedrun Map og gennemgange af tidligere års eksamenssæt.
 
 ## Studie- og repetitionsværktøjer
 
 - [[Courses/Differential Equations and Infinite Series/Speedrun Map|Speedrun Map]]: Den hurtigste og mest effektive vej gennem hele pensum emne for emne med tidsestimater, eksamensvægt og tjeklister.
 - [[Courses/Differential Equations and Infinite Series/Uger/Oversigt|Ugeoversigt 01025]]: Samlet uge-for-uge oversigt fra uge 1 til uge 13 med pensumafsnit og afleveringsplan.
-- [[Courses/Differential Equations and Infinite Series/Past Exams|Gamle eksamenssæt]]: Autentiske DTU-eksamensopgaver (F23, E18, dec 17 m.fl.) med fuldstændige løsninger og facit.
+- [[Courses/Differential Equations and Infinite Series/Hjemmeopgaver|Hjemmeopgaver og miniprojekter]]: alle 10 hjemmeopgavesæt og 2 miniprojekter med frist, indhold, teori og fremgangsmåde.
+- [[Courses/Differential Equations and Infinite Series/Past Exams|Gamle eksamenssæt]]: DTU-eksamensopgaver (F23, E18, dec 17 m.fl.) med gennemgange.
 - [[Self-Tests/Differential Equations Test|Selvtest]]: Eksamensrelevante øvelsesspørgsmål med skjulte svar.
 - [[Flashcards/Differential Equations Flashcards|Flashcards]]: 25+ repetitionskort der dækker samtlige 7 hovedemner.
 - [[Studie|Studie-træningsrum]]: Interaktiv træningsapp direkte i browseren med Lær, Test og Genlær (spaced repetition).

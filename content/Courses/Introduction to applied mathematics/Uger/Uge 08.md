@@ -48,22 +48,6 @@ $$\|\nabla f\| = \sqrt{D_x^2 + D_y^2},$$
 som lyser op ved kanter.
 
 **Poster.** Fra slides: målgruppen er medstuderende, posteren skal støtte en 7 minutters gruppepræsentation, vigtige formler og resultater skal på, gode figurer, ikke for meget tekst (gerne punkter), og tænk på layout. Anbefalet software: vektorgrafik (fx Inkscape) eller LaTeX.
-### Billedbehandlingsmodel: 2D-konvolution og filtrering
-
-Et digitalt billede filtreres ved at glide en $3 \times 3$ vægtmatrix (kerne/kernel) hen over hvert pixel:
-
-```text
-  Billed-pixels (3 x 3 vindue):          Gaussisk udglatningskerne:
-  ┌────┬────┬────┐                       ┌─────┬─────┬─────┐
-  │ p1 │ p2 │ p3 │                       │ 1/16│ 2/16│ 1/16│
-  ├────┼────┼────┤                       ├─────┼─────┼─────┤
-  │ p4 │ p5 │ p6 │      * (konvolut)     │ 2/16│ 4/16│ 2/16│   ──> Nyt pixel p5'
-  ├────┼────┼────┤                       ├─────┼─────┼─────┤
-  │ p7 │ p8 │ p9 │                       │ 1/16│ 2/16│ 1/16│
-  └────┴────┴────┘                       └─────┴─────┴─────┘
-```
-Konvolution dæmper højfrekvent støj i billedet ved at lade nabopixels stemme om den sande lysintensitet.
-
 ## Opgaver
 
 Opgavebeskrivelsen `uge1_projekt_opgavebeskrivelse` har fem dele og en poster:

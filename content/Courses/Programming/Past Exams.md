@@ -11,36 +11,18 @@ tags:
 
 # Programming past exams
 
-Samlested for gamle eksamensopgaver og prøver i programmering. Tomt indtil videre, det fylder jeg på i takt med at jeg får fat i sæt.
+Tidligere eksamenssæt til 02002 findes som zip-filer på kursussiden (Previous Exams, https://programmering.compute.dtu.dk/additional/previous_exams.html). Hver zip indeholder alle filer og mapper, der var tilgængelige ved eksamen.
 
-Sådan tænker jeg at bruge siden: læg opgaven ind, prøv den selv uden at kigge, og skriv så min egen løsning plus hvor jeg gik i stå. Det er fejlene der er guld værd op til en prøve.
+| Termin | Bemærkning |
+|---|---|
+| Sommer (maj) 2026 | samme format som den kommende eksamen |
+| Vinter (december) 2025 | samme format |
+| Sommer (maj) 2025 | samme format |
+| Vinter (december) 2024 | samme format, findes på engelsk og dansk |
+| Sommer (maj) 2024 | lidt andet format, kun engelsk tekst; de fleste opgaver findes også som checkpoints |
+| Vinter (december) 2023 | lidt andet format, kun engelsk tekst; de fleste opgaver findes også som checkpoints |
 
-## Sådan lægger jeg et sæt ind
-
-For hvert eksamenssæt laver jeg et afsnit med:
-
-- **År og type** (ordinær, reeksamen, øveprøve)
-- **Opgaverne** kort, eller et link/embed hvis jeg har en fil
-- **Min løsning** i en kodeblok
-- **Faldgruber** jeg ramte, så jeg ikke gør det igen
-
-## Sæt
-
-_(ingen endnu, tilføjes løbende)_
-
-<!--
-Skabelon til at kopiere:
-
-### 20XX ordinær
-
-**Opgave 1.** ...
-
-```python
-# min loesning
-```
-
-**Faldgruber:** ...
--->
+Eksamensformatet: 4 timer, alle hjælpemidler uden internet, opgaverne udleveres og afleveres digitalt. Bedømmelsen er beskrevet på side 2 i eksamenssættene. Kursussiden har desuden en Exam Check-quiz om format og regler.
 
 ## Links
 

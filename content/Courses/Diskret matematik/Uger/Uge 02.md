@@ -11,7 +11,7 @@ tags:
 
 # Uge 2: Introduktion til beviser og mængder
 
-> Kilde: ugeplanen på kursussiden https://www2.imm.dtu.dk/courses/01017/2026/ (uge W2, 10. september). Begrebsforklaringerne er skrevet ud fra emnerne i planen; der er ingen slides. Afsnitstitler er tjekket mod en lokal tekst af Rosen, 8. udgave.
+> Kilde: ugeplanen på kursussiden https://www2.imm.dtu.dk/courses/01017/2026/ (uge W2, 10. september), Rosen afsnit 1.7 og 2.1 i Rosen, "Discrete Mathematics and Its Applications". Slides er ikke anvendt.
 
 ## Emner
 
@@ -31,34 +31,12 @@ tags:
 **Kardinalitet og potensmængde.** $|A|$ er antallet af elementer i en endelig mængde. Potensmængden $\mathcal{P}(A)$ er mængden af alle delmængder af $A$, og $|\mathcal{P}(A)| = 2^{|A|}$. Eksempel: $\mathcal{P}(\{a,b\}) = \{\emptyset, \{a\}, \{b\}, \{a,b\}\}$, altså $2^2 = 4$ elementer.
 
 **Kartesisk produkt.** $A \times B = \{(a,b) : a \in A, b \in B\}$ er mængden af ordnede par, og $|A \times B| = |A| \cdot |B|$. Eksempel: $\{1,2\} \times \{x,y,z\}$ har $2 \cdot 3 = 6$ par. Rækkefølgen betyder noget, så $A \times B \ne B \times A$ i almindelighed.
-### Bevismodel: Beslutningstræ for bevistyper
-
-Når du møder en påstand af formen $P \implies Q$ til eksamen, hjælper dette beslutningstræ dig med at vælge den mest effektive bevisteknik:
-
-```text
-                  Start: Skal vise P => Q
-                             │
-            Kan Q udledes direkte fra P via definitioner?
-                      /                 \
-                    Ja                   Nej
-                   /                       \
-     [ Direkte bevis ]          Er Q formuleret negativt (f.eks. "x er ulige/irrationel")?
-   Antag P, regn frem til Q                  /                                \
-                                           Ja                                  Nej
-                                          /                                      \
-                         [ Kontraposition ]                             [ Modstridsbevis ]
-                  Antag ¬Q, vis at ¬P følger                     Antag P OG ¬Q, find en modstrid
-                  (Nemmere at arbejde med lige tal)              (F.eks. at √2 = a/b kan forkortes)
-```
-
-**Tommelfingerregel:** Hvis konklusionen indeholder et negationstegn eller et "findes ikke", er kontraposition eller modstrid næsten altid hurtigst.
-
 ## Opgaver
 
-Fra kursussiden, Rosen, "Discrete Mathematics and Its Applications" (2025-udgaven). Fed skrift betyder, at kurset vil have dem lavet først. Hvor 8. udgave har andre numre, står de i parentes.
+Fra kursussiden, Rosen (2025-udgaven). Fed skrift betyder, at kurset anbefaler at lave dem først. Hvor 8. udgave har andre numre, står de i parentes.
 
 - Afsnit 1.7: 3, **11**, **37**, **41**
-- Ekstra fra kurset: "Show you are smarter than Kenneth H. Rosen by giving a direct proof for Example 3 in Section 1.7." (I den 8. udgave, jeg har tjekket, er Eksempel 3 beviset for, at hvis $3n + 2$ er ulige, så er $n$ ulige, og det bevises der ved kontraposition. Tjek, at Eksempel 3 er det samme i din udgave. Idé til et direkte bevis: skriv $3n + 2 = 2k + 1$ og isolér $n$.)
+- Ekstra fra kurset: "Show you are smarter than Kenneth H. Rosen by giving a direct proof for Example 3 in Section 1.7." (I 8. udgave er Eksempel 3 beviset for, at hvis $3n + 2$ er ulige, så er $n$ ulige, og det bevises der ved kontraposition. Et direkte bevis: hvis $3n + 2$ er ulige, er $3n$ ulige, og så er $n = 3n - 2n$ ulige som forskel mellem et ulige og et lige tal.)
 - Afsnit 2.1: **15**, 25, **31**, **41** (**11**, 21, **27**, **37** i 8. udgave)
 
 ## Links

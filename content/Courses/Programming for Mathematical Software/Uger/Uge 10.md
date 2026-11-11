@@ -11,7 +11,7 @@ tags:
 
 # Uge 10: Test og debugging
 
-> Kilde: `module10.pdf` (opgaveark, 12. november 2026) og `slides10.pdf` (forelæsning 10, Martin S. Andersen, 17 slides). Opgavearket er meget kort og henviser til afleveringsopgaven, som ikke er åbnet (dropbox-linket er ikke fulgt). Lecture notes kap. 9 (Debugging and Testing) er ikke læst. Pensum: lecture notes kap. 9.
+> Kilde: `module10.pdf` (opgaveark, 12. november 2026) og `slides10.pdf` (forelæsning 10, Martin S. Andersen, 17 slides). Opgavearket er kort og henviser til afleveringsopgaven (bedømt aflevering). Pensum: lecture notes kap. 9 (Debugging and Testing).
 
 ## Emner
 
@@ -77,7 +77,7 @@ int main(void) {
 - Indeks uden for grænser: `for (int i=0;i<=10;i++)` på `double data[10]`, og `s[5] = '\0'` på `char s[5]`. Brug assertions eller en debugger.
 - Manglende nulafslutning: `char s[5]` fyldt med "Hello" uden plads til `'\0'`, og så `puts(s)`.
 - Utilsigtede makroer: `#define cube(x) x*x*x` med `cube(2+3)` bliver til `2+3*2+3*2+3` og ikke $(2+3)^3$. Tjek præprocessorens output, og sæt parenteser om argumenter.
-### Fejldiagnose-model: Valgrind og memory leak-registrering
+### Fejldiagnose-model: Valgrind og memory leak-registrering (supplerende illustration, ikke fra slides)
 
 Valgrind overvåger alle heap-allokeringer i en virtuel CPU:
 
@@ -96,8 +96,17 @@ Kompilér altid med debug-symboler `-g` for at få præcise filnavne og linjenum
 
 Fra `module10.pdf`:
 
-- Arbejd på afleveringsopgaven ("Work on the assignment"). Der er ingen andre nummererede opgaver i opgavearket for modul 10. (Afleveringsopgaven er ikke åbnet og beskrives ikke her.)
+- Arbejd på afleveringsopgaven ("Work on the assignment"). Der er ingen andre nummererede opgaver i opgavearket for modul 10. Bedømt aflevering.
 - Løsningsark: der er ikke fundet nogen `sols_module10` på Learn.
+
+## Tjek dig selv
+
+- [ ] Hvilke retningslinjer for kodestil og indrykning bruges i kurset?
+- [ ] Hvordan bruges `assert`, og hvornår bør man i stedet returnere en fejlkode?
+- [ ] Hvordan bruges en debugger (`gdb`) til at finde en fejl?
+- [ ] Hvilke typiske fejl giver stack overflow, manglende allokering og hukommelseslæk?
+- [ ] Hvorfor giver makroen `#define cube(x) x*x*x` et forkert resultat for `cube(2+3)`?
+- [ ] Hvordan kan AddressSanitizer eller Valgrind bruges?
 
 ## Links
 

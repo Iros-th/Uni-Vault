@@ -44,25 +44,7 @@ Slides stiller opgaven at diskutere hvad zero padding gør ved mean- og medianfi
 
 $$\text{nut\_ratio} = \frac{\#\text{nødder}}{\#\text{nødder} + \#\text{chokolade}},$$
 
-hvis man følger notebookens variabler `no_nutpixels` og `no_chocpixels`. (Selve formlen er `? # DEFINER` i notebooken, så dette er min læsning af variabelnavnene.)
-### Kantdetektionsmodel: Sobel-gradienter og kantstyrke
-
-Kanter i et billede identificeres ved at beregne gradienten $\nabla I = \left(\frac{\partial I}{\partial x}, \frac{\partial I}{\partial y}\right)$:
-
-```text
-  Sobel-X kerne (finder lodrette kanter):  Sobel-Y kerne (finder vandrette kanter):
-  ┌────┬───┬───┐                          ┌────┬────┬────┐
-  │ -1 │ 0 │ 1 │                          │  1 │  2 │  1 │
-  ├────┼───┼───┤                          ├────┼────┼────┤
-  │ -2 │ 0 │ 2 │                          │  0 │  0 │  0 │
-  ├────┼───┼───┤                          ├────┼────┼────┤
-  │ -1 │ 0 │ 1 │                          │ -1 │ -2 │ -1 │
-  └────┴───┴───┘                          └────┴────┴────┘
-
-  Samlet kantstyrke (gradientmagnitude):  |G| = √(Gx² + Gy²)
-```
-Hvor lysintensiteten ændrer sig brat, skyder gradienten i vejret og markerer en kontur.
-
+hvis man følger notebookens variabler `no_nutpixels` og `no_chocpixels`. (Formlen er ikke udfyldt i notebooken: `? # DEFINER`.)
 ## Opgaver
 
 Opgavebeskrivelsen `uge2_projekt_opgavebeskrivelse`, hvor man bruger notebooken (der står "Opgave 1" og "Opgave 2"):

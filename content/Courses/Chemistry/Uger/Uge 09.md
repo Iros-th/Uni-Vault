@@ -11,9 +11,11 @@ tags:
 
 # Uge 9: Anvendelsesforelæsning 2 (batterier, MOF'er, magnetiske materialer)
 
-> Kilde: DTU Learn 26020, Week 9: "26020 Battery Applications Lecture LWG.pdf" (Leo W. Gordon, 2. november 2026) og "MOFs_ChemistryPolytechnic_2026.pdf" (Kasper S. Pedersen, 36 slides, mest figurer). Kursusplanen: mandag 2. november, kl. 8.00 øvelse om forelæsning 7, kl. 10.00 magnetiske materialer, batterier, maskinlæring i kemi. Ingen slides om maskinlæring er lagt op i Week 9. Ugen er en anvendelsesforelæsning uden nyt bogkapitel. Meddelelserne er læst. Additional Questions Week 09 (quiz) er ikke åbnet.
+> Kilde: DTU Learn 26020, uge 9: "26020 Battery Applications Lecture LWG.pdf" (Leo W. Gordon, 2. november 2026), "MOFs_ChemistryPolytechnic_2026.pdf" (Kasper S. Pedersen, 36 slides, mest figurer), kursusplanen og kursusmeddelelserne. Kursusplanen: mandag 2. november, kl. 8.00 øvelse om forelæsning 7, kl. 10.00 magnetiske materialer, batterier og maskinlæring i kemi. Slides om maskinlæring er ikke lagt op i uge 9. Ugen er en anvendelsesforelæsning uden nyt bogkapitel.
 
 ## Emner
+
+Anvendelsesforelæsning: kursusbeskrivelsen angiver ikke stoffet som pensum (ikke pensum, læses selv). Eksamenssættene har ingen spørgsmål herfra. Pensum der berøres: Arrhenius og ligevægt (uge 8), galvaniske celler og redox (uge 11), $\Delta G=\Delta H-T\Delta S$ (uge 3).
 
 - Opgaver fra forrige uge: mælks holdbarhed (Arrhenius) og $\mathrm{N_2O_4}/\mathrm{NO_2}$-ligevægt
 - Batteriers opbygning, drift og egenskaber
@@ -23,7 +25,7 @@ tags:
 
 ## Begreber
 
-**Løsninger til opgaverne fra uge 8 (fra slides).** Mælk: 10 gange hurtigere ved 22 °C end ved 4 °C giver $E_a = 87$ kJ/mol. Ved 30 °C er $\ln(k_2/k_1) = -\dfrac{87000}{8{,}314}\left(\dfrac1{303{,}15}-\dfrac1{295{,}15}\right) = 0{,}936$, dvs. $k_2/k_1 = 2{,}55$, så holdbarheden er $24\ \mathrm{h}/2{,}55 = 9{,}4$ timer (kontrolleret). $\mathrm{N_2O_4\rightleftharpoons 2\,NO_2}$ er endoterm; køling skifter mod farveløs $\mathrm{N_2O_4}$, så røret bliver blegere og $K$ falder.
+**Løsninger til opgaverne fra uge 8 (fra slides).** Mælk: 10 gange hurtigere ved 22 °C end ved 4 °C giver $E_a = 87$ kJ/mol. Ved 30 °C er $\ln(k_2/k_1) = -\dfrac{87000}{8{,}314}\left(\dfrac1{303{,}15}-\dfrac1{295{,}15}\right) = 0{,}936$, dvs. $k_2/k_1 = 2{,}55$, så holdbarheden er $24\ \mathrm{h}/2{,}55 = 9{,}4$ timer. $\mathrm{N_2O_4\rightleftharpoons 2\,NO_2}$ er endoterm; køling skifter mod farveløs $\mathrm{N_2O_4}$, så røret bliver blegere og $K$ falder.
 
 **Batteriets dele.** Positiv elektrode (katode), negativ elektrode (anode), elektrolyt og separator. Ved afladning mister anoden elektroner (oxidation) og katoden optager dem (reduktion): "LEO goes GER" (Loses Electrons Oxidation, Gains Electrons Reduction). Ioner (kationer) bevæger sig gennem elektrolytten, elektronerne gennem det ydre kredsløb. Li-ion-batterier virker ved at "skubbe" ioner frem og tilbage (slidens billede: to sandwiches der bytter fyld). Volta-søjlen er fra 1800, Li-ion er udviklet i 1980'erne og kommercialiseret i 1991.
 
@@ -35,10 +37,11 @@ tags:
 
 **Gasopsamling som ligevægt.** $\mathrm{CO_2(g)+MOF\rightleftharpoons CO_2@MOF}$ har typisk $\Delta H<0$ og $\Delta S<0$, så $\Delta G=\Delta H-T\Delta S$ stiger med temperaturen. Slides: $\Delta H^\circ=-40$ kJ/mol og $\Delta S^\circ=-100$ J/(mol K) $=-0{,}100$ kJ/(mol K). Ved 300 K: $-40-300\cdot(-0{,}100)=-10$ kJ/mol (adsorption gunstig); ved 450 K: $-40+45=+5$ kJ/mol (ugunstig). Omslag ved $T=\Delta H/\Delta S=400$ K, så opvarmning frigiver den opsamlede gas.
 
-**Magnetiske materialer.** Slides viser MOF'er som kvantematerialer (stærke elektroninteraktioner), todimensionelle magneter med $T_C=55$ K, magneter der udligner deres eget felt, og magnetisk køling. Magnetisk entropi for en ion med spin $S$: $S_m=R\ln(2S+1)$; for $\mathrm{Eu^{2+}}$ ($S=7/2$) er $R\ln8=2{,}08R$ (kontrolleret). Teksten på disse slides er sparsom, så detaljerne står ikke her.
+**Magnetiske materialer.** Slides viser MOF'er som kvantematerialer (stærke elektroninteraktioner), todimensionelle magneter med $T_C=55$ K, magneter der udligner deres eget felt, og magnetisk køling. Magnetisk entropi for en ion med spin $S$: $S_m=R\ln(2S+1)$; for $\mathrm{Eu^{2+}}$ ($S=7/2$) er $R\ln8=2{,}08R$.
 
-**Fra meddelelserne.** Forelæsningen 2. november fik fokus på materialevidenskab: magnetiske materialer (Kasper Pedersen), maskinlæring i kemi (Jakob Dahl) og batterier (Leo Gordon). Start kl. 10.00 med pause kl. 10.45. Samme morgen skrev Leo, at Prof. Dahl var syg og ikke kunne præsentere, så forelæsningen startede som normalt kl. 10.15 efter øvelserne. Der ligger ingen slides om maskinlæring på Learn. "Additional Questions Week 09" findes som quiz i TOC (ikke åbnet), selvom meddelelsen fra 23. oktober siger, at der ikke kommer ekstra spørgsmål til den anden anvendelsesforelæsning.
-### Elektrokemisk model: Litium-ion batteri interkalation og ion-drift
+**Praktisk.** Forelæsningen 2. november var planlagt med magnetiske materialer (Kasper Pedersen), maskinlæring i kemi (Jakob Dahl) og batterier (Leo Gordon). Maskinlæringsdelen blev ikke holdt, og der ligger ingen slides om den på Learn. Start var kl. 10.15 efter øvelserne. Quizzen "Additional Questions Week 09" findes i Learn, selvom meddelelsen fra 23. oktober siger, at der ikke kommer ekstra spørgsmål til den anden anvendelsesforelæsning.
+
+### Elektrokemisk model: Litium-ion batteri interkalation og ion-drift (supplerende illustration, ikke fra slides), ikke pensum
 
 Et genopladeligt litium-ion batteri fungerer via interkalation (indsætning af Li⁺-ioner mellem atomare lag i elektroderne):
 
@@ -57,7 +60,7 @@ Et genopladeligt litium-ion batteri fungerer via interkalation (indsætning af L
        Elektroner og Li⁺ tvinges tilbage i grafit-anoden.
 ```
 
-### Materialemodel: Metal-Organiske Netværk (MOF) porearkitektur
+### Materialemodel: Metal-Organiske Netværk (MOF) porearkitektur (supplerende illustration, ikke fra slides), ikke pensum
 
 MOF'er (Metal-Organic Frameworks) består af metalliske knuder (clusters) forbundet af organiske linkere:
 
@@ -76,16 +79,24 @@ MOF'er (Metal-Organic Frameworks) består af metalliske knuder (clusters) forbun
 
 ## Opgaver
 
-- Exercises_Week_09 (quiz på DTU Learn, ikke åbnet)
-- Additional Questions Week 09 (quiz på DTU Learn, ikke åbnet)
-- Kursusplanen: "Exercise on Lecture 7 material" kl. 8.00 den 2. november 2026 (emnet er uge 8: kinetik og ligevægt). Selve opgaverne er ikke lagt som fil.
+- Exercises_Week_09 (quiz på DTU Learn)
+- Additional Questions Week 09 (quiz på DTU Learn)
+- Kursusplanen: "Exercise on Lecture 7 material" kl. 8.00 den 2. november 2026 (emnet er uge 8: kinetik og ligevægt). Opgaverne er ikke lagt som fil.
 - Ingen bogopgaver med nummer er angivet.
 
 ## Gamle eksamensspørgsmål om dette emne
 
-Numrene refererer til de to gamle eksamenssæt på Learn (efterår 2024 og forår 2025, se Uge 13). Efterår 2024 er læst ved OCR af en scannet PDF, og numrene følger rækkefølgen i filen.
+Numrene refererer til de to gamle eksamenssæt på Learn (efterår 2024 og forår 2025, se Uge 13). Numrene for efterår 2024 følger rækkefølgen i den scannede fil.
 
 - Ingen spørgsmål direkte om batterier, MOF'er eller magnetiske materialer. Galvaniske celler og koncentrationsceller (efterår 2024 spm. 19, forår 2025 spm. 10) ligger i uge 11.
+
+## Tjek dig selv
+
+- [ ] Hvad er anode og katode i et batteri ved afladning, og hvad bevæger sig gennem elektrolytten og det ydre kredsløb?
+- [ ] Hvordan beregnes energien i Wh ud fra spænding og kapacitet?
+- [ ] Hvad er en MOF, og hvad bruges MOF'er til?
+- [ ] Hvordan afgør $\Delta H$ og $\Delta S$, ved hvilken temperatur CO$_2$-binding til en MOF skifter fra gunstig til ugunstig?
+- [ ] Hvordan bruges Arrhenius på mælks holdbarhed ved to temperaturer?
 
 ## Links
 

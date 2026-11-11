@@ -11,7 +11,7 @@ tags:
 
 # Uge 12: C++ og objektorienteret programmering
 
-> Kilde: `module12.pdf` på DTU Learn (opgaveark, 26. november 2026) og modultabellen. Siden "Lecture slides" i modulet har ingen fil på Learn (topic-API'et giver 404), og der er ikke fundet nogen løsningsfil, så noten bygger kun på opgavearket. Pensum: "Beginning C++", s. 1 til 9, s. 20 til 22, s. 315 til 333 (udgave ikke angivet på kursussiden).
+> Kilde: `module12.pdf` på DTU Learn (opgaveark, 26. november 2026) og modultabellen. Slides og løsninger har ingen fil i DTU Learn; noten bygger på opgavearket og modultabellen. Pensum: "Beginning C++", s. 1 til 9, s. 20 til 22, s. 315 til 333 (udgave ikke angivet på kursussiden).
 
 ## Emner
 
@@ -74,7 +74,7 @@ int main() {
     return 0;
 }
 ```
-### Objektmodel: Vtable (Virtual Method Table) i C++
+### Objektmodel: Vtable (Virtual Method Table) i C++ (supplerende illustration, ikke fra slides, ikke pensum; virtuelle metoder er ikke i modulets læsestof)
 
 Polymorfi i C++ implementeres ved hjælp af en usynlig peger (`vptr`) i hvert objekt til klassens funktionstabel (`vtable`):
 
@@ -98,6 +98,14 @@ Fra `module12.pdf`. Instruktioner: læs s. 1 til 9, s. 20 til 22 og s. 315 til 3
 - 12.4 Lav exercise 11-2 i Beginning C++.
 - 12.5 Lav exercise 11-3 i Beginning C++.
 - Valgfri 12.6: C og dets objektorienterede afledte sprog. (a) Se Bjarne Stroustrup forklare, hvorfor han lavede C++. (b) Læs om C# og Objective-C. (c) Se Stroustrup forklare, hvorfor han mener, C er forældet; kig derefter på sprogindekset over programmeringssprogs popularitet og vurdér, om C eller de objektorienterede afledte sprog forsvinder snart.
+
+## Tjek dig selv
+
+- [ ] Hvad er forskellen på `printf`/`scanf` og `cout`/`cin`?
+- [ ] Hvordan læses en linje tekst i C++, og hvad er `std::string`?
+- [ ] Hvad er en klasse, og hvad er forskellen på `public` og `private` medlemmer?
+- [ ] Hvad gør en konstruktør?
+- [ ] Hvordan kaldes en medlemsfunktion på et objekt?
 
 ## Links
 

@@ -11,7 +11,7 @@ tags:
 
 # Uge 9: Uafhængige normalfordelte variable, summer og forhold
 
-> Kilde: kursussiden http://www2.imm.dtu.dk/courses/02405/ (forelæsning 6. november, afsnit 5.3 og 5.4; forelæsningen holdes af Nicolai Siim Larsen) og ugebrevet til forelæsning 9. Lærebog: Jim Pitman, Probability. Velkomstteksten skønner sværhedsgraden til "over middel", ca. 23 sider. Slides er ikke læst.
+> Kilde: kursussiden http://www2.imm.dtu.dk/courses/02405/ (forelæsning 6. november, afsnit 5.3 og 5.4; forelæsningen holdes af Nicolai Siim Larsen) og ugebrevet til forelæsning 9. Lærebog: Jim Pitman, Probability. Velkomstteksten skønner sværhedsgraden til "over middel", ca. 23 sider. Slides er ikke anvendt.
 
 ## Emner
 
@@ -33,23 +33,6 @@ tags:
 **Summer af uafhængige variable.** Tætheden af $Z = X + Y$ er foldningen $f_Z(z) = \int f_X(x)f_Y(z - x)\,dx$ (boksen side 372). Eksempel: to uafhængige ligefordelte på $(0,1)$ giver en trekantstæthed på $(0,2)$ med top i 1.
 
 **Forhold.** Formel (f) side 383 for $Y/X$ og formel (g) for uafhængige variable (side 383). Udledningen af F-fordelingen som forhold mellem to $\chi^2$-fordelte størrelser står på plancherne, men gennemgås ikke ved forelæsningen. Ugebrevet anbefaler den til interesserede, især dem der følger statistikkurser.
-### Foldningsmodel: Summen af to uafhængige variable
-
-Tætheden for summen $Z = X + Y$ er givet ved foldningen af $f_X$ og $f_Y$:
-
-```text
-                 f_Z(z) = ∫ f_X(x) · f_Y(z - x) dx
-                 
-         f_X(x)                            f_Y(z - x)
-       ┌────────┐                        ┌────────┐
-       │        │  ──────── foldes ────> │        │
-  ─────┴────────┴───                  ───┴────────┴───> x
-       Variabel x                      Forskudt med z
-```
-
-**Stabilitet af normalfordelingen:**
-Hvis $X \sim \mathcal{N}(\mu_1, \sigma_1^2)$ og $Y \sim \mathcal{N}(\mu_2, \sigma_2^2)$ er uafhængige, så er $X + Y \sim \mathcal{N}(\mu_1 + \mu_2, \sigma_1^2 + \sigma_2^2)$. Varianserne adderes altid direkte.
-
 ## Opgaver
 
 Pitman, Probability (kapitel.afsnit.opgave). Regnes ved øvelsen fredag 13. november.

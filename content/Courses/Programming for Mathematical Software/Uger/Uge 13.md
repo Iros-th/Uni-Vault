@@ -11,7 +11,7 @@ tags:
 
 # Uge 13: Objektorienteret programmering og repetition
 
-> Kilde: `module13.pdf` på DTU Learn (opgaveark, 3. december 2026) og modultabellen. Der er ikke fundet nogen slides eller løsningsfil til dette modul på Learn (siden "Lecture slides" i modulet har ingen fil, topic-API'et giver 404), så noten bygger kun på opgavearket. Pensum: "Beginning C++", s. 52 til 53, s. 168 til 172, s. 180 til 182, s. 495 til 499; læs om STL-containerne `vector` og `list`.
+> Kilde: `module13.pdf` på DTU Learn (opgaveark, 3. december 2026) og modultabellen. Slides og løsninger har ingen fil i DTU Learn; noten bygger på opgavearket og modultabellen. Pensum: "Beginning C++", s. 52 til 53, s. 168 til 172, s. 180 til 182, s. 495 til 499; læs om STL-containerne `vector` og `list`.
 
 ## Emner
 
@@ -82,7 +82,7 @@ int main() {
 ```
 
 (Kompilér med `-std=c++11`.)
-### Arkitekturmodel: HPC Software stack for matematiske beregninger
+### Arkitekturmodel: HPC Software stack for matematiske beregninger (supplerende illustration, ikke fra slides, ikke pensum)
 
 I moderne videnskabelig databehandling bygger applikationer oven på veldefinerede lag af abstraktion:
 
@@ -105,6 +105,14 @@ Fra `module13.pdf`. Instruktioner: læs de angivne sider i Beginning C++ og om S
 - 13.1 Betragt skabelonen `max` (`template <typename T> const T& max (const T& a, const T& b) { return (a<b)?b:a; }`, defineret i namespace `std`), som finder maksimum af to variable, hvor `a < b` er defineret. Skriv ud fra den en skabelon, der finder den absolutte værdi af en variabel `a` af type `T`, hvor uligheden `a < -a` er defineret. Skriv et kort testprogram med forskellige numeriske typer (fx `int`, `float`, `double`). Skabelonen må ikke returnere en reference til en variabel af type `T`. Forklar hvorfor.
 - 13.2 `vector` fra STL er en generisk liste med array som underliggende repræsentation (elementerne ligger sammenhængende i hukommelsen). Læs en række kommatal fra en tekstfil og gem dem i en `vector`. Beregn og udskriv summen og middelværdien. Modificér programmet, så det udskriver vektorens størrelse (`size()`) og kapacitet (`capacity()`) efter hvert indlæst tal. Hvad er kompleksiteten af at tilføje et tal til vektoren? Hint: brug `push_back()`. Skabelon: `std::vector<double> v;` i en `main(int argc, const char *argv[])`.
 - 13.3 Skriv et program, der beder brugeren om en række strenge og gemmer dem i et `list`-objekt. Når brugeren er færdig, skal programmet bede om et tal $m$ og fjerne alle strenge, der er længere end $m$ tegn, og udskrive de resterende. Hvad er kompleksiteten af at fjerne alle strenge af længde mindst $m$? Hint: `push_back()` i `list`, `length()` i `string`. (Skabelonen i opgavearket skriver `std::list<string> L;`; den skal efter min læsning være `std::list<std::string>`, med `#include <string>`.)
+
+## Tjek dig selv
+
+- [ ] Hvad er en template, og hvordan skrives en generisk funktion?
+- [ ] Hvad er forskellen på `size()` og `capacity()` i en `std::vector`?
+- [ ] Hvordan adskiller `std::list` sig fra `std::vector`, og hvornår er den bedre?
+- [ ] Hvad er en reference, og hvorfor må en funktion ikke returnere en reference til en lokal værdi?
+- [ ] Hvilke operationer skal en type understøtte for at kunne bruges i skabelonen `my_abs`?
 
 ## Links
 

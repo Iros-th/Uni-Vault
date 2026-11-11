@@ -9,16 +9,16 @@ tags:
 
 # Kemi (26020)
 
-Studiesamling for kurset *26020 Almen Kemi* på DTU. Indeholder ugenoter fra uge 1 til 13 med regnede eksempler og formler, en komplet oversigt over tidligere års eksamenssæt, et interaktivt Speedrun Map, samt flashcards og selvtests.
+Studiesamling for kurset *26020 Chemistry (Polytechnical Foundation)* (dansk titel Kemi, Polyteknisk grundlag) på DTU. Lærebog: OpenStax Chemistry 2e. Eksamen: 4 timer, elektronisk multiple choice, alle hjælpemidler uden internet. Samlingen indeholder ugenoter for uge 1 til 13 med begreber og regnede eksempler (uge 11 til 13 er skrevet ud fra kursusplanen, ikke slides), en emneoversigt over spørgsmålene i to tidligere eksamenssæt (efterår 2024 og forår 2025), et Speedrun Map samt flashcards og en selvtest.
 
 ## Studie- og repetitionsværktøjer
 
-- [[Courses/Chemistry/Speedrun Map|Speedrun Map]]: Detaljeret overblik over pensum, reaktionsveje, formler og tjeklister.
+- [[Courses/Chemistry/Speedrun Map|Speedrun Map]]: Rækkefølge af emner med formler og tjeklister.
 - [[Courses/Chemistry/Uger/Oversigt|Ugeoversigt 26020]]: Uge-for-uge noter efter DTU Learn.
-- [[Courses/Chemistry/Past Exams|Gamle eksamenssæt]]: Spørgsmålsoversigt og gennemgang af Efterår 2024 og Forår 2025.
+- [[Courses/Chemistry/Past Exams|Gamle eksamenssæt]]: Emneoversigt over spørgsmålene i efterår 2024 og forår 2025 samt egne eksempelopgaver. Sættene på Learn er uden svar.
 - [[Self-Tests/Chemistry Test|Kemi Selvtest]]: Øvelsesspørgsmål til aktiv genkaldelse.
 - [[Flashcards/Chemistry Flashcards|Kemi Flashcards]]: Flashcards til hurtig begrebstræning.
-- [[Studie|Studie-træningsrum]]: Interaktiv træningsapp direkte i browseren.
+- [[Studie|Studie-træningsrum]]: Interaktivt træningsrum i browseren (flashcards og selvtests).
 
 ## Ugenoter (Uge 1 til 13)
 
@@ -38,7 +38,7 @@ Studiesamling for kurset *26020 Almen Kemi* på DTU. Indeholder ugenoter fra uge
 
 ## Referencer og formler
 
-- [[Courses/Chemistry/Pensum|Pensum og læseplan]]
+- [[Courses/Chemistry/Pensum|Pensum og eksamensform]]
 - [[Courses/Chemistry/Begreber|Nøglebegreber]]
 - [[Reference/Kemi/Grundlaeggende begreber|Grundlæggende kemibegreber]]
 - [[Reference/Kemi/Kemiske symboler og notation|Kemiske symboler og notation]]
