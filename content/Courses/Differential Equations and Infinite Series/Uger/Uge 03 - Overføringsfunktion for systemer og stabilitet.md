@@ -113,5 +113,5 @@ Miniprojekt 1 stilles i uge 4; ifølge ugesedlen kan opgave 1 (i) til (iv) og op
 ## Links
 
 - [[Courses/Differential Equations and Infinite Series/Uger/Oversigt|Ugeoversigt 01025]]
-- Forrige: [[Courses/Differential Equations and Infinite Series/Uger/Uge 02|Uge 2]]
-- Næste: [[Courses/Differential Equations and Infinite Series/Uger/Uge 04|Uge 4: Stabilitet og uendelige rækker]]
+- Forrige: [[Courses/Differential Equations and Infinite Series/Uger/Uge 02 - Systemer af differentialligninger|Uge 2]]
+- Næste: [[Courses/Differential Equations and Infinite Series/Uger/Uge 04 - Inhomogen stabilitet og uendelige rækker|Uge 4: Stabilitet og uendelige rækker]]

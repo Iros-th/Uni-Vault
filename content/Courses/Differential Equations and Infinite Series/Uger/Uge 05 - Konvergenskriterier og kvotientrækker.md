@@ -187,7 +187,7 @@ Da grænseværdien er strengt under 1, er rækken konvergent.
 ## Links
 
 - [[Courses/Differential Equations and Infinite Series/Uger/Oversigt|Ugeoversigt 01025]]
-- Forrige: [[Courses/Differential Equations and Infinite Series/Uger/Uge 04|Uge 4: Stabilitet af inhomogene systemer og uendelige rækker]]
-- Næste: [[Courses/Differential Equations and Infinite Series/Uger/Uge 06|Uge 6: Vurdering af summen og alternerende rækker]]
+- Forrige: [[Courses/Differential Equations and Infinite Series/Uger/Uge 04 - Inhomogen stabilitet og uendelige rækker|Uge 4: Stabilitet af inhomogene systemer og uendelige rækker]]
+- Næste: [[Courses/Differential Equations and Infinite Series/Uger/Uge 06 - Vurdering af summen og alternerende rækker|Uge 6: Vurdering af summen og alternerende rækker]]
 - [[Differential Equations and Infinite Series]]
 - [[Courses/Differential Equations and Infinite Series/Speedrun Map|Speedrun Map]]

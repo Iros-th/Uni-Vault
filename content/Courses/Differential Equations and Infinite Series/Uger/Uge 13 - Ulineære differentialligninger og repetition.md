@@ -105,7 +105,7 @@ Skriftlig 3-timers prøve 7. december 2025, alle skriftlige hjælpemidler, ingen
 Løsningen (5 håndskrevne sider) angiver 1.1d, 1.2b, 2.1c og 2.2b i del A. Den henviser til sætningerne med samme numre som slides (fx sætning 2.7, 2.11, 2.12, 5.35, 6.6, 6.16, 6.30 og eksempel 4.34 og 4.39).
 
 ### Andre nye sæt i zip-filen
-Zip-filen på DTU Learn indeholder ud over de ældre sæt: E25, F26 (17. maj 2026, uden computer), B-E24 og en computerfri omformulering B-E24UdenComputer, A-MC-E24, AogB-F24 (13. maj 2024, se [[Courses/Differential Equations and Infinite Series/Uger/Uge 07|uge 7]]), B-F25 og B-E23. Emnerne går igen: systemer med en partikulær løsning af en given form, potensrækkemetoden ($y'' = 5xy$, $y' - 2ty = 0$, $ty' - y = \frac{t^2}{1+t}$, $tx'' + x = -1$), Fourierrækker for stykkevis definerede lige/ulige funktioner, korollar 4.35 og majorantrækker.
+Zip-filen på DTU Learn indeholder ud over de ældre sæt: E25, F26 (17. maj 2026, uden computer), B-E24 og en computerfri omformulering B-E24UdenComputer, A-MC-E24, AogB-F24 (13. maj 2024, se [[Courses/Differential Equations and Infinite Series/Uger/Uge 07 - Potensrækker|uge 7]]), B-F25 og B-E23. Emnerne går igen: systemer med en partikulær løsning af en given form, potensrækkemetoden ($y'' = 5xy$, $y' - 2ty = 0$, $ty' - y = \frac{t^2}{1+t}$, $tx'' + x = -1$), Fourierrækker for stykkevis definerede lige/ulige funktioner, korollar 4.35 og majorantrækker.
 
 ### Detaljeret gennemgang af udvalgte opgaver
 
@@ -158,6 +158,6 @@ Systemet er $\dot x = x^2 + y^2 - x + 2y + 1$, $\dot y = x - y - 1$.
 ## Links
 
 - [[Courses/Differential Equations and Infinite Series/Uger/Oversigt|Ugeoversigt 01025]]
-- Forrige: [[Courses/Differential Equations and Infinite Series/Uger/Uge 12|Uge 12: Variable koefficienter, potensrække- og Fourierrækkemetoden]]
+- Forrige: [[Courses/Differential Equations and Infinite Series/Uger/Uge 12 - Variable koefficienter og rækkemetoder|Uge 12: Variable koefficienter, potensrække- og Fourierrækkemetoden]]
 - [[Courses/Differential Equations and Infinite Series/Past Exams|Gamle eksamenssæt]]
 - [[Differential Equations and Infinite Series]]

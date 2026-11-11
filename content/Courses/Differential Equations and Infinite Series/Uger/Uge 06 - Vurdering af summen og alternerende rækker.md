@@ -147,7 +147,7 @@ Dette viser pr. definition, at $c x_n \to c x$.
 ## Links
 
 - [[Courses/Differential Equations and Infinite Series/Uger/Oversigt|Ugeoversigt 01025]]
-- Forrige: [[Courses/Differential Equations and Infinite Series/Uger/Uge 05|Uge 5: Konvergenskriterier og kvotientrækker]]
-- Næste: [[Courses/Differential Equations and Infinite Series/Uger/Uge 07|Uge 7: Potensrækker]]
+- Forrige: [[Courses/Differential Equations and Infinite Series/Uger/Uge 05 - Konvergenskriterier og kvotientrækker|Uge 5: Konvergenskriterier og kvotientrækker]]
+- Næste: [[Courses/Differential Equations and Infinite Series/Uger/Uge 07 - Potensrækker|Uge 7: Potensrækker]]
 - [[Differential Equations and Infinite Series]]
 - [[Courses/Differential Equations and Infinite Series/Speedrun Map|Speedrun Map]]

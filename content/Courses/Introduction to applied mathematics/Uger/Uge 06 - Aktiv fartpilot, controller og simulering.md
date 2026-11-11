@@ -11,7 +11,7 @@ tags:
 
 # Uge 6: Aktiv fartpilot, controller og simulering
 
-> Kilde: DTU Learn 02525, Projekt 3 "Projektuge 2 Controller": `simuler.py`. Mandag 5/10 2026 (ugen efter, 12/10 til 16/10, er efterårsferie). Teorien kommer fra `fart.pdf`, se [[Courses/Introduction to applied mathematics/Uger/Uge 05|Uge 5]]. Der ligger ikke en separat opgavebeskrivelse til denne uge på DTU Learn, kun Python-filen.
+> Kilde: DTU Learn 02525, Projekt 3 "Projektuge 2 Controller": `simuler.py`. Mandag 5/10 2026 (ugen efter, 12/10 til 16/10, er efterårsferie). Teorien kommer fra `fart.pdf`, se [[Courses/Introduction to applied mathematics/Uger/Uge 05 - Aktiv fartpilot, teori|Uge 5]]. Der ligger ikke en separat opgavebeskrivelse til denne uge på DTU Learn, kun Python-filen.
 
 ## Emner
 
@@ -47,7 +47,7 @@ for både egen bil og forankørende. Koden gemmer faktisk afstand, ønsket afsta
 
 - Ændr `sikkerheds_afstand(foran_s, foran_v)` og `controller(egen_s, egen_v, foran_s, foran_v)` i del 3 i `simuler.py`. Det er den eneste opgave filen selv nævner ("Jeres opgave er at modificere de to funktioner defineret i del 3").
 - Prøv begge forankørende (`foran1` og `foran2`).
-- Posterprojektet afsluttes med præsentation 19/10, se [[Courses/Introduction to applied mathematics/Uger/Uge 07|Uge 7]].
+- Posterprojektet afsluttes med præsentation 19/10, se [[Courses/Introduction to applied mathematics/Uger/Uge 07 - Fartpilot, posterpræsentation|Uge 7]].
 
 ## Links
 

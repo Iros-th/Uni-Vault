@@ -72,6 +72,6 @@ Ingen almindelige øvelsesopgaver; ugen bruges på miniprojekt 2 (opgave 872 og 
 ## Links
 
 - [[Courses/Differential Equations and Infinite Series/Uger/Oversigt|Ugeoversigt 01025]]
-- Forrige: [[Courses/Differential Equations and Infinite Series/Uger/Uge 10|Uge 10]]
-- Næste: [[Courses/Differential Equations and Infinite Series/Uger/Uge 12|Uge 12: Variable koefficienter, potensrække- og Fourierrækkemetoden]]
+- Forrige: [[Courses/Differential Equations and Infinite Series/Uger/Uge 10 - Kompleks form og Parsevals sætning|Uge 10]]
+- Næste: [[Courses/Differential Equations and Infinite Series/Uger/Uge 12 - Variable koefficienter og rækkemetoder|Uge 12: Variable koefficienter, potensrække- og Fourierrækkemetoden]]
 - [[Differential Equations and Infinite Series]]

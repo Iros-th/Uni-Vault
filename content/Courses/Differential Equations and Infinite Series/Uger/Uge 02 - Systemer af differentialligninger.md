@@ -111,5 +111,5 @@ Hvis $\mathbf u + i\mathbf v$ og $\mathbf u - i\mathbf v$ er lineært uafhængig
 ## Links
 
 - [[Courses/Differential Equations and Infinite Series/Uger/Oversigt|Ugeoversigt 01025]]
-- Forrige: [[Courses/Differential Equations and Infinite Series/Uger/Uge 01|Uge 1]]
-- Næste: [[Courses/Differential Equations and Infinite Series/Uger/Uge 03|Uge 3: Overføringsfunktion for systemer og stabilitet]]
+- Forrige: [[Courses/Differential Equations and Infinite Series/Uger/Uge 01 - n'te ordens ligninger og overføringsfunktion|Uge 1]]
+- Næste: [[Courses/Differential Equations and Infinite Series/Uger/Uge 03 - Overføringsfunktion for systemer og stabilitet|Uge 3: Overføringsfunktion for systemer og stabilitet]]

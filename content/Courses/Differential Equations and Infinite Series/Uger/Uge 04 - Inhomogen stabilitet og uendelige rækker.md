@@ -78,5 +78,5 @@ Fysisk aflevering onsdag 30/9 kl. 8, opgave 2 i Möbius; 2 % af karakteren. Tre 
 ## Links
 
 - [[Courses/Differential Equations and Infinite Series/Uger/Oversigt|Ugeoversigt 01025]]
-- Forrige: [[Courses/Differential Equations and Infinite Series/Uger/Uge 03|Uge 3]]
-- Næste: [[Courses/Differential Equations and Infinite Series/Uger/Uge 05|Uge 5: Konvergenskriterier og kvotientrækker]]
+- Forrige: [[Courses/Differential Equations and Infinite Series/Uger/Uge 03 - Overføringsfunktion for systemer og stabilitet|Uge 3]]
+- Næste: [[Courses/Differential Equations and Infinite Series/Uger/Uge 05 - Konvergenskriterier og kvotientrækker|Uge 5: Konvergenskriterier og kvotientrækker]]

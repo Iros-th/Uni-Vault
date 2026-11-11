@@ -12,19 +12,19 @@ tags:
 
 Uge N svarer til modul N på DTU Learn.
 
-- [[Courses/Programming for Mathematical Software/Uger/Uge 01|Uge 1: Introduktion til C, input og output]]
-- [[Courses/Programming for Mathematical Software/Uger/Uge 02|Uge 2: Flydende tal, kontrolstrukturer, basistyper]]
-- [[Courses/Programming for Mathematical Software/Uger/Uge 03|Uge 3: Unix-systemet, løkker, arrays, funktioner]]
-- [[Courses/Programming for Mathematical Software/Uger/Uge 04|Uge 4: Conditioning, numerisk stabilitet, pointere]]
-- [[Courses/Programming for Mathematical Software/Uger/Uge 05|Uge 5: Datastrukturer og dynamisk hukommelse]]
-- [[Courses/Programming for Mathematical Software/Uger/Uge 06|Uge 6: Filer, strenge og sparse matricer]]
-- [[Courses/Programming for Mathematical Software/Uger/Uge 07|Uge 7: Hukommelsesmodel, tid, kompleksitet, optimering]]
-- [[Courses/Programming for Mathematical Software/Uger/Uge 08|Uge 8: Eksterne biblioteker (BLAS og LAPACK)]]
-- [[Courses/Programming for Mathematical Software/Uger/Uge 09|Uge 9: Parallelle beregninger og OpenMP]]
-- [[Courses/Programming for Mathematical Software/Uger/Uge 10|Uge 10: Test og debugging]]
-- [[Courses/Programming for Mathematical Software/Uger/Uge 11|Uge 11: Rekursion]]
-- [[Courses/Programming for Mathematical Software/Uger/Uge 12|Uge 12: C++ og objektorienteret programmering]]
-- [[Courses/Programming for Mathematical Software/Uger/Uge 13|Uge 13: Objektorienteret programmering, repetition]]
+- [[Courses/Programming for Mathematical Software/Uger/Uge 01 - Introduktion til C, input og output|Uge 1: Introduktion til C, input og output]]
+- [[Courses/Programming for Mathematical Software/Uger/Uge 02 - Flydende tal, kontrolstrukturer, basistyper|Uge 2: Flydende tal, kontrolstrukturer, basistyper]]
+- [[Courses/Programming for Mathematical Software/Uger/Uge 03 - Unix-systemet, løkker, arrays, funktioner|Uge 3: Unix-systemet, løkker, arrays, funktioner]]
+- [[Courses/Programming for Mathematical Software/Uger/Uge 04 - Conditioning, numerisk stabilitet, pointere|Uge 4: Conditioning, numerisk stabilitet, pointere]]
+- [[Courses/Programming for Mathematical Software/Uger/Uge 05 - Abstrakte datastrukturer og dynamisk hukommelse|Uge 5: Datastrukturer og dynamisk hukommelse]]
+- [[Courses/Programming for Mathematical Software/Uger/Uge 06 - Filer og data, sparse matricer|Uge 6: Filer, strenge og sparse matricer]]
+- [[Courses/Programming for Mathematical Software/Uger/Uge 07 - Hukommelsesmodel, timing, kompleksitet og compileroptimering|Uge 7: Hukommelsesmodel, tid, kompleksitet, optimering]]
+- [[Courses/Programming for Mathematical Software/Uger/Uge 08 - Eksterne biblioteker (BLAS og LAPACK)|Uge 8: Eksterne biblioteker (BLAS og LAPACK)]]
+- [[Courses/Programming for Mathematical Software/Uger/Uge 09 - Parallelle beregninger og OpenMP|Uge 9: Parallelle beregninger og OpenMP]]
+- [[Courses/Programming for Mathematical Software/Uger/Uge 10 - Test og debugging|Uge 10: Test og debugging]]
+- [[Courses/Programming for Mathematical Software/Uger/Uge 11 - Rekursion|Uge 11: Rekursion]]
+- [[Courses/Programming for Mathematical Software/Uger/Uge 12 - C++ og objektorienteret programmering|Uge 12: C++ og objektorienteret programmering]]
+- [[Courses/Programming for Mathematical Software/Uger/Uge 13 - Objektorienteret programmering og repetition|Uge 13: Objektorienteret programmering, repetition]]
 
 Tilbage til [[Courses/Programming for Mathematical Software/Programming for Mathematical Software|kursusforsiden]].
 
@@ -36,19 +36,19 @@ Læsestof pr. modul:
 
 | Modul | Læsestof | Emne |
 |---|---|---|
-| [[Courses/Programming for Mathematical Software/Uger/Uge 01\|1]] | King kap. 1, 2, 3 (skim); lecture notes kap. 1, App. A.1 til A.3 | Introduktion til C, input og output |
-| [[Courses/Programming for Mathematical Software/Uger/Uge 02\|2]] | King kap. 4, 5 (skim), 7, 23.1, 23.4; lecture notes kap. 2 og 3 | Flydende tal, kontrolstrukturer, basistyper |
-| [[Courses/Programming for Mathematical Software/Uger/Uge 03\|3]] | King kap. 6, 8, 9, 10 (opgavearket: uden 9.6, som hører til modul 11); lecture notes App. A.5 | Unix, løkker, arrays, funktioner |
-| [[Courses/Programming for Mathematical Software/Uger/Uge 04\|4]] | King kap. 11, 12, 15.4; lecture notes kap. 4 | Conditioning, stabilitet, pointere |
-| [[Courses/Programming for Mathematical Software/Uger/Uge 05\|5]] | King kap. 14, 16, 17 (opgavearket: 17.1 til 17.6); lecture notes kap. 5 | Datastrukturer og dynamisk hukommelse |
-| [[Courses/Programming for Mathematical Software/Uger/Uge 06\|6]] | King kap. 13, 22, 23.6; lecture notes kap. 6 | Filer, strenge, sparse matricer |
-| [[Courses/Programming for Mathematical Software/Uger/Uge 07\|7]] | King kap. 26.3; lecture notes kap. 7 | Tid, kompleksitet, optimering |
-| [[Courses/Programming for Mathematical Software/Uger/Uge 08\|8]] | Lecture notes kap. 8 | BLAS og LAPACK |
-| [[Courses/Programming for Mathematical Software/Uger/Uge 09\|9]] | Intet bogstof angivet; hjemmearbejde: Wikipedia-artiklerne om CPU time og wall-clock time (slides og opgaveark) | Parallelle beregninger og OpenMP |
-| [[Courses/Programming for Mathematical Software/Uger/Uge 10\|10]] | Lecture notes kap. 9 | Test og debugging |
-| [[Courses/Programming for Mathematical Software/Uger/Uge 11\|11]] | King afsnit 9.6 (s. 204 til 209); Big-O Cheat Sheet | Rekursion |
-| [[Courses/Programming for Mathematical Software/Uger/Uge 12\|12]] | Beginning C++ s. 1 til 9, 20 til 22, 315 til 333 | C++ og klasser |
-| [[Courses/Programming for Mathematical Software/Uger/Uge 13\|13]] | Beginning C++ s. 52 til 53, 168 til 172, 180 til 182, 495 til 499 (templates, `vector`, `list`) | Templates og STL-containere |
+| [[Courses/Programming for Mathematical Software/Uger/Uge 01 - Introduktion til C, input og output\|1]] | King kap. 1, 2, 3 (skim); lecture notes kap. 1, App. A.1 til A.3 | Introduktion til C, input og output |
+| [[Courses/Programming for Mathematical Software/Uger/Uge 02 - Flydende tal, kontrolstrukturer, basistyper\|2]] | King kap. 4, 5 (skim), 7, 23.1, 23.4; lecture notes kap. 2 og 3 | Flydende tal, kontrolstrukturer, basistyper |
+| [[Courses/Programming for Mathematical Software/Uger/Uge 03 - Unix-systemet, løkker, arrays, funktioner\|3]] | King kap. 6, 8, 9, 10 (opgavearket: uden 9.6, som hører til modul 11); lecture notes App. A.5 | Unix, løkker, arrays, funktioner |
+| [[Courses/Programming for Mathematical Software/Uger/Uge 04 - Conditioning, numerisk stabilitet, pointere\|4]] | King kap. 11, 12, 15.4; lecture notes kap. 4 | Conditioning, stabilitet, pointere |
+| [[Courses/Programming for Mathematical Software/Uger/Uge 05 - Abstrakte datastrukturer og dynamisk hukommelse\|5]] | King kap. 14, 16, 17 (opgavearket: 17.1 til 17.6); lecture notes kap. 5 | Datastrukturer og dynamisk hukommelse |
+| [[Courses/Programming for Mathematical Software/Uger/Uge 06 - Filer og data, sparse matricer\|6]] | King kap. 13, 22, 23.6; lecture notes kap. 6 | Filer, strenge, sparse matricer |
+| [[Courses/Programming for Mathematical Software/Uger/Uge 07 - Hukommelsesmodel, timing, kompleksitet og compileroptimering\|7]] | King kap. 26.3; lecture notes kap. 7 | Tid, kompleksitet, optimering |
+| [[Courses/Programming for Mathematical Software/Uger/Uge 08 - Eksterne biblioteker (BLAS og LAPACK)\|8]] | Lecture notes kap. 8 | BLAS og LAPACK |
+| [[Courses/Programming for Mathematical Software/Uger/Uge 09 - Parallelle beregninger og OpenMP\|9]] | Intet bogstof angivet; hjemmearbejde: Wikipedia-artiklerne om CPU time og wall-clock time (slides og opgaveark) | Parallelle beregninger og OpenMP |
+| [[Courses/Programming for Mathematical Software/Uger/Uge 10 - Test og debugging\|10]] | Lecture notes kap. 9 | Test og debugging |
+| [[Courses/Programming for Mathematical Software/Uger/Uge 11 - Rekursion\|11]] | King afsnit 9.6 (s. 204 til 209); Big-O Cheat Sheet | Rekursion |
+| [[Courses/Programming for Mathematical Software/Uger/Uge 12 - C++ og objektorienteret programmering\|12]] | Beginning C++ s. 1 til 9, 20 til 22, 315 til 333 | C++ og klasser |
+| [[Courses/Programming for Mathematical Software/Uger/Uge 13 - Objektorienteret programmering og repetition\|13]] | Beginning C++ s. 52 til 53, 168 til 172, 180 til 182, 495 til 499 (templates, `vector`, `list`) | Templates og STL-containere |
 
 Læringsmål fra kursusbeskrivelsen og hvor de dækkes (uge = modul):
 

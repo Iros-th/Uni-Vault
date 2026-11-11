@@ -26,7 +26,7 @@ tags:
 
 **Krav til posteren (meddelelse på DTU Learn 5/10, "Fartpilot uge 3").** Posteren skal være én side i pdf-format i portræt (på højkant) og afleveres i Learn senest søndagen efter, kun én aflevering pr. gruppe. Den skal ikke have formen "spørgsmål 1, svar 1, spørgsmål 2, svar 2". Den skal kunne læses uden at have læst opgaver eller noter, så gruppen skal finde sin egen røde tråd. Fremlæggelsen er på 7 minutter, hvor alle i gruppen får ordet, efterfulgt af spørgsmål, som kan være individuelle. Karakteren gives individuelt på en smiley-skala (:-(, :-|, :-), :-D) ud fra posteren, fremlæggelsen og besvarelsen af spørgsmål. Meddelelsen 19/10 beder grupperne møde op 20 minutter før deres tid (5 minutter hvis man er først kl. 13.00).
 
-**Mere om posteren.** Fra Filtrerings-slides (som siger "som med Fartpilot-projektet") gælder samme formen, se [[Courses/Introduction to applied mathematics/Uger/Uge 08|Uge 8]]: målgruppen er medstuderende, posteren støtter en 7 minutters gruppepræsentation, vigtige formler og resultater skal med, gode figurer, ikke for meget tekst.
+**Mere om posteren.** Fra Filtrerings-slides (som siger "som med Fartpilot-projektet") gælder samme formen, se [[Courses/Introduction to applied mathematics/Uger/Uge 08 - Filtrering, fra kalkulus til billedanalyse|Uge 8]]: målgruppen er medstuderende, posteren støtter en 7 minutters gruppepræsentation, vigtige formler og resultater skal med, gode figurer, ikke for meget tekst.
 ## Opgaver
 
 - Lav og aflever poster (én pdf-side i portræt, én aflevering pr. gruppe) og fremlæg 19/10.

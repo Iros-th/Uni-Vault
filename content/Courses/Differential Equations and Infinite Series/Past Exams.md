@@ -24,7 +24,7 @@ Fra E25 er eksamen en 3-timers skriftlig prøve med alle skriftlige hjælpemidle
 | Eksamensopgaver og løsninger 2012-18 | 2012, 2013, 2014, 2015, dec 2016 (inkl. MC), dec 2017 (del A og B), E18 (B og MC) | 2012, 2013, 2014, 2015, dec 2016 MC, dec 2017, E18 (to udgaver), E18 MC-svar |
 | Eksamensopgaver 2019-F26 | B-E19, A-MC-E19, A og B-E20, A-E21, B-E21, A-E22, B-E22, F23, B-E23, AogB-F24, A-MC-E24, B-E24, B-E24UdenComputer, B-F25, E25, F26 | ingen; E25-løsningen ligger separat på DTU Learn under uge 13 |
 
-E25 er beskrevet opgave for opgave i [[Courses/Differential Equations and Infinite Series/Uger/Uge 13|uge 13]]. Opgave 1 i del B af AogB-F24 er hjemmeopgave 6 ([[Courses/Differential Equations and Infinite Series/Uger/Uge 07|uge 7]]) og opgave 4 i B-E21 er hjemmeopgave 7 ([[Courses/Differential Equations and Infinite Series/Uger/Uge 08|uge 8]]); de er bedømte afleveringer og gennemgås ikke her.
+E25 er beskrevet opgave for opgave i [[Courses/Differential Equations and Infinite Series/Uger/Uge 13 - Ulineære differentialligninger og repetition|uge 13]]. Opgave 1 i del B af AogB-F24 er hjemmeopgave 6 ([[Courses/Differential Equations and Infinite Series/Uger/Uge 07 - Potensrækker|uge 7]]) og opgave 4 i B-E21 er hjemmeopgave 7 ([[Courses/Differential Equations and Infinite Series/Uger/Uge 08 - Uniform konvergens|uge 8]]); de er bedømte afleveringer og gennemgås ikke her.
 
 ---
 
@@ -282,5 +282,5 @@ Koefficienterne aftager hurtigere end nogen eksponentialfunktion, så konvergens
 - [[Flashcards/Differential Equations Flashcards|Differential Equations Flashcards]]
 - [[Self-Tests/Differential Equations Test|Selvtest]]
 - [[Courses/Differential Equations and Infinite Series/Speedrun Map|Speedrun Map]]
-- [[Courses/Differential Equations and Infinite Series/Uger/Uge 13|Uge 13: E25 og repetition]]
+- [[Courses/Differential Equations and Infinite Series/Uger/Uge 13 - Ulineære differentialligninger og repetition|Uge 13: E25 og repetition]]
 - [[Differential Equations and Infinite Series]]

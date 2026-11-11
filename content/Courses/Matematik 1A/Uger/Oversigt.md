@@ -12,19 +12,19 @@ tags:
 
 > Kilde: kursussiden mat1a.compute.dtu.dk, siden Lektionsoversigt: Efterår 2026, ugeprogram og opgavesider for uge 1 til 13.
 
-- [[Courses/Matematik 1A/Uger/Uge 01|Uge 1: udsagnslogik]]
-- [[Courses/Matematik 1A/Uger/Uge 02|Uge 2: mængder og funktioner]]
-- [[Courses/Matematik 1A/Uger/Uge 03|Uge 3: komplekse tal, del 1]]
-- [[Courses/Matematik 1A/Uger/Uge 04|Uge 4: komplekse tal, del 2, og polynomier]]
-- [[Courses/Matematik 1A/Uger/Uge 05|Uge 5: divisionsalgoritmen og induktion]]
-- [[Courses/Matematik 1A/Uger/Uge 06|Uge 6: lineære ligningssystemer og gauss-elimination]]
-- [[Courses/Matematik 1A/Uger/Uge 07|Uge 7: matrixalgebra og determinanter]]
-- [[Courses/Matematik 1A/Uger/Uge 08|Uge 8: udspænding, ordnet basis og koordinater]]
-- [[Courses/Matematik 1A/Uger/Uge 09|Uge 9: generelle vektorrum]]
-- [[Courses/Matematik 1A/Uger/Uge 10|Uge 10: lineære afbildninger]]
-- [[Courses/Matematik 1A/Uger/Uge 11|Uge 11: egenværdier, egenvektorer og diagonalisering]]
-- [[Courses/Matematik 1A/Uger/Uge 12|Uge 12: differentialligninger og systemer]]
-- [[Courses/Matematik 1A/Uger/Uge 13|Uge 13: andenordens differentialligninger]]
+- [[Courses/Matematik 1A/Uger/Uge 01 - Udsagnslogik|Uge 1: udsagnslogik]]
+- [[Courses/Matematik 1A/Uger/Uge 02 - Mængder og funktioner|Uge 2: mængder og funktioner]]
+- [[Courses/Matematik 1A/Uger/Uge 03 - Komplekse tal, del 1|Uge 3: komplekse tal, del 1]]
+- [[Courses/Matematik 1A/Uger/Uge 04 - Komplekse tal, del 2, og polynomier|Uge 4: komplekse tal, del 2, og polynomier]]
+- [[Courses/Matematik 1A/Uger/Uge 05 - Divisionsalgoritmen og induktion|Uge 5: divisionsalgoritmen og induktion]]
+- [[Courses/Matematik 1A/Uger/Uge 06 - Lineære ligningssystemer og Gauss-elimination|Uge 6: lineære ligningssystemer og gauss-elimination]]
+- [[Courses/Matematik 1A/Uger/Uge 07 - Matrixalgebra og determinanter|Uge 7: matrixalgebra og determinanter]]
+- [[Courses/Matematik 1A/Uger/Uge 08 - Udspænding, ordnet basis og koordinater|Uge 8: udspænding, ordnet basis og koordinater]]
+- [[Courses/Matematik 1A/Uger/Uge 09 - Generelle vektorrum|Uge 9: generelle vektorrum]]
+- [[Courses/Matematik 1A/Uger/Uge 10 - Lineære afbildninger|Uge 10: lineære afbildninger]]
+- [[Courses/Matematik 1A/Uger/Uge 11 - Egenværdier, egenvektorer og diagonalisering|Uge 11: egenværdier, egenvektorer og diagonalisering]]
+- [[Courses/Matematik 1A/Uger/Uge 12 - Differentialligninger og systemer|Uge 12: differentialligninger og systemer]]
+- [[Courses/Matematik 1A/Uger/Uge 13 - Andenordens differentialligninger|Uge 13: andenordens differentialligninger]]
 
 Skriftlig prøve er 6/12-2026.
 

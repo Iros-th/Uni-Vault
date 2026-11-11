@@ -27,25 +27,25 @@ Pensumliste 2026: pensum er det der er listet i ugesedlerne, nemlig følgende af
 
 | Pensum | Indhold | Uge |
 |---|---|---|
-| 1.1 til 1.4 | $n$'te ordens ligninger, homogen og inhomogen, overføringsfunktion | [[Courses/Differential Equations and Infinite Series/Uger/Uge 01\|1]] |
-| 1.5 til og med sætning 1.28 | Frekvenskarakteristikker | [[Courses/Differential Equations and Infinite Series/Uger/Uge 01\|1]] |
-| 1.6 | Ligninger med variable koefficienter | [[Courses/Differential Equations and Infinite Series/Uger/Uge 12\|12]] |
-| 2.1 til 2.5 | Systemer, egenværdimetoden, fundamentalmatrix, inhomogene systemer, variable koefficienter | [[Courses/Differential Equations and Infinite Series/Uger/Uge 02\|2]] |
-| 2.6, 2.8 | Overføringsfunktion for systemer, stabilitet | [[Courses/Differential Equations and Infinite Series/Uger/Uge 03\|3]] |
-| 2.9 | Stabilitet af inhomogene systemer, BIBO | [[Courses/Differential Equations and Infinite Series/Uger/Uge 04\|4]] |
-| 3.1, 3.3 | Ulineære systemer, linearisering, 2-dimensionale systemer | [[Courses/Differential Equations and Infinite Series/Uger/Uge 13\|13]] |
-| 4.1 til 4.4 | Uegentlige integraler, talfølger, Taylors sætning, uendelige rækker | [[Courses/Differential Equations and Infinite Series/Uger/Uge 04\|4]] |
-| 4.5 | Konvergenskriterier | [[Courses/Differential Equations and Infinite Series/Uger/Uge 05\|5]] |
-| 4.6, 4.7 | Vurdering af summen, alternerende rækker | [[Courses/Differential Equations and Infinite Series/Uger/Uge 06\|6]] |
-| 5.1, 5.2 | Kvotientrækker, potensrækker | [[Courses/Differential Equations and Infinite Series/Uger/Uge 05\|5]], [[Courses/Differential Equations and Infinite Series/Uger/Uge 07\|7]] |
-| 5.3, 5.4 | Funktionsrækker, uniform konvergens | [[Courses/Differential Equations and Infinite Series/Uger/Uge 08\|8]] |
-| 6.1, 6.2 | Fourierrækker, Fouriers sætning | [[Courses/Differential Equations and Infinite Series/Uger/Uge 09\|9]], [[Courses/Differential Equations and Infinite Series/Uger/Uge 10\|10]] |
-| 6.3, 6.4 | Kompleks form, Parsevals sætning | [[Courses/Differential Equations and Infinite Series/Uger/Uge 10\|10]] |
-| 7.1, 7.2 | Potensrækkemetoden, Fourierrækkemetoden | [[Courses/Differential Equations and Infinite Series/Uger/Uge 12\|12]] |
-| 7.3 | Approksimation i effekt | [[Courses/Differential Equations and Infinite Series/Uger/Uge 11\|11]] |
+| 1.1 til 1.4 | $n$'te ordens ligninger, homogen og inhomogen, overføringsfunktion | [[Courses/Differential Equations and Infinite Series/Uger/Uge 01 - n'te ordens ligninger og overføringsfunktion\|1]] |
+| 1.5 til og med sætning 1.28 | Frekvenskarakteristikker | [[Courses/Differential Equations and Infinite Series/Uger/Uge 01 - n'te ordens ligninger og overføringsfunktion\|1]] |
+| 1.6 | Ligninger med variable koefficienter | [[Courses/Differential Equations and Infinite Series/Uger/Uge 12 - Variable koefficienter og rækkemetoder\|12]] |
+| 2.1 til 2.5 | Systemer, egenværdimetoden, fundamentalmatrix, inhomogene systemer, variable koefficienter | [[Courses/Differential Equations and Infinite Series/Uger/Uge 02 - Systemer af differentialligninger\|2]] |
+| 2.6, 2.8 | Overføringsfunktion for systemer, stabilitet | [[Courses/Differential Equations and Infinite Series/Uger/Uge 03 - Overføringsfunktion for systemer og stabilitet\|3]] |
+| 2.9 | Stabilitet af inhomogene systemer, BIBO | [[Courses/Differential Equations and Infinite Series/Uger/Uge 04 - Inhomogen stabilitet og uendelige rækker\|4]] |
+| 3.1, 3.3 | Ulineære systemer, linearisering, 2-dimensionale systemer | [[Courses/Differential Equations and Infinite Series/Uger/Uge 13 - Ulineære differentialligninger og repetition\|13]] |
+| 4.1 til 4.4 | Uegentlige integraler, talfølger, Taylors sætning, uendelige rækker | [[Courses/Differential Equations and Infinite Series/Uger/Uge 04 - Inhomogen stabilitet og uendelige rækker\|4]] |
+| 4.5 | Konvergenskriterier | [[Courses/Differential Equations and Infinite Series/Uger/Uge 05 - Konvergenskriterier og kvotientrækker\|5]] |
+| 4.6, 4.7 | Vurdering af summen, alternerende rækker | [[Courses/Differential Equations and Infinite Series/Uger/Uge 06 - Vurdering af summen og alternerende rækker\|6]] |
+| 5.1, 5.2 | Kvotientrækker, potensrækker | [[Courses/Differential Equations and Infinite Series/Uger/Uge 05 - Konvergenskriterier og kvotientrækker\|5]], [[Courses/Differential Equations and Infinite Series/Uger/Uge 07 - Potensrækker\|7]] |
+| 5.3, 5.4 | Funktionsrækker, uniform konvergens | [[Courses/Differential Equations and Infinite Series/Uger/Uge 08 - Uniform konvergens\|8]] |
+| 6.1, 6.2 | Fourierrækker, Fouriers sætning | [[Courses/Differential Equations and Infinite Series/Uger/Uge 09 - Fourierrækker\|9]], [[Courses/Differential Equations and Infinite Series/Uger/Uge 10 - Kompleks form og Parsevals sætning\|10]] |
+| 6.3, 6.4 | Kompleks form, Parsevals sætning | [[Courses/Differential Equations and Infinite Series/Uger/Uge 10 - Kompleks form og Parsevals sætning\|10]] |
+| 7.1, 7.2 | Potensrækkemetoden, Fourierrækkemetoden | [[Courses/Differential Equations and Infinite Series/Uger/Uge 12 - Variable koefficienter og rækkemetoder\|12]] |
+| 7.3 | Approksimation i effekt | [[Courses/Differential Equations and Infinite Series/Uger/Uge 11 - Effekt, Fouriers sætning og miniprojekt 2\|11]] |
 | Appendiks A.1 til A.10 (til og med proposition A.32) | Supremum (uge 5), vektorrum og differentialoperatorer (uge 1), systemer (uge 2), stabilitet (uge 3), Taylor (uge 4), konvergenskriterier (uge 5, 6), potensrækker og funktionsrækker (uge 7, 8), Fouriers sætning (uge 11) | se ugerne |
-| Appendiks B | Potensrækker og Fourierrækker for standardfunktioner | [[Courses/Differential Equations and Infinite Series/Uger/Uge 07\|7]] |
-| Appendiks C | Fourierrækker for $T$-periodiske funktioner | [[Courses/Differential Equations and Infinite Series/Uger/Uge 09\|9]], [[Courses/Differential Equations and Infinite Series/Uger/Uge 10\|10]] |
+| Appendiks B | Potensrækker og Fourierrækker for standardfunktioner | [[Courses/Differential Equations and Infinite Series/Uger/Uge 07 - Potensrækker\|7]] |
+| Appendiks C | Fourierrækker for $T$-periodiske funktioner | [[Courses/Differential Equations and Infinite Series/Uger/Uge 09 - Fourierrækker\|9]], [[Courses/Differential Equations and Infinite Series/Uger/Uge 10 - Kompleks form og Parsevals sætning\|10]] |
 
 Ikke pensum, men gennemgået eller nævnt: resten af 1.5 efter sætning 1.28, 2.7 (frekvenskarakteristikker for systemer, læses selv i uge 3), 3.2 (1-dimensionale autonome systemer, uge 13) og Fourierrækker som mindste kvadraters løsning (slides uge 9).
 
@@ -67,19 +67,19 @@ Kursusbeskrivelsens læringsmål (kurser.dtu.dk) dækker de samme emner: løsnin
 
 | Uge | Note | Emne | Afsnit | Aflevering |
 |---|---|---|---|---|
-| 1 | [[Courses/Differential Equations and Infinite Series/Uger/Uge 01\|Uge 1]] | $n$'te ordens ligninger, overføringsfunktion | 1.1 til 1.5, A.2, A.3 | Hj.op. 1 (Möbius) |
-| 2 | [[Courses/Differential Equations and Infinite Series/Uger/Uge 02\|Uge 2]] | Systemer af differentialligninger | 2.1 til 2.5 | Hj.op. 2 (903, 912) |
-| 3 | [[Courses/Differential Equations and Infinite Series/Uger/Uge 03\|Uge 3]] | Overføringsfunktion for systemer, stabilitet | 2.6, 2.8 | Hj.op. 3 (915) |
-| 4 | [[Courses/Differential Equations and Infinite Series/Uger/Uge 04\|Uge 4]] | Stabilitet, talfølger, rækker | 2.9, 4.1 til 4.4 | Miniprojekt 1 |
-| 5 | [[Courses/Differential Equations and Infinite Series/Uger/Uge 05\|Uge 5]] | Konvergenskriterier, kvotientrækker | 4.5, 5.1 | Hj.op. 4 (Opgave A) |
-| 6 | [[Courses/Differential Equations and Infinite Series/Uger/Uge 06\|Uge 6]] | Vurdering af summen, alternerende rækker | 4.6, 4.7 | Hj.op. 5 (Möbius) |
-| 7 | [[Courses/Differential Equations and Infinite Series/Uger/Uge 07\|Uge 7]] | Potensrækker | 5.1, 5.2 | Hj.op. 6 (F24 B1, opgave 811) |
-| 8 | [[Courses/Differential Equations and Infinite Series/Uger/Uge 08\|Uge 8]] | Uniform konvergens | 5.3, 5.4 | Hj.op. 7 (E21 B4) |
-| 9 | [[Courses/Differential Equations and Infinite Series/Uger/Uge 09\|Uge 9]] | Fourierrækker | 6.1, 6.2, app. C | Hj.op. 8 (Möbius) |
-| 10 | [[Courses/Differential Equations and Infinite Series/Uger/Uge 10\|Uge 10]] | Kompleks form, Parseval | 6.2 til 6.4 | Hj.op. 9 (Möbius) |
-| 11 | [[Courses/Differential Equations and Infinite Series/Uger/Uge 11\|Uge 11]] | Effekt, Fouriers sætning | 7.3 | Miniprojekt 2 |
-| 12 | [[Courses/Differential Equations and Infinite Series/Uger/Uge 12\|Uge 12]] | Variable koefficienter, potensrække- og Fourierrækkemetoden | 1.6, 7.1, 7.2 | Hj.op. 10 (Möbius) |
-| 13 | [[Courses/Differential Equations and Infinite Series/Uger/Uge 13\|Uge 13]] | Ulineære differentialligninger, repetition | 3.1 til 3.3 | |
+| 1 | [[Courses/Differential Equations and Infinite Series/Uger/Uge 01 - n'te ordens ligninger og overføringsfunktion\|Uge 1]] | $n$'te ordens ligninger, overføringsfunktion | 1.1 til 1.5, A.2, A.3 | Hj.op. 1 (Möbius) |
+| 2 | [[Courses/Differential Equations and Infinite Series/Uger/Uge 02 - Systemer af differentialligninger\|Uge 2]] | Systemer af differentialligninger | 2.1 til 2.5 | Hj.op. 2 (903, 912) |
+| 3 | [[Courses/Differential Equations and Infinite Series/Uger/Uge 03 - Overføringsfunktion for systemer og stabilitet\|Uge 3]] | Overføringsfunktion for systemer, stabilitet | 2.6, 2.8 | Hj.op. 3 (915) |
+| 4 | [[Courses/Differential Equations and Infinite Series/Uger/Uge 04 - Inhomogen stabilitet og uendelige rækker\|Uge 4]] | Stabilitet, talfølger, rækker | 2.9, 4.1 til 4.4 | Miniprojekt 1 |
+| 5 | [[Courses/Differential Equations and Infinite Series/Uger/Uge 05 - Konvergenskriterier og kvotientrækker\|Uge 5]] | Konvergenskriterier, kvotientrækker | 4.5, 5.1 | Hj.op. 4 (Opgave A) |
+| 6 | [[Courses/Differential Equations and Infinite Series/Uger/Uge 06 - Vurdering af summen og alternerende rækker\|Uge 6]] | Vurdering af summen, alternerende rækker | 4.6, 4.7 | Hj.op. 5 (Möbius) |
+| 7 | [[Courses/Differential Equations and Infinite Series/Uger/Uge 07 - Potensrækker\|Uge 7]] | Potensrækker | 5.1, 5.2 | Hj.op. 6 (F24 B1, opgave 811) |
+| 8 | [[Courses/Differential Equations and Infinite Series/Uger/Uge 08 - Uniform konvergens\|Uge 8]] | Uniform konvergens | 5.3, 5.4 | Hj.op. 7 (E21 B4) |
+| 9 | [[Courses/Differential Equations and Infinite Series/Uger/Uge 09 - Fourierrækker\|Uge 9]] | Fourierrækker | 6.1, 6.2, app. C | Hj.op. 8 (Möbius) |
+| 10 | [[Courses/Differential Equations and Infinite Series/Uger/Uge 10 - Kompleks form og Parsevals sætning\|Uge 10]] | Kompleks form, Parseval | 6.2 til 6.4 | Hj.op. 9 (Möbius) |
+| 11 | [[Courses/Differential Equations and Infinite Series/Uger/Uge 11 - Effekt, Fouriers sætning og miniprojekt 2\|Uge 11]] | Effekt, Fouriers sætning | 7.3 | Miniprojekt 2 |
+| 12 | [[Courses/Differential Equations and Infinite Series/Uger/Uge 12 - Variable koefficienter og rækkemetoder\|Uge 12]] | Variable koefficienter, potensrække- og Fourierrækkemetoden | 1.6, 7.1, 7.2 | Hj.op. 10 (Möbius) |
+| 13 | [[Courses/Differential Equations and Infinite Series/Uger/Uge 13 - Ulineære differentialligninger og repetition\|Uge 13]] | Ulineære differentialligninger, repetition | 3.1 til 3.3 | |
 
 ## Hvor opgaverne kommer fra
 

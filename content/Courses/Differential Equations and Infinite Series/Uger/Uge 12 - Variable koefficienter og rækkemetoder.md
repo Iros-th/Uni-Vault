@@ -39,7 +39,7 @@ Ligningen skal være normaliseret (koefficient $1$ på $y''$), før $a_1(t)$ afl
 
 $$y_0(t) = y_1(t)\int\frac{1}{y_1(t)^2\,\Omega(t)}\left[\int y_1(t)\,\Omega(t)\,u(t)\,dt\right]dt.$$
 
-Den formel bruges i løsningen til opgave 919 (iv) i WeeklyNotes3.pdf, se [[Courses/Differential Equations and Infinite Series/Uger/Uge 03|uge 3]]: $y'' - y = 2e^t$ med $y_1 = e^t$ og $\Omega = 1$ giver $y_0 = e^t\int e^{-2t}\left[\int 2e^{2t}dt\right]dt = te^t$.
+Den formel bruges i løsningen til opgave 919 (iv) i WeeklyNotes3.pdf, se [[Courses/Differential Equations and Infinite Series/Uger/Uge 03 - Overføringsfunktion for systemer og stabilitet|uge 3]]: $y'' - y = 2e^t$ med $y_1 = e^t$ og $\Omega = 1$ giver $y_0 = e^t\int e^{-2t}\left[\int 2e^{2t}dt\right]dt = te^t$.
 
 **Eksempel.** Betragt Euler-Cauchy ligningen $y'' - \frac{2}{t}y' + \frac{2}{t^2}y = 0$ for $t > 0$.
 1. Gæt løsningen $y_1(t) = t$: da er $y_1' = 1, y_1'' = 0$. Indsættelse giver $0 - \frac{2}{t}\cdot 1 + \frac{2}{t^2}\cdot t = -\frac{2}{t} + \frac{2}{t} = 0$, så $y_1$ er en løsning.
@@ -170,7 +170,7 @@ hvor $H(s) = -\mathbf c^\top(A - sI)^{-1}\mathbf b = \mathbf c^\top(sI - A)^{-1}
 ## Links
 
 - [[Courses/Differential Equations and Infinite Series/Uger/Oversigt|Ugeoversigt 01025]]
-- Forrige: [[Courses/Differential Equations and Infinite Series/Uger/Uge 11|Uge 11: Effekt og miniprojekt 2]]
-- Næste: [[Courses/Differential Equations and Infinite Series/Uger/Uge 13|Uge 13: Ulineære differentialligninger og repetition]]
+- Forrige: [[Courses/Differential Equations and Infinite Series/Uger/Uge 11 - Effekt, Fouriers sætning og miniprojekt 2|Uge 11: Effekt og miniprojekt 2]]
+- Næste: [[Courses/Differential Equations and Infinite Series/Uger/Uge 13 - Ulineære differentialligninger og repetition|Uge 13: Ulineære differentialligninger og repetition]]
 - [[Differential Equations and Infinite Series]]
 - [[Courses/Differential Equations and Infinite Series/Speedrun Map|Speedrun Map]]

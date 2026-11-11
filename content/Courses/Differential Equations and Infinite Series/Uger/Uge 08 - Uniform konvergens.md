@@ -98,6 +98,6 @@ Bevisidé (slides): $g = \sum f_n'$ er kontinuert, og ledvis integration giver $
 ## Links
 
 - [[Courses/Differential Equations and Infinite Series/Uger/Oversigt|Ugeoversigt 01025]]
-- Forrige: [[Courses/Differential Equations and Infinite Series/Uger/Uge 07|Uge 7]]
-- Næste: [[Courses/Differential Equations and Infinite Series/Uger/Uge 09|Uge 9: Fourierrækker]]
+- Forrige: [[Courses/Differential Equations and Infinite Series/Uger/Uge 07 - Potensrækker|Uge 7]]
+- Næste: [[Courses/Differential Equations and Infinite Series/Uger/Uge 09 - Fourierrækker|Uge 9: Fourierrækker]]
 - [[Differential Equations and Infinite Series]]

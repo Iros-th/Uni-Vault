@@ -15,7 +15,7 @@ tags:
 
 ## Emner
 
-- Fortsættelse af Projekt 5, Filmanbefaling, mandag 23/11 2026 (Georgios Arvanitidis), se [[Courses/Introduction to applied mathematics/Uger/Uge 11|Uge 11]]
+- Fortsættelse af Projekt 5, Filmanbefaling, mandag 23/11 2026 (Georgios Arvanitidis), se [[Courses/Introduction to applied mathematics/Uger/Uge 11 - Filmanbefaling, del 1|Uge 11]]
 - Rapportdeadline 29/11
 
 ## Opgaver

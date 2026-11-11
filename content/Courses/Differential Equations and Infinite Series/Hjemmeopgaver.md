@@ -25,18 +25,18 @@ Alle afleveringer i porteføljen samlet ét sted, med frist, hvad opgaven går u
 
 | Sæt | Frist | Indhold | Emne | Uge |
 |---|---|---|---|---|
-| 1 | 9/9 kl. 20 | Möbius | $n$'te ordens ligninger | [[Courses/Differential Equations and Infinite Series/Uger/Uge 01\|Uge 1]] |
-| 2 | 15/9 kl. 20 (Möbius), 16/9 kl. 8 (fysisk) | Möbius, opgave 903 og 912 | Dobbeltrod, lineær uafhængighed | [[Courses/Differential Equations and Infinite Series/Uger/Uge 02\|Uge 2]] |
-| 3 | 22/9 kl. 20 (Möbius), 23/9 kl. 8 (fysisk) | Möbius, opgave 915 | Stationært svar for systemer | [[Courses/Differential Equations and Infinite Series/Uger/Uge 03\|Uge 3]] |
-| Miniprojekt 1 | 30/9 kl. 8 | Opgave 1 og 3 fysisk, opgave 2 i Möbius | Løsningsstruktur, overføringsfunktion, komplekse koefficienter | [[Courses/Differential Equations and Infinite Series/Uger/Uge 04\|Uge 4]] |
-| 4 | 6/10 kl. 20 (Möbius), 7/10 kl. 8 (fysisk) | Möbius Sæt4-01025, Opgave A | Kvotientkriteriet | [[Courses/Differential Equations and Infinite Series/Uger/Uge 05\|Uge 5]] |
-| 5 | 20/10 kl. 20 | Möbius | Rækker af tal | [[Courses/Differential Equations and Infinite Series/Uger/Uge 06\|Uge 6]] |
-| 6 | 27/10 kl. 20 (Möbius), 28/10 kl. 8 (fysisk) | Möbius sæt 6, eksamen maj 2024 del B opgave 1, Spiseseddelopgave 1 (iii) og (iv) | Absolut og betinget konvergens, kvotientkriteriet | [[Courses/Differential Equations and Infinite Series/Uger/Uge 07\|Uge 7]] |
-| 7 | 4/11 kl. 8 | Möbius sæt 7 (to opgaver), eksamen B-E21 opgave 4 | Uniform konvergens | [[Courses/Differential Equations and Infinite Series/Uger/Uge 08\|Uge 8]] |
-| 8 | 11/11 kl. 8 | Möbius Sæt8MC-01025 og Sæt8B-01025 | Fourierrækker | [[Courses/Differential Equations and Infinite Series/Uger/Uge 09\|Uge 9]] |
-| 9 | 18/11 kl. 20 | Möbius Sæt9-01025 | Fourierrækker, kompleks form, Parseval | [[Courses/Differential Equations and Infinite Series/Uger/Uge 10\|Uge 10]] |
-| Miniprojekt 2 | 25/11 kl. 8 | Projektopgave 1 til 4, fysisk | Fouriers sætning, Fourierrækkemetoden | [[Courses/Differential Equations and Infinite Series/Uger/Uge 11\|Uge 11]] |
-| 10 | 2/12 kl. 8 | Möbius Sæt10-inhomogen-01025 og Sæt10-01025 | Inhomogene ligninger, potensrækkemetoden | [[Courses/Differential Equations and Infinite Series/Uger/Uge 12\|Uge 12]] |
+| 1 | 9/9 kl. 20 | Möbius | $n$'te ordens ligninger | [[Courses/Differential Equations and Infinite Series/Uger/Uge 01 - n'te ordens ligninger og overføringsfunktion\|Uge 1]] |
+| 2 | 15/9 kl. 20 (Möbius), 16/9 kl. 8 (fysisk) | Möbius, opgave 903 og 912 | Dobbeltrod, lineær uafhængighed | [[Courses/Differential Equations and Infinite Series/Uger/Uge 02 - Systemer af differentialligninger\|Uge 2]] |
+| 3 | 22/9 kl. 20 (Möbius), 23/9 kl. 8 (fysisk) | Möbius, opgave 915 | Stationært svar for systemer | [[Courses/Differential Equations and Infinite Series/Uger/Uge 03 - Overføringsfunktion for systemer og stabilitet\|Uge 3]] |
+| Miniprojekt 1 | 30/9 kl. 8 | Opgave 1 og 3 fysisk, opgave 2 i Möbius | Løsningsstruktur, overføringsfunktion, komplekse koefficienter | [[Courses/Differential Equations and Infinite Series/Uger/Uge 04 - Inhomogen stabilitet og uendelige rækker\|Uge 4]] |
+| 4 | 6/10 kl. 20 (Möbius), 7/10 kl. 8 (fysisk) | Möbius Sæt4-01025, Opgave A | Kvotientkriteriet | [[Courses/Differential Equations and Infinite Series/Uger/Uge 05 - Konvergenskriterier og kvotientrækker\|Uge 5]] |
+| 5 | 20/10 kl. 20 | Möbius | Rækker af tal | [[Courses/Differential Equations and Infinite Series/Uger/Uge 06 - Vurdering af summen og alternerende rækker\|Uge 6]] |
+| 6 | 27/10 kl. 20 (Möbius), 28/10 kl. 8 (fysisk) | Möbius sæt 6, eksamen maj 2024 del B opgave 1, Spiseseddelopgave 1 (iii) og (iv) | Absolut og betinget konvergens, kvotientkriteriet | [[Courses/Differential Equations and Infinite Series/Uger/Uge 07 - Potensrækker\|Uge 7]] |
+| 7 | 4/11 kl. 8 | Möbius sæt 7 (to opgaver), eksamen B-E21 opgave 4 | Uniform konvergens | [[Courses/Differential Equations and Infinite Series/Uger/Uge 08 - Uniform konvergens\|Uge 8]] |
+| 8 | 11/11 kl. 8 | Möbius Sæt8MC-01025 og Sæt8B-01025 | Fourierrækker | [[Courses/Differential Equations and Infinite Series/Uger/Uge 09 - Fourierrækker\|Uge 9]] |
+| 9 | 18/11 kl. 20 | Möbius Sæt9-01025 | Fourierrækker, kompleks form, Parseval | [[Courses/Differential Equations and Infinite Series/Uger/Uge 10 - Kompleks form og Parsevals sætning\|Uge 10]] |
+| Miniprojekt 2 | 25/11 kl. 8 | Projektopgave 1 til 4, fysisk | Fouriers sætning, Fourierrækkemetoden | [[Courses/Differential Equations and Infinite Series/Uger/Uge 11 - Effekt, Fouriers sætning og miniprojekt 2\|Uge 11]] |
+| 10 | 2/12 kl. 8 | Möbius Sæt10-inhomogen-01025 og Sæt10-01025 | Inhomogene ligninger, potensrækkemetoden | [[Courses/Differential Equations and Infinite Series/Uger/Uge 12 - Variable koefficienter og rækkemetoder\|Uge 12]] |
 
 ## Hjemmeopgavesæt 1
 

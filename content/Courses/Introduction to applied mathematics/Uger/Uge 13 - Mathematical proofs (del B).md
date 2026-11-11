@@ -65,4 +65,4 @@ Fra `proofs_problems2` ("Proofs: Problem Set Two").
 
 - [[Courses/Introduction to applied mathematics/Uger/Oversigt|Oversigt over ugerne]]
 - [[Introduction to applied mathematics|Kursusside]]
-- [[Courses/Introduction to applied mathematics/Uger/Uge 01|Uge 1, del A af bevisprojektet]]
+- [[Courses/Introduction to applied mathematics/Uger/Uge 01 - Kursusintro og Mathematical proofs (del A)|Uge 1, del A af bevisprojektet]]

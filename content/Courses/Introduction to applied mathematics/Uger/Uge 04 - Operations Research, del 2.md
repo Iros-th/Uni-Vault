@@ -60,7 +60,7 @@ Slidet skriver objektfunktionen som max. Modellen virker kun op til cirka $30$ b
 **Videre.** DORS (dansk OR-forening) og DTU-kurser som 42101 Introduktion til operationsanalyse (BSc) og 42112, 42114, 42115 (MSc).
 ## Opgaver
 
-- Projektet `OR_Projekt.pdf` fortsætter: spørgsmål 1 til 18 (se listen i [[Courses/Introduction to applied mathematics/Uger/Uge 03|Uge 3]]). Rapportdeadline 27/9.
+- Projektet `OR_Projekt.pdf` fortsætter: spørgsmål 1 til 18 (se listen i [[Courses/Introduction to applied mathematics/Uger/Uge 03 - Operations Research, del 1|Uge 3]]). Rapportdeadline 27/9.
 - `Tshirt.py` er et løst eksempel (T-shirt-modellen) at tage udgangspunkt i, når projektet skal kodes i PuLP.
 - Slides har ikke nummererede øvelser udover diskussionsspørgsmålene "Opt(KNAPSACK-LP) $\ge$ Opt(KNAPSACK-MIP): hvorfor?" og "Er denne TSP-løsning optimal?".
 

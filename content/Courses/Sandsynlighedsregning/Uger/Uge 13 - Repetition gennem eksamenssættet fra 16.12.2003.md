@@ -29,7 +29,7 @@ tags:
 **Sammenhæng mellem ugerne.** Kapitel 1 til 3 er grundlaget (hændelser, betinget sandsynlighed, diskrete variable, middelværdi, varians). Kapitel 4 til 6 bygger på dem og på analyse (tætheder, variabelskift, simultane og betingede fordelinger, normalfordelingen). Velkomstteksten forklarer, at mange oplever et knæk i indlæringen i anden halvdel af kurset, netop fordi kapitel 4 til 6 trækker på kapitel 1 til 3.
 ## Opgaver
 
-Kursussiden lister til øvelsen fredag 4. december (repetition af uge 12): se [[Courses/Sandsynlighedsregning/Uger/Uge 12|uge 12]].
+Kursussiden lister til øvelsen fredag 4. december (repetition af uge 12): se [[Courses/Sandsynlighedsregning/Uger/Uge 12 - Den bivariate normalfordeling|uge 12]].
 
 Øvelsesopgaver, kursussidens slutning: "Eksamen 30/5/2016" (eksamenssæt, link på kursussiden).
 

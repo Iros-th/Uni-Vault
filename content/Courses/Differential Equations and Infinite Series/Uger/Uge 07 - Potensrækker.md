@@ -112,6 +112,6 @@ Maple-filen plotter en lakunær potensrække (kun potenserne $x^{2^n}$ er med, m
 ## Links
 
 - [[Courses/Differential Equations and Infinite Series/Uger/Oversigt|Ugeoversigt 01025]]
-- Forrige: [[Courses/Differential Equations and Infinite Series/Uger/Uge 06|Uge 6]]
-- Næste: [[Courses/Differential Equations and Infinite Series/Uger/Uge 08|Uge 8: Uniform konvergens]]
+- Forrige: [[Courses/Differential Equations and Infinite Series/Uger/Uge 06 - Vurdering af summen og alternerende rækker|Uge 6]]
+- Næste: [[Courses/Differential Equations and Infinite Series/Uger/Uge 08 - Uniform konvergens|Uge 8: Uniform konvergens]]
 - [[Differential Equations and Infinite Series]]

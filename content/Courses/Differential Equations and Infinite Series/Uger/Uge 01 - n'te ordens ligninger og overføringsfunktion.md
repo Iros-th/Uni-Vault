@@ -147,5 +147,5 @@ Alle numre er fra opgavesamlingen bagerst i lærebogen (bilag F). Facitlisten (f
 ## Links
 
 - [[Courses/Differential Equations and Infinite Series/Uger/Oversigt|Ugeoversigt 01025]]
-- Næste: [[Courses/Differential Equations and Infinite Series/Uger/Uge 02|Uge 2: Systemer af differentialligninger]]
+- Næste: [[Courses/Differential Equations and Infinite Series/Uger/Uge 02 - Systemer af differentialligninger|Uge 2: Systemer af differentialligninger]]
 - [[Differential Equations and Infinite Series]]

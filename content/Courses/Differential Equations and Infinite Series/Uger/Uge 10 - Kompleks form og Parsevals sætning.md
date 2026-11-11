@@ -166,7 +166,7 @@ Lad $f: \mathbb{R} \to \mathbb{C}$ være en $T$-periodisk funktion, der er integ
 
 **Maple (Uge10Maple):** eksemplet fra forelæsningen tager udgangspunkt i opgave 510 og beregner antal led efter korollar 6.20 og en sum via Parsevals ligning, kontrolleret mod Maples bibliotek.
 
-**Løsningsnoter:** WeeklyNotes9.pdf (under uge 10 på DTU Learn) løser opgave 222 (c): med $a_n = 0$ og $b_n = \frac2n(-1)^{n+1}$ giver lemma 6.26 $c_0 = 0$ og $c_n = \frac{i}{n}(-1)^n$ for $n \neq 0$. Resten af opgave 222 er beskrevet i [[Courses/Differential Equations and Infinite Series/Uger/Uge 09|uge 9]].
+**Løsningsnoter:** WeeklyNotes9.pdf (under uge 10 på DTU Learn) løser opgave 222 (c): med $a_n = 0$ og $b_n = \frac2n(-1)^{n+1}$ giver lemma 6.26 $c_0 = 0$ og $c_n = \frac{i}{n}(-1)^n$ for $n \neq 0$. Resten af opgave 222 er beskrevet i [[Courses/Differential Equations and Infinite Series/Uger/Uge 09 - Fourierrækker|uge 9]].
 
 ## Tjek dig selv
 
@@ -180,7 +180,7 @@ Lad $f: \mathbb{R} \to \mathbb{C}$ være en $T$-periodisk funktion, der er integ
 ## Links
 
 - [[Courses/Differential Equations and Infinite Series/Uger/Oversigt|Ugeoversigt 01025]]
-- Forrige: [[Courses/Differential Equations and Infinite Series/Uger/Uge 09|Uge 9: Fourierrækker]]
-- Næste: [[Courses/Differential Equations and Infinite Series/Uger/Uge 11|Uge 11: Effekt, Fouriers sætning og miniprojekt 2]]
+- Forrige: [[Courses/Differential Equations and Infinite Series/Uger/Uge 09 - Fourierrækker|Uge 9: Fourierrækker]]
+- Næste: [[Courses/Differential Equations and Infinite Series/Uger/Uge 11 - Effekt, Fouriers sætning og miniprojekt 2|Uge 11: Effekt, Fouriers sætning og miniprojekt 2]]
 - [[Differential Equations and Infinite Series]]
 - [[Courses/Differential Equations and Infinite Series/Speedrun Map|Speedrun Map]]

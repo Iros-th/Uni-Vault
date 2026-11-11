@@ -185,7 +185,7 @@ Her er endda $\frac{n}{2n+1} \leq \frac12$ for alle $n$, så $|a_n| \leq \left(\
 ## Links
 
 - [[Courses/Differential Equations and Infinite Series/Uger/Oversigt|Ugeoversigt 01025]]
-- Forrige: [[Courses/Differential Equations and Infinite Series/Uger/Uge 08|Uge 8: Uniform konvergens]]
-- Næste: [[Courses/Differential Equations and Infinite Series/Uger/Uge 10|Uge 10: Kompleks form og Parseval]]
+- Forrige: [[Courses/Differential Equations and Infinite Series/Uger/Uge 08 - Uniform konvergens|Uge 8: Uniform konvergens]]
+- Næste: [[Courses/Differential Equations and Infinite Series/Uger/Uge 10 - Kompleks form og Parsevals sætning|Uge 10: Kompleks form og Parseval]]
 - [[Differential Equations and Infinite Series]]
 - [[Courses/Differential Equations and Infinite Series/Speedrun Map|Speedrun Map]]

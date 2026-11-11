@@ -23,19 +23,19 @@ Komplet studiesamling for DTU-kurset *01025 Differentialligninger og uendelige r
 
 ## Ugenoter (Uge 1 til 13)
 
-- [[Courses/Differential Equations and Infinite Series/Uger/Uge 01|Uge 1: n'te ordens lineære ligninger og overføringsfunktion]]
-- [[Courses/Differential Equations and Infinite Series/Uger/Uge 02|Uge 2: Systemer af differentialligninger]]
-- [[Courses/Differential Equations and Infinite Series/Uger/Uge 03|Uge 3: Overføringsfunktion for systemer og stabilitet]]
-- [[Courses/Differential Equations and Infinite Series/Uger/Uge 04|Uge 4: Stabilitet af inhomogene systemer og uendelige rækker]]
-- [[Courses/Differential Equations and Infinite Series/Uger/Uge 05|Uge 5: Konvergenskriterier og kvotientrækker]]
-- [[Courses/Differential Equations and Infinite Series/Uger/Uge 06|Uge 6: Vurdering af summen og alternerende rækker]]
-- [[Courses/Differential Equations and Infinite Series/Uger/Uge 07|Uge 7: Potensrækker]]
-- [[Courses/Differential Equations and Infinite Series/Uger/Uge 08|Uge 8: Uniform konvergens]]
-- [[Courses/Differential Equations and Infinite Series/Uger/Uge 09|Uge 9: Fourierrækker]]
-- [[Courses/Differential Equations and Infinite Series/Uger/Uge 10|Uge 10: Kompleks form og Parseval]]
-- [[Courses/Differential Equations and Infinite Series/Uger/Uge 11|Uge 11: Effekt, Fouriers sætning og miniprojekt 2]]
-- [[Courses/Differential Equations and Infinite Series/Uger/Uge 12|Uge 12: Variable koefficienter, potensrække- og Fourierrækkemetoden]]
-- [[Courses/Differential Equations and Infinite Series/Uger/Uge 13|Uge 13: Ulineære differentialligninger og repetition]]
+- [[Courses/Differential Equations and Infinite Series/Uger/Uge 01 - n'te ordens ligninger og overføringsfunktion|Uge 1: n'te ordens lineære ligninger og overføringsfunktion]]
+- [[Courses/Differential Equations and Infinite Series/Uger/Uge 02 - Systemer af differentialligninger|Uge 2: Systemer af differentialligninger]]
+- [[Courses/Differential Equations and Infinite Series/Uger/Uge 03 - Overføringsfunktion for systemer og stabilitet|Uge 3: Overføringsfunktion for systemer og stabilitet]]
+- [[Courses/Differential Equations and Infinite Series/Uger/Uge 04 - Inhomogen stabilitet og uendelige rækker|Uge 4: Stabilitet af inhomogene systemer og uendelige rækker]]
+- [[Courses/Differential Equations and Infinite Series/Uger/Uge 05 - Konvergenskriterier og kvotientrækker|Uge 5: Konvergenskriterier og kvotientrækker]]
+- [[Courses/Differential Equations and Infinite Series/Uger/Uge 06 - Vurdering af summen og alternerende rækker|Uge 6: Vurdering af summen og alternerende rækker]]
+- [[Courses/Differential Equations and Infinite Series/Uger/Uge 07 - Potensrækker|Uge 7: Potensrækker]]
+- [[Courses/Differential Equations and Infinite Series/Uger/Uge 08 - Uniform konvergens|Uge 8: Uniform konvergens]]
+- [[Courses/Differential Equations and Infinite Series/Uger/Uge 09 - Fourierrækker|Uge 9: Fourierrækker]]
+- [[Courses/Differential Equations and Infinite Series/Uger/Uge 10 - Kompleks form og Parsevals sætning|Uge 10: Kompleks form og Parseval]]
+- [[Courses/Differential Equations and Infinite Series/Uger/Uge 11 - Effekt, Fouriers sætning og miniprojekt 2|Uge 11: Effekt, Fouriers sætning og miniprojekt 2]]
+- [[Courses/Differential Equations and Infinite Series/Uger/Uge 12 - Variable koefficienter og rækkemetoder|Uge 12: Variable koefficienter, potensrække- og Fourierrækkemetoden]]
+- [[Courses/Differential Equations and Infinite Series/Uger/Uge 13 - Ulineære differentialligninger og repetition|Uge 13: Ulineære differentialligninger og repetition]]
 
 ## Referencer og formler
 

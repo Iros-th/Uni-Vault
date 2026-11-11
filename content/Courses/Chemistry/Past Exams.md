@@ -30,19 +30,19 @@ Tabellen kortlægger spørgsmålene fra **Efterår 2024** (20 spørgsmål) og **
 
 | Uge | Emne | Efterår 2024 (spm.) | Forår 2025 (spm.) | Hovedformler og nøglebegreber |
 |---|---|---|---|---|
-| [[Courses/Chemistry/Uger/Uge 01\|Uge 1]] | Atomer, isotoper, mol, ioner i opløsning | Spm. 2 | Spm. 2, 28 | $n = \frac{m}{M}$, $c = \frac{n}{V}$, isotop-fordeling |
-| [[Courses/Chemistry/Uger/Uge 02\|Uge 2]] | Støkiometri, reaktionsafstemning og gasser | Spm. 3, 4 | Spm. 26, 29 | $PV = nRT$, udbytteprocent, begrænsende reaktant |
-| [[Courses/Chemistry/Uger/Uge 03\|Uge 3]] | Termokemi og bindingsenthalpier | (ingen) | Spm. 21, 30 | $\Delta H^\circ_{rx} = \sum \Delta H_f^\circ(\text{prod}) - \sum \Delta H_f^\circ(\text{reakt})$, Hess' lov |
-| [[Courses/Chemistry/Uger/Uge 04\|Uge 4]] | Elektroner, kvantetal og periodiske tendenser | Spm. 1, 7, 8 | Spm. 8, 19, 25 | Kvantetal $(n, l, m_l, m_s)$, radius $\downarrow\to$, elektronegativitet $\uparrow\to$ |
-| [[Courses/Chemistry/Uger/Uge 05\|Uge 5]] | Lewis-strukturer, VSEPR og hybridisering | Spm. 9 | Spm. 1, 3, 9, 13 | $FC = VE - LP - \frac{1}{2}BE$, VSEPR geometri, dipolmoment |
-| [[Courses/Chemistry/Uger/Uge 06\|Uge 6]] / [[Courses/Chemistry/Uger/Uge 12\|12]] | Polymerer og kondensation (PET) | Spm. 16 | (ingen) | Monomerer, esterbindinger, polymerisationsgrad |
-| [[Courses/Chemistry/Uger/Uge 07\|Uge 7]] | Intermolekylære kræfter og opløsninger | Spm. 10, 11, 12 | Spm. 6, 15, 27 | Hydrogenbindinger, $\Delta T_f = i K_f m$, $\Pi = i c R T$, krystalgitter |
-| [[Courses/Chemistry/Uger/Uge 08\|Uge 8]] | Kinetik, ligevægt og Le Chatelier | Spm. 13, 15 | Spm. 4, 14, 18 | Integrerede hastighedslove, Arrhenius $\ln\frac{k_2}{k_1}$, $K_c$ og $K_p$ |
-| [[Courses/Chemistry/Uger/Uge 10\|Uge 10]] | Opløselighedsprodukt ($K_{sp}$) | Spm. 18 | Spm. 12, 24 | Ligevægt for tungtopløselige salte, fældningskriterium $Q > K_{sp}$ |
-| [[Courses/Chemistry/Uger/Uge 10\|Uge 10]] | Syrer, baser og buffere | Spm. 17 | Spm. 16, 17, 23 | $\text{pH} = -\log[\text{H}_3\text{O}^+]$, $\text{pH} = \text{p}K_a + \log\frac{[\text{A}^-]}{[\text{HA}]}$ |
-| [[Courses/Chemistry/Uger/Uge 11\|Uge 11]] | Termodynamik: $\Delta G^\circ$, entropi og spontanitet | Spm. 5, 6 | Spm. 11, 22 | $\Delta G^\circ = \Delta H^\circ - T\Delta S^\circ = -RT\ln K$ |
-| [[Courses/Chemistry/Uger/Uge 11\|Uge 11]] | Redox og elektrokemi | Spm. 19, 20 | Spm. 5, 10, 20 | $E^\circ_{\text{celle}} = E^\circ_{\text{katode}} - E^\circ_{\text{anode}}$, Nernst: $E = E^\circ - \frac{RT}{nF}\ln Q$ |
-| [[Courses/Chemistry/Uger/Uge 12\|Uge 12]] | Organisk kemi: funktionelle grupper og chiralitet | Spm. 14 | Spm. 7 | Alkohol, aldehyd, keton, carboxylsyre, ester; chiralitet |
+| [[Courses/Chemistry/Uger/Uge 01 - Atomer, molekyler og sammensætning\|Uge 1]] | Atomer, isotoper, mol, ioner i opløsning | Spm. 2 | Spm. 2, 28 | $n = \frac{m}{M}$, $c = \frac{n}{V}$, isotop-fordeling |
+| [[Courses/Chemistry/Uger/Uge 02 - Reaktioner, støkiometri og gasser\|Uge 2]] | Støkiometri, reaktionsafstemning og gasser | Spm. 3, 4 | Spm. 26, 29 | $PV = nRT$, udbytteprocent, begrænsende reaktant |
+| [[Courses/Chemistry/Uger/Uge 03 - Energi, termokemi og reaktioner\|Uge 3]] | Termokemi og bindingsenthalpier | (ingen) | Spm. 21, 30 | $\Delta H^\circ_{rx} = \sum \Delta H_f^\circ(\text{prod}) - \sum \Delta H_f^\circ(\text{reakt})$, Hess' lov |
+| [[Courses/Chemistry/Uger/Uge 04 - Elektroner og det periodiske system\|Uge 4]] | Elektroner, kvantetal og periodiske tendenser | Spm. 1, 7, 8 | Spm. 8, 19, 25 | Kvantetal $(n, l, m_l, m_s)$, radius $\downarrow\to$, elektronegativitet $\uparrow\to$ |
+| [[Courses/Chemistry/Uger/Uge 05 - Bindinger, geometri og hybridisering\|Uge 5]] | Lewis-strukturer, VSEPR og hybridisering | Spm. 9 | Spm. 1, 3, 9, 13 | $FC = VE - LP - \frac{1}{2}BE$, VSEPR geometri, dipolmoment |
+| [[Courses/Chemistry/Uger/Uge 06 - Anvendelsesforelæsning 1 (polymerer, beregningskemi, DNA)\|Uge 6]] / [[Courses/Chemistry/Uger/Uge 12 - Organisk kemi\|12]] | Polymerer og kondensation (PET) | Spm. 16 | (ingen) | Monomerer, esterbindinger, polymerisationsgrad |
+| [[Courses/Chemistry/Uger/Uge 07 - Intermolekylære kræfter og opløsninger\|Uge 7]] | Intermolekylære kræfter og opløsninger | Spm. 10, 11, 12 | Spm. 6, 15, 27 | Hydrogenbindinger, $\Delta T_f = i K_f m$, $\Pi = i c R T$, krystalgitter |
+| [[Courses/Chemistry/Uger/Uge 08 - Kinetik og ligevægt\|Uge 8]] | Kinetik, ligevægt og Le Chatelier | Spm. 13, 15 | Spm. 4, 14, 18 | Integrerede hastighedslove, Arrhenius $\ln\frac{k_2}{k_1}$, $K_c$ og $K_p$ |
+| [[Courses/Chemistry/Uger/Uge 10 - Syrer og baser\|Uge 10]] | Opløselighedsprodukt ($K_{sp}$) | Spm. 18 | Spm. 12, 24 | Ligevægt for tungtopløselige salte, fældningskriterium $Q > K_{sp}$ |
+| [[Courses/Chemistry/Uger/Uge 10 - Syrer og baser\|Uge 10]] | Syrer, baser og buffere | Spm. 17 | Spm. 16, 17, 23 | $\text{pH} = -\log[\text{H}_3\text{O}^+]$, $\text{pH} = \text{p}K_a + \log\frac{[\text{A}^-]}{[\text{HA}]}$ |
+| [[Courses/Chemistry/Uger/Uge 11 - Termodynamik, elektrokemi og redox\|Uge 11]] | Termodynamik: $\Delta G^\circ$, entropi og spontanitet | Spm. 5, 6 | Spm. 11, 22 | $\Delta G^\circ = \Delta H^\circ - T\Delta S^\circ = -RT\ln K$ |
+| [[Courses/Chemistry/Uger/Uge 11 - Termodynamik, elektrokemi og redox\|Uge 11]] | Redox og elektrokemi | Spm. 19, 20 | Spm. 5, 10, 20 | $E^\circ_{\text{celle}} = E^\circ_{\text{katode}} - E^\circ_{\text{anode}}$, Nernst: $E = E^\circ - \frac{RT}{nF}\ln Q$ |
+| [[Courses/Chemistry/Uger/Uge 12 - Organisk kemi\|Uge 12]] | Organisk kemi: funktionelle grupper og chiralitet | Spm. 14 | Spm. 7 | Alkohol, aldehyd, keton, carboxylsyre, ester; chiralitet |
 
 ---
 
@@ -107,7 +107,7 @@ $$\text{Zn}(s) \mid \text{Zn}^{2+}(0{,}010\text{ M}) \parallel \text{Cu}^{2+}(0{
 ## Links
 
 - [[Courses/Chemistry/Uger/Oversigt|Kemi: ugeoversigt]]
-- [[Courses/Chemistry/Uger/Uge 13|Uge 13: Eksamensforberedelse]]
+- [[Courses/Chemistry/Uger/Uge 13 - Repetition og eksamensforberedelse|Uge 13: Eksamensforberedelse]]
 - [[Flashcards/Chemistry Flashcards|Kemi Flashcards]]
 - [[Self-Tests/Chemistry Test|Kemi Selvtest]]
 - [[Studie|Studie-træningsrum]]

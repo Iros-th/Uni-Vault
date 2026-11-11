@@ -21,7 +21,7 @@ tags:
 
 ## Hvad kurset selv siger om ugen
 
-General Info samler uge 1 og 2 under "Projekt 1 (del A): Mathematical proofs 1 (Types of argument)" med datoerne 31/8 og 7/9 og deadline 13/9. Der ligger ikke noget separat materiale for uge 2 på DTU Learn ud over det i uge 1. Materialet om tælleargumenter, bijektioner og induktion (`MathProofs1B`, `proofs_problems2`) hører ifølge planen til Projekt 1 del B i uge 13, se [[Courses/Introduction to applied mathematics/Uger/Uge 13|Uge 13]].
+General Info samler uge 1 og 2 under "Projekt 1 (del A): Mathematical proofs 1 (Types of argument)" med datoerne 31/8 og 7/9 og deadline 13/9. Der ligger ikke noget separat materiale for uge 2 på DTU Learn ud over det i uge 1. Materialet om tælleargumenter, bijektioner og induktion (`MathProofs1B`, `proofs_problems2`) hører ifølge planen til Projekt 1 del B i uge 13, se [[Courses/Introduction to applied mathematics/Uger/Uge 13 - Mathematical proofs (del B)|Uge 13]].
 
 
 ## Begreber

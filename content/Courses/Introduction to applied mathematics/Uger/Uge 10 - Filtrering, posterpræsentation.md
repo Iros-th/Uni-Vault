@@ -32,7 +32,7 @@ tags:
 ## Opgaver
 
 - Aflever og fremlæg posteren for Filtreringsprojektet (del 1 og del 2).
-- Opgavebeskrivelsen for uge 1 ([[Courses/Introduction to applied mathematics/Uger/Uge 08|Uge 8]]) beder om at den afspejler hvad man har lært om filtrering af billeder, og at ca. $2/3$ af pladsen bruges på del 2 ([[Courses/Introduction to applied mathematics/Uger/Uge 09|Uge 9]]).
+- Opgavebeskrivelsen for uge 1 ([[Courses/Introduction to applied mathematics/Uger/Uge 08 - Filtrering, fra kalkulus til billedanalyse|Uge 8]]) beder om at den afspejler hvad man har lært om filtrering af billeder, og at ca. $2/3$ af pladsen bruges på del 2 ([[Courses/Introduction to applied mathematics/Uger/Uge 09 - Filtrering 2, median, rand og segmentering|Uge 9]]).
 - Ingen nye matematikopgaver.
 
 ## Links
