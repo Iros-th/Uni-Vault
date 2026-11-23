@@ -128,7 +128,7 @@ Kort genereret fra [videoen](https://www.youtube.com/watch?v=PfGa8hHkI-8) (spil 
 >
 > Når $n=1$ får vi $a_1 = \frac{1}{1^2+3}=\frac{1}{4}$. (14:35) [Se klippet](https://www.youtube.com/watch?v=PfGa8hHkI-8&t=875s)
 
-> [!question]- If the series $b_n = \frac{1}{n^2}$ converges, hvad kan vi konkludere om serien $a_n = \frac{1}{n^2+3}$?  (A) $a_n$ konvergerer kun hvis $b_n$ divergerer  (B) Ubeslutsom – testen giver ingen information  (C) $a_n$ konvergerer også  (D) $a_n$ divergerer
+> [!question]- If the series $b_n = \frac{1}{n^2}$ converges, hvad kan vi konkludere om serien $a_n = \frac{1}{n^2+3}$?  (A) $a_n$ konvergerer kun hvis $b_n$ divergerer  (B) Ubeslutsom - testen giver ingen information  (C) $a_n$ konvergerer også  (D) $a_n$ divergerer
 > **(C) $a_n$ konvergerer også**
 >
 > If $b_n$ converges then $a_n$ also converges by sammenligningstesten. (16:03) [Se klippet](https://www.youtube.com/watch?v=PfGa8hHkI-8&t=962s)

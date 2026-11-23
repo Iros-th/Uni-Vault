@@ -1,5 +1,5 @@
 ---
-title: Kørekort – hurtigste vej
+title: Kørekort - hurtigste vej
 publish: false
 type: plan
 tags:
@@ -8,7 +8,7 @@ tags:
 created: 2026-10-11
 ---
 
-# Kørekort – hurtigste vej (kategori B)
+# Kørekort - hurtigste vej (kategori B)
 
 ## 1. Den ærlige konklusion
 
@@ -33,26 +33,26 @@ Grunde (officielle kilder):
 
 | Uge | Hvad |
 |---|---|
-| Dag −7 til 0 | Book førstehjælp (8 t, fx FOF ~575 kr.), lægeattest (500–1.000 kr.), foto, P23 via køreskolen/Køreprøvebooking. **Begynd teori-sprinten nu**, så teorien er "gratis" når holdet starter |
-| Dag 1–14 | Lynhold: 14 undervisningsdage, ~4 lektioner/dag. Teoriprøve bookes af kørelæreren, typisk efter modul 4 |
-| Dag ~12–20 | Teoriprøve (25 min) |
-| Dag ~18–35 | Praktisk prøve (afhænger af prøvetider i din region) |
+| Dag −7 til 0 | Book førstehjælp (8 t, fx FOF ~575 kr.), lægeattest (500-1.000 kr.), foto, P23 via køreskolen/Køreprøvebooking. **Begynd teori-sprinten nu**, så teorien er "gratis" når holdet starter |
+| Dag 1-14 | Lynhold: 14 undervisningsdage, ~4 lektioner/dag. Teoriprøve bookes af kørelæreren, typisk efter modul 4 |
+| Dag ~12-20 | Teoriprøve (25 min) |
+| Dag ~18-35 | Praktisk prøve (afhænger af prøvetider i din region) |
 
-**Realistisk: 3–5 uger fra tilmelding til kørekort.** Hurtigere end det er der ingen lovlig vej.
+**Realistisk: 3-5 uger fra tilmelding til kørekort.** Hurtigere end det er der ingen lovlig vej.
 
 Priser (skolernes egne sider, tjek altid):
-- Lovpakke generelt: ca. 9.000–18.000 kr. ([FDM, feb. 2026](https://fdm.dk/guides/regler/hvilken-koerekortpakke-skal-du-vaelge-undgaa-at-betale-overpris))
+- Lovpakke generelt: ca. 9.000-18.000 kr. ([FDM, feb. 2026](https://fdm.dk/guides/regler/hvilken-koerekortpakke-skal-du-vaelge-undgaa-at-betale-overpris))
 - Alliance Trafikskole lynkursus (2 uger, København m.fl.): 14.999 kr. for pakken med 16 vejlektioner, udateret
 - Scandia Trafikskole (København): lynkursus på 14 undervisningsdage, pris på forespørgsel
-- Læg 6–10 ekstra køretimer oveni hvis du er gennemsnitlig, + 1.600 kr. gebyr.
+- Læg 6-10 ekstra køretimer oveni hvis du er gennemsnitlig, + 1.600 kr. gebyr.
 
 Spørg skolen: (1) næste holdstart, (2) har de prøvetider reserveret til lynholdet, (3) samlet skriftlig pris inkl. førstehjælp, prøver og ekstratimer.
 
-## 3. Teoriprøven – det officielle format
+## 3. Teoriprøven - det officielle format
 
-- **25 billedspørgsmål** set fra førersædet, tekst eller lyd, 3–4 svarmuligheder, **et eller flere kan være rigtige**.
+- **25 billedspørgsmål** set fra førersædet, tekst eller lyd, 3-4 svarmuligheder, **et eller flere kan være rigtige**.
 - **Max 5 fejl** = mindst 20 rigtige. Ubesvaret = fejl. ([FDM](https://fdm.dk/guides/regler/saadan-bliver-du-klar-til-teoriproeven), [Lovguiden/fstyr apr. 2026](https://lovguiden.dk/det-offentlige/faerdselsstyrelsen/2026-04-14-test-teoriproeven-udvides-til-25-spoergsmaal-fra-21-april-2026))
-- **25 minutters svartid** på den digitale prøve (60 min ved specialprøve). Start med 1–2 øvespørgsmål. ([Retningslinjer for køreprøver, fstyr](https://cdn.fstyr.dk/faerdselsstyrelsen/Media/638596648055941487/Retningslinjer%20for%20k%C3%B8repr%C3%B8ver.pdf), afsnit 4.3)
+- **25 minutters svartid** på den digitale prøve (60 min ved specialprøve). Start med 1-2 øvespørgsmål. ([Retningslinjer for køreprøver, fstyr](https://cdn.fstyr.dk/faerdselsstyrelsen/Media/638596648055941487/Retningslinjer%20for%20k%C3%B8repr%C3%B8ver.pdf), afsnit 4.3)
 - Digital prøve: log ind med MitID, du kan gå frem og tilbage. Nogle steder er det stadig storskærm + papir uden mulighed for at gå tilbage.
 - Resultat straks på skærmen. **Detaljeret resultat i Digital Post inden for 24 timer** (det er din fejlrapport, se Fejl-log).
 - Officiel gratis øveprøve med samme format (25 spm., max 5 fejl): **[dtp.fstyr.dk](https://dtp.fstyr.dk/)**
@@ -64,15 +64,15 @@ Forudsætning: du har (eller får parallelt) teoribogen fra køreskolen. Start f
 | Tid | Blok | Gør |
 |---|---|---|
 | 09:00 | Baseline | 1 fuld prøve på [dtp.fstyr.dk](https://dtp.fstyr.dk/) under tid. Log alle fejl. Ingen video endnu |
-| 09:45 | Kryds & vigepligt (7.11–7.14) | [Ubetinget vs. højre vigepligt](https://www.youtube.com/watch?v=ADxzdP9SOBU), [Vejkryds-regler (33 min)](https://www.youtube.com/watch?v=MRM0a-NT8Og) |
+| 09:45 | Kryds & vigepligt (7.11-7.14) | [Ubetinget vs. højre vigepligt](https://www.youtube.com/watch?v=ADxzdP9SOBU), [Vejkryds-regler (33 min)](https://www.youtube.com/watch?v=MRM0a-NT8Og) |
 | 11:00 | Test 2 | Fuld prøve ([trafiktesten](https://teori.trafiktesten.dk/) eller betalt site). Log fejl |
 | 11:30 | Tavler, afmærkning, signaler (6.1) | [Krybespor](https://www.youtube.com/watch?v=ud7OO3OI2Qo), [Mini-teoriprøve gennemgang](https://www.youtube.com/watch?v=_Hr8OB2olkg). Teoribogens tavle-afsnit: tavlens *form/farve* først (advarsel/forbud/påbud/oplysning) |
 | 12:30 | Pause | Spis, gå 15 min. Ingen skærm |
 | 13:15 | Rundkørsel, vognbaneskift, overhaling, motorvej (7.4, 7.9, 7.15, 7.16) | [Tosporet rundkørsel (Vejdirektoratet)](https://www.youtube.com/watch?v=0Ht2SIQWwfU), [Rundkørsel blink/placering](https://www.youtube.com/watch?v=XzJJFZxZOSA), [Vognbaneskift/sammenfletning](https://www.youtube.com/watch?v=mJA5smUvgjQ), [Overhaling](https://www.youtube.com/watch?v=klYAwUzC3jM), [Motorvejstilkørsel](https://www.youtube.com/watch?v=teYGNGPbMqc) |
 | 14:45 | Test 3 | Fuld prøve. Log fejl |
-| 15:15 | Bilens udstyr & dokumenter (afsnit 1) – **#1 fejlområde ifølge FDM** | [Bilens teknik](https://www.youtube.com/watch?v=Z7s9hP5APBE), [Lygter/reflekser](https://www.youtube.com/watch?v=KSB7aHOUz90), [Politi: lygter](https://www.youtube.com/watch?v=10p66ch9MXI) |
-| 16:15 | Standsning/parkering, lys, signalgivning (6.2.3–6.2.5, 7.18–7.19) | [Standsning og parkering](https://www.youtube.com/watch?v=rvNUPAUtGlg) |
-| 17:15 | Særlige risikoforhold (8) + manøvreegenskaber (3) – **#2 fejlområde** | [Alkohol, narko, medicin](https://www.youtube.com/watch?v=AK1i56H-WZ4), [Glatbane](https://www.youtube.com/watch?v=rqrfL7RM2ZE), [Energirigtig kørsel](https://www.youtube.com/watch?v=KQ7EV0nYbI4) |
+| 15:15 | Bilens udstyr & dokumenter (afsnit 1) - **#1 fejlområde ifølge FDM** | [Bilens teknik](https://www.youtube.com/watch?v=Z7s9hP5APBE), [Lygter/reflekser](https://www.youtube.com/watch?v=KSB7aHOUz90), [Politi: lygter](https://www.youtube.com/watch?v=10p66ch9MXI) |
+| 16:15 | Standsning/parkering, lys, signalgivning (6.2.3-6.2.5, 7.18-7.19) | [Standsning og parkering](https://www.youtube.com/watch?v=rvNUPAUtGlg) |
+| 17:15 | Særlige risikoforhold (8) + manøvreegenskaber (3) - **#2 fejlområde** | [Alkohol, narko, medicin](https://www.youtube.com/watch?v=AK1i56H-WZ4), [Glatbane](https://www.youtube.com/watch?v=rqrfL7RM2ZE), [Energirigtig kørsel](https://www.youtube.com/watch?v=KQ7EV0nYbI4) |
 | 18:15 | Aftensmad | |
 | 19:00 | Review-kø | Appens "Gennemgå"-kø: alle dine fejl indtil nu, svar højt uden at kigge |
 | 20:00 | 2 × fuld prøve | Back-to-back, 25 min hver. Log fejl |
@@ -89,16 +89,16 @@ Bestå-kriterium for at du er klar: **3 prøver i træk med ≤ 3 fejl** på for
 ## 5. Videoer og sider (alle links tjekket 2026-10-11)
 
 Officielt:
-- [dtp.fstyr.dk](https://dtp.fstyr.dk/) – Færdselsstyrelsens test-teoriprøve (25 spm.)
+- [dtp.fstyr.dk](https://dtp.fstyr.dk/) - Færdselsstyrelsens test-teoriprøve (25 spm.)
 - [Modulplan kat. B (pensum)](https://cdn.fstyr.dk/faerdselsstyrelsen/Media/639141849506212908/fs-a5-modulplan-kategori-b-version-11-april-2026-digital.pdf)
-- [fstyr.dk/dokumentation](https://www.fstyr.dk/dokumentation) – hvad du skal medbringe
+- [fstyr.dk/dokumentation](https://www.fstyr.dk/dokumentation) - hvad du skal medbringe
 - [Køreprøvebooking](https://www.koreprovebooking.dk/)
 - [Rådet for Sikker Trafik (YouTube)](https://www.youtube.com/@sikkertrafik), [sikkertrafik.dk](https://www.sikkertrafik.dk/raad-og-viden/)
 
 Gennemgange (privat, men solide):
 - [Forstå og bestå 1](https://www.youtube.com/watch?v=4_fCsymYZHc) + [2](https://www.youtube.com/watch?v=QM9N1ZNIUm8) (Skinhoj TV, ~200k visninger hver)
-- [Mrdrive – teoriprøve-tips](https://www.youtube.com/watch?v=ywJReZQjYnw), [LZ Køreskole – svar sådan](https://www.youtube.com/watch?v=6If0cMA4ViE)
-- [Prove.dk – vejledning til teoriprøven](https://www.youtube.com/watch?v=pY5P5iA0fkw)
+- [Mrdrive - teoriprøve-tips](https://www.youtube.com/watch?v=ywJReZQjYnw), [LZ Køreskole - svar sådan](https://www.youtube.com/watch?v=6If0cMA4ViE)
+- [Prove.dk - vejledning til teoriprøven](https://www.youtube.com/watch?v=pY5P5iA0fkw)
 - [Fodgængerfelt: skal du holde?](https://www.youtube.com/watch?v=kSuGuIUODH0)
 
 Øveprøver: [dtp.fstyr.dk](https://dtp.fstyr.dk/) (gratis, officiel), [teori.trafiktesten.dk](https://teori.trafiktesten.dk/) (gratis), [prove.dk](https://prove.dk/), [teoriprove.net](https://teoriprove.net/), [TeoriTjek](https://teoritjek.dk/) (app, 1 gratis fuld test/uge), [Teorikortet](https://www.teorikortet.dk/) (app).
@@ -112,24 +112,24 @@ Gennemgange (privat, men solide):
 - [ ] **4** Trafikantadfærd (bløde trafikanter, børn, ældre, opmærksomhed, træthed)
 - [ ] **5** Vejforhold (5.1 vejens udformning, 5.2 risikoforhold)
 - [ ] **6.1** Anvisninger: tavler, afmærkning, signaler, politiets tegn
-- [ ] **6.2.1–6.2.2** Grundregler, fare/ulempe
-- [ ] **6.2.3–6.2.5** Signalgivning, tegngivning, brug af lys
+- [ ] **6.2.1-6.2.2** Grundregler, fare/ulempe
+- [ ] **6.2.3-6.2.5** Signalgivning, tegngivning, brug af lys
 - [ ] **6.2.6** Fri passage (udrykning, bus, fodgængere)
-- [ ] **6.2.7–6.2.8** Personer og gods (sele, barnestol, last), motorstop og slæbning
-- [ ] **6.2.9–6.2.11** Færdselsuheld, forsikringspligt, overladelse af køretøj
-- [ ] **7.1–7.3** Igangsætning/standsning, placering, hastighed
+- [ ] **6.2.7-6.2.8** Personer og gods (sele, barnestol, last), motorstop og slæbning
+- [ ] **6.2.9-6.2.11** Færdselsuheld, forsikringspligt, overladelse af køretøj
+- [ ] **7.1-7.3** Igangsætning/standsning, placering, hastighed
 - [ ] **7.4** Vognbaneskift og sammenfletning
 - [ ] **7.5** Vending og baglænskørsel
-- [ ] **7.6–7.8** Forbi holdende, møde, afstand foran/bagved
+- [ ] **7.6-7.8** Forbi holdende, møde, afstand foran/bagved
 - [ ] **7.9** Overhaling
 - [ ] **7.10** Trafiksanerede områder
-- [ ] **7.11–7.14** Kryds: fremkørsel, ligeud, højre-, venstresving, vigepligt
+- [ ] **7.11-7.14** Kryds: fremkørsel, ligeud, højre-, venstresving, vigepligt
 - [ ] **7.15** Rundkørsel
 - [ ] **7.16** Motorvej og motortrafikvej
 - [ ] **7.17** Kørsel ved siden af andre
 - [ ] **7.18** Standsning og parkering
 - [ ] **7.19** Mørke og lygtetændingstid
-- [ ] **7.20–7.21** Tunnel, letbane
+- [ ] **7.20-7.21** Tunnel, letbane
 - [ ] **8** Særlige risikoforhold (alkohol, narko, medicin, træthed, vejr, mørke)
 - [ ] **9** Køreteknisk anlæg (glat føre, undvigning)
 - [ ] **10** Regler for kørekort (prøver, lovbestemmelser, klip, prøvetid)
@@ -148,7 +148,7 @@ Gennemgange (privat, men solide):
 10. **Stoplængde-tommelfingerregel** (tør vej): reaktionslængde ≈ (km/t ÷ 10) × 3 m, bremselængde ≈ (km/t ÷ 10)² ÷ 2 m. Dobbelt hastighed = 4× bremselængde. Tjek din teoribogs formel.
 11. **Skift ikke svar til sidst** medmindre du klart har misforstået spørgsmålet.
 
-## 8. Prøvedag – tjekliste
+## 8. Prøvedag - tjekliste
 
 - [ ] Pas eller kørekort/legitimation med foto (se [fstyr.dk/dokumentation](https://www.fstyr.dk/dokumentation))
 - [ ] P23-ansøgning, stemplet af Borgerservice og underskrevet

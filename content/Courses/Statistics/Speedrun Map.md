@@ -107,7 +107,7 @@ Supplement: [Khan Academy Statistics and Probability](https://www.khanacademy.or
 
 **Skal kunne:**
 - **Total sandsynlighed** og **Bayes' sætning** P(A|B)=P(B|A)P(A)/P(B)
-- **Permutationer og kombinationer** (n!, nPr, nCr) – se [[Reference/Formelsamling/Sandsynlighed og statistik|formelsamling]]
+- **Permutationer og kombinationer** (n!, nPr, nCr) - se [[Reference/Formelsamling/Sandsynlighed og statistik|formelsamling]]
 - Typisk opgave: test for sygdom/falsk positiv
 
 **Lær det her (i prioriteret rækkefølge):**

@@ -1,5 +1,5 @@
 ---
-title: Kørekort – fejl-log
+title: Kørekort - fejl-log
 publish: false
 type: log
 tags:
@@ -9,7 +9,7 @@ tags:
 created: 2026-10-11
 ---
 
-# Fejl-log – teoriprøve
+# Fejl-log - teoriprøve
 
 Én række pr. forkert svar. Emne = afsnit fra [[Kørekort/Plan#6. Pensum-tjekliste (afsnit fra undervisningsplanen)|pensum-tjeklisten]]. Appen `Desktop\korekort\index.html` er den interaktive version (rangering + gentagelseskø). Denne fil er backup og det Claude skriver i, når du sender screenshots.
 
@@ -24,9 +24,9 @@ created: 2026-10-11
 
 | # | Emne | Antal fejl | Sidst set |
 |---|---|---|---|
-| 1 | – | – | – |
-| 2 | – | – | – |
-| 3 | – | – | – |
+| 1 | - | - | - |
+| 2 | - | - | - |
+| 3 | - | - | - |
 
 ## Log
 
@@ -40,7 +40,7 @@ Claude leverer importblokke i dette format (appens **Importér** fletter dem ind
 
 ```json
 {"app":"korekort-fejl","version":1,"items":[
-{"id":"c-2026-10-11-01","created":"2026-10-11T10:00:00Z","topic":"7.11","source":"dtp.fstyr.dk","question":"Kryds uden tavler, bil fra højre","myAnswer":"Jeg kører først","correct":"Holde tilbage – højre vigepligt","why":"Ingen hajtænder/tavler → højre vigepligt gælder","img":""}
+{"id":"c-2026-10-11-01","created":"2026-10-11T10:00:00Z","topic":"7.11","source":"dtp.fstyr.dk","question":"Kryds uden tavler, bil fra højre","myAnswer":"Jeg kører først","correct":"Holde tilbage - højre vigepligt","why":"Ingen hajtænder/tavler → højre vigepligt gælder","img":""}
 ]}
 ```
 
